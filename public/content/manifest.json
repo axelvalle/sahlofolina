@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "framework": "./framework/runtime.js",
+  "routes": [
+    {
+      "id": 1,
+      "slug": "parte-1",
+      "runtime": "./parte-1/parte1.runtime.js",
+      "title": "La ciudad sin horizonte",
+      "chapters": [
+        "cap1",
+        "cap2",
+        "cap3",
+        "cap4"
+      ]
+    },
+    {
+      "id": 2,
+      "slug": "parte-2",
+      "runtime": "./parte-2/parte2.runtime.js",
+      "title": "El color que no pueden ver",
+      "chapters": [
+        "cap5",
+        "cap6",
+        "cap7",
+        "cap8",
+        "cap9",
+        "cap10",
+        "cap11",
+        "cap12",
+        "cap13",
+        "cap14",
+        "cap15",
+        "cap16",
+        "cap17",
+        "interludio-parte-3"
+      ]
+    },
+    {
+      "id": 3,
+      "slug": "parte-3",
+      "runtime": "./parte-3/parte3.runtime.js",
+      "title": "La ciudad aprende a sonreír",
+      "chapters": [
+        "cap18",
+        "cap19",
+        "cap20",
+        "cap21",
+        "cap22",
+        "cap23",
+        "cap24",
+        "interludio-cuenta-cancelada"
+      ],
+      "revision": "2026-07-29-r2",
+      "sourceEdition": "Sahlo-Folina-Parte-III.docx"
+    },
+    {
+      "id": 4,
+      "slug": "parte-4",
+      "runtime": "./parte-4/parte4.runtime.js",
+      "title": "Los que se quedaron",
+      "chapters": [
+        "cap25",
+        "cap26",
+        "cap27",
+        "cap28",
+        "cap29",
+        "cap30",
+        "cap31"
+      ],
+      "status": "published",
+      "revision": "2026-07-29-final",
+      "sourceEdition": "Sahlo-Folina-Parte-IV.docx"
+    }
+  ],
+  "extras": {
+    "runtime": "./extras/extras.runtime.js",
+    "chapters": [
+      "disclaimer",
+      "extras"
+    ]
+  },
+  "totalEntries": 35
+}

@@ -1,0 +1,36 @@
+{
+  "edition": "biblioteca-produccion-2026-07-29-parte-4-final",
+  "files": [
+    {
+      "name": "Sahlo-Folina-Parte-III.docx",
+      "bytes": 7579990,
+      "sha256": "d2ea0ebccf35f41aa6317de859b3d17ee02d6dfcdd59c4da94b80d0ad0adbd68"
+    },
+    {
+      "name": "Sahlo-Folina-Parte-III.pdf",
+      "bytes": 2246634,
+      "sha256": "57f90c6e89533b420cb4d4d718eb20f814919e5757b893766219d8218bf5d3c4"
+    },
+    {
+      "name": "Sahlo-Folina-Parte-IV.docx",
+      "bytes": 2366119,
+      "sha256": "40747c7956cf1cdaf042145c9f2c56ae30159e1b1c13a6095fe2da6aff5baa54"
+    },
+    {
+      "name": "Sahlo-Folina-Parte-IV.pdf",
+      "bytes": 1069623,
+      "sha256": "b0d6bf064f82f6a4f02e231a2e3f346c1fef6f818aaea605a0e91f439da525ee"
+    },
+    {
+      "name": "Sahlo-Folina-Partes-I-y-II.docx",
+      "bytes": 8491809,
+      "sha256": "e986534dee23c5b5ea6058efdd1563eaeb39a9438a43ed708cadab8cf212d788"
+    },
+    {
+      "name": "Sahlo-Folina-Partes-I-y-II.pdf",
+      "bytes": 2022897,
+      "sha256": "46c054cc591e6cadfc6b3b231ae26c3b34c8588e2d8b7c07c878bcc730050f39"
+    }
+  ],
+  "revision": "Parte IV publicada · edición consolidada final"
+}
