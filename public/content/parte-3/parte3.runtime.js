@@ -7,7 +7,7 @@ const PART3_CHAPTERS = [
     "part": 3,
     "number": "Capítulo 18",
     "title": "Good Day",
-    "subtitle": "Donde Clancy despierta dentro de una vida fabricada para las cámaras",
+    "subtitle": "Clancy despierta dentro de una vida fabricada para las cámaras",
     "blocks": [
       {
         "type": "p",
@@ -1061,7 +1061,7 @@ const PART3_CHAPTERS = [
     "part": 3,
     "number": "Capítulo 19",
     "title": "Una vida corregida",
-    "subtitle": "Donde Dema reescribe la biografía de Clancy palabra por palabra",
+    "subtitle": "Dema reescribe la biografía de Clancy palabra por palabra",
     "blocks": [
       {
         "type": "p",
@@ -2086,7 +2086,7 @@ const PART3_CHAPTERS = [
     "part": 3,
     "number": "Capítulo 20",
     "title": "Sonríe para Dema",
-    "subtitle": "Donde el color y la música convierten la rebeldía en producto",
+    "subtitle": "El color y la música convierten la rebeldía en producto",
     "blocks": [
       {
         "type": "p",
@@ -2924,7 +2924,7 @@ const PART3_CHAPTERS = [
     "part": 3,
     "number": "Capítulo 21",
     "title": "Las tomas descartadas",
-    "subtitle": "Donde Mara rescata las tomas que demuestran cómo se fabricó la mentira",
+    "subtitle": "Mara rescata las tomas que demuestran cómo se fabricó la mentira",
     "blocks": [
       {
         "type": "p",
@@ -3787,7 +3787,7 @@ const PART3_CHAPTERS = [
     "part": 3,
     "number": "Capítulo 22",
     "title": "Good Day Dema",
-    "subtitle": "Donde la transmisión perfecta se rompe en señales visibles para toda Dema",
+    "subtitle": "La transmisión perfecta se rompe en señales visibles para toda Dema",
     "blocks": [
       {
         "type": "p",
@@ -5355,7 +5355,7 @@ const PART3_CHAPTERS = [
     "part": 3,
     "number": "Capítulo 23",
     "title": "La Asamblea de los Glorificados",
-    "subtitle": "Donde una celebración marítima oculta cuerpos, rutas y una última oportunidad",
+    "subtitle": "Una celebración marítima oculta cuerpos, rutas y una última oportunidad",
     "blocks": [
       {
         "type": "p",
@@ -6231,7 +6231,7 @@ const PART3_CHAPTERS = [
     "part": 3,
     "number": "Capítulo 24",
     "title": "Saturday",
-    "subtitle": "Donde la fiesta bajo el agua termina en naufragio, señales y supervivencia",
+    "subtitle": "La fiesta bajo el agua termina en naufragio, señales y supervivencia",
     "blocks": [
       {
         "type": "p",
@@ -7512,7 +7512,7 @@ const PART3_CHAPTERS = [
     "part": 3,
     "number": "Interludio",
     "title": "Cuenta cancelada",
-    "subtitle": "Donde Dema declara una muerte antes de conocer toda la verdad",
+    "subtitle": "Dema declara una muerte antes de conocer toda la verdad",
     "kind": "interlude",
     "hiddenFromToc": true,
     "blocks": [

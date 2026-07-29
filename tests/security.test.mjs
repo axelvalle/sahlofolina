@@ -168,6 +168,7 @@ test("the shell defers heavy work and chapter subtitles are concise synopses", a
   ]) vm.runInContext(await read(file), context, { filename: file });
   for (const chapter of context.window.CHAPTERS.filter((item) => item.kind !== "extra")) {
     assert.ok(typeof chapter.subtitle === "string" && chapter.subtitle.length >= 24 && chapter.subtitle.length <= 100, chapter.id);
+    assert.doesNotMatch(chapter.subtitle, /^Donde\b/i, chapter.id);
   }
 });
 

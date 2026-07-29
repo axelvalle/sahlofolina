@@ -7,7 +7,7 @@ const PART4_CHAPTERS = [
     "part": 4,
     "number": "Capítulo 25",
     "title": "Los que se quedaron",
-    "subtitle": "Donde Dema convierte la ausencia de Clancy en protocolo y persecución",
+    "subtitle": "Dema convierte la ausencia de Clancy en protocolo y persecución",
     "blocks": [
       {
         "type": "chronology",
@@ -993,7 +993,7 @@ const PART4_CHAPTERS = [
     "part": 4,
     "number": "Capítulo 26",
     "title": "Dos versiones del agua",
-    "subtitle": "Donde el agua devuelve rastros incompatibles de una misma supervivencia",
+    "subtitle": "El agua devuelve rastros incompatibles de una misma supervivencia",
     "blocks": [
       {
         "type": "chronology",
@@ -2180,7 +2180,7 @@ const PART4_CHAPTERS = [
     "part": 4,
     "number": "Capítulo 27",
     "title": "El obispo traidor",
-    "subtitle": "Donde el juicio de Keons revela que Dema todavía necesita su cuerpo",
+    "subtitle": "El juicio de Keons revela que Dema todavía necesita su cuerpo",
     "blocks": [
       {
         "type": "chronology",
@@ -2875,7 +2875,7 @@ const PART4_CHAPTERS = [
     "part": 4,
     "number": "Capítulo 28",
     "title": "Algo camina en la torre",
-    "subtitle": "Donde una torre vacía registra pasos y unos ojos amarillos buscan responder",
+    "subtitle": "Una torre vacía registra pasos y unos ojos amarillos buscan responder",
     "blocks": [
       {
         "type": "chronology",
@@ -3663,7 +3663,7 @@ const PART4_CHAPTERS = [
     "part": 4,
     "number": "Capítulo 29",
     "title": "La señal",
-    "subtitle": "Donde la estatua y la torre autentican una señal sin entregar la ciudad",
+    "subtitle": "La estatua y la torre autentican una señal sin entregar la ciudad",
     "blocks": [
       {
         "type": "chronology",
@@ -4460,7 +4460,7 @@ const PART4_CHAPTERS = [
     "part": 4,
     "number": "Capítulo 30",
     "title": "El hombre detrás de la antorcha",
-    "subtitle": "Donde la presencia del Torchbearer demuestra que no siempre necesita cuerpo",
+    "subtitle": "La presencia del Torchbearer demuestra que no siempre necesita cuerpo",
     "blocks": [
       {
         "type": "chronology",
@@ -5607,7 +5607,7 @@ const PART4_CHAPTERS = [
     "part": 4,
     "number": "Capítulo 31",
     "title": "East Is Up Again",
-    "subtitle": "Donde la resistencia aprende a moverse sin una única orden ni un único líder",
+    "subtitle": "La resistencia aprende a moverse sin una única orden ni un único líder",
     "blocks": [
       {
         "type": "chronology",

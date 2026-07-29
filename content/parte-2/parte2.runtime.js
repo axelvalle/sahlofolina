@@ -7,7 +7,7 @@ const PART2_CHAPTERS = [
     "part": 2,
     "number": "Capítulo 5",
     "title": "He logrado salir",
-    "subtitle": "Donde la libertad empieza con frío, hambre y una ruta sin nombres",
+    "subtitle": "La libertad empieza con frío, hambre y una ruta sin nombres",
     "blocks": [
       {
         "type": "p",
@@ -247,7 +247,7 @@ const PART2_CHAPTERS = [
     "part": 2,
     "number": "Capítulo 6",
     "title": "El valle de los pétalos",
-    "subtitle": "Donde los pétalos anuncian ayuda antes de que aparezcan los Banditos",
+    "subtitle": "Los pétalos anuncian ayuda antes de que aparezcan los Banditos",
     "blocks": [
       {
         "type": "p",
@@ -745,7 +745,7 @@ const PART2_CHAPTERS = [
     "part": 2,
     "number": "Capítulo 7",
     "title": "La marca de Nico",
-    "subtitle": "Donde Nico convierte el contacto en una marca que sigue obedeciendo",
+    "subtitle": "Nico convierte el contacto en una marca que sigue obedeciendo",
     "blocks": [
       {
         "type": "p",
@@ -1316,7 +1316,7 @@ const PART2_CHAPTERS = [
     "part": 2,
     "number": "Capítulo 8",
     "title": "Unalone",
-    "subtitle": "Donde escapar del valle no basta para dejar de sentirse solo",
+    "subtitle": "Escapar del valle no basta para dejar de sentirse solo",
     "blocks": [
       {
         "type": "p",
@@ -1645,7 +1645,7 @@ const PART2_CHAPTERS = [
     "part": 2,
     "number": "Capítulo 9",
     "title": "El ciudadano recuperado",
-    "subtitle": "Donde Dema recupera a Clancy y comienza a corregir su versión",
+    "subtitle": "Dema recupera a Clancy y comienza a corregir su versión",
     "blocks": [
       {
         "type": "p",
@@ -2590,7 +2590,7 @@ const PART2_CHAPTERS = [
     "part": 2,
     "number": "Capítulo 10",
     "title": "Rostros prestados",
-    "subtitle": "Donde Mara y James prestan rostros para abrir una salida imposible",
+    "subtitle": "Mara y James prestan rostros para abrir una salida imposible",
     "blocks": [
       {
         "type": "p",
@@ -3092,7 +3092,7 @@ const PART2_CHAPTERS = [
     "part": 2,
     "number": "Capítulo 11",
     "title": "Las rutas inferiores",
-    "subtitle": "Donde las rutas bajo Dema revelan quién sigue dispuesto a responder",
+    "subtitle": "Las rutas bajo Dema revelan quién sigue dispuesto a responder",
     "blocks": [
       {
         "type": "p",
@@ -3731,7 +3731,7 @@ const PART2_CHAPTERS = [
     "part": 2,
     "number": "Capítulo 12",
     "title": "East Is Up",
-    "subtitle": "Donde girar el mapa convierte la orientación en resistencia",
+    "subtitle": "Girar el mapa convierte la orientación en resistencia",
     "blocks": [
       {
         "type": "p",
@@ -4235,7 +4235,7 @@ const PART2_CHAPTERS = [
     "part": 2,
     "number": "Capítulo 13",
     "title": "Nico and the Niners",
-    "subtitle": "Donde la plaza, la estatua y los Banditos abren una fuga ante toda Dema",
+    "subtitle": "La plaza, la estatua y los Banditos abren una fuga ante toda Dema",
     "blocks": [
       {
         "type": "p",
@@ -4850,7 +4850,7 @@ const PART2_CHAPTERS = [
     "part": 2,
     "number": "Capítulo 14",
     "title": "Entre dos lugares",
-    "subtitle": "Donde avanzar entre Dema y Trench exige elegir rutas sin promesas",
+    "subtitle": "Avanzar entre Dema y Trench exige elegir rutas sin promesas",
     "blocks": [
       {
         "type": "p",
@@ -5410,7 +5410,7 @@ const PART2_CHAPTERS = [
     "part": 2,
     "number": "Capítulo 15",
     "title": "La habitación bajo la piedra",
-    "subtitle": "Donde el campamento convierte la supervivencia en una comunidad elegida",
+    "subtitle": "El campamento convierte la supervivencia en una comunidad elegida",
     "blocks": [
       {
         "type": "p",
@@ -5849,7 +5849,7 @@ const PART2_CHAPTERS = [
     "part": 2,
     "number": "Capítulo 16",
     "title": "Levitate",
-    "subtitle": "Donde una celebración y una canción terminan en una nueva captura",
+    "subtitle": "Una celebración y una canción terminan en una nueva captura",
     "blocks": [
       {
         "type": "p",
@@ -6264,7 +6264,7 @@ const PART2_CHAPTERS = [
     "part": 2,
     "number": "Capítulo 17",
     "title": "Por ahora, seguir vivos",
-    "subtitle": "Donde Mara y James sostienen la resistencia después de perder a Clancy",
+    "subtitle": "Mara y James sostienen la resistencia después de perder a Clancy",
     "blocks": [
       {
         "type": "p",
@@ -6847,7 +6847,7 @@ const PART2_CHAPTERS = [
     "part": 2,
     "number": "Interludio",
     "title": "Mañana comenzamos",
-    "subtitle": "Donde una cámara se enciende y Dema prepara la siguiente versión",
+    "subtitle": "Una cámara se enciende y Dema prepara la siguiente versión",
     "blocks": [
       {
         "type": "scene",

@@ -6,7 +6,7 @@ const PART1_CHAPTERS = [
     "id": "cap1",
     "number": "Capítulo 1",
     "title": "Las nueve campanas",
-    "subtitle": "Donde Dema se presenta sin presentarse",
+    "subtitle": "Dema se presenta sin presentarse",
     "blocks": [
       {
         "type": "p",
@@ -3693,7 +3693,7 @@ const PART1_CHAPTERS = [
     "id": "cap4",
     "number": "Capítulo 4",
     "title": "El fuego en la carretera",
-    "subtitle": "Donde pedir que te lleven se vuelve una forma de marcharse",
+    "subtitle": "Pedir que te lleven se vuelve una forma de marcharse",
     "blocks": [
       {
         "type": "p",

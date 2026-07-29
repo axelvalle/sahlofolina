@@ -40,3 +40,6 @@ next-env.d.ts
 /.wrangler/
 /outputs/
 /work/
+
+# internal notes (not for public repo)
+AUDITORIA_DEPURACION.md
