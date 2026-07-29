@@ -39,7 +39,7 @@
     4: {
       label: "Parte IV",
       indexTitle: "Los que se quedaron",
-      context: "Consecuencias de Saturday · Dema sin Clancy",
+      context: "¿Clancy está muerto?",
       coverLead: "Una historia sobre quienes sostienen la memoria cuando la persona que los unía desaparece y la ciudad intenta convertir su ausencia en una conclusión.",
       quote: "“Recordar que alguna vez elegiste algo.”",
       quoteBy: "— Torchbearer"
