@@ -28,6 +28,8 @@ const shellFiles = [
   ["styles.css", "public/styles.css"],
   ["library.js", "public/library.js"],
   ["library.html", "public/library.html"],
+  ["sw.js", "public/sw.js"],
+  ["_headers", "public/_headers"],
 ];
 
 for (const [sourceRelative, targetRelative] of shellFiles) {

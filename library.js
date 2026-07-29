@@ -1,6 +1,7 @@
 (function () {
   "use strict";
 
+  let libraryRendered = false;
   const editions = Object.freeze([
     {
       id: "partes-1-2",
@@ -82,8 +83,11 @@
     image.className = "book-cover";
     image.src = edition.cover;
     image.alt = "";
-    image.loading = "eager";
+    image.loading = "lazy";
     image.decoding = "async";
+    image.fetchPriority = "low";
+    image.width = 800;
+    image.height = 1200;
 
     const shine = document.createElement("span");
     shine.className = "book-shine";
@@ -125,20 +129,15 @@
   function renderLibrary() {
     const shelf = document.getElementById("bookshelf");
     const counter = document.getElementById("library-count");
-    if (!shelf || !counter) return;
+    if (!shelf || !counter || libraryRendered) return;
 
     const fragment = document.createDocumentFragment();
     editions.forEach((edition) => fragment.append(createEditionCard(edition)));
     shelf.replaceChildren(fragment);
 
     counter.textContent = `${editions.length} ediciones disponibles`;
+    libraryRendered = true;
   }
 
   window.SahloLibrary = Object.freeze({ editions, render: renderLibrary });
-
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", renderLibrary, { once: true });
-  } else {
-    renderLibrary();
-  }
 })();

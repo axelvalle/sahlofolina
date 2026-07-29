@@ -7,7 +7,7 @@ const PART2_CHAPTERS = [
     "part": 2,
     "number": "Capítulo 5",
     "title": "He logrado salir",
-    "subtitle": "Parte II · El color que no pueden ver",
+    "subtitle": "Donde la libertad empieza con frío, hambre y una ruta sin nombres",
     "blocks": [
       {
         "type": "p",
@@ -247,7 +247,7 @@ const PART2_CHAPTERS = [
     "part": 2,
     "number": "Capítulo 6",
     "title": "El valle de los pétalos",
-    "subtitle": "Parte II · El color que no pueden ver",
+    "subtitle": "Donde los pétalos anuncian ayuda antes de que aparezcan los Banditos",
     "blocks": [
       {
         "type": "p",
@@ -745,7 +745,7 @@ const PART2_CHAPTERS = [
     "part": 2,
     "number": "Capítulo 7",
     "title": "La marca de Nico",
-    "subtitle": "Parte II · El color que no pueden ver",
+    "subtitle": "Donde Nico convierte el contacto en una marca que sigue obedeciendo",
     "blocks": [
       {
         "type": "p",
@@ -1316,7 +1316,7 @@ const PART2_CHAPTERS = [
     "part": 2,
     "number": "Capítulo 8",
     "title": "Unalone",
-    "subtitle": "Parte II · El color que no pueden ver",
+    "subtitle": "Donde escapar del valle no basta para dejar de sentirse solo",
     "blocks": [
       {
         "type": "p",
@@ -1645,7 +1645,7 @@ const PART2_CHAPTERS = [
     "part": 2,
     "number": "Capítulo 9",
     "title": "El ciudadano recuperado",
-    "subtitle": "Parte II · El color que no pueden ver",
+    "subtitle": "Donde Dema recupera a Clancy y comienza a corregir su versión",
     "blocks": [
       {
         "type": "p",
@@ -2590,7 +2590,7 @@ const PART2_CHAPTERS = [
     "part": 2,
     "number": "Capítulo 10",
     "title": "Rostros prestados",
-    "subtitle": "Parte II · El color que no pueden ver",
+    "subtitle": "Donde Mara y James prestan rostros para abrir una salida imposible",
     "blocks": [
       {
         "type": "p",
@@ -3092,7 +3092,7 @@ const PART2_CHAPTERS = [
     "part": 2,
     "number": "Capítulo 11",
     "title": "Las rutas inferiores",
-    "subtitle": "Parte II · El color que no pueden ver",
+    "subtitle": "Donde las rutas bajo Dema revelan quién sigue dispuesto a responder",
     "blocks": [
       {
         "type": "p",
@@ -3731,7 +3731,7 @@ const PART2_CHAPTERS = [
     "part": 2,
     "number": "Capítulo 12",
     "title": "East Is Up",
-    "subtitle": "Parte II · El color que no pueden ver",
+    "subtitle": "Donde girar el mapa convierte la orientación en resistencia",
     "blocks": [
       {
         "type": "p",
@@ -4235,7 +4235,7 @@ const PART2_CHAPTERS = [
     "part": 2,
     "number": "Capítulo 13",
     "title": "Nico and the Niners",
-    "subtitle": "Parte II · El color que no pueden ver",
+    "subtitle": "Donde la plaza, la estatua y los Banditos abren una fuga ante toda Dema",
     "blocks": [
       {
         "type": "p",
@@ -4850,7 +4850,7 @@ const PART2_CHAPTERS = [
     "part": 2,
     "number": "Capítulo 14",
     "title": "Entre dos lugares",
-    "subtitle": "Parte II · El color que no pueden ver",
+    "subtitle": "Donde avanzar entre Dema y Trench exige elegir rutas sin promesas",
     "blocks": [
       {
         "type": "p",
@@ -5410,7 +5410,7 @@ const PART2_CHAPTERS = [
     "part": 2,
     "number": "Capítulo 15",
     "title": "La habitación bajo la piedra",
-    "subtitle": "Parte II · El color que no pueden ver",
+    "subtitle": "Donde el campamento convierte la supervivencia en una comunidad elegida",
     "blocks": [
       {
         "type": "p",
@@ -5849,7 +5849,7 @@ const PART2_CHAPTERS = [
     "part": 2,
     "number": "Capítulo 16",
     "title": "Levitate",
-    "subtitle": "Parte II · El color que no pueden ver",
+    "subtitle": "Donde una celebración y una canción terminan en una nueva captura",
     "blocks": [
       {
         "type": "p",
@@ -6264,7 +6264,7 @@ const PART2_CHAPTERS = [
     "part": 2,
     "number": "Capítulo 17",
     "title": "Por ahora, seguir vivos",
-    "subtitle": "Parte II · El color que no pueden ver",
+    "subtitle": "Donde Mara y James sostienen la resistencia después de perder a Clancy",
     "blocks": [
       {
         "type": "p",
@@ -6847,6 +6847,7 @@ const PART2_CHAPTERS = [
     "part": 2,
     "number": "Interludio",
     "title": "Mañana comenzamos",
+    "subtitle": "Donde una cámara se enciende y Dema prepara la siguiente versión",
     "blocks": [
       {
         "type": "scene",

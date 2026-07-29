@@ -635,22 +635,23 @@ body[data-active-part="3"][data-theme="paper"] .toc-backdrops::after {
   background-size: cover;
   transform: scale(1.04);
   transition: opacity 1.4s var(--ease);
-  will-change: opacity, transform;
+  will-change: auto;
 }
-.toc-backdrop[data-part="1"] {
+.toc-backdrop[data-part="1"][data-loaded="true"] {
   background-image: url("./assets/indice-parte-1.webp");
 }
-.toc-backdrop[data-part="2"] {
+.toc-backdrop[data-part="2"][data-loaded="true"] {
   background-image: url("./assets/indice-parte-2.webp");
   background-position: center 48%;
 }
-.toc-backdrop[data-part="3"] {
+.toc-backdrop[data-part="3"][data-loaded="true"] {
   background-image: url("./assets/indice-parte-3.webp");
   background-position: center 46%;
   filter: saturate(1.04);
 }
 .toc-backdrop.is-active {
   opacity: .58;
+  will-change: opacity, transform;
   animation: index-breathe 28s ease-in-out infinite alternate;
 }
 @keyframes index-breathe {
@@ -2216,7 +2217,7 @@ body[data-active-part="4"][data-theme="paper"] .view-toc {
   color: #f5faff;
   background: #06111d;
 }
-.toc-backdrop[data-part="4"] {
+.toc-backdrop[data-part="4"][data-loaded="true"] {
   background-image:
     linear-gradient(90deg, rgba(2,10,18,.92), rgba(4,18,31,.48) 55%, rgba(3,13,23,.78)),
     url("./assets/parte-4/habitacion-azul.webp");
@@ -2913,7 +2914,7 @@ body[data-active-part="4"][data-theme="paper"] .toc-backdrops {
   background: #e7eef3;
 }
 
-body[data-active-part="4"][data-theme="paper"] .toc-backdrop[data-part="4"] {
+body[data-active-part="4"][data-theme="paper"] .toc-backdrop[data-part="4"][data-loaded="true"] {
   filter: saturate(.38) contrast(.88) brightness(1.42);
 }
 
@@ -3133,3 +3134,43 @@ body[data-theme="paper"][data-reader-part="4"] .reader-signal-pulses span {
   background: rgba(219, 231, 239, .86);
 }
 
+
+
+/* Rendimiento: conserva las animaciones, pero difiere el trabajo fuera de pantalla. */
+.toc-item,
+.toc-item-extra,
+.library-volume {
+  content-visibility: auto;
+  contain-intrinsic-size: 320px;
+}
+
+.reader-case-file,
+.reader-signal,
+.reader-chronology,
+.dema-transmission,
+.pull-quote,
+.extras-module,
+.clancy-letter {
+  contain: layout paint;
+}
+
+.book-cover,
+.document-image,
+.dema-denied-figure img {
+  object-fit: cover;
+}
+
+@media (max-width: 720px) {
+  .toc-item,
+  .toc-item-extra,
+  .library-volume {
+    contain-intrinsic-size: 420px;
+  }
+}
+
+/* Las sinopsis del índice permanecen breves y en una sola línea. */
+.toc-chapter {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

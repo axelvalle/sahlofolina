@@ -129,18 +129,46 @@ test("extras do not replace the narrative resume and preferences control motion"
 });
 
 
-test("paper appearance preserves the visual identity of Parts III and IV", async () => {
+test("paper appearance is limited to the reader and preserves Parts III and IV", async () => {
   const styles = await read("styles.css");
   const app = await read("app.js");
   assert.match(styles, /TEMA PAPEL ADAPTATIVO · PARTES I–IV/);
   assert.match(styles, /body\[data-theme="paper"\]\[data-reader-part="3"\]/);
   assert.match(styles, /body\[data-theme="paper"\]\[data-reader-part="4"\]/);
-  assert.match(styles, /body\[data-active-part="4"\]\[data-theme="paper"\] \.view-cover/);
-  assert.match(styles, /body\[data-active-part="4"\]\[data-theme="paper"\] \.view-toc/);
   assert.match(styles, /body\[data-theme="paper"\]\[data-reader-chapter="interludio-cuenta-cancelada"\]/);
-  assert.match(app, /function updateThemeColor\(\)/);
+  assert.match(app, /document\.body\.dataset\.view === "reader" \? state\.settings\.theme : "dark"/);
+  assert.match(app, /body\.dataset\.preferredTheme = settings\.theme/);
   assert.match(app, /3: "#ffd9e8"/);
   assert.match(app, /4: "#e7eef3"/);
+});
+
+test("the shell defers heavy work and chapter subtitles are concise synopses", async () => {
+  const html = await read("index.html");
+  const app = await read("app.js");
+  const library = await read("library.js");
+  const styles = await read("styles.css");
+  assert.match(html, /<script defer src="\.\/content\/framework\/runtime\.js/);
+  assert.match(html, /display=swap/);
+  assert.match(app, /scheduleReadingProgress/);
+  assert.match(app, /registerServiceWorker/);
+  assert.match(library, /image\.loading = "lazy"/);
+  assert.doesNotMatch(library, /DOMContentLoaded", renderLibrary/);
+  assert.match(styles, /content-visibility: auto/);
+  assert.match(styles, /\.toc-chapter[\s\S]*white-space: nowrap/);
+
+  const context = { window: {}, console };
+  vm.createContext(context);
+  for (const file of [
+    "content/framework/runtime.js",
+    "content/parte-1/parte1.runtime.js",
+    "content/parte-2/parte2.runtime.js",
+    "content/parte-3/parte3.runtime.js",
+    "content/parte-4/parte4.runtime.js",
+    "content/extras/extras.runtime.js",
+  ]) vm.runInContext(await read(file), context, { filename: file });
+  for (const chapter of context.window.CHAPTERS.filter((item) => item.kind !== "extra")) {
+    assert.ok(typeof chapter.subtitle === "string" && chapter.subtitle.length >= 24 && chapter.subtitle.length <= 100, chapter.id);
+  }
 });
 
 test("security headers remain enabled for Next and Cloudflare", async () => {

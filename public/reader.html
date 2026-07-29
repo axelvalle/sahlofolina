@@ -18,10 +18,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Roboto:wght@100;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Roboto:wght@100;900&amp;display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css?v=20260729-paper-adaptive" />
+    <link rel="preload" as="image" href="./assets/cover-dema.webp" fetchpriority="high" />
+    <link rel="stylesheet" href="./styles.css?v=20260729-performance-r1" />
   </head>
   <body>
     <main id="view-cover" class="view view-cover is-active">
@@ -300,6 +301,7 @@
             <button data-value="dark">Noche</button>
             <button data-value="paper">Papel</button>
           </div>
+          <p class="setting-help">El tema Papel se aplica únicamente al lector; la portada, el índice y la Biblioteca permanecen en modo noche.</p>
         </div>
 
         <div class="setting-group">
@@ -316,14 +318,14 @@
     </aside>
     <div class="overlay" id="overlay" hidden></div>
 
-    <script src="./content/framework/runtime.js"></script>
-    <script src="./content/framework/routes.js"></script>
-    <script src="./content/parte-1/parte1.runtime.js"></script>
-    <script src="./content/parte-2/parte2.runtime.js"></script>
-    <script src="./content/parte-3/parte3.runtime.js"></script>
-    <script src="./content/parte-4/parte4.runtime.js"></script>
-    <script src="./content/extras/extras.runtime.js"></script>
-    <script src="./library.js"></script>
-    <script src="./app.js?v=20260729-paper-adaptive"></script>
+    <script defer src="./content/framework/runtime.js?v=20260729-performance-r1"></script>
+    <script defer src="./content/framework/routes.js?v=20260729-performance-r1"></script>
+    <script defer src="./content/parte-1/parte1.runtime.js?v=20260729-performance-r1"></script>
+    <script defer src="./content/parte-2/parte2.runtime.js?v=20260729-performance-r1"></script>
+    <script defer src="./content/parte-3/parte3.runtime.js?v=20260729-performance-r1"></script>
+    <script defer src="./content/parte-4/parte4.runtime.js?v=20260729-performance-r1"></script>
+    <script defer src="./content/extras/extras.runtime.js?v=20260729-performance-r1"></script>
+    <script defer src="./library.js?v=20260729-performance-r1"></script>
+    <script defer src="./app.js?v=20260729-performance-r1"></script>
   </body>
 </html>

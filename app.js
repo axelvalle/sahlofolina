@@ -74,6 +74,8 @@
   let disclaimerLastFocusedElement = null;
   let saveTimer = null;
   let lastAppliedRoute = "";
+  let progressFrame = null;
+  const readingMinutesCache = new Map();
 
   function loadState() {
     try {
@@ -192,10 +194,14 @@
   }
 
   function chapterMinutes(chapter) {
+    const key = chapter?.id || chapter?.title || "unknown";
+    if (readingMinutesCache.has(key)) return readingMinutesCache.get(key);
     const text = chapter.blocks
       .flatMap((block) => block.paragraphs || [block.text || ""])
       .join(" ");
-    return Math.max(1, Math.ceil(text.trim().split(/\s+/).length / 210));
+    const minutes = Math.max(1, Math.ceil(text.trim().split(/\s+/).length / 210));
+    readingMinutesCache.set(key, minutes);
+    return minutes;
   }
 
   function isNarrativeChapter(chapter) {
@@ -738,6 +744,20 @@
     return null;
   }
 
+  function effectiveTheme() {
+    return document.body.dataset.view === "reader" ? state.settings.theme : "dark";
+  }
+
+  function applyEffectiveTheme() {
+    document.body.dataset.theme = effectiveTheme();
+    updateThemeColor();
+  }
+
+  function preparePartBackdrop(part) {
+    const backdrop = document.querySelector(`.toc-backdrop[data-part="${part}"]`);
+    if (backdrop) backdrop.dataset.loaded = "true";
+  }
+
   function currentRoute() {
     return window.location.hash;
   }
@@ -785,7 +805,7 @@
     });
 
     document.body.dataset.view = viewId.replace("view-", "");
-    updateThemeColor();
+    applyEffectiveTheme();
     closeDrawer(false);
     window.scrollTo({ top: 0, behavior: "auto" });
   }
@@ -816,6 +836,7 @@
   }
 
   function goToTOC(options = {}) {
+    preparePartBackdrop(state.activePart);
     updatePartPresentation();
     renderTOC();
     document.title = `Índice · ${PARTS[state.activePart].indexTitle} — Sahlo Folina`;
@@ -1012,6 +1033,14 @@
     $("#toc-progress-bar").style.width = `${Math.round((count / narrativeIndexes.length) * 100)}%`;
   }
 
+  function scheduleReadingProgress() {
+    if (progressFrame !== null) return;
+    progressFrame = window.requestAnimationFrame(() => {
+      progressFrame = null;
+      updateReadingProgress();
+    });
+  }
+
   function updateReadingProgress() {
     if ($("#view-reader").hidden) return;
     const article = $("#reader");
@@ -1038,7 +1067,7 @@
       || Number(document.body.dataset.activePart)
       || state.activePart
       || 1;
-    const palette = state.settings.theme === "paper"
+    const palette = effectiveTheme() === "paper"
       ? { 1: "#e9e5d7", 2: "#e9e5d7", 3: "#ffd9e8", 4: "#e7eef3" }
       : { 1: "#0b0c0a", 2: "#0b0c0a", 3: "#081c30", 4: "#04101d" };
     meta.content = palette[contextPart] || palette[1];
@@ -1050,9 +1079,9 @@
     body.dataset.fontsize = settings.fontSize;
     body.dataset.linewidth = settings.lineWidth;
     body.dataset.fontfamily = settings.fontFamily;
-    body.dataset.theme = settings.theme;
+    body.dataset.preferredTheme = settings.theme;
     body.dataset.animations = settings.animations;
-    updateThemeColor();
+    applyEffectiveTheme();
 
     $$("[data-setting]").forEach((group) => {
       const key = group.dataset.setting;
@@ -1191,6 +1220,7 @@
         const part = Number(trigger.dataset.part);
         if (!PARTS[part]) break;
         state.activePart = part;
+        preparePartBackdrop(part);
         updatePartPresentation();
         renderTOC();
         document.title = `Índice · ${PARTS[part].indexTitle} — Sahlo Folina`;
@@ -1267,10 +1297,24 @@
       }
       if (event.key === "Escape" && !$("#settings-drawer").hidden) closeDrawer();
     });
-    window.addEventListener("scroll", updateReadingProgress, { passive: true });
-    window.addEventListener("resize", updateReadingProgress, { passive: true });
+    window.addEventListener("scroll", scheduleReadingProgress, { passive: true });
+    window.addEventListener("resize", scheduleReadingProgress, { passive: true });
     window.addEventListener("popstate", () => applyRouteFromLocation());
     window.addEventListener("hashchange", () => applyRouteFromLocation());
+  }
+
+  function registerServiceWorker() {
+    if (!("serviceWorker" in navigator)) return;
+    const secureContext = location.protocol === "https:" || ["localhost", "127.0.0.1"].includes(location.hostname);
+    if (!secureContext) return;
+    const register = () => navigator.serviceWorker
+      .register("./sw.js?v=20260729-performance-r1")
+      .catch((error) => console.warn("No se pudo registrar la caché offline.", error));
+    if ("requestIdleCallback" in window) {
+      window.requestIdleCallback(register, { timeout: 3000 });
+    } else {
+      window.setTimeout(register, 1200);
+    }
   }
 
   function init() {
@@ -1286,6 +1330,7 @@
     bindEvents();
     applyRouteFromLocation({ initial: true });
     requestAnimationFrame(maybeShowDisclaimer);
+    window.addEventListener("load", registerServiceWorker, { once: true });
   }
 
   if (document.readyState === "loading") {

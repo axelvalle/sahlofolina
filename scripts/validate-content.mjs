@@ -49,6 +49,8 @@ for (const [sourcePath, publicPath] of [
   ["styles.css", "public/styles.css"],
   ["library.js", "public/library.js"],
   ["library.html", "public/library.html"],
+  ["sw.js", "public/sw.js"],
+  ["_headers", "public/_headers"],
 ]) {
   if (sha256(await read(sourcePath)) !== sha256(await read(publicPath))) {
     throw new Error(`Shell público desincronizado: ${sourcePath}`);
@@ -140,6 +142,20 @@ if (/if \(part === 3\) return 3;/.test(appShell)) {
   throw new Error("El lector conserva el ruteo heredado que reclasifica la Parte IV como Parte I.");
 }
 
+const subtitlePattern = /^.{24,100}$/u;
+for (const chapter of chapters.filter((item) => item.kind !== "extra")) {
+  if (typeof chapter.subtitle !== "string" || !subtitlePattern.test(chapter.subtitle.trim())) {
+    throw new Error(`${chapter.id} necesita una sinopsis breve de una sola línea.`);
+  }
+}
+const shellHtml = await readText("index.html");
+if (!shellHtml.includes('defer src="./content/framework/runtime.js')) {
+  throw new Error("Los módulos de contenido deben cargarse con defer para evitar cascadas de red.");
+}
+if (!appShell.includes('document.body.dataset.view === "reader" ? state.settings.theme : "dark"')) {
+  throw new Error("El tema Papel debe limitarse al reader.");
+}
+
 const searchableFiles = [
   "index.html", "styles.css", "app.js", "library.js",
   canonical.part1, canonical.part2, canonical.part3, canonical.part4, canonical.extras,
@@ -169,6 +185,9 @@ for (const deprecated of [
 }
 
 const library = await readText("library.js");
+if (!library.includes('image.loading = "lazy"') || library.includes('document.addEventListener("DOMContentLoaded", renderLibrary')) {
+  throw new Error("La Biblioteca debe renderizarse bajo demanda y usar imágenes diferidas.");
+}
 for (const file of downloadsManifest.files) {
   if (!library.includes(file.name)) throw new Error(`La Biblioteca no publica ${file.name}.`);
 }
