@@ -8,7 +8,8 @@
   "scripts": {
     "content:sync": "node scripts/sync-content.mjs",
     "content:validate": "node scripts/validate-content.mjs",
-    "verify": "npm run content:sync && npm run content:validate && node --test tests/security.test.mjs",
+    "voices:audit": "node scripts/audit-voices.mjs",
+    "verify": "npm run content:sync && npm run content:validate && npm run voices:audit && node --test tests/security.test.mjs",
     "dev": "next dev",
     "prebuild": "npm run verify",
     "build": "next build",

@@ -10,8 +10,8 @@
       description: "La ciudad sin horizonte · El color que no pueden ver",
       cover: "./assets/library/partes-1-2-cover.webp",
       files: Object.freeze([
-        { format: "DOCX", size: "8.5 MB", file: "./downloads/Sahlo-Folina-Partes-I-y-II.docx" },
-        { format: "PDF", size: "2.0 MB", file: "./downloads/Sahlo-Folina-Partes-I-y-II.pdf" },
+        { format: "DOCX", size: "8.7 MB", file: "./downloads/Sahlo-Folina-Partes-I-y-II.docx?v=20260731-master" },
+        { format: "PDF", size: "2.1 MB", file: "./downloads/Sahlo-Folina-Partes-I-y-II.pdf?v=20260731-master" },
       ]),
     },
     {
@@ -21,8 +21,8 @@
       description: "Scaled and Icy · Livestream Experience · Saturday",
       cover: "./assets/library/parte-3-cover.webp",
       files: Object.freeze([
-        { format: "DOCX", size: "7.5 MB", file: "./downloads/Sahlo-Folina-Parte-III.docx?v=canonical" },
-        { format: "PDF", size: "3.3 MB", file: "./downloads/Sahlo-Folina-Parte-III.pdf?v=canonical" },
+        { format: "DOCX", size: "5.4 MB", file: "./downloads/Sahlo-Folina-Parte-III.docx?v=20260731-master" },
+        { format: "PDF", size: "3.4 MB", file: "./downloads/Sahlo-Folina-Parte-III.pdf?v=20260731-master" },
       ]),
     },
     {
@@ -32,8 +32,8 @@
       description: "No Chances · La torre 9-E · East Is Up Again",
       cover: "./assets/library/parte-4-cover.webp",
       files: Object.freeze([
-        { format: "DOCX", size: "2.3 MB", file: "./downloads/Sahlo-Folina-Parte-IV.docx?v=20260730-canonical" },
-        { format: "PDF", size: "1.1 MB", file: "./downloads/Sahlo-Folina-Parte-IV.pdf?v=20260730-canonical" },
+        { format: "DOCX", size: "2.6 MB", file: "./downloads/Sahlo-Folina-Parte-IV.docx?v=20260731-master" },
+        { format: "PDF", size: "1.1 MB", file: "./downloads/Sahlo-Folina-Parte-IV.pdf?v=20260731-master" },
       ]),
     },
     {
@@ -43,8 +43,8 @@
       description: "The Outside · Overcompensate · Navigating · Paladin Strait",
       cover: "./assets/library/parte-5-cover.webp",
       files: Object.freeze([
-        { format: "DOCX", size: "12.1 MB", file: "./downloads/Sahlo-Folina-Parte-V.docx?v=20260730-canonical" },
-        { format: "PDF", size: "5.3 MB", file: "./downloads/Sahlo-Folina-Parte-V.pdf?v=20260730-canonical" },
+        { format: "DOCX", size: "12.6 MB", file: "./downloads/Sahlo-Folina-Parte-V.docx?v=20260731-master" },
+        { format: "PDF", size: "2.3 MB", file: "./downloads/Sahlo-Folina-Parte-V.pdf?v=20260731-master" },
       ]),
     },
   ]);

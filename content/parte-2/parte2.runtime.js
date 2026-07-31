@@ -1,5 +1,5 @@
 // Parte II de Sahlo Folina.
-// Módulo canónico registrado mediante content/framework/runtime.js.
+// Edición literaria maestra definitiva, consolidada en el website.
 
 const PART2_CHAPTERS = [
   {
@@ -13,7 +13,7 @@ const PART2_CHAPTERS = [
       "title": "El color",
       "subtitle": "que no pueden ver",
       "lead": "Cruzar los muros no basta: también hay que aprender a elegir en el exterior.",
-      "location": "Trench, después de la primera salida de Dema.",
+      "location": "Trench, las tres primeras noches fuera de Dema.",
       "background": "./assets/cover-trench.webp"
     },
     "blocks": [
@@ -1250,7 +1250,7 @@ const PART2_CHAPTERS = [
       {
         "type": "speech",
         "text": "—¿Esto es otra prueba?",
-        "who": "Nico"
+        "who": "Clancy"
       },
       {
         "type": "speech",
@@ -1328,7 +1328,7 @@ const PART2_CHAPTERS = [
     "blocks": [
       {
         "type": "p",
-        "text": "El primer día después del valle caminé como si alguien estuviera tirando de una cuerda atada a mi garganta."
+        "text": "El primer día después del valle, cada paso tiró de una cuerda invisible anudada a mi garganta."
       },
       {
         "type": "p",
@@ -1452,7 +1452,7 @@ const PART2_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Pero Nico había conseguido que recordara la escena como si todos hubieran observado a un desconocido."
+        "text": "Nico había desplazado mi recuerdo hasta dejarme fuera de mi propio cuerpo: los Banditos parecían observar a un desconocido y yo aceptaba la distancia porque dolía menos."
       },
       {
         "type": "p",
@@ -1566,7 +1566,7 @@ const PART2_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Keons se acercó despacio, como si pudiera asustarme. No levantó las manos hasta que estuvo frente a mí. Después me rodeó con los brazos."
+        "text": "Keons se acercó despacio. Mantuvo las manos visibles hasta quedar frente a mí; solo entonces me rodeó con los brazos."
       },
       {
         "type": "p",
@@ -2173,7 +2173,7 @@ const PART2_CHAPTERS = [
       {
         "type": "speech",
         "text": "—Arriba.",
-        "who": "James"
+        "who": "Keons"
       },
       {
         "type": "p",
@@ -2219,7 +2219,7 @@ const PART2_CHAPTERS = [
       {
         "type": "speech",
         "text": "—Sí, pero todavía tengo miedo. Las dos cosas pueden ocurrir al mismo tiempo.",
-        "who": "James"
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -2395,7 +2395,7 @@ const PART2_CHAPTERS = [
       {
         "type": "speech",
         "text": "—No necesitamos entenderlo todo para saber que están preparando algo.",
-        "who": "Mara"
+        "who": "Clancy"
       },
       {
         "type": "speech",
@@ -2542,7 +2542,7 @@ const PART2_CHAPTERS = [
       {
         "type": "speech",
         "text": "—Van a mover a todos los guardias hacia la plaza.",
-        "who": "Mara"
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -2690,6 +2690,77 @@ const PART2_CHAPTERS = [
       {
         "type": "p",
         "text": "Durante varios días practicamos dentro de la habitación."
+      },
+      {
+        "type": "p",
+        "text": "El uniforme funerario fue el primero que Mara me hizo repetir."
+      },
+      {
+        "type": "p",
+        "text": "Me colocó una chaqueta gris, ajustó la placa bajo el pecho y me indicó que caminara hasta la puerta sin levantar la vista. Lo hice demasiado rápido."
+      },
+      {
+        "type": "speech",
+        "text": "—Otra vez.",
+        "who": "Clancy"
+      },
+      {
+        "type": "p",
+        "text": "Repetí el recorrido. Al llegar a la mesa, junté las manos detrás de la espalda porque había visto hacerlo a los asistentes de la necrópolis."
+      },
+      {
+        "type": "p",
+        "text": "Mara dejó de respirar."
+      },
+      {
+        "type": "speech",
+        "text": "—¿Qué hice?",
+        "who": "Clancy"
+      },
+      {
+        "type": "p",
+        "text": "No respondió. Sus dedos tocaron el borde de la placa."
+      },
+      {
+        "type": "speech",
+        "text": "—Elias llevaba esa chaqueta la última mañana que salió de casa.",
+        "who": "Mara"
+      },
+      {
+        "type": "p",
+        "text": "Empecé a quitármela."
+      },
+      {
+        "type": "speech",
+        "text": "—No —dijo Mara.",
+        "who": "Mara"
+      },
+      {
+        "type": "speech",
+        "text": "—No tienes que verme con esto.",
+        "who": "Nico"
+      },
+      {
+        "type": "speech",
+        "text": "—Sí tengo. Si no puedo soportar una tela, Dema seguirá decidiendo qué recuerdos puedo usar.",
+        "who": "Clancy"
+      },
+      {
+        "type": "p",
+        "text": "Me cerró el cuello con más fuerza de la necesaria."
+      },
+      {
+        "type": "speech",
+        "text": "—Pero no pongas las manos así. Elias lo hacía cuando estaba fingiendo que no tenía miedo.",
+        "who": "Clancy"
+      },
+      {
+        "type": "p",
+        "text": "Las bajé."
+      },
+      {
+        "type": "p",
+        "text": "A partir de entonces Mara no corrigió solo mi postura. Corrigió las pequeñas mentiras que cada uniforme exigía: dónde guardar el cansancio, cuándo parecer invisible y qué parte del cuerpo delataba que una función todavía contenía a una persona."
       },
       {
         "type": "p",
@@ -3029,7 +3100,7 @@ const PART2_CHAPTERS = [
       {
         "type": "speech",
         "text": "—Las líneas de los nueve distritos se cruzan aquí —dijo—. Por eso la estatua está en el centro. No solo es un símbolo. Es un nodo.",
-        "who": "James"
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -3379,8 +3450,9 @@ const PART2_CHAPTERS = [
         "text": "Un golpe resonó desde el túnel oriental."
       },
       {
-        "type": "p",
-        "text": "Dos."
+        "type": "epigraph",
+        "text": "Dos.",
+        "attr": ""
       },
       {
         "type": "p",
@@ -3395,8 +3467,9 @@ const PART2_CHAPTERS = [
         "text": "Pausa."
       },
       {
-        "type": "p",
-        "text": "Dos."
+        "type": "epigraph",
+        "text": "Dos.",
+        "attr": ""
       },
       {
         "type": "p",
@@ -3470,8 +3543,9 @@ const PART2_CHAPTERS = [
         "who": "Clancy"
       },
       {
-        "type": "p",
-        "text": "Un hombre mayor cargaba mapas enrollados y una bolsa de herramientas. Se llamaba Bram. Dos Banditos más guiaban a tres jóvenes de Dema que habían escapado por otra ruta."
+        "type": "epigraph",
+        "text": "Un hombre mayor cargaba mapas enrollados y una bolsa de herramientas. Se llamaba Bram. Dos Banditos más guiaban a tres jóvenes de Dema que habían escapado por otra ruta.",
+        "attr": ""
       },
       {
         "type": "p",
@@ -3535,7 +3609,7 @@ const PART2_CHAPTERS = [
       {
         "type": "speech",
         "text": "—En el valle.",
-        "who": "Clancy"
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -4770,15 +4844,262 @@ const PART2_CHAPTERS = [
       },
       {
         "type": "p",
+        "text": "Dema, la noche de Nico and the Niners."
+      },
+      {
+        "type": "p",
         "text": "Mara esperó hasta que los últimos guardias abandonaron la base."
       },
       {
         "type": "p",
-        "text": "James estaba dentro del brazo izquierdo de la estatua. Había subido por una escalera estrecha y abierto una cámara detrás de la piedra. Mara le pasó la bolsa con el uniforme de Clancy, la capa gris y la identificación del Archivo de Permanencia."
+        "text": "La plaza conservaba el olor de las antorchas apagadas y de la lluvia sobre la piedra. Desde los altavoces, una voz pedía calma mientras patrullas enteras descendían a los conductos por los que Clancy acababa de escapar."
+      },
+      {
+        "type": "p",
+        "text": "James estaba dentro del brazo izquierdo de la estatua. Había subido por una escalera estrecha y abierto una cámara detrás de la piedra. Cuando Mara le pasó la bolsa con el uniforme de Clancy, la capa gris y la identificación del Archivo de Permanencia, él tuvo que recibirla con ambas manos."
       },
       {
         "type": "speech",
-        "text": "—Van a revisar los conductos —dijo ella.",
+        "text": "—Pesa demasiado —dijo.",
+        "who": "Mara"
+      },
+      {
+        "type": "speech",
+        "text": "—Es ropa.",
+        "who": "Mara"
+      },
+      {
+        "type": "speech",
+        "text": "—También dijiste eso de las cartas.",
+        "who": "James"
+      },
+      {
+        "type": "p",
+        "text": "James empujó la bolsa hasta el fondo de la cavidad. Junto a ella colocó la copia de la carta de Elias y una cinta amarilla."
+      },
+      {
+        "type": "p",
+        "text": "Mara abrió otra vez la bolsa."
+      },
+      {
+        "type": "p",
+        "text": "En el puño del uniforme había una mancha oscura. Sangre seca, barro o ambos. Sacó un paño y empezó a frotarla."
+      },
+      {
+        "type": "speech",
+        "text": "—Déjala —dijo James.",
+        "who": "James"
+      },
+      {
+        "type": "speech",
+        "text": "—Pueden rastrearla.",
+        "who": "Lena"
+      },
+      {
+        "type": "speech",
+        "text": "—Todo lo que estamos guardando puede rastrearse.",
+        "who": "James"
+      },
+      {
+        "type": "p",
+        "text": "Mara frotó con más fuerza. La tela húmeda raspó sus nudillos."
+      },
+      {
+        "type": "speech",
+        "text": "—No sé si es de Clancy.",
+        "who": "Clancy"
+      },
+      {
+        "type": "speech",
+        "text": "—Entonces no la borres.",
+        "who": "Mara"
+      },
+      {
+        "type": "speech",
+        "text": "—Si la dejo, es evidencia.",
+        "who": "Mara"
+      },
+      {
+        "type": "speech",
+        "text": "—Ese es el propósito.",
+        "who": "Bram"
+      },
+      {
+        "type": "speech",
+        "text": "—No me refiero a ellos.",
+        "who": "Mara"
+      },
+      {
+        "type": "p",
+        "text": "James dejó de ajustar el cierre de piedra."
+      },
+      {
+        "type": "p",
+        "text": "Mara observó la mancha. Si pertenecía a Clancy, demostraría que había pasado por allí. Si no le pertenecía, guardaría la sangre de alguien a quien quizá nunca conocerían. En ambos casos, limpiarla se parecía demasiado al trabajo que realizaba cada día en el Archivo: retirar lo que estorbaba hasta que una historia pudiera presentarse sin incomodidad."
+      },
+      {
+        "type": "p",
+        "text": "Soltó el paño."
+      },
+      {
+        "type": "speech",
+        "text": "—Le diste la herramienta —dijo.",
+        "who": "Mara"
+      },
+      {
+        "type": "p",
+        "text": "James no preguntó cuál."
+      },
+      {
+        "type": "speech",
+        "text": "—Sí.",
+        "who": "Funcionario"
+      },
+      {
+        "type": "speech",
+        "text": "—Sabías que iba a irse.",
+        "who": "Mara"
+      },
+      {
+        "type": "speech",
+        "text": "—Sabía que intentaría abrir el vehículo.",
+        "who": "James"
+      },
+      {
+        "type": "speech",
+        "text": "—No me dijiste nada.",
+        "who": "Mara"
+      },
+      {
+        "type": "speech",
+        "text": "—Él te lo dijo.",
+        "who": "Nico"
+      },
+      {
+        "type": "speech",
+        "text": "—La noche anterior. Cuando ya no podía detenerlo sin entregarlo.",
+        "who": "Mara"
+      },
+      {
+        "type": "p",
+        "text": "James se sentó sobre el borde de la cámara. Tenía una cortada en la palma y la sangre se mezclaba con la grasa de los mecanismos."
+      },
+      {
+        "type": "speech",
+        "text": "—No quería obligarte a despedirte antes de tiempo.",
+        "who": "Clancy"
+      },
+      {
+        "type": "p",
+        "text": "Mara lanzó el paño contra la piedra."
+      },
+      {
+        "type": "speech",
+        "text": "—No decides eso por mí.",
+        "who": "Mara"
+      },
+      {
+        "type": "speech",
+        "text": "—Lo sé.",
+        "who": "Clancy"
+      },
+      {
+        "type": "speech",
+        "text": "—No, James. Lo sabes después. Siempre construyes una puerta, la cierras y luego explicas por qué era la única forma de mantenernos vivos.",
+        "who": "Mara"
+      },
+      {
+        "type": "speech",
+        "text": "—Las puertas se pueden reparar.",
+        "who": "Multitud"
+      },
+      {
+        "type": "speech",
+        "text": "—¿Y las personas?",
+        "who": "James"
+      },
+      {
+        "type": "p",
+        "text": "James abrió la boca. No encontró una respuesta técnica lo bastante pequeña para esconderse dentro de ella."
+      },
+      {
+        "type": "p",
+        "text": "Mara señaló su mano."
+      },
+      {
+        "type": "speech",
+        "text": "—Te está temblando.",
+        "who": "Mara"
+      },
+      {
+        "type": "speech",
+        "text": "—Perdí sangre.",
+        "who": "James"
+      },
+      {
+        "type": "speech",
+        "text": "—Mientes peor que Clancy.",
+        "who": "Mara"
+      },
+      {
+        "type": "p",
+        "text": "La frase debería haber sido una broma. Ninguno se rió."
+      },
+      {
+        "type": "p",
+        "text": "Desde abajo llegó una orden. Los guardias revisarían la base oriental. Tenían minutos."
+      },
+      {
+        "type": "p",
+        "text": "James tomó el paño que Mara había arrojado y envolvió su palma."
+      },
+      {
+        "type": "speech",
+        "text": "—¿Querías ir con él? —preguntó.",
+        "who": "Lena"
+      },
+      {
+        "type": "p",
+        "text": "Mara tardó en responder."
+      },
+      {
+        "type": "speech",
+        "text": "—Quería que me lo pidiera antes de tener listo el camino. Quería poder decirle que no. Quería odiarlo por irse y no por haberme dejado sin una decisión.",
+        "who": "Mara"
+      },
+      {
+        "type": "p",
+        "text": "La voz se le rompió. Intentó continuar y solo salió aire."
+      },
+      {
+        "type": "p",
+        "text": "Mara se cubrió la boca con una mano. Durante doce días había llorado por Elias en horarios aprobados, frente a cámaras, junto a un monumento que utilizaba una frase falsa. Aquella vez el llanto no obedeció ninguna ceremonia. Le dobló la espalda y le quitó el equilibrio dentro de la cámara estrecha."
+      },
+      {
+        "type": "p",
+        "text": "James no le dijo que respirara. No convirtió el momento en un procedimiento. Se acercó despacio y apoyó el hombro contra el suyo."
+      },
+      {
+        "type": "speech",
+        "text": "—Estaba enojada con Elias —dijo Mara cuando pudo hablar—. Por marcharse primero en su cabeza y dejarme aquí con el cuerpo. Y después Clancy encontró una salida y yo volví a quedarme. Empiezo a pensar que todos los hombres que quiero terminan convirtiéndome en la persona que guarda lo que dejaron.",
+        "who": "Mara"
+      },
+      {
+        "type": "p",
+        "text": "James sostuvo la mirada en la bolsa."
+      },
+      {
+        "type": "speech",
+        "text": "—Entonces no lo guardes sola.",
+        "who": "Mara"
+      },
+      {
+        "type": "p",
+        "text": "Mara apoyó la frente sobre su hombro. Permanecieron así hasta que los pasos de una patrulla cruzaron la base de la estatua."
+      },
+      {
+        "type": "speech",
+        "text": "—Van a revisar los conductos —susurró ella.",
         "who": "Mara"
       },
       {
@@ -4787,12 +5108,22 @@ const PART2_CHAPTERS = [
         "who": "James"
       },
       {
-        "type": "p",
-        "text": "James empujó la bolsa hasta el fondo de la cavidad. Junto a ella colocó la copia de la carta de Elias y una cinta amarilla."
+        "type": "speech",
+        "text": "—Eso dijiste antes.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—¿Por qué guardar la ropa? —preguntó Mara.",
+        "text": "—Esta vez conté los guardias.",
+        "who": "James"
+      },
+      {
+        "type": "p",
+        "text": "Mara se separó. Tomó el paño, pero no volvió a frotar la mancha. Lo dobló y lo guardó junto al uniforme."
+      },
+      {
+        "type": "speech",
+        "text": "—¿Por qué guardar la ropa? —preguntó, aunque ya conocía parte de la respuesta.",
         "who": "Mara"
       },
       {
@@ -4802,7 +5133,7 @@ const PART2_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Cerró la piedra."
+        "text": "James cerró la piedra."
       },
       {
         "type": "speech",
@@ -4820,6 +5151,16 @@ const PART2_CHAPTERS = [
         "who": "James"
       },
       {
+        "type": "speech",
+        "text": "—Nos van a encontrar algún día.",
+        "who": "James"
+      },
+      {
+        "type": "speech",
+        "text": "—Entonces será mejor que encuentren más de una versión.",
+        "who": "James"
+      },
+      {
         "type": "p",
         "text": "Abajo, los ocho obispos rodearon a Nico. La túnica de Keons estaba húmeda y tenía polvo en las mangas. Nico le dijo algo que Mara no alcanzó a escuchar."
       },
@@ -4833,11 +5174,7 @@ const PART2_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Durante años Mara había pensado que representaba entrega."
-      },
-      {
-        "type": "p",
-        "text": "Esa noche decidió que también podía representar una señal."
+        "text": "Durante años Mara había pensado que representaba entrega. Aquella noche decidió que también podía representar una señal."
       },
       {
         "type": "p",
@@ -5101,7 +5438,7 @@ const PART2_CHAPTERS = [
       {
         "type": "speech",
         "text": "—Todo aquí parece ser una historia.",
-        "who": "Clancy"
+        "who": "Lena"
       },
       {
         "type": "speech",
@@ -5355,7 +5692,7 @@ const PART2_CHAPTERS = [
       {
         "type": "speech",
         "text": "—Sí.",
-        "who": "Torchbearer"
+        "who": "Clancy"
       },
       {
         "type": "speech",
@@ -5500,6 +5837,90 @@ const PART2_CHAPTERS = [
       },
       {
         "type": "p",
+        "text": "La primera comida llegó en un cuenco de metal. Era un guiso espeso de raíces, cebolla y algo que Lena llamó carne solo después de que yo preguntara dos veces."
+      },
+      {
+        "type": "p",
+        "text": "El vapor me golpeó la cara. Había pasado tantos días comiendo pan seco que el olor me produjo náuseas antes que hambre."
+      },
+      {
+        "type": "speech",
+        "text": "—Despacio —dijo Lena.",
+        "who": "Lena"
+      },
+      {
+        "type": "p",
+        "text": "Sostuve la cuchara. La mano empezó a temblarme y una parte del caldo cayó sobre la mesa."
+      },
+      {
+        "type": "speech",
+        "text": "—Puedo comer solo.",
+        "who": "Bram"
+      },
+      {
+        "type": "speech",
+        "text": "—No dije lo contrario.",
+        "who": "Torchbearer"
+      },
+      {
+        "type": "p",
+        "text": "La primera cucharada estaba demasiado caliente. Me quemó la lengua y, aun así, la retuve en la boca porque no quería devolverla delante de todos. La cebolla crujió entre los dientes. El sabor era tan sencillo que me recordó una mañana en Dema: Mara robando una rodaja del puesto de verduras, James asegurando que el olor bastaría para denunciarla y Elias riéndose antes de que la vigilia le enseñara a hacerlo en silencio."
+      },
+      {
+        "type": "p",
+        "text": "Tuve que dejar la cuchara."
+      },
+      {
+        "type": "p",
+        "text": "Lena empujó una taza de agua hacia mí."
+      },
+      {
+        "type": "speech",
+        "text": "—No tienes que terminar.",
+        "who": "Lena"
+      },
+      {
+        "type": "speech",
+        "text": "—No estoy llorando por la sopa.",
+        "who": "Bram"
+      },
+      {
+        "type": "p",
+        "text": "Probó su propio cuenco y torció la boca."
+      },
+      {
+        "type": "speech",
+        "text": "—Me alegra. Es una sopa terrible.",
+        "who": "Clancy"
+      },
+      {
+        "type": "p",
+        "text": "Torchbearer se sentó al otro lado con un trozo de pan."
+      },
+      {
+        "type": "speech",
+        "text": "—Le falta sal.",
+        "who": "Clancy"
+      },
+      {
+        "type": "speech",
+        "text": "—Le sobra tu opinión —respondió Lena.",
+        "who": "Lena"
+      },
+      {
+        "type": "p",
+        "text": "La discusión continuó mientras yo volvía a comer. Nadie me observó para comprobar si estaba agradecido, recuperado o suficientemente fuerte. Cuando la mano tembló otra vez, Lena sostuvo el borde del cuenco sin quitármelo."
+      },
+      {
+        "type": "p",
+        "text": "Terminé la mitad."
+      },
+      {
+        "type": "p",
+        "text": "Esa noche comprendí que un refugio también podía ser una mesa donde nadie convertía el hambre en una lección."
+      },
+      {
+        "type": "p",
         "text": "Torchbearer se sentó frente a mí."
       },
       {
@@ -5549,7 +5970,7 @@ const PART2_CHAPTERS = [
       {
         "type": "speech",
         "text": "—Sí.",
-        "who": "Torchbearer"
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -5869,7 +6290,7 @@ const PART2_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Los Banditos respondieron con pasos, palmas y movimientos de brazos. No seguían una coreografía exacta. Cada grupo conocía una parte del ritmo y la completaba con los demás. Los niños corrían entre las fogatas. Lena discutía con alguien mientras marcaba el compás con el pie. Bram mantenía el mapa de Dema abierto sobre una mesa, como si incluso una celebración debiera recordar por qué existía."
+        "text": "Los Banditos respondieron con pasos, palmas y movimientos de brazos. No seguían una coreografía exacta. Cada grupo conocía una parte del ritmo y la completaba con los demás. Los niños corrían entre las fogatas. Lena discutía con alguien mientras marcaba el compás con el pie. Bram mantenía el mapa de Dema abierto sobre una mesa. Incluso durante la celebración, una piedra sujetaba cada esquina para que el viento no borrara la razón por la que estaban allí."
       },
       {
         "type": "p",
@@ -5885,11 +6306,11 @@ const PART2_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "La sensación era ligera."
+        "text": "La ligereza duró apenas unos minutos, pero mi cuerpo la reconoció antes que mi pensamiento."
       },
       {
         "type": "p",
-        "text": "Como si el ritmo pudiera sostenerme por encima del miedo."
+        "text": "El ritmo no me elevó por encima del miedo; lo repartió entre demasiadas manos para que pudiera aplastarme a solas."
       },
       {
         "type": "p",
@@ -5971,7 +6392,7 @@ const PART2_CHAPTERS = [
       {
         "type": "speech",
         "text": "—No.",
-        "who": "Bram"
+        "who": "Clancy"
       },
       {
         "type": "speech",
@@ -5981,7 +6402,7 @@ const PART2_CHAPTERS = [
       {
         "type": "speech",
         "text": "—Dema usa todo lo que puede nombrar. Eso no significa que le pertenezca.",
-        "who": "Bram"
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -6231,7 +6652,7 @@ const PART2_CHAPTERS = [
       {
         "type": "speech",
         "text": "—Ahora comprendes —dijo—. No perteneces a ellos.",
-        "who": "Nico"
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -6391,7 +6812,7 @@ const PART2_CHAPTERS = [
       {
         "type": "speech",
         "text": "—¿Entonces?",
-        "who": "Mara"
+        "who": "James"
       },
       {
         "type": "p",
@@ -6433,7 +6854,7 @@ const PART2_CHAPTERS = [
       {
         "type": "speech",
         "text": "—Sí tengo. Dema convierte cualquier permanencia en obediencia. Necesito saber que quedarme también puede ser una decisión.",
-        "who": "Mara"
+        "who": "James"
       },
       {
         "type": "p",
@@ -6514,6 +6935,33 @@ const PART2_CHAPTERS = [
         "type": "speech",
         "text": "—Nico lo tomó en el campamento.",
         "who": "James"
+      },
+      {
+        "type": "p",
+        "text": "Mara apoyó una mano sobre la piedra. La cámara pareció inclinarse. Había pasado horas preparándose para una muerte posible y ninguna para la idea de que Clancy regresara vivo a las mismas manos."
+      },
+      {
+        "type": "p",
+        "text": "James buscó una respuesta dentro del receptor, golpeó el costado y volvió a escuchar. El aparato solo devolvió estática."
+      },
+      {
+        "type": "speech",
+        "text": "—No lo golpees —dijo Mara.",
+        "who": "Mara"
+      },
+      {
+        "type": "speech",
+        "text": "—No estoy golpeándolo. Estoy descartando una falla de contacto.",
+        "who": "Mara"
+      },
+      {
+        "type": "speech",
+        "text": "—Te conozco.",
+        "who": "Mara"
+      },
+      {
+        "type": "p",
+        "text": "James dejó el receptor. Los dos permanecieron en silencio hasta que la llama consumió una gota de aceite y el olor amargo llenó la cámara."
       },
       {
         "type": "p",
@@ -6841,10 +7289,6 @@ const PART2_CHAPTERS = [
       {
         "type": "p",
         "text": "La brasa volvió a crecer."
-      },
-      {
-        "type": "scene",
-        "text": "· · ·"
       }
     ]
   },
@@ -6868,6 +7312,10 @@ const PART2_CHAPTERS = [
       {
         "type": "p",
         "text": "Clancy abrió los ojos. No vio a Nico. Solo distinguió dos siluetas inmóviles junto a una cámara apagada y una pantalla que todavía no mostraba nada."
+      },
+      {
+        "type": "p",
+        "text": "Una voz amable llegó desde un altavoz:"
       },
       {
         "type": "speech",

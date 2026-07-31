@@ -1,5 +1,5 @@
-// Parte III de Sahlo Folina.
-// Edición canónica consolidada registrada mediante content/framework/runtime.js.
+// Parte 3 de Sahlo Folina.
+// Edición literaria maestra definitiva, consolidada en el website.
 
 const PART3_CHAPTERS = [
   {
@@ -13,7 +13,7 @@ const PART3_CHAPTERS = [
       "title": "La ciudad",
       "subtitle": "aprende a sonreír",
       "lead": "Dema no necesita borrar una historia si consigue convertirla en entretenimiento.",
-      "location": "Dema, dentro de una vida fabricada para las cámaras.",
+      "location": "Dema, inmediatamente después de la recaptura de Clancy.",
       "background": "./assets/cover-sai parte 3.webp"
     },
     "blocks": [
@@ -23,11 +23,15 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "No reconocí la canción. Era una melodía sencilla, compuesta por cuatro notas que regresaban siempre al mismo lugar, como si el resto de la música hubiera sido recortado. La voz pertenecía a Mara."
+        "text": "No reconocí la canción. Cuatro notas avanzaban hasta el borde de una melodía y la cuarta devolvía todo al principio. La voz pertenecía a Mara."
       },
       {
         "type": "p",
         "text": "Durante unos segundos no abrí los ojos."
+      },
+      {
+        "type": "p",
+        "text": "Tenía la boca seca. Las muñecas conservaban marcas violetas bajo las vendas y, cada vez que tragaba, el lado izquierdo del cuello respondía con una punzada. El cuerpo recordaba la recaptura, aunque la habitación intentara negarla."
       },
       {
         "type": "p",
@@ -63,7 +67,7 @@ const PART3_CHAPTERS = [
         "text": "En la primera, Mara, James y yo sonreíamos frente a la estatua de los brazos levantados. La piedra estaba pintada con colores suaves y cubierta de flores. En la segunda, los tres aparecíamos sentados en una mesa del Archivo de Permanencia. En la tercera, yo levantaba una taza hacia la cámara mientras una frase impresa debajo decía:"
       },
       {
-        "type": "p",
+        "type": "transmission",
         "text": "REGRESAR TAMBIÉN ES AVANZAR."
       },
       {
@@ -84,7 +88,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Puse los pies en el suelo. El piso estaba tibio. Caminé hasta la fotografía del Archivo y la retiré de la pared. El marco pesaba menos de lo que debía. La imagen no tenía vidrio. La superficie era una lámina impresa y pegada sobre cartón."
+        "text": "Puse los pies en el suelo. El piso estaba tibio, demasiado tibio para una casa de Dema. El calor subió por las plantas de mis pies y me dejó más consciente de que no llevaba zapatos. Caminé hasta la fotografía del Archivo y la retiré de la pared. El marco pesaba menos de lo que debía. La imagen no tenía vidrio. La superficie era una lámina impresa y pegada sobre cartón."
       },
       {
         "type": "p",
@@ -232,6 +236,10 @@ const PART3_CHAPTERS = [
       {
         "type": "p",
         "text": "Mara colocó el vaso frente a mí."
+      },
+      {
+        "type": "p",
+        "text": "El agua olía a metal limpio. Bebí apenas un sorbo. La lengua seguía hinchada y el líquido me dolió al bajar, pero Mara observó el movimiento como una amiga antes de recordar que también era parte de una toma."
       },
       {
         "type": "speech",
@@ -887,12 +895,12 @@ const PART3_CHAPTERS = [
         "text": "Debajo apareció un texto:"
       },
       {
-        "type": "transmission",
-        "text": "CLANCY REGRESA A CASA"
-      },
-      {
-        "type": "transmission",
-        "text": "PRÓXIMAMENTE: SU HISTORIA, EN SUS PROPIAS PALABRAS"
+        "type": "case-file",
+        "label": "ARCHIVO // REGISTRO INTERNO",
+        "rows": [
+          "CLANCY REGRESA A CASA",
+          "PRÓXIMAMENTE: SU HISTORIA, EN SUS PROPIAS PALABRAS"
+        ]
       },
       {
         "type": "p",
@@ -1239,7 +1247,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Clancy —dijo—, soy Sally Sacarver. Él es Dan Lisden. Vamos a ayudarte a contar tu historia. La voz salió limpia, pero su pecho no acompañó la frase con un movimiento que yo pudiera ver.",
+        "text": "—Clancy —dijo la mujer—, soy Sally Sacarver. Él es Dan Lisden. Vamos a devolverte una historia que la ciudad pueda abrazar. Su voz ofrecía calor; su pecho no acompañó la frase con un movimiento que yo pudiera ver.",
         "who": "Sally"
       },
       {
@@ -1247,9 +1255,8 @@ const PART3_CHAPTERS = [
         "text": "Dan levantó una mano. El gesto se detuvo en un ángulo exacto, como si alguien hubiera decidido dónde debía terminar."
       },
       {
-        "type": "speech",
-        "text": "—En tus propias palabras.",
-        "who": "Dan"
+        "type": "p",
+        "text": "Dan alineó tres tarjetas contra el borde de la mesa. —En tus propias palabras, dentro del tiempo asignado."
       },
       {
         "type": "p",
@@ -1266,7 +1273,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Personas que creen en las segundas oportunidades.",
+        "text": "—Personas que creen que nadie debería quedar reducido a su peor día —respondió Sally. La sonrisa apareció exactamente al final de la frase.",
         "who": "Sally"
       },
       {
@@ -1279,9 +1286,8 @@ const PART3_CHAPTERS = [
         "text": "Dan consultó una tarjeta."
       },
       {
-        "type": "speech",
-        "text": "—Es importante que evitemos vocabulario que pueda reactivar la confusión.",
-        "who": "Dan"
+        "type": "p",
+        "text": "Dan consultó la primera tarjeta. —El término no está aprobado. Puede reactivar la confusión y extender el segmento."
       },
       {
         "type": "speech",
@@ -1310,16 +1316,13 @@ const PART3_CHAPTERS = [
         "text": "En la portada aparecía mi nombre, mi número de ciudadano y una fotografía tomada durante el noticiero. Debajo habían añadido una clasificación nueva:"
       },
       {
-        "type": "transmission",
-        "text": "SUJETO DE REINTEGRACIÓN CÍVICA"
-      },
-      {
-        "type": "transmission",
-        "text": "COMPATIBILIDAD CREATIVA: ALTA"
-      },
-      {
-        "type": "transmission",
-        "text": "UTILIDAD PÚBLICA: EN EVALUACIÓN"
+        "type": "case-file",
+        "label": "ARCHIVO // REGISTRO INTERNO",
+        "rows": [
+          "SUJETO DE REINTEGRACIÓN CÍVICA",
+          "COMPATIBILIDAD CREATIVA: ALTA",
+          "UTILIDAD PÚBLICA: EN EVALUACIÓN"
+        ]
       },
       {
         "type": "p",
@@ -1668,7 +1671,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Una verdad podía sobrevivir dentro de una mentira si nadie controlaba por completo a quién pertenecía."
+        "text": "Dema construía cada mentira como una habitación cerrada. Yo empecé a esconder una puerta dentro de las frases que me obligaban a repetir."
       },
       {
         "type": "p",
@@ -1799,6 +1802,10 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "p",
+        "text": "Sus dedos rozaron el interior de mi muñeca al soltarlo. El contacto duró menos de un segundo, pero fue la primera temperatura humana que no pertenecía a un médico, un guardia o una corrección de vestuario."
+      },
+      {
+        "type": "p",
         "text": "Solo tenía una palabra:"
       },
       {
@@ -1818,20 +1825,14 @@ const PART3_CHAPTERS = [
         "text": "Sally colocó reproducciones ampliadas alrededor del estudio. Habían subrayado frases sobre el muro, la trampa, los ojos secos y la esperanza. Cada fragmento tenía una etiqueta clínica."
       },
       {
-        "type": "transmission",
-        "text": "IDEACIÓN DE FUGA."
-      },
-      {
-        "type": "transmission",
-        "text": "PARANOIA ESTRUCTURAL."
-      },
-      {
-        "type": "transmission",
-        "text": "RECHAZO DE AUTORIDAD PROTECTORA."
-      },
-      {
-        "type": "transmission",
-        "text": "FANTASÍA DE COMUNIDAD EXTERIOR."
+        "type": "case-file",
+        "label": "ARCHIVO // REGISTRO INTERNO",
+        "rows": [
+          "IDEACIÓN DE FUGA.",
+          "PARANOIA ESTRUCTURAL.",
+          "RECHAZO DE AUTORIDAD PROTECTORA.",
+          "FANTASÍA DE COMUNIDAD EXTERIOR."
+        ]
       },
       {
         "type": "p",
@@ -1844,8 +1845,8 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No todo —respondió Sally—. También puede convertirse en contenido.",
-        "who": "Sally"
+        "text": "—No todo —respondió Sally—. Algunas partes pueden convertirse en compañía. Dan giró una tarjeta. —Y la compañía, cuando funciona, se convierte en contenido.",
+        "who": "Sally y Dan"
       },
       {
         "type": "p",
@@ -2142,7 +2143,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "No me golpearon. Dema había aprendido que un moretón era difícil de ocultar bajo luces blancas. Me sujetaron la cabeza con manos cuidadosas y explicaron cada procedimiento como si yo hubiera aceptado."
+        "text": "No me golpearon. Dema había aprendido que un moretón era difícil de ocultar bajo luces blancas. Me sujetaron la mandíbula, fijaron mis hombros contra el respaldo y explicaron cada procedimiento con la cortesía de quien ya había decidido que mi consentimiento era un detalle de continuidad."
       },
       {
         "type": "p",
@@ -2180,24 +2181,15 @@ const PART3_CHAPTERS = [
         "text": "Me entregaron una camisa azul, una chaqueta clara y zapatos demasiado limpios. En una mesa había una lista de gestos permitidos."
       },
       {
-        "type": "transmission",
-        "text": "SONREÍR SIN MOSTRAR TENSIÓN."
-      },
-      {
-        "type": "transmission",
-        "text": "MIRAR A CÁMARA DURANTE LAS FRASES DE GRATITUD."
-      },
-      {
-        "type": "transmission",
-        "text": "NO TOCAR EL CUELLO."
-      },
-      {
-        "type": "transmission",
-        "text": "NO CERRAR LOS PUÑOS."
-      },
-      {
-        "type": "transmission",
-        "text": "NO BUSCAR SALIDAS VISIBLES."
+        "type": "case-file",
+        "label": "ARCHIVO // REGISTRO INTERNO",
+        "rows": [
+          "SONREÍR SIN MOSTRAR TENSIÓN.",
+          "MIRAR A CÁMARA DURANTE LAS FRASES DE GRATITUD.",
+          "NO TOCAR EL CUELLO.",
+          "NO CERRAR LOS PUÑOS.",
+          "NO BUSCAR SALIDAS VISIBLES."
+        ]
       },
       {
         "type": "p",
@@ -2737,7 +2729,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Dan no decide qué significa tu cuerpo.",
+        "text": "—Dan decide qué puede vender una cámara —dijo Nico—. Yo decido qué parte de ti regresa a la ciudad.",
         "who": "Nico"
       },
       {
@@ -2752,6 +2744,10 @@ const PART3_CHAPTERS = [
       {
         "type": "p",
         "text": "Permanecí allí hasta perder la cuenta del tiempo."
+      },
+      {
+        "type": "p",
+        "text": "La silla tenía un borde que me cortaba la circulación detrás de las rodillas. Cuando intenté cambiar de postura, la marca del cuello ardió y el altavoz reprodujo las cuatro notas. Al final dejé de moverme para no ofrecerle al cuarto otra respuesta."
       },
       {
         "type": "p",
@@ -2880,6 +2876,10 @@ const PART3_CHAPTERS = [
         "text": "Su mano se detuvo junto a mi cuello."
       },
       {
+        "type": "p",
+        "text": "El algodón estaba frío. Mara apoyó el pulgar debajo de la mandíbula y la mano le tembló. Sin pensarlo, incliné el rostro hacia ese contacto. Ella sostuvo el peso durante un latido y después recordó la cámara."
+      },
+      {
         "type": "speech",
         "text": "—Después habrá más trabajo.",
         "who": "Mara"
@@ -2947,24 +2947,15 @@ const PART3_CHAPTERS = [
         "text": "Las terminadas llegaban a la ciudad con música, títulos y una voz que explicaba cómo debían ser entendidas. Las útiles permanecían en depósitos sin ventanas, marcadas con números de toma, errores de continuidad y observaciones escritas por supervisores."
       },
       {
-        "type": "transmission",
-        "text": "NO SONRÍE A TIEMPO."
-      },
-      {
-        "type": "transmission",
-        "text": "MIRA FUERA DEL ENCUADRE."
-      },
-      {
-        "type": "transmission",
-        "text": "GESTO ASOCIADO CON FUGA."
-      },
-      {
-        "type": "transmission",
-        "text": "RESPUESTA EMOCIONAL INADECUADA."
-      },
-      {
-        "type": "transmission",
-        "text": "REPETIR DESPUÉS DE AISLAMIENTO."
+        "type": "case-file",
+        "label": "ARCHIVO // REGISTRO INTERNO",
+        "rows": [
+          "NO SONRÍE A TIEMPO.",
+          "MIRA FUERA DEL ENCUADRE.",
+          "GESTO ASOCIADO CON FUGA.",
+          "RESPUESTA EMOCIONAL INADECUADA.",
+          "REPETIR DESPUÉS DE AISLAMIENTO."
+        ]
       },
       {
         "type": "p",
@@ -3417,7 +3408,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Mara quiso seguir discutiendo. Quiso convertir el miedo en una regla precisa que impidiera repetirlo. Sin embargo, sabía que no existía una arquitectura capaz de eliminar toda elección humana."
+        "text": "Mara buscó una regla capaz de impedir que el miedo volviera a decidir por ellos. No la encontró. La estatua solo devolvió el roce del aire entre las piedras."
       },
       {
         "type": "speech",
@@ -3455,6 +3446,194 @@ const PART3_CHAPTERS = [
       {
         "type": "speech",
         "text": "—No deberíamos.",
+        "who": "James"
+      },
+      {
+        "type": "p",
+        "text": "James no cerró el receptor. Sacó de la carcasa una tira de película y la sostuvo frente a la lámpara."
+      },
+      {
+        "type": "speech",
+        "text": "—Hay otra toma.",
+        "who": "James"
+      },
+      {
+        "type": "p",
+        "text": "La imagen pertenecía a la cocina falsa. Clancy estaba sentado frente al desayuno intacto. Tenía el labio partido y una sombra oscura debajo del vendaje del cuello. Mara ocupaba su marca al otro lado de la mesa."
+      },
+      {
+        "type": "p",
+        "text": "La voz del techo pedía repetir."
+      },
+      {
+        "type": "speech",
+        "text": "—Estás en casa —decía Mara en la grabación.",
+        "who": "Mara"
+      },
+      {
+        "type": "p",
+        "text": "Clancy respondía que no."
+      },
+      {
+        "type": "p",
+        "text": "La escena volvía al principio."
+      },
+      {
+        "type": "speech",
+        "text": "—Estás en casa.",
+        "who": "Mara"
+      },
+      {
+        "type": "p",
+        "text": "No."
+      },
+      {
+        "type": "p",
+        "text": "Otra vez."
+      },
+      {
+        "type": "p",
+        "text": "En la quinta repetición, Clancy dejó de discutir. Miró el plato, respiró por la boca y pronunció las palabras que la producción necesitaba."
+      },
+      {
+        "type": "speech",
+        "text": "—Estoy en casa.",
+        "who": "Clancy"
+      },
+      {
+        "type": "p",
+        "text": "Mara no apartó la vista del fragmento."
+      },
+      {
+        "type": "p",
+        "text": "En la séptima toma, debajo del borde de la mesa, los dedos de Clancy golpearon tres veces, luego dos y después nueve."
+      },
+      {
+        "type": "p",
+        "text": "James detuvo la película."
+      },
+      {
+        "type": "speech",
+        "text": "—La señal apareció porque pediste otra repetición.",
+        "who": "James"
+      },
+      {
+        "type": "speech",
+        "text": "—Lo sé.",
+        "who": "Mara"
+      },
+      {
+        "type": "speech",
+        "text": "—Podías haber terminado en la sexta.",
+        "who": "James"
+      },
+      {
+        "type": "speech",
+        "text": "—Lo sé.",
+        "who": "Mara"
+      },
+      {
+        "type": "p",
+        "text": "La respuesta de Mara salió demasiado rápido."
+      },
+      {
+        "type": "speech",
+        "text": "—Cuando golpeó el código sentí alivio —dijo—. No porque siguiera siendo él. Porque la toma por fin servía.",
+        "who": "Mara"
+      },
+      {
+        "type": "p",
+        "text": "James dejó la película sobre la piedra."
+      },
+      {
+        "type": "speech",
+        "text": "—Intentabas conservar una prueba.",
+        "who": "James"
+      },
+      {
+        "type": "speech",
+        "text": "—Eso dicen ellos. Que todo dolor puede servir si alguien sabe editarlo.",
+        "who": "Mara"
+      },
+      {
+        "type": "speech",
+        "text": "—No es lo mismo.",
+        "who": "James"
+      },
+      {
+        "type": "speech",
+        "text": "—Todavía no.",
+        "who": "Mara"
+      },
+      {
+        "type": "p",
+        "text": "Mara se sentó en el suelo. Tenía el expediente de Elias a un lado y la imagen de Clancy al otro. Por primera vez, ambos archivos parecían pesar exactamente lo mismo."
+      },
+      {
+        "type": "speech",
+        "text": "—En la declaración sobre Elias mentí sin trabarme —continuó—. La primera vez me costó respirar. La última salió perfecta. A veces la cámara se apaga y sigo escuchando mi voz decir lo que necesitan.",
+        "who": "Mara"
+      },
+      {
+        "type": "p",
+        "text": "James se quitó la venda de la palma quemada. La piel estaba roja y abierta en dos lugares. Dejó la mano sobre la piedra, entre ambos, sin intentar tocarla."
+      },
+      {
+        "type": "speech",
+        "text": "—No sé darte una frase que arregle eso.",
+        "who": "James"
+      },
+      {
+        "type": "p",
+        "text": "Mara soltó una risa breve que terminó en aire."
+      },
+      {
+        "type": "speech",
+        "text": "—Gracias.",
+        "who": "Mara"
+      },
+      {
+        "type": "p",
+        "text": "Tomó la mano herida por los dedos, evitando la quemadura. James cerró los suyos alrededor de los de ella."
+      },
+      {
+        "type": "p",
+        "text": "Mara lloró sin cubrirse el rostro. No había cámara, ceremonia ni versión que debiera sostener. El llanto le dobló los hombros y convirtió cada respiración en un esfuerzo pequeño y torpe."
+      },
+      {
+        "type": "p",
+        "text": "James permaneció a su lado. No contó segundos. No le pidió que se calmara. Cuando Mara apoyó la frente contra su hombro, él solo cambió de postura para que la piedra no le lastimara la espalda."
+      },
+      {
+        "type": "p",
+        "text": "La película descartada siguió proyectando un cuadro inmóvil: Clancy frente a un desayuno que nunca comió."
+      },
+      {
+        "type": "p",
+        "text": "Después de un tiempo, Mara levantó la cabeza."
+      },
+      {
+        "type": "speech",
+        "text": "—Guárdala.",
+        "who": "Mara"
+      },
+      {
+        "type": "speech",
+        "text": "—¿La toma?",
+        "who": "James"
+      },
+      {
+        "type": "speech",
+        "text": "—Todas. También las que nos hacen quedar mal.",
+        "who": "Mara"
+      },
+      {
+        "type": "p",
+        "text": "James envolvió la película."
+      },
+      {
+        "type": "speech",
+        "text": "—Especialmente esas.",
         "who": "James"
       },
       {
@@ -3823,6 +4002,10 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "p",
+        "text": "El sofá hundía mi cadera izquierda y obligaba a la herida del cuello a inclinarse hacia la cámara principal. Tenía la boca cubierta por una capa dulce de maquillaje y jarabe para la garganta. Cada vez que tragaba, el sabor regresaba más amargo."
+      },
+      {
+        "type": "p",
         "text": "El labio de Dan había sido reconstruido bajo una capa de maquillaje. La piel se veía demasiado lisa donde antes había estado abierta."
       },
       {
@@ -3985,8 +4168,8 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Todos estamos observándote —dijo—. Esa es la emoción de la televisión.",
-        "who": "Dan"
+        "text": "—Todos estamos observándote —dijo Sally—. Una ciudad también acompaña cuando mira. Dan tocó el borde de una tarjeta. —Respuesta en siete segundos, por favor.",
+        "who": "Sally y Dan"
       },
       {
         "type": "speech",
@@ -4278,7 +4461,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Clancy nos demuestra que incluso nuestras luchas pueden convertirse en algo útil —añadió Dan.",
+        "text": "—Clancy nos demuestra que una dificultad bien narrada puede servir a toda la ciudad —añadió Dan, mirando el contador y no mi rostro.",
         "who": "Dan"
       },
       {
@@ -5320,12 +5503,12 @@ const PART3_CHAPTERS = [
         "text": "Sobre el escritorio había una invitación con letras doradas."
       },
       {
-        "type": "transmission",
-        "text": "ASAMBLEA ANUAL DE LOS GLORIFICADOS."
-      },
-      {
-        "type": "transmission",
-        "text": "PRESENTACIÓN MARÍTIMA ESPECIAL."
+        "type": "case-file",
+        "label": "ARCHIVO // REGISTRO INTERNO",
+        "rows": [
+          "ASAMBLEA ANUAL DE LOS GLORIFICADOS.",
+          "PRESENTACIÓN MARÍTIMA ESPECIAL."
+        ]
       },
       {
         "type": "p",
@@ -5418,24 +5601,15 @@ const PART3_CHAPTERS = [
         "text": "La lista de pasajeros llegó a Mara por medio de una mujer del registro civil. Estaba dividida en categorías que no coincidían con el anuncio público."
       },
       {
-        "type": "transmission",
-        "text": "INVITADOS."
-      },
-      {
-        "type": "transmission",
-        "text": "PERSONAL DE PRODUCCIÓN."
-      },
-      {
-        "type": "transmission",
-        "text": "SEGURIDAD."
-      },
-      {
-        "type": "transmission",
-        "text": "TRASLADO ADMINISTRATIVO."
-      },
-      {
-        "type": "transmission",
-        "text": "MATERIAL DE CONSERVACIÓN."
+        "type": "case-file",
+        "label": "ARCHIVO // REGISTRO INTERNO",
+        "rows": [
+          "INVITADOS.",
+          "PERSONAL DE PRODUCCIÓN.",
+          "SEGURIDAD.",
+          "TRASLADO ADMINISTRATIVO.",
+          "MATERIAL DE CONSERVACIÓN."
+        ]
       },
       {
         "type": "p",
@@ -5466,8 +5640,8 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Necesito saber qué significa cada línea para localizarla.",
-        "who": "James"
+        "text": "—Necesito usar sus categorías en el plano para saber dónde esconden a cada persona. —Úsalas en el papel —dijo Mara—. No dejes que se te queden en la boca.",
+        "who": "James y Mara"
       },
       {
         "type": "speech",
@@ -5640,12 +5814,61 @@ const PART3_CHAPTERS = [
       {
         "type": "speech",
         "text": "—¿Cuál es la tarea? —preguntó.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "speech",
         "text": "—Mantener vivo a Clancy cuando nosotros perdamos la señal.",
         "who": "Mara"
+      },
+      {
+        "type": "p",
+        "text": "Durante un minuto ninguno añadió otra ruta."
+      },
+      {
+        "type": "p",
+        "text": "Mara abrió un paquete de papel encerado. Dentro había dos rebanadas de pan oscuro y una manzana pequeña que comenzaba a ablandarse por un lado."
+      },
+      {
+        "type": "speech",
+        "text": "—No has comido —dijo.",
+        "who": "Mara"
+      },
+      {
+        "type": "speech",
+        "text": "—Estoy trabajando.",
+        "who": "James"
+      },
+      {
+        "type": "speech",
+        "text": "—Eso no es una función corporal reconocida.",
+        "who": "Mara"
+      },
+      {
+        "type": "p",
+        "text": "Partió la manzana con el borde de una regla metálica y le entregó la mitad menos dañada. James quiso protestar, pero mordió antes de encontrar una objeción técnica."
+      },
+      {
+        "type": "p",
+        "text": "El pan estaba frío y olía a la cámara de piedra. Comieron sobre los planos, apartando las migas de las rutas de Port Vial."
+      },
+      {
+        "type": "speech",
+        "text": "—¿Crees que quien responda entrará? —preguntó Mara.",
+        "who": "Mara"
+      },
+      {
+        "type": "p",
+        "text": "James masticó despacio."
+      },
+      {
+        "type": "speech",
+        "text": "—Creo que merece decidirlo después de saber que la puerta existe.",
+        "who": "James"
+      },
+      {
+        "type": "p",
+        "text": "Mara guardó la mitad restante de la manzana para después. Ninguno dijo que quizá no habría un después."
       },
       {
         "type": "scene",
@@ -6251,7 +6474,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Luces rosas y azules recorrieron el techo de la sala principal. Una banda ocupaba una plataforma junto a las ventanas. Ciudadanos con brazaletes dorados recibían vasos y repetían pasos dirigidos por asistentes de producción. Las cámaras se movían sobre rieles instalados entre las mesas."
+        "text": "Luces rosas y azules recorrieron el techo de la sala principal. Una banda ocupaba una plataforma junto a las ventanas. Ciudadanos con brazaletes dorados recibían vasos de una bebida demasiado dulce; el olor a fruta artificial, plástico caliente y desinfectante no conseguía ocultar el metal húmedo del casco. Repetían pasos dirigidos por asistentes de producción. Las cámaras se movían sobre rieles instalados entre las mesas."
       },
       {
         "type": "p",
@@ -6282,6 +6505,10 @@ const PART3_CHAPTERS = [
       {
         "type": "p",
         "text": "Yo estaba en la plataforma, con un micrófono en la mano y la cinta amarilla escondida dentro de la chaqueta."
+      },
+      {
+        "type": "p",
+        "text": "La costura de la cinta raspaba las costillas cada vez que respiraba. No la moví. Necesitaba sentir algo que no hubiera sido elegido por vestuario."
       },
       {
         "type": "p",
@@ -6644,7 +6871,7 @@ const PART3_CHAPTERS = [
       {
         "type": "speech",
         "text": "—Tenemos que abrir la salida —dijo el Portador.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -6658,7 +6885,7 @@ const PART3_CHAPTERS = [
       {
         "type": "speech",
         "text": "—Entonces diles dónde sostener.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -6715,7 +6942,7 @@ const PART3_CHAPTERS = [
       {
         "type": "speech",
         "text": "—Clancy —dijo el Portador.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -6737,7 +6964,7 @@ const PART3_CHAPTERS = [
       {
         "type": "speech",
         "text": "—Sí.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -6750,7 +6977,7 @@ const PART3_CHAPTERS = [
       {
         "type": "speech",
         "text": "—No la pierdas.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "speech",
@@ -6760,7 +6987,7 @@ const PART3_CHAPTERS = [
       {
         "type": "speech",
         "text": "—No hay una completa.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "speech",
@@ -6770,7 +6997,7 @@ const PART3_CHAPTERS = [
       {
         "type": "speech",
         "text": "—Entonces sígueme.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -6791,7 +7018,7 @@ const PART3_CHAPTERS = [
       {
         "type": "speech",
         "text": "—Si la abrimos, este compartimento se llena más rápido.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "speech",
@@ -6801,7 +7028,7 @@ const PART3_CHAPTERS = [
       {
         "type": "speech",
         "text": "—Lo sé.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -6834,7 +7061,7 @@ const PART3_CHAPTERS = [
       {
         "type": "speech",
         "text": "—Responsabilidad después —dijo—. Aire ahora.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -6864,7 +7091,7 @@ const PART3_CHAPTERS = [
       {
         "type": "speech",
         "text": "—Sí.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "speech",
@@ -6874,7 +7101,7 @@ const PART3_CHAPTERS = [
       {
         "type": "speech",
         "text": "—No lo sé.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -6907,7 +7134,7 @@ const PART3_CHAPTERS = [
       {
         "type": "speech",
         "text": "—A la tercera —dijo.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "speech",
@@ -6917,7 +7144,7 @@ const PART3_CHAPTERS = [
       {
         "type": "speech",
         "text": "—La que podamos contar.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -7034,7 +7261,7 @@ const PART3_CHAPTERS = [
       {
         "type": "speech",
         "text": "—Hay una corriente hacia el este —dijo el Portador.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "speech",
@@ -7044,7 +7271,7 @@ const PART3_CHAPTERS = [
       {
         "type": "speech",
         "text": "—Los restos se mueven.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "speech",
@@ -7054,7 +7281,7 @@ const PART3_CHAPTERS = [
       {
         "type": "speech",
         "text": "—Vi piedra antes de que bajáramos.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "speech",
@@ -7064,7 +7291,7 @@ const PART3_CHAPTERS = [
       {
         "type": "speech",
         "text": "—Es el fragmento que tenemos.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -7121,7 +7348,7 @@ const PART3_CHAPTERS = [
       {
         "type": "speech",
         "text": "—Tenemos que movernos.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "speech",
@@ -7131,7 +7358,7 @@ const PART3_CHAPTERS = [
       {
         "type": "speech",
         "text": "—Buscaremos desde la altura.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "speech",
@@ -7141,7 +7368,7 @@ const PART3_CHAPTERS = [
       {
         "type": "speech",
         "text": "—No las estamos dejando. Estamos intentando encontrar una forma de volver.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -7222,7 +7449,7 @@ const PART3_CHAPTERS = [
       {
         "type": "speech",
         "text": "—Clancy.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -7316,20 +7543,14 @@ const PART3_CHAPTERS = [
         "text": "Las pantallas de la ciudad comenzaron a mostrar comunicados antes de que existiera una lista de pasajeros."
       },
       {
-        "type": "transmission",
-        "text": "INCIDENTE EN TRÁNSITO."
-      },
-      {
-        "type": "transmission",
-        "text": "ATAQUE EXTERIOR."
-      },
-      {
-        "type": "transmission",
-        "text": "OPERACIONES DE RECUPERACIÓN EN CURSO."
-      },
-      {
-        "type": "transmission",
-        "text": "NO DIFUNDIR RUMORES."
+        "type": "case-file",
+        "label": "ARCHIVO // REGISTRO INTERNO",
+        "rows": [
+          "INCIDENTE EN TRÁNSITO.",
+          "ATAQUE EXTERIOR.",
+          "OPERACIONES DE RECUPERACIÓN EN CURSO.",
+          "NO DIFUNDIR RUMORES."
+        ]
       },
       {
         "type": "p",

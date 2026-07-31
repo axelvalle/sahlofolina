@@ -12,7 +12,10 @@
         "cap2",
         "cap3",
         "cap4"
-      ]
+      ],
+      "status": "published",
+      "revision": "canonical",
+      "sourceEdition": "Sahlo_Folina_Libro_I_Partes_I_y_II_EDICION_LITERARIA_MAESTRA_v1(4).docx"
     },
     {
       "id": 2,
@@ -34,7 +37,10 @@
         "cap16",
         "cap17",
         "interludio-parte-3"
-      ]
+      ],
+      "status": "published",
+      "revision": "canonical",
+      "sourceEdition": "Sahlo_Folina_Libro_I_Partes_I_y_II_EDICION_LITERARIA_MAESTRA_v1(4).docx"
     },
     {
       "id": 3,
@@ -52,7 +58,8 @@
         "interludio-cuenta-cancelada"
       ],
       "revision": "canonical",
-      "sourceEdition": "Sahlo_Folina_Parte_III_FINAL_CANONICA.docx"
+      "sourceEdition": "Sahlo_Folina_Libro_II_Parte_III_EDICION_LITERARIA_MAESTRA_v1(1).docx",
+      "status": "published"
     },
     {
       "id": 4,
@@ -70,7 +77,7 @@
       ],
       "status": "published",
       "revision": "canonical",
-      "sourceEdition": "Sahlo-Folina-Parte-IV.docx"
+      "sourceEdition": "Sahlo_Folina_Libro_III_Parte_IV_EDICION_LITERARIA_MAESTRA_v1(1).docx"
     },
     {
       "id": 5,
@@ -92,7 +99,7 @@
       ],
       "status": "published",
       "revision": "canonical",
-      "sourceEdition": "Sahlo_Folina_Parte_V_FINAL_CANONICA(1).docx",
+      "sourceEdition": "Sahlo_Folina_Libro_IV_Parte_V_EDICION_LITERARIA_MAESTRA_v1(1).docx",
       "sections": {
         "prologue": {
           "title": "The Outside — El otro lado",

@@ -1,28 +1,36 @@
-## Corrección Parte IV
+# Sahlo Folina — edición web de producción
 
-- El índice resuelve dinámicamente `chapter.part`, por lo que los capítulos 25–31 aparecen en Parte IV.
-- El lector asigna `data-reader-part="4"` antes de renderizar, activando la paleta azul oscuro y blanca.
-- Los recursos principales incluyen una revisión de caché para evitar servir el JavaScript o CSS anterior.
+Lector editorial y Biblioteca digital de *Sahlo Folina*. Publica las Partes I–V, progreso de lectura, preferencias tipográficas, Diario de Clancy, Extras, aviso legal, Biblioteca y descargas gratuitas en DOCX y PDF.
 
-# Sahlo Folina — edición web
+## Ediciones canónicas publicadas
 
-Versión de producción del lector y Biblioteca de *Sahlo Folina*. Incluye las Partes I, II, III y IV, progreso de lectura, ajustes tipográficos, extras, disclaimer editorial, Anexo Visual y descargas gratuitas en DOCX y PDF.
+- Partes I y II: edición literaria maestra definitiva consolidada en los capítulos 1–17.
+- Parte III: edición canónica consolidada.
+- Parte IV: edición canónica consolidada.
+- Parte V: edición literaria maestra definitiva, organizada mediante prólogo y tres arcos internos.
 
-## Navegación
+La fuente editable del contenido web está dentro de `content/`. Las copias de `public/content/` se generan mediante sincronización y no deben editarse manualmente.
 
-El lector usa rutas internas por hash para funcionar tanto en hosting estático como en Next.js y Cloudflare:
+## Rutas principales
 
 ```text
 /inicio
+/sobre
+/biblioteca
 /indice/parte-1
 /indice/parte-2
 /indice/parte-3
 /indice/parte-4
-/biblioteca
-/leer/cap25
+/indice/parte-5
+/indice/parte-5/prologo
+/indice/parte-5/arco-1
+/indice/parte-5/arco-2
+/indice/parte-5/arco-3
+/leer/cap1
+/leer/cap41
 ```
 
-Las rutas `/biblioteca`, `/indice` y `/leer/[chapter]` redirigen al mismo lector sin mantener páginas duplicadas de contenido.
+El SPA utiliza `history.pushState()` y Vercel reescribe las rutas hacia `index.html` sin alterar la URL visible.
 
 ## Estructura canónica
 
@@ -33,46 +41,38 @@ content/
 ├── parte-2/parte2.runtime.js
 ├── parte-3/parte3.runtime.js
 ├── parte-4/parte4.runtime.js
+├── parte-5/parte5.runtime.js
 ├── extras/extras.runtime.js
 └── manifest.json
 ```
 
-Los módulos dentro de `content/` son la fuente editable. `npm run content:sync` genera las copias necesarias dentro de `public/`. No deben editarse directamente los archivos publicados.
+Los documentos descargables vigentes están en `downloads/` y se verifican mediante `downloads/manifest.json`.
 
-Los archivos descargables vigentes se encuentran en `downloads/` y se validan mediante `downloads/manifest.json`.
-
-## Comandos
+## Instalación y desarrollo
 
 ```bash
 npm install
-npm run content:sync
-npm run content:validate
 npm run verify
 npm run dev
 ```
 
-Para producción:
+Producción:
 
 ```bash
 npm run build
 npm run start
 ```
 
-## Optimización
+## Validación
 
-- Todos los recursos visuales externos usan WebP.
-- No se conservan alias JavaScript del framework anterior.
-- Las fuentes editoriales antiguas y documentos reemplazados fueron retirados del paquete.
-- Las copias de `public/` son intencionales y necesarias para el despliegue; se regeneran desde las fuentes canónicas.
+```bash
+npm run content:sync
+npm run content:validate
+npm test
+```
+
+`npm run verify` ejecuta sincronización, auditoría de contenido, comprobación de descargas, validación de assets WebP y pruebas automatizadas.
 
 ## Distribución
 
 Obra fan no oficial y 100% gratuita. No está autorizada para venta, alquiler ni monetización.
-
-
-## Rutas limpias en Vercel
-
-El SPA usa `history.pushState()` y publica rutas como `/inicio`, `/biblioteca`,
-`/indice/parte-4` y `/leer/cap25`. `vercel.json` reescribe esas solicitudes a
-`/index.html` sin redirecciones visibles. Las antiguas URLs `index.html#/...` se
-reconocen una vez y se sustituyen automáticamente por su equivalente limpio.

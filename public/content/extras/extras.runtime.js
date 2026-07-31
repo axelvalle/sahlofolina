@@ -156,7 +156,7 @@ const SAHLO_EXTRAS = [
             "targetId": "diario-024-02moon-09"
           },
           {
-            "title": "Undécima entrada",
+            "title": "Las fogatas se sienten como hogar",
             "code": "024 02MOON 25",
             "chapterId": "cap36",
             "chapterLabel": "Capítulo 36 · Parte V",

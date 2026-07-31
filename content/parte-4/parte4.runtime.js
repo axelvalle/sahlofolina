@@ -1,5 +1,5 @@
-// Parte IV de Sahlo Folina.
-// Edición final canónica consolidada desde el manuscrito DOCX.
+// Parte 4 de Sahlo Folina.
+// Edición literaria maestra definitiva, consolidada en el website.
 
 const PART4_CHAPTERS = [
   {
@@ -18,13 +18,12 @@ const PART4_CHAPTERS = [
     },
     "blocks": [
       {
-        "type": "chronology",
-        "label": "REGISTRO TEMPORAL",
-        "text": "Dema, durante las horas que siguieron al último impacto."
+        "type": "p",
+        "text": "Keons murió antes de que la ciudad despertara con la muerte de Clancy ya redactada. Cuatro horas después de que Trash embistiera el submarino por última vez, mientras Port Vial todavía devolvía fragmentos de agua y estática, lo llevaron a una cámara circular debajo de la torre del consejo. No había ciudadanos, funcionarios de archivo ni cámaras destinadas a la transmisión pública. Solo nueve posiciones marcadas en el suelo y ocho figuras vestidas de rojo alrededor de una novena que ya no llevaba capa."
       },
       {
         "type": "p",
-        "text": "Keons murió antes de que la ciudad despertara con la muerte de Clancy ya redactada. Cuatro horas después del último impacto, mientras Port Vial todavía devolvía fragmentos de agua y estática, lo llevaron a una cámara circular debajo de la torre del consejo. No había ciudadanos, funcionarios de archivo ni cámaras destinadas a la transmisión pública. Solo nueve posiciones marcadas en el suelo y ocho figuras vestidas de rojo alrededor de una novena que ya no llevaba capa."
+        "text": "La piedra estaba fría incluso a través de las botas. Olía a desinfectante, hierro húmedo y al residuo eléctrico de las astas. Ninguno de los presentes respiraba con la profundidad suficiente para alterar el silencio."
       },
       {
         "type": "p",
@@ -44,7 +43,7 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Una ciudad no puede conservar una voluntad que actúa fuera de su función —dijo.",
+        "text": "—Una voluntad que actúa por cuenta propia deja de cumplir su función —dijo Nico—. La ciudad no conserva esa clase de separación.",
         "who": "Nico"
       },
       {
@@ -179,6 +178,10 @@ const PART4_CHAPTERS = [
       {
         "type": "p",
         "text": "Mara no conocía el nombre, pero reconoció el mecanismo. Dema había cruzado registros antes. Sabía qué puerta abría cada tarjeta, qué turno correspondía a cada trabajador y qué distrito utilizaba cada línea de transporte. La diferencia era que ahora todas las oficinas compartirían la misma búsqueda."
+      },
+      {
+        "type": "p",
+        "text": "Tenía el estómago vacío desde la noche anterior. El olor del papel húmedo y del café recalentado le provocó una arcada que ocultó detrás de la carpeta. No Chances no había comenzado con una patrulla, sino dentro de oficinas donde personas cansadas podían convertir una vivienda en una casilla sin levantar la vista."
       },
       {
         "type": "p",
@@ -497,6 +500,10 @@ const PART4_CHAPTERS = [
       {
         "type": "p",
         "text": "La precisión le dolió más que el comunicado."
+      },
+      {
+        "type": "p",
+        "text": "Mara soltó el aire por la nariz y se frotó la marca que la cinta del uniforme había dejado en su muñeca. James levantó una mano, como si fuera a tocarla, pero la dejó sobre la batería. Su manera de acompañar consistía todavía en no prometer lo que no podía medir."
       },
       {
         "type": "scene",
@@ -1004,11 +1011,6 @@ const PART4_CHAPTERS = [
     "subtitle": "El agua devuelve rastros incompatibles de una misma supervivencia",
     "blocks": [
       {
-        "type": "chronology",
-        "label": "REGISTRO TEMPORAL",
-        "text": "Primer día después de Saturday."
-      },
-      {
         "type": "p",
         "text": "El primer movimiento que James encontró dentro de No Chances no pertenecía a Keons ni a ningún otro cuerpo."
       },
@@ -1471,6 +1473,10 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "p",
+        "text": "El carrete siguió girando durante dos segundos. El roce de la cinta llenó la cámara de la estatua. Mara tenía las rodillas entumecidas y las uñas marcadas en las palmas; no recordó haber cerrado los puños."
+      },
+      {
+        "type": "p",
         "text": "Mara mantuvo las manos sobre las rodillas."
       },
       {
@@ -1538,7 +1544,7 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No quiero quitártelo. Quiero que siga siendo verdad aunque después encontremos una parte distinta.",
+        "text": "—No quiero quitártelo —dijo James—. Quiero que la frase sobreviva incluso si mañana aparece una parte que no nos gusta.",
         "who": "James"
       },
       {
@@ -2017,6 +2023,10 @@ const PART4_CHAPTERS = [
         "text": "La coordinadora cerró la carpeta."
       },
       {
+        "type": "p",
+        "text": "Cuando la mujer se alejó, Mara descubrió que le temblaban las manos. James esperó en el corredor con su abrigo doblado sobre un brazo. No preguntó cómo había ido el interrogatorio; se lo colocó sobre los hombros y caminó a su lado hasta que el temblor dejó de ser visible."
+      },
+      {
         "type": "speech",
         "text": "—No Chances no depende de confesiones.",
         "who": "Coordinadora de No Chances"
@@ -2191,11 +2201,6 @@ const PART4_CHAPTERS = [
     "subtitle": "El juicio de Keons revela que Dema todavía necesita su cuerpo",
     "blocks": [
       {
-        "type": "chronology",
-        "label": "REGISTRO TEMPORAL",
-        "text": "Segundo día después de Saturday."
-      },
-      {
         "type": "p",
         "text": "El juicio público comenzó veintinueve horas después de la muerte de Keons. La transmisión mostró al consejo incompleto: ocho posiciones rojas alrededor de un espacio vacío y Nico bajo una luz blanca que borraba cualquier sombra del suelo."
       },
@@ -2282,6 +2287,44 @@ const PART4_CHAPTERS = [
         "text": "Mara copió la hora de muerte antes de que la transmisión la retirara."
       },
       {
+        "type": "p",
+        "text": "Cuando la señal pública terminó, la cámara del consejo permaneció encendida durante nueve segundos más."
+      },
+      {
+        "type": "p",
+        "text": "Nico no abandonó su posición. Frente a él, el asiento de Keons seguía vacío y conservaba una marca clara donde el emblema había sido retirado. Un funcionario se acercó para llevárselo."
+      },
+      {
+        "type": "speech",
+        "text": "—Todavía no —dijo Nico.",
+        "who": "Nico"
+      },
+      {
+        "type": "p",
+        "text": "El hombre retrocedió."
+      },
+      {
+        "type": "p",
+        "text": "Nico colocó el vial confiscado de Keons sobre la mesa. No lo miró como una reliquia. Lo alineó con los ocho expedientes restantes y habló hacia el asiento vacío con la misma voz utilizada durante la transmisión."
+      },
+      {
+        "type": "speech",
+        "text": "—El consejo corrige lo que se separa.",
+        "who": "Nico"
+      },
+      {
+        "type": "p",
+        "text": "Nadie respondió."
+      },
+      {
+        "type": "p",
+        "text": "Después de un momento, Nico abrió el acta y tachó la última reunión a la que Keons había asistido. Ordenó que la versión oficial mostrara ocho presentes desde el principio."
+      },
+      {
+        "type": "p",
+        "text": "Solo entonces permitió que retiraran la silla."
+      },
+      {
         "type": "scene",
         "text": "• • •"
       },
@@ -2345,6 +2388,10 @@ const PART4_CHAPTERS = [
       {
         "type": "p",
         "text": "Mara imaginó a Elias reducido a casillas semejantes."
+      },
+      {
+        "type": "p",
+        "text": "El recuerdo no llegó como una imagen completa. Llegó como el olor de la manta que Elias dejaba junto al calentador y la aspereza de una taza mal lavada. Su hermano había tenido un cuerpo antes de convertirse en un argumento, y Dema no podía devolverle esa parte con ninguna etiqueta."
       },
       {
         "type": "p",
@@ -2885,11 +2932,6 @@ const PART4_CHAPTERS = [
     "title": "Algo camina en la torre",
     "subtitle": "Una torre vacía registra pasos y unos ojos amarillos buscan responder",
     "blocks": [
-      {
-        "type": "chronology",
-        "label": "REGISTRO TEMPORAL",
-        "text": "Tercera noche después de Saturday."
-      },
       {
         "type": "p",
         "text": "Durante la tercera noche después de Saturday, James dormía sentado dentro de la estatua, con la espalda contra una viga y una herramienta todavía en la mano. El receptor emitió un pulso corto. Después otro. La línea de la torre 9-E, estable desde el traslado, había comenzado a consumir energía por secciones."
@@ -3463,6 +3505,50 @@ const PART4_CHAPTERS = [
         "text": "La cola de mantenimiento había liberado la alerta."
       },
       {
+        "type": "p",
+        "text": "El receptor de James mostró dos paquetes saliendo de la torre. El primero contenía el aviso de movimiento. El segundo, un fotograma capturado antes de que cortara la cámara: Mara de perfil, la cinta amarilla cerrada dentro del puño y el cuerpo de Keons detrás de ella."
+      },
+      {
+        "type": "p",
+        "text": "James abrió la consola. El enlace solo permitía sobrescribir uno antes de propagarse."
+      },
+      {
+        "type": "speech",
+        "text": "—Puedo borrar tu imagen —dijo—, pero perderemos la grabación completa. Los ojos, el código, la postura. Todo.",
+        "who": "James"
+      },
+      {
+        "type": "speech",
+        "text": "—¿Y si la conservas?",
+        "who": "Mara"
+      },
+      {
+        "type": "speech",
+        "text": "—No Chances tendrá tu rostro dentro de la torre.",
+        "who": "James"
+      },
+      {
+        "type": "p",
+        "text": "Los pasos de los guardias sonaron en el nivel inferior."
+      },
+      {
+        "type": "p",
+        "text": "James no movió las manos. La prueba era la única forma que conocía de impedir que el miedo inventara una respuesta después. Mara le sujetó la muñeca."
+      },
+      {
+        "type": "speech",
+        "text": "—Elige a la persona.",
+        "who": "Mara"
+      },
+      {
+        "type": "p",
+        "text": "James la miró. Después borró el fotograma."
+      },
+      {
+        "type": "p",
+        "text": "Los ojos amarillos desaparecieron de la memoria del sistema. La única copia completa quedó reducida a lo que ambos pudieran recordar sin corregirse entre sí."
+      },
+      {
         "type": "speech",
         "text": "—Tenemos que salir —dijo James.",
         "who": "James"
@@ -3572,7 +3658,7 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—La secuencia del Archivo reduce las posibilidades.",
+        "text": "—La secuencia del Archivo reduce las posibilidades —dijo James. Tenía la voz más baja desde que había borrado la grabación.",
         "who": "James"
       },
       {
@@ -3658,6 +3744,10 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "p",
+        "text": "Mara abrió la mano. La cinta había dejado una línea amarilla sobre la piel húmeda. James la observó como si necesitara memorizar también aquello que no había quedado en ningún archivo."
+      },
+      {
+        "type": "p",
         "text": "Regresaron hacia la estatua mientras No Chances contaba pasos dentro de una torre que oficialmente no contenía a nadie."
       },
       {
@@ -3673,11 +3763,6 @@ const PART4_CHAPTERS = [
     "title": "La señal",
     "subtitle": "La estatua y la torre autentican una señal sin entregar la ciudad",
     "blocks": [
-      {
-        "type": "chronology",
-        "label": "REGISTRO TEMPORAL",
-        "text": "Minutos después de la primera anomalía en la torre 9-E."
-      },
       {
         "type": "p",
         "text": "La primera pulsación duró tres segundos. La segunda, dos."
@@ -3699,14 +3784,20 @@ const PART4_CHAPTERS = [
         "text": "La torre volvió a encenderse."
       },
       {
-        "type": "signal",
-        "label": "SEÑAL DE TORRE",
-        "pulses": [
-          "Una vez.",
-          "Pausa.",
-          "Dos veces.",
-          "Respira."
-        ]
+        "type": "p",
+        "text": "Una vez."
+      },
+      {
+        "type": "p",
+        "text": "Pausa."
+      },
+      {
+        "type": "p",
+        "text": "Dos veces."
+      },
+      {
+        "type": "p",
+        "text": "Respira."
       },
       {
         "type": "speech",
@@ -3746,14 +3837,20 @@ const PART4_CHAPTERS = [
         "text": "En una ventana apareció una sombra. El cuerpo levantó una barra metálica y golpeó el cristal. El sonido no alcanzaba la plaza, pero un sensor de vibración lo transmitió por la línea que James había robado."
       },
       {
-        "type": "signal",
-        "label": "AUTENTICACIÓN DE ARCHIVO",
-        "pulses": [
-          "Largo.",
-          "Dos cortos.",
-          "Largo.",
-          "Página reemplazada."
-        ]
+        "type": "p",
+        "text": "Largo."
+      },
+      {
+        "type": "p",
+        "text": "Dos cortos."
+      },
+      {
+        "type": "p",
+        "text": "Largo."
+      },
+      {
+        "type": "p",
+        "text": "Página reemplazada."
       },
       {
         "type": "p",
@@ -4399,6 +4496,24 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "p",
+        "text": "James apoyó los antebrazos sobre la mesa. Había pasado la noche contando pulsos y tenía una marca roja donde el borde del receptor le presionó la piel."
+      },
+      {
+        "type": "speech",
+        "text": "—Tendremos que recordarlo cuando la persona que esté en peligro sea alguien que amamos.",
+        "who": "James"
+      },
+      {
+        "type": "speech",
+        "text": "—Especialmente entonces —respondió Mara.",
+        "who": "Mara"
+      },
+      {
+        "type": "p",
+        "text": "No se dieron la mano para convertir la frase en promesa. Mara empujó hacia él una taza de agua tibia y esperó hasta que bebiera."
+      },
+      {
+        "type": "p",
         "text": "La decisión no era todavía un protocolo. Era una línea que debían aprender a sostener."
       },
       {
@@ -4471,11 +4586,6 @@ const PART4_CHAPTERS = [
     "subtitle": "Mara y James separan al Portador real de la presencia que Clancy creyó seguir",
     "blocks": [
       {
-        "type": "chronology",
-        "label": "REGISTRO TEMPORAL",
-        "text": "Dos días después del contacto con la torre."
-      },
-      {
         "type": "p",
         "text": "El hombre no llevaba la máscara ni la antorcha completa. Eso fue lo primero que Mara consideró una buena señal."
       },
@@ -4498,6 +4608,10 @@ const PART4_CHAPTERS = [
       {
         "type": "p",
         "text": "Era un cuerpo presente."
+      },
+      {
+        "type": "p",
+        "text": "Cuando aceptó la cantimplora, bebió demasiado rápido y tuvo que apoyarse contra la pared para toser. El agua le quedó en la barba y oscureció el cuello de la camisa. Mara sintió alivio ante aquella torpeza: ninguna leyenda necesitaba recuperar el aliento."
       },
       {
         "type": "p",
@@ -4540,7 +4654,7 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Entonces empieza por lo que no puedes decir después.",
+        "text": "—Entonces empieza por lo que se perdería si no salimos —dijo el Portador.",
         "who": "Portador"
       },
       {
@@ -5575,7 +5689,7 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No sé si eso lo aliviará.",
+        "text": "—No sé si separarlo todo lo aliviará —dijo James.",
         "who": "James"
       },
       {
@@ -5618,8 +5732,7 @@ const PART4_CHAPTERS = [
     "subtitle": "La resistencia aprende a moverse sin una única orden ni un único líder",
     "blocks": [
       {
-        "type": "chronology",
-        "label": "REGISTRO TEMPORAL",
+        "type": "p",
         "text": "Durante la semana siguiente."
       },
       {
@@ -5716,6 +5829,59 @@ const PART4_CHAPTERS = [
         "type": "speech",
         "text": "—También impide que una orden equivocada destruya a todos.",
         "who": "Mara"
+      },
+      {
+        "type": "p",
+        "text": "Mara detuvo el reloj antes de que James pudiera reiniciarlo."
+      },
+      {
+        "type": "speech",
+        "text": "—Cinco minutos.",
+        "who": "Mara"
+      },
+      {
+        "type": "speech",
+        "text": "—El escenario no nos dará cinco minutos.",
+        "who": "James"
+      },
+      {
+        "type": "speech",
+        "text": "—Las personas sí los necesitan.",
+        "who": "Mara"
+      },
+      {
+        "type": "p",
+        "text": "Se sentaron en el suelo de uno de los bloques abandonados. Una mujer repartió un recipiente de lentejas frías y trozos de pan oscuro. Comieron con cucharas desiguales, todavía sudados por las escaleras y con polvo de yeso en las mangas."
+      },
+      {
+        "type": "p",
+        "text": "El voluntario que interpretaba al niño miró a James."
+      },
+      {
+        "type": "speech",
+        "text": "—¿Por qué no hay un código para decir tengo miedo?",
+        "who": "Voluntario"
+      },
+      {
+        "type": "p",
+        "text": "James abrió la boca y la cerró."
+      },
+      {
+        "type": "speech",
+        "text": "—Porque la red la diseñaron adultos ocupados fingiendo que no lo tenían.",
+        "who": "James"
+      },
+      {
+        "type": "p",
+        "text": "La mujer de Andre soltó una risa. Otra persona se unió. El sonido duró poco, pero cambió el aire del cuarto."
+      },
+      {
+        "type": "p",
+        "text": "Mara escribió una nueva frase detrás de la puerta usada en la simulación: TENGO MIEDO. SIGO DECIDIENDO."
+      },
+      {
+        "type": "p",
+        "text": "Cuando reiniciaron el ejercicio, nadie confundió el miedo con una orden de detenerse."
       },
       {
         "type": "p",
@@ -6377,14 +6543,20 @@ const PART4_CHAPTERS = [
         "text": "La mano izquierda se cerró con dificultad alrededor del interruptor del panel. Un dedo falló dos veces antes de conseguir bajar el relé."
       },
       {
-        "type": "signal",
-        "label": "SEGUNDO CONTACTO",
-        "pulses": [
-          "Una pulsación.",
-          "Pausa.",
-          "Dos.",
-          "Después, una línea de luz orientada al este."
-        ]
+        "type": "p",
+        "text": "Una pulsación."
+      },
+      {
+        "type": "p",
+        "text": "Pausa."
+      },
+      {
+        "type": "p",
+        "text": "Dos."
+      },
+      {
+        "type": "p",
+        "text": "Después, una línea de luz orientada al este."
       },
       {
         "type": "p",
@@ -6419,8 +6591,7 @@ const PART4_CHAPTERS = [
         "text": "• • •"
       },
       {
-        "type": "chronology",
-        "label": "UBICACIÓN",
+        "type": "transmission",
         "text": "VOLDSØY"
       },
       {
@@ -6526,14 +6697,20 @@ const PART4_CHAPTERS = [
         "text": "A la tercera presión, el relé cedió."
       },
       {
-        "type": "signal",
-        "label": "RESPUESTA DESDE VOLDSØY",
-        "pulses": [
-          "Una pulsación.",
-          "Pausa.",
-          "Dos.",
-          "Después orienté la luz hacia el este."
-        ]
+        "type": "p",
+        "text": "Una pulsación."
+      },
+      {
+        "type": "p",
+        "text": "Pausa."
+      },
+      {
+        "type": "p",
+        "text": "Dos."
+      },
+      {
+        "type": "p",
+        "text": "Después orienté la luz hacia el este."
       },
       {
         "type": "p",
@@ -6583,6 +6760,10 @@ const PART4_CHAPTERS = [
       {
         "type": "p",
         "text": "Caí de rodillas. La sangre me bajó por la nariz y dejó dos gotas oscuras sobre la arena."
+      },
+      {
+        "type": "p",
+        "text": "La arena se pegó a mis palmas mojadas. Durante varios segundos no distinguí cuál de las dos respiraciones pertenecía a mi pecho y cuál era el recuerdo inmóvil del cuerpo que acababa de soltar."
       },
       {
         "type": "p",
@@ -6648,5 +6829,5 @@ window.SahloContent.registerPart({
   id: 4,
   slug: "parte-4",
   title: "Los que se quedaron",
-  chapters: PART4_CHAPTERS
+  chapters: PART4_CHAPTERS,
 });

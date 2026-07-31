@@ -1,14 +1,16 @@
-const CACHE_VERSION = "sahlo-folina-gradient-r14";
+const CACHE_VERSION = "sahlo-folina-master-r18";
 const SHELL_CACHE = `${CACHE_VERSION}-shell`;
 const RUNTIME_CACHE = `${CACHE_VERSION}-runtime`;
 const CORE = [
   "/index.html",
-  "/styles.css?v=20260730-gradient-r14",
-  "/app.js?v=20260730-gradient-r14",
-  "/library.js?v=20260730-gradient-r14",
-  "/content/framework/runtime.js?v=20260730-gradient-r14",
-  "/content/framework/routes.js?v=20260730-gradient-r14",
-  "/content/parte-5/parte5.runtime.js?v=20260730-gradient-r14",
+  "/styles.css?v=20260731-part5-master-r17",
+  "/app.js?v=20260731-part5-master-r17",
+  "/library.js?v=20260731-part5-master-r17",
+  "/content/framework/runtime.js?v=20260731-part5-master-r17",
+  "/content/framework/routes.js?v=20260731-part5-master-r17",
+  "/content/parte-3/parte3.runtime.js?v=20260731-part5-master-r17",
+  "/content/parte-4/parte4.runtime.js?v=20260731-part5-master-r17",
+  "/content/parte-5/parte5.runtime.js?v=20260731-part5-master-r17",
   "/assets/twenty-one-pilots-icon.webp",
   "/assets/cover-dema.webp",
   "/assets/social/sahlo-folina-og.webp",

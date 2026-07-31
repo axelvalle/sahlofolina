@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
-import { access, readFile, readdir, stat } from "node:fs/promises";
+import { readFile, readdir, stat } from "node:fs/promises";
 import { extname, resolve } from "node:path";
 import test from "node:test";
 import vm from "node:vm";
@@ -52,6 +52,34 @@ test("content registration reconstructs the published saga modules", async () =>
   assert.equal(context.window.CHAPTERS.find((item) => item.id === "disclaimer")?.kind, "extra");
 });
 
+test("the Parts I and II master literary edition is the published website text", async () => {
+  const part1 = await read("content/parte-1/parte1.runtime.js");
+  const part2 = await read("content/parte-2/parte2.runtime.js");
+
+  for (const text of [
+    "El árbol muerto regresaba junto a la ventana cada poco minuto: el mismo tronco partido, la misma rama doblada hacia la carretera.",
+    "Las flores se aplastaron contra el vidrio con un roce seco.",
+    "Desde afuera el muro no era pequeño. Era medible.",
+    "Esta aldea, después de todo este tiempo, era mi trampa.",
+  ]) assert.match(part1, new RegExp(text.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
+
+  for (const text of [
+    "El uniforme funerario fue el primero que Mara me hizo repetir.",
+    "Ahora sostenían un archivo, una señal y un fuego pequeño que Dema todavía no había conseguido apagar.",
+    "La primera comida llegó en un cuenco de metal.",
+    "El ritmo no me elevó por encima del miedo; lo repartió entre demasiadas manos para que pudiera aplastarme a solas.",
+  ]) assert.match(part2, new RegExp(text.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
+
+  for (const text of [
+    "Yo iba en el asiento trasero, con las manos apoyadas sobre las rodillas",
+    "Las flores se pegaron al vidrio como insectos.",
+    "Desde afuera parecía pequeño.",
+    "El primer día después del valle caminé como si alguien estuviera tirando de una cuerda atada a mi garganta.",
+  ]) {
+    assert.doesNotMatch(part1 + part2, new RegExp(text.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
+  }
+});
+
 test("the Part III canonical edition is the published website text", async () => {
   const part3 = await read("content/parte-3/parte3.runtime.js");
   for (const text of [
@@ -60,7 +88,7 @@ test("the Part III canonical edition is the published website text", async () =>
     "Arranqué el micrófono de su soporte. El cable siguió unido al panel.",
     "La carcasa del transmisor estaba rota. Solo un canal respondía.",
     "El responsable episcopal del sabotaje marítimo ha sido identificado y separado de sus funciones.",
-    "La voz salió limpia, pero su pecho no acompañó la frase con un movimiento que yo pudiera ver.",
+    "Su voz ofrecía calor; su pecho no acompañó la frase con un movimiento que yo pudiera ver.",
     "Los cuerpos de Sally y Dan mostraban un deterioro mayor.",
     "Quise creer que el Portador de la Antorcha había encontrado la forma de guiarme hasta allí.",
   ]) assert.match(part3, new RegExp(text.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));

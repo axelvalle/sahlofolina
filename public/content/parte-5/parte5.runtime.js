@@ -1,5 +1,5 @@
 // Parte V de Sahlo Folina.
-// Edición final canónica consolidada en tres arcos y prólogo independiente.
+// Edición literaria maestra definitiva consolidada en tres arcos y prólogo independiente.
 
 const PART5_CHAPTERS = [
   {
@@ -41,11 +41,13 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Ya estoy arriba —respondí."
+        "text": "—Ya estoy arriba —respondí.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Entonces mantente."
+        "text": "—Entonces mantente.",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -70,11 +72,13 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Cómo lo sabes?"
+        "text": "—¿Cómo lo sabes?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Los restos."
+        "text": "—Los restos.",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -147,11 +151,13 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Él no puede caminar."
+        "text": "—Él no puede caminar.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—No necesita caminar todavía."
+        "text": "—No necesita caminar todavía.",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -167,7 +173,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Dema —dije."
+        "text": "—Dema —dije.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -175,7 +182,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Mara. James. Si escuchan…"
+        "text": "—Mara. James. Si escuchan…",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -191,7 +199,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Agua. Costa. Estamos…"
+        "text": "—Agua. Costa. Estamos…",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -199,7 +208,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Vivos —terminé."
+        "text": "—Vivos —terminé.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -211,7 +221,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Ayuda viene —le dije."
+        "text": "—Ayuda viene —le dije.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -223,7 +234,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Volveré —prometí."
+        "text": "—Volveré —prometí.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -255,35 +267,43 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Hay alguien observándonos —dije."
+        "text": "—Hay alguien observándonos —dije.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Varios."
+        "text": "—Varios.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—¿Son Banditos?"
+        "text": "—¿Son Banditos?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—No."
+        "text": "—No.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—¿Los conoces?"
+        "text": "—¿Los conoces?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—He oído historias."
+        "text": "—He oído historias.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—Eso no responde nada."
+        "text": "—Eso no responde nada.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Es lo que tenemos."
+        "text": "—Es lo que tenemos.",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -349,7 +369,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Ned —dije."
+        "text": "—Ned —dije.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -462,7 +483,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Él dirigió el ataque —dije."
+        "text": "—Él dirigió el ataque —dije.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -470,11 +492,13 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Eso parece."
+        "text": "—Eso parece.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—Mató a esas personas para sacarme."
+        "text": "—Mató a esas personas para sacarme.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -482,7 +506,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Abrió una salida —dijo—. No eligió quién podía atravesarla."
+        "text": "—Abrió una salida —dijo—. No eligió quién podía atravesarla.",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -516,7 +541,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Keons está muerto? —pregunté."
+        "text": "—¿Keons está muerto? —pregunté.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -564,7 +590,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No —dije."
+        "text": "—No —dije.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -584,7 +611,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Está muerta —dije."
+        "text": "—Está muerta —dije.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -600,15 +628,18 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Puedes negarte —dijo."
+        "text": "—Puedes negarte —dijo.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—¿Y entonces?"
+        "text": "—¿Y entonces?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Seguiremos sin saber."
+        "text": "—Seguiremos sin saber.",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -624,7 +655,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Me las estás dando?"
+        "text": "—¿Me las estás dando?",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -672,7 +704,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Otra vez —dije."
+        "text": "—Otra vez —dije.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -692,7 +725,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Esto es lo que hacen —dije."
+        "text": "—Esto es lo que hacen —dije.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -700,23 +734,28 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Sí."
+        "text": "—Sí.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—¿Lo sabías?"
+        "text": "—¿Lo sabías?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Sabía que utilizaban a los muertos. No cómo."
+        "text": "—Sabía que utilizaban a los muertos. No cómo.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—¿Y los Neds?"
+        "text": "—¿Y los Neds?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Saben más que nosotros."
+        "text": "—Saben más que nosotros.",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -752,19 +791,23 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Qué buscas? —preguntó."
+        "text": "—¿Qué buscas? —preguntó.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—Una puerta que ya utilizaron."
+        "text": "—Una puerta que ya utilizaron.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—¿Y si está cerrada?"
+        "text": "—¿Y si está cerrada?",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—Entonces sabré que existe."
+        "text": "—Entonces sabré que existe.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -812,15 +855,18 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No puedo respirar allí —dije."
+        "text": "—No puedo respirar allí —dije.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—No necesitas hacerlo."
+        "text": "—No necesitas hacerlo.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—Mi cuerpo sí."
+        "text": "—Mi cuerpo sí.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -828,7 +874,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Entonces recuerda dónde está."
+        "text": "—Entonces recuerda dónde está.",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -936,7 +983,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Puedes oírnos?"
+        "text": "—¿Puedes oírnos?",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -1288,7 +1336,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Respondieron —dije."
+        "text": "—Respondieron —dije.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -1296,15 +1345,18 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Sí."
+        "text": "—Sí.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—Mara y James."
+        "text": "—Mara y James.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Reconociste sus señales."
+        "text": "—Reconociste sus señales.",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -1347,7 +1399,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Keons —dije."
+        "text": "—Keons —dije.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -1359,7 +1412,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Otra vez?"
+        "text": "—¿Otra vez?",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -1404,11 +1458,13 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Por qué?"
+        "text": "—¿Por qué?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Porque tú tampoco."
+        "text": "—Porque tú tampoco.",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -1444,27 +1500,33 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Seguimos una corriente."
+        "text": "—Seguimos una corriente.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—No pregunté eso."
+        "text": "—No pregunté eso.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Cruzamos la costa."
+        "text": "—Cruzamos la costa.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—Tampoco."
+        "text": "—Tampoco.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Sobrevivimos."
+        "text": "—Sobrevivimos.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—Eso lo sé."
+        "text": "—Eso lo sé.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -1492,7 +1554,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Necesito responder —dije."
+        "text": "—Necesito responder —dije.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
@@ -1501,11 +1564,13 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No sé si existe diferencia."
+        "text": "—No sé si existe diferencia.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Entonces esa diferencia es lo primero que debes conservar."
+        "text": "—Entonces esa diferencia es lo primero que debes conservar.",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -1604,28 +1669,38 @@ const PART5_CHAPTERS = [
         "text": "El Portador se agachó junto a mí. Su mano pareció apoyarse sobre mi hombro, pero no sentí peso. Me concentré en la respiración hasta que mis dedos dejaron de temblar."
       },
       {
-        "type": "speech",
-        "text": "—Están ahí —dije."
+        "type": "p",
+        "text": "La tela de mi camisa no se hundió bajo sus dedos. Aun así, mi cuerpo obedeció a la dirección de aquel gesto y volvió a encontrar el ritmo del aire. No supe si me había acompañado una presencia o la forma que mi mente necesitaba para no soltarse."
       },
       {
         "type": "speech",
-        "text": "—Sí."
+        "text": "—Están ahí —dije.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—No esperan que yo los salve."
+        "text": "—Sí.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—No."
+        "text": "—No esperan que yo los salve.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Esperan que decida si regreso."
+        "text": "—No.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—También decidirán qué hacer cuando llegues."
+        "text": "—Esperan que decida si regreso.",
+        "who": "Clancy"
+      },
+      {
+        "type": "speech",
+        "text": "—También decidirán qué hacer cuando llegues.",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -1665,7 +1740,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Volveré —dije."
+        "text": "—Volveré —dije.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -1689,31 +1765,38 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Más al norte."
+        "text": "—Más al norte.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—Eso nos acerca a Port Vial."
+        "text": "—Eso nos acerca a Port Vial.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—No tanto."
+        "text": "—No tanto.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—¿Puedes ver patrullas?"
+        "text": "—¿Puedes ver patrullas?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—No."
+        "text": "—No.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—Entonces ¿cómo sabes?"
+        "text": "—Entonces ¿cómo sabes?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—La corriente está girando."
+        "text": "—La corriente está girando.",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -1754,15 +1837,18 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Una página."
+        "text": "—Una página.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—¿Importante?"
+        "text": "—¿Importante?",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—Era mía."
+        "text": "—Era mía.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -1798,11 +1884,13 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Sahlo —dijo una voz desde afuera."
+        "text": "—Sahlo —dijo una voz desde afuera.",
+        "who": "Explorador Bandito"
       },
       {
         "type": "speech",
-        "text": "—Folina —respondí."
+        "text": "—Folina —respondí.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -1810,7 +1898,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Encontramos tus palabras antes que a ti —dijo."
+        "text": "—Encontramos tus palabras antes que a ti —dijo.",
+        "who": "Explorador Bandito"
       },
       {
         "type": "p",
@@ -1818,19 +1907,23 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No estaba destinada a nadie."
+        "text": "—No estaba destinada a nadie.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Entonces la guardaré como si no la hubiera leído."
+        "text": "—Entonces la guardaré como si no la hubiera leído.",
+        "who": "Explorador Bandito"
       },
       {
         "type": "speech",
-        "text": "—Ya la leíste."
+        "text": "—Ya la leíste.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Sí."
+        "text": "—Sí.",
+        "who": "Explorador Bandito"
       },
       {
         "type": "p",
@@ -1846,19 +1939,23 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—El campamento costero está a una hora —dijo—. No es el principal. Podemos darte agua, alimento y una ruta."
+        "text": "—El campamento costero está a una hora —dijo—. No es el principal. Podemos darte agua, alimento y una ruta.",
+        "who": "Explorador Bandito"
       },
       {
         "type": "speech",
-        "text": "—Necesito enviar una carta."
+        "text": "—Necesito enviar una carta.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—¿A Dema?"
+        "text": "—¿A Dema?",
+        "who": "Explorador Bandito"
       },
       {
         "type": "speech",
-        "text": "—A Trench."
+        "text": "—A Trench.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -1866,7 +1963,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Entonces escribe algo que quieras que lean."
+        "text": "—Entonces escribe algo que quieras que lean.",
+        "who": "Explorador Bandito"
       },
       {
         "type": "p",
@@ -1914,7 +2012,7 @@ const PART5_CHAPTERS = [
       {
         "type": "archive-letter",
         "id": "declaracion-i-am-clancy",
-        "title": "I Am Clancy",
+        "title": "I AM CLANCY",
         "intro": "DECLARACIÓN DISTRIBUIDA",
         "paragraphs": [
           "Estoy atrapado. Atascado en un ciclo que nunca he podido romper. Quiero creer que esta es la última vez, pero no lo sé con certeza.",
@@ -1950,19 +2048,23 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Esto puede copiarse? —preguntó."
+        "text": "—¿Esto puede copiarse? —preguntó.",
+        "who": "Explorador Bandito"
       },
       {
         "type": "speech",
-        "text": "—Debe copiarse."
+        "text": "—Debe copiarse.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—¿Cuántas veces?"
+        "text": "—¿Cuántas veces?",
+        "who": "Explorador Bandito"
       },
       {
         "type": "speech",
-        "text": "—Las suficientes para que perder una no borre el mensaje."
+        "text": "—Las suficientes para que perder una no borre el mensaje.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -1970,15 +2072,18 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Una copia irá al norte —explicó—. Otra seguirá las estaciones costeras. La tercera intentará entrar en Dema."
+        "text": "—Una copia irá al norte —explicó—. Otra seguirá las estaciones costeras. La tercera intentará entrar en Dema.",
+        "who": "Explorador Bandito"
       },
       {
         "type": "speech",
-        "text": "—¿Intentará?"
+        "text": "—¿Intentará?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Ninguna ruta merece el verbo llegará hasta después de haber llegado."
+        "text": "—Ninguna ruta merece el verbo llegará hasta después de haber llegado.",
+        "who": "Explorador Bandito"
       },
       {
         "type": "p",
@@ -1986,7 +2091,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Mara y James deben verla —dije."
+        "text": "—Mara y James deben verla —dije.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -1994,7 +2100,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Entonces escribe cómo encontrarlos."
+        "text": "—Entonces escribe cómo encontrarlos.",
+        "who": "Explorador Bandito"
       },
       {
         "type": "p",
@@ -2054,15 +2161,18 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No la escribió para nosotros —dijo al fin."
+        "text": "—No la escribió para nosotros —dijo al fin.",
+        "who": "James"
       },
       {
         "type": "speech",
-        "text": "—La envió a Trench."
+        "text": "—La envió a Trench.",
+        "who": "Mara"
       },
       {
         "type": "speech",
-        "text": "—Eso no es lo mismo."
+        "text": "—Eso no es lo mismo.",
+        "who": "James"
       },
       {
         "type": "p",
@@ -2070,7 +2180,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No. Es más grande."
+        "text": "—No. Es más grande.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -2086,15 +2197,18 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Dice que ahora tiene el poder de ellos."
+        "text": "—Dice que ahora tiene el poder de ellos.",
+        "who": "James"
       },
       {
         "type": "speech",
-        "text": "—También dice que solo funciona con muertos."
+        "text": "—También dice que solo funciona con muertos.",
+        "who": "Mara"
       },
       {
         "type": "speech",
-        "text": "—Eso es lo que él cree que sabe."
+        "text": "—Eso es lo que él cree que sabe.",
+        "who": "James"
       },
       {
         "type": "p",
@@ -2102,7 +2216,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Si quiere hablar dentro de Dema —dijo—, necesitará un cuerpo."
+        "text": "—Si quiere hablar dentro de Dema —dijo—, necesitará un cuerpo.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -2110,11 +2225,13 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Karta."
+        "text": "—Karta.",
+        "who": "James"
       },
       {
         "type": "speech",
-        "text": "—Y Pierre."
+        "text": "—Y Pierre.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -2142,7 +2259,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Entonces era esto —dijo."
+        "text": "—Entonces era esto —dijo.",
+        "who": "Pierre"
       },
       {
         "type": "p",
@@ -2154,7 +2272,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Tenemos uno —dijo."
+        "text": "—Tenemos uno —dijo.",
+        "who": "Karta"
       },
       {
         "type": "p",
@@ -2166,7 +2285,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Tenemos un cuerpo —dijo—. No uno."
+        "text": "—Tenemos un cuerpo —dijo—. No uno.",
+        "who": "Karta"
       },
       {
         "type": "p",
@@ -2187,11 +2307,13 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Sí."
+        "text": "—Sí.",
+        "who": "Pierre"
       },
       {
         "type": "speech",
-        "text": "—Compruébalo otra vez."
+        "text": "—Compruébalo otra vez.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -2230,15 +2352,18 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No."
+        "text": "—No.",
+        "who": "Karta"
       },
       {
         "type": "speech",
-        "text": "—No conservamos el cuerpo para otra operación."
+        "text": "—No conservamos el cuerpo para otra operación.",
+        "who": "Mara"
       },
       {
         "type": "speech",
-        "text": "—No."
+        "text": "—No.",
+        "who": "Pierre"
       },
       {
         "type": "p",
@@ -2246,7 +2371,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Y si la conexión no se corta."
+        "text": "—Y si la conexión no se corta.",
+        "who": "James"
       },
       {
         "type": "p",
@@ -2254,7 +2380,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—La cortamos nosotros."
+        "text": "—La cortamos nosotros.",
+        "who": "Pierre"
       },
       {
         "type": "p",
@@ -2274,7 +2401,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Lo hacemos una vez —decidió—. Con testigos. Con una señal de corte. Y cuando termine, lo despedimos como Dema se negó a hacerlo."
+        "text": "—Lo hacemos una vez —decidió—. Con testigos. Con una señal de corte. Y cuando termine, lo despedimos como Dema se negó a hacerlo.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -2282,7 +2410,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Entonces necesitamos preparar el lugar."
+        "text": "—Entonces necesitamos preparar el lugar.",
+        "who": "Karta"
       },
       {
         "type": "scene",
@@ -2332,11 +2461,13 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Eso no es una garantía."
+        "text": "—Eso no es una garantía.",
+        "who": "Mara"
       },
       {
         "type": "speech",
-        "text": "—No. Es una forma de reducir el error."
+        "text": "—No. Es una forma de reducir el error.",
+        "who": "James"
       },
       {
         "type": "p",
@@ -2405,7 +2536,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Nosotros sí."
+        "text": "—Nosotros sí.",
+        "who": "Karta"
       },
       {
         "type": "p",
@@ -2433,23 +2565,28 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Hoy —dijo."
+        "text": "—Hoy —dijo.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—¿Están preparados?"
+        "text": "—¿Están preparados?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Lo suficiente."
+        "text": "—Lo suficiente.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—Eso no significa nada."
+        "text": "—Eso no significa nada.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Significa que ya aceptaron que nunca estarán completamente preparados."
+        "text": "—Significa que ya aceptaron que nunca estarán completamente preparados.",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -2477,7 +2614,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Mara —dije."
+        "text": "—Mara —dije.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -2577,7 +2715,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Esta pequeña isla inquietante me convirtió en un arma —dije."
+        "text": "—Esta pequeña isla inquietante me convirtió en un arma —dije.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -2589,7 +2728,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Y creemos que podemos utilizarla para cambiar el curso de esta guerra."
+        "text": "—Y creemos que podemos utilizarla para cambiar el curso de esta guerra.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -2625,7 +2765,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Bienvenidos de nuevo a Trench —dije."
+        "text": "—Bienvenidos de nuevo a Trench —dije.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -2641,7 +2782,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No me refiero a un lugar al que ya hayan llegado —continué—. Me refiero al mundo que les enseñaron a considerar imposible."
+        "text": "—No me refiero a un lugar al que ya hayan llegado —continué—. Me refiero al mundo que les enseñaron a considerar imposible.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -2657,7 +2799,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Creé un mundo dentro de mí para sentir que todavía controlaba algo —dije—. Dema lo utilizó para encerrarme. Nico lo utilizó para encontrarme. Yo también aprendí a destruirlo cuando era necesario."
+        "text": "—Creé un mundo dentro de mí para sentir que todavía controlaba algo —dije—. Dema lo utilizó para encerrarme. Nico lo utilizó para encontrarme. Yo también aprendí a destruirlo cuando era necesario.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -2669,7 +2812,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Sahlo —dije."
+        "text": "—Sahlo —dije.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -2677,7 +2821,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Folina."
+        "text": "—Folina.",
+        "who": "Multitud"
       },
       {
         "type": "p",
@@ -2717,7 +2862,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Pueden llamarlo tradición —dije—. Pueden llamarlo ciudad. Pueden llamarlo salvación. Sigue siendo un ciclo si siempre termina devolviéndoles al mismo lugar."
+        "text": "—Pueden llamarlo tradición —dije—. Pueden llamarlo ciudad. Pueden llamarlo salvación. Sigue siendo un ciclo si siempre termina devolviéndoles al mismo lugar.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -2725,7 +2871,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Me llaman hijo pródigo porque sigo regresando. Eso no significa que haya nacido para salvarlos. Significa que terminé de correr en la dirección que ellos eligieron."
+        "text": "—Me llaman hijo pródigo porque sigo regresando. Eso no significa que haya nacido para salvarlos. Significa que terminé de correr en la dirección que ellos eligieron.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -2733,7 +2880,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No les pediré que me sirvan —continué—. Les pediré que elijan a quién obedecen cuando nadie les está mirando. Si la respuesta sigue siendo un obispo, al menos que sea una respuesta suya y no una frase aprendida en clase."
+        "text": "—No les pediré que me sirvan —continué—. Les pediré que elijan a quién obedecen cuando nadie les está mirando. Si la respuesta sigue siendo un obispo, al menos que sea una respuesta suya y no una frase aprendida en clase.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -2757,7 +2905,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Dónde está? —gritó alguien desde las gradas."
+        "text": "—¿Dónde está? —gritó alguien desde las gradas.",
+        "who": "Asistente"
       },
       {
         "type": "p",
@@ -2765,15 +2914,18 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Aquí —respondí."
+        "text": "—Aquí —respondí.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—¿Dentro de Dema?"
+        "text": "—¿Dentro de Dema?",
+        "who": "Asistente"
       },
       {
         "type": "speech",
-        "text": "—Más cerca de lo que su ciudad considera posible."
+        "text": "—Más cerca de lo que su ciudad considera posible.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -2785,7 +2937,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Los obispos construyeron su autoridad sobre una mentira —continué—. Les enseñaron que el poder les pertenecía por naturaleza. No es verdad. También les enseñaron que cualquier poder basta para justificar a quien lo usa. Eso tampoco es verdad."
+        "text": "—Los obispos construyeron su autoridad sobre una mentira —continué—. Les enseñaron que el poder les pertenecía por naturaleza. No es verdad. También les enseñaron que cualquier poder basta para justificar a quien lo usa. Eso tampoco es verdad.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -2813,7 +2966,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—He pasado junto a la señal de la curva peligrosa tantas veces que aprendí a verla demasiado tarde —dije—. Esta vez no les prometo que la evitaré. Les prometo que no fingiré que el camino es recto."
+        "text": "—He pasado junto a la señal de la curva peligrosa tantas veces que aprendí a verla demasiado tarde —dije—. Esta vez no les prometo que la evitaré. Les prometo que no fingiré que el camino es recto.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -2825,7 +2979,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Los días pueden parecer suficientemente largos —continué—. Los años no. Dema utiliza esa diferencia. Nos convence de esperar un día más hasta que descubrimos que entregamos una vida entera."
+        "text": "—Los días pueden parecer suficientemente largos —continué—. Los años no. Dema utiliza esa diferencia. Nos convence de esperar un día más hasta que descubrimos que entregamos una vida entera.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -2849,7 +3004,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Se acabó correr —dije."
+        "text": "—Se acabó correr —dije.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -2857,7 +3013,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Regreso con el Portador de la Antorcha, buscado vivo o muerto."
+        "text": "—Regreso con el Portador de la Antorcha, buscado vivo o muerto.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -2869,7 +3026,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Ahora elijan qué harán con el tiempo que todavía les pertenece."
+        "text": "—Ahora elijan qué harán con el tiempo que todavía les pertenece.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -2917,11 +3075,13 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Denle aire —dijo alguien."
+        "text": "—Denle aire —dijo alguien.",
+        "who": "Primer asistente"
       },
       {
         "type": "speech",
-        "text": "—No respira —respondió otra persona."
+        "text": "—No respira —respondió otra persona.",
+        "who": "Segundo asistente"
       },
       {
         "type": "p",
@@ -2965,7 +3125,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Eso es lo que hacen ellos —dijo."
+        "text": "—Eso es lo que hacen ellos —dijo.",
+        "who": "Ciudadana"
       },
       {
         "type": "p",
@@ -2973,7 +3134,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Sí."
+        "text": "—Sí.",
+        "who": "Karta"
       },
       {
         "type": "p",
@@ -2981,7 +3143,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Entonces ¿qué somos nosotros?"
+        "text": "—Entonces ¿qué somos nosotros?",
+        "who": "Ciudadana"
       },
       {
         "type": "p",
@@ -2989,7 +3152,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Personas que todavía pueden hacerse esa pregunta."
+        "text": "—Personas que todavía pueden hacerse esa pregunta.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -3005,7 +3169,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No Chances ya registró el consumo —dijo—. Tenemos minutos."
+        "text": "—No Chances ya registró el consumo —dijo—. Tenemos minutos.",
+        "who": "James"
       },
       {
         "type": "p",
@@ -3031,15 +3196,18 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Entonces la tres."
+        "text": "—Entonces la tres.",
+        "who": "Mara"
       },
       {
         "type": "speech",
-        "text": "—La tres pasa bajo el distrito de Nico."
+        "text": "—La tres pasa bajo el distrito de Nico.",
+        "who": "James"
       },
       {
         "type": "speech",
-        "text": "—Por eso no la esperan."
+        "text": "—Por eso no la esperan.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -3087,19 +3255,23 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—La red respondió —dijo."
+        "text": "—La red respondió —dijo.",
+        "who": "Explorador Bandito"
       },
       {
         "type": "speech",
-        "text": "—¿Qué ocurrió?"
+        "text": "—¿Qué ocurrió?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Conexión terminada. El cuerpo cayó. La salida sigue abierta."
+        "text": "—Conexión terminada. El cuerpo cayó. La salida sigue abierta.",
+        "who": "Explorador Bandito"
       },
       {
         "type": "speech",
-        "text": "—¿La gente?"
+        "text": "—¿La gente?",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -3107,7 +3279,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Hubo varias evacuaciones. Algunos permanecieron. No tenemos número."
+        "text": "—Hubo varias evacuaciones. Algunos permanecieron. No tenemos número.",
+        "who": "Explorador Bandito"
       },
       {
         "type": "p",
@@ -3123,7 +3296,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Usé a alguien."
+        "text": "—Usé a alguien.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -3131,15 +3305,18 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Karta y Pierre prometieron recuperarlo —dijo—. Esa parte también llegó."
+        "text": "—Karta y Pierre prometieron recuperarlo —dijo—. Esa parte también llegó.",
+        "who": "Explorador Bandito"
       },
       {
         "type": "speech",
-        "text": "—No sé quién era."
+        "text": "—No sé quién era.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Solo sabemos que Dema había borrado su expediente."
+        "text": "—Solo sabemos que Dema había borrado su expediente.",
+        "who": "Explorador Bandito"
       },
       {
         "type": "p",
@@ -3155,7 +3332,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Qué sigue? —pregunté."
+        "text": "—¿Qué sigue? —pregunté.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -3237,7 +3415,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿El sujeto cruzó el perímetro? —preguntó."
+        "text": "—¿El sujeto cruzó el perímetro? —preguntó.",
+        "who": "Nico"
       },
       {
         "type": "p",
@@ -3245,19 +3424,23 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No existe registro confirmado."
+        "text": "—No existe registro confirmado.",
+        "who": "Funcionario de No Chances"
       },
       {
         "type": "speech",
-        "text": "—¿El cuerpo era suyo?"
+        "text": "—¿El cuerpo era suyo?",
+        "who": "Nico"
       },
       {
         "type": "speech",
-        "text": "—Los testigos discrepan."
+        "text": "—Los testigos discrepan.",
+        "who": "Funcionario de No Chances"
       },
       {
         "type": "speech",
-        "text": "—¿Está vivo?"
+        "text": "—¿Está vivo?",
+        "who": "Nico"
       },
       {
         "type": "p",
@@ -3265,7 +3448,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—La pregunta requiere una definición operativa."
+        "text": "—La pregunta requiere una definición operativa.",
+        "who": "Funcionario de No Chances"
       },
       {
         "type": "p",
@@ -3273,19 +3457,23 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Defínala."
+        "text": "—Defínala.",
+        "who": "Nico"
       },
       {
         "type": "speech",
-        "text": "—Un cuerpo atribuido a Clancy habló y se movió. Después se reveló otro rostro. Simultáneamente, los sensores costeros registraron una anomalía compatible con actividad Bandito."
+        "text": "—Un cuerpo atribuido a Clancy habló y se movió. Después se reveló otro rostro. Simultáneamente, los sensores costeros registraron una anomalía compatible con actividad Bandito.",
+        "who": "Funcionario de No Chances"
       },
       {
         "type": "speech",
-        "text": "—Entonces no entró."
+        "text": "—Entonces no entró.",
+        "who": "Nico"
       },
       {
         "type": "speech",
-        "text": "—No físicamente."
+        "text": "—No físicamente.",
+        "who": "Funcionario de No Chances"
       },
       {
         "type": "p",
@@ -3293,7 +3481,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Entró."
+        "text": "—Entró.",
+        "who": "Nico"
       },
       {
         "type": "p",
@@ -3301,7 +3490,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Qué dijo? —preguntó Lisden."
+        "text": "—¿Qué dijo? —preguntó Lisden.",
+        "who": "Lisden"
       },
       {
         "type": "p",
@@ -3321,23 +3511,28 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No respondan al poder —dijo—. Respondan al hombre."
+        "text": "—No respondan al poder —dijo—. Respondan al hombre.",
+        "who": "Nico"
       },
       {
         "type": "speech",
-        "text": "—¿Negamos el incidente? —preguntó Sacarver."
+        "text": "—¿Negamos el incidente? —preguntó Sacarver.",
+        "who": "Sacarver"
       },
       {
         "type": "speech",
-        "text": "—Ya lo vieron."
+        "text": "—Ya lo vieron.",
+        "who": "Nico"
       },
       {
         "type": "speech",
-        "text": "—Entonces lo criminalizamos."
+        "text": "—Entonces lo criminalizamos.",
+        "who": "Sacarver"
       },
       {
         "type": "speech",
-        "text": "—Primero le quitamos la leyenda."
+        "text": "—Primero le quitamos la leyenda.",
+        "who": "Nico"
       },
       {
         "type": "p",
@@ -3345,7 +3540,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Utilicen su nombre. Utilicen su número. Utilicen el rostro anterior a la máscara. Que cada ciudadano recuerde que su héroe cabe en un expediente."
+        "text": "—Utilicen su nombre. Utilicen su número. Utilicen el rostro anterior a la máscara. Que cada ciudadano recuerde que su héroe cabe en un expediente.",
+        "who": "Nico"
       },
       {
         "type": "p",
@@ -3398,11 +3594,13 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Esos pertenecen a una etapa rehabilitadora."
+        "text": "—Esos pertenecen a una etapa rehabilitadora.",
+        "who": "Supervisor"
       },
       {
         "type": "speech",
-        "text": "—El nombre aparece sin prefijo."
+        "text": "—El nombre aparece sin prefijo.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -3410,7 +3608,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Añádalo."
+        "text": "—Añádalo.",
+        "who": "Supervisor"
       },
       {
         "type": "p",
@@ -3494,7 +3693,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Ni siquiera saben qué llevaba puesto —dijo."
+        "text": "—Ni siquiera saben qué llevaba puesto —dijo.",
+        "who": "James"
       },
       {
         "type": "p",
@@ -3506,7 +3706,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Mara dice que Keons dejó más grietas de las que entendimos —murmuró."
+        "text": "—Mara dice que Keons dejó más grietas de las que entendimos —murmuró.",
+        "who": "Técnico"
       },
       {
         "type": "speech",
@@ -3515,7 +3716,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Jansen piensa lo mismo."
+        "text": "—Jansen piensa lo mismo.",
+        "who": "Técnico"
       },
       {
         "type": "p",
@@ -3563,7 +3765,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No tenemos nada más —dijo."
+        "text": "—No tenemos nada más —dijo.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -3576,11 +3779,13 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Sin un nombre."
+        "text": "—Sin un nombre.",
+        "who": "Mara"
       },
       {
         "type": "speech",
-        "text": "—Dema decidió que sin nombre significaba sin historia. No tenemos que aceptar esa parte."
+        "text": "—Dema decidió que sin nombre significaba sin historia. No tenemos que aceptar esa parte.",
+        "who": "Pierre"
       },
       {
         "type": "p",
@@ -3622,15 +3827,18 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Con sus nombres?"
+        "text": "—¿Con sus nombres?",
+        "who": "Mara"
       },
       {
         "type": "speech",
-        "text": "—Sí."
+        "text": "—Sí.",
+        "who": "Karta"
       },
       {
         "type": "speech",
-        "text": "—Eso puede identificarlos."
+        "text": "—Eso puede identificarlos.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -3638,7 +3846,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Ya nos identificamos cuando decidimos recuperarlo."
+        "text": "—Ya nos identificamos cuando decidimos recuperarlo.",
+        "who": "Pierre"
       },
       {
         "type": "p",
@@ -3783,15 +3992,18 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Mejor."
+        "text": "—Mejor.",
+        "who": "Mara"
       },
       {
         "type": "speech",
-        "text": "—Algunos escribieron antes del auditorio."
+        "text": "—Algunos escribieron antes del auditorio.",
+        "who": "James"
       },
       {
         "type": "speech",
-        "text": "—Mejor todavía."
+        "text": "—Mejor todavía.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -3867,31 +4079,38 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No es reciente."
+        "text": "—No es reciente.",
+        "who": "James"
       },
       {
         "type": "speech",
-        "text": "—¿Cuánto?"
+        "text": "—¿Cuánto?",
+        "who": "Mara"
       },
       {
         "type": "speech",
-        "text": "—No puedo saberlo."
+        "text": "—No puedo saberlo.",
+        "who": "James"
       },
       {
         "type": "speech",
-        "text": "—¿La hizo Dema?"
+        "text": "—¿La hizo Dema?",
+        "who": "Mara"
       },
       {
         "type": "speech",
-        "text": "—Dema habría utilizado un número."
+        "text": "—Dema habría utilizado un número.",
+        "who": "James"
       },
       {
         "type": "speech",
-        "text": "—Los Banditos también pudieron hacerla."
+        "text": "—Los Banditos también pudieron hacerla.",
+        "who": "Mara"
       },
       {
         "type": "speech",
-        "text": "—Entonces alguien conocía el nombre antes de que la encontráramos."
+        "text": "—Entonces alguien conocía el nombre antes de que la encontráramos.",
+        "who": "James"
       },
       {
         "type": "p",
@@ -3899,7 +4118,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No convirtamos una falta de registro en una respuesta."
+        "text": "—No convirtamos una falta de registro en una respuesta.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -3971,11 +4191,13 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Tenemos que movernos —dijo."
+        "text": "—Tenemos que movernos —dijo.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—¿Hacia dónde?"
+        "text": "—¿Hacia dónde?",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -3983,11 +4205,13 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Hacia ellos."
+        "text": "—Hacia ellos.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—¿Quiénes?"
+        "text": "—¿Quiénes?",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -4046,15 +4270,18 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Nos moveremos por intervalos —dijo la mujer—. Nadie pisa exactamente donde pisa la persona anterior."
+        "text": "—Nos moveremos por intervalos —dijo la mujer—. Nadie pisa exactamente donde pisa la persona anterior.",
+        "who": "Guía Bandito"
       },
       {
         "type": "speech",
-        "text": "—¿Por los buitres? —pregunté."
+        "text": "—¿Por los buitres? —pregunté.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Por todo."
+        "text": "—Por todo.",
+        "who": "Guía Bandito"
       },
       {
         "type": "p",
@@ -4062,7 +4289,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Eso lo llevo yo —dije."
+        "text": "—Eso lo llevo yo —dije.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -4094,7 +4322,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Cuánto falta? —pregunté."
+        "text": "—¿Cuánto falta? —pregunté.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -4102,7 +4331,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Depende de la lluvia."
+        "text": "—Depende de la lluvia.",
+        "who": "Guía Bandito"
       },
       {
         "type": "p",
@@ -4110,11 +4340,13 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Depende de la ruta."
+        "text": "—Depende de la ruta.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—¿Quién la elige?"
+        "text": "—¿Quién la elige?",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -4122,7 +4354,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Quienes todavía están vivos para corregirla."
+        "text": "—Quienes todavía están vivos para corregirla.",
+        "who": "Guía Bandito"
       },
       {
         "type": "p",
@@ -4182,7 +4415,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Mara recibió la carta? —pregunté."
+        "text": "—¿Mara recibió la carta? —pregunté.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -4190,11 +4424,13 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—La red confirmó recepción parcial."
+        "text": "—La red confirmó recepción parcial.",
+        "who": "Explorador Bandito"
       },
       {
         "type": "speech",
-        "text": "—No te preguntaba a ti."
+        "text": "—No te preguntaba a ti.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -4206,11 +4442,13 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿A quién? —preguntó."
+        "text": "—¿A quién? —preguntó.",
+        "who": "Guía Bandito"
       },
       {
         "type": "speech",
-        "text": "—Al Portador."
+        "text": "—Al Portador.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -4222,11 +4460,13 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—La dirección sigue abierta —dijo."
+        "text": "—La dirección sigue abierta —dijo.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—Eso no significa que Mara y James estén vivos."
+        "text": "—Eso no significa que Mara y James estén vivos.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -4238,7 +4478,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—El último mensaje interior utilizó el código de la estatua —dijo—. No incluía nombres."
+        "text": "—El último mensaje interior utilizó el código de la estatua —dijo—. No incluía nombres.",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -4250,19 +4491,23 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Qué ocurrió después del auditorio? —pregunté."
+        "text": "—¿Qué ocurrió después del auditorio? —pregunté.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Propaganda —respondió la mujer—. Controles nuevos. Algunas detenciones. También más cartas."
+        "text": "—Propaganda —respondió la mujer—. Controles nuevos. Algunas detenciones. También más cartas.",
+        "who": "Guía Bandito"
       },
       {
         "type": "speech",
-        "text": "—¿Mara?"
+        "text": "—¿Mara?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—No tenemos confirmación reciente."
+        "text": "—No tenemos confirmación reciente.",
+        "who": "Guía Bandito"
       },
       {
         "type": "p",
@@ -4306,15 +4551,18 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Esa no —dijo la mujer desde el otro lado."
+        "text": "—Esa no —dijo la mujer desde el otro lado.",
+        "who": "Guía Bandito"
       },
       {
         "type": "speech",
-        "text": "—Podían haberlo dicho antes."
+        "text": "—Podían haberlo dicho antes.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Queríamos saber si la probarías antes de usar la cuerda."
+        "text": "—Queríamos saber si la probarías antes de usar la cuerda.",
+        "who": "Guía Bandito"
       },
       {
         "type": "p",
@@ -4350,7 +4598,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Llegaste —dijo."
+        "text": "—Llegaste —dijo.",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -4358,15 +4607,18 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Eso no fue ayuda."
+        "text": "—Eso no fue ayuda.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—No."
+        "text": "—No.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—Entonces ¿por qué extendiste la mano?"
+        "text": "—Entonces ¿por qué extendiste la mano?",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -4422,23 +4674,28 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Me observas? —pregunté."
+        "text": "—¿Me observas? —pregunté.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Estoy aquí cuando vuelves."
+        "text": "—Estoy aquí cuando vuelves.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—Eso no responde qué haces mientras no te miro."
+        "text": "—Eso no responde qué haces mientras no te miro.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—No siempre puedo hacer otra cosa."
+        "text": "—No siempre puedo hacer otra cosa.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—¿Otra cosa como qué?"
+        "text": "—¿Otra cosa como qué?",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -4446,7 +4703,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Continuar."
+        "text": "—Continuar.",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -4454,7 +4712,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Llevas días respondiendo como si cada pregunta fuera una puerta que puedes señalar sin abrir. Quiero saber dónde estamos. Quiero saber quién nos espera. Quiero saber si las personas a las que escribí siguen vivas."
+        "text": "—Llevas días respondiendo como si cada pregunta fuera una puerta que puedes señalar sin abrir. Quiero saber dónde estamos. Quiero saber quién nos espera. Quiero saber si las personas a las que escribí siguen vivas.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -4466,7 +4725,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—La siguiente estación debería tener un mensaje más reciente —dijo."
+        "text": "—La siguiente estación debería tener un mensaje más reciente —dijo.",
+        "who": "Guía Bandito"
       },
       {
         "type": "p",
@@ -4514,11 +4774,13 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Eso es todo."
+        "text": "—Eso es todo.",
+        "who": "Explorador Bandito"
       },
       {
         "type": "speech",
-        "text": "—No —dije."
+        "text": "—No —dije.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -4562,19 +4824,23 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Patrullas? —pregunté."
+        "text": "—¿Patrullas? —pregunté.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—A veces —dijo la mujer."
+        "text": "—A veces —dijo la mujer.",
+        "who": "Guía Bandito"
       },
       {
         "type": "speech",
-        "text": "—¿A veces qué?"
+        "text": "—¿A veces qué?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—A veces son solo aves."
+        "text": "—A veces son solo aves.",
+        "who": "Guía Bandito"
       },
       {
         "type": "p",
@@ -4594,7 +4860,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No están buscando alimento —dije."
+        "text": "—No están buscando alimento —dije.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -4602,7 +4869,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Entonces no les demos una forma fácil de recordarnos."
+        "text": "—Entonces no les demos una forma fácil de recordarnos.",
+        "who": "Explorador Bandito"
       },
       {
         "type": "p",
@@ -4654,7 +4922,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Esto estuvo en el submarino."
+        "text": "—Esto estuvo en el submarino.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -4666,23 +4935,28 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Fue recuperado con material de Port Vial."
+        "text": "—Fue recuperado con material de Port Vial.",
+        "who": "Guía Bandito"
       },
       {
         "type": "speech",
-        "text": "—¿Quién lo llevó?"
+        "text": "—¿Quién lo llevó?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—La persona que respondió al código."
+        "text": "—La persona que respondió al código.",
+        "who": "Guía Bandito"
       },
       {
         "type": "speech",
-        "text": "—¿Está viva?"
+        "text": "—¿Está viva?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Sí."
+        "text": "—Sí.",
+        "who": "Guía Bandito"
       },
       {
         "type": "p",
@@ -4690,7 +4964,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Dónde? —pregunté."
+        "text": "—¿Dónde? —pregunté.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -4698,15 +4973,18 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—En un lugar seguro."
+        "text": "—En un lugar seguro.",
+        "who": "Guía Bandito"
       },
       {
         "type": "speech",
-        "text": "—¿La conozco?"
+        "text": "—¿La conozco?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Esa respuesta debe dártela él."
+        "text": "—Esa respuesta debe dártela él.",
+        "who": "Guía Bandito"
       },
       {
         "type": "p",
@@ -4742,7 +5020,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No hay salida —dije."
+        "text": "—No hay salida —dije.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -4758,23 +5037,28 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Desde aquí sigues la dirección —dijo la mujer."
+        "text": "—Desde aquí sigues la dirección —dijo la mujer.",
+        "who": "Guía Bandito"
       },
       {
         "type": "speech",
-        "text": "—¿No vienen?"
+        "text": "—¿No vienen?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Llegaremos por otra entrada."
+        "text": "—Llegaremos por otra entrada.",
+        "who": "Guía Bandito"
       },
       {
         "type": "speech",
-        "text": "—¿Por qué?"
+        "text": "—¿Por qué?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Porque alguien necesita demostrar que no te condujeron hasta una emboscada."
+        "text": "—Porque alguien necesita demostrar que no te condujeron hasta una emboscada.",
+        "who": "Guía Bandito"
       },
       {
         "type": "p",
@@ -4786,7 +5070,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¡Espera! —grité."
+        "text": "—¡Espera! —grité.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -4866,7 +5151,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Clancy."
+        "text": "—Clancy.",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -4874,15 +5160,18 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No."
+        "text": "—No.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Escúchame."
+        "text": "—Escúchame.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—No."
+        "text": "—No.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -4890,43 +5179,53 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No voy a acercarme."
+        "text": "—No voy a acercarme.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—Estabas ahí."
+        "text": "—Estabas ahí.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—No físicamente."
+        "text": "—No físicamente.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—En el submarino."
+        "text": "—En el submarino.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—No."
+        "text": "—No.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—Me ayudaste con las palancas."
+        "text": "—Me ayudaste con las palancas.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—No fui yo."
+        "text": "—No fui yo.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—En el agua."
+        "text": "—En el agua.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Clancy…"
+        "text": "—Clancy…",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—En la isla. Encendiste el fuego. Me diste agua. Subiste a la embarcación."
+        "text": "—En la isla. Encendiste el fuego. Me diste agua. Subiste a la embarcación.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -4934,19 +5233,23 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—La presencia te orientó."
+        "text": "—La presencia te orientó.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—No la llames presencia."
+        "text": "—No la llames presencia.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—No tengo otra palabra completa."
+        "text": "—No tengo otra palabra completa.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—Llámala mentira."
+        "text": "—Llámala mentira.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -4958,27 +5261,33 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Yo estaba en Trench durante Saturday —dijo—. Lena puede confirmarlo."
+        "text": "—Yo estaba en Trench durante Saturday —dijo—. Lena puede confirmarlo.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—Yo estaba hablando contigo."
+        "text": "—Yo estaba hablando contigo.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Lo sé."
+        "text": "—Lo sé.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—Tomé decisiones porque creí que estabas conmigo."
+        "text": "—Tomé decisiones porque creí que estabas conmigo.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Lo sé."
+        "text": "—Lo sé.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—No, no lo sabes."
+        "text": "—No, no lo sabes.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -4986,7 +5295,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Abrí una compuerta. Elegí a quién podía sacar. Dejé a un hombre en la costa. Seguí una figura por una isla que no aparecía en ningún mapa. Crucé un río extendiendo la mano hacia alguien que no podía tocarme."
+        "text": "—Abrí una compuerta. Elegí a quién podía sacar. Dejé a un hombre en la costa. Seguí una figura por una isla que no aparecía en ningún mapa. Crucé un río extendiendo la mano hacia alguien que no podía tocarme.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -4994,23 +5304,28 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Sospechaba que me dabas un cuerpo más completo del que tenía."
+        "text": "—Sospechaba que me dabas un cuerpo más completo del que tenía.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—¿Sospechabas?"
+        "text": "—¿Sospechabas?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Puedo orientar la presencia. A veces sé hacia dónde intenta llevarte. No veo exactamente lo que tú ves. No decido cada palabra que escuchas. No controlo cada momento en que aparece."
+        "text": "—Puedo orientar la presencia. A veces sé hacia dónde intenta llevarte. No veo exactamente lo que tú ves. No decido cada palabra que escuchas. No controlo cada momento en que aparece.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—Pero la utilizaste."
+        "text": "—Pero la utilizaste.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Sí."
+        "text": "—Sí.",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -5018,31 +5333,38 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Por qué?"
+        "text": "—¿Por qué?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Porque estabas en el mar y yo no podía alcanzarte."
+        "text": "—Porque estabas en el mar y yo no podía alcanzarte.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—Entonces enviaste una versión de ti."
+        "text": "—Entonces enviaste una versión de ti.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—No sé si la envié por completo. Sé que podía sentir tu dirección. Sé que, cuando intentaba guiarte, la presencia se acercaba a ti."
+        "text": "—No sé si la envié por completo. Sé que podía sentir tu dirección. Sé que, cuando intentaba guiarte, la presencia se acercaba a ti.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—Y cuando pedí ayuda no podía hacer nada."
+        "text": "—Y cuando pedí ayuda no podía hacer nada.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—No."
+        "text": "—No.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—Cuando creí que no estaba solo, sí lo estaba."
+        "text": "—Cuando creí que no estaba solo, sí lo estaba.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -5050,23 +5372,28 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Estabas sin otro cuerpo durante parte del camino."
+        "text": "—Estabas sin otro cuerpo durante parte del camino.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—Eso significa solo."
+        "text": "—Eso significa solo.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—No para mí."
+        "text": "—No para mí.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—No eres tú quien decide cómo se sintió."
+        "text": "—No eres tú quien decide cómo se sintió.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Tienes razón."
+        "text": "—Tienes razón.",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -5082,31 +5409,38 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Quién estaba en el submarino? —pregunté."
+        "text": "—¿Quién estaba en el submarino? —pregunté.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—La persona que dejó ese mango."
+        "text": "—La persona que dejó ese mango.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—¿Lo conozco?"
+        "text": "—¿Lo conozco?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Sí."
+        "text": "—Sí.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—¿Está vivo?"
+        "text": "—¿Está vivo?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Sí."
+        "text": "—Sí.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—Dime su nombre."
+        "text": "—Dime su nombre.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -5114,7 +5448,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Está esperando para hablar contigo. No voy a robarle esa conversación."
+        "text": "—Está esperando para hablar contigo. No voy a robarle esa conversación.",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -5122,19 +5457,23 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Otra decisión tomada por mí."
+        "text": "—Otra decisión tomada por mí.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Una decisión para que la verdad venga de la persona que cargó el peso físico."
+        "text": "—Una decisión para que la verdad venga de la persona que cargó el peso físico.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—Llevas días guiándome con una figura sin peso."
+        "text": "—Llevas días guiándome con una figura sin peso.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Por eso esta vez esperé aquí con un cuerpo."
+        "text": "—Por eso esta vez esperé aquí con un cuerpo.",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -5154,7 +5493,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Mara y James las recuperaron —dijo—. Me las entregaron dentro de Dema y me hicieron prometer que llegarían a tus manos."
+        "text": "—Mara y James las recuperaron —dijo—. Me las entregaron dentro de Dema y me hicieron prometer que llegarían a tus manos.",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -5162,19 +5502,23 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Estuviste en la ciudad?"
+        "text": "—¿Estuviste en la ciudad?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Después del auditorio."
+        "text": "—Después del auditorio.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—¿Tocaste el tambor?"
+        "text": "—¿Tocaste el tambor?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—No."
+        "text": "—No.",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -5182,15 +5526,18 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Por qué lleva mi nombre?"
+        "text": "—¿Por qué lleva mi nombre?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—No lo sé."
+        "text": "—No lo sé.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—Por una vez, te creo."
+        "text": "—Por una vez, te creo.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -5198,15 +5545,18 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Existe una historia relacionada con algo parecido."
+        "text": "—Existe una historia relacionada con algo parecido.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—No quiero escucharla hoy."
+        "text": "—No quiero escucharla hoy.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—No iba a contarla hoy."
+        "text": "—No iba a contarla hoy.",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -5222,35 +5572,43 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Encendiste el fuego en Voldsøy? —pregunté."
+        "text": "—¿Encendiste el fuego en Voldsøy? —pregunté.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—No."
+        "text": "—No.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—¿Me diste agua?"
+        "text": "—¿Me diste agua?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—No."
+        "text": "—No.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—¿Moviste la embarcación?"
+        "text": "—¿Moviste la embarcación?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—No."
+        "text": "—No.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—¿Sostuviste al pasajero?"
+        "text": "—¿Sostuviste al pasajero?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—No."
+        "text": "—No.",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -5286,11 +5644,13 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Entonces casi todo lo hice solo —dije."
+        "text": "—Entonces casi todo lo hice solo —dije.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Lo hiciste tú —respondió—. No necesito quitarte la compañía para devolverte la acción."
+        "text": "—Lo hiciste tú —respondió—. No necesito quitarte la compañía para devolverte la acción.",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -5314,27 +5674,33 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Todavía estoy enojado."
+        "text": "—Todavía estoy enojado.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Deberías estarlo."
+        "text": "—Deberías estarlo.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—No confío en ti de la misma manera."
+        "text": "—No confío en ti de la misma manera.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Entonces tendremos que construir otra."
+        "text": "—Entonces tendremos que construir otra.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—No prometas que puedes."
+        "text": "—No prometas que puedes.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—No lo haré."
+        "text": "—No lo haré.",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -5342,15 +5708,18 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Puedes caminar?"
+        "text": "—¿Puedes caminar?",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—Sí."
+        "text": "—Sí.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—¿Quieres que te muestre adónde vamos?"
+        "text": "—¿Quieres que te muestre adónde vamos?",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -5370,7 +5739,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Muéstrame."
+        "text": "—Muéstrame.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -5434,7 +5804,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Cuántos? —pregunté."
+        "text": "—¿Cuántos? —pregunté.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
@@ -5443,11 +5814,13 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Cuánto tiempo llevan preparándose?"
+        "text": "—¿Cuánto tiempo llevan preparándose?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Antes de que llegaras la primera vez."
+        "text": "—Antes de que llegaras la primera vez.",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -5479,11 +5852,13 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Tardaste —dijo."
+        "text": "—Tardaste —dijo.",
+        "who": "Lena"
       },
       {
         "type": "speech",
-        "text": "—Me desviaron."
+        "text": "—Me desviaron.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -5491,7 +5866,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Lo sé."
+        "text": "—Lo sé.",
+        "who": "Lena"
       },
       {
         "type": "p",
@@ -5503,15 +5879,18 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—La red interior sigue activa —dijo antes de que pudiera preguntar—. Mara y James enviaron el último código."
+        "text": "—La red interior sigue activa —dijo antes de que pudiera preguntar—. Mara y James enviaron el último código.",
+        "who": "Lena"
       },
       {
         "type": "speech",
-        "text": "—¿Los viste?"
+        "text": "—¿Los viste?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—No recientemente. No voy a fingirlo."
+        "text": "—No recientemente. No voy a fingirlo.",
+        "who": "Lena"
       },
       {
         "type": "p",
@@ -5519,11 +5898,13 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Y la persona del submarino?"
+        "text": "—¿Y la persona del submarino?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Está viva. Está aquí. Hablará contigo cuando hayas descansado."
+        "text": "—Está viva. Está aquí. Hablará contigo cuando hayas descansado.",
+        "who": "Lena"
       },
       {
         "type": "p",
@@ -5531,7 +5912,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿La conozco?"
+        "text": "—¿La conozco?",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -5539,7 +5921,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Eso pertenece a la siguiente conversación —dijo."
+        "text": "—Eso pertenece a la siguiente conversación —dijo.",
+        "who": "Lena"
       },
       {
         "type": "p",
@@ -5555,15 +5938,18 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Comida. Agua. Descanso. Después cartas."
+        "text": "—Comida. Agua. Descanso. Después cartas.",
+        "who": "Lena"
       },
       {
         "type": "speech",
-        "text": "—¿Cartas de quién?"
+        "text": "—¿Cartas de quién?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—De personas que no están seguras de que debamos seguirte."
+        "text": "—De personas que no están seguras de que debamos seguirte.",
+        "who": "Lena"
       },
       {
         "type": "p",
@@ -5571,15 +5957,18 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Bien."
+        "text": "—Bien.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—No son todas hostiles."
+        "text": "—No son todas hostiles.",
+        "who": "Lena"
       },
       {
         "type": "speech",
-        "text": "—Eso no sería mejor."
+        "text": "—Eso no sería mejor.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -5587,7 +5976,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Entonces sí eres Clancy."
+        "text": "—Entonces sí eres Clancy.",
+        "who": "Lena"
       },
       {
         "type": "p",
@@ -5690,7 +6080,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Adelante."
+        "text": "—Adelante.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -5726,7 +6117,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Bram —dije."
+        "text": "—Bram —dije.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -5742,15 +6134,18 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Lena dijo que ya estabas despierto."
+        "text": "—Lena dijo que ya estabas despierto.",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—Lena dijo que hablarías conmigo cuando hubiera descansado."
+        "text": "—Lena dijo que hablarías conmigo cuando hubiera descansado.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Nunca prometió que el descanso sería suficiente."
+        "text": "—Nunca prometió que el descanso sería suficiente.",
+        "who": "Bram"
       },
       {
         "type": "p",
@@ -5762,7 +6157,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Todavía miente."
+        "text": "—Todavía miente.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -5770,7 +6166,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Ahora lo hace con más convicción."
+        "text": "—Ahora lo hace con más convicción.",
+        "who": "Bram"
       },
       {
         "type": "p",
@@ -5786,7 +6183,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Yo respondí a Port Vial —dijo."
+        "text": "—Yo respondí a Port Vial —dijo.",
+        "who": "Bram"
       },
       {
         "type": "p",
@@ -5794,7 +6192,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Escuché la llamada de James en una tubería de drenaje al norte de la ruta costera. El código estaba incompleto, pero reconocí la pausa. Sahlo Folina. La misma estructura que utilizamos cuando sacamos a los jóvenes durante Nico and the Niners."
+        "text": "—Escuché la llamada de James en una tubería de drenaje al norte de la ruta costera. El código estaba incompleto, pero reconocí la pausa. Sahlo Folina. La misma estructura que utilizamos cuando sacamos a los jóvenes durante Nico and the Niners.",
+        "who": "Bram"
       },
       {
         "type": "p",
@@ -5802,15 +6201,18 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Mara y James te enviaron?"
+        "text": "—¿Mara y James te enviaron?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—No podían enviarme a nadie. Solo abrieron una posibilidad. Encontré una credencial sin fotografía dentro de un contenedor de mantenimiento. Había una caja de soportes, un mango de antorcha desmontado y una ruta hasta el puerto."
+        "text": "—No podían enviarme a nadie. Solo abrieron una posibilidad. Encontré una credencial sin fotografía dentro de un contenedor de mantenimiento. Había una caja de soportes, un mango de antorcha desmontado y una ruta hasta el puerto.",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—El mango que llevaba el Portador."
+        "text": "—El mango que llevaba el Portador.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -5818,7 +6220,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—El mango que llevaba yo."
+        "text": "—El mango que llevaba yo.",
+        "who": "Bram"
       },
       {
         "type": "p",
@@ -5826,15 +6229,18 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Subí como técnico de instrumentos —continuó—. La credencial pertenecía a un trabajador trasladado hacía tres meses. Dema no había cerrado su acceso porque el departamento de espectáculos y la Municipalidad utilizaban registros distintos. James apostó a eso."
+        "text": "—Subí como técnico de instrumentos —continuó—. La credencial pertenecía a un trabajador trasladado hacía tres meses. Dema no había cerrado su acceso porque el departamento de espectáculos y la Municipalidad utilizaban registros distintos. James apostó a eso.",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—James no apuesta."
+        "text": "—James no apuesta.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—James llama cálculo a las apuestas que sobreviven."
+        "text": "—James llama cálculo a las apuestas que sobreviven.",
+        "who": "Bram"
       },
       {
         "type": "p",
@@ -5854,7 +6260,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Abordé aquí. El equipo de producción estaba concentrado en la cubierta principal y en las cámaras. Nadie comprobó si cada técnico sabía tocar el instrumento que transportaba. Dejé el mango junto a la batería. Desconecté una cámara lateral y liberé el seguro de una puerta de servicio."
+        "text": "—Abordé aquí. El equipo de producción estaba concentrado en la cubierta principal y en las cámaras. Nadie comprobó si cada técnico sabía tocar el instrumento que transportaba. Dejé el mango junto a la batería. Desconecté una cámara lateral y liberé el seguro de una puerta de servicio.",
+        "who": "Bram"
       },
       {
         "type": "p",
@@ -5862,15 +6269,18 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Golpeaste el ritmo."
+        "text": "—Golpeaste el ritmo.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Uno. Dos. Respira."
+        "text": "—Uno. Dos. Respira.",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—Me miraste."
+        "text": "—Me miraste.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -5878,11 +6288,13 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Sí."
+        "text": "—Sí.",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—¿Qué viste?"
+        "text": "—¿Qué viste?",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -5890,7 +6302,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—A alguien que me reconocía sin verme."
+        "text": "—A alguien que me reconocía sin verme.",
+        "who": "Bram"
       },
       {
         "type": "p",
@@ -5898,27 +6311,33 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Pensé que eras él."
+        "text": "—Pensé que eras él.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Lo sé ahora."
+        "text": "—Lo sé ahora.",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—¿Lo sabías entonces?"
+        "text": "—¿Lo sabías entonces?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Sabía que no estabas mirándome como se mira a un desconocido. Pensé que Mara o James te habían enviado una descripción. Después dijiste algo."
+        "text": "—Sabía que no estabas mirándome como se mira a un desconocido. Pensé que Mara o James te habían enviado una descripción. Después dijiste algo.",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—¿Qué?"
+        "text": "—¿Qué?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—«Sabía que vendrías»."
+        "text": "—«Sabía que vendrías».",
+        "who": "Bram"
       },
       {
         "type": "p",
@@ -5930,7 +6349,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No respondí —continuó—. Había una cámara todavía activa al otro lado del salón. Señalé la puerta y el techo. Tú miraste por encima de mi hombro, como si alguien estuviera detrás de mí."
+        "text": "—No respondí —continuó—. Había una cámara todavía activa al otro lado del salón. Señalé la puerta y el techo. Tú miraste por encima de mi hombro, como si alguien estuviera detrás de mí.",
+        "who": "Bram"
       },
       {
         "type": "p",
@@ -5942,15 +6362,18 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Lo viste? —pregunté."
+        "text": "—¿Lo viste? —pregunté.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—No como tú."
+        "text": "—No como tú.",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—¿Nada?"
+        "text": "—¿Nada?",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -5958,7 +6381,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Vi que tu atención se movía hacia lugares vacíos. Vi que seguías instrucciones que yo no había dado. Cuando levanté la mano para señalar la puerta, tú reaccionaste antes de que terminara el gesto. No vi una persona. Vi el espacio que estabas reservando para ella."
+        "text": "—Vi que tu atención se movía hacia lugares vacíos. Vi que seguías instrucciones que yo no había dado. Cuando levanté la mano para señalar la puerta, tú reaccionaste antes de que terminara el gesto. No vi una persona. Vi el espacio que estabas reservando para ella.",
+        "who": "Bram"
       },
       {
         "type": "p",
@@ -5966,7 +6390,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Después llegó el impacto —dije."
+        "text": "—Después llegó el impacto —dije.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -5974,23 +6399,28 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—La primera sacudida dañó dos cierres. Bajé para liberar una compuerta auxiliar. Había pasajeros atrapados detrás del depósito de lastre. Conseguí abrirla antes del segundo golpe."
+        "text": "—La primera sacudida dañó dos cierres. Bajé para liberar una compuerta auxiliar. Había pasajeros atrapados detrás del depósito de lastre. Conseguí abrirla antes del segundo golpe.",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—Yo subí."
+        "text": "—Yo subí.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Te vi correr hacia la cubierta. Fue la última vez."
+        "text": "—Te vi correr hacia la cubierta. Fue la última vez.",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—El Portador siguió conmigo."
+        "text": "—El Portador siguió conmigo.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Entonces no era yo."
+        "text": "—Entonces no era yo.",
+        "who": "Bram"
       },
       {
         "type": "p",
@@ -6002,15 +6432,18 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—El módulo se separó aquí. El agua entró por el lado opuesto y me empujó dentro del compartimento de lastre. No sé cuánto tiempo quedé atrapado. Cuando recuperé el sentido, el módulo había vuelto a la superficie, pero no cerca de Voldsøy. La corriente principal arrastró los restos hacia el este. Yo quedé cerca de la ruta municipal."
+        "text": "—El módulo se separó aquí. El agua entró por el lado opuesto y me empujó dentro del compartimento de lastre. No sé cuánto tiempo quedé atrapado. Cuando recuperé el sentido, el módulo había vuelto a la superficie, pero no cerca de Voldsøy. La corriente principal arrastró los restos hacia el este. Yo quedé cerca de la ruta municipal.",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—Dema te encontró."
+        "text": "—Dema te encontró.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Una patrulla de recuperación. Al principio pensaron que era un técnico real. Después encontraron la credencial sin fotografía, el código del conducto y restos de pintura amarilla en mi ropa."
+        "text": "—Una patrulla de recuperación. Al principio pensaron que era un técnico real. Después encontraron la credencial sin fotografía, el código del conducto y restos de pintura amarilla en mi ropa.",
+        "who": "Bram"
       },
       {
         "type": "p",
@@ -6018,7 +6451,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No Chances no me registró como superviviente —dijo—. Me registró como interferencia. Responsable probable de alteración de tránsito, sabotaje de espectáculo y pérdida de propiedad municipal. Cancelaron la cuenta asociada con la credencial y me borraron de las listas del submarino."
+        "text": "—No Chances no me registró como superviviente —dijo—. Me registró como interferencia. Responsable probable de alteración de tránsito, sabotaje de espectáculo y pérdida de propiedad municipal. Cancelaron la cuenta asociada con la credencial y me borraron de las listas del submarino.",
+        "who": "Bram"
       },
       {
         "type": "p",
@@ -6030,27 +6464,33 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Dónde te tenían?"
+        "text": "—¿Dónde te tenían?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—En un anexo de mantenimiento debajo del distrito de Lisden. No era una prisión oficial. No existía en los informes que circulaban entre torres. Interrogaban por turnos y comparaban respuestas. Querían saber quién había transmitido desde Port Vial, quién conocía las tuberías y quién había modificado la puerta de servicio."
+        "text": "—En un anexo de mantenimiento debajo del distrito de Lisden. No era una prisión oficial. No existía en los informes que circulaban entre torres. Interrogaban por turnos y comparaban respuestas. Querían saber quién había transmitido desde Port Vial, quién conocía las tuberías y quién había modificado la puerta de servicio.",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—¿Les dijiste?"
+        "text": "—¿Les dijiste?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Les dibujé mapas falsos."
+        "text": "—Les dibujé mapas falsos.",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—Eso suena a ti."
+        "text": "—Eso suena a ti.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Funcionó hasta que intentaron seguir uno."
+        "text": "—Funcionó hasta que intentaron seguir uno.",
+        "who": "Bram"
       },
       {
         "type": "p",
@@ -6058,11 +6498,13 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Mara y James te sacaron."
+        "text": "—Mara y James te sacaron.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Ellos construyeron la ruta. Jansen cambió un traslado. Karta movió un registro funerario para crear un cuerpo que no existía. Pierre sustituyó una etiqueta. Nia y Leo abrieron la catacumba. Bram salió de No Chances dentro de un contenedor que oficialmente llevaba restos de pared a la necrópolis."
+        "text": "—Ellos construyeron la ruta. Jansen cambió un traslado. Karta movió un registro funerario para crear un cuerpo que no existía. Pierre sustituyó una etiqueta. Nia y Leo abrieron la catacumba. Bram salió de No Chances dentro de un contenedor que oficialmente llevaba restos de pared a la necrópolis.",
+        "who": "Bram"
       },
       {
         "type": "p",
@@ -6074,19 +6516,23 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Cuándo?"
+        "text": "—¿Cuándo?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Antes de tu auditorio. Tuve tiempo suficiente para corregir los planos que James enviaba hacia la costa."
+        "text": "—Antes de tu auditorio. Tuve tiempo suficiente para corregir los planos que James enviaba hacia la costa.",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—Así que ayudaste con Overcompensate."
+        "text": "—Así que ayudaste con Overcompensate.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Con las rutas. No con el cuerpo."
+        "text": "—Con las rutas. No con el cuerpo.",
+        "who": "Bram"
       },
       {
         "type": "p",
@@ -6094,23 +6540,28 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Sé lo que hicieron —dijo—. Sé que era un muerto. También sé que algunas bibliotecas de la red todavía conservan las reglas que escribieron cuando pensaban que podías ocupar a una persona viva."
+        "text": "—Sé lo que hicieron —dijo—. Sé que era un muerto. También sé que algunas bibliotecas de la red todavía conservan las reglas que escribieron cuando pensaban que podías ocupar a una persona viva.",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—No puedo."
+        "text": "—No puedo.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Me alegra."
+        "text": "—Me alegra.",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—No todos lo estarán."
+        "text": "—No todos lo estarán.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Por eso existen las cartas."
+        "text": "—Por eso existen las cartas.",
+        "who": "Bram"
       },
       {
         "type": "p",
@@ -6118,7 +6569,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Hay algo más —dijo."
+        "text": "—Hay algo más —dijo.",
+        "who": "Bram"
       },
       {
         "type": "p",
@@ -6126,15 +6578,18 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Cuando bajé, había siete personas detrás de la compuerta auxiliar. Dos estaban heridas. Una había quedado atrapada por la estructura de un asiento. No pude sacarla antes de que el módulo se separara."
+        "text": "—Cuando bajé, había siete personas detrás de la compuerta auxiliar. Dos estaban heridas. Una había quedado atrapada por la estructura de un asiento. No pude sacarla antes de que el módulo se separara.",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—¿Murió?"
+        "text": "—¿Murió?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—No lo sé."
+        "text": "—No lo sé.",
+        "who": "Bram"
       },
       {
         "type": "p",
@@ -6142,11 +6597,13 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Los informes de Dema dicen que murieron casi todos —dije."
+        "text": "—Los informes de Dema dicen que murieron casi todos —dije.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Los informes de Dema también dicen que yo no sobreviví."
+        "text": "—Los informes de Dema también dicen que yo no sobreviví.",
+        "who": "Bram"
       },
       {
         "type": "p",
@@ -6154,23 +6611,28 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Abrí esta válvula para reducir la presión. Al hacerlo cerré otra ruta. Quizá impedí que el agua entrara en el compartimento de pasajeros. Quizá dejé a alguien sin salida. Nunca podré reconstruir cada consecuencia."
+        "text": "—Abrí esta válvula para reducir la presión. Al hacerlo cerré otra ruta. Quizá impedí que el agua entrara en el compartimento de pasajeros. Quizá dejé a alguien sin salida. Nunca podré reconstruir cada consecuencia.",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—Yo abrí una compuerta sin saber cuántas personas había detrás."
+        "text": "—Yo abrí una compuerta sin saber cuántas personas había detrás.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Lo sé."
+        "text": "—Lo sé.",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—¿Cómo?"
+        "text": "—¿Cómo?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—El pasajero del panel declaró que te vio regresar hacia el interior antes de que la estructura se hundiera. Después los funcionarios utilizaron su testimonio para buscar una segunda persona que no aparecía en cámaras. No era una acusación contra ti. Era el único modo en que podía explicar por qué seguía vivo."
+        "text": "—El pasajero del panel declaró que te vio regresar hacia el interior antes de que la estructura se hundiera. Después los funcionarios utilizaron su testimonio para buscar una segunda persona que no aparecía en cámaras. No era una acusación contra ti. Era el único modo en que podía explicar por qué seguía vivo.",
+        "who": "Bram"
       },
       {
         "type": "p",
@@ -6178,35 +6640,43 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Está vivo?"
+        "text": "—¿Está vivo?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Lo estaba cuando cerraron su expediente público. Lo trasladaron fuera del circuito de testimonios. Mara cree que intentan decidir qué versión de su memoria sirve mejor."
+        "text": "—Lo estaba cuando cerraron su expediente público. Lo trasladaron fuera del circuito de testimonios. Mara cree que intentan decidir qué versión de su memoria sirve mejor.",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—Lo dejé para que Dema lo recuperara."
+        "text": "—Lo dejé para que Dema lo recuperara.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Lo dejaste con agua, una baliza y una oportunidad."
+        "text": "—Lo dejaste con agua, una baliza y una oportunidad.",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—También les entregué un testigo."
+        "text": "—También les entregué un testigo.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—No podías salvarlo y controlar lo que harían después."
+        "text": "—No podías salvarlo y controlar lo que harían después.",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—Eso no vuelve inocente la decisión."
+        "text": "—Eso no vuelve inocente la decisión.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—No. La vuelve una decisión real."
+        "text": "—No. La vuelve una decisión real.",
+        "who": "Bram"
       },
       {
         "type": "p",
@@ -6214,15 +6684,18 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Clancy, yo pasé semanas repasando la compuerta que abrí. Cambiaba el ángulo en mi cabeza. Movía a la persona atrapada. Imaginaba una ruta donde todos salían y yo no era capturado. Ninguna de esas versiones ocurrió. Si convertimos cada decisión en un juicio que solo acepta resultados perfectos, terminaremos obedeciendo al primero que prometa control total."
+        "text": "—Clancy, yo pasé semanas repasando la compuerta que abrí. Cambiaba el ángulo en mi cabeza. Movía a la persona atrapada. Imaginaba una ruta donde todos salían y yo no era capturado. Ninguna de esas versiones ocurrió. Si convertimos cada decisión en un juicio que solo acepta resultados perfectos, terminaremos obedeciendo al primero que prometa control total.",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—Eso suena como algo que escribiría Mara."
+        "text": "—Eso suena como algo que escribiría Mara.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Lo escribió. Yo solo añadí los compartimentos."
+        "text": "—Lo escribió. Yo solo añadí los compartimentos.",
+        "who": "Bram"
       },
       {
         "type": "p",
@@ -6230,35 +6703,43 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Te interrogaron sobre mí? —pregunté."
+        "text": "—¿Te interrogaron sobre mí? —pregunté.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Al principio no sabían que habíamos coincidido. Buscaban una red. Después encontraron imágenes donde parecías mirarme. Intentaron convertirlo en una reunión planificada."
+        "text": "—Al principio no sabían que habíamos coincidido. Buscaban una red. Después encontraron imágenes donde parecías mirarme. Intentaron convertirlo en una reunión planificada.",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—¿Qué dijiste?"
+        "text": "—¿Qué dijiste?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Que no habíamos hablado."
+        "text": "—Que no habíamos hablado.",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—Era verdad."
+        "text": "—Era verdad.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Por eso les costaba creerla. Dema entiende mejor las mentiras complejas que las verdades incompletas."
+        "text": "—Por eso les costaba creerla. Dema entiende mejor las mentiras complejas que las verdades incompletas.",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—¿Te mostraron las grabaciones?"
+        "text": "—¿Te mostraron las grabaciones?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Fotogramas. En uno levanto el mango. En otro tú miras por encima de mí. No hay nadie detrás."
+        "text": "—Fotogramas. En uno levanto el mango. En otro tú miras por encima de mí. No hay nadie detrás.",
+        "who": "Bram"
       },
       {
         "type": "p",
@@ -6266,23 +6747,28 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Guardaste una copia?"
+        "text": "—¿Guardaste una copia?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—No. James consiguió una descripción del archivo de No Chances, pero no la imagen."
+        "text": "—No. James consiguió una descripción del archivo de No Chances, pero no la imagen.",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—Quiero verla."
+        "text": "—Quiero verla.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—¿Para qué?"
+        "text": "—¿Para qué?",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—Para saber cuánto inventé."
+        "text": "—Para saber cuánto inventé.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -6290,15 +6776,18 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Una cámara no mostraría lo que percibiste. Solo demostraría que no había un segundo cuerpo. Eso ya lo sabes."
+        "text": "—Una cámara no mostraría lo que percibiste. Solo demostraría que no había un segundo cuerpo. Eso ya lo sabes.",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—Saberlo no corrige el recuerdo."
+        "text": "—Saberlo no corrige el recuerdo.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Tal vez no debe corregirlo por completo."
+        "text": "—Tal vez no debe corregirlo por completo.",
+        "who": "Bram"
       },
       {
         "type": "p",
@@ -6306,11 +6795,13 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Qué significa eso?"
+        "text": "—¿Qué significa eso?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Que la presencia te acompañó aunque no pudiera tocar nada. El error fue atribuirle acciones físicas que pertenecían a otros, no sentir que alguien mantenía una dirección. Si borras toda la experiencia para castigar la parte incorrecta, Dema gana otra vez: convierte una contradicción en una sola versión obligatoria."
+        "text": "—Que la presencia te acompañó aunque no pudiera tocar nada. El error fue atribuirle acciones físicas que pertenecían a otros, no sentir que alguien mantenía una dirección. Si borras toda la experiencia para castigar la parte incorrecta, Dema gana otra vez: convierte una contradicción en una sola versión obligatoria.",
+        "who": "Bram"
       },
       {
         "type": "p",
@@ -6318,19 +6809,23 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿No te molesta?"
+        "text": "—¿No te molesta?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Me molesta que casi se perdiera mi nombre. No me molesta que necesitaras una figura conocida para comprender una señal."
+        "text": "—Me molesta que casi se perdiera mi nombre. No me molesta que necesitaras una figura conocida para comprender una señal.",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—¿Y si vuelvo a hacerlo?"
+        "text": "—¿Y si vuelvo a hacerlo?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Entonces pregunta quién está cargando el peso."
+        "text": "—Entonces pregunta quién está cargando el peso.",
+        "who": "Bram"
       },
       {
         "type": "p",
@@ -6338,7 +6833,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Esa es la diferencia que podemos verificar. Huellas. Objetos. Dolor. Tiempo. Una proyección puede orientar. Una persona tiene que abrir la compuerta."
+        "text": "—Esa es la diferencia que podemos verificar. Huellas. Objetos. Dolor. Tiempo. Una proyección puede orientar. Una persona tiene que abrir la compuerta.",
+        "who": "Bram"
       },
       {
         "type": "p",
@@ -6402,19 +6898,23 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Pensé que habíamos perdido esta salida —dije."
+        "text": "—Pensé que habíamos perdido esta salida —dije.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—La salida sí. La geometría no."
+        "text": "—La salida sí. La geometría no.",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—¿Qué utilidad tiene una puerta vigilada?"
+        "text": "—¿Qué utilidad tiene una puerta vigilada?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Enseña dónde esperan que volvamos. Si concentramos una señal allí, podemos mover vigilancia de otra zona."
+        "text": "—Enseña dónde esperan que volvamos. Si concentramos una señal allí, podemos mover vigilancia de otra zona.",
+        "who": "Bram"
       },
       {
         "type": "p",
@@ -6422,11 +6922,13 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Estos vienen de mapas que copié antes de tu primera fuga. Estos otros los trazó James escuchando bombas y válvulas. Nia añadió catacumbas. Leo corrigió desniveles. Mara marcó dónde los archivos dicen que existe una pared y los funerarios saben que hay una cámara."
+        "text": "—Estos vienen de mapas que copié antes de tu primera fuga. Estos otros los trazó James escuchando bombas y válvulas. Nia añadió catacumbas. Leo corrigió desniveles. Mara marcó dónde los archivos dicen que existe una pared y los funerarios saben que hay una cámara.",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—¿Cuál es tu línea?"
+        "text": "—¿Cuál es tu línea?",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -6434,7 +6936,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—La que no confío a una sola tinta."
+        "text": "—La que no confío a una sola tinta.",
+        "who": "Bram"
       },
       {
         "type": "p",
@@ -6442,19 +6945,23 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—En Trench siempre dejabas un espacio vacío —dije."
+        "text": "—En Trench siempre dejabas un espacio vacío —dije.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Para que alguien pudiera corregirme."
+        "text": "—Para que alguien pudiera corregirme.",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—Pensé que era porque no sabías qué había allí."
+        "text": "—Pensé que era porque no sabías qué había allí.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—También. Las dos cosas no se excluyen."
+        "text": "—También. Las dos cosas no se excluyen.",
+        "who": "Bram"
       },
       {
         "type": "p",
@@ -6462,11 +6969,13 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—La red creció —dije."
+        "text": "—La red creció —dije.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—La ciudad siempre fue más grande que sus nueve distritos. Solo necesitábamos aprender dónde no miraban al mismo tiempo."
+        "text": "—La ciudad siempre fue más grande que sus nueve distritos. Solo necesitábamos aprender dónde no miraban al mismo tiempo.",
+        "who": "Bram"
       },
       {
         "type": "p",
@@ -6474,23 +6983,28 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—James convirtió esto en un nodo. Mara lo convirtió en archivo. Los obispos todavía creen que es un monumento que les pertenece."
+        "text": "—James convirtió esto en un nodo. Mara lo convirtió en archivo. Los obispos todavía creen que es un monumento que les pertenece.",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—¿Y tú en qué lo convertiste?"
+        "text": "—¿Y tú en qué lo convertiste?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—En referencia."
+        "text": "—En referencia.",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—Eso no responde."
+        "text": "—Eso no responde.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Los mapas no responden. Permiten decidir qué pregunta cuesta menos vidas."
+        "text": "—Los mapas no responden. Permiten decidir qué pregunta cuesta menos vidas.",
+        "who": "Bram"
       },
       {
         "type": "p",
@@ -6498,11 +7012,13 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Por qué estás aquí y no dentro de Dema?"
+        "text": "—¿Por qué estás aquí y no dentro de Dema?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Porque necesitaba que me vieras."
+        "text": "—Porque necesitaba que me vieras.",
+        "who": "Bram"
       },
       {
         "type": "p",
@@ -6510,35 +7026,43 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Mara escribió que no debían utilizarme como símbolo antes de verificarme —continuó—. James escribió que la ruta estaba en construcción. El Portador insistió en que debías escuchar mi nombre de una persona antes de encontrarlo reducido a un informe. Y yo no quería que otra persona narrara lo que hice dentro del submarino."
+        "text": "—Mara escribió que no debían utilizarme como símbolo antes de verificarme —continuó—. James escribió que la ruta estaba en construcción. El Portador insistió en que debías escuchar mi nombre de una persona antes de encontrarlo reducido a un informe. Y yo no quería que otra persona narrara lo que hice dentro del submarino.",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—¿Después volverás?"
+        "text": "—¿Después volverás?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Sí."
+        "text": "—Sí.",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—¿A Dema?"
+        "text": "—¿A Dema?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Sí."
+        "text": "—Sí.",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—Te acaban de sacar."
+        "text": "—Te acaban de sacar.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Por eso conozco el anexo desde dentro."
+        "text": "—Por eso conozco el anexo desde dentro.",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—Eso no significa que tengas que regresar."
+        "text": "—Eso no significa que tengas que regresar.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -6546,7 +7070,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Tú acabas de usar un cadáver para hablar en una sala que podía convertirse en una trampa. No me expliques la diferencia entre deber y elección como si ya la hubieras resuelto."
+        "text": "—Tú acabas de usar un cadáver para hablar en una sala que podía convertirse en una trampa. No me expliques la diferencia entre deber y elección como si ya la hubieras resuelto.",
+        "who": "Bram"
       },
       {
         "type": "p",
@@ -6554,11 +7079,13 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No quiero que nadie convierta su culpa en una orden —dije."
+        "text": "—No quiero que nadie convierta su culpa en una orden —dije.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Entonces no me ordenes quedarme."
+        "text": "—Entonces no me ordenes quedarme.",
+        "who": "Bram"
       },
       {
         "type": "p",
@@ -6566,27 +7093,33 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Cuál es tu función? —pregunté."
+        "text": "—¿Cuál es tu función? —pregunté.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Entrar antes que el ejército. Verificar salidas. Actualizar rutas. Cuando la ofensiva empiece, permaneceré dentro y guiaré a las células hacia los corredores que James mantenga abiertos desde el puesto técnico."
+        "text": "—Entrar antes que el ejército. Verificar salidas. Actualizar rutas. Cuando la ofensiva empiece, permaneceré dentro y guiaré a las células hacia los corredores que James mantenga abiertos desde el puesto técnico.",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—¿Y si vuelven a capturarte?"
+        "text": "—¿Y si vuelven a capturarte?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Entonces el mapa debe sobrevivirme."
+        "text": "—Entonces el mapa debe sobrevivirme.",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—Eso suena como Dema."
+        "text": "—Eso suena como Dema.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—No. Dema diría que yo debo sobrevivir dentro del mapa que ellos escribieron. La resistencia dice que el mapa debe poder corregirse sin mí."
+        "text": "—No. Dema diría que yo debo sobrevivir dentro del mapa que ellos escribieron. La resistencia dice que el mapa debe poder corregirse sin mí.",
+        "who": "Bram"
       },
       {
         "type": "p",
@@ -6598,23 +7131,28 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—El Portador dijo que tú dejaste el mango."
+        "text": "—El Portador dijo que tú dejaste el mango.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Sí."
+        "text": "—Sí.",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—También dijo que no quería robarte la conversación."
+        "text": "—También dijo que no quería robarte la conversación.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—En eso tuvo razón."
+        "text": "—En eso tuvo razón.",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—¿Y en lo demás?"
+        "text": "—¿Y en lo demás?",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -6622,7 +7160,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No sé qué viste en Voldsøy. No sé cuánto de esa presencia viene de él y cuánto de ti. Solo sé lo que ocurrió mientras yo estaba allí."
+        "text": "—No sé qué viste en Voldsøy. No sé cuánto de esa presencia viene de él y cuánto de ti. Solo sé lo que ocurrió mientras yo estaba allí.",
+        "who": "Bram"
       },
       {
         "type": "p",
@@ -6638,7 +7177,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Mara la guardó —dijo—. Pensó que algún día necesitarías una prueba que no dependiera de nuestra memoria."
+        "text": "—Mara la guardó —dijo—. Pensó que algún día necesitarías una prueba que no dependiera de nuestra memoria.",
+        "who": "Bram"
       },
       {
         "type": "p",
@@ -6654,51 +7194,63 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Cuando me miraste detrás de la batería —dije—, ¿levantaste una antorcha?"
+        "text": "—Cuando me miraste detrás de la batería —dije—, ¿levantaste una antorcha?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Levanté el mango para que vieras la puerta reflejada en el metal."
+        "text": "—Levanté el mango para que vieras la puerta reflejada en el metal.",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—¿Me dijiste que respirara?"
+        "text": "—¿Me dijiste que respirara?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Golpeé el ritmo. No pronuncié la palabra."
+        "text": "—Golpeé el ritmo. No pronuncié la palabra.",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—¿Subiste conmigo?"
+        "text": "—¿Subiste conmigo?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—No."
+        "text": "—No.",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—¿Moviste las palancas?"
+        "text": "—¿Moviste las palancas?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—No."
+        "text": "—No.",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—¿Viste a Trash?"
+        "text": "—¿Viste a Trash?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Vi el casco deformarse y algo azul detrás del vidrio. No vi suficiente para nombrarlo."
+        "text": "—Vi el casco deformarse y algo azul detrás del vidrio. No vi suficiente para nombrarlo.",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—¿Llegaste a la cubierta?"
+        "text": "—¿Llegaste a la cubierta?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—No."
+        "text": "—No.",
+        "who": "Bram"
       },
       {
         "type": "p",
@@ -6747,15 +7299,18 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Consérvala."
+        "text": "—Consérvala.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Mara dijo que era para ti."
+        "text": "—Mara dijo que era para ti.",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—Mara conserva versiones. Tú conservas rutas. Yo ya tengo demasiados nombres encima."
+        "text": "—Mara conserva versiones. Tú conservas rutas. Yo ya tengo demasiados nombres encima.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -6763,23 +7318,28 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Sobre eso también tenemos que hablar."
+        "text": "—Sobre eso también tenemos que hablar.",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—El Portador mencionó una historia."
+        "text": "—El Portador mencionó una historia.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Hay más de una."
+        "text": "—Hay más de una.",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—¿Cuál es la verdadera?"
+        "text": "—¿Cuál es la verdadera?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Esa pregunta es la razón por la que hay más de una."
+        "text": "—Esa pregunta es la razón por la que hay más de una.",
+        "who": "Bram"
       },
       {
         "type": "p",
@@ -6787,19 +7347,23 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Después de comer, el campamento se reúne junto al círculo norte. Algunas personas quieren conocerte. Otras quieren verificar que sabes escuchar."
+        "text": "—Después de comer, el campamento se reúne junto al círculo norte. Algunas personas quieren conocerte. Otras quieren verificar que sabes escuchar.",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—¿Y tú?"
+        "text": "—¿Y tú?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Yo ya te conocía."
+        "text": "—Yo ya te conocía.",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—No al que regresó."
+        "text": "—No al que regresó.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -6807,7 +7371,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Nadie conoce todavía a ese."
+        "text": "—Nadie conoce todavía a ese.",
+        "who": "Bram"
       },
       {
         "type": "p",
@@ -6819,15 +7384,18 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—James necesita que le expliques qué sientes cuando buscas un cuerpo."
+        "text": "—James necesita que le expliques qué sientes cuando buscas un cuerpo.",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—¿Para qué?"
+        "text": "—¿Para qué?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Hay aves sobre las rutas que no respiran."
+        "text": "—Hay aves sobre las rutas que no respiran.",
+        "who": "Bram"
       },
       {
         "type": "p",
@@ -6835,11 +7403,13 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Estás seguro?"
+        "text": "—¿Estás seguro?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—No. Kinton encontró una pluma con conservante funerario. Jirita vio el mismo buitre permanecer inmóvil durante una tormenta y volar cuando sonó una campana. Las cartas llevan días comparando observaciones."
+        "text": "—No. Kinton encontró una pluma con conservante funerario. Jirita vio el mismo buitre permanecer inmóvil durante una tormenta y volar cuando sonó una campana. Las cartas llevan días comparando observaciones.",
+        "who": "Bram"
       },
       {
         "type": "p",
@@ -6847,19 +7417,23 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Los ojos en el cielo."
+        "text": "—Los ojos en el cielo.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Quizá."
+        "text": "—Quizá.",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—¿Cuántos?"
+        "text": "—¿Cuántos?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Los suficientes para que ninguna ruta exterior siga siendo solo exterior."
+        "text": "—Los suficientes para que ninguna ruta exterior siga siendo solo exterior.",
+        "who": "Bram"
       },
       {
         "type": "p",
@@ -6867,7 +7441,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Come primero. Después escucha las historias. Luego decidiremos cómo cruzar un cielo que ya está mirando."
+        "text": "—Come primero. Después escucha las historias. Luego decidiremos cómo cruzar un cielo que ya está mirando.",
+        "who": "Bram"
       },
       {
         "type": "p",
@@ -6966,7 +7541,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Anoche no tocó —añadió una mujer junto al fuego."
+        "text": "—Anoche no tocó —añadió una mujer junto al fuego.",
+        "who": "Carmen"
       },
       {
         "type": "speech",
@@ -6975,7 +7551,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Precisamente por eso no tocó."
+        "text": "—Precisamente por eso no tocó.",
+        "who": "Carmen"
       },
       {
         "type": "p",
@@ -6983,7 +7560,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Le escribí —dijo—. No sabía si la música llegaba a alguien hasta que faltó."
+        "text": "—Le escribí —dijo—. No sabía si la música llegaba a alguien hasta que faltó.",
+        "who": "Carmen"
       },
       {
         "type": "p",
@@ -7008,11 +7586,13 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Bram dice que nadie conoce a la persona que regresó."
+        "text": "—Bram dice que nadie conoce a la persona que regresó.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Bram dice muchas cosas para evitar decir que está contento de verte."
+        "text": "—Bram dice muchas cosas para evitar decir que está contento de verte.",
+        "who": "Lena"
       },
       {
         "type": "p",
@@ -7020,11 +7600,13 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Está contento?"
+        "text": "—¿Está contento?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—No voy a robarle otra conversación."
+        "text": "—No voy a robarle otra conversación.",
+        "who": "Lena"
       },
       {
         "type": "p",
@@ -7032,19 +7614,23 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—El círculo norte está preparado —dijo—. No es una ceremonia. Puedes marcharte cuando quieras."
+        "text": "—El círculo norte está preparado —dijo—. No es una ceremonia. Puedes marcharte cuando quieras.",
+        "who": "Lena"
       },
       {
         "type": "speech",
-        "text": "—¿Quiénes estarán?"
+        "text": "—¿Quiénes estarán?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Quienes conocen versiones."
+        "text": "—Quienes conocen versiones.",
+        "who": "Lena"
       },
       {
         "type": "speech",
-        "text": "—¿Versiones de qué?"
+        "text": "—¿Versiones de qué?",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -7052,7 +7638,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—De por qué una prenda antigua lleva tu nombre."
+        "text": "—De por qué una prenda antigua lleva tu nombre.",
+        "who": "Lena"
       },
       {
         "type": "scene",
@@ -7080,23 +7667,28 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Esta pieza estaba guardada en un depósito anterior a nuestros campamentos —dijo—. No sabemos quién la tejió. No sabemos si las letras fueron añadidas al mismo tiempo. No sabemos si «Clancy» era una persona, una función, una familia o una palabra que perdió otro significado."
+        "text": "—Esta pieza estaba guardada en un depósito anterior a nuestros campamentos —dijo—. No sabemos quién la tejió. No sabemos si las letras fueron añadidas al mismo tiempo. No sabemos si «Clancy» era una persona, una función, una familia o una palabra que perdió otro significado.",
+        "who": "Anciana"
       },
       {
         "type": "speech",
-        "text": "—Mi apellido no existe en los registros familiares —dije."
+        "text": "—Mi apellido no existe en los registros familiares —dije.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Eso no lo convierte en señal divina —respondió la anciana."
+        "text": "—Eso no lo convierte en señal divina —respondió la anciana.",
+        "who": "Anciana"
       },
       {
         "type": "speech",
-        "text": "—No dije que lo hiciera."
+        "text": "—No dije que lo hiciera.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Todavía."
+        "text": "—Todavía.",
+        "who": "Anciana"
       },
       {
         "type": "p",
@@ -7104,15 +7696,18 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Cuéntame la historia —dije."
+        "text": "—Cuéntame la historia —dije.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—¿Cuál?"
+        "text": "—¿Cuál?",
+        "who": "Anciana"
       },
       {
         "type": "speech",
-        "text": "—La que mencionó el Portador."
+        "text": "—La que mencionó el Portador.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -7120,7 +7715,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Ese es el problema."
+        "text": "—Ese es el problema.",
+        "who": "Anciana"
       },
       {
         "type": "p",
@@ -7132,7 +7728,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—En la versión de mi madre —dijo Carmen—, el hijo no quema nada. Regresa porque cree que su familia lo espera, pero ellos ya aprendieron a vivir sin él. La historia trata de aceptar que volver no te devuelve el lugar que ocupabas."
+        "text": "—En la versión de mi madre —dijo Carmen—, el hijo no quema nada. Regresa porque cree que su familia lo espera, pero ellos ya aprendieron a vivir sin él. La historia trata de aceptar que volver no te devuelve el lugar que ocupabas.",
+        "who": "Carmen"
       },
       {
         "type": "p",
@@ -7140,11 +7737,13 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—En mi distrito, el hijo vuelve para derrotar al padre y se convierte en guardián de la casa."
+        "text": "—En mi distrito, el hijo vuelve para derrotar al padre y se convierte en guardián de la casa.",
+        "who": "Hilt"
       },
       {
         "type": "speech",
-        "text": "—Eso es exactamente lo que me preocupa —dijo Gwen—. ¿Qué significa guardián? ¿Cerrar la puerta desde el lado correcto?"
+        "text": "—Eso es exactamente lo que me preocupa —dijo Gwen—. ¿Qué significa guardián? ¿Cerrar la puerta desde el lado correcto?",
+        "who": "Gwen"
       },
       {
         "type": "p",
@@ -7152,7 +7751,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Yo escuché que nunca regresó. Que todas las versiones sobre su vuelta fueron inventadas por quienes necesitaban creer que alguien afuera todavía recordaba el camino."
+        "text": "—Yo escuché que nunca regresó. Que todas las versiones sobre su vuelta fueron inventadas por quienes necesitaban creer que alguien afuera todavía recordaba el camino.",
+        "who": "Soren"
       },
       {
         "type": "speech",
@@ -7173,7 +7773,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Cuál te enseñaron a ti?"
+        "text": "—¿Cuál te enseñaron a ti?",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -7181,7 +7782,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Que el hijo regresaba dos veces."
+        "text": "—Que el hijo regresaba dos veces.",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -7189,39 +7791,48 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—La primera vez volvía porque extrañaba su hogar —continuó—. Descubría que el hogar había utilizado su ausencia para convertirlo en ejemplo: fugitivo, traidor, salvador o advertencia, según quién contara la historia. Intentaba corregirlos y fracasaba porque todavía creía que regresar significaba recuperar su lugar."
+        "text": "—La primera vez volvía porque extrañaba su hogar —continuó—. Descubría que el hogar había utilizado su ausencia para convertirlo en ejemplo: fugitivo, traidor, salvador o advertencia, según quién contara la historia. Intentaba corregirlos y fracasaba porque todavía creía que regresar significaba recuperar su lugar.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—¿Y la segunda? —pregunté."
+        "text": "—¿Y la segunda? —pregunté.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Volvía después de comprender que ningún lugar le pertenecía por haber sufrido por él."
+        "text": "—Volvía después de comprender que ningún lugar le pertenecía por haber sufrido por él.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—¿Qué hacía?"
+        "text": "—¿Qué hacía?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—La historia termina antes de decirlo."
+        "text": "—La historia termina antes de decirlo.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—Conveniente."
+        "text": "—Conveniente.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Necesario."
+        "text": "—Necesario.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—¿Por qué?"
+        "text": "—¿Por qué?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Porque la pregunta no es si el hijo regresará. Es qué hará cuando todos intenten convertir su regreso en permiso para obedecerlo."
+        "text": "—Porque la pregunta no es si el hijo regresará. Es qué hará cuando todos intenten convertir su regreso en permiso para obedecerlo.",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -7233,27 +7844,33 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Crees que habla de mí? —pregunté."
+        "text": "—¿Crees que habla de mí? —pregunté.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Creo que las personas utilizan historias antiguas para pensar en peligros presentes."
+        "text": "—Creo que las personas utilizan historias antiguas para pensar en peligros presentes.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—Eso no responde."
+        "text": "—Eso no responde.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—No es una profecía, Clancy."
+        "text": "—No es una profecía, Clancy.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—No pregunté si lo era."
+        "text": "—No pregunté si lo era.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Lo estás preguntando desde que viste tu nombre."
+        "text": "—Lo estás preguntando desde que viste tu nombre.",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -7269,7 +7886,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Una coincidencia puede ser peligrosa si suficientes personas necesitan que deje de serlo —dijo."
+        "text": "—Una coincidencia puede ser peligrosa si suficientes personas necesitan que deje de serlo —dijo.",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -7427,7 +8045,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Estás sentado frente a mí."
+        "text": "—Estás sentado frente a mí.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
@@ -7436,19 +8055,23 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—«Eres lo que dijeron que eras»."
+        "text": "—«Eres lo que dijeron que eras».",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—No significa lo que temes."
+        "text": "—No significa lo que temes.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—No sabes qué temo."
+        "text": "—No sabes qué temo.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Temes que la carta suene como una coronación."
+        "text": "—Temes que la carta suene como una coronación.",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -7456,7 +8079,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Suena un poco como una coronación —dijo."
+        "text": "—Suena un poco como una coronación —dijo.",
+        "who": "Bram"
       },
       {
         "type": "p",
@@ -7464,19 +8088,23 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Quise decir que sobreviviste, que aprendiste y que regresaste."
+        "text": "—Quise decir que sobreviviste, que aprendiste y que regresaste.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—También dices que me llevarán hasta la torre."
+        "text": "—También dices que me llevarán hasta la torre.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Ese es el objetivo operativo."
+        "text": "—Ese es el objetivo operativo.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—Y todos los objetivos operativos terminan siendo historias cuando alguien sobrevive para contarlos."
+        "text": "—Y todos los objetivos operativos terminan siendo historias cuando alguien sobrevive para contarlos.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -7484,7 +8112,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Mara encontró el patrón aquí —dijo."
+        "text": "—Mara encontró el patrón aquí —dijo.",
+        "who": "Lena"
       },
       {
         "type": "p",
@@ -7556,7 +8185,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Debemos destruirlos o nos convertiremos en ellos —dije—. Y si nos convertimos en ellos, debemos hacerlo mejor."
+        "text": "—Debemos destruirlos o nos convertiremos en ellos —dije—. Y si nos convertimos en ellos, debemos hacerlo mejor.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -7569,7 +8199,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Es una contradicción —respondí—. Si nos convertimos en ellos, ya fallamos."
+        "text": "—Es una contradicción —respondí—. Si nos convertimos en ellos, ya fallamos.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
@@ -7578,7 +8209,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Así comienzan las justificaciones."
+        "text": "—Así comienzan las justificaciones.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -7602,7 +8234,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Los obispos también creen que protegen —dije—. Tari escribió que reprenden y aseguran amar. Wendt recuerda a uno atrapando a un niño antes de caer. ¿Cuánto necesita sentir una persona para convencerse de que su control es cuidado?"
+        "text": "—Los obispos también creen que protegen —dije—. Tari escribió que reprenden y aseguran amar. Wendt recuerda a uno atrapando a un niño antes de caer. ¿Cuánto necesita sentir una persona para convencerse de que su control es cuidado?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
@@ -7611,7 +8244,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No. Pero demuestra que no nacieron siendo una torre."
+        "text": "—No. Pero demuestra que no nacieron siendo una torre.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
@@ -7620,11 +8254,13 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—O eligieron."
+        "text": "—O eligieron.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Ambas cosas pueden ser ciertas."
+        "text": "—Ambas cosas pueden ser ciertas.",
+        "who": "Bram"
       },
       {
         "type": "p",
@@ -7632,7 +8268,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Clancy —dijo—, nadie aquí te está pidiendo que tomes su lugar."
+        "text": "—Clancy —dijo—, nadie aquí te está pidiendo que tomes su lugar.",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -7640,7 +8277,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Todavía."
+        "text": "—Todavía.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -7809,11 +8447,13 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No puedo."
+        "text": "—No puedo.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Entonces mira el fuego."
+        "text": "—Entonces mira el fuego.",
+        "who": "Lena"
       },
       {
         "type": "p",
@@ -7834,11 +8474,13 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No conviertas esto en un procedimiento."
+        "text": "—No conviertas esto en un procedimiento.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Los procedimientos sirven cuando la mente pierde el mapa."
+        "text": "—Los procedimientos sirven cuando la mente pierde el mapa.",
+        "who": "Bram"
       },
       {
         "type": "p",
@@ -7846,31 +8488,38 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Fuego —dije."
+        "text": "—Fuego —dije.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Una."
+        "text": "—Una.",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—Piedra. Papel. La bufanda de Carmen. La brújula que miente."
+        "text": "—Piedra. Papel. La bufanda de Carmen. La brújula que miente.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—¿Dónde estás?"
+        "text": "—¿Dónde estás?",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—Trench."
+        "text": "—Trench.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—¿Cuándo?"
+        "text": "—¿Cuándo?",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—Antes del cruce."
+        "text": "—Antes del cruce.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -7887,7 +8536,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No lo sé."
+        "text": "—No lo sé.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -7903,19 +8553,23 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Clancy —dijo ella."
+        "text": "—Clancy —dijo ella.",
+        "who": "Lena"
       },
       {
         "type": "speech",
-        "text": "—Necesito escribirlo antes de que cambie."
+        "text": "—Necesito escribirlo antes de que cambie.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Todavía estás temblando."
+        "text": "—Todavía estás temblando.",
+        "who": "Lena"
       },
       {
         "type": "speech",
-        "text": "—Por eso."
+        "text": "—Por eso.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -7984,7 +8638,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Sí."
+        "text": "—Sí.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -8001,19 +8656,23 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No lo sé."
+        "text": "—No lo sé.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—¿Podemos cambiarla?"
+        "text": "—¿Podemos cambiarla?",
+        "who": "Lena"
       },
       {
         "type": "speech",
-        "text": "—No lo sé."
+        "text": "—No lo sé.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—¿Quién te sujetó?"
+        "text": "—¿Quién te sujetó?",
+        "who": "Lena"
       },
       {
         "type": "p",
@@ -8021,7 +8680,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No vi su rostro."
+        "text": "—No vi su rostro.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -8029,7 +8689,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Qué dijo? —preguntó."
+        "text": "—¿Qué dijo? —preguntó.",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -8037,7 +8698,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Mi nombre."
+        "text": "—Mi nombre.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -8046,6 +8708,138 @@ const PART5_CHAPTERS = [
       {
         "type": "p",
         "text": "Todavía no."
+      },
+      {
+        "type": "scene",
+        "text": "• • •"
+      },
+      {
+        "type": "p",
+        "text": "Bram no permitió que la página de la visión entrara de inmediato al archivo."
+      },
+      {
+        "type": "p",
+        "text": "La dobló una vez, la dejó debajo de una piedra y colocó frente a mí un recipiente de metal. Dentro había lentejas espesas, dos pedazos de zanahoria y una capa oscura pegada al fondo. Lena repartió pan duro. El Portador acercó la lámpara, pero no dijo hacia dónde debíamos mirar."
+      },
+      {
+        "type": "speech",
+        "text": "—Come —dijo Lena.",
+        "who": "Lena"
+      },
+      {
+        "type": "speech",
+        "text": "—Tenemos que revisar la entrada occidental.",
+        "who": "Clancy"
+      },
+      {
+        "type": "speech",
+        "text": "—La entrada seguirá allí después de cuatro cucharadas.",
+        "who": "Lena"
+      },
+      {
+        "type": "p",
+        "text": "Bram abrió un pequeño paquete que había llegado con los mapas. James había escrito sobre el envoltorio:"
+      },
+      {
+        "type": "case-file",
+        "label": "ARCHIVO // MENSAJE DE JAMES",
+        "rows": [
+          "CUATRO PERSONAS. UN RECIPIENTE. NO DISCUTIR LA RUTA HASTA TERMINARLO."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Debajo, con la letra de Mara, había otra línea:"
+      },
+      {
+        "type": "case-file",
+        "label": "ARCHIVO // MENSAJE DE MARA",
+        "rows": [
+          "SI CLANCY INTENTA CONVERTIR ESTO EN UN SÍMBOLO, QUÍTENLE LA CUCHARA."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Lena me la quitó."
+      },
+      {
+        "type": "p",
+        "text": "La risa de Bram comenzó como una tos. El Portador bajó la cabeza y sonrió contra el borde de la taza. Yo extendí la mano hasta que Lena me devolvió la cuchara."
+      },
+      {
+        "type": "p",
+        "text": "Comimos sin desplegar mapas. El pan raspaba el paladar. Las lentejas estaban quemadas y demasiado saladas. A la tercera cucharada, el calor dejó de ser una idea y descendió hasta el estómago."
+      },
+      {
+        "type": "speech",
+        "text": "—No recuerdo la última comida con Mara —dijo Bram.",
+        "who": "Bram"
+      },
+      {
+        "type": "p",
+        "text": "Nadie intentó corregir el silencio."
+      },
+      {
+        "type": "speech",
+        "text": "—Recuerdo la mesa —continuó—. Una taza rota. James desmontando un aparato mientras comía. Recuerdo que ella estaba frente a mí. Pero cuando intento ver su cara, aparece primero el dibujo que No Chances distribuyó después de borrarme.",
+        "who": "Bram"
+      },
+      {
+        "type": "p",
+        "text": "Lena apoyó dos dedos sobre su antebrazo. No lo rodeó ni le pidió que terminara la frase."
+      },
+      {
+        "type": "speech",
+        "text": "—A veces recuerdo mejor su voz cuando está enojada —dijo Bram—. Supongo que por eso sigue gritándome a través de cuatro tuberías.",
+        "who": "Bram"
+      },
+      {
+        "type": "speech",
+        "text": "—Es un método eficaz —respondió Lena.",
+        "who": "Lena"
+      },
+      {
+        "type": "p",
+        "text": "El Portador hundió la cuchara y golpeó el fondo vacío."
+      },
+      {
+        "type": "speech",
+        "text": "—Está quemado.",
+        "who": "Portador"
+      },
+      {
+        "type": "speech",
+        "text": "—También está terminado —dijo Bram.",
+        "who": "Bram"
+      },
+      {
+        "type": "speech",
+        "text": "—Las dos cosas pueden ser ciertas.",
+        "who": "Portador"
+      },
+      {
+        "type": "p",
+        "text": "Volvimos a reír. Esta vez el sonido no se pareció a un código ni a una señal de confirmación. No indicó una ruta. No pidió que nadie se levantara."
+      },
+      {
+        "type": "p",
+        "text": "Durante unos minutos, el Portador no tuvo que orientar a nadie. Lena no dirigió una columna. Bram no convirtió una pérdida en un mapa. Yo no fui una excepción, un nombre antiguo ni el hijo que regresaba."
+      },
+      {
+        "type": "p",
+        "text": "Fuimos cuatro personas cansadas alrededor de un recipiente vacío."
+      },
+      {
+        "type": "p",
+        "text": "Cuando Lena recogió las cucharas, la página de Paladin Strait seguía debajo de la piedra."
+      },
+      {
+        "type": "p",
+        "text": "No había cambiado."
+      },
+      {
+        "type": "p",
+        "text": "Nosotros sí."
       },
       {
         "type": "scene",
@@ -8073,7 +8867,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No es una copia exacta —advirtió."
+        "text": "—No es una copia exacta —advirtió.",
+        "who": "Soren"
       },
       {
         "type": "p",
@@ -8081,23 +8876,28 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Preston dice que las marcas están en capas —explicó Brikka—. Unas fueron pintadas. Otras talladas mucho después. No sabemos cuáles pertenecen a la misma historia."
+        "text": "—Preston dice que las marcas están en capas —explicó Brikka—. Unas fueron pintadas. Otras talladas mucho después. No sabemos cuáles pertenecen a la misma historia.",
+        "who": "Brikka"
       },
       {
         "type": "speech",
-        "text": "—Entonces podrían no representar a Dema."
+        "text": "—Entonces podrían no representar a Dema.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Podrían representar otra ciudad. Otro sistema. O la misma estructura antes de que tuviera este nombre."
+        "text": "—Podrían representar otra ciudad. Otro sistema. O la misma estructura antes de que tuviera este nombre.",
+        "who": "Brikka"
       },
       {
         "type": "speech",
-        "text": "—¿Y el árbol?"
+        "text": "—¿Y el árbol?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Los campamentos lo llaman Árbol del Buitre porque las aves se posan allí. El nombre puede ser reciente. La imagen no."
+        "text": "—Los campamentos lo llaman Árbol del Buitre porque las aves se posan allí. El nombre puede ser reciente. La imagen no.",
+        "who": "Brikka"
       },
       {
         "type": "p",
@@ -8105,11 +8905,13 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No podemos contar las figuras."
+        "text": "—No podemos contar las figuras.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Ni convertir la erosión en una respuesta —dijo Brikka."
+        "text": "—Ni convertir la erosión en una respuesta —dijo Brikka.",
+        "who": "Brikka"
       },
       {
         "type": "p",
@@ -8121,19 +8923,23 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Qué sientes tú? —pregunté."
+        "text": "—¿Qué sientes tú? —pregunté.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Alivio porque no inventamos nuestra inconformidad. Miedo porque otros también creyeron estar cerca del final."
+        "text": "—Alivio porque no inventamos nuestra inconformidad. Miedo porque otros también creyeron estar cerca del final.",
+        "who": "Brikka"
       },
       {
         "type": "speech",
-        "text": "—Quizá no llegaron hasta las torres."
+        "text": "—Quizá no llegaron hasta las torres.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Eso es exactamente lo que cada generación debe haber dicho."
+        "text": "—Eso es exactamente lo que cada generación debe haber dicho.",
+        "who": "Brikka"
       },
       {
         "type": "p",
@@ -8149,11 +8955,13 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Brikka cree que los obispos pudieron ser otra cosa —dijo Tari."
+        "text": "—Brikka cree que los obispos pudieron ser otra cosa —dijo Tari.",
+        "who": "Tari"
       },
       {
         "type": "speech",
-        "text": "—No —corrigió Brikka—. Creo que sus símbolos pudieron significar otra cosa. No es lo mismo."
+        "text": "—No —corrigió Brikka—. Creo que sus símbolos pudieron significar otra cosa. No es lo mismo.",
+        "who": "Brikka"
       },
       {
         "type": "p",
@@ -8161,15 +8969,18 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Yo sí creo que Nills fue otra cosa. Lo vi preocuparse."
+        "text": "—Yo sí creo que Nills fue otra cosa. Lo vi preocuparse.",
+        "who": "Wendt"
       },
       {
         "type": "speech",
-        "text": "—¿Eso cambia lo que hace ahora? —pregunté."
+        "text": "—¿Eso cambia lo que hace ahora? —pregunté.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—No. Lo vuelve una elección más larga."
+        "text": "—No. Lo vuelve una elección más larga.",
+        "who": "Wendt"
       },
       {
         "type": "p",
@@ -8177,15 +8988,18 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—O una transformación que alguien hizo sobre él."
+        "text": "—O una transformación que alguien hizo sobre él.",
+        "who": "Tari"
       },
       {
         "type": "speech",
-        "text": "—¿Importa la diferencia? —pregunté."
+        "text": "—¿Importa la diferencia? —pregunté.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Importa después de detenerlo —respondió ella—. Antes, importa que deje de controlar nuestras vidas."
+        "text": "—Importa después de detenerlo —respondió ella—. Antes, importa que deje de controlar nuestras vidas.",
+        "who": "Tari"
       },
       {
         "type": "p",
@@ -8234,7 +9048,7 @@ const PART5_CHAPTERS = [
       {
         "type": "diary",
         "id": "diario-024-02moon-25",
-        "title": "Página del diario",
+        "title": "Las fogatas se sienten como hogar",
         "intro": "024 02MOON 25",
         "paragraphs": [
           "Estas fogatas se sienten como un hogar mientras observo profundamente sus llamas y encuentro cada vez más claridad. Intentaron decirnos que éramos diferentes. Pero la llama que arde dentro de mí es el mismo fuego que he encontrado sobre las cimas de Trench. Los Banditos han vivido su rebelión y una resistencia está creciendo dentro de los muros de concreto, una lo bastante poderosa como para quemar todas las enseñanzas estancadas e introducir una esperanza verdadera y un camino hacia una vida real. Marcharemos por la mañana. La revolución llegará con el sol."
@@ -8307,11 +9121,13 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—La fuerza principal cruzará en tres columnas visibles. No intentaremos ocultar todo el movimiento. Dema ya observa las costas."
+        "text": "—La fuerza principal cruzará en tres columnas visibles. No intentaremos ocultar todo el movimiento. Dema ya observa las costas.",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—Entonces ¿por qué no atacar de noche? —preguntó una comandante."
+        "text": "—Entonces ¿por qué no atacar de noche? —preguntó una comandante.",
+        "who": "Comandante Bandito"
       },
       {
         "type": "speech",
@@ -8324,15 +9140,18 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—El amarillo confundirá la lectura visual de los buitres. El rojo hará lo contrario: atraerá atención hacia señuelos y columnas preparadas para soportarla."
+        "text": "—El amarillo confundirá la lectura visual de los buitres. El rojo hará lo contrario: atraerá atención hacia señuelos y columnas preparadas para soportarla.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—Todavía no sabemos que los buitres son huéspedes —dijo alguien."
+        "text": "—Todavía no sabemos que los buitres son huéspedes —dijo alguien.",
+        "who": "Bandito"
       },
       {
         "type": "speech",
-        "text": "—Lo sabremos antes de comprometer los botes —respondí."
+        "text": "—Lo sabremos antes de comprometer los botes —respondí.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -8352,31 +9171,38 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—James encontró una estación de bombeo cerca del muro occidental. Puede convertirla en puesto técnico. Desde allí mantendrá compuertas, señales y corredores. Mara saldrá con la célula interna por una ruta diferente cuando los ojos se desplacen hacia la costa."
+        "text": "—James encontró una estación de bombeo cerca del muro occidental. Puede convertirla en puesto técnico. Desde allí mantendrá compuertas, señales y corredores. Mara saldrá con la célula interna por una ruta diferente cuando los ojos se desplacen hacia la costa.",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—¿Y tú? —pregunté."
+        "text": "—¿Y tú? —pregunté.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Entraré antes del cruce por la ruta de catacumbas. Permaneceré dentro. Cuando James abra un corredor, yo guiaré a las células hacia él."
+        "text": "—Entraré antes del cruce por la ruta de catacumbas. Permaneceré dentro. Cuando James abra un corredor, yo guiaré a las células hacia él.",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—Acabas de regresar."
+        "text": "—Acabas de regresar.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Ya discutimos esto."
+        "text": "—Ya discutimos esto.",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—No significa que terminamos."
+        "text": "—No significa que terminamos.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Significa que el plan no puede esperar a que te guste."
+        "text": "—Significa que el plan no puede esperar a que te guste.",
+        "who": "Bram"
       },
       {
         "type": "p",
@@ -8384,7 +9210,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Mi columna se reunirá con Mara después de su salida. No antes. Si su ruta falla, no exponemos la posición completa intentando alcanzarla."
+        "text": "—Mi columna se reunirá con Mara después de su salida. No antes. Si su ruta falla, no exponemos la posición completa intentando alcanzarla.",
+        "who": "Lena"
       },
       {
         "type": "speech",
@@ -8393,7 +9220,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Quiero escucharlo de ella."
+        "text": "—Quiero escucharlo de ella.",
+        "who": "Lena"
       },
       {
         "type": "p",
@@ -8413,7 +9241,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Entonces que salga viva y me lo repita."
+        "text": "—Entonces que salga viva y me lo repita.",
+        "who": "Lena"
       },
       {
         "type": "p",
@@ -8437,7 +9266,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Encontré una forma de entrar —dije."
+        "text": "—Encontré una forma de entrar —dije.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -8454,7 +9284,7 @@ const PART5_CHAPTERS = [
       {
         "type": "archive-letter",
         "id": "declaracion-de-infiltracion",
-        "title": "Declaración de infiltración",
+        "title": "",
         "intro": "ARCHIVO DE LA BRECHA",
         "paragraphs": [
           "Encontré una forma de entrar. Una forma que jamás sospecharán y que nunca lograrán comprender. Todo lo relacionado con nuestra causa les resulta muy difícil de entender, pero está muy cerca del corazón de la resistencia resplandeciente. Puedo llegar hasta todos ellos. Puedo reclutar a cualquiera cuyos ojos sean capaces de ver más allá del horizonte. Puedo enseñarles. Pueden aprender lo que yo he aprendido y sobrevolar todas las construcciones que Dema ha colocado frente a ellos. Recuperaremos lo que nos pertenece."
@@ -8475,11 +9305,13 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Está en el original —dije."
+        "text": "—Está en el original —dije.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Entonces el original puede estar equivocado."
+        "text": "—Entonces el original puede estar equivocado.",
+        "who": "Lena"
       },
       {
         "type": "p",
@@ -8487,7 +9319,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Nadie recluta a cualquiera. Las personas eligen."
+        "text": "—Nadie recluta a cualquiera. Las personas eligen.",
+        "who": "Bram"
       },
       {
         "type": "p",
@@ -8495,7 +9328,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Y enseñar no significa que todos deben aprender de ti."
+        "text": "—Y enseñar no significa que todos deben aprender de ti.",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -8503,7 +9337,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No voy a cambiar lo que sentí al escribirla."
+        "text": "—No voy a cambiar lo que sentí al escribirla.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
@@ -8528,7 +9363,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Dice que la ciudad ya está elevando los buitres."
+        "text": "—Dice que la ciudad ya está elevando los buitres.",
+        "who": "Bram"
       },
       {
         "type": "p",
@@ -8556,7 +9392,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Se acabó la reunión."
+        "text": "—Se acabó la reunión.",
+        "who": "Lena"
       },
       {
         "type": "p",
@@ -8568,7 +9405,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Mi ruta sale antes que la de ustedes —dijo."
+        "text": "—Mi ruta sale antes que la de ustedes —dijo.",
+        "who": "Bram"
       },
       {
         "type": "p",
@@ -8610,8 +9448,9 @@ const PART5_CHAPTERS = [
         "text": "El primer buitre cayó antes de que viéramos el agua."
       },
       {
-        "type": "p",
-        "text": "No lo derribamos."
+        "type": "speech",
+        "text": "—Nadie lo derribó —dijo Lena.",
+        "who": "Lena"
       },
       {
         "type": "p",
@@ -8624,6 +9463,10 @@ const PART5_CHAPTERS = [
       {
         "type": "p",
         "text": "El ave estaba boca arriba."
+      },
+      {
+        "type": "p",
+        "text": "Una garra se cerraba y abría contra la tierra sin encontrar apoyo. El pecho no se movía. Aun así, el cuerpo continuaba recibiendo una instrucción desde algún lugar detrás de las torres."
       },
       {
         "type": "p",
@@ -8640,11 +9483,13 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Ya está muerto —respondió uno de los exploradores."
+        "text": "—Ya está muerto —respondió uno de los exploradores.",
+        "who": "Explorador Bandito"
       },
       {
         "type": "speech",
-        "text": "—Eso no significa que esté vacío."
+        "text": "—Eso no significa que esté vacío.",
+        "who": "Kinton"
       },
       {
         "type": "p",
@@ -8672,19 +9517,23 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No intentes tomarlo —dijo."
+        "text": "—No intentes tomarlo —dijo.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—Necesito saber qué ve."
+        "text": "—Necesito saber qué ve.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Necesitamos que regreses antes de cruzar."
+        "text": "—Necesitamos que regreses antes de cruzar.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—No son cosas distintas."
+        "text": "—No son cosas distintas.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -8745,7 +9594,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Solo lo que veía esta ave. Cayó sobre un límite y el control cambió al pasar de una presión a otra. No miran todo desde un solo lugar. Se reparten el cielo."
+        "text": "—Solo lo que veía esta ave. Cayó sobre un límite y el control cambió al pasar de una presión a otra. No miran todo desde un solo lugar. Se reparten el cielo.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -8753,19 +9603,23 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Cuántos sectores?"
+        "text": "—¿Cuántos sectores?",
+        "who": "Kinton"
       },
       {
         "type": "speech",
-        "text": "—No pude contarlos. Sentí dos presiones sucesivas. Ninguna pudo sostenerla bien durante el cambio."
+        "text": "—No pude contarlos. Sentí dos presiones sucesivas. Ninguna pudo sostenerla bien durante el cambio.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—¿Los obispos? —preguntó un explorador."
+        "text": "—¿Los obispos? —preguntó un explorador.",
+        "who": "Explorador Bandito"
       },
       {
         "type": "speech",
-        "text": "—No puedo demostrar quién. Pero ambas rutas regresaban hacia Dema."
+        "text": "—No puedo demostrar quién. Pero ambas rutas regresaban hacia Dema.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -8773,15 +9627,18 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Cadáver preservado."
+        "text": "—Cadáver preservado.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—Sí."
+        "text": "—Sí.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—¿Puedes quitarles un ave?"
+        "text": "—¿Puedes quitarles un ave?",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -8789,7 +9646,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Solo cuando pierden el control. Durante segundos. No puedo entrar en una ruta estable y, cuando lo intento, saben dónde estoy."
+        "text": "—Solo cuando pierden el control. Durante segundos. No puedo entrar en una ruta estable y, cuando lo intento, saben dónde estoy.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -8801,7 +9659,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Sal de conservación —dijo—. Resina funeraria. La mezcla es casi la misma que usan en cámaras de continuidad, pero reducida para no endurecer las alas."
+        "text": "—Sal de conservación —dijo—. Resina funeraria. La mezcla es casi la misma que usan en cámaras de continuidad, pero reducida para no endurecer las alas.",
+        "who": "Kinton"
       },
       {
         "type": "p",
@@ -8809,7 +9668,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Los jardines reciben barriles de esto cada cambio de estación. Decían que era para proteger las raíces de los monumentos."
+        "text": "—Los jardines reciben barriles de esto cada cambio de estación. Decían que era para proteger las raíces de los monumentos.",
+        "who": "Jirita"
       },
       {
         "type": "speech",
@@ -8822,7 +9682,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Más de cien si reutilizan la solución. Menos si reemplazan órganos."
+        "text": "—Más de cien si reutilizan la solución. Menos si reemplazan órganos.",
+        "who": "Kinton"
       },
       {
         "type": "p",
@@ -8830,7 +9691,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Reemplazan órganos?"
+        "text": "—¿Reemplazan órganos?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
@@ -8843,7 +9705,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Este enfoca mal. Vi destellos, no detalles."
+        "text": "—Este enfoca mal. Vi destellos, no detalles.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
@@ -8856,11 +9719,13 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Las aves evitaban los parterres donde crecían estas. Pensé que era por el color."
+        "text": "—Las aves evitaban los parterres donde crecían estas. Pensé que era por el color.",
+        "who": "Jirita"
       },
       {
         "type": "speech",
-        "text": "—Los obispos no ven amarillo —dijo un joven."
+        "text": "—Los obispos no ven amarillo —dijo un joven.",
+        "who": "Bandito"
       },
       {
         "type": "speech",
@@ -8869,7 +9734,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Pero podría afectar el contraste —dije—. El huésped de Overcompensate perdía profundidad cuando la luz golpeaba directamente la máscara. Si el ojo está preservado, colores intensos y reflejos pueden saturar lo que transmite."
+        "text": "—Pero podría afectar el contraste —dije—. El huésped de Overcompensate perdía profundidad cuando la luz golpeaba directamente la máscara. Si el ojo está preservado, colores intensos y reflejos pueden saturar lo que transmite.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -8877,7 +9743,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No somos invisibles con amarillo —dije—. Somos más difíciles de interpretar."
+        "text": "—No somos invisibles con amarillo —dije—. Somos más difíciles de interpretar.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
@@ -8891,7 +9758,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Entonces les daremos demasiadas."
+        "text": "—Entonces les daremos demasiadas.",
+        "who": "Lena"
       },
       {
         "type": "p",
@@ -8903,15 +9771,18 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Cada obispo controla un sector —dijo—. Si obligamos a las aves a cruzar límites, reducimos precisión."
+        "text": "—Cada obispo controla un sector —dijo—. Si obligamos a las aves a cruzar límites, reducimos precisión.",
+        "who": "Lena"
       },
       {
         "type": "speech",
-        "text": "—Humo en líneas diagonales —propuso Lena—. Señuelos rojos hacia los bordes. Amarillo en el centro."
+        "text": "—Humo en líneas diagonales —propuso Lena—. Señuelos rojos hacia los bordes. Amarillo en el centro.",
+        "who": "Lena"
       },
       {
         "type": "speech",
-        "text": "—Reflejos —añadí—. Sus ojos funcionan, pero el cuerpo no corrige bien el enfoque. El huésped de Overcompensate veía peor con luz directa."
+        "text": "—Reflejos —añadí—. Sus ojos funcionan, pero el cuerpo no corrige bien el enfoque. El huésped de Overcompensate veía peor con luz directa.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -8923,7 +9794,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Dema ya sabe que marchamos."
+        "text": "—Dema ya sabe que marchamos.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
@@ -8976,7 +9848,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No todos saldrán cuando abramos —dijo."
+        "text": "—No todos saldrán cuando abramos —dijo.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -8984,7 +9857,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—La del distrito de Keons nunca pasa sobre Sacarver —dijo—. Y las de Lisden pierden altura cuando entran en el centro."
+        "text": "—La del distrito de Keons nunca pasa sobre Sacarver —dijo—. Y las de Lisden pierden altura cuando entran en el centro.",
+        "who": "James"
       },
       {
         "type": "p",
@@ -8992,11 +9866,13 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Entonces los obispos se reparten la vista igual que se reparten a los ciudadanos."
+        "text": "—Entonces los obispos se reparten la vista igual que se reparten a los ciudadanos.",
+        "who": "Mara"
       },
       {
         "type": "speech",
-        "text": "—La administración es su única forma de imaginar el mundo."
+        "text": "—La administración es su única forma de imaginar el mundo.",
+        "who": "James"
       },
       {
         "type": "p",
@@ -9014,7 +9890,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—O miedo. No asumiré cuál."
+        "text": "—O miedo. No asumiré cuál.",
+        "who": "Bram"
       },
       {
         "type": "p",
@@ -9044,11 +9921,13 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Eso es una forma técnica de decir lo mismo."
+        "text": "—Eso es una forma técnica de decir lo mismo.",
+        "who": "James"
       },
       {
         "type": "speech",
-        "text": "—Por eso la elegí."
+        "text": "—Por eso la elegí.",
+        "who": "Bram"
       },
       {
         "type": "p",
@@ -9081,11 +9960,13 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No dije nada."
+        "text": "—No dije nada.",
+        "who": "James"
       },
       {
         "type": "speech",
-        "text": "—La ciudad sí."
+        "text": "—La ciudad sí.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -9093,7 +9974,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Entonces salgamos para corregirla."
+        "text": "—Entonces salgamos para corregirla.",
+        "who": "Bram"
       },
       {
         "type": "p",
@@ -9121,7 +10003,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Cadáveres. Control sectorizado. Preparan humo."
+        "text": "—Cadáveres. Control sectorizado. Preparan humo.",
+        "who": "James"
       },
       {
         "type": "p",
@@ -9129,19 +10012,23 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Clancy los tocó?"
+        "text": "—¿Clancy los tocó?",
+        "who": "Mara"
       },
       {
         "type": "speech",
-        "text": "—Las astas."
+        "text": "—Las astas.",
+        "who": "James"
       },
       {
         "type": "speech",
-        "text": "—Eso no responde."
+        "text": "—Eso no responde.",
+        "who": "Mara"
       },
       {
         "type": "speech",
-        "text": "—Es la única respuesta que enviaron."
+        "text": "—Es la única respuesta que enviaron.",
+        "who": "James"
       },
       {
         "type": "p",
@@ -9149,7 +10036,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Significa que puede sentir una ruta ya ocupada."
+        "text": "—Significa que puede sentir una ruta ya ocupada.",
+        "who": "Bram"
       },
       {
         "type": "speech",
@@ -9166,7 +10054,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Mi ventana empieza con el primer humo. Tengo cuatro minutos para cruzar la estación de bombeo antes de que las aves regresen al muro."
+        "text": "—Mi ventana empieza con el primer humo. Tengo cuatro minutos para cruzar la estación de bombeo antes de que las aves regresen al muro.",
+        "who": "James"
       },
       {
         "type": "p",
@@ -9174,27 +10063,33 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—La compuerta exterior se atasca en la mitad."
+        "text": "—La compuerta exterior se atasca en la mitad.",
+        "who": "Mara"
       },
       {
         "type": "speech",
-        "text": "—Lo sé."
+        "text": "—Lo sé.",
+        "who": "James"
       },
       {
         "type": "speech",
-        "text": "—La última vez dijiste lo mismo y casi nos inundas."
+        "text": "—La última vez dijiste lo mismo y casi nos inundas.",
+        "who": "Mara"
       },
       {
         "type": "speech",
-        "text": "—La última vez funcionó."
+        "text": "—La última vez funcionó.",
+        "who": "James"
       },
       {
         "type": "speech",
-        "text": "—La última vez el agua estaba hasta mi cuello."
+        "text": "—La última vez el agua estaba hasta mi cuello.",
+        "who": "Mara"
       },
       {
         "type": "speech",
-        "text": "—Tu cuello seguía unido al resto."
+        "text": "—Tu cuello seguía unido al resto.",
+        "who": "James"
       },
       {
         "type": "p",
@@ -9210,11 +10105,13 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Nos vemos afuera —dijo."
+        "text": "—Nos vemos afuera —dijo.",
+        "who": "James"
       },
       {
         "type": "speech",
-        "text": "—No prometas cosas que no controlas."
+        "text": "—No prometas cosas que no controlas.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -9226,7 +10123,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Entonces voy a intentarlo."
+        "text": "—Entonces voy a intentarlo.",
+        "who": "James"
       },
       {
         "type": "p",
@@ -9238,7 +10136,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Eso sí te lo creo —dijo."
+        "text": "—Eso sí te lo creo —dijo.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -9250,15 +10149,18 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Tu salida no depende de la suya —dijo."
+        "text": "—Tu salida no depende de la suya —dijo.",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—Lo sé."
+        "text": "—Lo sé.",
+        "who": "Mara"
       },
       {
         "type": "speech",
-        "text": "—Repítelo cuando empiece el ruido."
+        "text": "—Repítelo cuando empiece el ruido.",
+        "who": "Bram"
       },
       {
         "type": "p",
@@ -9266,7 +10168,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Y tú qué repetirás?"
+        "text": "—¿Y tú qué repetirás?",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -9274,7 +10177,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Que una ruta cerrada no significa una ciudad perdida."
+        "text": "—Que una ruta cerrada no significa una ciudad perdida.",
+        "who": "Bram"
       },
       {
         "type": "scene",
@@ -9306,7 +10210,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Quién decide qué se conserva? —pregunté."
+        "text": "—¿Quién decide qué se conserva? —pregunté.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -9314,15 +10219,18 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Nadie por completo. Algunas cartas viajan. Otras se pierden. Otras cambian de función."
+        "text": "—Nadie por completo. Algunas cartas viajan. Otras se pierden. Otras cambian de función.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—Eso también puede deformar una historia."
+        "text": "—Eso también puede deformar una historia.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Sí. La diferencia es que aquí no fingimos que existe una versión sin deformación."
+        "text": "—Sí. La diferencia es que aquí no fingimos que existe una versión sin deformación.",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -9330,7 +10238,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Cuando termine esto —dije—, alguien elegirá cuáles de nuestras cartas sobreviven."
+        "text": "—Cuando termine esto —dije—, alguien elegirá cuáles de nuestras cartas sobreviven.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
@@ -9375,7 +10284,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Cuatro ojos ven mejor que dos —dijo cuando pasé."
+        "text": "—Cuatro ojos ven mejor que dos —dijo cuando pasé.",
+        "who": "Soren"
       },
       {
         "type": "p",
@@ -9383,15 +10293,18 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No pienso dormirme hoy."
+        "text": "—No pienso dormirme hoy.",
+        "who": "Soren"
       },
       {
         "type": "speech",
-        "text": "—Eso dijiste la noche anterior."
+        "text": "—Eso dijiste la noche anterior.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Hoy tengo testigo."
+        "text": "—Hoy tengo testigo.",
+        "who": "Soren"
       },
       {
         "type": "p",
@@ -9440,11 +10353,13 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No pensaba hacerlo."
+        "text": "—No pensaba hacerlo.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Piensas muchas cosas cuando ves Dema."
+        "text": "—Piensas muchas cosas cuando ves Dema.",
+        "who": "Lena"
       },
       {
         "type": "p",
@@ -9456,7 +10371,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Qué señal esperamos? —pregunté."
+        "text": "—¿Qué señal esperamos? —pregunté.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
@@ -9465,7 +10381,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Y si no sale?"
+        "text": "—¿Y si no sale?",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -9473,7 +10390,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Seguimos el plan que ella aprobó."
+        "text": "—Seguimos el plan que ella aprobó.",
+        "who": "Lena"
       },
       {
         "type": "p",
@@ -9598,7 +10516,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Funcionó —dijo alguien."
+        "text": "—Funcionó —dijo alguien.",
+        "who": "Bandito"
       },
       {
         "type": "speech",
@@ -9624,7 +10543,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Solo cuando cambie de sector."
+        "text": "—Solo cuando cambie de sector.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -9661,15 +10581,18 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Sintieron la interferencia."
+        "text": "—Sintieron la interferencia.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—¿Quién?"
+        "text": "—¿Quién?",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—No sé."
+        "text": "—No sé.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -9725,7 +10648,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—James —murmuró."
+        "text": "—James —murmuró.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -9749,7 +10673,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Tenemos menos de dos minutos."
+        "text": "—Tenemos menos de dos minutos.",
+        "who": "Nia"
       },
       {
         "type": "p",
@@ -9814,11 +10739,13 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Saliste —dijo."
+        "text": "—Saliste —dijo.",
+        "who": "Lena"
       },
       {
         "type": "speech",
-        "text": "—Te dije que dejaras de hablar como si no pudiera escucharte."
+        "text": "—Te dije que dejaras de hablar como si no pudiera escucharte.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -9834,31 +10761,38 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Cuántos?"
+        "text": "—¿Cuántos?",
+        "who": "Lena"
       },
       {
         "type": "speech",
-        "text": "—Diecisiete."
+        "text": "—Diecisiete.",
+        "who": "Mara"
       },
       {
         "type": "speech",
-        "text": "—¿Heridos?"
+        "text": "—¿Heridos?",
+        "who": "Lena"
       },
       {
         "type": "speech",
-        "text": "—Dos. Ninguno inmóvil."
+        "text": "—Dos. Ninguno inmóvil.",
+        "who": "Mara"
       },
       {
         "type": "speech",
-        "text": "—James."
+        "text": "—James.",
+        "who": "Lena"
       },
       {
         "type": "speech",
-        "text": "—Puesto activo."
+        "text": "—Puesto activo.",
+        "who": "Mara"
       },
       {
         "type": "speech",
-        "text": "—Bram."
+        "text": "—Bram.",
+        "who": "Lena"
       },
       {
         "type": "p",
@@ -9866,7 +10800,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Dentro."
+        "text": "—Dentro.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -9894,7 +10829,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Dónde está Clancy?"
+        "text": "—¿Dónde está Clancy?",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -9902,7 +10838,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Aprendiendo cuánto puede ver Dema."
+        "text": "—Aprendiendo cuánto puede ver Dema.",
+        "who": "Lena"
       },
       {
         "type": "scene",
@@ -10019,7 +10956,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Las cámaras funerarias —dijo."
+        "text": "—Las cámaras funerarias —dijo.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -10059,7 +10997,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No están eligiendo mejores ojos —dijo—. Están eligiendo cuerpos nuevos."
+        "text": "—No están eligiendo mejores ojos —dijo—. Están eligiendo cuerpos nuevos.",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -10130,7 +11069,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No son ellos —dijo."
+        "text": "—No son ellos —dijo.",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -10162,7 +11102,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Articulaciones —gritó—. No el pecho. No la cabeza si existe otra opción."
+        "text": "—Articulaciones —gritó—. No el pecho. No la cabeza si existe otra opción.",
+        "who": "Karta"
       },
       {
         "type": "p",
@@ -10182,7 +11123,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Dependen de una misma concentración —dije."
+        "text": "—Dependen de una misma concentración —dije.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -10190,7 +11132,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Puedes cortar una?"
+        "text": "—¿Puedes cortar una?",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -10198,11 +11141,13 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Solo si la conexión se afloja. Una por vez."
+        "text": "—Solo si la conexión se afloja. Una por vez.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—No intentes convertirte en otro obispo."
+        "text": "—No intentes convertirte en otro obispo.",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -10234,7 +11179,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Uno —dije, limpiándome la sangre—. Y solo cuando ellos pierden el contacto. Pero la red transmite el error."
+        "text": "—Uno —dije, limpiándome la sangre—. Y solo cuando ellos pierden el contacto. Pero la red transmite el error.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
@@ -10243,7 +11189,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No desde aquí."
+        "text": "—No desde aquí.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -10312,15 +11259,18 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Mientras pelean?"
+        "text": "—¿Mientras pelean?",
+        "who": "Lena"
       },
       {
         "type": "speech",
-        "text": "—Lo hicieron antes. Prepararon sectores según parentesco y distrito."
+        "text": "—Lo hicieron antes. Prepararon sectores según parentesco y distrito.",
+        "who": "Mara"
       },
       {
         "type": "speech",
-        "text": "—¿Cómo sabes?"
+        "text": "—¿Cómo sabes?",
+        "who": "Lena"
       },
       {
         "type": "p",
@@ -10340,7 +11290,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Porque Dema nunca desperdicia una relación registrada."
+        "text": "—Porque Dema nunca desperdicia una relación registrada.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -10356,19 +11307,23 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¡Ya estaba en el suelo!"
+        "text": "—¡Ya estaba en el suelo!",
+        "who": "Lena"
       },
       {
         "type": "speech",
-        "text": "—¡No se detenía!"
+        "text": "—¡No se detenía!",
+        "who": "Bandito"
       },
       {
         "type": "speech",
-        "text": "—Entonces inmoviliza las piernas."
+        "text": "—Entonces inmoviliza las piernas.",
+        "who": "Lena"
       },
       {
         "type": "speech",
-        "text": "—¡Está muerto!"
+        "text": "—¡Está muerto!",
+        "who": "Bandito"
       },
       {
         "type": "p",
@@ -10376,7 +11331,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Precisamente por eso no puede elegir lo que está haciendo."
+        "text": "—Precisamente por eso no puede elegir lo que está haciendo.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -10396,7 +11352,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Era mi instructor —dijo."
+        "text": "—Era mi instructor —dijo.",
+        "who": "Bandito"
       },
       {
         "type": "speech",
@@ -10421,7 +11378,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Cubran los ojos."
+        "text": "—Cubran los ojos.",
+        "who": "Lena"
       },
       {
         "type": "p",
@@ -10457,7 +11415,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Más cuerpos —dijo Nia."
+        "text": "—Más cuerpos —dijo Nia.",
+        "who": "Nia"
       },
       {
         "type": "speech",
@@ -10613,19 +11572,23 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No pensaba hacerlo."
+        "text": "—No pensaba hacerlo.",
+        "who": "Lena"
       },
       {
         "type": "speech",
-        "text": "—No le rompas nada."
+        "text": "—No le rompas nada.",
+        "who": "Mara"
       },
       {
         "type": "speech",
-        "text": "—Mara, está caminando hacia nosotros."
+        "text": "—Mara, está caminando hacia nosotros.",
+        "who": "Lena"
       },
       {
         "type": "speech",
-        "text": "—No es él."
+        "text": "—No es él.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -10705,7 +11668,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No estás ahí —dijo."
+        "text": "—No estás ahí —dijo.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -10713,7 +11677,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No puedes oírme."
+        "text": "—No puedes oírme.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -10721,7 +11686,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No voy a utilizarte para despedirme."
+        "text": "—No voy a utilizarte para despedirme.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -10798,7 +11764,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Hombros primero —dijo."
+        "text": "—Hombros primero —dijo.",
+        "who": "Karta"
       },
       {
         "type": "p",
@@ -10822,7 +11789,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Tu cuerpo te pertenecía —dijo."
+        "text": "—Tu cuerpo te pertenecía —dijo.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -10830,7 +11798,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Todavía."
+        "text": "—Todavía.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -10860,7 +11829,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Adónde?"
+        "text": "—¿Adónde?",
+        "who": "Karta"
       },
       {
         "type": "p",
@@ -10868,7 +11838,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—A un lugar donde no puedan verlo."
+        "text": "—A un lugar donde no puedan verlo.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -10876,7 +11847,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Llévenlo detrás de la cresta. No retiren las correas. No quiten la tela. Si vuelve a moverse, inmovilicen; no golpeen."
+        "text": "—Llévenlo detrás de la cresta. No retiren las correas. No quiten la tela. Si vuelve a moverse, inmovilicen; no golpeen.",
+        "who": "Lena"
       },
       {
         "type": "p",
@@ -10916,7 +11888,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Elias —dijo."
+        "text": "—Elias —dijo.",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -10940,23 +11913,28 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No está vivo —dijo."
+        "text": "—No está vivo —dijo.",
+        "who": "Mara"
       },
       {
         "type": "speech",
-        "text": "—Lo sé."
+        "text": "—Lo sé.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—No me reconoció."
+        "text": "—No me reconoció.",
+        "who": "Mara"
       },
       {
         "type": "speech",
-        "text": "—Lo sé."
+        "text": "—Lo sé.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Quise que lo hiciera."
+        "text": "—Quise que lo hiciera.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -10964,15 +11942,18 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Eso no significa que creyeras que podía."
+        "text": "—Eso no significa que creyeras que podía.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Por un segundo sí."
+        "text": "—Por un segundo sí.",
+        "who": "Mara"
       },
       {
         "type": "speech",
-        "text": "—Por un segundo yo creí que Bram era otra persona durante semanas."
+        "text": "—Por un segundo yo creí que Bram era otra persona durante semanas.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -10980,15 +11961,18 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Dema conserva suficiente para que uno termine el trabajo."
+        "text": "—Dema conserva suficiente para que uno termine el trabajo.",
+        "who": "Mara"
       },
       {
         "type": "speech",
-        "text": "—Entonces no lo termines."
+        "text": "—Entonces no lo termines.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—No lo hice."
+        "text": "—No lo hice.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -10996,15 +11980,18 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Lo inmovilizamos. No rompimos el cuerpo."
+        "text": "—Lo inmovilizamos. No rompimos el cuerpo.",
+        "who": "Mara"
       },
       {
         "type": "speech",
-        "text": "—Eso no te obliga a protegerlo para siempre."
+        "text": "—Eso no te obliga a protegerlo para siempre.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—No. Me obliga a recordar por qué lo hice hoy."
+        "text": "—No. Me obliga a recordar por qué lo hice hoy.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -11028,23 +12015,28 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Alguno lo controlaba por separado?"
+        "text": "—¿Alguno lo controlaba por separado?",
+        "who": "Mara"
       },
       {
         "type": "speech",
-        "text": "—No pude distinguirlos. En el canal, las ocho presiones se superponían."
+        "text": "—No pude distinguirlos. En el canal, las ocho presiones se superponían.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—¿Puedes separarlas?"
+        "text": "—¿Puedes separarlas?",
+        "who": "Mara"
       },
       {
         "type": "speech",
-        "text": "—Tal vez, si estoy cerca de la fuente."
+        "text": "—Tal vez, si estoy cerca de la fuente.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—No lo hagas por mí."
+        "text": "—No lo hagas por mí.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -11052,7 +12044,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Quiero saberlo —dijo—. Pero no necesito un nombre para justificar lo que haremos. Todos construyeron el sistema que permitió esto."
+        "text": "—Quiero saberlo —dijo—. Pero no necesito un nombre para justificar lo que haremos. Todos construyeron el sistema que permitió esto.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -11064,7 +12057,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—El frente norte sostiene —dijo—. El central perdió dos redes. James abrió otro corredor. Bram pide confirmación de rutas antes de que los obispos corten las tuberías."
+        "text": "—El frente norte sostiene —dijo—. El central perdió dos redes. James abrió otro corredor. Bram pide confirmación de rutas antes de que los obispos corten las tuberías.",
+        "who": "Lena"
       },
       {
         "type": "p",
@@ -11080,7 +12074,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Voy contigo —dijo."
+        "text": "—Voy contigo —dijo.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -11088,19 +12083,23 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Tu célula necesita redistribución."
+        "text": "—Tu célula necesita redistribución.",
+        "who": "Lena"
       },
       {
         "type": "speech",
-        "text": "—Aria y Eliot con señalización. Nia y Leo a las salidas. Karta y Pierre detrás de la línea con los cuerpos inmovilizados. Jirita conmigo."
+        "text": "—Aria y Eliot con señalización. Nia y Leo a las salidas. Karta y Pierre detrás de la línea con los cuerpos inmovilizados. Jirita conmigo.",
+        "who": "Mara"
       },
       {
         "type": "speech",
-        "text": "—¿Por qué Jirita?"
+        "text": "—¿Por qué Jirita?",
+        "who": "Lena"
       },
       {
         "type": "speech",
-        "text": "—Conoce los jardines de cada cámara funeraria. Si los cuerpos salen por distrito, puede anticipar qué puertas abrirán."
+        "text": "—Conoce los jardines de cada cámara funeraria. Si los cuerpos salen por distrito, puede anticipar qué puertas abrirán.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -11108,7 +12107,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Entonces muévete."
+        "text": "—Entonces muévete.",
+        "who": "Lena"
       },
       {
         "type": "p",
@@ -11120,7 +12120,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Es verdad que viste la torre?"
+        "text": "—¿Es verdad que viste la torre?",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -11132,31 +12133,38 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Sí."
+        "text": "—Sí.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—¿Viste si ganábamos?"
+        "text": "—¿Viste si ganábamos?",
+        "who": "Mara"
       },
       {
         "type": "speech",
-        "text": "—No."
+        "text": "—No.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—¿Viste si llegabas?"
+        "text": "—¿Viste si llegabas?",
+        "who": "Mara"
       },
       {
         "type": "speech",
-        "text": "—Sí."
+        "text": "—Sí.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—No es lo mismo."
+        "text": "—No es lo mismo.",
+        "who": "Mara"
       },
       {
         "type": "speech",
-        "text": "—Lo sé."
+        "text": "—Lo sé.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -11164,7 +12172,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No dejes que te conviertan en la respuesta antes de formular la pregunta."
+        "text": "—No dejes que te conviertan en la respuesta antes de formular la pregunta.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -11176,7 +12185,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Puedes continuar?"
+        "text": "—¿Puedes continuar?",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -11192,15 +12202,18 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Sí —dije."
+        "text": "—Sí —dije.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Eso no significa que debas entrar hoy."
+        "text": "—Eso no significa que debas entrar hoy.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—No voy a entrar todavía."
+        "text": "—No voy a entrar todavía.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -11248,7 +12261,7 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "La resistencia no avanzaba como una sola fuerza. Se abría en decisiones pequeñas."
+        "text": "La resistencia avanzaba mediante decisiones pequeñas, no como una sola fuerza."
       },
       {
         "type": "p",
@@ -11359,24 +12372,37 @@ const PART5_CHAPTERS = [
         "text": "Lena se sentó a su lado."
       },
       {
-        "type": "speech",
-        "text": "—Podemos moverlo más lejos durante la noche —dijo."
+        "type": "p",
+        "text": "Mara mantuvo la espalda recta hasta que la estructura dejó de verse desde el frente. Entonces apoyó la frente sobre las rodillas. No lloró con elegancia ni en silencio: el aire le salió roto, demasiado rápido, y tuvo que apretar la manga contra la boca para no convertir el nombre de Elias en una llamada que el cuerpo ya no podía responder."
+      },
+      {
+        "type": "p",
+        "text": "Lena permaneció allí. No le recordó la operación, el siguiente turno ni la ruta abierta. Solo sostuvo el extremo de la carta cuando el viento intentó arrancársela de las manos."
       },
       {
         "type": "speech",
-        "text": "—Sí."
+        "text": "—Podemos moverlo más lejos durante la noche —dijo.",
+        "who": "Lena"
       },
       {
         "type": "speech",
-        "text": "—No tienes que acompañarlo."
+        "text": "—Sí.",
+        "who": "Mara"
       },
       {
         "type": "speech",
-        "text": "—Lo sé."
+        "text": "—No tienes que acompañarlo.",
+        "who": "Lena"
       },
       {
         "type": "speech",
-        "text": "—Tampoco tienes que volver al frente mañana."
+        "text": "—Lo sé.",
+        "who": "Mara"
+      },
+      {
+        "type": "speech",
+        "text": "—Tampoco tienes que volver al frente mañana.",
+        "who": "Lena"
       },
       {
         "type": "p",
@@ -11384,7 +12410,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Lo sé."
+        "text": "—Lo sé.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -11397,19 +12424,23 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Por Elias?"
+        "text": "—¿Por Elias?",
+        "who": "Lena"
       },
       {
         "type": "speech",
-        "text": "—No solo."
+        "text": "—No solo.",
+        "who": "Mara"
       },
       {
         "type": "speech",
-        "text": "—¿Por Clancy?"
+        "text": "—¿Por Clancy?",
+        "who": "Lena"
       },
       {
         "type": "speech",
-        "text": "—Tampoco."
+        "text": "—Tampoco.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -11417,7 +12448,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Porque Dema cree que puede elegir qué significa cada cuerpo. Los vivos también están cansados de que decidan por ellos."
+        "text": "—Porque Dema cree que puede elegir qué significa cada cuerpo. Los vivos también están cansados de que decidan por ellos.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -11425,11 +12457,13 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Mañana la ofensiva será peor."
+        "text": "—Mañana la ofensiva será peor.",
+        "who": "Lena"
       },
       {
         "type": "speech",
-        "text": "—Entonces hoy debemos asegurarnos de que las salidas sigan abiertas."
+        "text": "—Entonces hoy debemos asegurarnos de que las salidas sigan abiertas.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -11500,7 +12534,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No avanzamos hacia las torres —dijo."
+        "text": "—No avanzamos hacia las torres —dijo.",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -11569,15 +12604,18 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—La columna norte puede sostener dos aperturas —dijo—. Tres si abandonamos la ruta de regreso."
+        "text": "—La columna norte puede sostener dos aperturas —dijo—. Tres si abandonamos la ruta de regreso.",
+        "who": "Lena"
       },
       {
         "type": "speech",
-        "text": "—No la abandonamos."
+        "text": "—No la abandonamos.",
+        "who": "Mara"
       },
       {
         "type": "speech",
-        "text": "—Entonces dos."
+        "text": "—Entonces dos.",
+        "who": "Lena"
       },
       {
         "type": "p",
@@ -11590,11 +12628,13 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Las pantallas les ordenaron refugiarse."
+        "text": "—Las pantallas les ordenaron refugiarse.",
+        "who": "Lena"
       },
       {
         "type": "speech",
-        "text": "—Por eso necesitamos llegar antes que los guardias."
+        "text": "—Por eso necesitamos llegar antes que los guardias.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -11602,23 +12642,28 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Esta atraviesa el sector funerario."
+        "text": "—Esta atraviesa el sector funerario.",
+        "who": "Lena"
       },
       {
         "type": "speech",
-        "text": "—Jirita conoce el jardín."
+        "text": "—Jirita conoce el jardín.",
+        "who": "Mara"
       },
       {
         "type": "speech",
-        "text": "—Jirita conoce las plantas, no los cadáveres."
+        "text": "—Jirita conoce las plantas, no los cadáveres.",
+        "who": "Lena"
       },
       {
         "type": "speech",
-        "text": "—Karta conoce los cadáveres."
+        "text": "—Karta conoce los cadáveres.",
+        "who": "Mara"
       },
       {
         "type": "speech",
-        "text": "—Karta está con Elias."
+        "text": "—Karta está con Elias.",
+        "who": "Lena"
       },
       {
         "type": "p",
@@ -11630,7 +12675,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Entonces llevamos a Jirita —dijo—. Y no entramos en las cámaras."
+        "text": "—Entonces llevamos a Jirita —dijo—. Y no entramos en las cámaras.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -11638,7 +12684,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Eso no impedirá que las cámaras entren en nosotros."
+        "text": "—Eso no impedirá que las cámaras entren en nosotros.",
+        "who": "Lena"
       },
       {
         "type": "p",
@@ -11678,11 +12725,13 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Dos aperturas —repitió—. No tres."
+        "text": "—Dos aperturas —repitió—. No tres.",
+        "who": "Lena"
       },
       {
         "type": "speech",
-        "text": "—Dos."
+        "text": "—Dos.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -11690,7 +12739,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Quien quiera salir, sale. Quien quiera quedarse, recibe una ruta de refugio. Quien quiera combatir no se coloca delante de los demás para demostrar nada."
+        "text": "—Quien quiera salir, sale. Quien quiera quedarse, recibe una ruta de refugio. Quien quiera combatir no se coloca delante de los demás para demostrar nada.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -11698,7 +12748,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Y si quieren seguir obedeciendo?"
+        "text": "—¿Y si quieren seguir obedeciendo?",
+        "who": "Ciudadano"
       },
       {
         "type": "p",
@@ -11706,7 +12757,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—También tendrán que decidirlo sin que nosotros los arrastremos."
+        "text": "—También tendrán que decidirlo sin que nosotros los arrastremos.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -11802,7 +12854,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Vamos —murmuró."
+        "text": "—Vamos —murmuró.",
+        "who": "James"
       },
       {
         "type": "p",
@@ -11958,7 +13011,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No la toques —me dijo."
+        "text": "—No la toques —me dijo.",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -11966,19 +13020,23 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No iba a hacerlo."
+        "text": "—No iba a hacerlo.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Lo pensaste."
+        "text": "—Lo pensaste.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—Sí."
+        "text": "—Sí.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Eso ya es más de lo que necesito saber."
+        "text": "—Eso ya es más de lo que necesito saber.",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -12059,23 +13117,28 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—La salida está abierta."
+        "text": "—La salida está abierta.",
+        "who": "Mara"
       },
       {
         "type": "speech",
-        "text": "—La pantalla dice que no."
+        "text": "—La pantalla dice que no.",
+        "who": "Ciudadana"
       },
       {
         "type": "speech",
-        "text": "—La pantalla no está debajo de esta puerta."
+        "text": "—La pantalla no está debajo de esta puerta.",
+        "who": "Mara"
       },
       {
         "type": "speech",
-        "text": "—Si salgo, mi familia pierde el registro."
+        "text": "—Si salgo, mi familia pierde el registro.",
+        "who": "Ciudadana"
       },
       {
         "type": "speech",
-        "text": "—¿Dónde está tu familia?"
+        "text": "—¿Dónde está tu familia?",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -12087,15 +13150,18 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Voy a marcar la entrada. Si decides venir, sigue tres líneas amarillas. Si decides quedarte, no abras a los guardias que no conozcas."
+        "text": "—Voy a marcar la entrada. Si decides venir, sigue tres líneas amarillas. Si decides quedarte, no abras a los guardias que no conozcas.",
+        "who": "Mara"
       },
       {
         "type": "speech",
-        "text": "—¿Eso es todo?"
+        "text": "—¿Eso es todo?",
+        "who": "Ciudadana"
       },
       {
         "type": "speech",
-        "text": "—Es tu decisión."
+        "text": "—Es tu decisión.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -12279,19 +13345,23 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿No deberían seguirte? —pregunté."
+        "text": "—¿No deberían seguirte? —pregunté.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Deberían comprender lo que intento proteger."
+        "text": "—Deberían comprender lo que intento proteger.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—No es lo mismo."
+        "text": "—No es lo mismo.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—No."
+        "text": "—No.",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -12307,23 +13377,28 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Los ocho siguen juntos."
+        "text": "—Los ocho siguen juntos.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—Sostienen a los Glorious Gone."
+        "text": "—Sostienen a los Glorious Gone.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Y observan cuánto resistes antes de llegar a ellos."
+        "text": "—Y observan cuánto resistes antes de llegar a ellos.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—¿Nico está entre las ocho presiones?"
+        "text": "—¿Nico está entre las ocho presiones?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—No podemos distinguirlo mientras compartan el canal."
+        "text": "—No podemos distinguirlo mientras compartan el canal.",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -12355,7 +13430,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No voy a probarlo desde aquí."
+        "text": "—No voy a probarlo desde aquí.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -12363,7 +13439,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Entonces pelea con el cuerpo que ya tienes. Guarda las astas para la fuente."
+        "text": "—Entonces pelea con el cuerpo que ya tienes. Guarda las astas para la fuente.",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -12403,7 +13480,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—La ruta amarilla detrás del estudio permanece abierta —dijo."
+        "text": "—La ruta amarilla detrás del estudio permanece abierta —dijo.",
+        "who": "Presentadora"
       },
       {
         "type": "p",
@@ -12411,7 +13489,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—La Municipalidad no ha confirmado—"
+        "text": "—La Municipalidad no ha confirmado—",
+        "who": "Voz de producción"
       },
       {
         "type": "p",
@@ -12467,23 +13546,28 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No —dijo."
+        "text": "—No —dijo.",
+        "who": "Lena"
       },
       {
         "type": "speech",
-        "text": "—¡Podemos alcanzarla!"
+        "text": "—¡Podemos alcanzarla!",
+        "who": "Bandito"
       },
       {
         "type": "speech",
-        "text": "—Y dejar dos corredores sin cobertura."
+        "text": "—Y dejar dos corredores sin cobertura.",
+        "who": "Lena"
       },
       {
         "type": "speech",
-        "text": "—¡Una torre menos cambia todo!"
+        "text": "—¡Una torre menos cambia todo!",
+        "who": "Bandito"
       },
       {
         "type": "speech",
-        "text": "—No caerá antes de que los ciudadanos queden atrapados entre nosotros y sus guardias."
+        "text": "—No caerá antes de que los ciudadanos queden atrapados entre nosotros y sus guardias.",
+        "who": "Lena"
       },
       {
         "type": "p",
@@ -12491,7 +13575,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Entonces para qué vinimos?"
+        "text": "—¿Entonces para qué vinimos?",
+        "who": "Bandito"
       },
       {
         "type": "p",
@@ -12499,11 +13584,13 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Para que la gente pueda salir sin pedir permiso."
+        "text": "—Para que la gente pueda salir sin pedir permiso.",
+        "who": "Mara"
       },
       {
         "type": "speech",
-        "text": "—¿Y los obispos?"
+        "text": "—¿Y los obispos?",
+        "who": "Bandito"
       },
       {
         "type": "p",
@@ -12511,7 +13598,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Siguen allí cuando terminemos de abrir la primera puerta."
+        "text": "—Siguen allí cuando terminemos de abrir la primera puerta.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -12607,7 +13695,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Clancy —llamó Mara."
+        "text": "—Clancy —llamó Mara.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -12624,19 +13713,23 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Lo sé."
+        "text": "—Lo sé.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—No podrás decidir desde arriba qué necesita cada distrito."
+        "text": "—No podrás decidir desde arriba qué necesita cada distrito.",
+        "who": "Mara"
       },
       {
         "type": "speech",
-        "text": "—Lo sé."
+        "text": "—Lo sé.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Entonces recuerda que saberlo ahora no garantiza que lo recuerdes después."
+        "text": "—Entonces recuerda que saberlo ahora no garantiza que lo recuerdes después.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -12644,7 +13737,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Qué quieres que haga si lo olvido?"
+        "text": "—¿Qué quieres que haga si lo olvido?",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -12652,7 +13746,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Que escuches cuando te lo digan."
+        "text": "—Que escuches cuando te lo digan.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -12668,7 +13763,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—La estola muestra el nombre —dijo—. Esto muestra que todavía perteneces a alguien más que a ti mismo."
+        "text": "—La estola muestra el nombre —dijo—. Esto muestra que todavía perteneces a alguien más que a ti mismo.",
+        "who": "Lena"
       },
       {
         "type": "p",
@@ -12676,11 +13772,13 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Eso se supone que debe tranquilizarme?"
+        "text": "—¿Eso se supone que debe tranquilizarme?",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—No."
+        "text": "—No.",
+        "who": "Lena"
       },
       {
         "type": "p",
@@ -12729,7 +13827,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—El Portador es más lento cuando tiene cuerpo."
+        "text": "—El Portador es más lento cuando tiene cuerpo.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -12737,7 +13836,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Eso explica varias cosas."
+        "text": "—Eso explica varias cosas.",
+        "who": "James"
       },
       {
         "type": "p",
@@ -12757,11 +13857,13 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Todavía no —dijo—. Cuando entres, no habrá segunda oportunidad si Bram pierde la ruta."
+        "text": "—Todavía no —dijo—. Cuando entres, no habrá segunda oportunidad si Bram pierde la ruta.",
+        "who": "James"
       },
       {
         "type": "speech",
-        "text": "—¿Cuánto tiempo tenemos?"
+        "text": "—¿Cuánto tiempo tenemos?",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -12769,7 +13871,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No tenemos tiempo. Tenemos condiciones. Mientras sigan cumpliéndose, la entrada existe."
+        "text": "—No tenemos tiempo. Tenemos condiciones. Mientras sigan cumpliéndose, la entrada existe.",
+        "who": "James"
       },
       {
         "type": "p",
@@ -12830,16 +13933,28 @@ const PART5_CHAPTERS = [
         "text": "James extendió el mapa."
       },
       {
-        "type": "speech",
-        "text": "—Esta es la compuerta exterior —dijo—. Después viene un tramo inundable. Bram cree que la pared norte conserva una escalera de mantenimiento, pero el registro es anterior a la última reforma funeraria."
+        "type": "p",
+        "text": "Tenía una quemadura reciente en la base del pulgar y sangre seca bajo una uña. Cuando intentó señalar la primera línea, la mano le tembló."
       },
       {
         "type": "speech",
-        "text": "—¿Cree?"
+        "text": "—No dormí lo suficiente para fingir que esto es solo un plano —dijo—. Así que escucha una vez y después decides.",
+        "who": "James"
       },
       {
         "type": "speech",
-        "text": "—Los mapas honestos contienen esa palabra."
+        "text": "—Esta es la compuerta exterior —dijo—. Después viene un tramo inundable. Bram cree que la pared norte conserva una escalera de mantenimiento, pero el registro es anterior a la última reforma funeraria.",
+        "who": "James"
+      },
+      {
+        "type": "speech",
+        "text": "—¿Cree?",
+        "who": "Clancy"
+      },
+      {
+        "type": "speech",
+        "text": "—Los mapas honestos contienen esa palabra.",
+        "who": "James"
       },
       {
         "type": "p",
@@ -12847,27 +13962,33 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Llegas a un colector. No sigas la corriente principal. Te llevaría al sistema de expulsión y terminarías otra vez fuera, si no te tritura primero una bomba."
+        "text": "—Llegas a un colector. No sigas la corriente principal. Te llevaría al sistema de expulsión y terminarías otra vez fuera, si no te tritura primero una bomba.",
+        "who": "James"
       },
       {
         "type": "speech",
-        "text": "—Bien."
+        "text": "—Bien.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—No era una sugerencia."
+        "text": "—No era una sugerencia.",
+        "who": "James"
       },
       {
         "type": "speech",
-        "text": "—Lo entendí."
+        "text": "—Lo entendí.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Cuando escuches tres golpes, toma la bifurcación. Si son dos, espera. Si no escuchas nada durante más de un minuto, Bram perdió el nodo y tienes que regresar hasta la última marca."
+        "text": "—Cuando escuches tres golpes, toma la bifurcación. Si son dos, espera. Si no escuchas nada durante más de un minuto, Bram perdió el nodo y tienes que regresar hasta la última marca.",
+        "who": "James"
       },
       {
         "type": "speech",
-        "text": "—¿Qué marca?"
+        "text": "—¿Qué marca?",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -12875,7 +13996,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Las que vas a dejar tú."
+        "text": "—Las que vas a dejar tú.",
+        "who": "James"
       },
       {
         "type": "p",
@@ -12887,11 +14009,13 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—La compuerta del tramo bajo se atasca en la mitad —dijo."
+        "text": "—La compuerta del tramo bajo se atasca en la mitad —dijo.",
+        "who": "James"
       },
       {
         "type": "speech",
-        "text": "—¿La última vez funcionó?"
+        "text": "—¿La última vez funcionó?",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -12899,15 +14023,18 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—La última vez Mara casi se ahoga."
+        "text": "—La última vez Mara casi se ahoga.",
+        "who": "James"
       },
       {
         "type": "speech",
-        "text": "—Entonces funcionó."
+        "text": "—Entonces funcionó.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Eso dijo ella hasta que dejó de encontrarlo divertido."
+        "text": "—Eso dijo ella hasta que dejó de encontrarlo divertido.",
+        "who": "James"
       },
       {
         "type": "p",
@@ -12923,23 +14050,28 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No uses las astas dentro del drenaje salvo que no exista otra salida."
+        "text": "—No uses las astas dentro del drenaje salvo que no exista otra salida.",
+        "who": "James"
       },
       {
         "type": "speech",
-        "text": "—No planeaba hacerlo."
+        "text": "—No planeaba hacerlo.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Tampoco planeabas ocupar un buitre."
+        "text": "—Tampoco planeabas ocupar un buitre.",
+        "who": "James"
       },
       {
         "type": "speech",
-        "text": "—Ellos lo soltaron."
+        "text": "—Ellos lo soltaron.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Y ahora saben qué se siente cuando intentas entrar."
+        "text": "—Y ahora saben qué se siente cuando intentas entrar.",
+        "who": "James"
       },
       {
         "type": "p",
@@ -12951,15 +14083,18 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Nico no está defendiendo solo una torre —dijo—. Está esperando conocer tus límites."
+        "text": "—Nico no está defendiendo solo una torre —dijo—. Está esperando conocer tus límites.",
+        "who": "James"
       },
       {
         "type": "speech",
-        "text": "—Yo también."
+        "text": "—Yo también.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Esa respuesta sería mejor si no fueras a descubrirlos dentro de su casa."
+        "text": "—Esa respuesta sería mejor si no fueras a descubrirlos dentro de su casa.",
+        "who": "James"
       },
       {
         "type": "p",
@@ -12967,7 +14102,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Dónde termina tu señal?"
+        "text": "—¿Dónde termina tu señal?",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -12975,7 +14111,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Bram puede guiarlo hasta allí. Después, las tuberías modernas se separan del trazado antiguo. Tendrá señales parciales hasta la base de la torre. En el ascenso, nada."
+        "text": "—Bram puede guiarlo hasta allí. Después, las tuberías modernas se separan del trazado antiguo. Tendrá señales parciales hasta la base de la torre. En el ascenso, nada.",
+        "who": "James"
       },
       {
         "type": "p",
@@ -12983,11 +14120,13 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Puedo intentar—"
+        "text": "—Puedo intentar—",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—No —dije."
+        "text": "—No —dije.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -13003,7 +14142,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No quiero subir preguntándome qué parte de ti está allí —continué—. Si llego, llego sabiendo quién mueve mis manos."
+        "text": "—No quiero subir preguntándome qué parte de ti está allí —continué—. Si llego, llego sabiendo quién mueve mis manos.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -13011,15 +14151,18 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Entonces estaré afuera."
+        "text": "—Entonces estaré afuera.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—Eso tampoco garantiza que puedas ayudarme."
+        "text": "—Eso tampoco garantiza que puedas ayudarme.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—No."
+        "text": "—No.",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -13027,7 +14170,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Excelente. Todos aceptamos que el plan es malo."
+        "text": "—Excelente. Todos aceptamos que el plan es malo.",
+        "who": "James"
       },
       {
         "type": "p",
@@ -13075,11 +14219,13 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No puedo prometer que llegaré —dijo."
+        "text": "—No puedo prometer que llegaré —dijo.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—No prometas cosas que no controlas."
+        "text": "—No prometas cosas que no controlas.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -13095,7 +14241,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Entonces voy a intentarlo."
+        "text": "—Entonces voy a intentarlo.",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -13107,7 +14254,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Clancy."
+        "text": "—Clancy.",
+        "who": "James"
       },
       {
         "type": "p",
@@ -13119,19 +14267,23 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Cuando llegues arriba —dijo—, no confundas una puerta abierta con permiso para decidir por todos."
+        "text": "—Cuando llegues arriba —dijo—, no confundas una puerta abierta con permiso para decidir por todos.",
+        "who": "James"
       },
       {
         "type": "speech",
-        "text": "—Mara ya me lo dijo."
+        "text": "—Mara ya me lo dijo.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Entonces debe ser importante."
+        "text": "—Entonces debe ser importante.",
+        "who": "James"
       },
       {
         "type": "speech",
-        "text": "—¿Eso es todo?"
+        "text": "—¿Eso es todo?",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -13139,19 +14291,23 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No sé qué vas a encontrar."
+        "text": "—No sé qué vas a encontrar.",
+        "who": "James"
       },
       {
         "type": "speech",
-        "text": "—Yo tampoco."
+        "text": "—Yo tampoco.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—No sé qué vas a hacer."
+        "text": "—No sé qué vas a hacer.",
+        "who": "James"
       },
       {
         "type": "speech",
-        "text": "—Yo tampoco."
+        "text": "—Yo tampoco.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -13163,19 +14319,23 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Odio los planes que dependen de una persona."
+        "text": "—Odio los planes que dependen de una persona.",
+        "who": "James"
       },
       {
         "type": "speech",
-        "text": "—Por eso todo lo demás sigue funcionando sin mí."
+        "text": "—Por eso todo lo demás sigue funcionando sin mí.",
+        "who": "Clancy"
       },
       {
         "type": "speech",
-        "text": "—Eso espero."
+        "text": "—Eso espero.",
+        "who": "James"
       },
       {
         "type": "speech",
-        "text": "—No prometas cosas que no controlas."
+        "text": "—No prometas cosas que no controlas.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -13187,7 +14347,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Entonces voy a sostener la puerta mientras pueda."
+        "text": "—Entonces voy a sostener la puerta mientras pueda.",
+        "who": "James"
       },
       {
         "type": "p",
@@ -13267,7 +14428,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Los mapas honestos —murmuré."
+        "text": "—Los mapas honestos —murmuré.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -13335,8 +14497,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "archive-letter",
-        "id": "documento-preservado",
-        "title": "Documento preservado",
+        "id": "carta-baldur-a-magnus",
+        "title": "",
         "intro": "ARCHIVO DE LA BRECHA",
         "paragraphs": [
           "Magnus:",
@@ -13470,23 +14632,28 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿James? —preguntó."
+        "text": "—¿James? —preguntó.",
+        "who": "Mara"
       },
       {
         "type": "speech",
-        "text": "—En el puesto."
+        "text": "—En el puesto.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—¿Bram?"
+        "text": "—¿Bram?",
+        "who": "Mara"
       },
       {
         "type": "speech",
-        "text": "—Dentro."
+        "text": "—Dentro.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—¿Clancy?"
+        "text": "—¿Clancy?",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -13498,15 +14665,18 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Entonces cambia el objetivo —dijo."
+        "text": "—Entonces cambia el objetivo —dijo.",
+        "who": "Lena"
       },
       {
         "type": "speech",
-        "text": "—¿Cuál? —preguntó un Bandito."
+        "text": "—¿Cuál? —preguntó un Bandito.",
+        "who": "Bandito"
       },
       {
         "type": "speech",
-        "text": "—Ya no necesitamos atraer a todos hacia Clancy. Necesitamos impedir que vuelvan a mirar al centro."
+        "text": "—Ya no necesitamos atraer a todos hacia Clancy. Necesitamos impedir que vuelvan a mirar al centro.",
+        "who": "Lena"
       },
       {
         "type": "p",
@@ -13522,23 +14692,28 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Tres corredores —dijo—. Sacarver, oeste y estatua. No avanzamos hacia arriba. Movemos ciudadanos hacia afuera y obligamos a los guardias a dividirse."
+        "text": "—Tres corredores —dijo—. Sacarver, oeste y estatua. No avanzamos hacia arriba. Movemos ciudadanos hacia afuera y obligamos a los guardias a dividirse.",
+        "who": "Mara"
       },
       {
         "type": "speech",
-        "text": "—Podemos tomar la base de la torre de Lisden —insistió el mismo hombre."
+        "text": "—Podemos tomar la base de la torre de Lisden —insistió el mismo hombre.",
+        "who": "Bandito"
       },
       {
         "type": "speech",
-        "text": "—No."
+        "text": "—No.",
+        "who": "Mara"
       },
       {
         "type": "speech",
-        "text": "—¡Está casi vacía!"
+        "text": "—¡Está casi vacía!",
+        "who": "Bandito"
       },
       {
         "type": "speech",
-        "text": "—Porque quieren que la mires."
+        "text": "—Porque quieren que la mires.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -13546,7 +14721,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Mira a quienes no pueden obligarte a levantar la cabeza."
+        "text": "—Mira a quienes no pueden obligarte a levantar la cabeza.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -13626,15 +14802,18 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—La salida de Sacarver sigue abierta."
+        "text": "—La salida de Sacarver sigue abierta.",
+        "who": "Nia"
       },
       {
         "type": "speech",
-        "text": "—Mantenla."
+        "text": "—Mantenla.",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—¿Y Clancy?"
+        "text": "—¿Y Clancy?",
+        "who": "Nia"
       },
       {
         "type": "p",
@@ -13642,15 +14821,18 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Ya no depende de que yo conozca todo el camino."
+        "text": "—Ya no depende de que yo conozca todo el camino.",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—Eso no responde."
+        "text": "—Eso no responde.",
+        "who": "Nia"
       },
       {
         "type": "speech",
-        "text": "—Es la única respuesta que tengo."
+        "text": "—Es la única respuesta que tengo.",
+        "who": "Bram"
       },
       {
         "type": "p",
@@ -13826,8 +15008,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "archive-letter",
-        "id": "documento-preservado",
-        "title": "Documento preservado",
+        "id": "carta-magnus-a-baldur",
+        "title": "",
         "intro": "ARCHIVO DE LA BRECHA",
         "paragraphs": [
           "Baldur:",
@@ -13844,11 +15026,13 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Debe llegar a Baldur."
+        "text": "—Debe llegar a Baldur.",
+        "who": "Magnus"
       },
       {
         "type": "speech",
-        "text": "—¿Y a Clancy?"
+        "text": "—¿Y a Clancy?",
+        "who": "Mensajero"
       },
       {
         "type": "p",
@@ -13856,7 +15040,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Si existe una ruta."
+        "text": "—Si existe una ruta.",
+        "who": "Magnus"
       },
       {
         "type": "p",
@@ -14099,19 +15284,23 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Llegó?"
+        "text": "—¿Llegó?",
+        "who": "James"
       },
       {
         "type": "speech",
-        "text": "—La ruta terminó en la base."
+        "text": "—La ruta terminó en la base.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—Eso no responde."
+        "text": "—Eso no responde.",
+        "who": "James"
       },
       {
         "type": "speech",
-        "text": "—Es la única respuesta que tengo."
+        "text": "—Es la única respuesta que tengo.",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -14143,7 +15332,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Siguen juntos —dijo."
+        "text": "—Siguen juntos —dijo.",
+        "who": "James"
       },
       {
         "type": "p",
@@ -14151,15 +15341,18 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Voy a acercarme."
+        "text": "—Voy a acercarme.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—No hay otra ruta interior."
+        "text": "—No hay otra ruta interior.",
+        "who": "James"
       },
       {
         "type": "speech",
-        "text": "—No he dicho que vaya a entrar por dentro."
+        "text": "—No he dicho que vaya a entrar por dentro.",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -14251,7 +15444,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Ya no los manejan por sectores —dijo."
+        "text": "—Ya no los manejan por sectores —dijo.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -14259,11 +15453,13 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Entonces qué hacen?"
+        "text": "—¿Entonces qué hacen?",
+        "who": "Lena"
       },
       {
         "type": "speech",
-        "text": "—Los ocho están juntos."
+        "text": "—Los ocho están juntos.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -14280,7 +15476,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Para ellos sí."
+        "text": "—Para ellos sí.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -14292,7 +15489,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Elias volvió a moverse."
+        "text": "—Elias volvió a moverse.",
+        "who": "Karta"
       },
       {
         "type": "p",
@@ -14300,23 +15498,28 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Las correas?"
+        "text": "—¿Las correas?",
+        "who": "Mara"
       },
       {
         "type": "speech",
-        "text": "—Firmes."
+        "text": "—Firmes.",
+        "who": "Karta"
       },
       {
         "type": "speech",
-        "text": "—¿Los ojos?"
+        "text": "—¿Los ojos?",
+        "who": "Mara"
       },
       {
         "type": "speech",
-        "text": "—Rojos."
+        "text": "—Rojos.",
+        "who": "Karta"
       },
       {
         "type": "speech",
-        "text": "—Entonces sigue conectado a ellos. No a sí mismo."
+        "text": "—Entonces sigue conectado a ellos. No a sí mismo.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -14328,7 +15531,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¡No rompan formación! ¡Los cadáveres comparten la orden! Si una línea gira, las otras van a corregir después."
+        "text": "—¡No rompan formación! ¡Los cadáveres comparten la orden! Si una línea gira, las otras van a corregir después.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -14365,7 +15569,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Entonces sostenemos el tiempo que le falta."
+        "text": "—Entonces sostenemos el tiempo que le falta.",
+        "who": "Portador"
       },
       {
         "type": "scene",
@@ -14429,15 +15634,18 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Puedes guiarlo?"
+        "text": "—¿Puedes guiarlo?",
+        "who": "Nia"
       },
       {
         "type": "speech",
-        "text": "—No."
+        "text": "—No.",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—¿Puedes avisarle qué hay arriba?"
+        "text": "—¿Puedes avisarle qué hay arriba?",
+        "who": "Nia"
       },
       {
         "type": "p",
@@ -14445,11 +15653,13 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No mientras siga en la pared."
+        "text": "—No mientras siga en la pared.",
+        "who": "Bram"
       },
       {
         "type": "speech",
-        "text": "—Entonces ¿qué hacemos?"
+        "text": "—Entonces ¿qué hacemos?",
+        "who": "Nia"
       },
       {
         "type": "p",
@@ -14457,7 +15667,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Evitamos que el camino de regreso desaparezca para todos los demás."
+        "text": "—Evitamos que el camino de regreso desaparezca para todos los demás.",
+        "who": "Bram"
       },
       {
         "type": "p",
@@ -14665,7 +15876,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Bram —dijo, aunque el cartógrafo no podía oír la voz—. Uno salió del canal."
+        "text": "—Bram —dijo, aunque el cartógrafo no podía oír la voz—. Uno salió del canal.",
+        "who": "James"
       },
       {
         "type": "p",
@@ -14697,7 +15909,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Uno se separó —dijo."
+        "text": "—Uno se separó —dijo.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -14705,11 +15918,13 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Clancy derrotó a uno?"
+        "text": "—¿Clancy derrotó a uno?",
+        "who": "Lena"
       },
       {
         "type": "speech",
-        "text": "—Todavía no ha llegado."
+        "text": "—Todavía no ha llegado.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -14721,7 +15936,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Nico —dijo."
+        "text": "—Nico —dijo.",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -14737,7 +15953,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Los siete siguen controlando a los muertos."
+        "text": "—Los siete siguen controlando a los muertos.",
+        "who": "Mara"
       },
       {
         "type": "speech",
@@ -14754,15 +15971,18 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No llegarás antes que él."
+        "text": "—No llegarás antes que él.",
+        "who": "Mara"
       },
       {
         "type": "speech",
-        "text": "—Tengo que intentarlo."
+        "text": "—Tengo que intentarlo.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—Entonces no conviertas el intento en una abertura para los guardias."
+        "text": "—Entonces no conviertas el intento en una abertura para los guardias.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -15106,7 +16326,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¡No los toquen! ¡El canal cayó, no sus historias!"
+        "text": "—¡No los toquen! ¡El canal cayó, no sus historias!",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -15118,7 +16339,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¡Corredores! —gritó—. ¡Los guardias siguen activos!"
+        "text": "—¡Corredores! —gritó—. ¡Los guardias siguen activos!",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -15171,7 +16393,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Este control."
+        "text": "—Este control.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -15179,7 +16402,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No retiren las correas todavía."
+        "text": "—No retiren las correas todavía.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -15263,7 +16487,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Nico."
+        "text": "—Nico.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -15279,7 +16504,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Muéstrate."
+        "text": "—Muéstrate.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -15347,7 +16573,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Tan pocos. Tan orgullosos. Tan emocionales."
+        "text": "—Tan pocos. Tan orgullosos. Tan emocionales.",
+        "who": "Nico"
       },
       {
         "type": "p",
@@ -15363,7 +16590,8 @@ const PART5_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Hola, Clancy."
+        "text": "—Hola, Clancy.",
+        "who": "Nico"
       }
     ],
     "id": "cap41",

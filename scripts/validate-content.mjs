@@ -125,7 +125,33 @@ for (const requiredPart5Diary of ["diario-022-03moon-17", "diario-022-03moon-18"
   }
 }
 
-for (const chapter of chapters.filter((item) => item.kind !== "extra" && item.part !== 5)) {
+const definitivePart5Text = JSON.stringify(part5Chapters);
+for (const requiredText of [
+  "La tela de mi camisa no se hundió bajo sus dedos.",
+  "Bram no permitió que la página de la visión entrara de inmediato al archivo.",
+  "024 02MOON 25",
+  "Las fogatas se sienten como hogar",
+  "—Nadie lo derribó —dijo Lena.",
+  "Una garra se cerraba y abría contra la tierra sin encontrar apoyo.",
+  "La resistencia avanzaba mediante decisiones pequeñas, no como una sola fuerza.",
+  "Mara mantuvo la espalda recta hasta que la estructura dejó de verse desde el frente.",
+  "Tenía una quemadura reciente en la base del pulgar y sangre seca bajo una uña.",
+]) {
+  if (!definitivePart5Text.includes(requiredText)) {
+    throw new Error(`La Parte V no contiene la corrección maestra requerida: ${requiredText}`);
+  }
+}
+for (const deprecatedText of [
+  "No lo derribamos.",
+  "La resistencia no avanzaba como una sola fuerza. Se abría en decisiones pequeñas.",
+  '"title":"Página del diario","intro":"024 02MOON 25"',
+]) {
+  if (definitivePart5Text.includes(deprecatedText)) {
+    throw new Error(`La Parte V conserva texto de la edición sustituida: ${deprecatedText}`);
+  }
+}
+
+for (const chapter of chapters.filter((item) => item.kind !== "extra")) {
   for (const block of chapter.blocks ?? []) {
     if ((block.type === "dialogue" || block.type === "speech") && !block.who) {
       throw new Error(`${chapter.id} contiene diálogo sin atribución.`);
@@ -299,8 +325,8 @@ if (part4.length !== 7 || part4[0]?.id !== "cap25" || part4.at(-1)?.id !== "cap3
 }
 const part4DialogueCount = part4.flatMap((chapter) => chapter.blocks ?? [])
   .filter((block) => block.type === "speech" || block.type === "dialogue").length;
-if (part4DialogueCount !== 569) {
-  throw new Error(`La Parte IV debe conservar 569 intervenciones atribuidas; se encontraron ${part4DialogueCount}.`);
+if (part4DialogueCount !== 582) {
+  throw new Error(`La Parte IV debe conservar 582 intervenciones atribuidas; se encontraron ${part4DialogueCount}.`);
 }
 for (const requiredText of [
   "Keons murió antes de que la ciudad despertara con la muerte de Clancy ya redactada.",

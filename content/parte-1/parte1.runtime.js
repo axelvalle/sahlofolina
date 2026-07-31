@@ -1,5 +1,5 @@
 // Parte I de Sahlo Folina.
-// Módulo canónico registrado mediante content/framework/runtime.js.
+// Edición literaria maestra definitiva, consolidada en el website.
 
 const PART1_CHAPTERS = [
   {
@@ -12,9 +12,10 @@ const PART1_CHAPTERS = [
       "title": "La ciudad",
       "subtitle": "sin horizonte",
       "lead": "Recordar que alguna vez elegiste algo.",
-      "location": "Dema, antes de que el nombre de Clancy pudiera cruzar sus muros.",
+      "location": "Dema, antes de la primera fuga.",
       "background": "./assets/cover-dema.webp"
     },
+    "part": 1,
     "blocks": [
       {
         "type": "p",
@@ -22,7 +23,7 @@ const PART1_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Yo iba en el asiento trasero, con las manos apoyadas sobre las rodillas y la sensación de que llevaba horas mirando el mismo árbol muerto pasar junto a la ventana. El conductor no hablaba. Solo veía sus manos oscuras apretando el volante y el borde rojo de una manga."
+        "text": "El árbol muerto regresaba junto a la ventana cada poco minuto: el mismo tronco partido, la misma rama doblada hacia la carretera. Yo llevaba las manos rígidas sobre las rodillas. El conductor no hablaba. El cuero del volante crujía bajo sus dedos oscuros y una franja roja asomaba de la manga."
       },
       {
         "type": "p",
@@ -34,24 +35,24 @@ const PART1_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Quise gritarle, pero mi voz no salió. El baterista levantó una baqueta, golpeó el redoblante y el parabrisas se llenó de pétalos amarillos. Las flores se pegaron al vidrio como insectos. Después llegó el fuego. Primero debajo del capó, luego alrededor de mis pies."
+        "text": "Quise gritarle, pero la garganta se cerró. El baterista levantó una baqueta, golpeó el redoblante y el parabrisas se cubrió de pétalos amarillos. Las flores se aplastaron contra el vidrio con un roce seco. Después llegó el fuego: primero bajo el capó; luego, respirando alrededor de mis zapatos."
       },
       {
         "type": "p",
-        "text": "Miré mis manos. Las puntas de los dedos estaban cubiertas de negro. Intenté limpiarlas contra el pantalón, pero la mancha comenzó a subir por mis muñecas, como si ya conociera el camino."
+        "text": "El calor me obligó a separar las manos de las rodillas. Las puntas de los dedos estaban cubiertas de negro. Intenté limpiarlas contra el pantalón. La mancha subió por mis muñecas, lenta y segura."
       },
       {
         "type": "p",
         "text": "Busqué la manija de la puerta."
       },
       {
-        "type": "dialogue",
-        "who": "Voz detrás de mí",
-        "text": "Todavía no. Primero tienes que pedir que te lleve."
+        "type": "speech",
+        "text": "—Todavía no —dijo una voz detrás de mí—. Primero tienes que pedir que te lleve.",
+        "who": "Voz detrás de mí"
       },
       {
         "type": "p",
-        "text": "Miré hacia atrás. No había nadie. Solo una figura en lo alto de una colina, sosteniendo una antorcha."
+        "text": "Me giré. El asiento estaba vacío. En lo alto de una colina, una figura sostenía una antorcha."
       },
       {
         "type": "p",
@@ -67,7 +68,7 @@ const PART1_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "La segunda hizo vibrar el vidrio de mi ventana. La tercera atravesó las paredes del bloque residencial. Para cuando sonó la novena, yo ya estaba sentado en la cama, respirando como si de verdad hubiera escapado de un incendio."
+        "text": "La segunda campanada hizo vibrar el vidrio de mi ventana. La tercera atravesó las paredes del bloque residencial. Para cuando sonó la novena, yo ya estaba sentado en la cama, con la camisa pegada a la espalda y un gusto a humo que el sueño no debía haber dejado en mi boca."
       },
       {
         "type": "p",
@@ -83,12 +84,12 @@ const PART1_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Encendí la lámpara del escritorio y levanté una tabla suelta del suelo. Debajo guardaba un cuaderno pequeño, de tapas negras, que había cosido yo mismo con hilo de archivo. Escribí antes de que el sueño se deshiciera:"
+        "text": "Encendí la lámpara del escritorio y levanté una tabla suelta del suelo. La madera me dejó una astilla en el pulgar. Debajo guardaba un cuaderno de tapas negras que había cosido yo mismo con hilo de archivo. Escribí antes de que el sueño se deshiciera:"
       },
       {
         "type": "epigraph",
         "text": "El conductor sabía que yo quería salir.",
-        "attr": "Cuaderno de Clancy"
+        "attr": ""
       },
       {
         "type": "p",
@@ -96,7 +97,7 @@ const PART1_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Tenía diecinueve años y jamás había salido de Dema. Tampoco conocía a nadie que lo hubiera hecho y regresara con una historia que pudiera comprobarse. El exterior era una colección de advertencias: aire enfermo, montañas sin caminos, criaturas que se alimentaban de viajeros, bandas que robaban niños y pintaban sus ropas de amarillo para que los obispos no pudieran verlas."
+        "text": "Tenía diecinueve años y jamás había salido de Dema. Tampoco conocía a nadie que lo hubiera hecho y regresara con una historia que pudiera comprobarse. El exterior era una colección de advertencias: aire enfermo, montañas sin caminos, criaturas que se alimentaban de viajeros, bandas que robaban niños y pintaban sus ropas de amarillo para que los obispos no pudieran verlas. Aun así, cada vez que pensaba en el muro, mi cuerpo se inclinaba hacia él antes de que la prudencia pudiera detenerlo."
       },
       {
         "type": "p",
@@ -104,7 +105,7 @@ const PART1_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "El día anterior había escrito algo más extenso. No era una nota sobre un sueño ni una frase suelta. Era una carta, aunque todavía no sabía a quién iba dirigida. Solo necesitaba dejar por escrito lo que Dema había sido para mí y el momento en que dejó de sentirse como un hogar."
+        "text": "El día anterior había escrito algo más extenso: una carta sin destinatario. Necesitaba fijar en una página lo que Dema había sido para mí y el instante en que dejó de sentirse como un hogar."
       },
       {
         "type": "diary",
@@ -112,44 +113,38 @@ const PART1_CHAPTERS = [
         "title": "Primera carta",
         "intro": "988 06MOON 18",
         "paragraphs": [
-          "Las perplejidades del horizonte de Dema no se me hicieron evidentes hasta que cumplí nueve años. Fue entonces cuando comencé a contemplar lo existencial y a decidir qué clase de huella quería dejar con mi vida. Como era natural, para alimentar mi esperanza, miré hacia la distancia de la tierra que me había formado, solo que esta vez lo hice con una nueva conciencia del obstáculo que mi ignorancia infantil me había permitido pasar por alto. ¿Había estado allí todo el tiempo? ¿Cómo no había visto algo tan evidente?",
-          "Recuerdo aquel momento todos los días, mientras esa revelación choca de frente con una esperanza particular para mi propio futuro.",
-          "De niño miraba Dema con asombro; hoy estoy lleno de frustración, mientras paso cada día entrecerrando los ojos para alcanzar a ver la parte más alta del imponente muro que nos ha mantenido aquí. Fue al cumplir nueve años cuando comprendí que Dema no era mi hogar. Esta aldea, después de todo este tiempo, era mi trampa.",
+          "Las perplejidades del horizonte de Dema no se me hicieron evidentes hasta que cumplí nueve años. Fue entonces cuando comencé a contemplar lo existencial y a decidir qué clase de huella quería dejar con mi vida. Como era natural, para alimentar mi esperanza, miré hacia la distancia de la tierra que me había formado, solo que esta vez lo hice con una nueva conciencia del obstáculo que mi ignorancia infantil me había permitido pasar por alto. ¿Había estado allí todo el tiempo? ¿Cómo no había visto algo tan evidente? Recuerdo aquel momento todos los días, mientras esa revelación choca de frente con una esperanza particular para mi propio futuro. De niño miraba Dema con asombro; hoy estoy lleno de frustración, mientras paso cada día entrecerrando los ojos para alcanzar a ver la parte más alta del imponente muro que nos ha mantenido aquí. Fue al cumplir nueve años cuando comprendí que Dema no era mi hogar. Esta aldea, después de todo este tiempo, era mi trampa.",
           "Antes de comprenderlo, sentía un profundo afecto por Dema. La ciudad tenía una estructura maravillosa que calmaba mis preocupaciones. Las calles y los lugares eran previsibles, y las responsabilidades del día parecían cumplirse con el mínimo esfuerzo. Una vez que aprendíamos y comprendíamos una tarea, disfrutábamos de nuestra capacidad para completar nuestras obligaciones a tiempo y nos sentíamos seguros al saber que las tareas del día siguiente se realizarían con la misma eficiencia. Todos trabajábamos para representar con honor a nuestro obispo y sabíamos que cada habitante de nuestra región compartía la misma dedicación a la constancia.",
           "Keons encarnaba el espíritu de esa dedicación. De los nueve obispos de Dema, Keons era venerado por ser firme y directo, y por poseer una capacidad de concentración poco común entre la mayoría de los habitantes de nuestra región. Todos lo admirábamos y nos sentíamos honrados de pertenecer a su distrito. Aunque habíamos escuchado leyendas sobre la crueldad de otros obispos, Keons tenía un temperamento estoico distinto al de cualquier persona que yo hubiera conocido, y todos nos sentíamos orgullosos de servirle."
         ],
         "sign": "— Clancy"
       },
       {
-        "type": "scene",
-        "text": "II"
+        "type": "p",
+        "text": "Me vestí con el uniforme gris del Archivo de Permanencia. La chaqueta tenía el emblema de Keons sobre el pecho: dos líneas verticales bordadas en hilo apagado. Cerré el cuello hasta sentirlo contra la garganta, escondí el cuaderno dentro del forro y me colgué el vial de identificación."
       },
       {
         "type": "p",
-        "text": "Me vestí con el uniforme gris del Archivo de Permanencia. La chaqueta tenía el emblema de Keons sobre el pecho: dos líneas verticales bordadas en hilo apagado. Revisé que el cuello estuviera cerrado y escondí el cuaderno dentro del forro. Antes de salir, me colgué el vial de identificación."
-      },
-      {
-        "type": "p",
-        "text": "Era un frasco del tamaño de un dedo. Dentro había una tira de papel con mi nombre administrativo, mi número de vivienda, mi ocupación y el distrito al que pertenecía. Nos decían que el vial recordaba quiénes éramos. A mí siempre me había parecido extraño necesitar un papel para eso."
+        "text": "El frasco, frío contra el esternón, tenía el tamaño de un dedo. Dentro llevaba una tira de papel con mi nombre administrativo, mi número de vivienda, mi ocupación y el distrito al que pertenecía. Nos decían que el vial recordaba quiénes éramos. Siempre me había parecido extraño necesitar un papel para eso."
       },
       {
         "type": "p",
         "text": "En el corredor, los vecinos formaban dos filas frente al retrato de Keons. La supervisora del bloque levantó su propio vial y todos repetimos la oración matutina."
       },
       {
-        "type": "dialogue",
-        "who": "Supervisora",
-        "text": "Lo que se derrama se pierde."
+        "type": "speech",
+        "text": "—Lo que se derrama se pierde —dijo ella.",
+        "who": "Supervisora"
       },
       {
-        "type": "dialogue",
-        "who": "Vecinos",
-        "text": "Lo que se contiene permanece."
+        "type": "speech",
+        "text": "—Lo que se contiene permanece —respondimos.",
+        "who": "Vecinos"
       },
       {
-        "type": "dialogue",
-        "who": "Supervisora",
-        "text": "Lo que permanece sirve."
+        "type": "speech",
+        "text": "—Lo que permanece sirve —concluyó la supervisora.",
+        "who": "Supervisora"
       },
       {
         "type": "p",
@@ -165,30 +160,34 @@ const PART1_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Mara llevaba el cabello recogido con una cinta gris y el uniforme ceremonial de su familia. Bajo los ojos tenía dos sombras que no había logrado ocultar. Su hermano Elias había muerto doce días antes, y esa noche encenderían su monumento en la necrópolis."
+        "text": "Mara llevaba el cabello sujeto con una cinta gris y el uniforme ceremonial de su familia. Bajo los ojos tenía dos sombras que el agua fría no había borrado. Su hermano Elias había muerto doce días antes, y esa noche encenderían su monumento en la necrópolis."
       },
       {
         "type": "p",
         "text": "James, en cambio, parecía haber olvidado que íbamos a una vigilia. Tenía grasa en una mejilla, una llave de ajuste colgando del cinturón y el cabello aplastado de un lado."
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Te ves terrible."
+        "type": "speech",
+        "text": "—Te ves terrible —le dije.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "James",
-        "text": "Gracias. Me levanté temprano para lograrlo."
+        "type": "speech",
+        "text": "—Gracias. Me levanté temprano para lograrlo.",
+        "who": "James"
       },
       {
         "type": "p",
         "text": "Mara no sonrió."
       },
       {
-        "type": "dialogue",
-        "who": "James",
-        "text": "Perdón."
+        "type": "p",
+        "text": "James bajó la voz."
+      },
+      {
+        "type": "speech",
+        "text": "—Perdón —dijo, ya sin humor.",
+        "who": "James"
       },
       {
         "type": "p",
@@ -196,7 +195,7 @@ const PART1_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "El distrito de Keons despertaba alrededor de nosotros. Los vendedores abrían sus puestos. Los trabajadores de limpieza quitaban de las paredes los anuncios vencidos. Los altavoces anunciaban el horario de la Vigilia de Permanencia y recordaban que las familias debían conservar sus lugares asignados."
+        "text": "El distrito de Keons despertaba alrededor de nosotros entre olor a pan, desinfectante y metal húmedo. Los vendedores abrían sus puestos. Los trabajadores de limpieza arrancaban anuncios vencidos de las paredes. Los altavoces anunciaban el horario de la Vigilia de Permanencia y recordaban que las familias debían conservar sus lugares asignados."
       },
       {
         "type": "p",
@@ -215,70 +214,70 @@ const PART1_CHAPTERS = [
         "text": "Pasamos junto a una plaza donde varios operarios levantaban una pantalla para transmitir el sermón de Nico. Detrás de ella, la torre central cortaba el cielo. Las nueve torres se alzaban desde distintos puntos de la ciudad como agujas de un reloj que nunca avanzaba."
       },
       {
-        "type": "dialogue",
-        "who": "James",
-        "text": "Anoche encontré algo."
+        "type": "speech",
+        "text": "—Conducto cuatro —dijo James—. Pintura amarilla. Una flecha.",
+        "who": "James"
       },
       {
         "type": "p",
-        "text": "Mara lo miró con cansancio."
+        "text": "Mara siguió caminando. La cinta gris de su cabello se tensó cuando apretó la mandíbula."
       },
       {
-        "type": "dialogue",
-        "who": "Mara",
-        "text": "Por favor, hoy no."
+        "type": "speech",
+        "text": "—Hoy no.",
+        "who": "Mara"
       },
       {
-        "type": "dialogue",
-        "who": "James",
-        "text": "No es una broma."
+        "type": "speech",
+        "text": "—No estoy bromeando.",
+        "who": "James"
       },
       {
-        "type": "dialogue",
-        "who": "Mara",
-        "text": "Tus cosas nunca son una broma hasta que alguien te pregunta por ellas."
-      },
-      {
-        "type": "p",
-        "text": "James se acercó a nosotros."
-      },
-      {
-        "type": "dialogue",
-        "who": "James",
-        "text": "Había pintura amarilla dentro del conducto del sector cuatro."
+        "type": "speech",
+        "text": "—Nunca bromeas hasta que alguien pregunta qué rompiste.",
+        "who": "Mara"
       },
       {
         "type": "p",
-        "text": "Yo seguí caminando."
+        "text": "James acortó la distancia entre nosotros."
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Puede ser una marca de mantenimiento."
+        "type": "speech",
+        "text": "—No usamos amarillo en mantenimiento.",
+        "who": "James"
       },
       {
-        "type": "dialogue",
-        "who": "James",
-        "text": "Nosotros no usamos amarillo."
+        "type": "p",
+        "text": "Seguí caminando porque detenerme habría convertido la conversación en una decisión."
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Entonces era óxido."
+        "type": "speech",
+        "text": "—Puede ser una marca vieja.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "James",
-        "text": "El óxido tampoco forma una flecha."
+        "type": "speech",
+        "text": "—No estaba vieja.",
+        "who": "James"
+      },
+      {
+        "type": "speech",
+        "text": "—Entonces era óxido.",
+        "who": "Clancy"
+      },
+      {
+        "type": "speech",
+        "text": "—El óxido no dibuja flechas.",
+        "who": "James"
       },
       {
         "type": "p",
         "text": "Mara se detuvo."
       },
       {
-        "type": "dialogue",
-        "who": "Mara",
-        "text": "No quiero escuchar historias de Banditos el día de la vigilia de mi hermano."
+        "type": "speech",
+        "text": "—No quiero Banditos en la vigilia de mi hermano —dijo Mara—. Ni como rumor.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -305,50 +304,50 @@ const PART1_CHAPTERS = [
         "text": "Yo nunca había entendido esa última parte. El horizonte se veía desde algunas calles altas. Era una línea gris detrás de los muros. No había nada que recordar."
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Elias todavía tenía tu dibujo."
+        "type": "speech",
+        "text": "—Elias todavía tenía tu dibujo —le dije a James.",
+        "who": "Clancy"
       },
       {
         "type": "p",
         "text": "Mara frunció el ceño."
       },
       {
-        "type": "dialogue",
-        "who": "Mara",
-        "text": "¿Qué dibujo?"
-      },
-      {
-        "type": "dialogue",
-        "who": "James",
-        "text": "Uno viejo. El del hombre con la antorcha."
-      },
-      {
-        "type": "dialogue",
-        "who": "Mara",
-        "text": "Me dijo que lo había quemado."
-      },
-      {
-        "type": "dialogue",
-        "who": "James",
-        "text": "Tal vez no quiso admitir que le gustaba."
+        "type": "speech",
+        "text": "—¿Qué dibujo?",
+        "who": "Mara"
       },
       {
         "type": "p",
-        "text": "Por primera vez esa mañana, Mara sonrió un poco."
+        "text": "James se rascó la nuca."
       },
       {
-        "type": "scene",
-        "text": "III"
+        "type": "speech",
+        "text": "—Uno viejo. El hombre con la antorcha.",
+        "who": "James"
+      },
+      {
+        "type": "speech",
+        "text": "—Me dijo que lo había quemado.",
+        "who": "Mara"
+      },
+      {
+        "type": "speech",
+        "text": "—Elias mentía peor que Clancy.",
+        "who": "James"
       },
       {
         "type": "p",
-        "text": "El Templo de la Permanencia ocupaba el centro del distrito. Era circular, construido con cemento blanco que los años habían vuelto gris. Tenía nueve entradas, aunque los ciudadanos de Keons solo podían utilizar una. Sobre las puertas había una frase tallada:"
+        "text": "La boca de Mara cedió apenas. No llegó a ser una sonrisa, pero James dejó de mirar el suelo."
+      },
+      {
+        "type": "p",
+        "text": "El Templo de la Permanencia ocupaba el centro del distrito. Era circular, construido con un cemento que alguna vez había sido blanco y ahora retenía el gris de la lluvia. Tenía nueve entradas, aunque los ciudadanos de Keons solo podían utilizar una. Sobre las puertas, la piedra imponía una frase:"
       },
       {
         "type": "epigraph",
         "text": "NINGUNA VIDA SE PIERDE CUANDO ENCUENTRA SU FUNCIÓN.",
-        "attr": "Templo de la Permanencia"
+        "attr": ""
       },
       {
         "type": "p",
@@ -356,11 +355,11 @@ const PART1_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Dentro olía a cera, metal caliente y flores artificiales. Nueve corredores descendían hacia una plataforma central. Sobre ella estaban los asientos de los obispos, altos y estrechos, demasiado grandes para parecer cómodos."
+        "text": "Dentro olía a cera, metal recalentado y flores de tela. Nueve corredores descendían hacia una plataforma central. Sobre ella esperaban los asientos de los obispos: altos, estrechos, demasiado grandes para admitir que un cuerpo debía sentirse cómodo."
       },
       {
         "type": "p",
-        "text": "La mayoría permanecía vacía. Algunos obispos asistían mediante pantallas desde sus propias torres. Reconocí a Lisden por su cuerpo ancho y su manera de sostener los papeles como si cada hoja fuera una sentencia. Sacarver llevaba adornos rojos alrededor del cuello y miraba a la congregación como si ya conociera el final de la ceremonia."
+        "text": "La mayoría permanecía vacía. Algunos obispos asistían mediante pantallas desde sus propias torres. Lisden sostenía los papeles por los bordes, sin doblarlos, como si una arruga pudiera invalidar una sentencia. Sacarver llevaba adornos rojos alrededor del cuello y sonreía antes de que hubiera algo que celebrar."
       },
       {
         "type": "p",
@@ -372,12 +371,12 @@ const PART1_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Tenía las manos oscuras apoyadas sobre una mesa. La pintura negra subía por sus dedos y desaparecía bajo las mangas rojas. En su cuello había otra mancha, como si una sombra hubiera encontrado dónde quedarse."
+        "text": "Tenía las manos oscuras apoyadas sobre una mesa. La pintura negra subía por sus dedos y desaparecía bajo las mangas rojas. En el cuello, otra mancha parecía apretarle la voz."
       },
       {
-        "type": "dialogue",
-        "who": "Nico",
-        "text": "Hoy no venimos a lamentar una ausencia. Venimos a reconocer una permanencia."
+        "type": "speech",
+        "text": "—Hoy no venimos a lamentar una ausencia —dijo—. Venimos a certificar que la ciudad ha sabido conservarla.",
+        "who": "Nico"
       },
       {
         "type": "p",
@@ -389,15 +388,15 @@ const PART1_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Nico habló de orden, descanso y gratitud. Dijo que la ciudad protegía a sus ciudadanos incluso cuando ellos ya no podían protegerse. Dijo que el dolor era un recipiente y que el Vialismo nos enseñaba a no derramarlo sobre los demás."
+        "text": "Nico habló de orden, descanso y gratitud. No nombró a Elias como hombre, sino como una función completada. Dijo que la ciudad protegía a sus ciudadanos incluso cuando ellos ya no podían protegerse y que el dolor, bien contenido, podía seguir sirviendo."
       },
       {
         "type": "p",
-        "text": "Sonaba compasivo. Esa era una de las cosas que más me confundían de él."
+        "text": "Su voz no sonaba cruel. Eso era lo peligroso."
       },
       {
         "type": "p",
-        "text": "Cuando terminaba un sermón de Nico, uno podía sentir que la obediencia era una forma de cariño."
+        "text": "Al final de un sermón de Nico, la obediencia podía confundirse con una forma de cariño."
       },
       {
         "type": "p",
@@ -409,21 +408,26 @@ const PART1_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Yo había visto a nuestro obispo muchas veces desde lejos. En persona parecía más alto. Su túnica era roja, aunque más oscura que la de los otros, y su rostro tenía una palidez casi azul bajo las luces del templo. Caminó hasta Mara sin consultar ningún documento."
+        "text": "Conocía a nuestro obispo desde lejos. En persona parecía más alto. Su túnica era roja, aunque más oscura que la de los otros, y su rostro adquiría una palidez azul bajo las luces del templo. Caminó hasta Mara sin consultar ningún documento."
       },
       {
-        "type": "dialogue",
-        "who": "Keons",
-        "text": "Mara Venn."
-      },
-      {
-        "type": "dialogue",
-        "who": "Mara",
-        "text": "Mi obispo."
+        "type": "speech",
+        "text": "—Mara Venn —dijo.",
+        "who": "Keons"
       },
       {
         "type": "p",
-        "text": "—Tu hermano sirvió en los talleres de orientación durante seis años. Conservó una asistencia perfecta. Ayudó durante la inundación del sector sur y entregó voluntariamente sus horas de descanso cuando la ciudad las necesitó."
+        "text": "Ella soltó mi mano."
+      },
+      {
+        "type": "speech",
+        "text": "—Mi obispo.",
+        "who": "Mara"
+      },
+      {
+        "type": "speech",
+        "text": "—Tu hermano sirvió en los talleres de orientación durante seis años. Conservó una asistencia perfecta. Ayudó durante la inundación del sector sur y entregó voluntariamente sus horas de descanso cuando la ciudad las necesitó.",
+        "who": "Keons"
       },
       {
         "type": "p",
@@ -435,30 +439,30 @@ const PART1_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Entonces me miró."
+        "text": "Entonces pronunció mi nombre."
       },
       {
-        "type": "dialogue",
-        "who": "Keons",
-        "text": "Clancy."
-      },
-      {
-        "type": "p",
-        "text": "Sentí que todos podían escuchar mi respiración."
-      },
-      {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Mi obispo."
-      },
-      {
-        "type": "dialogue",
-        "who": "Keons",
-        "text": "Todavía escribes demasiado."
+        "type": "speech",
+        "text": "—Clancy.",
+        "who": "Keons"
       },
       {
         "type": "p",
-        "text": "Su mirada descendió un instante hasta mi cuello, justo donde el uniforme ocultaba la piel. Después volvió a mis ojos, como si hubiera comprobado algo que yo no sabía que debía esconder."
+        "text": "Mi respiración se volvió demasiado grande para la sala."
+      },
+      {
+        "type": "speech",
+        "text": "—Mi obispo.",
+        "who": "Clancy"
+      },
+      {
+        "type": "speech",
+        "text": "—Todavía escribes demasiado.",
+        "who": "Keons"
+      },
+      {
+        "type": "p",
+        "text": "Sus ojos descendieron un instante hasta mi cuello, justo donde el uniforme ocultaba la piel. Después regresaron a mi rostro. No era curiosidad. Era una comprobación."
       },
       {
         "type": "p",
@@ -470,17 +474,17 @@ const PART1_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Keons esperó un momento, quizá disfrutando de mi incomodidad, y luego continuó hacia la plataforma."
+        "text": "Keons esperó lo suficiente para que el silencio se volviera una respuesta y continuó hacia la plataforma."
       },
       {
-        "type": "dialogue",
-        "who": "Mara",
-        "text": "¿Qué quiso decir?"
+        "type": "speech",
+        "text": "—¿Qué quiso decir? —susurró Mara.",
+        "who": "Mara"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Trabajo en un archivo. Todos escribimos demasiado."
+        "type": "speech",
+        "text": "—Trabajo en un archivo. Todos escribimos demasiado.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -495,19 +499,23 @@ const PART1_CHAPTERS = [
         "text": "Keons levantó el vial de Elias."
       },
       {
-        "type": "dialogue",
-        "who": "Keons",
-        "text": "Lo que se derrama se pierde."
+        "type": "speech",
+        "text": "—Lo que se derrama se pierde.",
+        "who": "Supervisora"
       },
       {
-        "type": "dialogue",
-        "who": "Congregación",
-        "text": "Lo que se contiene permanece."
+        "type": "p",
+        "text": "La congregación respondió."
       },
       {
-        "type": "dialogue",
-        "who": "Keons",
-        "text": "Lo que permanece sirve."
+        "type": "speech",
+        "text": "—Lo que se contiene permanece.",
+        "who": "Vecinos"
+      },
+      {
+        "type": "speech",
+        "text": "—Lo que permanece sirve.",
+        "who": "Supervisora"
       },
       {
         "type": "p",
@@ -518,12 +526,8 @@ const PART1_CHAPTERS = [
         "text": "La necrópolis estaba del otro lado."
       },
       {
-        "type": "scene",
-        "text": "IV"
-      },
-      {
         "type": "p",
-        "text": "Había estado allí antes, pero nunca durante un encendido. Filas de monumentos negros se extendían hasta la base de las torres. Cada uno llevaba un nombre formado por tubos de neón. Algunos brillaban en blanco, otros en rojo pálido. La luz se reflejaba sobre el suelo mojado y convertía las tumbas en una ciudad pequeña dentro de la ciudad."
+        "text": "Había estado allí antes, pero nunca durante un encendido. Filas de monumentos negros se extendían hasta la base de las torres. Cada uno llevaba un nombre formado por tubos de neón: blanco enfermo, rojo pálido, destellos cian donde el vidrio envejecía. La lluvia convertía el suelo en un espejo y las tumbas parecían otra ciudad construida debajo de la nuestra."
       },
       {
         "type": "p",
@@ -531,11 +535,11 @@ const PART1_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Esa fue mi primera reacción, y durante mucho tiempo me avergonzó."
+        "text": "La belleza me dio vergüenza antes de que pudiera defenderme de ella."
       },
       {
         "type": "p",
-        "text": "Las familias avanzaron detrás de Keons. Pantallas colocadas entre los monumentos mostraban fotografías de los Glorious Gone: rostros sonrientes, uniformes limpios, frases recortadas de sus expedientes. Los muertos parecían más seguros que cuando estaban vivos."
+        "text": "Las familias avanzaron detrás de Keons. Entre los monumentos, las pantallas mostraban fotografías de los Glorious Gone: rostros sonrientes, uniformes sin una arruga, frases recortadas de sus expedientes. Los muertos parecían más seguros que cuando estaban vivos."
       },
       {
         "type": "p",
@@ -551,51 +555,77 @@ const PART1_CHAPTERS = [
       },
       {
         "type": "epigraph",
-        "text": "E. L. I. A. S.",
-        "attr": "Monumento en la necrópolis"
+        "text": "E.",
+        "attr": ""
+      },
+      {
+        "type": "epigraph",
+        "text": "L.",
+        "attr": ""
+      },
+      {
+        "type": "epigraph",
+        "text": "I.",
+        "attr": ""
+      },
+      {
+        "type": "epigraph",
+        "text": "A.",
+        "attr": ""
+      },
+      {
+        "type": "epigraph",
+        "text": "S.",
+        "attr": ""
       },
       {
         "type": "p",
         "text": "La gente aplaudió."
       },
       {
-        "type": "p",
-        "text": "Mara lloró, pero también sonrió porque había cámaras frente a ella. En la pantalla apareció una grabación de su hermano trabajando en los talleres. Después se mostró una frase:"
+        "type": "epigraph",
+        "text": "Mara lloró y sonrió porque una cámara estaba frente a ella. La sonrisa le tembló primero en una comisura, como un músculo obligado a recordar una instrucción. En la pantalla apareció Elias trabajando en los talleres. Después mostraron una frase:",
+        "attr": ""
       },
       {
         "type": "epigraph",
         "text": "SIEMPRE DESEÉ ENCONTRAR MI PERMANENCIA.",
-        "attr": "Pantalla ceremonial"
+        "attr": ""
       },
       {
         "type": "p",
-        "text": "Sentí algo frío en el estómago."
+        "text": "El estómago se me cerró. El vial golpeó una vez contra mi pecho."
       },
       {
         "type": "p",
         "text": "Elias nunca había dicho eso."
       },
       {
-        "type": "p",
-        "text": "Una semana antes de morir me había pedido que corrigiera una carta. No quería entregarla a los obispos. Quería dejarla con Mara. En esa carta decía que tenía miedo. Decía que no podía dormir, que sentía que las calles se cerraban a su alrededor y que algunas noches imaginaba correr hasta que ninguna torre pudiera verlo."
+        "type": "epigraph",
+        "text": "Una semana antes de morir, Elias me había pedido que corrigiera una carta. No quería entregarla a los obispos; quería dejársela a Mara. Escribió que tenía miedo, que no podía dormir, que las calles se cerraban a su alrededor y que algunas noches deseaba correr hasta que ninguna torre pudiera alcanzarlo.",
+        "attr": ""
       },
       {
         "type": "p",
         "text": "No hablaba de permanencia. Hablaba de marcharse."
       },
       {
-        "type": "dialogue",
-        "who": "Mara",
-        "text": "Es lo último que escribió. Quiero dejarlo con él."
+        "type": "p",
+        "text": "Mara sacó un papel doblado del bolsillo."
+      },
+      {
+        "type": "speech",
+        "text": "—Es lo último que escribió —dijo Mara. Sostenía el papel con ambas manos para que no se notara cuánto le temblaban—. Quiero dejarlo con él.",
+        "who": "Mara"
       },
       {
         "type": "p",
         "text": "Un funcionario se acercó antes de que pudiera tocar el monumento."
       },
       {
-        "type": "dialogue",
-        "who": "Funcionario",
-        "text": "Los objetos deben ser revisados."
+        "type": "speech",
+        "text": "—Los objetos deben ser revisados.",
+        "who": "Funcionario"
       },
       {
         "type": "p",
@@ -606,92 +636,97 @@ const PART1_CHAPTERS = [
         "text": "El hombre la abrió y leyó las primeras líneas."
       },
       {
-        "type": "dialogue",
-        "who": "Funcionario",
-        "text": "No utiliza lenguaje de permanencia aprobado."
+        "type": "speech",
+        "text": "—No utiliza lenguaje de permanencia aprobado.",
+        "who": "Funcionario"
       },
       {
-        "type": "dialogue",
-        "who": "Mara",
-        "text": "Era de mi hermano."
+        "type": "speech",
+        "text": "—No es lenguaje —dijo Mara—. Es mi hermano.",
+        "who": "Mara"
       },
       {
-        "type": "dialogue",
-        "who": "Funcionario",
-        "text": "Por eso debe conservarse en el archivo correspondiente."
+        "type": "speech",
+        "text": "—Por eso debe conservarse en el archivo correspondiente.",
+        "who": "Funcionario"
       },
       {
-        "type": "dialogue",
-        "who": "Mara",
-        "text": "Solo quiero dejarla aquí."
+        "type": "speech",
+        "text": "—Solo quiero que una cosa suya permanezca donde él no pudo elegir.",
+        "who": "Mara"
       },
       {
         "type": "p",
         "text": "El funcionario dobló el papel y lo guardó en una caja de metal."
       },
       {
-        "type": "dialogue",
-        "who": "Funcionario",
-        "text": "Su memoria ya ha sido preparada para ustedes."
+        "type": "speech",
+        "text": "—Su memoria ya ha sido preparada para ustedes.",
+        "who": "Funcionario"
       },
       {
         "type": "p",
-        "text": "Mara bajó la mirada."
+        "text": "Mara bajó la mirada. Sus uñas habían marcado medias lunas en el papel."
       },
       {
-        "type": "dialogue",
-        "who": "Mara",
-        "text": "Está bien."
-      },
-      {
-        "type": "p",
-        "text": "No estaba bien."
+        "type": "speech",
+        "text": "—Está bien —dijo. La frase le raspó la garganta.",
+        "who": "Mara"
       },
       {
         "type": "p",
-        "text": "La pantalla seguía mostrando a Elias sonriente. La frase falsa permanecía debajo de su rostro."
+        "text": "No lo estaba."
+      },
+      {
+        "type": "epigraph",
+        "text": "La pantalla seguía mostrando a Elias sonriente. La frase falsa permanecía debajo de su rostro.",
+        "attr": ""
       },
       {
         "type": "p",
-        "text": "Vi al funcionario alejarse con la caja."
+        "text": "El funcionario se alejó con la caja pegada al costado."
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Voy al baño."
-      },
-      {
-        "type": "p",
-        "text": "James me miró y supo que mentía. No me detuvo."
+        "type": "speech",
+        "text": "—Voy al baño —dije.",
+        "who": "Clancy"
       },
       {
         "type": "p",
-        "text": "Seguí al funcionario hasta una puerta lateral. Esperé a que desapareciera y utilicé mi placa del archivo para abrirla. No debía funcionar en zonas ceremoniales, pero los sistemas de Dema habían sido construidos por departamentos distintos y rara vez se comunicaban tan bien como fingían."
+        "text": "James siguió al funcionario con los ojos y luego volvió hacia mí. Sabía que mentía. No me detuvo."
+      },
+      {
+        "type": "epigraph",
+        "text": "Seguí al funcionario hasta una puerta lateral. Esperé a que el eco de sus pasos doblara la esquina y utilicé mi placa del archivo. No debía funcionar en zonas ceremoniales, pero los sistemas de Dema habían sido construidos por departamentos distintos y rara vez se comunicaban tan bien como fingían.",
+        "attr": ""
       },
       {
         "type": "p",
         "text": "El corredor descendía bajo la iglesia."
       },
       {
-        "type": "p",
-        "text": "La luz de neón desapareció. Solo quedaron bombillas amarillentas, tuberías húmedas y cables gruesos que alimentaban los monumentos. El aire olía a tierra cerrada."
+        "type": "epigraph",
+        "text": "El neón quedó atrás. Solo había bombillas amarillentas, tuberías sudadas y cables gruesos que alimentaban los monumentos. El aire sabía a polvo, cobre y tierra encerrada.",
+        "attr": ""
       },
       {
-        "type": "p",
-        "text": "Encontré la caja sobre una mesa junto a otras pertenencias confiscadas: fotografías, pulseras, notas, juguetes de niños. Objetos que no encajaban con la versión oficial de sus dueños."
+        "type": "epigraph",
+        "text": "Encontré la caja sobre una mesa junto a otras pertenencias confiscadas: fotografías, pulseras, notas, juguetes de niños. Objetos que no encajaban con la versión oficial de sus dueños.",
+        "attr": ""
       },
       {
         "type": "p",
         "text": "Tomé la carta de Elias."
       },
       {
-        "type": "p",
-        "text": "Junto a la mesa había varios expedientes funerarios. Uno estaba abierto. No quería leerlo, pero vi una columna marcada con tinta roja:"
+        "type": "epigraph",
+        "text": "Junto a la mesa había varios expedientes funerarios. Uno estaba abierto. La tinta roja atrapó mi atención en una columna:",
+        "attr": ""
       },
       {
         "type": "epigraph",
         "text": "CONSERVACIÓN CORPORAL: APROBADA.",
-        "attr": "Expediente funerario"
+        "attr": ""
       },
       {
         "type": "p",
@@ -703,7 +738,7 @@ const PART1_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "No sabía qué significaba “continuidad”. Supuse que era otra palabra administrativa para conservar los registros. Aun así, la copié mentalmente antes de cerrar la carpeta."
+        "text": "No sabía qué significaba «continuidad». Supuse que era otra palabra administrativa para conservar registros. Aun así, memoricé los números de cámara y la fecha antes de cerrar la carpeta."
       },
       {
         "type": "p",
@@ -715,55 +750,52 @@ const PART1_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Escuché pasos en el corredor."
+        "text": "Un roce de suelas bajó por el corredor."
       },
       {
         "type": "p",
-        "text": "Guardé la carta dentro de mi chaqueta y apagué la lámpara. Las voces de dos guardias se acercaban."
+        "text": "Guardé la carta dentro de la chaqueta y apagué la lámpara. La oscuridad llegó antes que las voces."
       },
       {
-        "type": "dialogue",
-        "who": "Primer guardia",
-        "text": "La puerta registró una entrada."
+        "type": "speech",
+        "text": "—La puerta registró una entrada —dijo el primer guardia.",
+        "who": "Primer guardia"
       },
       {
-        "type": "dialogue",
-        "who": "Segundo guardia",
-        "text": "Debe ser un error del sistema."
+        "type": "speech",
+        "text": "—Debe ser un error del sistema —respondió el segundo.",
+        "who": "Segundo guardia"
       },
       {
-        "type": "dialogue",
-        "who": "Primer guardia",
-        "text": "Los errores también se registran."
-      },
-      {
-        "type": "p",
-        "text": "Retrocedí hasta chocar con una pared."
+        "type": "speech",
+        "text": "—Los errores también se registran —replicó el primero.",
+        "who": "Primer guardia"
       },
       {
         "type": "p",
-        "text": "Una mano apareció desde la oscuridad y me sujetó por el brazo."
+        "text": "Retrocedí hasta que el cemento frío me encontró la espalda."
+      },
+      {
+        "type": "p",
+        "text": "Una mano salió de la oscuridad y se cerró sobre mi brazo."
       },
       {
         "type": "p",
         "text": "Antes de que pudiera gritar, alguien me arrastró por una abertura estrecha entre dos paneles. Otra mano cubrió mi boca."
       },
       {
-        "type": "scene",
-        "text": "V"
-      },
-      {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "No hagas ruido."
+        "type": "speech",
+        "text": "—No hagas ruido —susurró una voz joven.",
+        "who": "Desconocido"
       },
       {
         "type": "p",
         "text": "Los guardias entraron en la sala."
       },
       {
-        "type": "p",
-        "text": "Yo apenas podía ver al desconocido. Llevaba ropa de mantenimiento, una capucha oscura y guantes sin dedos. Olía a humo, aceite y algo que no reconocí al principio."
+        "type": "epigraph",
+        "text": "La oscuridad apenas permitía ordenar su silueta: ropa de mantenimiento, capucha, guantes sin dedos. Olía a humo, aceite y algo que Dema no podía fabricar.",
+        "attr": ""
       },
       {
         "type": "p",
@@ -771,7 +803,7 @@ const PART1_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "No el polvo húmedo de los túneles. Tierra de verdad."
+        "text": "No el polvo húmedo de los túneles. Tierra abierta, mezclada con hojas y lluvia."
       },
       {
         "type": "p",
@@ -783,17 +815,35 @@ const PART1_CHAPTERS = [
       },
       {
         "type": "epigraph",
-        "text": "Dos golpes. Pausa. Uno. Pausa. Dos.",
-        "attr": "Ritmo en las tuberías"
+        "text": "Dos golpes.",
+        "attr": ""
+      },
+      {
+        "type": "epigraph",
+        "text": "Pausa.",
+        "attr": ""
+      },
+      {
+        "type": "p",
+        "text": "Uno."
+      },
+      {
+        "type": "epigraph",
+        "text": "Pausa.",
+        "attr": ""
+      },
+      {
+        "type": "p",
+        "text": "Dos."
       },
       {
         "type": "p",
         "text": "Desde el otro lado del corredor llegó una respuesta. Algo metálico cayó al suelo."
       },
       {
-        "type": "dialogue",
-        "who": "Primer guardia",
-        "text": "Ahí."
+        "type": "speech",
+        "text": "—Ahí —dijo uno de los guardias.",
+        "who": "Primer guardia"
       },
       {
         "type": "p",
@@ -801,49 +851,50 @@ const PART1_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "El desconocido esperó hasta que dejamos de escuchar sus pasos. Luego retiró la mano de mi boca."
+        "text": "El desconocido esperó hasta que los pasos se disolvieron en el corredor. Solo entonces retiró la mano de mi boca."
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "¿Quién eres?"
+        "type": "speech",
+        "text": "—¿Quién eres? —pregunté.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Alguien que no debería estar aquí."
+        "type": "speech",
+        "text": "—Alguien que no debería estar aquí.",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Eso ya lo había notado."
-      },
-      {
-        "type": "p",
-        "text": "A pesar del miedo, una parte de mí se alegró de que mi voz no temblara."
+        "type": "speech",
+        "text": "—Eso ya lo había notado.",
+        "who": "Clancy"
       },
       {
         "type": "p",
-        "text": "Él miró el bulto bajo mi chaqueta."
-      },
-      {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "¿Era suyo?"
-      },
-      {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "De mi amiga."
-      },
-      {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "No. Era de quien la escribió."
+        "text": "La voz me salió firme. El alivio de comprobarlo fue casi tan intenso como el miedo."
       },
       {
         "type": "p",
-        "text": "La frase me molestó porque sonaba a corrección, pero también porque tenía razón."
+        "text": "El desconocido señaló el bulto bajo mi chaqueta."
+      },
+      {
+        "type": "speech",
+        "text": "—¿Era suyo?",
+        "who": "Desconocido"
+      },
+      {
+        "type": "speech",
+        "text": "—De mi amiga —respondí.",
+        "who": "Clancy"
+      },
+      {
+        "type": "speech",
+        "text": "—No. Era de quien la escribió.",
+        "who": "Desconocido"
+      },
+      {
+        "type": "epigraph",
+        "text": "La frase me molestó porque sonaba a corrección, pero también porque tenía razón.",
+        "attr": ""
       },
       {
         "type": "p",
@@ -854,148 +905,151 @@ const PART1_CHAPTERS = [
         "text": "Pensé en la pintura del conducto. En los cuentos de James. En el baterista de mi sueño."
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "¿Eres uno de ellos?"
+        "type": "speech",
+        "text": "—¿Eres uno de ellos?",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "¿De quiénes?"
+        "type": "speech",
+        "text": "—¿De quiénes?",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Los Banditos."
+        "type": "speech",
+        "text": "—Los Banditos.",
+        "who": "Clancy"
       },
       {
         "type": "p",
         "text": "Sonrió apenas."
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Según Dema, los Banditos comen niños y duermen colgados de los árboles."
+        "type": "speech",
+        "text": "—Según Dema, los Banditos comen niños y duermen colgados de los árboles.",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "No respondes la pregunta."
+        "type": "speech",
+        "text": "—No respondes la pregunta.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Todavía no has hecho la pregunta correcta."
+        "type": "speech",
+        "text": "—Todavía no encontraste la pregunta correcta.",
+        "who": "Desconocido"
       },
       {
         "type": "p",
         "text": "Abrió una rejilla detrás de nosotros. Un pasadizo estrecho conducía hacia arriba."
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Esto te devuelve al patio este. Nadie revisa esa salida durante las ceremonias."
+        "type": "speech",
+        "text": "—Esto te devuelve al patio este. Nadie revisa esa salida durante las ceremonias.",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Podrías haberme dejado con los guardias."
+        "type": "speech",
+        "text": "—Podrías haberme dejado con los guardias.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Podría."
+        "type": "speech",
+        "text": "—Podría.",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "¿Por qué no lo hiciste?"
+        "type": "speech",
+        "text": "—¿Por qué no lo hiciste?",
+        "who": "Clancy"
       },
       {
         "type": "p",
         "text": "Él señaló la carta."
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Porque volviste por algo que Dema quería borrar."
+        "type": "speech",
+        "text": "—Porque volviste por algo que Dema quería borrar.",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Solo es un papel."
+        "type": "speech",
+        "text": "—Solo es un papel.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Entonces devuélvelo a la caja."
+        "type": "speech",
+        "text": "—Entonces devuélvelo a la caja.",
+        "who": "Desconocido"
       },
       {
         "type": "p",
         "text": "No dije nada."
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Puedes ponerlo donde estaba y conservar tu vida exactamente como era esta mañana."
+        "type": "speech",
+        "text": "—Puedes ponerlo donde estaba —continuó— y conservar tu vida exactamente como era esta mañana.",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "¿Y la otra opción?"
+        "type": "speech",
+        "text": "—¿Y la otra opción?",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Recordar que alguna vez elegiste algo."
+        "type": "speech",
+        "text": "—Recordar que alguna vez elegiste algo.",
+        "who": "Desconocido"
       },
       {
-        "type": "p",
-        "text": "Quise preguntarle cómo había entrado. Quise saber qué había fuera de los muros y por qué olía a tierra. Quise preguntarle si el hombre de la antorcha existía."
+        "type": "epigraph",
+        "text": "Quise preguntarle cómo había entrado, qué había fuera de los muros, por qué su ropa conservaba el olor de la lluvia y si el hombre de la antorcha existía; tantas preguntas se amontonaron que ninguna llegó a mi boca.",
+        "attr": ""
       },
       {
-        "type": "p",
-        "text": "Pero escuchamos otra vez a los guardias."
+        "type": "epigraph",
+        "text": "Pero escuchamos otra vez a los guardias.",
+        "attr": ""
       },
       {
         "type": "p",
         "text": "El desconocido me empujó hacia la rejilla."
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Vete."
+        "type": "speech",
+        "text": "—Vete.",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Dime tu nombre."
+        "type": "speech",
+        "text": "—Dime tu nombre.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Los nombres pesan demasiado cuando todavía pueden capturarte."
+        "type": "speech",
+        "text": "—Los nombres pesan demasiado cuando todavía pueden capturarte.",
+        "who": "Desconocido"
       },
       {
         "type": "p",
-        "text": "Subí por el pasadizo. Antes de cerrar la rejilla, lo vi golpear de nuevo la tubería."
+        "text": "Subí por el pasadizo. Antes de cerrar la rejilla, el desconocido golpeó de nuevo la tubería."
       },
       {
-        "type": "epigraph",
-        "text": "Dos. Uno. Dos.",
-        "attr": "¿ltimo ritmo escuchado"
+        "type": "p",
+        "text": "Dos. Uno. Dos."
       },
       {
         "type": "p",
         "text": "La respuesta llegó desde algún lugar bajo la iglesia."
       },
       {
-        "type": "p",
-        "text": "Regresé a la necrópolis detrás de una fila de columnas. Nadie pareció notar mi ausencia, excepto James. Mara seguía frente al monumento de Elias."
+        "type": "epigraph",
+        "text": "Regresé a la necrópolis detrás de una fila de columnas, con polvo en las rodillas y la carta caliente contra el pecho. Nadie pareció notar mi ausencia, excepto James. Mara seguía frente al monumento de Elias.",
+        "attr": ""
       },
       {
-        "type": "p",
-        "text": "Esperé a que las cámaras giraran hacia Keons. Después deslicé la carta en una grieta de la base, justo detrás del nombre iluminado."
+        "type": "epigraph",
+        "text": "Esperé a que las cámaras giraran hacia Keons. Después deslicé la carta en una grieta de la base, justo detrás del nombre iluminado.",
+        "attr": ""
       },
       {
         "type": "p",
@@ -1003,7 +1057,7 @@ const PART1_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Al levantarme, Keons estaba al otro lado del monumento."
+        "text": "Cuando me incorporé, Keons estaba al otro lado del monumento."
       },
       {
         "type": "p",
@@ -1011,7 +1065,7 @@ const PART1_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Su mirada bajó hasta mi mano. En la palma tenía una pequeña mancha amarilla, quizá pintura del panel o polvo del hilo del desconocido."
+        "text": "Sus ojos bajaron hasta mi mano. En la palma tenía una mancha amarilla: pintura del panel, polvo del hilo o una prueba que no sabía limpiar."
       },
       {
         "type": "p",
@@ -1022,47 +1076,50 @@ const PART1_CHAPTERS = [
         "text": "Keons observó el gesto."
       },
       {
-        "type": "dialogue",
-        "who": "Keons",
-        "text": "Algunas luces sirven para guiar. Otras solo consiguen que te encuentren."
+        "type": "speech",
+        "text": "—Algunas luces sirven para guiar —dijo—. Otras solo consiguen que te encuentren.",
+        "who": "Keons"
       },
       {
         "type": "p",
         "text": "No supe si era una amenaza."
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Sí, mi obispo."
+        "type": "speech",
+        "text": "—Sí, mi obispo.",
+        "who": "Mara"
       },
       {
-        "type": "dialogue",
-        "who": "Keons",
-        "text": "Vuelve con tus amigos, Clancy."
+        "type": "speech",
+        "text": "—Vuelve con tus amigos, Clancy.",
+        "who": "Keons"
       },
       {
         "type": "p",
         "text": "Lo hice."
       },
       {
-        "type": "p",
-        "text": "La vigilia terminó con otra oración. Caminamos a casa en silencio. Mara sostenía su vial contra el pecho. James intentó preguntarme dónde había estado, pero negué con la cabeza."
+        "type": "epigraph",
+        "text": "La vigilia terminó con otra oración. Caminamos a casa en silencio. Mara sostenía el vial contra el pecho con tanta fuerza que el vidrio dejó una marca roja en la piel. James intentó preguntarme dónde había estado; negué con la cabeza.",
+        "attr": ""
       },
       {
         "type": "p",
         "text": "Esa noche levanté la tabla del suelo y abrí el cuaderno."
       },
       {
-        "type": "p",
-        "text": "Escribí el nombre de Elias completo. Debajo anoté todo lo que recordaba de la carta confiscada, por si volvía a desaparecer. Después describí los registros de conservación, el hilo amarillo y el ritmo de los golpes."
+        "type": "epigraph",
+        "text": "Escribí el nombre de Elias completo. Debajo anoté todo lo que recordaba de la carta confiscada, por si volvía a desaparecer. Después describí los registros de conservación, el hilo amarillo y el ritmo de los golpes.",
+        "attr": ""
+      },
+      {
+        "type": "epigraph",
+        "text": "Hoy comprendí que borrar un nombre también es una forma de matar a alguien.",
+        "attr": ""
       },
       {
         "type": "p",
-        "text": "Hoy comprendí que borrar un nombre también es una forma de matar a alguien."
-      },
-      {
-        "type": "p",
-        "text": "Me quedé mirando la frase."
+        "text": "La frase quedó sola sobre la página."
       },
       {
         "type": "p",
@@ -1071,24 +1128,43 @@ const PART1_CHAPTERS = [
       {
         "type": "epigraph",
         "text": "El hombre de las tuberías conocía un camino que no aparece en ningún mapa.",
-        "attr": "Cuaderno de Clancy"
+        "attr": ""
       },
       {
         "type": "p",
         "text": "Apagué la lámpara."
       },
       {
-        "type": "p",
-        "text": "Cuando estaba a punto de dormirme, escuché un sonido dentro de la pared exterior."
+        "type": "epigraph",
+        "text": "Cuando el sueño empezaba a vencerme, algo golpeó dentro de la pared exterior.",
+        "attr": ""
       },
       {
         "type": "epigraph",
-        "text": "Dos golpes. Pausa. Uno. Pausa. Dos.",
-        "attr": "Ritmo en la pared"
+        "text": "Dos golpes.",
+        "attr": ""
+      },
+      {
+        "type": "epigraph",
+        "text": "Pausa.",
+        "attr": ""
       },
       {
         "type": "p",
-        "text": "Me levanté y apoyé los nudillos contra el cemento."
+        "text": "Uno."
+      },
+      {
+        "type": "epigraph",
+        "text": "Pausa.",
+        "attr": ""
+      },
+      {
+        "type": "p",
+        "text": "Dos."
+      },
+      {
+        "type": "p",
+        "text": "Me levanté. Las piernas todavía conservaban el cansancio del túnel. Apoyé los nudillos contra el cemento."
       },
       {
         "type": "p",
@@ -1100,7 +1176,7 @@ const PART1_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Entonces, desde muy lejos, llegó un único golpe."
+        "text": "Entonces, desde muy lejos, llegó un único golpe. Lo sentí primero en los dedos."
       },
       {
         "type": "p",
@@ -1108,24 +1184,24 @@ const PART1_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Aquella noche, por primera vez, alguien golpeó desde el otro lado."
+        "text": "Aquella noche, por primera vez, el muro respondió desde el otro lado."
       }
-    ],
-    "part": 1
+    ]
   },
   {
     "id": "cap2",
     "number": "Capítulo 2",
     "title": "La brújula miente",
     "subtitle": "Sobre los mapas que Dema no quiere que encontremos",
+    "part": 1,
     "blocks": [
       {
         "type": "p",
-        "text": "Durante los seis días siguientes no volví a escuchar los golpes."
+        "text": "Durante seis noches el muro no respondió."
       },
       {
         "type": "p",
-        "text": "Cada noche apoyaba la oreja contra la pared y esperaba. A veces las tuberías crujían. A veces un vecino cerraba una puerta o un tren de carga pasaba bajo el distrito. Ningún sonido repetía el ritmo."
+        "text": "Cada noche apoyaba la oreja contra el cemento hasta que el frío me adormecía la mejilla. Las tuberías crujían, un vecino cerraba una puerta, algún tren de carga pasaba bajo el distrito. Ningún sonido repetía el ritmo. Al amanecer me quedaba una línea roja en la piel y la sensación ridícula de haber esperado a una persona dentro de una pared."
       },
       {
         "type": "p",
@@ -1137,12 +1213,12 @@ const PART1_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "El tercer día me esperó frente al Archivo de Permanencia."
+        "text": "El tercer día Mara me esperó frente al Archivo de Permanencia. Tenía la carta doblada dentro del puño y el borde del papel le había abierto una línea blanca en la palma."
       },
       {
-        "type": "dialogue",
-        "who": "Mara",
-        "text": "Fuiste tú."
+        "type": "speech",
+        "text": "—Fuiste tú —dijo Mara.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -1153,104 +1229,104 @@ const PART1_CHAPTERS = [
         "text": "El edificio del archivo tenía ventanas estrechas y paredes tan gruesas que las voces se apagaban apenas uno entraba. Los trabajadores pasaban junto a nosotros mostrando sus viales a los guardias."
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "No sé de qué habla."
+        "type": "speech",
+        "text": "—No sé de qué hablas —respondí.",
+        "who": "Clancy"
       },
       {
         "type": "p",
         "text": "Mara sacó la carta de Elias."
       },
       {
-        "type": "dialogue",
-        "who": "Mara",
-        "text": "Estaba detrás del monumento."
+        "type": "speech",
+        "text": "—Estaba detrás del monumento.",
+        "who": "Mara"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Tal vez el funcionario cambió de opinión."
+        "type": "speech",
+        "text": "—Tal vez el funcionario cambió de opinión.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Mara",
-        "text": "Los funcionarios no cambian de opinión. Cambian formularios."
+        "type": "speech",
+        "text": "—Los funcionarios no cambian de opinión. Cambian formularios.",
+        "who": "Mara"
       },
       {
         "type": "p",
-        "text": "Miré hacia la entrada. Un supervisor nos observaba desde el vestíbulo."
+        "text": "Detrás del cristal del vestíbulo, un supervisor dejó de ordenar viales y orientó el cuerpo hacia nosotros."
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Guárdala."
+        "type": "speech",
+        "text": "—Guárdala. Ya nos está midiendo el tiempo.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Mara",
-        "text": "Clancy, ¿por qué decía que quería irse?"
+        "type": "speech",
+        "text": "—Clancy, ¿por qué decía que quería irse? —preguntó Mara.",
+        "who": "Mara"
       },
       {
         "type": "p",
         "text": "Su voz se quebró en la última palabra."
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "No lo sé."
+        "type": "speech",
+        "text": "—No lo sé —respondí.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Mara",
-        "text": "Tú lo ayudaste a escribirla."
+        "type": "speech",
+        "text": "—Tú lo ayudaste a escribirla —dijo ella.",
+        "who": "Mara"
       },
       {
         "type": "p",
         "text": "No pude mentirle de nuevo."
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Solo corregí algunas frases."
+        "type": "speech",
+        "text": "—Solo corregí algunas frases —admití.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Mara",
-        "text": "¿Desde cuándo lo sabías?"
+        "type": "speech",
+        "text": "—¿Desde cuándo lo sabías? —preguntó Mara.",
+        "who": "Mara"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Desde una semana antes de que muriera."
+        "type": "speech",
+        "text": "—Desde una semana antes de que muriera —respondí.",
+        "who": "Clancy"
       },
       {
         "type": "p",
         "text": "Mara apretó la carta entre los dedos."
       },
       {
-        "type": "dialogue",
-        "who": "Mara",
-        "text": "Y me dejaste estar frente a todos mientras decían que él quería... eso."
+        "type": "speech",
+        "text": "—Y me dejaste estar frente a todos mientras decían que él quería... eso —dijo Mara.",
+        "who": "Mara"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "No sabía cómo decírtelo."
+        "type": "speech",
+        "text": "—No sabía cómo decírtelo —respondí.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Mara",
-        "text": "Podrías haber empezado por la verdad."
+        "type": "speech",
+        "text": "—Podrías haber empezado por la verdad —replicó ella.",
+        "who": "Mara"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "La verdad no iba a devolvértelo."
+        "type": "speech",
+        "text": "—La verdad no iba a devolvértelo. La frase salió demasiado rápido; sonó preparada, y por eso fue peor.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Mara",
-        "text": "No. Pero habría sido mía."
+        "type": "speech",
+        "text": "—No. Pero habría sido mía —respondió Mara.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -1261,12 +1337,8 @@ const PART1_CHAPTERS = [
         "text": "El supervisor levantó una ceja cuando pasé junto a él. Yo marqué mi entrada y subí al tercer piso."
       },
       {
-        "type": "scene",
-        "text": "II"
-      },
-      {
         "type": "p",
-        "text": "Mi mesa estaba en la Sección de Rectificaciones. El nombre parecía importante, pero la mayor parte del trabajo consistía en copiar datos de un formulario a otro. Cuando un ciudadano cambiaba de vivienda, ocupación o estado religioso, nosotros actualizábamos los registros. Cuando moría, retirábamos información innecesaria y preparábamos un resumen para las ceremonias."
+        "text": "Mi mesa estaba en la Sección de Rectificaciones, un cuarto de lámparas blancas donde el papel olía a polvo seco y el aire apenas circulaba. El nombre parecía importante, pero la mayor parte del trabajo consistía en copiar datos de un formulario a otro. Cuando un ciudadano cambiaba de vivienda, ocupación o estado religioso, actualizábamos los registros. Cuando moría, retirábamos información innecesaria y preparábamos un resumen para las ceremonias."
       },
       {
         "type": "p",
@@ -1283,7 +1355,7 @@ const PART1_CHAPTERS = [
       {
         "type": "epigraph",
         "text": "FAILED PERIMETER ESCAPE.",
-        "attr": "Sello de clasificación"
+        "attr": ""
       },
       {
         "type": "p",
@@ -1299,8 +1371,28 @@ const PART1_CHAPTERS = [
       },
       {
         "type": "epigraph",
-        "text": "¿Expresa curiosidad persistente por el exterior? ¿Muestra rechazo a su función asignada? ¿Ha utilizado colores no autorizados? ¿Conserva mapas privados? ¿Habla de horizontes, rutas o amaneceres?",
-        "attr": "Hoja de evaluación"
+        "text": "¿Expresa curiosidad persistente por el exterior?",
+        "attr": ""
+      },
+      {
+        "type": "epigraph",
+        "text": "¿Muestra rechazo a su función asignada?",
+        "attr": ""
+      },
+      {
+        "type": "epigraph",
+        "text": "¿Ha utilizado colores no autorizados?",
+        "attr": ""
+      },
+      {
+        "type": "epigraph",
+        "text": "¿Conserva mapas privados?",
+        "attr": ""
+      },
+      {
+        "type": "epigraph",
+        "text": "¿Habla de horizontes, rutas o amaneceres?",
+        "attr": ""
       },
       {
         "type": "p",
@@ -1317,7 +1409,7 @@ const PART1_CHAPTERS = [
       {
         "type": "epigraph",
         "text": "THE COMPASS LIES.",
-        "attr": "Mensaje encontrado"
+        "attr": ""
       },
       {
         "type": "p",
@@ -1332,9 +1424,9 @@ const PART1_CHAPTERS = [
         "text": "Guardé el papel en el puño."
       },
       {
-        "type": "dialogue",
-        "who": "Keons",
-        "text": "No tienes que esconderlo de mí."
+        "type": "speech",
+        "text": "—No tienes que esconderlo de mí —dijo Keons.",
+        "who": "Keons"
       },
       {
         "type": "p",
@@ -1349,42 +1441,42 @@ const PART1_CHAPTERS = [
         "text": "Los demás trabajadores se habían puesto de pie sin que yo lo notara. Hice lo mismo tan rápido que golpeé la rodilla contra el cajón."
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Mi obispo."
+        "type": "speech",
+        "text": "—Mi obispo.",
+        "who": "Clancy"
       },
       {
         "type": "p",
         "text": "Keons observó la carpeta abierta."
       },
       {
-        "type": "dialogue",
-        "who": "Keons",
-        "text": "¿Qué encontraste?"
+        "type": "speech",
+        "text": "—¿Qué encontraste?",
+        "who": "Keons"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Un error de clasificación."
+        "type": "speech",
+        "text": "—Un error de clasificación.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Keons",
-        "text": "¿Y por qué un error de clasificación te hace sudar?"
+        "type": "speech",
+        "text": "—¿Y por qué un error de clasificación te hace sudar?",
+        "who": "Keons"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Hace calor."
+        "type": "speech",
+        "text": "—Hace calor.",
+        "who": "Clancy"
       },
       {
         "type": "p",
         "text": "Miró las ventanas cerradas."
       },
       {
-        "type": "dialogue",
-        "who": "Keons",
-        "text": "Naturalmente."
+        "type": "speech",
+        "text": "—Naturalmente.",
+        "who": "Keons"
       },
       {
         "type": "p",
@@ -1407,24 +1499,24 @@ const PART1_CHAPTERS = [
         "text": "La leyó sin expresión."
       },
       {
-        "type": "dialogue",
-        "who": "Keons",
-        "text": "Esto no es lo que encontraste."
+        "type": "speech",
+        "text": "—Esto no es lo que encontraste.",
+        "who": "Keons"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "No, mi obispo."
+        "type": "speech",
+        "text": "—No, mi obispo.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Keons",
-        "text": "Pero es lo que decidiste entregarme."
+        "type": "speech",
+        "text": "—Pero es lo que decidiste entregarme.",
+        "who": "Keons"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Sí."
+        "type": "speech",
+        "text": "—Sí.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -1435,9 +1527,9 @@ const PART1_CHAPTERS = [
         "text": "Keons dejó la solicitud sobre mi mesa."
       },
       {
-        "type": "dialogue",
-        "who": "Keons",
-        "text": "Los mapas son herramientas peligrosas, Clancy. Hacen creer a las personas que el mundo puede caber en una página."
+        "type": "speech",
+        "text": "—Los mapas son herramientas peligrosas, Clancy. Hacen creer a las personas que el mundo puede caber en una página.",
+        "who": "Keons"
       },
       {
         "type": "p",
@@ -1452,28 +1544,28 @@ const PART1_CHAPTERS = [
         "text": "A la hora del descanso busqué a James en los talleres de mantenimiento. Su supervisor me dijo que no había llegado."
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "¿Está enfermo?"
+        "type": "speech",
+        "text": "—¿Está enfermo? —pregunté al supervisor.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Supervisor",
-        "text": "Interrogatorio de rutina."
+        "type": "speech",
+        "text": "—Interrogatorio de rutina —respondió el hombre.",
+        "who": "Supervisor"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "¿Por qué?"
+        "type": "speech",
+        "text": "—¿Por qué? —insistí.",
+        "who": "Clancy"
       },
       {
         "type": "p",
         "text": "El hombre se encogió de hombros."
       },
       {
-        "type": "dialogue",
-        "who": "Supervisor",
-        "text": "Encontraron pigmento amarillo en su zona."
+        "type": "speech",
+        "text": "—Encontraron pigmento amarillo en su zona —explicó el supervisor.",
+        "who": "Supervisor"
       },
       {
         "type": "p",
@@ -1485,66 +1577,56 @@ const PART1_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Tenía un moretón bajo el ojo y una tira de vendaje alrededor de dos dedos."
+        "text": "El moretón bajo su ojo había virado del rojo al violeta. Dos dedos estaban vendados juntos y mantenía la mano pegada al cuerpo para que el pulso no la hiciera temblar."
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "¿Qué te hicieron?"
+        "type": "speech",
+        "text": "—¿Qué te hicieron? —pregunté.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "James",
-        "text": "Me explicaron que el amarillo puede confundir a trabajadores impresionables."
+        "type": "speech",
+        "text": "—Me explicaron que el amarillo puede confundir a trabajadores impresionables —respondió James.",
+        "who": "James"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "James..."
+        "type": "speech",
+        "text": "—James... —dije.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "James",
-        "text": "Estoy bien."
-      },
-      {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "No pareces bien."
-      },
-      {
-        "type": "dialogue",
-        "who": "James",
-        "text": "Porque no lo estoy, Clancy."
+        "type": "speech",
+        "text": "—Puedo caminar. No es lo mismo que estar bien.",
+        "who": "James"
       },
       {
         "type": "p",
         "text": "Miró alrededor antes de continuar."
       },
       {
-        "type": "dialogue",
-        "who": "James",
-        "text": "Querían saber para quién trabajo."
+        "type": "speech",
+        "text": "—Querían saber para quién trabajo —continuó.",
+        "who": "James"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Trabajas para mantenimiento."
+        "type": "speech",
+        "text": "—Trabajas para mantenimiento —dije.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "James",
-        "text": "Eso les dije. No les gustó."
+        "type": "speech",
+        "text": "—Eso les dije. Querían una respuesta que cupiera mejor en el formulario.",
+        "who": "James"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Lo siento."
+        "type": "speech",
+        "text": "—Lo siento —murmuré.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "James",
-        "text": "¿Por qué?"
+        "type": "speech",
+        "text": "—¿Por qué? —preguntó él.",
+        "who": "James"
       },
       {
         "type": "p",
@@ -1555,27 +1637,27 @@ const PART1_CHAPTERS = [
         "text": "James se acercó."
       },
       {
-        "type": "dialogue",
-        "who": "James",
-        "text": "¿Sabes algo sobre esa pintura?"
+        "type": "speech",
+        "text": "—¿Sabes algo sobre esa pintura? —preguntó James.",
+        "who": "James"
       },
       {
         "type": "p",
         "text": "Pensé en el hilo amarillo bajo la iglesia. En el papel dentro del expediente. En los golpes."
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "No."
+        "type": "speech",
+        "text": "—No —mentí.",
+        "who": "Clancy"
       },
       {
         "type": "p",
-        "text": "James me sostuvo la mirada durante unos segundos."
+        "text": "James no me sostuvo la mirada; revisó mis bolsillos, mis mangas y la posición de la puerta. Su manera de desconfiar siempre comenzaba por la arquitectura."
       },
       {
-        "type": "dialogue",
-        "who": "James",
-        "text": "Te estás volviendo muy malo para mentir."
+        "type": "speech",
+        "text": "—Te estás volviendo muy malo para mentir. Procura que eso no sea lo único que aprendamos tarde.",
+        "who": "James"
       },
       {
         "type": "p",
@@ -1584,10 +1666,6 @@ const PART1_CHAPTERS = [
       {
         "type": "p",
         "text": "Esa noche no regresé directamente a casa."
-      },
-      {
-        "type": "scene",
-        "text": "III"
       },
       {
         "type": "p",
@@ -1618,9 +1696,9 @@ const PART1_CHAPTERS = [
         "text": "Cuando las patrullas empezaron a vaciar las calles, entré por una puerta de servicio del templo. Mi placa seguía funcionando. Bajé hasta los corredores bajo la necrópolis y encontré la abertura entre los paneles."
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Sé que estás aquí."
+        "type": "speech",
+        "text": "—Sé que estás aquí —susurré.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -1633,7 +1711,7 @@ const PART1_CHAPTERS = [
       {
         "type": "epigraph",
         "text": "Dos. Uno. Dos.",
-        "attr": "Ritmo conocido"
+        "attr": ""
       },
       {
         "type": "p",
@@ -1652,153 +1730,153 @@ const PART1_CHAPTERS = [
         "text": "El desconocido estaba apoyado contra la pared, con la capucha baja. Era más joven de lo que había imaginado, quizá unos años mayor que yo. Tenía el cabello oscuro pegado a la frente y una cicatriz fina junto a la ceja."
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Haces demasiado ruido para alguien que quiere seguir vivo."
+        "type": "speech",
+        "text": "—Haces demasiado ruido para alguien que quiere seguir vivo —dijo el desconocido.",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Mis amigos están siendo interrogados."
+        "type": "speech",
+        "text": "—Mis amigos están siendo interrogados.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Eso ocurre todos los días."
+        "type": "speech",
+        "text": "—Eso ocurre todos los días.",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Por tu pintura."
+        "type": "speech",
+        "text": "—Por tu pintura.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "No era mía."
+        "type": "speech",
+        "text": "—No era mía.",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Entonces era de alguien como tú."
+        "type": "speech",
+        "text": "—Entonces era de alguien como tú.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Eso no vuelve tuya la culpa."
+        "type": "speech",
+        "text": "—Eso no vuelve tuya la culpa.",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Es fácil decirlo cuando puedes desaparecer por una pared."
+        "type": "speech",
+        "text": "—Es fácil decirlo cuando puedes desaparecer por una pared.",
+        "who": "Clancy"
       },
       {
         "type": "p",
         "text": "Su expresión cambió apenas."
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "No desaparezco. Camino por lugares que ustedes dejaron de mirar."
+        "type": "speech",
+        "text": "—No desaparezco. Camino por lugares que ustedes dejaron de mirar.",
+        "who": "Desconocido"
       },
       {
         "type": "p",
         "text": "Saqué el papel del expediente."
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "¿Pusiste esto ahí?"
+        "type": "speech",
+        "text": "—¿Pusiste esto ahí?",
+        "who": "Clancy"
       },
       {
         "type": "p",
         "text": "Lo leyó."
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "No."
+        "type": "speech",
+        "text": "—No —respondió el desconocido.",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "¿Es verdad?"
+        "type": "speech",
+        "text": "—¿Es verdad?",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Ya lo comprobaste."
+        "type": "speech",
+        "text": "—Ya lo comprobaste.",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "¿Cómo sabes eso?"
+        "type": "speech",
+        "text": "—¿Cómo sabes eso?",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Porque viniste con una brújula en el bolsillo y polvo de tres esquinas distintas en los zapatos."
+        "type": "speech",
+        "text": "—Porque viniste con una brújula en el bolsillo y polvo de tres esquinas distintas en los zapatos.",
+        "who": "Desconocido"
       },
       {
         "type": "p",
         "text": "Miré mis botas. Tenía razón."
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "¿Qué hay fuera?"
+        "type": "speech",
+        "text": "—¿Qué hay fuera?",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Tierra. Agua. Montañas. Personas."
+        "type": "speech",
+        "text": "—Tierra. Agua. Montañas. Personas.",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Eso dicen los libros."
+        "type": "speech",
+        "text": "—Eso dicen los libros.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Los libros de Dema también dicen que el aire te quema los pulmones."
+        "type": "speech",
+        "text": "—Los libros de Dema también dicen que el aire te quema los pulmones.",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "¿No lo hace?"
+        "type": "speech",
+        "text": "—¿No lo hace?",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Solo cuando hace mucho frío."
+        "type": "speech",
+        "text": "—Solo cuando hace mucho frío.",
+        "who": "Desconocido"
       },
       {
         "type": "p",
         "text": "No pude evitar reírme. El sonido pareció extraño en aquel lugar."
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Quiero verlo."
+        "type": "speech",
+        "text": "—Quiero verlo.",
+        "who": "Clancy"
       },
       {
         "type": "p",
         "text": "El desconocido dejó de sonreír."
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Ver no es lo mismo que estar preparado para salir."
+        "type": "speech",
+        "text": "—Ver no es lo mismo que estar preparado para salir.",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "No dije que quisiera salir."
+        "type": "speech",
+        "text": "—No dije que quisiera salir.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Por eso no estás preparado."
+        "type": "speech",
+        "text": "—Por eso no estás preparado.",
+        "who": "Desconocido"
       },
       {
         "type": "p",
@@ -1809,62 +1887,62 @@ const PART1_CHAPTERS = [
         "text": "Recorrimos túneles estrechos, cuartos de electricidad y escaleras que descendían más de lo que creía posible. Dema tenía otra ciudad debajo de la ciudad: pasajes abandonados, sistemas viejos, puertas cubiertas por capas de pintura. Cada generación había construido sobre la anterior sin borrar completamente sus rutas."
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "¿Cómo conoces todo esto?"
+        "type": "speech",
+        "text": "—¿Cómo conoces todo esto? —pregunté.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Alguien me lo enseñó."
+        "type": "speech",
+        "text": "—Alguien me lo enseñó.",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "¿El Torchbearer?"
+        "type": "speech",
+        "text": "—¿El Torchbearer?",
+        "who": "Clancy"
       },
       {
         "type": "p",
         "text": "Se detuvo."
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "¿Quién te habló de él?"
+        "type": "speech",
+        "text": "—¿Quién te habló de él?",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Historias de niños."
+        "type": "speech",
+        "text": "—Historias de niños.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Las historias de niños sobreviven porque los adultos no las consideran peligrosas."
+        "type": "speech",
+        "text": "—Las historias de niños sobreviven porque los adultos no las consideran peligrosas.",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "¿Existe?"
+        "type": "speech",
+        "text": "—¿Existe?",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Depende de qué versión escuchaste."
+        "type": "speech",
+        "text": "—Depende de qué versión escuchaste.",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Un hombre que encontró una salida y volvió por otros."
+        "type": "speech",
+        "text": "—Un hombre que encontró una salida y volvió por otros.",
+        "who": "Clancy"
       },
       {
         "type": "p",
         "text": "El desconocido continuó caminando."
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Esa es una versión útil."
+        "type": "speech",
+        "text": "—Esa es una versión útil.",
+        "who": "Desconocido"
       },
       {
         "type": "p",
@@ -1895,104 +1973,104 @@ const PART1_CHAPTERS = [
         "text": "Durante unos segundos olvidé respirar."
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "No hay nada."
+        "type": "speech",
+        "text": "—No hay nada —dije.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Hay demasiado. Por eso te parece nada."
+        "type": "speech",
+        "text": "—Hay demasiado. Por eso te parece nada.",
+        "who": "Desconocido"
       },
       {
         "type": "p",
         "text": "Una figura alada cruzó el cielo. Un buitre, quizá. Nunca había visto uno vivo."
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "¿Dónde estamos?"
+        "type": "speech",
+        "text": "—¿Dónde estamos?",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "En el borde oriental."
+        "type": "speech",
+        "text": "—En el borde oriental.",
+        "who": "Desconocido"
       },
       {
         "type": "p",
         "text": "Miré la brújula. La aguja señalaba en otra dirección."
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "La brújula miente."
+        "type": "speech",
+        "text": "—La brújula miente.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "No la brújula. La ciudad alrededor de ella."
+        "type": "speech",
+        "text": "—No la brújula —dijo—. La ciudad alrededor de ella.",
+        "who": "Desconocido"
       },
       {
         "type": "p",
-        "text": "Quise introducir los dedos por la abertura, como si pudiera tocar el exterior."
+        "text": "Introduje los dedos por la abertura. El aire frío pasó entre ellos; era lo más cerca que había estado de tocar el exterior."
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "¿Por qué regresaste?"
+        "type": "speech",
+        "text": "—¿Por qué regresaste?",
+        "who": "Clancy"
       },
       {
         "type": "p",
         "text": "El desconocido tardó en responder."
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Porque alguien regresó por mí."
+        "type": "speech",
+        "text": "—Porque alguien regresó por mí.",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "¿Y ahora regresas por cualquiera que robe una carta?"
+        "type": "speech",
+        "text": "—¿Y ahora regresas por cualquiera que robe una carta?",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "No por cualquiera."
+        "type": "speech",
+        "text": "—No por cualquiera.",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "¿Por qué yo?"
+        "type": "speech",
+        "text": "—¿Por qué yo?",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Porque trabajas donde Dema decide qué recordar. Y porque, aun con miedo, devolviste un nombre a su dueño."
+        "type": "speech",
+        "text": "—Porque trabajas donde Dema decide qué recordar. Y porque, aun con miedo, devolviste un nombre a su dueño.",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "No sabes nada de mí."
+        "type": "speech",
+        "text": "—No sabes nada de mí.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Sé que a los nueve años empezaste a mirar el muro como una salida bloqueada y no como una protección."
+        "type": "speech",
+        "text": "—Sé que a los nueve años empezaste a mirar el muro como una salida bloqueada y no como una protección.",
+        "who": "Desconocido"
       },
       {
         "type": "p",
         "text": "Me aparté de la abertura."
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "¿Cómo sabes eso?"
+        "type": "speech",
+        "text": "—¿Cómo sabes eso?",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Escribes demasiado."
+        "type": "speech",
+        "text": "—Escribes demasiado.",
+        "who": "Desconocido"
       },
       {
         "type": "p",
@@ -2003,62 +2081,62 @@ const PART1_CHAPTERS = [
         "text": "Sentí un escalofrío."
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "¿Lees mi cuaderno?"
+        "type": "speech",
+        "text": "—¿Lees mi cuaderno?",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "No."
+        "type": "speech",
+        "text": "—No.",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Entonces alguien sí."
+        "type": "speech",
+        "text": "—Entonces alguien sí.",
+        "who": "Clancy"
       },
       {
         "type": "p",
         "text": "El desconocido volvió a cerrar la compuerta."
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Dema lee todo lo que puede encontrar. Tu problema no es que escribas. Es que todavía guardas las palabras en un lugar donde pueden llegar primero."
+        "type": "speech",
+        "text": "—Dema lee todo lo que puede encontrar. Tu problema no es que escribas. Es que todavía guardas las palabras en un lugar donde pueden llegar primero.",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "¿Qué debería hacer?"
+        "type": "speech",
+        "text": "—¿Qué debería hacer?",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Darlas a más de una persona."
+        "type": "speech",
+        "text": "—Darlas a más de una persona.",
+        "who": "Desconocido"
       },
       {
         "type": "p",
         "text": "Me entregó una tira de papel muy fina. Parecía parte de un formulario, pero contenía una serie de números y una fecha escrita con la palabra MOON."
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "¿Qué es esto?"
+        "type": "speech",
+        "text": "—¿Qué es esto?",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Una forma de dejar constancia."
+        "type": "speech",
+        "text": "—Una forma de dejar constancia.",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "¿Para quién?"
+        "type": "speech",
+        "text": "—¿Para quién?",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Para quien encuentre el archivo después de nosotros."
+        "type": "speech",
+        "text": "—Para quien encuentre el archivo después de nosotros.",
+        "who": "Desconocido"
       },
       {
         "type": "p",
@@ -2070,10 +2148,10 @@ const PART1_CHAPTERS = [
         "title": "Segunda carta",
         "intro": "017 07MOON 07",
         "paragraphs": [
-          "Referirme a Dema como un hogar nunca me ha parecido correcto. Para mí, Dema simplemente ha sido el lugar donde he existido, o el “Espacio” en el que me han colocado.",
-          "He escuchado historias sobre la idea de un “hogar”, y la forma en que quienes las cuentan lo describen siempre me ha parecido celda. Existía una especie de vínculo romántico con el lugar que habitaban, algo que yo admiraba, pero con lo que nunca pude identificarme.",
+          "Referirme a Dema como un hogar nunca me ha parecido correcto. Para mí, Dema simplemente ha sido el lugar donde he existido, o el “espacio” en el que me han colocado.",
+          "He escuchado historias sobre la idea de un “hogar”, y la forma en que quienes las cuentan lo describen siempre me ha parecido cálida. Existía una especie de vínculo romántico con el lugar que habitaban, algo que yo admiraba, pero con lo que nunca pude identificarme.",
           "Este lugar, mi lugar, en cambio, parece carecer del encanto y el asombro del que hablan las viejas historias. Sin embargo, en algún punto entre el orden de hierro y la precisión infalible de Dema, existe un leve murmullo de asombro.",
-          "Es en ese asombro silencioso donde mi mente suele perderse. Esa esperanza de descubrimiento ha dado origen a una nueva versión de mí mismo; una versión mejor, espero, que encontrará la manera de experimentar lo que existe más allí de estos muros colosales."
+          "Es en ese asombro silencioso donde mi mente suele perderse. Esa esperanza de descubrimiento ha dado origen a una nueva versión de mí mismo; una versión mejor, espero, que encontrará la manera de experimentar lo que existe más allá de estos muros colosales."
         ],
         "sign": "— Clancy"
       },
@@ -2098,10 +2176,6 @@ const PART1_CHAPTERS = [
         "text": "No sabía si eso significaba que mis palabras habían salido de Dema o que habían caído en manos de alguien peor. Aun así, por primera vez una página mía había dejado de pertenecer únicamente a mi habitación."
       },
       {
-        "type": "scene",
-        "text": "IV"
-      },
-      {
         "type": "p",
         "text": "Esa tarde Mara me pidió que la acompañara a la necrópolis."
       },
@@ -2114,90 +2188,90 @@ const PART1_CHAPTERS = [
         "text": "Mara levantó la carta de Elias, la que yo había escondido detrás del monumento."
       },
       {
-        "type": "dialogue",
-        "who": "Mara",
-        "text": "La leí completa."
+        "type": "speech",
+        "text": "—La leí completa —dijo Mara.",
+        "who": "Mara"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Lo siento."
+        "type": "speech",
+        "text": "—Lo siento.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Mara",
-        "text": "No quiero que lo sientas. Quiero entender por qué no me habló."
+        "type": "speech",
+        "text": "—No quiero que lo sientas. Quiero entender por qué no me habló.",
+        "who": "Mara"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Tal vez tenía miedo de que intentaras detenerlo."
+        "type": "speech",
+        "text": "—Tal vez tenía miedo de que intentaras detenerlo.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Mara",
-        "text": "Lo habría intentado."
+        "type": "speech",
+        "text": "—Lo habría intentado.",
+        "who": "Mara"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Entonces quizá tenía razón."
+        "type": "speech",
+        "text": "—Entonces quizá tenía razón.",
+        "who": "Clancy"
       },
       {
         "type": "p",
         "text": "Mara me miró con rabia, pero no respondió."
       },
       {
-        "type": "dialogue",
-        "who": "Mara",
-        "text": "¿Tú también quieres irte?"
+        "type": "speech",
+        "text": "—¿Tú también quieres irte? —preguntó después.",
+        "who": "Mara"
       },
       {
         "type": "p",
         "text": "Vi las torres reflejadas en el suelo."
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "No sé."
+        "type": "speech",
+        "text": "—No sé.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Mara",
-        "text": "Eso no es un no."
+        "type": "speech",
+        "text": "—Eso no es un no.",
+        "who": "Mara"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Tampoco es un sí."
+        "type": "speech",
+        "text": "—Tampoco es un sí.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Mara",
-        "text": "Elias empezó así. Haciendo preguntas que no sabía dónde guardar."
+        "type": "speech",
+        "text": "—Elias empezó así. Haciendo preguntas que no sabía dónde guardar.",
+        "who": "Mara"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Yo trabajo en un archivo. Guardar preguntas es literalmente mi función."
+        "type": "speech",
+        "text": "—Yo trabajo en un archivo. Guardar preguntas es literalmente mi función.",
+        "who": "Clancy"
       },
       {
         "type": "p",
         "text": "Ella soltó una risa triste."
       },
       {
-        "type": "dialogue",
-        "who": "Mara",
-        "text": "Prométeme que no vas a desaparecer."
+        "type": "speech",
+        "text": "—Prométeme que no vas a desaparecer.",
+        "who": "Mara"
       },
       {
         "type": "p",
         "text": "Pensé en el exterior. En el aire atravesando la compuerta. En la línea amarilla dentro de la carpeta."
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "No voy a desaparecer sin decirte nada."
+        "type": "speech",
+        "text": "—No voy a desaparecer sin decirte nada.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -2208,23 +2282,24 @@ const PART1_CHAPTERS = [
         "text": "Mara lo supo."
       },
       {
-        "type": "p",
-        "text": "Cuando salimos de la necrópolis, dos guardias esperaban junto a la puerta. Uno revisó mi vial durante más tiempo del necesario."
+        "type": "epigraph",
+        "text": "Cuando salimos de la necrópolis, dos guardias esperaban junto a la puerta. Uno revisó mi vial durante más tiempo del necesario.",
+        "attr": ""
       },
       {
-        "type": "dialogue",
-        "who": "Guardia",
-        "text": "Clancy del distrito de Keons. Archivo de Permanencia."
+        "type": "speech",
+        "text": "—Clancy del distrito de Keons —leyó—. Archivo de Permanencia.",
+        "who": "Guardia"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Sí."
+        "type": "speech",
+        "text": "—Sí.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Guardia",
-        "text": "El obispo quiere verte."
+        "type": "speech",
+        "text": "—El obispo quiere verte.",
+        "who": "Guardia"
       },
       {
         "type": "p",
@@ -2239,38 +2314,38 @@ const PART1_CHAPTERS = [
         "text": "Keons estaba frente a una ventana alta."
       },
       {
-        "type": "dialogue",
-        "who": "Keons",
-        "text": "Tus mediciones son imprecisas."
+        "type": "speech",
+        "text": "—Tus mediciones son imprecisas —dijo sin girarse.",
+        "who": "Keons"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "No sé de qué habla."
+        "type": "speech",
+        "text": "—No sé de qué habla.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Keons",
-        "text": "La avenida oriental se desvía tres grados al sur después del sector cuatro. Si vas a comparar sombras, debes tenerlo en cuenta."
+        "type": "speech",
+        "text": "—La avenida oriental se desvía tres grados al sur después del sector cuatro. Si vas a comparar sombras, debes tenerlo en cuenta.",
+        "who": "Keons"
       },
       {
         "type": "p",
         "text": "Mi boca se secó."
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "¿Me estaba observando?"
+        "type": "speech",
+        "text": "—¿Me estaba observando?",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Keons",
-        "text": "Todos son observados."
+        "type": "speech",
+        "text": "—Todos son observados.",
+        "who": "Keons"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "¿La brújula miente?"
+        "type": "speech",
+        "text": "—¿La brújula miente?",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -2281,19 +2356,19 @@ const PART1_CHAPTERS = [
         "text": "Por primera vez vi algo parecido a cansancio en su rostro."
       },
       {
-        "type": "dialogue",
-        "who": "Keons",
-        "text": "Una brújula señala según las fuerzas que actúan sobre ella. No tiene intención. No puede mentir."
+        "type": "speech",
+        "text": "—Una brújula responde a las fuerzas que la rodean. No tiene intención. La mentira pertenece a quien altera el campo y después culpa a la aguja.",
+        "who": "Keons"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Entonces ustedes alteraron las fuerzas."
+        "type": "speech",
+        "text": "—Entonces ustedes alteraron las fuerzas.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Keons",
-        "text": "Cuidado."
+        "type": "speech",
+        "text": "—Cuidado.",
+        "who": "Keons"
       },
       {
         "type": "p",
@@ -2304,29 +2379,29 @@ const PART1_CHAPTERS = [
         "text": "Keons caminó hasta una mesa donde había un mapa de la ciudad."
       },
       {
-        "type": "dialogue",
-        "who": "Keons",
-        "text": "Cuando eras niño te quedabas mirando el muro durante los recorridos escolares. Tus maestros creían que te distraías. Yo sabía que estabas contando las puertas."
+        "type": "speech",
+        "text": "—Cuando eras niño te quedabas mirando el muro durante los recorridos escolares. Tus maestros creían que te distraías. Yo sabía que estabas contando las puertas.",
+        "who": "Keons"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "¿Por qué no me castigó?"
+        "type": "speech",
+        "text": "—¿Por qué no me castigó?",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Keons",
-        "text": "Porque contar no abre una puerta."
+        "type": "speech",
+        "text": "—Porque contar no abre una puerta.",
+        "who": "Keons"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "¿Y escribir?"
+        "type": "speech",
+        "text": "—¿Y escribir?",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Keons",
-        "text": "Escribir puede abrir demasiadas."
+        "type": "speech",
+        "text": "—Escribir puede abrir demasiadas.",
+        "who": "Keons"
       },
       {
         "type": "p",
@@ -2341,62 +2416,62 @@ const PART1_CHAPTERS = [
         "text": "Sentí que el suelo se inclinaba."
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Pensé que había salido del archivo."
+        "type": "speech",
+        "text": "—Pensé que había salido del archivo.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Keons",
-        "text": "Salió. Después volvió."
+        "type": "speech",
+        "text": "—Salió. Después volvió.",
+        "who": "Keons"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "¿La leyó?"
+        "type": "speech",
+        "text": "—¿La leyó?",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Keons",
-        "text": "Sí."
+        "type": "speech",
+        "text": "—Sí.",
+        "who": "Keons"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "¿Va a entregársela a Nico?"
+        "type": "speech",
+        "text": "—¿Va a entregársela a Nico?",
+        "who": "Clancy"
       },
       {
         "type": "p",
         "text": "Keons sostuvo la carta sobre una lámpara. El papel empezó a oscurecerse en una esquina."
       },
       {
-        "type": "dialogue",
-        "who": "Keons",
-        "text": "Ya no existe nada que entregar."
+        "type": "speech",
+        "text": "—Ya no existe nada que entregar.",
+        "who": "Keons"
       },
       {
         "type": "p",
         "text": "La dejó arder dentro de una bandeja."
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "¿Por qué me ayuda?"
+        "type": "speech",
+        "text": "—¿Por qué me ayuda?",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Keons",
-        "text": "No confundas una demora con ayuda. Nico recuerda las amenazas, Clancy; las posibilidades, en cambio, las estudia."
+        "type": "speech",
+        "text": "—No confundas una demora con ayuda. Nico destruye las amenazas. Las posibilidades las conserva hasta saber para qué sirven.",
+        "who": "Keons"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Podría arrestarme."
+        "type": "speech",
+        "text": "—Podría arrestarme.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Keons",
-        "text": "También podría hacer muchas otras cosas."
+        "type": "speech",
+        "text": "—También podría hacer muchas otras cosas.",
+        "who": "Keons"
       },
       {
         "type": "p",
@@ -2407,23 +2482,23 @@ const PART1_CHAPTERS = [
         "text": "Keons me miró directamente."
       },
       {
-        "type": "dialogue",
-        "who": "Keons",
-        "text": "Si decides cruzar una puerta, Clancy, recuerda que la ciudad no es solamente sus obispos. Hay personas detrás de ti."
+        "type": "speech",
+        "text": "—Si decides cruzar una puerta, Clancy, recuerda que la ciudad no es solamente sus obispos. Hay personas detrás de ti.",
+        "who": "Keons"
       },
       {
         "type": "p",
         "text": "Pensé en Mara. En James con los dedos vendados. En Elias reducido a una frase falsa."
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "No he decidido nada."
+        "type": "speech",
+        "text": "—No he decidido nada.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Keons",
-        "text": "Entonces todavía eres peligroso solo para ti mismo."
+        "type": "speech",
+        "text": "—Entonces todavía eres peligroso solo para ti mismo.",
+        "who": "Keons"
       },
       {
         "type": "p",
@@ -2435,7 +2510,7 @@ const PART1_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "El servicio se celebró en una capilla menor, debajo de una hilera de luces blancas que nunca se apagaban. Desde la calle parecían limpias y tranquilizadoras. Dentro, hacían que todos los rostros se vieran enfermos."
+        "text": "El servicio se celebró en una capilla menor bajo una hilera de luces blancas que nunca se apagaban. Desde la calle parecían limpias y tranquilizadoras. Dentro zumbaban con un tono agudo, calentaban el cuero cabelludo y robaban el color de todos los rostros."
       },
       {
         "type": "p",
@@ -2464,7 +2539,7 @@ const PART1_CHAPTERS = [
       {
         "type": "epigraph",
         "text": "Afuera.",
-        "attr": "Labios del joven manchado"
+        "attr": ""
       },
       {
         "type": "p",
@@ -2485,10 +2560,11 @@ const PART1_CHAPTERS = [
         "intro": "018 07MOON 01",
         "paragraphs": [
           "Una luz sin vida nos rodea cada noche. Nunca pude imaginar que algo tan luminoso pudiera sentirse tan oscuro. Es este resplandor el que nos recuerda la existencia sin sueños a la que hemos sido condenados. Pero lo que yo llamo una condena, otros lo aceptan como normalidad.",
-          "¿Cómo consiguieron erradicar con tanta eficacia los sueños que había dentro de nosotros? Cuando los obispos impusieron el Vialismo como mandato, eliminaron la esperanza con la que muchos habían llegado. ¿Soy el único que comprende que nos han mentido? ¿Soy el único que no teme aceptar que los nueve se han apoderado de nuestra confianza y han extinguido la esperanza que alguna vez motivó nuestra existencia?",
+          "¿Cómo consiguieron erradicar con tanta eficacia los sueños que había dentro de nosotros? Cuando los obispos impusieron el Vialismo como mandato, eliminaron la esperanza con la que muchos habían llegado.",
+          "¿Soy el único que comprende que nos han mentido? ¿Soy el único que no teme aceptar que los nueve se han apoderado de nuestra confianza y han extinguido la esperanza que alguna vez motivó nuestra existencia?",
           "Antes cerrábamos los ojos e imaginábamos una vida mejor. Ahora esta ciudad está llena de ojos secos, atrapados en un trance de obediencia y desprovistos de cualquier rastro de identidad.",
           "La única luz verdaderamente significativa que he visto ha estado en los ojos de los manchados. Qué visión tan extraña: contemplar unos ojos brillantes estrangulados por la oscuridad de las manos de los obispos. A medida que su penitencia se desvanece, también se apaga su recuerdo de que existe algo más.",
-          "Mi esperanza de encontrar algo más es lo único que tengo dentro de esta tumba rígida, y no permitirá que muera."
+          "Mi esperanza de encontrar algo más es lo único que tengo dentro de esta tumba rígida, y no permitiré que muera."
         ],
         "sign": "— Clancy"
       },
@@ -2505,19 +2581,19 @@ const PART1_CHAPTERS = [
         "text": "La noche siguiente encontré al desconocido esperando en una calle lateral, vestido como trabajador de iluminación. Después de lo que había visto, ya no me sorprendió que pudiera aparecer donde quería."
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Keons encontró una de mis cartas."
+        "type": "speech",
+        "text": "—Keons encontró una de mis cartas —dije.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Tenía una copia. La otra llegó."
+        "type": "speech",
+        "text": "—Tenía una copia —corrigió el desconocido—. La otra llegó.",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "¿Cómo puedes estar seguro?"
+        "type": "speech",
+        "text": "—¿Cómo puedes estar seguro?",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -2526,75 +2602,79 @@ const PART1_CHAPTERS = [
       {
         "type": "epigraph",
         "text": "WE ARE BANDITOS.",
-        "attr": "Tira de papel recuperada"
+        "attr": ""
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Usaste un nombre antes de saber lo que significaba."
+        "type": "speech",
+        "text": "—Usaste un nombre antes de saber lo que significaba —dijo.",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Dema le tiene miedo. Por ahora, eso me basta."
+        "type": "speech",
+        "text": "—Dema le tiene miedo. Por ahora, eso me basta.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Entonces decide si estás dispuesto a que también te tengan miedo a ti."
+        "type": "p",
+        "text": "Guardó el fragmento."
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "¿Cómo sabes que la quemó?"
+        "type": "speech",
+        "text": "—Entonces decide si estás dispuesto a que también te tengan miedo a ti.",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Porque si no lo hubiera hecho, ahora estarías en una sala sin ventanas."
+        "type": "speech",
+        "text": "—¿Cómo sabes que la quemó?",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "¿Trabajas para él?"
+        "type": "speech",
+        "text": "—Porque si no lo hubiera hecho, ahora estarías en una sala sin ventanas.",
+        "who": "Desconocido"
+      },
+      {
+        "type": "speech",
+        "text": "—¿Trabajas para él?",
+        "who": "Clancy"
       },
       {
         "type": "p",
         "text": "El desconocido se tensó."
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "No."
+        "type": "speech",
+        "text": "—No —respondió el desconocido.",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "¿Él trabaja con ustedes?"
+        "type": "speech",
+        "text": "—¿Él trabaja con ustedes?",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Keons trabaja para Keons."
+        "type": "speech",
+        "text": "—Keons trabaja para Keons.",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Eso no significa nada."
+        "type": "speech",
+        "text": "—Eso no significa nada.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Significa que no construyas una esperanza sobre un hombre que todavía lleva rojo."
+        "type": "speech",
+        "text": "—Significa que no construyas una esperanza sobre un hombre que todavía lleva rojo.",
+        "who": "Desconocido"
       },
       {
         "type": "p",
         "text": "Caminamos hasta un antiguo depósito."
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Quiero salir."
+        "type": "speech",
+        "text": "—Quiero salir —dije.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -2605,128 +2685,128 @@ const PART1_CHAPTERS = [
         "text": "El desconocido no sonrió ni me felicitó."
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "¿Quieres salir o quieres saber que podrías hacerlo?"
+        "type": "speech",
+        "text": "—¿Quieres salir o quieres saber que podrías hacerlo?",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Quiero ver si existe una vida que no haya sido escrita por ellos."
+        "type": "speech",
+        "text": "—Quiero ver si existe una vida que no haya sido escrita por ellos.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Eso se parece más a una respuesta."
+        "type": "speech",
+        "text": "—Eso se parece más a una respuesta.",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "¿Puedes sacarme?"
+        "type": "speech",
+        "text": "—¿Puedes sacarme?",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Puedo enseñarte una ruta. Pero las puertas exteriores no se abren para personas como tú."
+        "type": "speech",
+        "text": "—Puedo enseñarte una ruta. Pero las puertas exteriores no se abren para personas como tú.",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Entonces atravesamos los túneles."
+        "type": "speech",
+        "text": "—Entonces atravesamos los túneles.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Los túneles terminan antes del muro. Las salidas reales se abren para patrullas, vehículos de los obispos y traslados autorizados."
+        "type": "speech",
+        "text": "—Los túneles terminan antes del muro. Las salidas reales se abren para patrullas, vehículos de los obispos y traslados autorizados.",
+        "who": "Desconocido"
       },
       {
         "type": "p",
         "text": "Recordé el sueño. El automóvil. Las manos oscuras sobre el volante."
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Primero tienes que pedir que te lleve."
+        "type": "speech",
+        "text": "—Primero tienes que pedir que te lleve —murmuré.",
+        "who": "Clancy"
       },
       {
         "type": "p",
         "text": "El desconocido me miró."
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "¿Quién te dijo eso?"
+        "type": "speech",
+        "text": "—¿Quién te dijo eso?",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "No lo sé."
+        "type": "speech",
+        "text": "—No lo sé.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Clancy."
+        "type": "speech",
+        "text": "—Clancy —advirtió el desconocido.",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Lo soñé."
+        "type": "speech",
+        "text": "—Lo soñé.",
+        "who": "Clancy"
       },
       {
         "type": "p",
         "text": "Durante unos segundos pareció preocupado."
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Entonces tal vez llevas más tiempo preparando esto de lo que crees."
+        "type": "speech",
+        "text": "—Entonces tal vez llevas más tiempo preparando esto de lo que crees.",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "¿Qué tengo que hacer?"
+        "type": "speech",
+        "text": "—¿Qué tengo que hacer?",
+        "who": "Clancy"
       },
       {
         "type": "p",
         "text": "Se acercó a una pared cubierta de mapas de mantenimiento. Esta vez no señaló la carretera exterior, sino una red de corredores que descendía bajo el Templo de la Permanencia."
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Dentro de nueve días se celebrará la Asamblea Anual de los Glorificados. Toda la ciudad mirará hacia las torres."
+        "type": "speech",
+        "text": "—Dentro de nueve días se celebrará la Asamblea Anual de los Glorificados. Toda la ciudad mirará hacia las torres.",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "¿Y nosotros miraremos hacia abajo?"
+        "type": "speech",
+        "text": "—¿Y nosotros miraremos hacia abajo?",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Bajaremos mientras los vigilantes estén ocupados. Hay una brecha antigua cerca del perímetro. Si los de afuera encuentran la misma ruta, verás antorchas."
+        "type": "speech",
+        "text": "—Bajaremos mientras los vigilantes estén ocupados. Hay una brecha antigua cerca del perímetro. Si los de afuera encuentran la misma ruta, verás antorchas.",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "¿Vendrás con nosotros?"
+        "type": "speech",
+        "text": "—¿Vendrás con nosotros?",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Hasta donde pueda. Después necesitarás confiar en personas a las que todavía no conoces."
+        "type": "speech",
+        "text": "—Hasta donde pueda. Después necesitarás confiar en personas a las que todavía no conoces.",
+        "who": "Desconocido"
       },
       {
         "type": "p",
         "text": "Pensé en Mara y James. Por primera vez, salir dejó de parecer una decisión que podía tomar sin arrastrar a nadie conmigo. Al día siguiente comenzaríamos a estudiar a los vigilantes."
       }
-    ],
-    "part": 1
+    ]
   },
   {
     "id": "cap3",
     "number": "Capítulo 3",
     "title": "Los vigilantes duermen",
     "subtitle": "Sobre los ojos que miran y la decisión de dejarse ver",
+    "part": 1,
     "blocks": [
       {
         "type": "p",
@@ -2734,7 +2814,7 @@ const PART1_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Hacía un año desde la última convocación. Los altavoces prometían una celebración más grande, más luminosa y más ordenada que cualquier otra. Durante nueve días, los trabajadores cubrieron las plazas con telas blancas, repararon los tubos de neón de la necrópolis y pintaron sobre las grietas que no podían cerrar."
+        "text": "Hacía un año desde la última convocación. Los altavoces prometían una celebración más grande, más luminosa y más ordenada que cualquier otra. Durante nueve días, los trabajadores cubrieron las plazas con telas blancas, repararon los tubos de neón de la necrópolis y pintaron sobre las grietas que no podían cerrar. El olor de la cal fresca se mezcló con el de las flores artificiales hasta que toda la ciudad pareció recién desinfectada para recibir una mentira."
       },
       {
         "type": "p",
@@ -2749,62 +2829,62 @@ const PART1_CHAPTERS = [
         "text": "Nos encontramos dos veces durante los primeros días. En la primera reunión me mostró el recorrido inferior. En la segunda, señaló tres puntos donde las patrullas cambiaban de turno."
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Después de esta noche no podremos hablar."
+        "type": "speech",
+        "text": "—Después de esta noche no podremos hablar —dijo.",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "¿Por cuánto tiempo?"
+        "type": "speech",
+        "text": "—¿Por cuánto tiempo?",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Hasta que estés fuera o hasta que el plan se rompa."
+        "type": "speech",
+        "text": "—Hasta que estés fuera o hasta que el plan se rompa.",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Eso no es tranquilizador."
+        "type": "speech",
+        "text": "—Eso no es tranquilizador.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Los planes que necesitan tranquilizarte suelen estar mintiendo."
+        "type": "speech",
+        "text": "—Los planes que necesitan tranquilizarte suelen estar mintiendo.",
+        "who": "Desconocido"
       },
       {
         "type": "p",
         "text": "Me explicó que los Banditos intentarían acercarse a una brecha situada debajo del distrito oriental. Dema había sellado casi todas las salidas antiguas, pero los túneles seguían respirando por grietas que no aparecían en los planos nuevos."
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Cuando llegues al nivel más bajo, espera. No cruces si no ves las antorchas."
+        "type": "speech",
+        "text": "—Cuando llegues al nivel más bajo, espera —dijo—. No cruces si no ves las antorchas.",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "¿Y si no aparecen?"
+        "type": "speech",
+        "text": "—¿Y si no aparecen?",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Entonces vuelves."
+        "type": "speech",
+        "text": "—Entonces vuelves.",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Quizá no exista un camino de regreso."
+        "type": "speech",
+        "text": "—Quizá no exista un camino de regreso.",
+        "who": "Clancy"
       },
       {
         "type": "p",
         "text": "El desconocido sostuvo mi mirada."
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Siempre existe. A veces no conduce al lugar que esperabas."
+        "type": "speech",
+        "text": "—Siempre existe. A veces no conduce al lugar que esperabas.",
+        "who": "Desconocido"
       },
       {
         "type": "p",
@@ -2819,66 +2899,66 @@ const PART1_CHAPTERS = [
         "text": "Le conté a Mara la verdad en la necrópolis, frente al nombre encendido de Elias. Le hablé de la brecha y del hombre de las tuberías, aunque no le dije que sospechaba que era el Torchbearer de las historias ni que estaba vinculado a los Banditos."
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Hay una salida debajo del templo. Durante la Asamblea, los vigilantes estarán concentrados en la ceremonia."
+        "type": "speech",
+        "text": "—Hay una salida debajo del templo —dije—. Durante la Asamblea, los vigilantes estarán concentrados en la ceremonia.",
+        "who": "Clancy"
       },
       {
         "type": "p",
         "text": "Mara no respondió de inmediato."
       },
       {
-        "type": "dialogue",
-        "who": "Mara",
-        "text": "¿Quieres que me vaya contigo?"
+        "type": "speech",
+        "text": "—¿Quieres que me vaya contigo?",
+        "who": "Mara"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Quiero que tengas la opción."
+        "type": "speech",
+        "text": "—Quiero que tengas la opción.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Mara",
-        "text": "Eso no fue lo que pregunté."
+        "type": "speech",
+        "text": "—Eso no fue lo que pregunté.",
+        "who": "Mara"
       },
       {
         "type": "p",
         "text": "Miré el vial de Elias colgado de su cuello."
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Sí."
+        "type": "speech",
+        "text": "—Sí.",
+        "who": "Clancy"
       },
       {
         "type": "p",
         "text": "Mara cerró los ojos. Cuando volvió a abrirlos, la luz roja del monumento se reflejaba en ellos."
       },
       {
-        "type": "dialogue",
-        "who": "Mara",
-        "text": "Mi madre no podría caminar por los túneles."
+        "type": "speech",
+        "text": "—Mi madre no podría caminar por los túneles.",
+        "who": "Mara"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Podemos encontrar otra manera."
+        "type": "speech",
+        "text": "—Podemos encontrar otra manera.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Mara",
-        "text": "No en nueve días."
+        "type": "speech",
+        "text": "—No en nueve días.",
+        "who": "Mara"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Entonces quédate con ella."
+        "type": "speech",
+        "text": "—Entonces quédate con ella.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Mara",
-        "text": "¿Y dejar que te lleves toda la culpa otra vez?"
+        "type": "speech",
+        "text": "—¿Y dejar que te lleves toda la culpa otra vez?",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -2889,64 +2969,60 @@ const PART1_CHAPTERS = [
         "text": "Mara dobló la carta de Elias y la guardó en su bolsillo."
       },
       {
-        "type": "dialogue",
-        "who": "Mara",
-        "text": "Llegaré hasta la brecha. Allí decidiré."
+        "type": "speech",
+        "text": "—Llegaré hasta la brecha —dijo—. Allí decidiré.",
+        "who": "Mara"
       },
       {
         "type": "p",
         "text": "James reaccionó de otra manera."
       },
       {
-        "type": "dialogue",
-        "who": "James",
-        "text": "La puerta inferior no funciona."
+        "type": "speech",
+        "text": "—La puerta inferior no funciona. James ni siquiera terminó de desplegar el mapa.",
+        "who": "Mara"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "El hombre de las tuberías dice que sí."
+        "type": "speech",
+        "text": "—El hombre de las tuberías dice que sí —respondí.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "James",
-        "text": "Tu hombre de las tuberías no tiene que reparar los mecanismos de esta ciudad."
+        "type": "speech",
+        "text": "—Tu hombre de las tuberías no tiene que reparar los mecanismos de esta ciudad —replicó James.",
+        "who": "James"
       },
       {
         "type": "p",
         "text": "Extendió el plano sobre una mesa de los talleres y marcó tres conductos."
       },
       {
-        "type": "dialogue",
-        "who": "James",
-        "text": "Este sistema se cerró hace seis años. Este otro se inunda. Y este conduce directamente a una cámara de corrección."
+        "type": "speech",
+        "text": "—Este sistema se cerró hace seis años. Este otro se inunda. Y este conduce directamente a una cámara de corrección.",
+        "who": "James"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "¿Hay otra ruta?"
+        "type": "speech",
+        "text": "—¿Hay otra ruta?",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "James",
-        "text": "Claro. Solo tenemos que atravesar una pared, detener una bomba de agua y pedirle permiso a un obispo."
+        "type": "speech",
+        "text": "—Claro. Atravesamos una pared, detenemos una bomba de agua y le pedimos permiso a un obispo. Puedo tenerlo listo antes del desayuno si nadie necesita seguir respirando.",
+        "who": "James"
       },
       {
         "type": "p",
-        "text": "Lo miró."
+        "text": "Lo miré."
       },
       {
         "type": "p",
         "text": "James suspiró."
       },
       {
-        "type": "dialogue",
-        "who": "James",
-        "text": "Dame dos noches."
-      },
-      {
-        "type": "scene",
-        "text": "II"
+        "type": "speech",
+        "text": "—Dame dos noches.",
+        "who": "James"
       },
       {
         "type": "p",
@@ -2970,55 +3046,55 @@ const PART1_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "La noche anterior a la Asamblea nos reunimos por última vez en el bloque de James. Su madre y su hermana dormían en la habitación contigua. Hablamos en voz baja, como si el plan pudiera despertar y traicionarnos."
+        "text": "La noche anterior a la Asamblea nos reunimos por última vez en el bloque de James. Su madre y su hermana dormían en la habitación contigua. Hablamos en voz baja. El plan ocupaba la mesa con la presencia de una cuarta persona capaz de traicionarnos."
       },
       {
-        "type": "dialogue",
-        "who": "James",
-        "text": "A las nueve campanadas, las pantallas cambiarán. Tendremos cuatro minutos antes de que reinicien el sistema."
+        "type": "speech",
+        "text": "—A las nueve campanadas, las pantallas cambiarán —dijo James—. Tendremos cuatro minutos antes de que reinicien el sistema.",
+        "who": "James"
       },
       {
-        "type": "dialogue",
-        "who": "Mara",
-        "text": "Tres. Los guardias no van a esperar a que alguien les dé una orden."
+        "type": "speech",
+        "text": "—Tres —corrigió Mara—. Los guardias no van a esperar a que alguien les dé una orden.",
+        "who": "Mara"
       },
       {
-        "type": "dialogue",
-        "who": "James",
-        "text": "Entonces tres."
+        "type": "speech",
+        "text": "—Entonces tres —aceptó James.",
+        "who": "James"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "La entrada inferior estará abierta. Bajaremos juntos y esperaremos las antorchas."
+        "type": "speech",
+        "text": "—La entrada inferior estará abierta —dije—. Bajaremos juntos y esperaremos las antorchas.",
+        "who": "Clancy"
       },
       {
         "type": "p",
         "text": "James jugó con una pequeña llave entre los dedos."
       },
       {
-        "type": "dialogue",
-        "who": "James",
-        "text": "No hemos tenido noticias de ellos."
+        "type": "speech",
+        "text": "—No hemos tenido noticias de ellos —advirtió James.",
+        "who": "James"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Saben dónde buscar."
+        "type": "speech",
+        "text": "—Saben dónde buscar —respondí.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "James",
-        "text": "Eso no significa que lleguen."
+        "type": "speech",
+        "text": "—Eso no significa que lleguen —replicó James.",
+        "who": "James"
       },
       {
         "type": "p",
         "text": "Mara se levantó."
       },
       {
-        "type": "dialogue",
-        "who": "Mara",
-        "text": "Si no llegan, regresamos. Nadie se convertirá en mártir para demostrar que el plan era bueno."
+        "type": "speech",
+        "text": "—Si no llegan, regresamos. Nadie se convertirá en mártir para demostrar que el plan era bueno —sentenció Mara.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -3054,28 +3130,28 @@ const PART1_CHAPTERS = [
         "text": "Doblé la carta y la dividí en cuatro partes. Una quedó en mi cuaderno. Otra fue al archivo. La tercera la oculté en el conducto donde había conocido al hombre de las tuberías. La última se la entregué a Mara al amanecer."
       },
       {
-        "type": "dialogue",
-        "who": "Mara",
-        "text": "¿Por qué cuatro?"
+        "type": "speech",
+        "text": "—¿Por qué cuatro? —preguntó Mara.",
+        "who": "Mara"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Porque una sola puede desaparecer."
+        "type": "speech",
+        "text": "—Porque una sola puede desaparecer —respondí.",
+        "who": "Clancy"
       },
       {
         "type": "p",
         "text": "Mara guardó el fragmento."
       },
       {
-        "type": "dialogue",
-        "who": "Mara",
-        "text": "Y cuatro pueden condenarnos a todos."
+        "type": "speech",
+        "text": "—Y cuatro pueden condenarnos a todos —dijo Mara.",
+        "who": "Mara"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "También pueden demostrar que estuvimos aquí."
+        "type": "speech",
+        "text": "—También pueden demostrar que estuvimos aquí —contesté.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -3128,7 +3204,7 @@ const PART1_CHAPTERS = [
       {
         "type": "epigraph",
         "text": "NO QUIERO PERMANECER AQUÍ.",
-        "attr": "Pantalla de la Asamblea"
+        "attr": ""
       },
       {
         "type": "p",
@@ -3136,7 +3212,7 @@ const PART1_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "La multitud dejó de respirar."
+        "text": "El murmullo murió de golpe. Miles de personas siguieron respirando, pero la plaza dejó de hacerlo como un solo cuerpo."
       },
       {
         "type": "p",
@@ -3155,14 +3231,14 @@ const PART1_CHAPTERS = [
         "text": "James abrió una puerta de servicio y descendimos por una escalera estrecha. Detrás de nosotros comenzaron a sonar alarmas. Mara llevaba el vial de Elias; yo, el mapa; James, una bolsa de herramientas que golpeaba contra cada peldaño."
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Haz menos ruido."
+        "type": "speech",
+        "text": "—Haz menos ruido —le susurré a James.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "James",
-        "text": "La ciudad entera está gritando."
+        "type": "speech",
+        "text": "—La ciudad entera está gritando —respondió él.",
+        "who": "James"
       },
       {
         "type": "p",
@@ -3177,24 +3253,28 @@ const PART1_CHAPTERS = [
         "text": "Las paredes cambiaron. El concreto nuevo dio paso a piedra vieja, marcada con números que no pertenecían al sistema de Dema. En una esquina encontramos una línea amarilla."
       },
       {
-        "type": "dialogue",
-        "who": "Mara",
-        "text": "¿Ellos hicieron esto?"
+        "type": "p",
+        "text": "Mara la tocó."
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Eso creo."
+        "type": "speech",
+        "text": "—¿Ellos hicieron esto? —preguntó Mara.",
+        "who": "Mara"
       },
       {
-        "type": "dialogue",
-        "who": "Mara",
-        "text": "No parece una respuesta muy segura."
+        "type": "speech",
+        "text": "—Eso creo —respondí.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Es la única que tengo."
+        "type": "speech",
+        "text": "—No parece una respuesta muy segura —dijo Mara.",
+        "who": "Mara"
+      },
+      {
+        "type": "speech",
+        "text": "—Es la única que tengo —admití.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -3205,9 +3285,9 @@ const PART1_CHAPTERS = [
         "text": "La brecha estaba detrás de una compuerta circular. James desmontó el panel y metió ambas manos en el mecanismo."
       },
       {
-        "type": "dialogue",
-        "who": "James",
-        "text": "Dame luz."
+        "type": "speech",
+        "text": "—Dame luz —pidió James.",
+        "who": "James"
       },
       {
         "type": "p",
@@ -3218,24 +3298,24 @@ const PART1_CHAPTERS = [
         "text": "Arriba, las alarmas habían cambiado de tono. Ya no anunciaban una falla técnica. Anunciaban una fuga."
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Los vigilantes vienen."
+        "type": "speech",
+        "text": "—Los vigilantes vienen —le advertí a James.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "James",
-        "text": "Lo sé."
+        "type": "speech",
+        "text": "—Lo sé —respondió él sin apartar las manos del mecanismo.",
+        "who": "James"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "¿Cuánto falta?"
+        "type": "speech",
+        "text": "—¿Cuánto falta? —pregunté.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "James",
-        "text": "Si sigues preguntando, más."
+        "type": "speech",
+        "text": "—Si sigues preguntando, más —contestó James.",
+        "who": "James"
       },
       {
         "type": "p",
@@ -3274,19 +3354,19 @@ const PART1_CHAPTERS = [
         "text": "Mara me sujetó el brazo."
       },
       {
-        "type": "dialogue",
-        "who": "Mara",
-        "text": "Tenemos que volver."
+        "type": "speech",
+        "text": "—Tenemos que volver —dijo Mara, sujetándome el brazo.",
+        "who": "Mara"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Todavía no."
+        "type": "speech",
+        "text": "—Todavía no —respondí.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Mara",
-        "text": "Clancy."
+        "type": "speech",
+        "text": "—Clancy —insistió Mara.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -3297,13 +3377,9 @@ const PART1_CHAPTERS = [
         "text": "Entonces una voz habló detrás de nosotros."
       },
       {
-        "type": "dialogue",
-        "who": "Keons",
-        "text": "La brecha ya no es segura."
-      },
-      {
-        "type": "scene",
-        "text": "III"
+        "type": "speech",
+        "text": "—La brecha ya no es segura.",
+        "who": "Keons"
       },
       {
         "type": "p",
@@ -3315,83 +3391,83 @@ const PART1_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "James levantó una herramienta como si pudiera defenderse de un obispo con una llave."
+        "text": "James levantó una llave de ajuste. El gesto era absurdo frente a un obispo, pero la sostuvo con ambas manos."
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "¿Nos siguió?"
+        "type": "speech",
+        "text": "—¿Nos siguió? —pregunté.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Keons",
-        "text": "Los siguieron desde antes de bajar."
+        "type": "speech",
+        "text": "—Los siguieron desde antes de bajar —respondió Keons.",
+        "who": "Keons"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "¿Quién?"
+        "type": "speech",
+        "text": "—¿Quién? —pregunté.",
+        "who": "Clancy"
       },
       {
         "type": "p",
         "text": "Keons miró la marca amarilla de la pared."
       },
       {
-        "type": "dialogue",
-        "who": "Keons",
-        "text": "Nico."
+        "type": "speech",
+        "text": "—Nico —dijo Keons.",
+        "who": "Keons"
       },
       {
         "type": "p",
         "text": "Mara retrocedió."
       },
       {
-        "type": "dialogue",
-        "who": "Mara",
-        "text": "¿Va a entregarnos?"
+        "type": "speech",
+        "text": "—¿Va a entregarnos? —preguntó Mara.",
+        "who": "Mara"
       },
       {
-        "type": "dialogue",
-        "who": "Keons",
-        "text": "Si quisiera hacerlo, no estaría hablando."
+        "type": "speech",
+        "text": "—Si quisiera hacerlo, no estaría hablando —respondió Keons.",
+        "who": "Keons"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Entonces ayúdenos a abrirla."
+        "type": "speech",
+        "text": "—Entonces ayúdenos a abrirla —dije.",
+        "who": "Clancy"
       },
       {
         "type": "p",
         "text": "Keons negó con la cabeza."
       },
       {
-        "type": "dialogue",
-        "who": "Keons",
-        "text": "Al otro lado hay patrullas. Las antorchas llegaron tarde o fueron obligadas a retirarse."
+        "type": "speech",
+        "text": "—Al otro lado hay patrullas. Las antorchas llegaron tarde o fueron obligadas a retirarse —explicó Keons.",
+        "who": "Keons"
       },
       {
         "type": "p",
         "text": "La frase me atravesó con más fuerza que una orden."
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Estaban ahí."
+        "type": "speech",
+        "text": "—Estaban ahí —dije.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Keons",
-        "text": "Sí."
+        "type": "speech",
+        "text": "—Sí —confirmó Keons.",
+        "who": "Keons"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Entonces podemos esperar."
+        "type": "speech",
+        "text": "—Entonces podemos esperar —insistí.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Keons",
-        "text": "No."
+        "type": "speech",
+        "text": "—No —respondió Keons.",
+        "who": "Keons"
       },
       {
         "type": "p",
@@ -3402,32 +3478,32 @@ const PART1_CHAPTERS = [
         "text": "Keons señaló un conducto lateral."
       },
       {
-        "type": "dialogue",
-        "who": "Keons",
-        "text": "Ese camino los devuelve al distrito de mantenimiento. Solo tienen una oportunidad."
+        "type": "speech",
+        "text": "—Ese camino los devuelve al distrito de mantenimiento. Solo tienen una oportunidad —dijo Keons.",
+        "who": "Keons"
       },
       {
-        "type": "dialogue",
-        "who": "James",
-        "text": "¿Y por qué deberíamos confiar en usted?"
+        "type": "speech",
+        "text": "—¿Y por qué deberíamos confiar en usted? —preguntó James.",
+        "who": "James"
       },
       {
         "type": "p",
         "text": "Keons lo miró sin molestarse."
       },
       {
-        "type": "dialogue",
-        "who": "Keons",
-        "text": "No deberían."
+        "type": "speech",
+        "text": "—No deberían —respondió Keons.",
+        "who": "Keons"
       },
       {
         "type": "p",
         "text": "Mara me empujó hacia el conducto."
       },
       {
-        "type": "dialogue",
-        "who": "Mara",
-        "text": "Vamos."
+        "type": "speech",
+        "text": "—Vamos —ordenó Mara, empujándome hacia el conducto.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -3458,28 +3534,28 @@ const PART1_CHAPTERS = [
         "text": "Tomé el mapa y corrí en dirección contraria al conducto."
       },
       {
-        "type": "dialogue",
-        "who": "Mara",
-        "text": "¿Qué haces?"
+        "type": "speech",
+        "text": "—¿Qué haces? —gritó Mara.",
+        "who": "Mara"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Haré que me vean."
+        "type": "speech",
+        "text": "—Haré que me vean —respondí.",
+        "who": "Clancy"
       },
       {
         "type": "p",
         "text": "Golpeé una lámpara con el mapa enrollado. El vidrio cayó al agua. Los guardias dirigieron las luces hacia mí."
       },
       {
-        "type": "dialogue",
-        "who": "James",
-        "text": "¡Clancy!"
+        "type": "speech",
+        "text": "—¡Clancy! —gritó James.",
+        "who": "James"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Llévala de regreso."
+        "type": "speech",
+        "text": "—Llévala de regreso —le grité a James.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -3503,98 +3579,160 @@ const PART1_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Mara y James aparecieron casi una hora después."
+        "text": "Mara y James aparecieron casi una hora después. James llevaba la manga pegada al antebrazo por la sangre. Mara caminaba delante de él con el vial de Elias cerrado dentro del puño."
       },
       {
         "type": "p",
-        "text": "James tenía sangre en la manga. Mara conservaba el vial de Elias."
+        "text": "Mara me sujetó la chaqueta con ambas manos. No me empujó; me obligó a quedarme en el lugar."
       },
       {
-        "type": "dialogue",
-        "who": "Mara",
-        "text": "Te dije que nadie se convertiría en mártir."
+        "type": "speech",
+        "text": "—Te dije que nadie se convertiría en mártir.",
+        "who": "Mara"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "No me atraparon."
+        "type": "speech",
+        "text": "—No me atraparon.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Mara",
-        "text": "Eso no significa que haya sido una buena idea."
+        "type": "speech",
+        "text": "—Ese no era el acuerdo.",
+        "who": "Mara"
       },
       {
         "type": "p",
-        "text": "James dejó la bolsa de herramientas en el suelo."
+        "text": "James dejó la bolsa de herramientas en el suelo y presionó un trapo contra la herida."
       },
       {
-        "type": "dialogue",
-        "who": "James",
-        "text": "La brecha está cerrada. Van a revisar cada túnel."
+        "type": "speech",
+        "text": "—La brecha está cerrada —dijo—. Van a revisar cada túnel. La parte matemática del plan ha muerto, por si alguien necesitaba una confirmación.",
+        "who": "James"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Entonces necesitamos otra salida."
+        "type": "speech",
+        "text": "—Pero ustedes salieron.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "James",
-        "text": "No existe otra salida para tres personas."
+        "type": "speech",
+        "text": "—Porque Keons abrió un conducto —respondió Mara—. No porque tú decidieras convertirte en señuelo.",
+        "who": "Mara"
+      },
+      {
+        "type": "speech",
+        "text": "—Los guardias iban a verlos.",
+        "who": "Clancy"
+      },
+      {
+        "type": "speech",
+        "text": "—Y yo iba a decidir qué hacer con eso.",
+        "who": "Mara"
+      },
+      {
+        "type": "p",
+        "text": "Su voz se quebró en la última palabra. Aflojó la chaqueta, pero no retiró las manos."
+      },
+      {
+        "type": "speech",
+        "text": "—Elias también creyó que ocultarme su miedo era una forma de cuidarme. No vuelvas a hacer lo mismo con tu valentía.",
+        "who": "Mara"
+      },
+      {
+        "type": "p",
+        "text": "Quise disculparme. La palabra se quedó detrás de los dientes, demasiado pequeña para lo que había elegido por ellos."
+      },
+      {
+        "type": "p",
+        "text": "James levantó la mano vendada."
+      },
+      {
+        "type": "speech",
+        "text": "—La próxima vez avisa antes de cambiar todas las variables. Así puedo calcular cuánto vamos a odiarte.",
+        "who": "James"
+      },
+      {
+        "type": "p",
+        "text": "Mara no sonrió."
+      },
+      {
+        "type": "speech",
+        "text": "—No existe otra salida para tres personas —dijo James—. No con las rutas que siguen vivas.",
+        "who": "James"
+      },
+      {
+        "type": "p",
+        "text": "Miré la sangre que atravesaba el trapo."
+      },
+      {
+        "type": "speech",
+        "text": "—Entonces encontraré una que solo necesite una.",
+        "who": "Clancy"
+      },
+      {
+        "type": "p",
+        "text": "Mara soltó mi chaqueta."
+      },
+      {
+        "type": "speech",
+        "text": "—Eso no fue lo que aprendiste de esta noche.",
+        "who": "Mara"
+      },
+      {
+        "type": "p",
+        "text": "No respondí. En aquel momento todavía creía que cargar solo con el peligro era una forma de evitar que los demás pagaran por mí."
       },
       {
         "type": "p",
         "text": "Esa misma noche escuché el ritmo en la pared."
       },
       {
-        "type": "epigraph",
-        "text": "Dos. Uno. Dos.",
-        "attr": "Ritmo familiar"
+        "type": "p",
+        "text": "Dos. Uno. Dos."
       },
       {
         "type": "p",
         "text": "El desconocido estaba en el depósito abandonado. Tenía barro en las botas y una herida pequeña sobre la frente."
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Llegaron."
+        "type": "speech",
+        "text": "—Llegaron —dije al encontrar al desconocido.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Sí."
+        "type": "speech",
+        "text": "—Sí —confirmó él.",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Los vi."
+        "type": "speech",
+        "text": "—Los vi —continué.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Nosotros también te vimos."
+        "type": "speech",
+        "text": "—Nosotros también te vimos —respondió.",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "¿Por qué no entraron?"
+        "type": "speech",
+        "text": "—¿Por qué no entraron? —pregunté.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Las patrullas rodearon la brecha minutos antes. Si cruzábamos, la ruta habría llevado a Dema directamente hasta los demás."
+        "type": "speech",
+        "text": "—Las patrullas rodearon la brecha minutos antes. Si cruzábamos, la ruta habría llevado a Dema directamente hasta los demás.",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Alguien conocía el plan."
+        "type": "speech",
+        "text": "—Alguien conocía el plan —dije.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Alguien conocía una parte."
+        "type": "speech",
+        "text": "—Alguien conocía una parte —corrigió el desconocido.",
+        "who": "Desconocido"
       },
       {
         "type": "p",
@@ -3605,43 +3743,43 @@ const PART1_CHAPTERS = [
         "text": "El desconocido se quedó en silencio."
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Nos dejó regresar."
+        "type": "speech",
+        "text": "—Nos dejó regresar —dije, refiriéndome a Keons.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Y también dejó que llegaras hasta la brecha."
+        "type": "speech",
+        "text": "—Y también dejó que llegaras hasta la brecha —respondió el desconocido.",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "¿Eso significa que nos ayudó?"
+        "type": "speech",
+        "text": "—¿Eso significa que nos ayudó? —pregunté.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Significa que todavía no sabes qué quiere."
+        "type": "speech",
+        "text": "—Significa que todavía no sabes qué quiere —dijo él.",
+        "who": "Desconocido"
       },
       {
         "type": "p",
         "text": "Desenrollé el mapa mojado."
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "La ruta está perdida."
+        "type": "speech",
+        "text": "—La ruta está perdida —dije.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Para un grupo, sí."
+        "type": "speech",
+        "text": "—Para un grupo, sí —respondió.",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "¿Y para una persona?"
+        "type": "speech",
+        "text": "—¿Y para una persona? —pregunté.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -3652,56 +3790,56 @@ const PART1_CHAPTERS = [
         "text": "Recordé el sueño. El automóvil. Las manos oscuras sobre el volante."
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Las puertas exteriores se abren para vehículos de los obispos."
+        "type": "speech",
+        "text": "—Las puertas exteriores se abren para vehículos de los obispos —dije.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Clancy."
+        "type": "speech",
+        "text": "—Clancy —advirtió el desconocido.",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Dema quiere que todos me miren. Podemos usar eso."
+        "type": "speech",
+        "text": "—Dema quiere que todos me miren. Podemos usar eso —dije.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Lo que propones no es una fuga. Es entregarte."
+        "type": "speech",
+        "text": "—Lo que propones no es una fuga. Es entregarte —respondió él.",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Solo hasta que me saquen del muro."
+        "type": "speech",
+        "text": "—Solo hasta que me saquen del muro —insistí.",
+        "who": "Clancy"
       },
       {
         "type": "p",
         "text": "El desconocido apartó la vista."
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Nico no te llevará afuera porque se lo pidas."
+        "type": "speech",
+        "text": "—Nico no te llevará afuera porque se lo pidas —dijo el desconocido.",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Entonces le daré una razón."
+        "type": "speech",
+        "text": "—Entonces le daré una razón —respondí.",
+        "who": "Clancy"
       },
       {
         "type": "p",
         "text": "La Asamblea debía ser nuestra salida. Terminó convirtiéndose en la prueba de que Dema podía cerrar cualquier puerta que conociéramos. Si la ciudad quería que todas las miradas cayeran sobre mí, le daría exactamente eso."
       }
-    ],
-    "part": 1
+    ]
   },
   {
     "id": "cap4",
     "number": "Capítulo 4",
     "title": "El fuego en la carretera",
     "subtitle": "Pedir que te lleven se vuelve una forma de marcharse",
+    "part": 1,
     "blocks": [
       {
         "type": "p",
@@ -3713,26 +3851,26 @@ const PART1_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Durante los primeros tres pensé que era imposible. Durante los siguientes cuatro pensé que era una mala idea. Los últimos dos los pasé intentando no admitir que ambas cosas podían ser ciertas."
+        "text": "Durante los primeros tres días pensé que era imposible. Durante los siguientes cuatro comprendí que también era una mala idea. Los últimos dos los pasé con el estómago cerrado, intentando no admitir que ambas cosas podían ser ciertas y que aun así pensaba hacerlo."
       },
       {
         "type": "p",
         "text": "Hasta entonces, el desconocido nunca me había dado un nombre ni había confirmado que fuera el Torchbearer de las historias. Nos encontrábamos después del toque de queda en depósitos, túneles o salas de máquinas. Cada vez llevaba un uniforme distinto. Una noche era electricista. Otra, auxiliar funerario. Una vez apareció con la chaqueta de un guardia y casi lo golpeé con una barra antes de reconocerlo."
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Eso habría sido incómodo."
+        "type": "speech",
+        "text": "—Eso habría sido incómodo —dijo él.",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Podrías avisarme."
+        "type": "speech",
+        "text": "—Podrías avisarme.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Avisar reduce la utilidad de un disfraz."
+        "type": "speech",
+        "text": "—Avisar reduce la utilidad de un disfraz.",
+        "who": "Desconocido"
       },
       {
         "type": "p",
@@ -3767,48 +3905,48 @@ const PART1_CHAPTERS = [
         "text": "El documento debía parecer demasiado peligroso para dejarlo en manos de una patrulla común. Y yo debía presentarme como el único capaz de identificar el lugar exacto."
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Nico no va a creerme."
+        "type": "speech",
+        "text": "—Nico no va a creerme —dije.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Nico no necesita creerte. Necesita creer que puede controlarte."
+        "type": "speech",
+        "text": "—Nico no necesita creerte. Necesita creer que puede controlarte.",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Eso no me tranquiliza."
+        "type": "speech",
+        "text": "—Eso no me tranquiliza.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "No intento tranquilizarte."
+        "type": "speech",
+        "text": "—No intento tranquilizarte.",
+        "who": "Desconocido"
       },
       {
         "type": "p",
         "text": "El desconocido preparaba otra parte del plan en la carretera. No quiso explicarme los detalles. Solo me dijo que, cuando escuchara la batería, debía mantenerme bajo, sujetarme y esperar."
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "¿Una batería?"
+        "type": "speech",
+        "text": "—¿Una batería?",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Sí."
+        "type": "speech",
+        "text": "—Sí.",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "¿En medio de una fuga?"
+        "type": "speech",
+        "text": "—¿En medio de una fuga?",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Es una forma de medir el tiempo."
+        "type": "speech",
+        "text": "—Es una forma de medir el tiempo.",
+        "who": "Desconocido"
       },
       {
         "type": "p",
@@ -3816,7 +3954,7 @@ const PART1_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Mientras tanto, mi vida dentro de Dema continuaba como si nada estuviera a punto de terminar."
+        "text": "Mientras tanto, mi vida dentro de Dema continuó sin reconocer que estaba a punto de terminar."
       },
       {
         "type": "p",
@@ -3839,23 +3977,23 @@ const PART1_CHAPTERS = [
         "text": "La mañana anterior al viaje, James me encontró en el taller del archivo modificando un sello."
       },
       {
-        "type": "dialogue",
-        "who": "James",
-        "text": "Eso no parece parte de una rectificación normal."
+        "type": "speech",
+        "text": "—Eso no parece parte de una rectificación normal.",
+        "who": "James"
       },
       {
         "type": "p",
         "text": "Cubrí el documento con el brazo."
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "¿Desde cuándo te interesa mi trabajo?"
+        "type": "speech",
+        "text": "—¿Desde cuándo te interesa mi trabajo? —pregunté.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "James",
-        "text": "Desde que empezaste a mirar las puertas como si calcularas cuánto tardan en cerrarse."
+        "type": "speech",
+        "text": "—Desde que empezaste a mirar las puertas como si calcularas cuánto tardan en cerrarse.",
+        "who": "James"
       },
       {
         "type": "p",
@@ -3866,42 +4004,42 @@ const PART1_CHAPTERS = [
         "text": "James cerró la puerta del taller."
       },
       {
-        "type": "dialogue",
-        "who": "James",
-        "text": "¿Es mañana?"
+        "type": "speech",
+        "text": "—¿Es mañana? —preguntó James.",
+        "who": "James"
       },
       {
         "type": "p",
         "text": "Sentí un golpe en el pecho."
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "No sé de qué habla."
+        "type": "speech",
+        "text": "—No sé de qué hablas —respondí.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "James",
-        "text": "Otra vez esa mentira. Ya te dije que eres terrible."
+        "type": "speech",
+        "text": "—Otra vez esa mentira. Ya te dije que eres terrible —replicó James.",
+        "who": "James"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "James..."
+        "type": "speech",
+        "text": "—James...",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "James",
-        "text": "No quiero detalles. Si sé detalles, pueden sacármelos."
+        "type": "speech",
+        "text": "—No quiero detalles. Si sé detalles, pueden sacármelos —dijo James.",
+        "who": "James"
       },
       {
         "type": "p",
         "text": "Se miró los dedos, que todavía tenían marcas del interrogatorio."
       },
       {
-        "type": "dialogue",
-        "who": "James",
-        "text": "Solo dime si es mañana."
+        "type": "speech",
+        "text": "—Solo dime si es mañana —insistió.",
+        "who": "James"
       },
       {
         "type": "p",
@@ -3912,94 +4050,94 @@ const PART1_CHAPTERS = [
         "text": "James respiró por la nariz."
       },
       {
-        "type": "dialogue",
-        "who": "James",
-        "text": "Bien."
+        "type": "speech",
+        "text": "—Bien —dijo James al verme asentir.",
+        "who": "James"
       },
       {
         "type": "p",
         "text": "Sacó una pequeña herramienta del bolsillo. Era una hoja plana con un extremo curvado."
       },
       {
-        "type": "dialogue",
-        "who": "James",
-        "text": "Sirve para liberar seguros viejos. Las puertas exteriores usan mecanismos nuevos, pero los vehículos episcopales no. Es raro. Supongo que les gusta que algo siga sintiéndose antiguo."
+        "type": "speech",
+        "text": "—Sirve para liberar seguros viejos. Las puertas exteriores usan mecanismos nuevos, pero los vehículos episcopales no. Es raro. Supongo que les gusta que algo siga sintiéndose antiguo.",
+        "who": "James"
       },
       {
         "type": "p",
         "text": "Tomé la herramienta."
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "No puedo llevarte."
+        "type": "speech",
+        "text": "—No puedo llevarte —dije.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "James",
-        "text": "No te lo pedí."
+        "type": "speech",
+        "text": "—No te lo pedí —respondió James.",
+        "who": "James"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Podrías venir."
+        "type": "speech",
+        "text": "—Podrías venir —insistí.",
+        "who": "Clancy"
       },
       {
         "type": "p",
         "text": "James miró hacia el techo del taller."
       },
       {
-        "type": "dialogue",
-        "who": "James",
-        "text": "No. Todavía no."
+        "type": "speech",
+        "text": "—No. Todavía no —respondió.",
+        "who": "James"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "¿Por qué?"
+        "type": "speech",
+        "text": "—¿Por qué? —pregunté.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "James",
-        "text": "Porque mi madre vive en el bloque cinco. Porque mi hermana tiene doce años. Porque afuera hay montañas y adentro sé reparar cualquier tubería de esta ciudad."
+        "type": "speech",
+        "text": "—Porque mi madre vive en el bloque cinco. Porque mi hermana tiene doce años. Porque afuera hay montañas y adentro sé reparar cualquier tubería de esta ciudad.",
+        "who": "James"
       },
       {
         "type": "p",
         "text": "Sonrió sin humor."
       },
       {
-        "type": "dialogue",
-        "who": "James",
-        "text": "Porque soy valiente en las historias y cobarde cuando llega la parte donde uno debe caminar."
+        "type": "speech",
+        "text": "—Porque soy valiente en las historias y cobarde cuando llega la parte donde uno debe caminar.",
+        "who": "James"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "No eres cobarde."
+        "type": "speech",
+        "text": "—No eres cobarde —dije.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "James",
-        "text": "No intentes arreglarme, Clancy. Solo sal de aquí con vida."
+        "type": "speech",
+        "text": "—No intentes arreglarme, Clancy. Solo sal de aquí con vida.",
+        "who": "James"
       },
       {
         "type": "p",
-        "text": "Nos abrazamos. Nunca lo habíamos hecho. Fue breve y torpe."
+        "text": "Nos abrazamos. Nunca lo habíamos hecho. James olía a aceite, jabón barato y metal caliente. El abrazo fue breve y torpe; aun así, su hombro tembló una vez contra mi pecho antes de que los dos fingiéramos que solo estábamos comprobando el equilibrio del otro."
       },
       {
-        "type": "dialogue",
-        "who": "James",
-        "text": "Si encuentras al hombre de la antorcha, dile que su código de tuberías tiene un error en el tercer golpe."
+        "type": "speech",
+        "text": "—Si encuentras al hombre de la antorcha —dijo—, dile que su código de tuberías tiene un error en el tercer golpe.",
+        "who": "James"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Se lo diré."
+        "type": "speech",
+        "text": "—Se lo diré.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "James",
-        "text": "Y no le digas que fui yo quien lo notó."
+        "type": "speech",
+        "text": "—Y no le digas que fui yo quien lo notó.",
+        "who": "James"
       },
       {
         "type": "p",
@@ -4010,121 +4148,121 @@ const PART1_CHAPTERS = [
         "text": "No sabía cómo se había enterado. Quizá James se lo contó. Quizá me conocía mejor de lo que creía."
       },
       {
-        "type": "dialogue",
-        "who": "Mara",
-        "text": "Prometiste que no desaparecerías sin decirme nada."
+        "type": "speech",
+        "text": "—Prometiste que no desaparecerías sin decirme nada —dijo.",
+        "who": "Mara"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Por eso vine."
+        "type": "speech",
+        "text": "—Por eso vine —respondí.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Mara",
-        "text": "¿Cuándo?"
+        "type": "speech",
+        "text": "—¿Cuándo? —preguntó Mara.",
+        "who": "Mara"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Mañana."
+        "type": "speech",
+        "text": "—Mañana —dije.",
+        "who": "Clancy"
       },
       {
         "type": "p",
         "text": "Mara apretó la mandíbula."
       },
       {
-        "type": "dialogue",
-        "who": "Mara",
-        "text": "¿Con quién?"
+        "type": "speech",
+        "text": "—¿Con quién? —preguntó ella.",
+        "who": "Mara"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "No puedo decirte."
+        "type": "speech",
+        "text": "—No puedo decirte —respondí.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Mara",
-        "text": "¿Es uno de los Banditos?"
+        "type": "speech",
+        "text": "—¿Es uno de los Banditos? —insistió Mara.",
+        "who": "Mara"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "No sé qué es."
+        "type": "speech",
+        "text": "—No sé qué es —dije.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Mara",
-        "text": "Eso es peor."
+        "type": "speech",
+        "text": "—Eso es peor —respondió ella.",
+        "who": "Mara"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Me mostró el exterior."
+        "type": "speech",
+        "text": "—Me mostró el exterior —expliqué.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Mara",
-        "text": "¿Y porque viste una montaña vas a abandonar todo?"
+        "type": "speech",
+        "text": "—¿Y porque viste una montaña vas a abandonar todo? —preguntó Mara.",
+        "who": "Mara"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "No es la montaña."
+        "type": "speech",
+        "text": "—No es la montaña —respondí.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Mara",
-        "text": "Entonces explícame."
+        "type": "speech",
+        "text": "—Entonces explícame —exigió.",
+        "who": "Mara"
       },
       {
         "type": "p",
         "text": "Miré el nombre de Elias iluminado sobre nosotros."
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Ellos decidieron lo que tu hermano significaba. Decidieron qué partes de su vida merecían quedarse. Hacen lo mismo con todos nosotros mientras estamos vivos."
+        "type": "speech",
+        "text": "—Ellos decidieron lo que tu hermano significaba. Decidieron qué partes de su vida merecían quedarse. Hacen lo mismo con todos nosotros mientras estamos vivos.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Mara",
-        "text": "Y afuera nadie decide nada, ¿verdad? Todo es libre y perfecto."
+        "type": "speech",
+        "text": "—Y afuera nadie decide nada, ¿verdad? Todo es libre y perfecto —replicó Mara.",
+        "who": "Mara"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "No dije eso."
+        "type": "speech",
+        "text": "—No dije eso —respondí.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Mara",
-        "text": "No sabes lo que hay."
+        "type": "speech",
+        "text": "—No sabes lo que hay —dijo ella.",
+        "who": "Mara"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Por eso tengo que verlo."
+        "type": "speech",
+        "text": "—Por eso tengo que verlo —contesté.",
+        "who": "Clancy"
       },
       {
         "type": "p",
         "text": "Mara caminó hasta el monumento y retiró el vial de Elias de una pequeña cavidad ceremonial. No debía hacerlo. Miró alrededor y me lo entregó."
       },
       {
-        "type": "dialogue",
-        "who": "Mara",
-        "text": "Llévatelo."
+        "type": "speech",
+        "text": "—Llévatelo —dijo Mara al entregarme el vial.",
+        "who": "Mara"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Mara, esto pertenece a la necrópolis."
+        "type": "speech",
+        "text": "—Mara, esto pertenece a la necrópolis.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Mara",
-        "text": "No. Pertenece a Elias."
+        "type": "speech",
+        "text": "—No. Pertenece a Elias —respondió ella.",
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -4135,32 +4273,59 @@ const PART1_CHAPTERS = [
         "text": "Guardé el vial."
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Voy a volver."
+        "type": "speech",
+        "text": "—Voy a volver —prometí.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Mara",
-        "text": "No prometas cosas que no controlas."
+        "type": "speech",
+        "text": "—No prometas cosas que no controlas —dijo Mara.",
+        "who": "Mara"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Entonces voy a intentarlo."
+        "type": "speech",
+        "text": "—Entonces voy a intentarlo —respondí.",
+        "who": "Clancy"
       },
       {
         "type": "p",
         "text": "Mara me miró durante mucho tiempo."
       },
       {
-        "type": "dialogue",
-        "who": "Mara",
-        "text": "Eso sí te lo creo."
+        "type": "speech",
+        "text": "—Eso sí te lo creo —dijo ella.",
+        "who": "Mara"
       },
       {
         "type": "p",
         "text": "Nos despedimos sin abrazarnos. Si lo hacíamos, quizá ninguno de los dos sería capaz de irse."
+      },
+      {
+        "type": "p",
+        "text": "Di dos pasos."
+      },
+      {
+        "type": "p",
+        "text": "Mara sujetó el borde de mi manga. Sus dedos permanecieron allí apenas un segundo."
+      },
+      {
+        "type": "speech",
+        "text": "—Si vuelves —dijo—, vuelve porque elegiste algo. No porque ellos consigan traerte.",
+        "who": "Mara"
+      },
+      {
+        "type": "speech",
+        "text": "—Lo intentaré.",
+        "who": "Clancy"
+      },
+      {
+        "type": "speech",
+        "text": "—Eso ya lo dijiste.",
+        "who": "Mara"
+      },
+      {
+        "type": "p",
+        "text": "Me soltó antes de que la respuesta pudiera convertirse en otra promesa."
       },
       {
         "type": "p",
@@ -4203,133 +4368,133 @@ const PART1_CHAPTERS = [
         "text": "Sus manos estaban cubiertas de negro."
       },
       {
-        "type": "dialogue",
-        "who": "Nico",
-        "text": "Clancy. El joven que escribe."
+        "type": "speech",
+        "text": "—Clancy —dijo—. El joven que escribe.",
+        "who": "Nico"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Mi obispo."
+        "type": "speech",
+        "text": "—Mi obispo.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Nico",
-        "text": "No soy tu obispo."
+        "type": "speech",
+        "text": "—No soy tu obispo.",
+        "who": "Nico"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Todos los obispos son nuestros guías."
+        "type": "speech",
+        "text": "—Todos los obispos son nuestros guías.",
+        "who": "Clancy"
       },
       {
         "type": "p",
         "text": "Una sonrisa breve."
       },
       {
-        "type": "dialogue",
-        "who": "Nico",
-        "text": "Aprendiste bien."
+        "type": "speech",
+        "text": "—Aprendiste bien.",
+        "who": "Nico"
       },
       {
         "type": "p",
         "text": "Abrió el expediente."
       },
       {
-        "type": "dialogue",
-        "who": "Nico",
-        "text": "¿Dónde encontraste esta información?"
+        "type": "speech",
+        "text": "—¿Dónde encontraste esta información?",
+        "who": "Nico"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "En registros de rectificación."
+        "type": "speech",
+        "text": "—En registros de rectificación.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Nico",
-        "text": "Eso explica los nombres. No explica el mapa."
+        "type": "speech",
+        "text": "—Eso explica los nombres. No explica el mapa.",
+        "who": "Nico"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Me lo entregó Elias Venn antes de su Permanencia."
+        "type": "speech",
+        "text": "—Me lo entregó Elias Venn antes de su Permanencia.",
+        "who": "Clancy"
       },
       {
         "type": "p",
         "text": "Utilizar su nombre me hizo sentir enfermo, pero era la única conexión que podía sostenerse en los archivos."
       },
       {
-        "type": "dialogue",
-        "who": "Nico",
-        "text": "Elias Venn está muerto."
+        "type": "speech",
+        "text": "—Elias Venn está muerto.",
+        "who": "Nico"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Por eso no puede responder preguntas."
+        "type": "speech",
+        "text": "—Por eso no puede responder preguntas.",
+        "who": "Clancy"
       },
       {
         "type": "p",
         "text": "Nico inclinó la cabeza."
       },
       {
-        "type": "dialogue",
-        "who": "Nico",
-        "text": "¿Te parece gracioso?"
+        "type": "speech",
+        "text": "—¿Te parece gracioso?",
+        "who": "Nico"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "No."
+        "type": "speech",
+        "text": "—No.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Nico",
-        "text": "Entonces controla tu tono."
+        "type": "speech",
+        "text": "—Entonces controla tu tono.",
+        "who": "Nico"
       },
       {
         "type": "p",
-        "text": "El negro de su cuello parecía extenderse cuando hablaba. Sabía que era pintura. Lo había visto en fotografías de preparación ceremonial. Aun así, la sala se sentía más pequeña."
+        "text": "El negro de su cuello parecía extenderse cuando hablaba. Sabía que era pintura; había visto fotografías de preparación ceremonial. Aun así, cada respiración exigía más espacio del que la sala estaba dispuesta a concederme."
       },
       {
-        "type": "dialogue",
-        "who": "Nico",
-        "text": "Afirmas conocer la ubicación de un depósito. Sin embargo, nunca has salido de Dema."
+        "type": "speech",
+        "text": "—Afirmas conocer la ubicación de un depósito —continuó—. Sin embargo, nunca has salido de Dema.",
+        "who": "Nico"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Elias describió el camino desde la puerta oriental."
+        "type": "speech",
+        "text": "—Elias describió el camino desde la puerta oriental.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Nico",
-        "text": "Podrías señalarlo en un mapa."
+        "type": "speech",
+        "text": "—Podrías señalarlo en un mapa.",
+        "who": "Nico"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Los mapas no coinciden con el terreno."
+        "type": "speech",
+        "text": "—Los mapas no coinciden con el terreno.",
+        "who": "Clancy"
       },
       {
         "type": "p",
         "text": "Por primera vez dejó de pasar páginas."
       },
       {
-        "type": "dialogue",
-        "who": "Nico",
-        "text": "¿Quién te dijo eso?"
+        "type": "speech",
+        "text": "—¿Quién te dijo eso?",
+        "who": "Nico"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Lo comprobé."
+        "type": "speech",
+        "text": "—Lo comprobé.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Nico",
-        "text": "¿Con una brújula?"
+        "type": "speech",
+        "text": "—¿Con una brújula?",
+        "who": "Nico"
       },
       {
         "type": "p",
@@ -4340,24 +4505,24 @@ const PART1_CHAPTERS = [
         "text": "Nico cerró la carpeta."
       },
       {
-        "type": "dialogue",
-        "who": "Nico",
-        "text": "Keons ha sido demasiado tolerante contigo."
+        "type": "speech",
+        "text": "—Keons ha sido demasiado tolerante contigo.",
+        "who": "Nico"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "También ha insistido en que eres demasiado valioso para una corrección ordinaria."
+        "type": "speech",
+        "text": "—También ha insistido en que eres demasiado valioso para una corrección ordinaria.",
+        "who": "Nico"
       },
       {
-        "type": "dialogue",
-        "who": "Nico",
-        "text": "¿Valioso para qué?"
+        "type": "speech",
+        "text": "—¿Valioso para qué?",
+        "who": "Nico"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Eso es lo que todavía estamos averiguando."
+        "type": "speech",
+        "text": "—Eso es lo que todavía estamos averiguando.",
+        "who": "Nico"
       },
       {
         "type": "p",
@@ -4376,18 +4541,18 @@ const PART1_CHAPTERS = [
         "text": "Nico le entregó el expediente."
       },
       {
-        "type": "dialogue",
-        "who": "Nico",
-        "text": "Tu ciudadano asegura que existe una red de disidentes fuera del muro."
+        "type": "speech",
+        "text": "—Tu ciudadano asegura que existe una red de disidentes fuera del muro —dijo Nico a Keons.",
+        "who": "Nico"
       },
       {
         "type": "p",
         "text": "Keons revisó el sello que yo había falsificado. Su pulgar se detuvo sobre una línea. Si decía que era falso, todo terminaba."
       },
       {
-        "type": "dialogue",
-        "who": "Keons",
-        "text": "El sello es de mi oficina."
+        "type": "speech",
+        "text": "—El sello es de mi oficina —dijo Keons.",
+        "who": "Keons"
       },
       {
         "type": "p",
@@ -4402,24 +4567,24 @@ const PART1_CHAPTERS = [
         "text": "Nico lo observó."
       },
       {
-        "type": "dialogue",
-        "who": "Nico",
-        "text": "¿Autorizaste esta investigación?"
+        "type": "speech",
+        "text": "—¿Autorizaste esta investigación? —preguntó Nico.",
+        "who": "Nico"
       },
       {
-        "type": "dialogue",
-        "who": "Keons",
-        "text": "Autoricé la revisión de material confiscado. No su conclusión."
+        "type": "speech",
+        "text": "—Autoricé la revisión de material confiscado. No su conclusión —respondió Keons.",
+        "who": "Keons"
       },
       {
-        "type": "dialogue",
-        "who": "Nico",
-        "text": "Conveniente."
+        "type": "speech",
+        "text": "—Conveniente —dijo Nico.",
+        "who": "Nico"
       },
       {
-        "type": "dialogue",
-        "who": "Keons",
-        "text": "La competencia entre distritos vuelve conveniente cualquier descubrimiento."
+        "type": "speech",
+        "text": "—La competencia entre distritos vuelve conveniente cualquier descubrimiento —replicó Keons.",
+        "who": "Keons"
       },
       {
         "type": "p",
@@ -4430,37 +4595,37 @@ const PART1_CHAPTERS = [
         "text": "Keons dejó el expediente sobre la mesa."
       },
       {
-        "type": "dialogue",
-        "who": "Keons",
-        "text": "Si el depósito existe, debe ser retirado antes de que otro grupo lo encuentre."
+        "type": "speech",
+        "text": "—Si el depósito existe, debe ser retirado antes de que otro grupo lo encuentre —concluyó Keons.",
+        "who": "Keons"
       },
       {
-        "type": "dialogue",
-        "who": "Nico",
-        "text": "Estoy de acuerdo."
+        "type": "speech",
+        "text": "—Estoy de acuerdo —dijo Nico.",
+        "who": "Nico"
       },
       {
         "type": "p",
         "text": "Me miró."
       },
       {
-        "type": "dialogue",
-        "who": "Nico",
-        "text": "Nos llevarás."
+        "type": "speech",
+        "text": "—Nos llevarás —me ordenó Nico.",
+        "who": "Nico"
       },
       {
         "type": "p",
         "text": "El sueño regresó con tanta claridad que vi pétalos sobre la mesa."
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Sí, mi obispo."
+        "type": "speech",
+        "text": "—Sí, mi obispo.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Nico",
-        "text": "No soy tu obispo."
+        "type": "speech",
+        "text": "—No soy tu obispo —repitió.",
+        "who": "Nico"
       },
       {
         "type": "p",
@@ -4479,14 +4644,14 @@ const PART1_CHAPTERS = [
         "text": "No había otros acompañantes."
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "¿Usted conduce?"
+        "type": "speech",
+        "text": "—¿Usted conduce? —pregunté.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Nico",
-        "text": "No confío mi dirección a otros."
+        "type": "speech",
+        "text": "—No confío mi dirección a otros.",
+        "who": "Nico"
       },
       {
         "type": "p",
@@ -4529,29 +4694,29 @@ const PART1_CHAPTERS = [
         "text": "Nico me observó por el espejo."
       },
       {
-        "type": "dialogue",
-        "who": "Nico",
-        "text": "¿Decepcionado?"
+        "type": "speech",
+        "text": "—¿Decepcionado?",
+        "who": "Nico"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "No."
+        "type": "speech",
+        "text": "—No —respondí.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Nico",
-        "text": "El exterior suele ser menos interesante que las fantasías de quienes desean escapar."
+        "type": "speech",
+        "text": "—El exterior suele ser menos interesante que las fantasías de quienes desean escapar.",
+        "who": "Nico"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "No deseo escapar."
+        "type": "speech",
+        "text": "—No deseo escapar.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Nico",
-        "text": "Por supuesto que no."
+        "type": "speech",
+        "text": "—Por supuesto que no.",
+        "who": "Nico"
       },
       {
         "type": "p",
@@ -4578,8 +4743,9 @@ const PART1_CHAPTERS = [
         "text": "Nico no redujo la velocidad."
       },
       {
-        "type": "p",
-        "text": "Me agaché."
+        "type": "speech",
+        "text": "—Agáchate —murmuré para mí.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -4594,14 +4760,14 @@ const PART1_CHAPTERS = [
         "text": "Nico miró el tablero."
       },
       {
-        "type": "dialogue",
-        "who": "Nico",
-        "text": "¿Qué fue eso?"
+        "type": "speech",
+        "text": "—¿Qué fue eso?",
+        "who": "Nico"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Una piedra, quizá."
+        "type": "speech",
+        "text": "—Una piedra, quizá.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -4624,19 +4790,19 @@ const PART1_CHAPTERS = [
         "text": "Nico aceleró."
       },
       {
-        "type": "dialogue",
-        "who": "Nico",
-        "text": "¿Lo conoces?"
+        "type": "speech",
+        "text": "—¿Lo conoces?",
+        "who": "Nico"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "No."
+        "type": "speech",
+        "text": "—No —mentí.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Nico",
-        "text": "Mientes peor que antes."
+        "type": "speech",
+        "text": "—Mientes peor que antes.",
+        "who": "Nico"
       },
       {
         "type": "p",
@@ -4659,24 +4825,24 @@ const PART1_CHAPTERS = [
         "text": "Nico recuperó el control."
       },
       {
-        "type": "dialogue",
-        "who": "Nico",
-        "text": "¿Dónde está el depósito?"
+        "type": "speech",
+        "text": "—¿Dónde está el depósito?",
+        "who": "Nico"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Más adelante."
+        "type": "speech",
+        "text": "—Más adelante.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Nico",
-        "text": "No hay nada más adelante."
+        "type": "speech",
+        "text": "—No hay nada más adelante.",
+        "who": "Nico"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Entonces siga conduciendo."
+        "type": "speech",
+        "text": "—Entonces siga conduciendo.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -4715,9 +4881,9 @@ const PART1_CHAPTERS = [
         "text": "Nico logró regresar a la carretera."
       },
       {
-        "type": "dialogue",
-        "who": "Nico",
-        "text": "Siéntate."
+        "type": "speech",
+        "text": "—Siéntate —ordenó.",
+        "who": "Nico"
       },
       {
         "type": "p",
@@ -4749,16 +4915,15 @@ const PART1_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Nico abrió un poco los ojos. No parecía asustado. Parecía satisfecho."
-      },
-      {
-        "type": "dialogue",
-        "who": "Nico",
-        "text": "Así que Keons tenía razón."
+        "text": "Nico abrió un poco los ojos. No parecía asustado. Parecía satisfecho.\n—Así que Keons tenía razón —murmuró."
       },
       {
         "type": "p",
         "text": "Entonces la batería golpeó otra vez."
+      },
+      {
+        "type": "p",
+        "text": "La presión desapareció."
       },
       {
         "type": "p",
@@ -4778,7 +4943,7 @@ const PART1_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Durante unos segundos no escuché nada."
+        "text": "Durante unos segundos solo escuché un pitido dentro del cráneo. Tenía vidrio en el cabello, sangre tibia detrás de una oreja y el hombro derecho convertido en una punzada que llegaba hasta los dedos."
       },
       {
         "type": "p",
@@ -4794,16 +4959,16 @@ const PART1_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Abrí la puerta y caí sobre la carretera. El aire exterior me golpeó el rostro. Tosí y me arrastré lejos del vehículo."
+        "text": "Abrí la puerta y caí sobre la carretera. El aire exterior me golpeó el rostro con olor a combustible, tierra y hierba quemada. Tosí hasta sentir sabor metálico y me arrastré lejos del vehículo usando el brazo que todavía obedecía."
       },
       {
         "type": "p",
         "text": "Las puntas de mis dedos estaban negras. Las froté contra la tierra y el color desapareció como hollín, aunque todavía no había tocado el fuego."
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Nico."
+        "type": "speech",
+        "text": "—Nico —dije.",
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -4834,172 +4999,177 @@ const PART1_CHAPTERS = [
         "text": "El desconocido llegó corriendo con una mochila al hombro."
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "¿Estás herido?"
+        "type": "speech",
+        "text": "—¿Estás herido?",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "No lo sé."
+        "type": "speech",
+        "text": "—No lo sé.",
+        "who": "Clancy"
       },
       {
         "type": "p",
         "text": "Primero revisó mis ojos y la piel de mi cuello. Solo después comprobó mi frente y mis brazos."
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "¿Por qué el cuello?"
+        "type": "speech",
+        "text": "—¿Por qué el cuello? —pregunté.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Porque quería asegurarme de que sigues siendo tú."
+        "type": "speech",
+        "text": "—Porque quería asegurarme de que sigues siendo tú —respondió el desconocido, sin explicar nada más.",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "¿Cómo hiciste eso?"
+        "type": "speech",
+        "text": "—Puedes caminar.",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "La carretera tiene puntos ciegos. El auto tenía piezas viejas. Y Nico estaba demasiado ocupado mirándote."
+        "type": "speech",
+        "text": "—¿Cómo hiciste eso?",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Apareciste cuatro veces."
+        "type": "speech",
+        "text": "—La carretera tiene puntos ciegos. El auto tenía piezas viejas. Y Nico estaba demasiado ocupado mirándote.",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Había más de una batería."
+        "type": "speech",
+        "text": "—Apareciste cuatro veces.",
+        "who": "Clancy"
+      },
+      {
+        "type": "speech",
+        "text": "—Había más de una batería.",
+        "who": "Desconocido"
       },
       {
         "type": "p",
         "text": "Miré hacia atrás. En la distancia distinguí estructuras pequeñas escondidas junto al camino. Mecanismos, quizá. Espejos. No estaba seguro."
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "¿Dónde está Nico?"
+        "type": "speech",
+        "text": "—¿Dónde está Nico?",
+        "who": "Clancy"
       },
       {
         "type": "p",
         "text": "El desconocido observó las huellas."
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Cerca."
+        "type": "speech",
+        "text": "—Cerca.",
+        "who": "Desconocido"
       },
       {
         "type": "p",
         "text": "Sacó una prenda gris verdosa de la mochila. Era resistente, con capucha y correas para ajustar el cuello."
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Póntela."
+        "type": "speech",
+        "text": "—Póntela.",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "¿Qué es?"
+        "type": "speech",
+        "text": "—¿Qué es?",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Protección."
+        "type": "speech",
+        "text": "—Protección.",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "¿Contra él?"
+        "type": "speech",
+        "text": "—¿Contra él?",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Contra la idea de que estás solo cuando él te encuentre."
+        "type": "speech",
+        "text": "—Contra la idea de que estás solo cuando él te encuentre.",
+        "who": "Desconocido"
       },
       {
         "type": "p",
         "text": "Me puse la prenda sobre el uniforme. Después me entregó agua, una venda y un mapa incompleto."
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Sigue el valle hasta que veas una pared de piedra dividida en dos. No tomes la ruta baja. La tierra allí conserva las huellas."
+        "type": "speech",
+        "text": "—Sigue el valle hasta que veas una pared de piedra dividida en dos. No tomes la ruta baja. La tierra allí conserva las huellas.",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Ven conmigo."
+        "type": "speech",
+        "text": "—Ven conmigo.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Tengo que borrar esto y desviar a quienes salgan de Dema."
+        "type": "speech",
+        "text": "—Tengo que borrar esto y desviar a quienes salgan de Dema.",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Van a capturarte."
+        "type": "speech",
+        "text": "—Van a capturarte.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Han intentado antes."
+        "type": "speech",
+        "text": "—Han intentado antes.",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Ni siquiera sé cómo llamarte."
+        "type": "speech",
+        "text": "—Ni siquiera sé cómo llamarte.",
+        "who": "Clancy"
       },
       {
         "type": "p",
         "text": "El desconocido miró el automóvil ardiendo. Las llamas se reflejaron en sus ojos."
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Algunos me llaman Torchbearer."
+        "type": "speech",
+        "text": "—Algunos me llaman Torchbearer.",
+        "who": "Desconocido"
       },
       {
         "type": "p",
         "text": "La palabra me devolvió a las historias de infancia."
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Pensé que era un mito."
+        "type": "speech",
+        "text": "—Pensé que era un mito.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Los mitos son nombres que sobreviven cuando las personas no pueden hacerlo en público."
+        "type": "speech",
+        "text": "—Los mitos son nombres que sobreviven cuando las personas no pueden hacerlo en público.",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "¿Hay más como tú?"
+        "type": "speech",
+        "text": "—¿Hay más como tú?",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Sigue el valle."
+        "type": "speech",
+        "text": "—Sigue el valle.",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "Eso no responde."
+        "type": "speech",
+        "text": "—Eso no responde.",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Todavía no has hecho la pregunta correcta."
+        "type": "speech",
+        "text": "—Todavía no has hecho la pregunta correcta —respondió.",
+        "who": "Desconocido"
       },
       {
         "type": "p",
@@ -5014,19 +5184,19 @@ const PART1_CHAPTERS = [
         "text": "Torchbearer me empujó hacia el camino de tierra."
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Vete, Clancy."
+        "type": "speech",
+        "text": "—Vete, Clancy.",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "¿Cómo sabes mi nombre desde el principio?"
+        "type": "speech",
+        "text": "—¿Cómo sabes mi nombre desde el principio?",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Porque tus cartas llegaron más lejos de lo que piensas."
+        "type": "speech",
+        "text": "—Porque tus cartas llegaron más lejos de lo que piensas.",
+        "who": "Desconocido"
       },
       {
         "type": "p",
@@ -5037,42 +5207,42 @@ const PART1_CHAPTERS = [
         "text": "Di varios pasos y me detuve."
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "¿Y si me pierdo?"
+        "type": "speech",
+        "text": "—¿Y si me pierdo?",
+        "who": "Clancy"
       },
       {
         "type": "p",
         "text": "Torchbearer recogió las baquetas."
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Di Sahlo Folina."
+        "type": "speech",
+        "text": "—Di Sahlo Folina.",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "¿Qué significa?"
+        "type": "speech",
+        "text": "—¿Qué significa?",
+        "who": "Clancy"
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Que necesitas que alguien te encuentre."
+        "type": "speech",
+        "text": "—Que necesitas que alguien te encuentre.",
+        "who": "Desconocido"
       },
       {
-        "type": "dialogue",
-        "who": "Clancy",
-        "text": "¿Alguien va a responder?"
+        "type": "speech",
+        "text": "—¿Alguien va a responder?",
+        "who": "Clancy"
       },
       {
         "type": "p",
         "text": "Se colocó una cinta amarilla alrededor del brazo."
       },
       {
-        "type": "dialogue",
-        "who": "Desconocido",
-        "text": "Alguien siempre responde. A veces tarda."
+        "type": "speech",
+        "text": "—Alguien siempre responde. A veces tarda.",
+        "who": "Desconocido"
       },
       {
         "type": "p",
@@ -5104,7 +5274,7 @@ const PART1_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Desde afuera parecía pequeño."
+        "text": "Desde afuera el muro no era pequeño. Era medible. Esa diferencia bastó para quebrar algo que Dema había presentado como infinito."
       },
       {
         "type": "p",
@@ -5153,9 +5323,17 @@ const PART1_CHAPTERS = [
       {
         "type": "p",
         "text": "En algún punto detrás de las montañas, un tambor respondió una sola vez."
+      },
+      {
+        "type": "epigraph",
+        "text": "EL COLOR QUE NO PUEDEN VER",
+        "attr": ""
+      },
+      {
+        "type": "scene",
+        "text": "· · ·"
       }
-    ],
-    "part": 1
+    ]
   }
 ];
 
