@@ -14,6 +14,7 @@ window.SAHLO_CONTENT_ROUTES = Object.freeze([
 window.SAHLO_SITE_ROUTES = Object.freeze({
   home: "/inicio",
   library: "/biblioteca",
+  about: "/sobre",
   indexPrefix: "/indice/parte-",
   readerPrefix: "/leer/",
 });

@@ -114,6 +114,7 @@
   const SITE_ROUTES = window.SAHLO_SITE_ROUTES || Object.freeze({
     home: "/inicio",
     library: "/biblioteca",
+    about: "/sobre",
     indexPrefix: "/indice/parte-",
     readerPrefix: "/leer/",
   });
@@ -134,7 +135,7 @@
     }
   };
 
-  const VIEW_IDS = Object.freeze(["view-cover", "view-toc", "view-library", "view-reader"]);
+  const VIEW_IDS = Object.freeze(["view-cover", "view-toc", "view-library", "view-about", "view-reader"]);
   const $ = (selector, root = document) => root.querySelector(selector);
   const $$ = (selector, root = document) => Array.from(root.querySelectorAll(selector));
   let lastFocusedElement = null;
@@ -1209,6 +1210,19 @@
     }
   }
 
+  function goToAbout(options = {}) {
+    document.title = "Sobre la obra — Sahlo Folina";
+    show("view-about", options);
+    if (options.updateRoute !== false) {
+      writeRoute(SITE_ROUTES.about, { replace: Boolean(options.replaceRoute) });
+    }
+  }
+
+  function goToDisclaimer() {
+    const disclaimerIndex = window.CHAPTERS.findIndex((chapter) => chapter.id === "disclaimer");
+    if (disclaimerIndex >= 0) goToReader(disclaimerIndex, { resetScroll: true });
+  }
+
   function goToReader(index, options = {}) {
     if (index < 0 || index >= window.CHAPTERS.length) return;
     const previousChapter = window.CHAPTERS[state.lastChapter];
@@ -1306,6 +1320,12 @@
     if (segments[0] === "biblioteca") {
       goToLibrary({ updateRoute: false, instant: initial });
       if (window.location.hash) writeRoute(SITE_ROUTES.library, { replace: true });
+      return;
+    }
+
+    if (segments[0] === "sobre") {
+      goToAbout({ updateRoute: false, instant: initial });
+      if (window.location.hash) writeRoute(SITE_ROUTES.about, { replace: true });
       return;
     }
 
@@ -1655,9 +1675,20 @@
       button.setAttribute("aria-pressed", String(isActive));
       const status = $(".arc-status", button);
       if (status) {
-        status.textContent = sectionId === 0
-          ? `${partChapterIndexes(5).length} entradas`
-          : count ? `${count} integrado${count === 1 ? "" : "s"}` : "Índice preparado";
+        const sectionIndexes = partChapterIndexes(5).filter((index) => (
+          chapterSection(window.CHAPTERS[index]) === sectionId
+        ));
+        const readCount = new Set(
+          state.readChapters.filter((index) => sectionIndexes.includes(index))
+        ).size;
+        const range = PART5_SECTIONS[String(sectionId)]?.range || `${count} capítulos disponibles`;
+        if (sectionId === -1) {
+          status.textContent = readCount ? "Prólogo leído" : "Prólogo disponible";
+        } else if (readCount > 0) {
+          status.textContent = `${readCount} de ${count} leídos`;
+        } else {
+          status.textContent = range;
+        }
       }
     });
   }
@@ -1668,6 +1699,7 @@
     $("#stat-progress").textContent = `${progress}%`;
     $("#cover-progress-bar").style.width = `${progress}%`;
     const resumeChapter = window.CHAPTERS[state.lastNarrativeChapter];
+    $("#resume-context-label").textContent = state.hasStarted ? "Continúa desde" : "Tu primera lectura";
     $("#stat-last").textContent = state.hasStarted && resumeChapter
       ? `${resumeChapter.number} · ${resumeChapter.title}`
       : "Aún no comenzaste";
@@ -1866,6 +1898,12 @@
       case "goto-library":
         goToLibrary();
         break;
+      case "goto-about":
+        goToAbout();
+        break;
+      case "goto-disclaimer":
+        goToDisclaimer();
+        break;
       case "back-cover":
         goToCover();
         break;
@@ -2040,7 +2078,7 @@
     const secureContext = location.protocol === "https:" || ["localhost", "127.0.0.1"].includes(location.hostname);
     if (!secureContext) return;
     const register = () => navigator.serviceWorker
-      .register("./sw.js?v=20260730-part5-map-heroes-r12")
+      .register("./sw.js?v=20260730-gradient-r14")
       .catch((error) => console.warn("No se pudo registrar la caché offline.", error));
     if ("requestIdleCallback" in window) {
       window.requestIdleCallback(register, { timeout: 3000 });

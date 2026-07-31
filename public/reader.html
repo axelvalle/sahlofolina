@@ -9,8 +9,26 @@
     <title>Sahlo Folina — Una historia de Trench</title>
     <meta
       name="description"
-      content="Lectura novelada de la saga Trench. Una historia de Dema, Clancy, los Banditos y el Torchbearer."
+      content="Sahlo Folina es una novelización fan gratuita del universo narrativo de Dema, Clancy, Trench y los Banditos."
     />
+    <meta name="application-name" content="Sahlo Folina" />
+    <meta name="author" content="a.bandito" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://sahlofolina.vercel.app/inicio" />
+    <meta property="og:locale" content="es_NI" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Sahlo Folina" />
+    <meta property="og:title" content="Sahlo Folina — Una historia de Trench" />
+    <meta property="og:description" content="Una novelización fan gratuita del universo narrativo de Dema, Clancy, Trench y los Banditos." />
+    <meta property="og:url" content="https://sahlofolina.vercel.app/inicio" />
+    <meta property="og:image" content="https://sahlofolina.vercel.app/assets/social/sahlo-folina-og.webp" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Sahlo Folina, novelización fan del universo narrativo de Trench" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Sahlo Folina — Una historia de Trench" />
+    <meta name="twitter:description" content="Una novelización fan gratuita del universo narrativo de Dema, Clancy, Trench y los Banditos." />
+    <meta name="twitter:image" content="https://sahlofolina.vercel.app/assets/social/sahlo-folina-og.webp" />
     <meta
       http-equiv="Content-Security-Policy"
       content="default-src 'self'; base-uri 'self'; connect-src 'self'; font-src 'self' https://fonts.gstatic.com; form-action 'self'; img-src 'self' data:; object-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; upgrade-insecure-requests"
@@ -27,13 +45,13 @@
     <link rel="preload" as="image" href="./assets/parte-5/parte-v-mapa.webp" />
     <link rel="preload" as="image" href="./assets/parte-5/indice-voldsoy.webp" />
     <link rel="preload" as="image" href="./assets/parte-5/arco-1-indice.webp" />
-    <link rel="stylesheet" href="./styles.css?v=20260730-part5-map-heroes-r12" />
+    <link rel="stylesheet" href="./styles.css?v=20260730-gradient-r14" />
   </head>
   <body>
     <main id="view-cover" class="view view-cover is-active">
       <div class="cover-shell">
         <header class="brand-row">
-          <a class="brand" href="/inicio" data-action="back-cover" aria-label="Ir a la portada">
+          <a class="brand" href="/inicio" data-action="back-cover" aria-label="Ir al inicio">
             <img
               class="brand-icon"
               src="./assets/twenty-one-pilots-icon.webp"
@@ -42,10 +60,11 @@
               height="40"
               aria-hidden="true"
             />
-            <span>Twenty One Pilots</span>
+            <span>Sahlo Folina</span>
           </a>
           <nav class="site-links" aria-label="Navegación principal">
             <button class="site-link" type="button" data-action="goto-library">Biblioteca</button>
+            <button class="site-link" type="button" data-action="goto-about">Sobre</button>
             <button class="site-link site-preferences" type="button" data-action="toggle-settings" aria-label="Abrir preferencias">
               <span aria-hidden="true">Aa</span>
             </button>
@@ -74,7 +93,7 @@
               <span id="cover-progress-bar"></span>
             </div>
             <div class="resume-info">
-              <span>Último capítulo</span>
+              <span id="resume-context-label">Tu primera lectura</span>
               <strong id="stat-last">Aún no comenzaste</strong>
             </div>
             <div class="cover-actions">
@@ -108,6 +127,7 @@
             <button class="text-btn" data-action="back-cover">← Portada</button>
             <div class="page-tools-actions">
               <button class="text-btn text-link" type="button" data-action="goto-library">Biblioteca</button>
+              <button class="text-btn text-link" type="button" data-action="goto-about">Sobre</button>
               <button class="index-preferences" type="button" data-action="toggle-settings" aria-label="Abrir preferencias">
                 <span aria-hidden="true">Aa</span>
               </button>
@@ -149,7 +169,7 @@
                 <strong>The Outside</strong>
                 <em>Prólogo independiente</em>
               </span>
-              <span class="arc-status">1 integrado</span>
+              <span class="arc-status">Prólogo disponible</span>
             </button>
             <button type="button" data-action="switch-part5-section" data-section="1" aria-pressed="false">
               <span class="arc-index">I</span>
@@ -158,7 +178,7 @@
                 <strong>El regreso imposible</strong>
                 <em>Capítulos 32–34</em>
               </span>
-              <span class="arc-status">3 integrados</span>
+              <span class="arc-status">Capítulos 32–34</span>
             </button>
             <button type="button" data-action="switch-part5-section" data-section="2" aria-pressed="false">
               <span class="arc-index">II</span>
@@ -167,7 +187,7 @@
                 <strong>El peso de Clancy</strong>
                 <em>Capítulos 35–38</em>
               </span>
-              <span class="arc-status">4 integrados</span>
+              <span class="arc-status">Capítulos 35–38</span>
             </button>
             <button type="button" data-action="switch-part5-section" data-section="3" aria-pressed="false">
               <span class="arc-index">III</span>
@@ -176,7 +196,7 @@
                 <strong>La brecha</strong>
                 <em>Capítulos 39–41</em>
               </span>
-              <span class="arc-status">3 integrados</span>
+              <span class="arc-status">Capítulos 39–41</span>
             </button>
           </nav>
 
@@ -192,6 +212,18 @@
           <blockquote id="toc-quote">“Recordar que alguna vez elegiste algo.”</blockquote>
           <cite id="toc-quote-by">— El hombre de las tuberías</cite>
         </footer>
+
+        <footer class="site-footer" aria-label="Información del sitio">
+          <div class="site-footer-brand">
+            <strong>Sahlo Folina</strong>
+            <span>Novelización fan gratuita · 2026</span>
+          </div>
+          <nav class="site-footer-nav" aria-label="Enlaces editoriales">
+            <button type="button" data-action="goto-library">Biblioteca</button>
+            <button type="button" data-action="goto-about">Sobre la obra</button>
+            <button type="button" data-action="goto-disclaimer">Aviso legal</button>
+          </nav>
+        </footer>
       </div>
     </section>
 
@@ -205,6 +237,7 @@
           <nav class="library-navigation" aria-label="Navegación de la biblioteca">
             <button type="button" data-action="back-cover">Inicio</button>
             <button type="button" data-action="goto-toc">Índice</button>
+            <button type="button" data-action="goto-about">Sobre</button>
           </nav>
         </header>
 
@@ -238,9 +271,96 @@
           </p>
         </aside>
 
-        <footer class="library-footer">
-          <p>Obra fan no oficial · Descarga gratuita · Prohibida su venta.</p>
-          <button type="button" data-action="start">Continuar leyendo →</button>
+        <footer class="site-footer library-site-footer" aria-label="Información del sitio">
+          <div class="site-footer-brand">
+            <strong>Sahlo Folina</strong>
+            <span>Obra fan no oficial · Descarga gratuita · Prohibida su venta.</span>
+          </div>
+          <nav class="site-footer-nav" aria-label="Enlaces editoriales">
+            <button type="button" data-action="start">Continuar lectura</button>
+            <button type="button" data-action="goto-about">Sobre la obra</button>
+            <button type="button" data-action="goto-disclaimer">Aviso legal</button>
+          </nav>
+        </footer>
+      </div>
+    </section>
+
+    <section id="view-about" class="view view-about" hidden aria-labelledby="about-title">
+      <div class="about-shell">
+        <header class="about-header">
+          <button class="library-brand" type="button" data-action="back-cover" aria-label="Volver al inicio">
+            <img src="./assets/twenty-one-pilots-icon.webp" alt="" width="40" height="40" aria-hidden="true" />
+            <span>Sahlo Folina</span>
+          </button>
+          <nav class="about-navigation" aria-label="Navegación de Sobre la obra">
+            <button type="button" data-action="back-cover">Inicio</button>
+            <button type="button" data-action="goto-toc">Índice</button>
+            <button type="button" data-action="goto-library">Biblioteca</button>
+          </nav>
+        </header>
+
+        <div class="about-main">
+          <header class="about-hero">
+            <p class="eyebrow"><span aria-hidden="true"></span> Acerca del proyecto</p>
+            <h1 id="about-title">Sobre la obra</h1>
+            <p>
+              <strong>Sahlo Folina</strong> es una novelización fan gratuita que transforma la documentación narrativa de Dema, Trench y Clancy en una historia continua, organizada para leerse como una saga editorial.
+            </p>
+          </header>
+
+          <div class="about-grid">
+            <article class="about-card">
+              <span>01</span>
+              <h2>Qué es Sahlo Folina</h2>
+              <p>
+                La obra reconstruye los acontecimientos del universo narrativo de Twenty One Pilots mediante capítulos, interludios, documentos internos y recursos visuales. Su propósito no es sustituir el material oficial, sino ofrecer una lectura literaria coherente para quienes desean recorrer el lore como una sola historia.
+              </p>
+            </article>
+            <article class="about-card">
+              <span>02</span>
+              <h2>Canon, interpretación y fanon</h2>
+              <p>
+                La base procede de cartas, videos, letras, material de DMA ORG y otras fuentes oficiales. Cuando el canon deja espacios abiertos, la narración utiliza interpretación editorial y elementos fanon para enlazar escenas, desarrollar personajes y conservar la continuidad. Esos añadidos forman parte de esta versión novelada, no del canon oficial.
+              </p>
+            </article>
+            <article class="about-card">
+              <span>03</span>
+              <h2>Cómo está organizada</h2>
+              <p>
+                La saga se divide en partes que corresponden a etapas narrativas distintas. Cada parte posee su propia identidad visual, índice y paleta de lectura. La Parte V se organiza además en un prólogo independiente y tres arcos, permitiendo recorrer una sección extensa sin perder la posición ni el sentido de progresión.
+              </p>
+            </article>
+            <article class="about-card">
+              <span>04</span>
+              <h2>Una experiencia de lectura</h2>
+              <p>
+                El website conserva el progreso local, permite continuar desde el último capítulo y ofrece preferencias de tamaño, ancho, tipografía, tema y animaciones. Los manuscritos publicados también pueden descargarse gratuitamente desde la Biblioteca para lectura personal en PDF o Word.
+              </p>
+            </article>
+          </div>
+
+          <aside class="about-note">
+            <p class="about-note-kicker">Autoría y carácter gratuito</p>
+            <p>
+              Novelización, edición y continuidad por <strong>a.bandito</strong>. Sahlo Folina es una obra fan no oficial, sin afiliación ni aprobación de Twenty One Pilots o de sus representantes. No se vende y se prohíbe su comercialización. Todos los elementos oficiales pertenecen a sus respectivos titulares.
+            </p>
+            <div class="about-actions">
+              <button class="btn btn-primary" type="button" data-action="start">Comenzar o continuar lectura</button>
+              <button class="btn btn-secondary" type="button" data-action="goto-disclaimer">Leer aviso legal completo</button>
+            </div>
+          </aside>
+        </div>
+
+        <footer class="site-footer" aria-label="Información del sitio">
+          <div class="site-footer-brand">
+            <strong>Sahlo Folina</strong>
+            <span>Novelización fan gratuita · 2026</span>
+          </div>
+          <nav class="site-footer-nav" aria-label="Enlaces editoriales">
+            <button type="button" data-action="goto-toc">Índice</button>
+            <button type="button" data-action="goto-library">Biblioteca</button>
+            <button type="button" data-action="goto-disclaimer">Aviso legal</button>
+          </nav>
         </footer>
       </div>
     </section>
@@ -368,15 +488,15 @@
     </aside>
     <div class="overlay" id="overlay" hidden></div>
 
-    <script defer src="./content/framework/runtime.js?v=20260730-part5-map-heroes-r12"></script>
-    <script defer src="./content/framework/routes.js?v=20260730-part5-map-heroes-r12"></script>
-    <script defer src="./content/parte-1/parte1.runtime.js?v=20260730-part5-map-heroes-r12"></script>
-    <script defer src="./content/parte-2/parte2.runtime.js?v=20260730-part5-map-heroes-r12"></script>
-    <script defer src="./content/parte-3/parte3.runtime.js?v=20260730-part5-map-heroes-r12"></script>
-    <script defer src="./content/parte-4/parte4.runtime.js?v=20260730-part5-map-heroes-r12"></script>
-    <script defer src="./content/parte-5/parte5.runtime.js?v=20260730-part5-map-heroes-r12"></script>
-    <script defer src="./content/extras/extras.runtime.js?v=20260730-part5-map-heroes-r12"></script>
-    <script defer src="./library.js?v=20260730-part5-map-heroes-r12"></script>
-    <script defer src="./app.js?v=20260730-part5-map-heroes-r12"></script>
+    <script defer src="./content/framework/runtime.js?v=20260730-gradient-r14"></script>
+    <script defer src="./content/framework/routes.js?v=20260730-gradient-r14"></script>
+    <script defer src="./content/parte-1/parte1.runtime.js?v=20260730-gradient-r14"></script>
+    <script defer src="./content/parte-2/parte2.runtime.js?v=20260730-gradient-r14"></script>
+    <script defer src="./content/parte-3/parte3.runtime.js?v=20260730-gradient-r14"></script>
+    <script defer src="./content/parte-4/parte4.runtime.js?v=20260730-gradient-r14"></script>
+    <script defer src="./content/parte-5/parte5.runtime.js?v=20260730-gradient-r14"></script>
+    <script defer src="./content/extras/extras.runtime.js?v=20260730-gradient-r14"></script>
+    <script defer src="./library.js?v=20260730-gradient-r14"></script>
+    <script defer src="./app.js?v=20260730-gradient-r14"></script>
   </body>
 </html>

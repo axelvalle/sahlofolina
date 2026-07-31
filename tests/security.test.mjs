@@ -370,3 +370,19 @@ test("security headers remain enabled for Next and Cloudflare", async () => {
   assert.match(nextConfig, /SECURITY_HEADERS/);
   assert.match(worker, /SECURITY_HEADERS/);
 });
+
+
+test("the public shell exposes editorial identity, About page and share metadata", async () => {
+  const html = await read("index.html");
+  const app = await read("app.js");
+  assert.match(html, /id="view-about"/);
+  assert.match(html, /data-action="goto-about"/);
+  assert.match(html, /property="og:title" content="Sahlo Folina/);
+  assert.match(html, /name="twitter:card" content="summary_large_image"/);
+  assert.match(html, /assets\/social\/sahlo-folina-og\.webp/);
+  assert.match(html, /<span>Sahlo Folina<\/span>/);
+  assert.doesNotMatch(html, /integrado(?:s)?<\/span>/);
+  assert.match(app, /function goToAbout/);
+  assert.match(app, /Continúa desde/);
+  assert.match(app, /Prólogo disponible/);
+});

@@ -12,6 +12,7 @@ const nextConfig: NextConfig = {
       "/",
       "/inicio",
       "/biblioteca",
+      "/sobre",
       "/indice",
       "/indice/:part",
       "/indice/:part/:arc",
@@ -37,11 +38,11 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/content/:path*",
-        headers: [{ key: "Cache-Control", value: "public, max-age=3600, stale-while-revalidate=86400" }],
+        headers: [{ key: "Cache-Control", value: "public, max-age=31536000, immutable" }],
       },
       ...["/app.js", "/library.js", "/styles.css"].map((source) => ({
         source,
-        headers: [{ key: "Cache-Control", value: "public, max-age=3600, stale-while-revalidate=86400" }],
+        headers: [{ key: "Cache-Control", value: "public, max-age=31536000, immutable" }],
       })),
     ];
   },

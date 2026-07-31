@@ -1,16 +1,17 @@
-const CACHE_VERSION = "sahlo-folina-part5-map-heroes-r12";
+const CACHE_VERSION = "sahlo-folina-gradient-r14";
 const SHELL_CACHE = `${CACHE_VERSION}-shell`;
 const RUNTIME_CACHE = `${CACHE_VERSION}-runtime`;
 const CORE = [
   "/index.html",
-  "/styles.css?v=20260730-part5-map-heroes-r12",
-  "/app.js?v=20260730-part5-map-heroes-r12",
-  "/library.js?v=20260730-part5-map-heroes-r12",
-  "/content/framework/runtime.js?v=20260730-part5-map-heroes-r12",
-  "/content/framework/routes.js?v=20260730-part5-map-heroes-r12",
-  "/content/parte-5/parte5.runtime.js?v=20260730-part5-map-heroes-r12",
+  "/styles.css?v=20260730-gradient-r14",
+  "/app.js?v=20260730-gradient-r14",
+  "/library.js?v=20260730-gradient-r14",
+  "/content/framework/runtime.js?v=20260730-gradient-r14",
+  "/content/framework/routes.js?v=20260730-gradient-r14",
+  "/content/parte-5/parte5.runtime.js?v=20260730-gradient-r14",
   "/assets/twenty-one-pilots-icon.webp",
   "/assets/cover-dema.webp",
+  "/assets/social/sahlo-folina-og.webp",
   "/assets/cover-trench.webp",
   "/assets/cover-sai parte 3.webp",
   "/assets/parte-4/dema-nocturna.webp",
