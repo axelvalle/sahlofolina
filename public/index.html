@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <base href="/" />
     <meta name="theme-color" content="#0b0c0a" />
     <link rel="icon" type="image/webp" href="./assets/twenty-one-pilots-icon.webp" />
     <title>Sahlo Folina — Una historia de Trench</title>
@@ -22,13 +23,17 @@
       rel="stylesheet"
     />
     <link rel="preload" as="image" href="./assets/cover-dema.webp" fetchpriority="high" />
-    <link rel="stylesheet" href="./styles.css?v=20260729-performance-r1" />
+    <link rel="preload" as="image" href="./assets/parte-4/habitacion-azul.webp" />
+    <link rel="preload" as="image" href="./assets/parte-5/parte-v-mapa.webp" />
+    <link rel="preload" as="image" href="./assets/parte-5/indice-voldsoy.webp" />
+    <link rel="preload" as="image" href="./assets/parte-5/arco-1-indice.webp" />
+    <link rel="stylesheet" href="./styles.css?v=20260730-part5-map-heroes-r12" />
   </head>
   <body>
     <main id="view-cover" class="view view-cover is-active">
       <div class="cover-shell">
         <header class="brand-row">
-          <a class="brand" href="#" data-action="back-cover" aria-label="Ir a la portada">
+          <a class="brand" href="/inicio" data-action="back-cover" aria-label="Ir a la portada">
             <img
               class="brand-icon"
               src="./assets/twenty-one-pilots-icon.webp"
@@ -95,6 +100,7 @@
         <div class="toc-backdrop" data-part="2"></div>
         <div class="toc-backdrop" data-part="3"></div>
         <div class="toc-backdrop" data-part="4"></div>
+        <div class="toc-backdrop" data-part="5"></div>
       </div>
       <div class="page-shell">
         <header class="page-header">
@@ -129,7 +135,51 @@
               <span>Parte IV</span>
               <strong>Los que se quedaron</strong>
             </button>
+            <button type="button" data-action="switch-part" data-part="5" aria-pressed="false">
+              <span>Parte V</span>
+              <strong>La brecha</strong>
+            </button>
           </nav>
+
+          <nav id="part5-arc-switcher" class="arc-switcher part5-section-switcher" aria-label="Navegar por la Parte V" hidden>
+            <button type="button" data-action="switch-part5-section" data-section="-1" aria-pressed="false">
+              <span class="arc-index">P</span>
+              <span class="arc-copy">
+                <small>Sobrevivir</small>
+                <strong>The Outside</strong>
+                <em>Prólogo independiente</em>
+              </span>
+              <span class="arc-status">1 integrado</span>
+            </button>
+            <button type="button" data-action="switch-part5-section" data-section="1" aria-pressed="false">
+              <span class="arc-index">I</span>
+              <span class="arc-copy">
+                <small>Volver</small>
+                <strong>El regreso imposible</strong>
+                <em>Capítulos 32–34</em>
+              </span>
+              <span class="arc-status">3 integrados</span>
+            </button>
+            <button type="button" data-action="switch-part5-section" data-section="2" aria-pressed="false">
+              <span class="arc-index">II</span>
+              <span class="arc-copy">
+                <small>Decidir</small>
+                <strong>El peso de Clancy</strong>
+                <em>Capítulos 35–38</em>
+              </span>
+              <span class="arc-status">4 integrados</span>
+            </button>
+            <button type="button" data-action="switch-part5-section" data-section="3" aria-pressed="false">
+              <span class="arc-index">III</span>
+              <span class="arc-copy">
+                <small>Atravesar</small>
+                <strong>La brecha</strong>
+                <em>Capítulos 39–41</em>
+              </span>
+              <span class="arc-status">3 integrados</span>
+            </button>
+          </nav>
+
           <div class="toc-summary" aria-label="Resumen de progreso">
             <span id="toc-progress">0 de 0 leídos</span>
             <div class="summary-track" aria-hidden="true"><i id="toc-progress-bar"></i></div>
@@ -318,14 +368,15 @@
     </aside>
     <div class="overlay" id="overlay" hidden></div>
 
-    <script defer src="./content/framework/runtime.js?v=20260729-performance-r1"></script>
-    <script defer src="./content/framework/routes.js?v=20260729-performance-r1"></script>
-    <script defer src="./content/parte-1/parte1.runtime.js?v=20260729-performance-r1"></script>
-    <script defer src="./content/parte-2/parte2.runtime.js?v=20260729-performance-r1"></script>
-    <script defer src="./content/parte-3/parte3.runtime.js?v=20260729-performance-r1"></script>
-    <script defer src="./content/parte-4/parte4.runtime.js?v=20260729-performance-r1"></script>
-    <script defer src="./content/extras/extras.runtime.js?v=20260729-performance-r1"></script>
-    <script defer src="./library.js?v=20260729-performance-r1"></script>
-    <script defer src="./app.js?v=20260729-performance-r1"></script>
+    <script defer src="./content/framework/runtime.js?v=20260730-part5-map-heroes-r12"></script>
+    <script defer src="./content/framework/routes.js?v=20260730-part5-map-heroes-r12"></script>
+    <script defer src="./content/parte-1/parte1.runtime.js?v=20260730-part5-map-heroes-r12"></script>
+    <script defer src="./content/parte-2/parte2.runtime.js?v=20260730-part5-map-heroes-r12"></script>
+    <script defer src="./content/parte-3/parte3.runtime.js?v=20260730-part5-map-heroes-r12"></script>
+    <script defer src="./content/parte-4/parte4.runtime.js?v=20260730-part5-map-heroes-r12"></script>
+    <script defer src="./content/parte-5/parte5.runtime.js?v=20260730-part5-map-heroes-r12"></script>
+    <script defer src="./content/extras/extras.runtime.js?v=20260730-part5-map-heroes-r12"></script>
+    <script defer src="./library.js?v=20260730-part5-map-heroes-r12"></script>
+    <script defer src="./app.js?v=20260730-part5-map-heroes-r12"></script>
   </body>
 </html>

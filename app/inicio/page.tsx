@@ -1,5 +1,0 @@
-import { redirect } from "next/navigation";
-
-export default function InicioPage() {
-  redirect("/index.html#/inicio");
-}

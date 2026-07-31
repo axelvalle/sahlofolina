@@ -51,8 +51,8 @@
         "cap24",
         "interludio-cuenta-cancelada"
       ],
-      "revision": "2026-07-29-r2",
-      "sourceEdition": "Sahlo-Folina-Parte-III.docx"
+      "revision": "canonical",
+      "sourceEdition": "Sahlo_Folina_Parte_III_FINAL_CANONICA.docx"
     },
     {
       "id": 4,
@@ -69,8 +69,63 @@
         "cap31"
       ],
       "status": "published",
-      "revision": "2026-07-29-final",
+      "revision": "canonical",
       "sourceEdition": "Sahlo-Folina-Parte-IV.docx"
+    },
+    {
+      "id": 5,
+      "slug": "parte-5",
+      "runtime": "./parte-5/parte5.runtime.js",
+      "title": "La brecha",
+      "chapters": [
+        "prologo-parte-5",
+        "cap32",
+        "cap33",
+        "cap34",
+        "cap35",
+        "cap36",
+        "cap37",
+        "cap38",
+        "cap39",
+        "cap40",
+        "cap41"
+      ],
+      "status": "published",
+      "revision": "canonical",
+      "sourceEdition": "Sahlo_Folina_Parte_V_FINAL_CANONICA(1).docx",
+      "sections": {
+        "prologue": {
+          "title": "The Outside — El otro lado",
+          "chapters": [
+            "prologo-parte-5"
+          ]
+        },
+        "1": {
+          "title": "El regreso imposible",
+          "chapters": [
+            "cap32",
+            "cap33",
+            "cap34"
+          ]
+        },
+        "2": {
+          "title": "El peso de Clancy",
+          "chapters": [
+            "cap35",
+            "cap36",
+            "cap37",
+            "cap38"
+          ]
+        },
+        "3": {
+          "title": "La brecha",
+          "chapters": [
+            "cap39",
+            "cap40",
+            "cap41"
+          ]
+        }
+      }
     }
   ],
   "extras": {
@@ -80,5 +135,5 @@
       "extras"
     ]
   },
-  "totalEntries": 35
+  "totalEntries": 46
 }

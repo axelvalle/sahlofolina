@@ -1,0 +1,37 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/inicio",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/biblioteca",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/indice",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/indice/:part",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/indice/:part/:arc",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/leer/:chapter",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/leer/:chapter/:target",
+      "destination": "/index.html"
+    }
+  ]
+}

@@ -78,12 +78,12 @@ const SAHLO_EXTRAS = [
     "kind": "extra",
     "number": "Extras",
     "title": "Extras",
-    "subtitle": "Clancy's Journal, archivos documentales y propaganda de Dema",
+    "subtitle": "Diario de Clancy, archivos documentales y propaganda de Dema",
     "blocks": [
       {
         "type": "journal-index",
-        "title": "Clancy's Journal",
-        "intro": "Entradas disponibles de las Partes I y II. Abre cualquiera para volver al pasaje exacto dentro de la historia.",
+        "title": "Diario de Clancy",
+        "intro": "Once entradas reunidas en un visor independiente. Abre una carta y recorre el diario sin abandonar Extras.",
         "entries": [
           {
             "title": "Primera carta",
@@ -133,6 +133,34 @@ const SAHLO_EXTRAS = [
             "chapterId": "cap9",
             "chapterLabel": "Capítulo 9",
             "targetId": "clancys-journal-septima-carta"
+          },
+          {
+            "title": "Octava carta",
+            "code": "022 03MOON 17",
+            "chapterId": "prologo-parte-5",
+            "chapterLabel": "Prólogo · Parte V",
+            "targetId": "diario-022-03moon-17"
+          },
+          {
+            "title": "Novena carta",
+            "code": "022 03MOON 18",
+            "chapterId": "prologo-parte-5",
+            "chapterLabel": "Prólogo · Parte V",
+            "targetId": "diario-022-03moon-18"
+          },
+          {
+            "title": "Décima carta",
+            "code": "024 02MOON 09",
+            "chapterId": "prologo-parte-5",
+            "chapterLabel": "Prólogo · Parte V",
+            "targetId": "diario-024-02moon-09"
+          },
+          {
+            "title": "Undécima entrada",
+            "code": "024 02MOON 25",
+            "chapterId": "cap36",
+            "chapterLabel": "Capítulo 36 · Parte V",
+            "targetId": "diario-024-02moon-25"
           }
         ]
       },

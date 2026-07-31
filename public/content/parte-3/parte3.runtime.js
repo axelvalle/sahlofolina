@@ -1,5 +1,5 @@
 // Parte III de Sahlo Folina.
-// Módulo canónico registrado mediante content/framework/runtime.js.
+// Edición canónica consolidada registrada mediante content/framework/runtime.js.
 
 const PART3_CHAPTERS = [
   {
@@ -8,6 +8,14 @@ const PART3_CHAPTERS = [
     "number": "Capítulo 18",
     "title": "Good Day",
     "subtitle": "Clancy despierta dentro de una vida fabricada para las cámaras",
+    "hero": {
+      "eyebrow": "Parte III — Scaled and Icy",
+      "title": "La ciudad",
+      "subtitle": "aprende a sonreír",
+      "lead": "Dema no necesita borrar una historia si consigue convertirla en entretenimiento.",
+      "location": "Dema, dentro de una vida fabricada para las cámaras.",
+      "background": "./assets/cover-sai parte 3.webp"
+    },
     "blocks": [
       {
         "type": "p",
@@ -52,7 +60,11 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "En la primera, Mara, James y yo sonreíamos frente a la estatua de los brazos levantados. La piedra estaba pintada con colores suaves y cubierta de flores. En la segunda, los tres aparecíamos sentados en una mesa del Archivo de Permanencia. En la tercera, yo levantaba una taza hacia la cámara mientras una frase impresa debajo decía: REGRESAR TAMBIÉN ES AVANZAR."
+        "text": "En la primera, Mara, James y yo sonreíamos frente a la estatua de los brazos levantados. La piedra estaba pintada con colores suaves y cubierta de flores. En la segunda, los tres aparecíamos sentados en una mesa del Archivo de Permanencia. En la tercera, yo levantaba una taza hacia la cámara mientras una frase impresa debajo decía:"
+      },
+      {
+        "type": "p",
+        "text": "REGRESAR TAMBIÉN ES AVANZAR."
       },
       {
         "type": "p",
@@ -959,7 +971,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Dónde está Torchbearer?",
+        "text": "—¿Dónde está el Portador de la Antorcha?",
         "who": "Clancy"
       },
       {
@@ -1227,12 +1239,12 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Clancy —dijo—, soy Sally Sacarver. Él es Dan Lisden. Vamos a ayudarte a contar tu historia.",
+        "text": "—Clancy —dijo—, soy Sally Sacarver. Él es Dan Lisden. Vamos a ayudarte a contar tu historia. La voz salió limpia, pero su pecho no acompañó la frase con un movimiento que yo pudiera ver.",
         "who": "Sally"
       },
       {
         "type": "p",
-        "text": "Dan levantó una mano."
+        "text": "Dan levantó una mano. El gesto se detuvo en un ángulo exacto, como si alguien hubiera decidido dónde debía terminar."
       },
       {
         "type": "speech",
@@ -1250,7 +1262,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Sally mantuvo la sonrisa."
+        "text": "Sally mantuvo la sonrisa sin parpadear."
       },
       {
         "type": "speech",
@@ -1438,7 +1450,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Dan rio."
+        "text": "De Dan salió una risa breve. No vi que tomara aire antes de producirla."
       },
       {
         "type": "p",
@@ -1602,7 +1614,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Dan cruzaba una pierna."
+        "text": "Dan mantenía una pierna cruzada y podía pasar una toma completa sin corregir la postura."
       },
       {
         "type": "p",
@@ -1644,7 +1656,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Dan sonrió."
+        "text": "Dan recompuso la sonrisa."
       },
       {
         "type": "p",
@@ -1672,7 +1684,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Sally la recibió con un abrazo que Mara no devolvió."
+        "text": "Sally la recibió con un abrazo que Mara no devolvió. Desde donde estaba, el contacto pareció carecer de calor y de vacilación."
       },
       {
         "type": "speech",
@@ -1968,7 +1980,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Dan tomó el contrato sin notarlo."
+        "text": "Los dedos de Dan se cerraron sobre el contrato cuando el indicador de Lisden cambió de intensidad. No miró la hoja."
       },
       {
         "type": "p",
@@ -2462,7 +2474,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Me llevaron a una juguetería construida dentro de Mulberry Street. Las vitrinas estaban llenas de figuras de Trash, pequeños perros, baterías en miniatura y muñecos con ropa azul. El Torchbearer no estaba allí. En su lugar, un hombre con gorra permanecía detrás del mostrador, siempre de espaldas a la cámara. La propaganda quería que su figura lo recordara sin permitir que su título apareciera."
+        "text": "Me llevaron a una juguetería construida dentro de Mulberry Street. Las vitrinas estaban llenas de figuras de Trash, pequeños perros, baterías en miniatura y muñecos con ropa azul. El Portador de la Antorcha no estaba allí. En su lugar, un hombre con gorra permanecía detrás del mostrador, siempre de espaldas a la cámara. La propaganda quería que su figura lo recordara sin permitir que su título apareciera."
       },
       {
         "type": "speech",
@@ -2513,7 +2525,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Dan sonrió."
+        "text": "Dan recompuso la sonrisa."
       },
       {
         "type": "speech",
@@ -3046,7 +3058,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "La cámara dentro del brazo izquierdo de la estatua estaba más llena que antes. Además de la ropa, guardaban guiones, credenciales, mapas, registros de la necrópolis y copias de las transmisiones. La primera pieza metálica curva que Keons había dejado permanecía envuelta en tela, junto al vial de Elias que Torchbearer había devuelto mediante una ruta exterior."
+        "text": "La cámara dentro del brazo izquierdo de la estatua estaba más llena que antes. Además de la ropa, guardaban guiones, credenciales, mapas, registros de la necrópolis y copias de las transmisiones. La primera pieza metálica curva que Keons había dejado permanecía envuelta en tela, junto al vial de Elias que el Portador de la Antorcha había devuelto mediante una ruta exterior."
       },
       {
         "type": "p",
@@ -3807,15 +3819,15 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Un asistente acomodó mi chaqueta azul. Otra persona comprobó el color de mi cabello bajo tres lámparas. Sally Sacarver y Dan Lisden esperaban en el sofá naranja con las manos apoyadas sobre las rodillas y una sonrisa idéntica."
+        "text": "Un asistente acomodó mi chaqueta azul. Otra persona comprobó el color de mi cabello bajo tres lámparas. Sally Sacarver y Dan Lisden esperaban en el sofá naranja con las manos apoyadas sobre las rodillas y una sonrisa idéntica. Las luces hacían visible cada detalle de sus rostros, pero no pude distinguir el ascenso y descenso de una respiración."
       },
       {
         "type": "p",
-        "text": "Dan tenía el labio curado."
+        "text": "El labio de Dan había sido reconstruido bajo una capa de maquillaje. La piel se veía demasiado lisa donde antes había estado abierta."
       },
       {
         "type": "p",
-        "text": "Sally no mostraba la marca que había visto durante los ensayos."
+        "text": "La marca de Sally había desaparecido debajo de una base más espesa y de un borde de tela colocado con precisión."
       },
       {
         "type": "p",
@@ -3885,7 +3897,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Dan apretó los dedos contra el sofá."
+        "text": "Los dedos de Dan se cerraron contra el sofá todos a la vez."
       },
       {
         "type": "p",
@@ -3969,7 +3981,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Dan rio con ellos."
+        "text": "De Dan salió la misma risa del público, limpia y exacta, sin una respiración previa que yo alcanzara a notar."
       },
       {
         "type": "speech",
@@ -3983,7 +3995,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Sally colocó una mano sobre mi brazo."
+        "text": "Sally colocó una mano sobre mi brazo. Estaba fría incluso bajo el calor de las lámparas."
       },
       {
         "type": "speech",
@@ -4061,7 +4073,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "scene",
-        "text": "· · ·"
+        "text": "• • •"
       },
       {
         "type": "p",
@@ -4133,7 +4145,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "scene",
-        "text": "· · ·"
+        "text": "• • •"
       },
       {
         "type": "p",
@@ -4245,11 +4257,11 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Sally tenía una herida en la frente."
+        "text": "Sally tenía una abertura en la frente. De ella descendía una línea de sangre oscura y lenta."
       },
       {
         "type": "p",
-        "text": "Dan sangraba por la nariz."
+        "text": "Del borde de la nariz de Dan salía sangre, pero su respiración no la alteraba."
       },
       {
         "type": "p",
@@ -4262,7 +4274,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Su voz era firme, pero la sonrisa temblaba."
+        "text": "La voz permanecía firme. La sonrisa, en cambio, temblaba como una orden que el rostro ya no podía sostener."
       },
       {
         "type": "speech",
@@ -4314,7 +4326,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "scene",
-        "text": "· · ·"
+        "text": "• • •"
       },
       {
         "type": "p",
@@ -4351,7 +4363,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "scene",
-        "text": "· · ·"
+        "text": "• • •"
       },
       {
         "type": "p",
@@ -4412,7 +4424,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Recordé la advertencia de Torchbearer: una idea no permanece intacta cuando sale de una habitación. La señal de la estatua ya no pertenecía solo a tres personas. Había llegado a una mujer que quizá conocía una única frase y una única ruta."
+        "text": "Recordé la advertencia del Portador de la Antorcha: una idea no permanece intacta cuando sale de una habitación. La señal de la estatua ya no pertenecía solo a tres personas. Había llegado a una mujer que quizá conocía una única frase y una única ruta."
       },
       {
         "type": "p",
@@ -4584,11 +4596,11 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Sally y Dan estaban peor."
+        "text": "Los cuerpos de Sally y Dan mostraban un deterioro mayor."
       },
       {
         "type": "p",
-        "text": "La sangre había alcanzado el cuello de Sally. Dan sostenía una tarjeta doblada para ocultar una herida en la mano. Seguían sonriendo."
+        "text": "La sangre había alcanzado el cuello de Sally. Dan sostenía una tarjeta doblada para ocultar una abertura en la mano. Las articulaciones respondían con retraso, pero ambos seguían sonriendo."
       },
       {
         "type": "speech",
@@ -4611,7 +4623,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "scene",
-        "text": "· · ·"
+        "text": "• • •"
       },
       {
         "type": "p",
@@ -4695,7 +4707,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "scene",
-        "text": "· · ·"
+        "text": "• • •"
       },
       {
         "type": "p",
@@ -4719,7 +4731,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Torchbearer estaba de pie sobre una plataforma oculta por la niebla."
+        "text": "El Portador de la Antorcha estaba de pie sobre una plataforma oculta por la niebla."
       },
       {
         "type": "p",
@@ -4727,7 +4739,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Torchbearer —dije.",
+        "text": "—Portador —dije.",
         "who": "Clancy"
       },
       {
@@ -4765,7 +4777,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Era el código de James, no el de Torchbearer."
+        "text": "Era el código de James, no el del Portador de la Antorcha."
       },
       {
         "type": "p",
@@ -4877,11 +4889,11 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Sally y Dan apenas podían sostenerse."
+        "text": "Sally y Dan apenas conseguían mantener la postura que la transmisión exigía."
       },
       {
         "type": "p",
-        "text": "Dan tenía sangre en los dientes. Sally mantenía una mano sobre el costado. La señal de aplauso se encendió, pero el público respondió con retraso."
+        "text": "Dan tenía sangre entre los dientes. Sally mantenía una mano sobre el costado, no para contener dolor visible, sino para impedir que el torso se inclinara. La señal de aplauso se encendió, pero el público respondió con retraso."
       },
       {
         "type": "speech",
@@ -5062,7 +5074,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "scene",
-        "text": "· · ·"
+        "text": "• • •"
       },
       {
         "type": "p",
@@ -5161,7 +5173,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "scene",
-        "text": "· · ·"
+        "text": "• • •"
       },
       {
         "type": "p",
@@ -5185,7 +5197,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "No había sangre. No había heridas. Las tarjetas de Dan eran nuevas. El vestido de Sally no tenía ninguna rasgadura."
+        "text": "No quedaban sangre ni heridas expuestas. Las tarjetas de Dan eran nuevas. El vestido de Sally no tenía ninguna rasgadura. El maquillaje cubría uniones demasiado rectas y la tela ocultaba los puntos donde sus movimientos habían empezado a fallar."
       },
       {
         "type": "p",
@@ -5202,7 +5214,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Dan sonrió."
+        "text": "Dan recompuso la sonrisa."
       },
       {
         "type": "speech",
@@ -5223,11 +5235,11 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "No habían sido reemplazados por completo."
+        "text": "No habían cambiado a los presentadores por otros rostros."
       },
       {
         "type": "p",
-        "text": "Habían sido corregidos."
+        "text": "Habían reconstruido la superficie y obligado al resto a continuar."
       },
       {
         "type": "speech",
@@ -5550,7 +5562,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Torchbearer.",
+        "text": "—El Portador.",
         "who": "Mara"
       },
       {
@@ -5637,7 +5649,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "scene",
-        "text": "· · ·"
+        "text": "• • •"
       },
       {
         "type": "p",
@@ -5649,7 +5661,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Sally revisó el vestuario desde una mesa. Dan permanecía sentado, con una pierna extendida. Sus heridas habían sido cubiertas, pero se movía con dificultad."
+        "text": "Sally siguió el vestuario desde una mesa, moviendo la cabeza solo cuando una prenda cruzaba su campo de visión. Dan permanecía sentado, con una pierna extendida. Las aberturas habían sido cubiertas y las articulaciones reparadas lo suficiente para otra toma, pero se movía con dificultad."
       },
       {
         "type": "speech",
@@ -5839,7 +5851,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Los guardias la sacaron."
+        "text": "Los guardias la sacaron. Cuando me condujeron al vehículo, Sally y Dan permanecieron bajo las luces del estudio; sus despedidas llegarían al submarino mediante pantallas."
       },
       {
         "type": "p",
@@ -5847,7 +5859,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "scene",
-        "text": "· · ·"
+        "text": "• • •"
       },
       {
         "type": "p",
@@ -6020,7 +6032,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "scene",
-        "text": "· · ·"
+        "text": "• • •"
       },
       {
         "type": "p",
@@ -6123,7 +6135,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "scene",
-        "text": "· · ·"
+        "text": "• • •"
       },
       {
         "type": "p",
@@ -6251,7 +6263,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Sally y Dan aparecieron en una pantalla."
+        "text": "Sally y Dan aparecieron en una pantalla. El encuadre no bajaba de sus torsos y, fuera de los turnos de voz, ambos permanecían inmóviles."
       },
       {
         "type": "speech",
@@ -6273,7 +6285,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "No sabía si Torchbearer había logrado entrar."
+        "text": "No sabía si el Portador de la Antorcha había logrado entrar."
       },
       {
         "type": "p",
@@ -6365,11 +6377,11 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Torchbearer había encontrado la forma de guiarme hasta allí."
+        "text": "Quise creer que el Portador de la Antorcha había encontrado la forma de guiarme hasta allí."
       },
       {
         "type": "p",
-        "text": "Nuestros ojos se encontraron durante menos de un segundo."
+        "text": "La figura volvió el rostro hacia mí durante menos de un segundo. Sentí que nuestras miradas se encontraban, aunque el reflejo del vidrio podía estar completando lo que yo necesitaba ver."
       },
       {
         "type": "p",
@@ -6385,7 +6397,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "No había una ruta preparada hacia la superficie. No había explosivos ni una embarcación esperando. Mara y James lo habían llevado hasta una puerta. El resto dependía del momento en que la nave dejara de ser controlable."
+        "text": "No había una ruta preparada hacia la superficie. No había explosivos ni una embarcación esperando. La resistencia había conseguido introducir una herramienta, un código y una posibilidad hasta aquella puerta. El resto dependía del momento en que la nave dejara de ser controlable."
       },
       {
         "type": "p",
@@ -6458,7 +6470,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "scene",
-        "text": "· · ·"
+        "text": "• • •"
       },
       {
         "type": "p",
@@ -6521,7 +6533,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "scene",
-        "text": "· · ·"
+        "text": "• • •"
       },
       {
         "type": "p",
@@ -6589,7 +6601,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Torchbearer señaló la caja junto a la batería. Me lancé hacia ella, saqué el mango de la antorcha y lo encajé entre dos paneles de la salida lateral."
+        "text": "El Portador señaló la caja junto a la batería. Me lancé hacia ella, saqué el mango de la antorcha y lo encajé entre dos paneles de la salida lateral."
       },
       {
         "type": "p",
@@ -6631,7 +6643,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Tenemos que abrir la salida —dijo Torchbearer.",
+        "text": "—Tenemos que abrir la salida —dijo el Portador.",
         "who": "Torchbearer"
       },
       {
@@ -6658,7 +6670,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "La voz de Torchbearer me indicó dos cables. Arranqué la cubierta del panel y los crucé. La puerta lateral se abrió veinte centímetros."
+        "text": "La voz del Portador me indicó dos cables. Arranqué la cubierta del panel y los crucé. La puerta lateral se abrió veinte centímetros."
       },
       {
         "type": "p",
@@ -6702,7 +6714,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Clancy —dijo Torchbearer.",
+        "text": "—Clancy —dijo el Portador.",
         "who": "Torchbearer"
       },
       {
@@ -6733,7 +6745,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Me la até alrededor de la muñeca mientras Torchbearer señalaba el nudo."
+        "text": "Me la até alrededor de la muñeca mientras el Portador señalaba el nudo."
       },
       {
         "type": "speech",
@@ -6762,7 +6774,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Avanzamos por el pasillo lateral."
+        "text": "Avancé por el pasillo lateral siguiendo la figura que percibía delante de mí."
       },
       {
         "type": "p",
@@ -6774,7 +6786,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Torchbearer se inclinó frente al mecanismo."
+        "text": "La figura del Portador se inclinó frente al mecanismo, sin tocarlo."
       },
       {
         "type": "speech",
@@ -6817,7 +6829,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Torchbearer señaló una escalera."
+        "text": "El Portador señaló una escalera."
       },
       {
         "type": "speech",
@@ -6847,7 +6859,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Torchbearer miró la pantalla."
+        "text": "El Portador miró la pantalla."
       },
       {
         "type": "speech",
@@ -6957,7 +6969,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Vi a Torchbearer al otro extremo, señalando hacia arriba."
+        "text": "Vi al Portador al otro extremo, señalando hacia arriba."
       },
       {
         "type": "p",
@@ -6997,7 +7009,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Tosí, tragué sal y volví a hundirme. Pateé hasta aferrarme a un fragmento del casco. Entre el oleaje vi a Torchbearer, presente y distante al mismo tiempo. Alrededor había restos del submarino, luces flotantes y voces separadas por las olas."
+        "text": "Tosí, tragué sal y volví a hundirme. Pateé hasta aferrarme a un fragmento del casco. Entre el oleaje vi al Portador, presente y distante al mismo tiempo. Alrededor había restos del submarino, luces flotantes y voces separadas por las olas."
       },
       {
         "type": "p",
@@ -7021,7 +7033,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Hay una corriente hacia el este —dijo Torchbearer.",
+        "text": "—Hay una corriente hacia el este —dijo el Portador.",
         "who": "Torchbearer"
       },
       {
@@ -7060,7 +7072,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "El hombre respiraba. No sabía su nombre. En algún momento abrió los ojos apenas un instante y me vio responder hacia el lugar donde yo veía a Torchbearer; después volvió a perder el conocimiento. No sabía si la niña y su madre habían salido. No sabía cuántas puertas se cerraron ni cuántas personas fueron invitadas para que su desaparición pudiera llamarse accidente."
+        "text": "El hombre respiraba. No sabía su nombre. En algún momento abrió los ojos apenas un instante y me vio responder hacia el lugar donde yo veía al Portador; después volvió a perder el conocimiento. No sabía si la niña y su madre habían salido. No sabía cuántas puertas se cerraron ni cuántas personas fueron invitadas para que su desaparición pudiera llamarse accidente."
       },
       {
         "type": "p",
@@ -7104,7 +7116,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Torchbearer miró hacia el interior de la isla."
+        "text": "El Portador miró hacia el interior de la isla."
       },
       {
         "type": "speech",
@@ -7205,7 +7217,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "La voz de Torchbearer llegó detrás de mí."
+        "text": "La voz del Portador llegó detrás de mí."
       },
       {
         "type": "speech",
@@ -7222,7 +7234,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "scene",
-        "text": "· · ·"
+        "text": "• • •"
       },
       {
         "type": "p",
@@ -7522,7 +7534,7 @@ const PART3_CHAPTERS = [
         "deniedImage": "./assets/acceso denegado.webp",
         "agency": "MUNICIPALIDAD SAGRADA DE DEMA",
         "department": "DIRECCIÓN DE COMUNICACIONES Y PERMANENCIA",
-        "title": "CUENTA CANCELADA",
+        "title": "Cuenta Cancelada",
         "paragraphs": [
           "La cuenta solicitada ha sido retirada de los servidores municipales por incumplimiento de las normas de circulación, conservación y uso autorizado de identidad.",
           "Todo material atribuido al ciudadano Clancy que no haya sido emitido por Good Day Dema, DMA ORG o una oficina episcopal será considerado contrabando narrativo. Su reproducción, copia, traducción, archivo o transmisión constituye una infracción contra la unidad cívica.",
@@ -7537,7 +7549,7 @@ const PART3_CHAPTERS = [
       },
       {
         "type": "scene",
-        "text": "· · ·"
+        "text": "• • •"
       }
     ]
   }

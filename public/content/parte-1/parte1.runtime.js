@@ -7,6 +7,14 @@ const PART1_CHAPTERS = [
     "number": "Capítulo 1",
     "title": "Las nueve campanas",
     "subtitle": "Dema se presenta sin presentarse",
+    "hero": {
+      "eyebrow": "Parte I — Dema",
+      "title": "La ciudad",
+      "subtitle": "sin horizonte",
+      "lead": "Recordar que alguna vez elegiste algo.",
+      "location": "Dema, antes de que el nombre de Clancy pudiera cruzar sus muros.",
+      "background": "./assets/cover-dema.webp"
+    },
     "blocks": [
       {
         "type": "p",

@@ -30,6 +30,7 @@ const canonical = {
   part2: "content/parte-2/parte2.runtime.js",
   part3: "content/parte-3/parte3.runtime.js",
   part4: "content/parte-4/parte4.runtime.js",
+  part5: "content/parte-5/parte5.runtime.js",
   extras: "content/extras/extras.runtime.js",
   manifest: "content/manifest.json",
 };
@@ -62,13 +63,13 @@ const sourceText = Object.fromEntries(
 );
 const context = { window: {}, console };
 vm.createContext(context);
-for (const key of ["framework", "routes", "part1", "part2", "part3", "part4", "extras"]) {
+for (const key of ["framework", "routes", "part1", "part2", "part3", "part4", "part5", "extras"]) {
   vm.runInContext(sourceText[key], context, { filename: canonical[key] });
 }
 
 const chapters = context.window.CHAPTERS;
-if (!Array.isArray(chapters) || chapters.length !== 35) {
-  throw new Error("El framework debe registrar exactamente 35 entradas.");
+if (!Array.isArray(chapters) || chapters.length !== 46) {
+  throw new Error("El framework debe registrar exactamente 46 entradas.");
 }
 const ids = chapters.map((chapter) => chapter.id);
 if (new Set(ids).size !== ids.length) throw new Error("Existen IDs de contenido duplicados.");
@@ -79,7 +80,52 @@ for (let number = 1; number <= 31; number += 1) {
     throw new Error(`cap${number} no está ruteado en la Parte ${expectedPart}.`);
   }
 }
-for (const chapter of chapters.filter((item) => item.kind !== "extra")) {
+const part5Prologue = chapters.find((item) => item.id === "prologo-parte-5");
+if (!part5Prologue || part5Prologue.part !== 5 || part5Prologue.arc !== 0 || part5Prologue.kind !== "prologue") {
+  throw new Error("El prólogo de la Parte V debe permanecer independiente de los tres arcos.");
+}
+const part5Chapters = chapters.filter((item) => item.part === 5);
+if (part5Chapters.length !== 11 || part5Chapters.at(-1)?.id !== "cap41") {
+  throw new Error("La Parte V debe contener el prólogo y los capítulos 32–41.");
+}
+for (let number = 32; number <= 41; number += 1) {
+  const chapter = chapters.find((item) => item.id === `cap${number}`);
+  const expectedArc = number <= 34 ? 1 : number <= 38 ? 2 : 3;
+  if (!chapter || chapter.part !== 5 || chapter.arc !== expectedArc) {
+    throw new Error(`cap${number} no está ruteado en el arco ${expectedArc} de la Parte V.`);
+  }
+}
+if (!part5Prologue.hero?.background?.includes("prologo-voldsoy.webp")) {
+  throw new Error("El prólogo de la Parte V necesita su portada costera.");
+}
+if (!part5Prologue.blocks.some((block) => block.type === "diary")) {
+  throw new Error("El prólogo debe conservar las páginas del diario como módulos editoriales.");
+}
+
+const diaryBlocks = chapters.flatMap((chapter) =>
+  (chapter.blocks ?? [])
+    .filter((block) => block.type === "diary")
+    .map((block) => ({ chapterId: chapter.id, id: block.id, intro: block.intro })),
+);
+const extrasChapter = chapters.find((item) => item.id === "extras");
+const journalIndex = extrasChapter?.blocks?.find((block) => block.type === "journal-index");
+const journalEntries = journalIndex?.entries ?? [];
+if (diaryBlocks.length !== 11 || journalEntries.length !== 11) {
+  throw new Error(`El Diario de Clancy debe reunir 11 entradas; hay ${diaryBlocks.length} módulos y ${journalEntries.length} accesos.`);
+}
+const indexedDiaryIds = new Set(journalEntries.map((entry) => entry.targetId));
+for (const diary of diaryBlocks) {
+  if (!diary.id || !indexedDiaryIds.has(diary.id)) {
+    throw new Error(`Entrada del diario ausente del visor independiente: ${diary.id || diary.intro || diary.chapterId}`);
+  }
+}
+for (const requiredPart5Diary of ["diario-022-03moon-17", "diario-022-03moon-18", "diario-024-02moon-09", "diario-024-02moon-25"]) {
+  if (!indexedDiaryIds.has(requiredPart5Diary)) {
+    throw new Error(`El prólogo de Parte V no está integrado en el Diario de Clancy: ${requiredPart5Diary}`);
+  }
+}
+
+for (const chapter of chapters.filter((item) => item.kind !== "extra" && item.part !== 5)) {
   for (const block of chapter.blocks ?? []) {
     if ((block.type === "dialogue" || block.type === "speech") && !block.who) {
       throw new Error(`${chapter.id} contiene diálogo sin atribución.`);
@@ -156,9 +202,43 @@ if (!appShell.includes('document.body.dataset.view === "reader" ? state.settings
   throw new Error("El tema Papel debe limitarse al reader.");
 }
 
+const routeRegistry = await readText("content/framework/routes.js");
+for (const cleanRoute of ['home: "/inicio"', 'library: "/biblioteca"', 'indexPrefix: "/indice/parte-"', 'readerPrefix: "/leer/"']) {
+  if (!routeRegistry.includes(cleanRoute)) throw new Error(`Ruta pública limpia ausente: ${cleanRoute}`);
+}
+if (!shellHtml.includes('<base href="/" />')) {
+  throw new Error("El shell necesita una base raíz para resolver assets desde rutas profundas.");
+}
+if (!appShell.includes("window.location.pathname") || !appShell.includes('addEventListener("popstate"')) {
+  throw new Error("El SPA debe navegar mediante pathname, pushState y popstate.");
+}
+if (appShell.includes('addEventListener("hashchange"')) {
+  throw new Error("El listener hashchange heredado todavía está activo.");
+}
+const nextRoutingConfig = await readText("next.config.ts");
+if (!nextRoutingConfig.includes("beforeFiles: spaRoutes.map") || !nextRoutingConfig.includes('destination: "/index.html"')) {
+  throw new Error("Next.js debe aplicar los rewrites SPA antes del filesystem.");
+}
+const vercelConfig = JSON.parse(await readText("vercel.json"));
+const requiredRewrites = ["/", "/inicio", "/biblioteca", "/indice", "/indice/:part", "/indice/:part/:arc", "/leer/:chapter", "/leer/:chapter/:target"];
+for (const source of requiredRewrites) {
+  const rewrite = vercelConfig.rewrites?.find((entry) => entry.source === source);
+  if (!rewrite || rewrite.destination !== "/index.html") {
+    throw new Error(`Rewrite de Vercel ausente o incorrecto: ${source}`);
+  }
+}
+for (const staleStub of ["app/page.tsx", "app/biblioteca/page.tsx", "app/indice/page.tsx", "app/leer/[chapter]/page.tsx"]) {
+  try {
+    await stat(resolve(root, staleStub));
+    throw new Error(`Stub de redirección Next heredado: ${staleStub}`);
+  } catch (error) {
+    if (error?.code !== "ENOENT") throw error;
+  }
+}
+
 const searchableFiles = [
   "index.html", "styles.css", "app.js", "library.js",
-  canonical.part1, canonical.part2, canonical.part3, canonical.part4, canonical.extras,
+  canonical.part1, canonical.part2, canonical.part3, canonical.part4, canonical.part5, canonical.extras,
 ];
 const searchableText = (await Promise.all(searchableFiles.map(readText))).join("\n");
 for (const path of await walk("assets")) {
@@ -191,8 +271,18 @@ if (!library.includes('image.loading = "lazy"') || library.includes('document.ad
 for (const file of downloadsManifest.files) {
   if (!library.includes(file.name)) throw new Error(`La Biblioteca no publica ${file.name}.`);
 }
-if (/parte-5|parte-6/i.test(library)) {
+if (/parte-6/i.test(library)) {
   throw new Error("La Biblioteca muestra partes todavía no publicadas.");
+}
+
+for (const requiredPart5Asset of [
+  "assets/library/parte-5-cover.webp",
+  "downloads/Sahlo-Folina-Parte-V.docx",
+  "downloads/Sahlo-Folina-Parte-V.pdf",
+]) {
+  if (!searchableText.includes(requiredPart5Asset) && !library.includes(requiredPart5Asset.replace(/^assets\//, "./assets/").replace(/^downloads\//, "./downloads/"))) {
+    throw new Error(`La publicación de Parte V no referencia ${requiredPart5Asset}.`);
+  }
 }
 for (const requiredPart4Asset of [
   "assets/library/parte-4-cover.webp",
@@ -214,12 +304,27 @@ if (part4DialogueCount !== 569) {
 }
 for (const requiredText of [
   "Keons murió antes de que la ciudad despertara con la muerte de Clancy ya redactada.",
+  "Durante las horas siguientes reaparecía dentro de un radio corto, como si la marea o la imprecisión de la triangulación desplazaran la señal entre las mismas rocas.",
+  "La patrulla encontró al pasajero en tierra, cubierto por una lona, con una botella cerrada a su lado y el panel asegurado entre dos piedras.",
+  "Mi última ubicación verificable antes del naufragio estaba en Trench",
+  "Ahora sé que su relato coloca mi rostro en un lugar donde no puedo verificar mi cuerpo.",
+  "POSIBILIDAD NO CONFIRMADA.",
   "VIVO NO SIGNIFICA A SALVO.",
-  "Era una dirección. Él le dio mi rostro.",
   "Aquella noche comprendí que también podía ser una distancia recorrida por una señal.",
 ]) {
   if (!JSON.stringify(part4).includes(requiredText)) {
-    throw new Error(`La Parte IV no contiene el texto requerido: ${requiredText}`);
+    throw new Error(`La Parte IV no contiene el texto canónico requerido: ${requiredText}`);
+  }
+}
+for (const deprecatedText of [
+  "regreso posterior hacia el oeste",
+  "No Chances detectó el transmisor cuando el panel volvió hacia el oeste.",
+  "Durante Saturday yo estaba en Trench",
+  "Era una dirección. Él le dio mi rostro.",
+  "Torchbearer",
+]) {
+  if (JSON.stringify(part4).includes(deprecatedText)) {
+    throw new Error(`La Parte IV conserva texto de la edición sustituida: ${deprecatedText}`);
   }
 }
 

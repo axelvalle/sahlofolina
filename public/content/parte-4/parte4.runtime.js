@@ -1,5 +1,5 @@
 // Parte IV de Sahlo Folina.
-// Edición consolidada final migrada desde el manuscrito DOCX.
+// Edición final canónica consolidada desde el manuscrito DOCX.
 
 const PART4_CHAPTERS = [
   {
@@ -8,6 +8,14 @@ const PART4_CHAPTERS = [
     "number": "Capítulo 25",
     "title": "Los que se quedaron",
     "subtitle": "Dema convierte la ausencia de Clancy en protocolo y persecución",
+    "hero": {
+      "eyebrow": "Parte IV — Después de Saturday",
+      "title": "Los que",
+      "subtitle": "se quedaron",
+      "lead": "Cuando Clancy desaparece, la ciudad intenta convertir su ausencia en una conclusión.",
+      "location": "Dema, durante las horas que siguieron al último impacto.",
+      "background": "./assets/parte-4/dema-nocturna.webp"
+    },
     "blocks": [
       {
         "type": "chronology",
@@ -1050,15 +1058,15 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Después se detenía."
+        "text": "Después se detenía cerca de una franja de roca negra."
       },
       {
         "type": "p",
-        "text": "Luego regresaba varios kilómetros al oeste, arrastrado por una corriente distinta."
+        "text": "Durante las horas siguientes reaparecía dentro de un radio corto, como si la marea o la imprecisión de la triangulación desplazaran la señal entre las mismas rocas."
       },
       {
         "type": "p",
-        "text": "Eso significaba que alguien había movido el transmisor o que el objeto que lo contenía había tocado tierra antes de volver al agua."
+        "text": "Eso significaba que el transmisor había alcanzado tierra o permanecía a pocos metros de ella. No bastaba para saber si alguien había asegurado el panel, si el oleaje lo movía o si la señal rebotaba contra la piedra."
       },
       {
         "type": "p",
@@ -1225,7 +1233,7 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "RUTA A — PANEL DE EMERGENCIA. Señal intermitente hacia el este, contacto probable con roca negra y regreso posterior hacia el oeste. El transmisor permanecía unido al panel por el cable, aunque el micrófono había sido arrancado de su soporte."
+        "text": "RUTA A — PANEL DE EMERGENCIA. Señal intermitente hacia el este, contacto probable con roca negra y permanencia dentro de una cala. El transmisor continuaba unido al panel por el cable, aunque el micrófono había sido arrancado de su soporte."
       },
       {
         "type": "p",
@@ -1556,22 +1564,22 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No Chances detectó el transmisor cuando el panel volvió hacia el oeste. Una patrulla encontró al pasajero sujeto al metal. El micrófono faltaba de su soporte, pero el cable seguía conectado a la carcasa y la baliza emitía pulsos intermitentes.",
+        "text": "—No Chances trianguló los pulsos dentro de una cala de roca negra. La patrulla encontró al pasajero en tierra, cubierto por una lona, con una botella cerrada a su lado y el panel asegurado entre dos piedras. El micrófono faltaba de su soporte, pero el cable seguía conectado a la carcasa y la baliza continuaba emitiendo.",
         "who": "James"
       },
       {
         "type": "speech",
-        "text": "—¿Por qué el panel volvió al agua después de tocar tierra?",
+        "text": "—¿Clancy lo dejó así?",
         "who": "Mara"
       },
       {
         "type": "speech",
-        "text": "—El informe no lo explica.",
+        "text": "—Eso indica la escena. El informe no registra cuánto tiempo permaneció allí ni si vio aproximarse a la patrulla.",
         "who": "James"
       },
       {
         "type": "p",
-        "text": "Mara imaginó a Clancy frente a luces de búsqueda, con un hombre inconsciente y una isla que no conocía. Si una patrulla se acercaba, conservar al testigo en la costa podía revelar la ubicación. Devolverlo al agua podía matarlo."
+        "text": "Mara imaginó a Clancy frente a una costa desconocida, con un hombre inconsciente y una baliza que podía atraer ayuda o entregar su posición. Dejar agua, una lona y el transmisor significaba confiar la vida del pasajero a la misma ciudad de la que intentaba escapar."
       },
       {
         "type": "p",
@@ -1579,7 +1587,7 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Clancy lo empujó hacia la corriente —dijo.",
+        "text": "—Esperó a comprobar que la señal seguía activa —dijo Mara.",
         "who": "Mara"
       },
       {
@@ -1589,12 +1597,12 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Para que lo encontraran sin llegar a la isla.",
+        "text": "—Y se marchó antes de que llegaran las luces.",
         "who": "Mara"
       },
       {
         "type": "speech",
-        "text": "—También es posible que el panel se soltara.",
+        "text": "—También es posible que nunca las viera.",
         "who": "James"
       },
       {
@@ -1674,7 +1682,7 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Era el líder Bandito conocido como Torchbearer?",
+        "text": "—¿Era el líder Bandito conocido como el Portador de la Antorcha?",
         "who": "Interrogador"
       },
       {
@@ -1718,11 +1726,11 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "No eran versiones necesariamente incompatibles. Podían pertenecer a momentos distintos. El técnico podía haberse separado. La presencia de la costa podía ser una alucinación. O una forma de guía que no ocupaba un cuerpo."
+        "text": "No eran versiones necesariamente incompatibles. Podían pertenecer a momentos distintos. El técnico podía haberse separado. La presencia de la costa podía ser una alucinación, una memoria superpuesta o una dirección que Clancy había traducido en una figura conocida."
       },
       {
         "type": "p",
-        "text": "Mara pensó en el Livestream. En la figura sobre la plataforma, rodeada de niebla, que había golpeado el código de James. Clancy había pronunciado el nombre de Torchbearer aunque nadie había confirmado quién estaba allí."
+        "text": "Mara pensó en el Livestream. En la figura sobre la plataforma, rodeada de niebla, que había golpeado el código de James. Clancy había pronunciado el nombre del Portador aunque nadie había confirmado quién estaba allí."
       },
       {
         "type": "speech",
@@ -1736,7 +1744,7 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Torchbearer?",
+        "text": "—¿El Portador?",
         "who": "Mara"
       },
       {
@@ -1780,7 +1788,7 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Clancy vio a Torchbearer.",
+        "text": "—Clancy vio al Portador.",
         "who": "Mara"
       },
       {
@@ -4460,7 +4468,7 @@ const PART4_CHAPTERS = [
     "part": 4,
     "number": "Capítulo 30",
     "title": "El hombre detrás de la antorcha",
-    "subtitle": "La presencia del Torchbearer demuestra que no siempre necesita cuerpo",
+    "subtitle": "Mara y James separan al Portador real de la presencia que Clancy creyó seguir",
     "blocks": [
       {
         "type": "chronology",
@@ -4497,7 +4505,7 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "James la había preparado en una cisterna abandonada cerca del perímetro oriental. La ruta no conectaba directamente con la estatua ni con ninguna célula activa. Torchbearer conocía solo el punto de entrada. Mara y James llegaron por caminos separados."
+        "text": "James la había preparado en una cisterna abandonada cerca del perímetro oriental. La ruta no conectaba directamente con la estatua ni con ninguna célula activa. El Portador conocía solo el punto de entrada. Mara y James llegaron por caminos separados."
       },
       {
         "type": "p",
@@ -4518,12 +4526,12 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Torchbearer dejó la mochila en el suelo."
+        "text": "El Portador dejó la mochila en el suelo."
       },
       {
         "type": "speech",
         "text": "—¿Cuánto?",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "speech",
@@ -4533,7 +4541,7 @@ const PART4_CHAPTERS = [
       {
         "type": "speech",
         "text": "—Entonces empieza por lo que no puedes decir después.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -4545,7 +4553,7 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Clancy había visto a Torchbearer dentro del submarino."
+        "text": "Clancy había afirmado ver al Portador dentro del submarino."
       },
       {
         "type": "p",
@@ -4566,7 +4574,7 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Torchbearer lo hizo."
+        "text": "El Portador lo hizo."
       },
       {
         "type": "p",
@@ -4580,7 +4588,7 @@ const PART4_CHAPTERS = [
       {
         "type": "speech",
         "text": "—Con Bram y los jóvenes, en el corredor oriental.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "speech",
@@ -4590,7 +4598,7 @@ const PART4_CHAPTERS = [
       {
         "type": "speech",
         "text": "—Él mismo. Lena abrió la puerta y no lo obligó.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -4603,12 +4611,12 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Torchbearer miró la mochila."
+        "text": "El Portador miró la mochila."
       },
       {
         "type": "speech",
         "text": "—Una ciudad no necesita cerrar todas las puertas si consigue que nadie sepa hacia dónde abren.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -4616,16 +4624,16 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Aun así, señaló los objetos extendidos sobre una tela: la chaqueta oscura que Torchbearer entregó a Clancy, con una cinta cosida por dentro, y el mapa de Bram con una esquina quemada."
+        "text": "Aun así, señaló los objetos extendidos sobre una tela: la chaqueta oscura que el Portador entregó a Clancy, con una cinta cosida por dentro, y el mapa de Bram con una esquina quemada."
       },
       {
         "type": "p",
-        "text": "Torchbearer tocó la costura."
+        "text": "El Portador tocó la costura."
       },
       {
         "type": "speech",
         "text": "—Yo hice este nudo —dijo.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "speech",
@@ -4635,7 +4643,7 @@ const PART4_CHAPTERS = [
       {
         "type": "speech",
         "text": "—Sí. El hilo cambia aquí.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -4661,12 +4669,12 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Torchbearer la miró sin comprender."
+        "text": "El Portador la miró sin comprender."
       },
       {
         "type": "speech",
-        "text": "—No estuve en el submarino.",
-        "who": "Torchbearer"
+        "text": "—No sé cómo responder eso.",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -4679,8 +4687,8 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No.",
-        "who": "Torchbearer"
+        "text": "—O creyó verme.",
+        "who": "Portador"
       },
       {
         "type": "speech",
@@ -4689,8 +4697,8 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No físicamente.",
-        "who": "Torchbearer"
+        "text": "—Eso es lo que describe.",
+        "who": "Portador"
       },
       {
         "type": "speech",
@@ -4699,12 +4707,12 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Torchbearer volvió la vista hacia James, como si esperara una explicación que tampoco él poseía."
+        "text": "El Portador volvió la vista hacia James, como si esperara una explicación que tampoco él poseía."
       },
       {
         "type": "speech",
-        "text": "—Durante Saturday yo estaba en Trench —dijo—. Lena puede confirmarlo. Trece personas pueden hacerlo. Seguíamos la señal del puerto desde el campamento.",
-        "who": "Torchbearer"
+        "text": "—Mi última ubicación verificable antes del naufragio estaba en Trench —dijo—. Seguíamos la señal del puerto desde el campamento. Después tengo fragmentos: agua, una dirección y la certeza de que Clancy estaba decidiendo algo. No puedo demostrar que esos fragmentos pertenezcan a mis ojos.",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -4716,7 +4724,7 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "De la persona que Clancy había visto con su rostro."
+        "text": "De la posibilidad de que una dirección hubiera utilizado su rostro sin entregar una explicación completa."
       },
       {
         "type": "scene",
@@ -4728,7 +4736,7 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Hizo que una cámara del norte enviara una imagen antigua de Torchbearer. Activó una compuerta al sur con la credencial inválida de Port Vial y provocó una falla de luz en el oeste. No Chances dividió el cerco en tres equipos."
+        "text": "Hizo que una cámara del norte enviara una imagen antigua del Portador. Activó una compuerta al sur con la credencial inválida de Port Vial y provocó una falla de luz en el oeste. No Chances dividió el cerco en tres equipos."
       },
       {
         "type": "speech",
@@ -4737,8 +4745,8 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Acabas de aumentar el tiempo —observó Torchbearer.",
-        "who": "Torchbearer"
+        "text": "—Acabas de aumentar el tiempo —observó el Portador.",
+        "who": "Portador"
       },
       {
         "type": "speech",
@@ -4748,7 +4756,7 @@ const PART4_CHAPTERS = [
       {
         "type": "speech",
         "text": "—Eso lo vuelve parecido a un obispo.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -4761,12 +4769,12 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Torchbearer se sentó sobre una caja de piedra."
+        "text": "El Portador se sentó sobre una caja de piedra."
       },
       {
         "type": "speech",
-        "text": "—Bram.",
-        "who": "Torchbearer"
+        "text": "—Bram fue el primero en responder al código.",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -4780,7 +4788,7 @@ const PART4_CHAPTERS = [
       {
         "type": "speech",
         "text": "—No. Escuchó la llamada antes que nosotros y dijo que conocía el sistema de James. Cuando llegamos al punto de respuesta, ya había enviado Sahlo Folina.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "speech",
@@ -4790,7 +4798,7 @@ const PART4_CHAPTERS = [
       {
         "type": "speech",
         "text": "—Eso creemos.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "speech",
@@ -4800,7 +4808,7 @@ const PART4_CHAPTERS = [
       {
         "type": "speech",
         "text": "—No regresó.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -4813,12 +4821,12 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Torchbearer la reconoció."
+        "text": "El Portador la reconoció."
       },
       {
         "type": "speech",
         "text": "—Bram conocía ese código.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "speech",
@@ -4827,12 +4835,12 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Torchbearer cerró los ojos un instante."
+        "text": "El Portador cerró los ojos un instante."
       },
       {
         "type": "speech",
-        "text": "—Entonces llegó más lejos de lo que sabíamos.",
-        "who": "Torchbearer"
+        "text": "—Entonces la señal asociada con él llegó más lejos de lo que sabíamos.",
+        "who": "Portador"
       },
       {
         "type": "speech",
@@ -4845,12 +4853,12 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Torchbearer apoyó las manos sobre las rodillas."
+        "text": "El Portador apoyó las manos sobre las rodillas."
       },
       {
         "type": "speech",
-        "text": "—A veces puedo mantener una dirección para él.",
-        "who": "Torchbearer"
+        "text": "—A veces siento una dirección relacionada con él.",
+        "who": "Portador"
       },
       {
         "type": "speech",
@@ -4859,8 +4867,8 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No lo sé completo.",
-        "who": "Torchbearer"
+        "text": "—No lo sé completo. Ni siquiera sé si lo que siento alcanza a Clancy de la misma forma.",
+        "who": "Portador"
       },
       {
         "type": "speech",
@@ -4869,8 +4877,8 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Es la única que tengo.",
-        "who": "Torchbearer"
+        "text": "—Es la única que puedo sostener sin inventar.",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -4878,7 +4886,7 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Torchbearer explicó que, desde la primera fuga, había sentido momentos en los que Clancy se alejaba de una ruta física y necesitaba una referencia. No era una voz transmitida por radio ni un sueño que pudiera provocar a voluntad. A veces solo conseguía sostener una intención —arriba, este, respira, no te detengas— y después ignoraba qué parte había alcanzado a Clancy."
+        "text": "El Portador explicó que, desde la primera fuga, había sentido momentos en los que la orientación de Clancy parecía desviarse de una ruta física. No era una voz transmitida por radio ni un sueño que pudiera provocar a voluntad. A veces solo percibía una intención —arriba, este, respira, no te detengas— y después ignoraba si aquella intención había salido de él, llegado a Clancy o coincidido con algo que ambos recordaban."
       },
       {
         "type": "speech",
@@ -4887,18 +4895,18 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—A veces percibo un lugar como un recuerdo que no es mío. Otras veces solo sé que está decidiendo. No puedo elegir cuándo ocurre ni demostrar de dónde viene.",
-        "who": "Torchbearer"
+        "text": "—No como veo esta habitación. A veces recibo un lugar parecido a un recuerdo ajeno. Otras veces solo noto que una decisión está ocurriendo. No puedo elegir cuándo ni demostrar su origen.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—¿Puedes mover cosas?",
+        "text": "—¿Puedes mover cosas mediante esa sensación?",
         "who": "James"
       },
       {
         "type": "speech",
-        "text": "—No.",
-        "who": "Torchbearer"
+        "text": "—Nunca lo he conseguido.",
+        "who": "Portador"
       },
       {
         "type": "speech",
@@ -4908,7 +4916,7 @@ const PART4_CHAPTERS = [
       {
         "type": "speech",
         "text": "—No.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "speech",
@@ -4917,12 +4925,12 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Fragmentos.",
-        "who": "Torchbearer"
+        "text": "—Fragmentos, o algo que se parece a ellos.",
+        "who": "Portador"
       },
       {
         "type": "p",
-        "text": "Mara pensó en Clancy dentro del agua, respondiendo a una figura que no dejaba huellas. Pensó en los diálogos completos que el pasajero había descrito."
+        "text": "Mara pensó en Clancy dentro del agua, respondiendo hacia un lugar donde el pasajero no había visto un segundo cuerpo. Pensó en los diálogos completos descritos en la cinta. Nada demostraba que ambas experiencias fueran el mismo fenómeno."
       },
       {
         "type": "speech",
@@ -4931,8 +4939,8 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Entonces completó lo que faltaba.",
-        "who": "Torchbearer"
+        "text": "—Entonces quizá completó lo que faltaba.",
+        "who": "Portador"
       },
       {
         "type": "speech",
@@ -4942,7 +4950,7 @@ const PART4_CHAPTERS = [
       {
         "type": "speech",
         "text": "—Quizá.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "speech",
@@ -4951,12 +4959,12 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Torchbearer no apartó la mirada."
+        "text": "El Portador no apartó la mirada."
       },
       {
         "type": "speech",
-        "text": "—También.",
-        "who": "Torchbearer"
+        "text": "—También es posible.",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -4964,7 +4972,7 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Clancy no había inventado necesariamente al Torchbearer. Había recibido una dirección real y construido alrededor una presencia capaz de sostenerlo. El guía había estado allí de una forma que no podía abrir una puerta. Las manos habían sido de Clancy."
+        "text": "Mara formuló una hipótesis que todavía no podía probar: quizá Clancy había recibido una dirección real y construido alrededor una presencia capaz de sostenerlo. También podía haber unido trauma, recuerdos y la silueta de un técnico. Ninguna versión explicaba todavía todas las manos, puertas y voces."
       },
       {
         "type": "p",
@@ -4988,71 +4996,71 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Entonces estuvo solo —dijo.",
+        "text": "—Entonces creyó estar acompañado —dijo.",
         "who": "Mara"
       },
       {
         "type": "p",
-        "text": "Torchbearer negó lentamente."
+        "text": "El Portador negó lentamente."
       },
       {
         "type": "speech",
-        "text": "—No de la manera que importa.",
-        "who": "Torchbearer"
+        "text": "—No puedo afirmar qué forma tuvo esa compañía.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—No cargaste a nadie.",
+        "text": "—No recuerdas cargar a nadie.",
         "who": "Mara"
       },
       {
         "type": "speech",
         "text": "—No.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—No abriste la escotilla.",
+        "text": "—No recuerdas abrir la escotilla.",
         "who": "Mara"
       },
       {
         "type": "speech",
         "text": "—No.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—No lo sacaste del agua.",
+        "text": "—No recuerdas sacar al pasajero del agua.",
         "who": "Mara"
       },
       {
         "type": "speech",
         "text": "—No.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—Entonces esas acciones las hizo él.",
+        "text": "—Entonces las acciones que el testigo atribuye a Clancy siguen perteneciendo a Clancy.",
         "who": "Mara"
       },
       {
         "type": "speech",
-        "text": "—Sí.",
-        "who": "Torchbearer"
+        "text": "—Eso es lo que sostiene la evidencia que tienen.",
+        "who": "Portador"
       },
       {
         "type": "p",
-        "text": "La respuesta no borraba al técnico. Alguien físico había recogido la credencial, llevado el mango de la antorcha, dejado señales junto a la batería y abierto una posibilidad antes de separarse de Clancy. Pero las palancas de la sala de control, la escotilla, el ascenso y el rescate del pasajero ocurrieron después. Esas acciones sí habían sido de Clancy. Mara sintió orgullo y dolor al mismo tiempo: necesitó una dirección, pero ninguna presencia sin cuerpo pudo realizar por él el esfuerzo material."
+        "text": "La respuesta no borraba al técnico. Alguien físico había utilizado la credencial, llevado el mango de la antorcha y dejado señales junto a la batería. Después, el testimonio situaba a Clancy sosteniendo al pasajero, alcanzando la costa y preparando la baliza. La presencia que el pasajero no podía ver podía haber orientado, acompañado o surgido de la necesidad; todavía no podían convertir ninguna posibilidad en mecanismo."
       },
       {
         "type": "speech",
-        "text": "—Él no lo sabe —dijo.",
+        "text": "—Él no sabe que estamos separando las acciones de esa manera —dijo Mara.",
         "who": "Mara"
       },
       {
         "type": "speech",
         "text": "—No todavía.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "speech",
@@ -5061,18 +5069,18 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Porque no sabía cómo me veía.",
-        "who": "Torchbearer"
+        "text": "—Porque no sabía qué estaba viendo él ni qué estaba sintiendo yo.",
+        "who": "Portador"
       },
       {
         "type": "speech",
-        "text": "—Ahora lo sabes.",
+        "text": "—Ahora sabes algo más.",
         "who": "Mara"
       },
       {
         "type": "speech",
-        "text": "—Ahora sé que puede verme donde mi cuerpo no está.",
-        "who": "Torchbearer"
+        "text": "—Ahora sé que su relato coloca mi rostro en un lugar donde no puedo verificar mi cuerpo.",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -5089,7 +5097,7 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Torchbearer abrió la mochila."
+        "text": "El Portador abrió la mochila."
       },
       {
         "type": "p",
@@ -5098,7 +5106,7 @@ const PART4_CHAPTERS = [
       {
         "type": "speech",
         "text": "—La señal de 9-E llegó hasta nosotros —dijo—. No las palabras. La frecuencia. Después vimos las luces de los distritos.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "speech",
@@ -5108,7 +5116,7 @@ const PART4_CHAPTERS = [
       {
         "type": "speech",
         "text": "—No conozco el nombre del lugar con certeza. Sabemos que existe una isla al este y que algo desde allí alcanzó el cuerpo de Keons.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "speech",
@@ -5118,7 +5126,7 @@ const PART4_CHAPTERS = [
       {
         "type": "speech",
         "text": "—La señal lleva su forma.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -5131,12 +5139,12 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Torchbearer observó el dibujo."
+        "text": "El Portador observó el dibujo."
       },
       {
         "type": "speech",
         "text": "—Los obispos usan rojo.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "speech",
@@ -5146,7 +5154,7 @@ const PART4_CHAPTERS = [
       {
         "type": "speech",
         "text": "—Entonces él cambió el canal.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "speech",
@@ -5155,12 +5163,12 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Torchbearer sonrió apenas."
+        "text": "El Portador sonrió apenas."
       },
       {
         "type": "speech",
         "text": "—Ahora entiendo por qué Clancy confiaba en ti.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "speech",
@@ -5170,7 +5178,7 @@ const PART4_CHAPTERS = [
       {
         "type": "speech",
         "text": "—Eso también.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -5184,7 +5192,7 @@ const PART4_CHAPTERS = [
       {
         "type": "speech",
         "text": "—Los Banditos pueden atacar cuando sepamos la ruta.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "speech",
@@ -5193,7 +5201,7 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Torchbearer levantó la vista."
+        "text": "El Portador levantó la vista."
       },
       {
         "type": "speech",
@@ -5203,7 +5211,7 @@ const PART4_CHAPTERS = [
       {
         "type": "speech",
         "text": "—No vine a ordenar.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "speech",
@@ -5213,7 +5221,7 @@ const PART4_CHAPTERS = [
       {
         "type": "speech",
         "text": "—Y ustedes sostuvieron el interior sin nosotros.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "speech",
@@ -5231,12 +5239,12 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Torchbearer escuchó sin interrumpir."
+        "text": "El Portador escuchó sin interrumpir."
       },
       {
         "type": "speech",
         "text": "—Acepto.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "speech",
@@ -5246,7 +5254,7 @@ const PART4_CHAPTERS = [
       {
         "type": "speech",
         "text": "—No es fácil. Es correcto.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -5260,7 +5268,7 @@ const PART4_CHAPTERS = [
       {
         "type": "speech",
         "text": "—Ya tienen la estatua.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "speech",
@@ -5278,12 +5286,12 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Torchbearer tardó en responder."
+        "text": "El Portador tardó en responder."
       },
       {
         "type": "speech",
         "text": "—No sabemos si puede.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "speech",
@@ -5293,7 +5301,7 @@ const PART4_CHAPTERS = [
       {
         "type": "speech",
         "text": "—Un voluntario puede morir.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "speech",
@@ -5306,12 +5314,12 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Torchbearer escuchó cada punto."
+        "text": "El Portador escuchó cada punto."
       },
       {
         "type": "speech",
         "text": "—Bram habría insistido en añadir una ruta de salida —dijo.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -5328,12 +5336,12 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Torchbearer siguió la línea con el dedo."
+        "text": "El Portador siguió la línea con el dedo."
       },
       {
         "type": "speech",
         "text": "—No llegó a la corriente oriental.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "speech",
@@ -5343,7 +5351,7 @@ const PART4_CHAPTERS = [
       {
         "type": "speech",
         "text": "—¿Tienes prueba?",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "speech",
@@ -5353,7 +5361,7 @@ const PART4_CHAPTERS = [
       {
         "type": "speech",
         "text": "—Entonces no digamos que es Bram todavía.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -5386,12 +5394,12 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Torchbearer guardó la máscara."
+        "text": "El Portador guardó la máscara."
       },
       {
         "type": "speech",
         "text": "—La ruta por la que entré ya no sirve.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "speech",
@@ -5404,7 +5412,7 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Mara entregó a Torchbearer una copia incompleta del mapa de la estatua y la lista de señales permitidas. Él dejó los mapas costeros y una pequeña pieza de metal marcada por Bram."
+        "text": "Mara entregó al Portador una copia incompleta del mapa de la estatua y la lista de señales permitidas. Él dejó los mapas costeros y una pequeña pieza de metal marcada por Bram."
       },
       {
         "type": "speech",
@@ -5414,7 +5422,7 @@ const PART4_CHAPTERS = [
       {
         "type": "speech",
         "text": "—Parte de una brújula que dejó en el campamento. La aguja siempre se trababa hacia el este.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "speech",
@@ -5424,7 +5432,7 @@ const PART4_CHAPTERS = [
       {
         "type": "speech",
         "text": "—Porque si el prisionero es él, reconocerá la falla.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -5432,7 +5440,7 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Torchbearer descendió al agua."
+        "text": "El Portador descendió al agua."
       },
       {
         "type": "p",
@@ -5440,13 +5448,13 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—¿Nunca estuviste en ese barco?",
+        "text": "—¿Afirmas que no estuviste en ese barco?",
         "who": "Mara"
       },
       {
         "type": "speech",
-        "text": "—Nunca.",
-        "who": "Torchbearer"
+        "text": "—Mi cuerpo no partió de Trench según todo lo que puedo verificar.",
+        "who": "Portador"
       },
       {
         "type": "speech",
@@ -5455,8 +5463,8 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—No salí de Trench durante todo el evento.",
-        "who": "Torchbearer"
+        "text": "—No tengo memoria ni rastro material que me sitúe allí.",
+        "who": "Portador"
       },
       {
         "type": "speech",
@@ -5465,12 +5473,12 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Torchbearer sostuvo su mirada."
+        "text": "El Portador sostuvo su mirada."
       },
       {
         "type": "speech",
-        "text": "—Era una dirección. Él le dio mi rostro.",
-        "who": "Torchbearer"
+        "text": "—No sé qué fue. Solo sé que mi rostro no basta para demostrar que era mi cuerpo.",
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -5498,7 +5506,7 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Durante el camino, las pantallas mostraron una alerta sobre actividad Bandito en el perímetro. La imagen era borrosa y correspondía a una cámara del norte, donde Torchbearer nunca estuvo. No Chances había elegido el falso positivo más fácil de convertir en relato."
+        "text": "Durante el camino, las pantallas mostraron una alerta sobre actividad Bandito en el perímetro. La imagen era borrosa y correspondía a una cámara del norte, donde la ruta conocida del Portador no lo situaba. No Chances había elegido el falso positivo más fácil de convertir en relato."
       },
       {
         "type": "p",
@@ -5506,27 +5514,17 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Bram respondió —dijo.",
+        "text": "—El código de Bram respondió —dijo Mara.",
         "who": "Mara"
       },
       {
         "type": "speech",
-        "text": "—Eso sí lo sabemos.",
+        "text": "—Eso es lo más firme que tenemos.",
         "who": "James"
       },
       {
         "type": "speech",
-        "text": "—Probablemente abordó.",
-        "who": "Mara"
-      },
-      {
-        "type": "speech",
-        "text": "—Sí.",
-        "who": "James"
-      },
-      {
-        "type": "speech",
-        "text": "—Probablemente está preso.",
+        "text": "—Probablemente alguien que conocía sus códigos abordó.",
         "who": "Mara"
       },
       {
@@ -5536,7 +5534,17 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Y Torchbearer nunca estuvo con Clancy.",
+        "text": "—Probablemente esa persona está presa.",
+        "who": "Mara"
+      },
+      {
+        "type": "speech",
+        "text": "—Sí.",
+        "who": "James"
+      },
+      {
+        "type": "speech",
+        "text": "—Y ninguna prueba coloca el cuerpo del Portador junto a Clancy.",
         "who": "Mara"
       },
       {
@@ -5545,7 +5553,7 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Nunca estuvo físicamente.",
+        "text": "—Ninguna prueba que tengamos.",
         "who": "James"
       },
       {
@@ -5562,7 +5570,7 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Cuando lo vea —dijo—, alguien tendrá que explicarle que todo lo que hizo después de separarse del técnico lo hizo con sus propias manos.",
+        "text": "—Cuando lo vea —dijo—, primero tendrá que contar qué vio. Después intentaremos separar las manos, las voces y las rutas.",
         "who": "Mara"
       },
       {
@@ -5577,7 +5585,7 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "La idea de haber estado solo podía sentirse como abandono. La idea de haber sobrevivido solo podía sentirse como fuerza. Ambas serían ciertas al mismo tiempo."
+        "text": "La idea de haber actuado sin ayuda física podía sentirse como abandono. La idea de haber sostenido al pasajero y alcanzado la costa con sus propias manos podía sentirse como fuerza. Ninguna interpretación estaba completa todavía."
       },
       {
         "type": "p",
@@ -5594,7 +5602,7 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Por primera vez, Mara comprendió que una presencia podía ser verdadera sin ser un cuerpo."
+        "text": "Por primera vez, Mara aceptó que una experiencia podía ser verdadera para Clancy sin que ellos comprendieran todavía qué clase de presencia la había sostenido."
       },
       {
         "type": "p",
@@ -5673,7 +5681,7 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Mara observaba desde una escalera. Durante años habían pensado la resistencia como una sucesión de puertas que debían abrirse para Clancy. Ahora construían movimientos capaces de continuar aunque él no apareciera, aunque Torchbearer no cruzara el perímetro y aunque Mara o James faltaran."
+        "text": "Mara observaba desde una escalera. Durante años habían pensado la resistencia como una sucesión de puertas que debían abrirse para Clancy. Ahora construían movimientos capaces de continuar aunque él no apareciera, aunque el Portador no cruzara el perímetro y aunque Mara o James faltaran."
       },
       {
         "type": "p",
@@ -5969,7 +5977,7 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "speech",
-        "text": "—Torchbearer cree que puede serlo.",
+        "text": "—El Portador cree que puede serlo.",
         "who": "James"
       },
       {
@@ -6026,7 +6034,7 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "La segunda reunión con Torchbearer ocurrió sin que entrara en Dema."
+        "text": "La segunda reunión con el Portador ocurrió sin que entrara en Dema."
       },
       {
         "type": "p",
@@ -6054,7 +6062,7 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Torchbearer no confirmó que el prisionero fuera él. Dema podía reutilizar números, colocar objetos y construir una trampa. La sospecha se volvió fuerte, no absoluta."
+        "text": "El Portador no confirmó que el prisionero fuera él. Dema podía reutilizar números, colocar objetos y construir una trampa. La sospecha se volvió fuerte, no absoluta."
       },
       {
         "type": "p",
@@ -6086,19 +6094,19 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Las reglas para un huésped vivo ocuparon cuatro páginas."
+        "text": "El protocolo para la hipótesis de un huésped vivo ocupó cuatro páginas."
       },
       {
         "type": "p",
-        "text": "Mara insistió en escribirlas a mano y guardar copias en tres células. Nadie sabía si Clancy podía volver a ocupar un cuerpo vivo. Nadie sabía cuánto dolor producía, si la conciencia original permanecía despierta o si el vínculo podía cortarse."
+        "text": "Mara escribió en la primera línea: POSIBILIDAD NO CONFIRMADA. Después guardó copias en tres células. Nadie sabía si Clancy podía ocupar un cuerpo vivo; tampoco sabían si esa posibilidad existía, cuánto dolor produciría, si la conciencia original permanecería despierta o si el vínculo podría cortarse."
       },
       {
         "type": "p",
-        "text": "Precisamente por eso necesitaban decidir antes de la urgencia."
+        "text": "Precisamente por eso querían fijar límites antes de que la urgencia convirtiera una suposición en permiso."
       },
       {
         "type": "p",
-        "text": "La primera regla era simple:"
+        "text": "La primera condición provisional era simple:"
       },
       {
         "type": "case-file",
@@ -6109,7 +6117,7 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "La segunda:"
+        "text": "La segunda condición:"
       },
       {
         "type": "case-file",
@@ -6120,7 +6128,7 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "La tercera exigía testigos."
+        "text": "La tercera condición exigía testigos."
       },
       {
         "type": "p",
@@ -6132,11 +6140,11 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "La sexta prohibía usar a alguien inconsciente como sustituto de una decisión."
+        "text": "La sexta prohibía utilizar a alguien inconsciente como sustituto de una decisión."
       },
       {
         "type": "p",
-        "text": "La séptima establecía que Clancy no recibiría control sobre la red completa por ocupar un cuerpo dentro de Dema."
+        "text": "La séptima establecía que, aun en aquel supuesto, Clancy no recibiría control sobre la red completa por ocupar un cuerpo dentro de Dema."
       },
       {
         "type": "p",
@@ -6178,11 +6186,11 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "James añadió una señal de corte mecánica. Si el huésped la activaba, el sistema de relés cerraría la conexión exterior aunque Clancy intentara mantenerla."
+        "text": "James añadió al protocolo una señal de corte mecánica. Si la persona voluntaria la activaba, el sistema de relés cerraría la conexión exterior aunque Clancy intentara mantenerla."
       },
       {
         "type": "speech",
-        "text": "—¿Funcionará? —preguntó Mara.",
+        "text": "—¿Funcionaría si el vínculo fuera posible? —preguntó Mara.",
         "who": "Mara"
       },
       {
@@ -6433,7 +6441,7 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Torchbearer estaba a mi derecha."
+        "text": "El Portador estaba a mi derecha."
       },
       {
         "type": "p",
@@ -6451,7 +6459,7 @@ const PART4_CHAPTERS = [
       {
         "type": "speech",
         "text": "—Entonces no lo levantes.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "speech",
@@ -6461,7 +6469,7 @@ const PART4_CHAPTERS = [
       {
         "type": "speech",
         "text": "—Eso no es lo mismo.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "speech",
@@ -6470,12 +6478,12 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Torchbearer miró a la criatura."
+        "text": "El Portador miró a la criatura."
       },
       {
         "type": "speech",
         "text": "—Quizá la diferencia tengas que sostenerla tú.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "p",
@@ -6558,7 +6566,7 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Torchbearer miró hacia la ciudad."
+        "text": "El Portador miró hacia la ciudad."
       },
       {
         "type": "p",
@@ -6578,7 +6586,7 @@ const PART4_CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Torchbearer se agachó junto a mí. Su mano pareció apoyarse sobre mi hombro."
+        "text": "El Portador se agachó junto a mí. Su mano pareció apoyarse sobre mi hombro."
       },
       {
         "type": "p",
@@ -6600,7 +6608,7 @@ const PART4_CHAPTERS = [
       {
         "type": "speech",
         "text": "—Te seguí.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "speech",
@@ -6614,7 +6622,7 @@ const PART4_CHAPTERS = [
       {
         "type": "speech",
         "text": "—Entonces todavía estamos navegando.",
-        "who": "Torchbearer"
+        "who": "Portador"
       },
       {
         "type": "p",

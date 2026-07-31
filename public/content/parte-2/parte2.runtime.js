@@ -8,6 +8,14 @@ const PART2_CHAPTERS = [
     "number": "Capítulo 5",
     "title": "He logrado salir",
     "subtitle": "La libertad empieza con frío, hambre y una ruta sin nombres",
+    "hero": {
+      "eyebrow": "Parte II — Trench",
+      "title": "El color",
+      "subtitle": "que no pueden ver",
+      "lead": "Cruzar los muros no basta: también hay que aprender a elegir en el exterior.",
+      "location": "Trench, después de la primera salida de Dema.",
+      "background": "./assets/cover-trench.webp"
+    },
     "blocks": [
       {
         "type": "p",

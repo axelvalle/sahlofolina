@@ -13,13 +13,13 @@ Versión de producción del lector y Biblioteca de *Sahlo Folina*. Incluye las P
 El lector usa rutas internas por hash para funcionar tanto en hosting estático como en Next.js y Cloudflare:
 
 ```text
-#/inicio
-#/indice/parte-1
-#/indice/parte-2
-#/indice/parte-3
-#/indice/parte-4
-#/biblioteca
-#/leer/cap25
+/inicio
+/indice/parte-1
+/indice/parte-2
+/indice/parte-3
+/indice/parte-4
+/biblioteca
+/leer/cap25
 ```
 
 Las rutas `/biblioteca`, `/indice` y `/leer/[chapter]` redirigen al mismo lector sin mantener páginas duplicadas de contenido.
@@ -68,3 +68,11 @@ npm run start
 ## Distribución
 
 Obra fan no oficial y 100% gratuita. No está autorizada para venta, alquiler ni monetización.
+
+
+## Rutas limpias en Vercel
+
+El SPA usa `history.pushState()` y publica rutas como `/inicio`, `/biblioteca`,
+`/indice/parte-4` y `/leer/cap25`. `vercel.json` reescribe esas solicitudes a
+`/index.html` sin redirecciones visibles. Las antiguas URLs `index.html#/...` se
+reconocen una vez y se sustituyen automáticamente por su equivalente limpio.

@@ -21,8 +21,8 @@
       description: "Scaled and Icy · Livestream Experience · Saturday",
       cover: "./assets/library/parte-3-cover.webp",
       files: Object.freeze([
-        { format: "DOCX", size: "7.6 MB", file: "./downloads/Sahlo-Folina-Parte-III.docx?v=20260729-r2" },
-        { format: "PDF", size: "2.2 MB", file: "./downloads/Sahlo-Folina-Parte-III.pdf?v=20260729-r2" },
+        { format: "DOCX", size: "7.5 MB", file: "./downloads/Sahlo-Folina-Parte-III.docx?v=canonical" },
+        { format: "PDF", size: "3.3 MB", file: "./downloads/Sahlo-Folina-Parte-III.pdf?v=canonical" },
       ]),
     },
     {
@@ -32,8 +32,19 @@
       description: "No Chances · La torre 9-E · East Is Up Again",
       cover: "./assets/library/parte-4-cover.webp",
       files: Object.freeze([
-        { format: "DOCX", size: "2.3 MB", file: "./downloads/Sahlo-Folina-Parte-IV.docx?v=20260729-final" },
-        { format: "PDF", size: "1.1 MB", file: "./downloads/Sahlo-Folina-Parte-IV.pdf?v=20260729-final" },
+        { format: "DOCX", size: "2.3 MB", file: "./downloads/Sahlo-Folina-Parte-IV.docx?v=20260730-canonical" },
+        { format: "PDF", size: "1.1 MB", file: "./downloads/Sahlo-Folina-Parte-IV.pdf?v=20260730-canonical" },
+      ]),
+    },
+    {
+      id: "parte-5",
+      collection: "Edición V",
+      title: "La brecha",
+      description: "The Outside · Overcompensate · Navigating · Paladin Strait",
+      cover: "./assets/library/parte-5-cover.webp",
+      files: Object.freeze([
+        { format: "DOCX", size: "12.1 MB", file: "./downloads/Sahlo-Folina-Parte-V.docx?v=20260730-canonical" },
+        { format: "PDF", size: "5.3 MB", file: "./downloads/Sahlo-Folina-Parte-V.pdf?v=20260730-canonical" },
       ]),
     },
   ]);

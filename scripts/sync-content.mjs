@@ -11,6 +11,7 @@ const canonicalFiles = [
   "content/parte-2/parte2.runtime.js",
   "content/parte-3/parte3.runtime.js",
   "content/parte-4/parte4.runtime.js",
+  "content/parte-5/parte5.runtime.js",
   "content/extras/extras.runtime.js",
 ];
 
@@ -47,5 +48,5 @@ for (const directory of ["assets", "downloads"]) {
 }
 
 console.log(
-  "Producción sincronizada: lector, Biblioteca, descargas, assets WebP y contenido de Partes I-IV.",
+  "Producción sincronizada: lector, Biblioteca, descargas, assets WebP y contenido de Partes I-V.",
 );

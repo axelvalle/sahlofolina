@@ -7,6 +7,24 @@ const nextConfig: NextConfig = {
   turbopack: {
     root: process.cwd(),
   },
+  async rewrites() {
+    const spaRoutes = [
+      "/",
+      "/inicio",
+      "/biblioteca",
+      "/indice",
+      "/indice/:part",
+      "/indice/:part/:arc",
+      "/leer/:chapter",
+      "/leer/:chapter/:target",
+    ];
+
+    return {
+      beforeFiles: spaRoutes.map((source) => ({ source, destination: "/index.html" })),
+      afterFiles: [],
+      fallback: [],
+    };
+  },
   async headers() {
     return [
       {

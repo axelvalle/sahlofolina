@@ -1,15 +1,27 @@
-const CACHE_VERSION = "sahlo-folina-performance-r1";
+const CACHE_VERSION = "sahlo-folina-part5-map-heroes-r12";
 const SHELL_CACHE = `${CACHE_VERSION}-shell`;
 const RUNTIME_CACHE = `${CACHE_VERSION}-runtime`;
 const CORE = [
-  "./index.html",
-  "./styles.css?v=20260729-performance-r1",
-  "./app.js?v=20260729-performance-r1",
-  "./library.js?v=20260729-performance-r1",
-  "./content/framework/runtime.js?v=20260729-performance-r1",
-  "./content/framework/routes.js?v=20260729-performance-r1",
-  "./assets/twenty-one-pilots-icon.webp",
-  "./assets/cover-dema.webp",
+  "/index.html",
+  "/styles.css?v=20260730-part5-map-heroes-r12",
+  "/app.js?v=20260730-part5-map-heroes-r12",
+  "/library.js?v=20260730-part5-map-heroes-r12",
+  "/content/framework/runtime.js?v=20260730-part5-map-heroes-r12",
+  "/content/framework/routes.js?v=20260730-part5-map-heroes-r12",
+  "/content/parte-5/parte5.runtime.js?v=20260730-part5-map-heroes-r12",
+  "/assets/twenty-one-pilots-icon.webp",
+  "/assets/cover-dema.webp",
+  "/assets/cover-trench.webp",
+  "/assets/cover-sai parte 3.webp",
+  "/assets/parte-4/dema-nocturna.webp",
+  "/assets/parte-4/habitacion-azul.webp",
+  "/assets/parte-5/parte-v-mapa.webp",
+  "/assets/parte-5/indice-voldsoy.webp",
+  "/assets/parte-5/arco-1-indice.webp",
+  "/assets/parte-5/arco-1-portada.webp",
+  "/assets/parte-5/arco-2-portada.webp",
+  "/assets/parte-5/arco-3-portada.webp",
+  "/assets/parte-5/dema-distancia.webp",
 ];
 
 self.addEventListener("install", (event) => {
@@ -37,7 +49,7 @@ async function networkFirst(request) {
     if (response.ok) cache.put(request, response.clone());
     return response;
   } catch {
-    return (await cache.match(request)) || (await cache.match("./index.html"));
+    return (await cache.match(request)) || (await cache.match("/index.html"));
   }
 }
 
