@@ -3,44 +3,54 @@
   "files": [
     {
       "name": "Sahlo-Folina-Parte-III.docx",
-      "bytes": 5390497,
-      "sha256": "28673f53a9356cb434831e37ec1ca7dd484e29616d9d64f0f933e5d79f99d72f"
+      "bytes": 5350296,
+      "sha256": "4822346ff8411913b7c767e74496545e13adb026544b171ddd2ce93a8c161284"
     },
     {
       "name": "Sahlo-Folina-Parte-III.pdf",
-      "bytes": 3378488,
-      "sha256": "72452c9456359f5cf1a5d4c8a0d7afaffc47a0d87ffe3e985d19951e010feef9"
+      "bytes": 3328890,
+      "sha256": "9de5bef36de5e6546d24fb48e121e8ccc426dfdc32651c7657b20551065a3471"
     },
     {
       "name": "Sahlo-Folina-Parte-IV.docx",
-      "bytes": 2580645,
-      "sha256": "6ff7fe241de5e4c1c45eb5e47d677a9d13ecb07889e33e71f8cf10212be045ac"
+      "bytes": 2465881,
+      "sha256": "49ee1fb86bbb22c334f42830544289fd05f812c53cbb022e94e4d626b8cea304"
     },
     {
       "name": "Sahlo-Folina-Parte-IV.pdf",
-      "bytes": 1144016,
-      "sha256": "6bb938c1369975f9fa21117957d5daa678f5670d074ee7906ee49adcde9faadd"
+      "bytes": 1095629,
+      "sha256": "3795bab73097d68ab884622a245f0fdb21661ee3a1239eaa166eba1263d683e2"
     },
     {
       "name": "Sahlo-Folina-Parte-V.docx",
-      "bytes": 12643473,
-      "sha256": "ba2f76611e033e7d1babc865c67c0cfdd9c530ee8e573a40cdab9da482880d7c"
+      "bytes": 12339126,
+      "sha256": "593a01916e53a9836a66fcfbfd8c624cfe5a1ae67d3e2c8d33f7831385251155"
     },
     {
       "name": "Sahlo-Folina-Parte-V.pdf",
-      "bytes": 2261699,
-      "sha256": "12cd34713602ed5380e59c5a497f7d77be4847f4c80f4f5aada229d0efc67980"
+      "bytes": 5725418,
+      "sha256": "a2badedea26dddd844d9aff7d29cebf9de42c6e8490161df265752fd0082bc6e"
+    },
+    {
+      "name": "Sahlo-Folina-Parte-VI.docx",
+      "bytes": 2796421,
+      "sha256": "11bfaf156710d5a412454209e84b8d1870a3a35b5eaf6631edfff4a32a4c22e6"
+    },
+    {
+      "name": "Sahlo-Folina-Parte-VI.pdf",
+      "bytes": 1378806,
+      "sha256": "bef0b9b5de10ab59df52d09dfca748d32f303f73466d817b0d063a6d702db22b"
     },
     {
       "name": "Sahlo-Folina-Partes-I-y-II.docx",
-      "bytes": 8665524,
-      "sha256": "2f6c486156d9b4f2ebdcd3385e6a62f6681dfeb7ec311bdfc7a38099a9bee3a9"
+      "bytes": 8407947,
+      "sha256": "1ca84234c116855ccb3d3b39f131fdf5e47247a1b5020d5f5b25d27d8d1b6bab"
     },
     {
       "name": "Sahlo-Folina-Partes-I-y-II.pdf",
-      "bytes": 2142209,
-      "sha256": "dedbcf91756856717c45b7de3377f05dbedd4bd09d4bde3fb5e4305b5524baa7"
+      "bytes": 3684783,
+      "sha256": "83d732b59ca3ca311130674ab5b8ca1ae2a3f938bd927eafff42094545397a89"
     }
   ],
-  "revision": "Ediciones literarias maestras definitivas publicadas, incluida la Parte V"
+  "revision": "Ediciones literarias maestras v1.1 con corrección técnica final publicadas en Biblioteca (Libros I-V / Partes I-VI)."
 }

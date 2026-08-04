@@ -6,6 +6,7 @@ window.SAHLO_CONTENT_ROUTES = Object.freeze([
   Object.freeze({ id: "parte-3", path: "./content/parte-3/parte3.runtime.js", kind: "part", part: 3 }),
   Object.freeze({ id: "parte-4", path: "./content/parte-4/parte4.runtime.js", kind: "part", part: 4 }),
   Object.freeze({ id: "parte-5", path: "./content/parte-5/parte5.runtime.js", kind: "part", part: 5 }),
+  Object.freeze({ id: "parte-6", path: "./content/parte-6/parte6.runtime.js", kind: "part", part: 6 }),
   Object.freeze({ id: "extras", path: "./content/extras/extras.runtime.js", kind: "extras" }),
 ]);
 

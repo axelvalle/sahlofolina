@@ -1,0 +1,26 @@
+AUDITORÍA DE VOCES · PARTE VI
+
+Fuente: edición literaria maestra v1.1
+Criterio: atribución por acotación explícita, narrador focal y alternancia contextual verificada.
+
+prologo-parte-6 · Intenciones · 0 intervenciones
+  
+cap42 · El cuello · 103 intervenciones
+  Nico: 51, Clancy: 37, James: 6, Mara: 5, Bram: 2, Portador: 2
+cap43 · Los fantasmas del contrato · 267 intervenciones
+  Clancy: 117, Nico: 113, Elias: 6, Mara: 6, Pasajero: 6, James: 5, Portador: 5, Figura: 4, Lena: 2, Keons: 1, Huésped: 1, Bram: 1
+cap44 · I Am Torchbearer · 179 intervenciones
+  Portador: 78, Clancy: 43, Mara: 21, James: 15, Lena: 10, Bandito: 7, Bram: 3, Bandita: 1, Técnica: 1
+cap45 · City Walls I: Abandonado por el sol · 116 intervenciones
+  Nico: 47, Clancy: 34, James: 12, Mara: 11, Portador: 8, Bandito: 4
+cap46 · City Walls II: La ruptura · 76 intervenciones
+  Nico: 27, Clancy: 13, James: 13, Portador: 9, Mara: 7, Bandito: 6, Bandita: 1
+cap47 · City Walls III: La corona · 149 intervenciones
+  Clancy: 68, Portador: 40, Mara: 17, James: 15, Bandito: 9
+cap48 · Otra vez · 151 intervenciones
+  Portador: 43, Bram: 28, Clancy: 27, James: 14, Mara: 11, Joven: 9, Lena: 8, Bandito: 4, Mujer: 4, Bandita: 2, Ciudadano: 1
+
+Intervenciones totales de Parte VI: 1041
+Intervenciones sin hablante: 0
+Etiquetas inválidas: 0
+Diálogo incrustado sin separar: 0

@@ -1,5 +1,5 @@
 {
-  "name": "sahlo-folina-website",
+  "name": "sahlo-folina-android-progression",
   "version": "1.0.0",
   "private": true,
   "engines": {
@@ -9,22 +9,31 @@
     "content:sync": "node scripts/sync-content.mjs",
     "content:validate": "node scripts/validate-content.mjs",
     "voices:audit": "node scripts/audit-voices.mjs",
-    "verify": "npm run content:sync && npm run content:validate && npm run voices:audit && node --test tests/security.test.mjs",
+    "verify": "npm run content:sync && npm run content:validate && npm run voices:audit && node --test tests/*.test.mjs",
     "dev": "next dev",
     "prebuild": "npm run verify",
     "build": "next build",
     "start": "next start",
     "build:vinext": "vinext build",
     "start:vinext": "vinext start",
-    "test": "node --test tests/security.test.mjs",
-    "lint": "eslint . --ignore-pattern dist --ignore-pattern .next"
+    "android:sync": "npm run content:sync && cap sync android",
+    "android:apk": "npm run android:sync && cd android && gradlew.bat assembleDebug",
+    "android:bundle": "npm run android:sync && cd android && gradlew.bat bundleRelease",
+    "test": "node --test tests/*.test.mjs",
+    "lint": "eslint . --ignore-pattern dist --ignore-pattern .next --ignore-pattern android/app/build"
   },
   "dependencies": {
+    "@capacitor/android": "^8.5.0",
+    "@capacitor/app": "^8.1.1",
+    "@capacitor/core": "^8.5.0",
+    "@capacitor/preferences": "^8.0.1",
+    "@capacitor/status-bar": "^8.0.3",
     "next": "16.2.12",
     "react": "19.2.8",
     "react-dom": "19.2.8"
   },
   "devDependencies": {
+    "@capacitor/cli": "^8.5.0",
     "@cloudflare/vite-plugin": "1.47.0",
     "@eslint/js": "10.0.1",
     "@types/node": "22.19.19",

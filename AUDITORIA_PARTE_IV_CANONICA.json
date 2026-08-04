@@ -1,0 +1,118 @@
+{
+  "part": 4,
+  "title": "Los que se quedaron",
+  "source": {
+    "docx": {
+      "originalName": "Sahlo_Folina_Libro_III_Parte_IV_EDICION_LITERARIA_MAESTRA_v1(1).docx",
+      "publishedName": "Sahlo-Folina-Parte-IV.docx",
+      "bytes": 2580645,
+      "sha256": "6ff7fe241de5e4c1c45eb5e47d677a9d13ecb07889e33e71f8cf10212be045ac"
+    },
+    "pdf": {
+      "publishedName": "Sahlo-Folina-Parte-IV.pdf",
+      "bytes": 1144016,
+      "sha256": "6bb938c1369975f9fa21117957d5daa678f5670d074ee7906ee49adcde9faadd",
+      "pages": 70,
+      "generatedFromMasterDocx": true
+    }
+  },
+  "migration": {
+    "chapters": [
+      "cap25",
+      "cap26",
+      "cap27",
+      "cap28",
+      "cap29",
+      "cap30",
+      "cap31"
+    ],
+    "chapterDetails": [
+      {
+        "id": "cap25",
+        "title": "Los que se quedaron",
+        "blocks": 220,
+        "types": {
+          "p": 129,
+          "speech": 81,
+          "case-file": 6,
+          "scene": 4
+        }
+      },
+      {
+        "id": "cap26",
+        "title": "Dos versiones del agua",
+        "blocks": 261,
+        "types": {
+          "p": 126,
+          "speech": 129,
+          "scene": 4,
+          "case-file": 2
+        }
+      },
+      {
+        "id": "cap27",
+        "title": "El obispo traidor",
+        "blocks": 162,
+        "types": {
+          "p": 99,
+          "speech": 53,
+          "scene": 4,
+          "case-file": 6
+        }
+      },
+      {
+        "id": "cap28",
+        "title": "Algo camina en la torre",
+        "blocks": 191,
+        "types": {
+          "p": 133,
+          "speech": 55,
+          "case-file": 1,
+          "scene": 2
+        }
+      },
+      {
+        "id": "cap29",
+        "title": "La señal",
+        "blocks": 186,
+        "types": {
+          "p": 126,
+          "speech": 50,
+          "case-file": 4,
+          "scene": 6
+        }
+      },
+      {
+        "id": "cap30",
+        "title": "El hombre detrás de la antorcha",
+        "blocks": 249,
+        "types": {
+          "p": 104,
+          "speech": 141,
+          "scene": 4
+        }
+      },
+      {
+        "id": "cap31",
+        "title": "East Is Up Again",
+        "blocks": 246,
+        "types": {
+          "p": 155,
+          "speech": 73,
+          "scene": 8,
+          "case-file": 9,
+          "transmission": 1
+        }
+      }
+    ],
+    "previousPublishedDocxSha256": "81821ce432b6741f7440ea025618a8f14c75ee86085381ec647559d952fbcaa5",
+    "sourceParagraphsChangedAgainstPreviousRuntime": 68,
+    "previousRuntimeLeaves": 1477,
+    "masterRuntimeLeaves": 1539,
+    "allRuntimeLeavesAlignedToMasterSource": true,
+    "allDialogueBlocksHaveSpeakerAttribution": true,
+    "visibleRevisionNoticeAdded": false,
+    "libraryFilesReplaced": true,
+    "libraryCoverRegeneratedFromMasterDocx": true
+  }
+}

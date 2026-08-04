@@ -2173,7 +2173,7 @@ const PART2_CHAPTERS = [
       {
         "type": "speech",
         "text": "—Arriba.",
-        "who": "Keons"
+        "who": "James"
       },
       {
         "type": "p",
@@ -2702,7 +2702,7 @@ const PART2_CHAPTERS = [
       {
         "type": "speech",
         "text": "—Otra vez.",
-        "who": "Clancy"
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -2738,7 +2738,7 @@ const PART2_CHAPTERS = [
       {
         "type": "speech",
         "text": "—No tienes que verme con esto.",
-        "who": "Nico"
+        "who": "Mara"
       },
       {
         "type": "speech",
@@ -2752,7 +2752,7 @@ const PART2_CHAPTERS = [
       {
         "type": "speech",
         "text": "—Pero no pongas las manos así. Elias lo hacía cuando estaba fingiendo que no tenía miedo.",
-        "who": "Clancy"
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -3609,7 +3609,7 @@ const PART2_CHAPTERS = [
       {
         "type": "speech",
         "text": "—En el valle.",
-        "who": "Mara"
+        "who": "Clancy"
       },
       {
         "type": "p",
@@ -4843,7 +4843,8 @@ const PART2_CHAPTERS = [
         "attr": ""
       },
       {
-        "type": "p",
+        "type": "chronology",
+        "label": "REGISTRO DE ESCENA",
         "text": "Dema, la noche de Nico and the Niners."
       },
       {
@@ -4861,7 +4862,7 @@ const PART2_CHAPTERS = [
       {
         "type": "speech",
         "text": "—Pesa demasiado —dijo.",
-        "who": "Mara"
+        "who": "James"
       },
       {
         "type": "speech",
@@ -4893,7 +4894,7 @@ const PART2_CHAPTERS = [
       {
         "type": "speech",
         "text": "—Pueden rastrearla.",
-        "who": "Lena"
+        "who": "Mara"
       },
       {
         "type": "speech",
@@ -4907,12 +4908,12 @@ const PART2_CHAPTERS = [
       {
         "type": "speech",
         "text": "—No sé si es de Clancy.",
-        "who": "Clancy"
+        "who": "Mara"
       },
       {
         "type": "speech",
         "text": "—Entonces no la borres.",
-        "who": "Mara"
+        "who": "James"
       },
       {
         "type": "speech",
@@ -4922,7 +4923,7 @@ const PART2_CHAPTERS = [
       {
         "type": "speech",
         "text": "—Ese es el propósito.",
-        "who": "Bram"
+        "who": "James"
       },
       {
         "type": "speech",
@@ -4953,7 +4954,7 @@ const PART2_CHAPTERS = [
       {
         "type": "speech",
         "text": "—Sí.",
-        "who": "Funcionario"
+        "who": "James"
       },
       {
         "type": "speech",
@@ -4973,7 +4974,7 @@ const PART2_CHAPTERS = [
       {
         "type": "speech",
         "text": "—Él te lo dijo.",
-        "who": "Nico"
+        "who": "James"
       },
       {
         "type": "speech",
@@ -4987,7 +4988,7 @@ const PART2_CHAPTERS = [
       {
         "type": "speech",
         "text": "—No quería obligarte a despedirte antes de tiempo.",
-        "who": "Clancy"
+        "who": "James"
       },
       {
         "type": "p",
@@ -5001,7 +5002,7 @@ const PART2_CHAPTERS = [
       {
         "type": "speech",
         "text": "—Lo sé.",
-        "who": "Clancy"
+        "who": "James"
       },
       {
         "type": "speech",
@@ -5011,12 +5012,12 @@ const PART2_CHAPTERS = [
       {
         "type": "speech",
         "text": "—Las puertas se pueden reparar.",
-        "who": "Multitud"
+        "who": "James"
       },
       {
         "type": "speech",
         "text": "—¿Y las personas?",
-        "who": "James"
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -5056,7 +5057,7 @@ const PART2_CHAPTERS = [
       {
         "type": "speech",
         "text": "—¿Querías ir con él? —preguntó.",
-        "who": "Lena"
+        "who": "James"
       },
       {
         "type": "p",
@@ -5091,7 +5092,7 @@ const PART2_CHAPTERS = [
       {
         "type": "speech",
         "text": "—Entonces no lo guardes sola.",
-        "who": "Mara"
+        "who": "James"
       },
       {
         "type": "p",
@@ -5110,7 +5111,7 @@ const PART2_CHAPTERS = [
       {
         "type": "speech",
         "text": "—Eso dijiste antes.",
-        "who": "Clancy"
+        "who": "Mara"
       },
       {
         "type": "speech",
@@ -5153,7 +5154,7 @@ const PART2_CHAPTERS = [
       {
         "type": "speech",
         "text": "—Nos van a encontrar algún día.",
-        "who": "James"
+        "who": "Mara"
       },
       {
         "type": "speech",
@@ -5438,7 +5439,7 @@ const PART2_CHAPTERS = [
       {
         "type": "speech",
         "text": "—Todo aquí parece ser una historia.",
-        "who": "Lena"
+        "who": "Clancy"
       },
       {
         "type": "speech",
@@ -5692,7 +5693,7 @@ const PART2_CHAPTERS = [
       {
         "type": "speech",
         "text": "—Sí.",
-        "who": "Clancy"
+        "who": "Torchbearer"
       },
       {
         "type": "speech",
@@ -5970,7 +5971,7 @@ const PART2_CHAPTERS = [
       {
         "type": "speech",
         "text": "—Sí.",
-        "who": "Clancy"
+        "who": "Torchbearer"
       },
       {
         "type": "p",
@@ -6392,7 +6393,7 @@ const PART2_CHAPTERS = [
       {
         "type": "speech",
         "text": "—No.",
-        "who": "Clancy"
+        "who": "Bram"
       },
       {
         "type": "speech",
@@ -6402,7 +6403,7 @@ const PART2_CHAPTERS = [
       {
         "type": "speech",
         "text": "—Dema usa todo lo que puede nombrar. Eso no significa que le pertenezca.",
-        "who": "Clancy"
+        "who": "Bram"
       },
       {
         "type": "p",
@@ -6652,7 +6653,7 @@ const PART2_CHAPTERS = [
       {
         "type": "speech",
         "text": "—Ahora comprendes —dijo—. No perteneces a ellos.",
-        "who": "Clancy"
+        "who": "Nico"
       },
       {
         "type": "p",
@@ -6812,7 +6813,7 @@ const PART2_CHAPTERS = [
       {
         "type": "speech",
         "text": "—¿Entonces?",
-        "who": "James"
+        "who": "Mara"
       },
       {
         "type": "p",
@@ -6854,7 +6855,7 @@ const PART2_CHAPTERS = [
       {
         "type": "speech",
         "text": "—Sí tengo. Dema convierte cualquier permanencia en obediencia. Necesito saber que quedarme también puede ser una decisión.",
-        "who": "James"
+        "who": "Mara"
       },
       {
         "type": "p",

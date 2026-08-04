@@ -83,7 +83,7 @@ const SAHLO_EXTRAS = [
       {
         "type": "journal-index",
         "title": "Diario de Clancy",
-        "intro": "Once entradas reunidas en un visor independiente. Abre una carta y recorre el diario sin abandonar Extras.",
+        "intro": "Doce entradas reunidas en un visor independiente. Abre una carta y recorre el diario sin abandonar Extras.",
         "entries": [
           {
             "title": "Primera carta",
@@ -161,6 +161,13 @@ const SAHLO_EXTRAS = [
             "chapterId": "cap36",
             "chapterLabel": "Capítulo 36 · Parte V",
             "targetId": "diario-024-02moon-25"
+          },
+          {
+            "title": "Encontré una forma de entrar",
+            "code": "024 02MOON 28",
+            "chapterId": "cap36",
+            "chapterLabel": "Capítulo 36 · Parte V",
+            "targetId": "diario-024-02moon-28"
           }
         ]
       },
@@ -627,6 +634,318 @@ const SAHLO_EXTRAS = [
       {
         "type": "p",
         "text": "Las figuras cartográficas finales de la edición impresa corresponden a los mapas de Trench y Dema ya preservados como Anexos I y II de esta sección, por lo que no se duplican dentro del archivo de la Parte III."
+      },
+      {
+        "type": "scene",
+        "text": "Anexo visual · Parte V"
+      },
+      {
+        "type": "h2",
+        "text": "Cartas, propaganda y cartografía de La brecha"
+      },
+      {
+        "type": "p",
+        "text": "Archivo visual incorporado desde la edición literaria maestra v1.1 de la Parte V. Reúne las páginas del diario utilizadas durante el regreso, la propaganda desplegada tras Overcompensate y documentos cartográficos relacionados con el asalto a Dema."
+      },
+      {
+        "type": "scene",
+        "text": "Anexo XXIV"
+      },
+      {
+        "type": "h2",
+        "text": "022 03MOON 17"
+      },
+      {
+        "type": "image",
+        "src": "./assets/documentales/parte-5/figura-a1-022-03moon-17.webp",
+        "alt": "Página manuscrita 022 03MOON 17 de Clancy",
+        "caption": "Figura A1 · 022 03MOON 17 — cautiverio, propaganda, naufragio y llegada a Voldsøy."
+      },
+      {
+        "type": "p",
+        "text": "Facsímil oficial preservado en los anexos de la Parte V; su transcripción narrativa aparece en el Diario de Clancy."
+      },
+      {
+        "type": "scene",
+        "text": "Anexo XXV"
+      },
+      {
+        "type": "h2",
+        "text": "022 03MOON 18"
+      },
+      {
+        "type": "image",
+        "src": "./assets/documentales/parte-5/figura-a2-022-03moon-18.webp",
+        "alt": "Página manuscrita 022 03MOON 18 de Clancy",
+        "caption": "Figura A2 · 022 03MOON 18 — reflexión sobre la psicokinesis y los recipientes."
+      },
+      {
+        "type": "p",
+        "text": "Facsímil oficial preservado en los anexos de la Parte V; su transcripción narrativa aparece en el Diario de Clancy."
+      },
+      {
+        "type": "scene",
+        "text": "Anexo XXVI"
+      },
+      {
+        "type": "h2",
+        "text": "Esquema del seizing"
+      },
+      {
+        "type": "image",
+        "src": "./assets/documentales/parte-5/figura-a3-seizing-astas-keons.webp",
+        "alt": "Esquema manuscrito del seizing, las astas y Keons",
+        "caption": "Figura A3 · Esquema complementario del seizing, las astas y Keons."
+      },
+      {
+        "type": "p",
+        "text": "Material visual de adaptación integrado diegéticamente en La brecha; derechos de sus titulares y del proyecto Sahlo Folina según corresponda."
+      },
+      {
+        "type": "scene",
+        "text": "Anexo XXVII"
+      },
+      {
+        "type": "h2",
+        "text": "024 02MOON 09"
+      },
+      {
+        "type": "image",
+        "src": "./assets/documentales/parte-5/figura-a4-024-02moon-09.webp",
+        "alt": "Página 024 02MOON 09 escrita por Clancy",
+        "caption": "Figura A4 · Costa, estrecho y esperanza de que las brasas se conviertan en antorchas."
+      },
+      {
+        "type": "p",
+        "text": "Facsímil oficial preservado en los anexos de la Parte V; su transcripción narrativa aparece en el Diario de Clancy."
+      },
+      {
+        "type": "scene",
+        "text": "Anexo XXVIII"
+      },
+      {
+        "type": "h2",
+        "text": "024 02MOON 25"
+      },
+      {
+        "type": "image",
+        "src": "./assets/documentales/parte-5/figura-a5-024-02moon-25.webp",
+        "alt": "Página 024 02MOON 25 escrita por Clancy",
+        "caption": "Figura A5 · Las fogatas se sienten como hogar; marcha por la mañana."
+      },
+      {
+        "type": "p",
+        "text": "Facsímil oficial preservado en los anexos de la Parte V; su transcripción narrativa aparece en el Diario de Clancy."
+      },
+      {
+        "type": "scene",
+        "text": "Anexo XXIX"
+      },
+      {
+        "type": "h2",
+        "text": "024 02MOON 28"
+      },
+      {
+        "type": "image",
+        "src": "./assets/documentales/parte-5/figura-a6-024-02moon-28.webp",
+        "alt": "Página 024 02MOON 28 escrita por Clancy",
+        "caption": "Figura A6 · «Encontré una forma de entrar»."
+      },
+      {
+        "type": "p",
+        "text": "Facsímil oficial preservado en los anexos de la Parte V; su transcripción narrativa aparece en el Diario de Clancy."
+      },
+      {
+        "type": "scene",
+        "text": "Anexo XXX"
+      },
+      {
+        "type": "h2",
+        "text": "TRUE IDENTITY REVEALED"
+      },
+      {
+        "type": "image",
+        "src": "./assets/documentales/parte-5/figura-b1-true-identity-revealed.webp",
+        "alt": "Cartel propagandístico TRUE IDENTITY REVEALED",
+        "caption": "Figura B1 · TRUE IDENTITY REVEALED."
+      },
+      {
+        "type": "p",
+        "text": "Material visual de adaptación integrado diegéticamente en La brecha; derechos de sus titulares y del proyecto Sahlo Folina según corresponda."
+      },
+      {
+        "type": "scene",
+        "text": "Anexo XXXI"
+      },
+      {
+        "type": "h2",
+        "text": "IS THIS YOUR HERO?"
+      },
+      {
+        "type": "image",
+        "src": "./assets/documentales/parte-5/figura-b2-is-this-your-hero.webp",
+        "alt": "Muro cubierto por propaganda contra Clancy",
+        "caption": "Figura B2 · IS THIS YOUR HERO?"
+      },
+      {
+        "type": "p",
+        "text": "Material visual de adaptación integrado diegéticamente en La brecha; derechos de sus titulares y del proyecto Sahlo Folina según corresponda."
+      },
+      {
+        "type": "scene",
+        "text": "Anexo XXXII"
+      },
+      {
+        "type": "h2",
+        "text": "DEFIANCE WITHIN DEMA WALLS IS PROHIBITED"
+      },
+      {
+        "type": "image",
+        "src": "./assets/documentales/parte-5/figura-b3-defiance-prohibited.webp",
+        "alt": "Cartel de Dema que prohíbe la disidencia dentro de los muros",
+        "caption": "Figura B3 · DEFIANCE WITHIN DEMA WALLS IS PROHIBITED."
+      },
+      {
+        "type": "p",
+        "text": "Material visual de adaptación integrado diegéticamente en La brecha; derechos de sus titulares y del proyecto Sahlo Folina según corresponda."
+      },
+      {
+        "type": "scene",
+        "text": "Anexo XXXIII"
+      },
+      {
+        "type": "h2",
+        "text": "Saturación y criminalización de Clancy"
+      },
+      {
+        "type": "image",
+        "src": "./assets/documentales/parte-5/figura-b4-saturation-clancy.webp",
+        "alt": "Cartel propagandístico recortado con la identidad de Clancy",
+        "caption": "Figura B4 · Saturación y criminalización de la identidad de Clancy."
+      },
+      {
+        "type": "p",
+        "text": "Material visual de adaptación integrado diegéticamente en La brecha; derechos de sus titulares y del proyecto Sahlo Folina según corresponda."
+      },
+      {
+        "type": "scene",
+        "text": "Anexo XXXIV"
+      },
+      {
+        "type": "h2",
+        "text": "Mapa de Trench"
+      },
+      {
+        "type": "image",
+        "src": "./assets/documentales/parte-5/figura-d1-mapa-trench.webp",
+        "alt": "Mapa documental del continente de Trench, Dema, Port Vial y Voldsøy",
+        "caption": "Figura D1 · Mapa del continente de Trench, Dema, Port Vial y Voldsøy."
+      },
+      {
+        "type": "p",
+        "text": "Documento visual de referencia preservado en la edición maestra; derechos de sus titulares."
+      },
+      {
+        "type": "scene",
+        "text": "Anexo XXXV"
+      },
+      {
+        "type": "h2",
+        "text": "Plano circular de Dema"
+      },
+      {
+        "type": "image",
+        "src": "./assets/documentales/parte-5/figura-d2-plano-dema.webp",
+        "alt": "Plano circular de Dema con torres y necrópolis",
+        "caption": "Figura D2 · Plano circular de Dema, las torres y la Necropolis."
+      },
+      {
+        "type": "p",
+        "text": "Documento visual de referencia preservado en la edición maestra; derechos de sus titulares."
+      },
+      {
+        "type": "scene",
+        "text": "Anexo XXXVI"
+      },
+      {
+        "type": "h2",
+        "text": "Fugitivo y perímetro sellado"
+      },
+      {
+        "type": "image",
+        "src": "./assets/documentales/parte-5/figura-d3-failed-perimeter-escape.webp",
+        "alt": "Documento que identifica una fuga fallida del perímetro de Dema",
+        "caption": "Figura D3 · Identificación como fugitivo y perímetro sellado por el consejo de Dema."
+      },
+      {
+        "type": "p",
+        "text": "Documento visual de referencia preservado en la edición maestra; derechos de sus titulares."
+      },
+      {
+        "type": "scene",
+        "text": "Anexo visual · Parte VI"
+      },
+      {
+        "type": "h2",
+        "text": "Expedientes de Siempre"
+      },
+      {
+        "type": "p",
+        "text": "Facsímiles oficiales auxiliares incorporados desde la edición literaria maestra v1.1 de la Parte VI. Los tres expedientes documentan la mirada institucional sobre el Portador, la variante oscurecida de Clancy y la figura del Nuevo Obispo."
+      },
+      {
+        "type": "scene",
+        "text": "Anexo XXXVII"
+      },
+      {
+        "type": "h2",
+        "text": "Expediente 08.004-7-LT — Torchbearer"
+      },
+      {
+        "type": "image",
+        "src": "./assets/documentales/parte-6/figura-e1-expediente-torchbearer.webp",
+        "alt": "Expediente oficial auxiliar de Torchbearer",
+        "caption": "Expediente 08.004-7-LT · Designación: Torchbearer."
+      },
+      {
+        "type": "p",
+        "text": "Facsímil oficial auxiliar reproducido para consulta documental dentro de los anexos de la Parte VI."
+      },
+      {
+        "type": "scene",
+        "text": "Anexo XXXVIII"
+      },
+      {
+        "type": "h2",
+        "text": "Expediente 06.115-9-KY — Clancy, sector oscuro"
+      },
+      {
+        "type": "image",
+        "src": "./assets/documentales/parte-6/figura-e2-clancy-obscured-variant.webp",
+        "alt": "Expediente oficial auxiliar de Clancy como variante oscurecida",
+        "caption": "Expediente 06.115-9-KY · Clancy, obscured variant."
+      },
+      {
+        "type": "p",
+        "text": "Facsímil oficial auxiliar reproducido para consulta documental dentro de los anexos de la Parte VI."
+      },
+      {
+        "type": "scene",
+        "text": "Anexo XXXIX"
+      },
+      {
+        "type": "h2",
+        "text": "Expediente 03.211-8-BX — The New Bishop"
+      },
+      {
+        "type": "image",
+        "src": "./assets/documentales/parte-6/figura-e3-the-new-bishop.webp",
+        "alt": "Expediente oficial auxiliar de The New Bishop",
+        "caption": "Expediente 03.211-8-BX · Designación: The New Bishop."
+      },
+      {
+        "type": "p",
+        "text": "Facsímil oficial auxiliar reproducido para consulta documental dentro de los anexos de la Parte VI."
       }
     ]
   }

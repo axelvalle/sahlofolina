@@ -4,6 +4,7 @@
   const STORAGE_KEY = "sahlo_folina_state_v2";
   const LEGACY_KEY = "sahlo_folina_state_v1";
   const DISCLAIMER_KEY = "sahlo_folina_disclaimer_ack_v1";
+  const NATIVE_STORAGE_KEY = "sahlo_folina_reader_state";
   const ALLOWED_SETTINGS = Object.freeze({
     fontSize: new Set(["sm", "md", "lg", "xl"]),
     lineWidth: new Set(["narrow", "md", "wide"]),
@@ -51,6 +52,14 @@
       coverLead: "Una historia sobre volver como presencia, decidir quién está regresando y atravesar la brecha que Dema no pudo cerrar.",
       quote: "“Una voz puede cruzar una muralla antes que un cuerpo.”",
       quoteBy: "— Epígrafe editorial de La brecha"
+    },
+    6: {
+      label: "Parte VI",
+      indexTitle: "Siempre",
+      context: "The Contract · I Am Torchbearer · City Walls",
+      coverLead: "Una historia sobre el precio de abrir la torre, rechazar otra corona y aprender que la libertad también necesita límites para no repetirse como control.",
+      quote: "“Lo peligroso es aprender a describir el control como cuidado.”",
+      quoteBy: "— Prólogo: Intenciones"
     }
   });
   const PART5_ARCS = Object.freeze({
@@ -111,6 +120,27 @@
       lead: "La brecha se abre entre todos; la torre se atraviesa solo."
     })
   });
+  const ACHIEVEMENTS = Object.freeze([
+    { id: "first-record", code: "01", title: "Primera huella", description: "Completa tu primer capítulo.", test: ({ read }) => read.size >= 1 },
+    { id: "dema-record", code: "02", title: "La ciudad sin horizonte", description: "Completa la Parte I.", test: ({ completePart }) => completePart(1) },
+    { id: "trench-record", code: "03", title: "El color que no pueden ver", description: "Completa la Parte II.", test: ({ completePart }) => completePart(2) },
+    { id: "sai-record", code: "04", title: "La ciudad aprende a sonreír", description: "Completa la Parte III.", test: ({ completePart }) => completePart(3) },
+    { id: "those-left", code: "05", title: "Los que se quedaron", description: "Completa la Parte IV.", test: ({ completePart }) => completePart(4) },
+    { id: "outside", code: "06", title: "El otro lado", description: "Sobrevive al prólogo de la Parte V.", test: ({ readId }) => readId("prologo-parte-5") },
+    { id: "return", code: "07", title: "Volver", description: "Completa el Arco I de la Parte V.", test: ({ completeSection }) => completeSection(1) },
+    { id: "name-weight", code: "08", title: "Decidir", description: "Completa el Arco II de la Parte V.", test: ({ completeSection }) => completeSection(2) },
+    { id: "breach", code: "09", title: "Atravesar", description: "Completa el Arco III de la Parte V.", test: ({ completeSection }) => completeSection(3) },
+    { id: "contract", code: "10", title: "El contrato", description: "Abre el expediente de la Parte VI.", test: ({ readId }) => readId("prologo-parte-6") },
+    { id: "always", code: "11", title: "Siempre", description: "Completa la Parte VI.", test: ({ completePart }) => completePart(6) },
+    { id: "full-archive", code: "12", title: "Archivo completo", description: "Completa toda la historia.", test: ({ completeStory }) => completeStory }
+  ]);
+  const ARCHIVE_TIERS = Object.freeze([
+    { id: "journal", title: "Diario de Clancy", requirement: "Las entradas aparecen al completar sus capítulos." },
+    { id: "parts-1-2", title: "Mapas y cartas de Dema y Trench", part: 2, requirement: "Completa la Parte II." },
+    { id: "part-3", title: "Archivo audiovisual de Scaled and Icy", part: 3, requirement: "Completa la Parte III." },
+    { id: "part-5", title: "Cartas y propaganda de La brecha", part: 5, requirement: "Completa la Parte V." },
+    { id: "part-6", title: "Expedientes de Siempre", part: 6, requirement: "Completa la Parte VI." }
+  ]);
   const SITE_ROUTES = window.SAHLO_SITE_ROUTES || Object.freeze({
     home: "/inicio",
     library: "/biblioteca",
@@ -126,6 +156,9 @@
     hasStarted: false,
     readChapters: [],
     chapterProgress: {},
+    progressionMode: "guided",
+    freeReadingWarningDismissed: false,
+    achievementSeen: [],
     settings: {
       fontSize: "md",
       lineWidth: "md",
@@ -152,7 +185,8 @@
     2: "./assets/indice-parte-2.webp",
     3: "./assets/indice-parte-3.webp",
     4: "./assets/parte-4/habitacion-azul.webp",
-    5: "./assets/parte-5/parte-v-mapa.webp"
+    5: "./assets/parte-5/parte-v-mapa.webp",
+    6: "./assets/parte-6/the-contract-index.webp"
   });
   const indexBackdropPreloads = new Map();
   let chapterIndexCache = null;
@@ -254,6 +288,15 @@
           }
         });
       }
+      if (["guided", "free"].includes(parsed.progressionMode)) {
+        state.progressionMode = parsed.progressionMode;
+      }
+      state.freeReadingWarningDismissed = Boolean(parsed.freeReadingWarningDismissed);
+      if (Array.isArray(parsed.achievementSeen)) {
+        state.achievementSeen = [...new Set(parsed.achievementSeen.filter(
+          (id) => ACHIEVEMENTS.some((achievement) => achievement.id === id)
+        ))];
+      }
     } catch (error) {
       console.warn("No se pudo cargar el progreso de lectura.", error);
     }
@@ -261,9 +304,27 @@
 
   function saveState() {
     try {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+      const serialized = JSON.stringify(state);
+      localStorage.setItem(STORAGE_KEY, serialized);
+      const preferences = window.Capacitor?.Plugins?.Preferences;
+      if (preferences) {
+        preferences.set({ key: NATIVE_STORAGE_KEY, value: serialized }).catch((error) => {
+          console.warn("No se pudo respaldar el progreso en Android.", error);
+        });
+      }
     } catch (error) {
       console.warn("No se pudo guardar el progreso de lectura.", error);
+    }
+  }
+
+  async function hydrateNativeState() {
+    const preferences = window.Capacitor?.Plugins?.Preferences;
+    if (!preferences) return;
+    try {
+      const { value } = await preferences.get({ key: NATIVE_STORAGE_KEY });
+      if (value) localStorage.setItem(STORAGE_KEY, value);
+    } catch (error) {
+      console.warn("No se pudo recuperar el progreso guardado en Android.", error);
     }
   }
 
@@ -339,10 +400,162 @@
     return indexes.filter((index) => chapterSection(window.CHAPTERS[index]) === state.activeArc);
   }
 
+  function readChapterSet() {
+    return new Set(state.readChapters);
+  }
+
+  function indexesAreComplete(indexes, read = readChapterSet()) {
+    return indexes.length > 0 && indexes.every((index) => read.has(index));
+  }
+
+  function partIsComplete(part, read = readChapterSet()) {
+    return indexesAreComplete(partChapterIndexes(part), read);
+  }
+
+  function partFiveSectionIndexes(section) {
+    return partChapterIndexes(5).filter((index) => chapterSection(window.CHAPTERS[index]) === section);
+  }
+
+  function partFiveSectionIsComplete(section, read = readChapterSet()) {
+    return indexesAreComplete(partFiveSectionIndexes(section), read);
+  }
+
+  function partIsUnlocked(part) {
+    if (state.progressionMode === "free" || part <= 1) return true;
+    return partIsComplete(part - 1);
+  }
+
+  function partFiveSectionIsUnlocked(section) {
+    if (state.progressionMode === "free") return true;
+    if (!partIsUnlocked(5)) return false;
+    if (section <= 0 || section === -1) return true;
+    if (section === 1) return partFiveSectionIsComplete(-1);
+    return partFiveSectionIsComplete(section - 1);
+  }
+
+  function unlockedJournalEntries(block) {
+    if (state.progressionMode === "free") return block.entries || [];
+    const read = readChapterSet();
+    return (block.entries || []).filter((entry) => {
+      const chapterIndex = window.CHAPTERS.findIndex((chapter) => chapter.id === entry.chapterId);
+      return chapterIndex >= 0 && read.has(chapterIndex);
+    });
+  }
+
+  function unlockedArchiveTier() {
+    if (state.progressionMode === "free") return 6;
+    for (let part = 6; part >= 1; part -= 1) {
+      if (partIsComplete(part)) return part;
+    }
+    return 0;
+  }
+
+  function extrasAreUnlocked() {
+    if (state.progressionMode === "free") return true;
+    const extrasChapter = window.CHAPTERS.find((chapter) => chapter.id === "extras");
+    const journal = extrasChapter?.blocks?.find((block) => block.type === "journal-index");
+    return unlockedArchiveTier() >= 2 || Boolean(journal && unlockedJournalEntries(journal).length);
+  }
+
+  function isExtraBlockUnlocked(chapter, block, blockIndex) {
+    if (chapter.id !== "extras" || state.progressionMode === "free") return true;
+    if (block.type === "journal-index") return unlockedJournalEntries(block).length > 0;
+
+    let requiredPart = 2;
+    for (let index = 0; index <= blockIndex; index += 1) {
+      const candidate = chapter.blocks[index];
+      if (candidate?.type !== "scene") continue;
+      const label = String(candidate.text || "");
+      if (label.includes("Parte III")) requiredPart = 3;
+      if (label.includes("Parte V")) requiredPart = 5;
+      if (label.includes("Parte VI")) requiredPart = 6;
+    }
+    return partIsComplete(requiredPart);
+  }
+
+  function isChapterUnlocked(index) {
+    const chapter = window.CHAPTERS[index];
+    if (!chapter) return false;
+    if (!isNarrativeChapter(chapter)) {
+      return chapter.id === "disclaimer" || (chapter.id === "extras" && extrasAreUnlocked());
+    }
+    const part = chapterPart(chapter);
+    if (!partIsUnlocked(part)) return false;
+    return part !== 5 || partFiveSectionIsUnlocked(chapterSection(chapter));
+  }
+
+  function partLockReason(part) {
+    if (part <= 1 || partIsUnlocked(part)) return "Disponible";
+    return `Completa la Parte ${part - 1} para abrir esta ruta.`;
+  }
+
+  function sectionLockReason(section) {
+    if (partFiveSectionIsUnlocked(section)) return "Disponible";
+    if (!partIsUnlocked(5)) return "Completa la Parte IV para abrir La brecha.";
+    if (section === 1) return "Completa el prólogo para abrir el Arco I.";
+    return `Completa el Arco ${["", "I", "II", "III"][section - 1]} para continuar.`;
+  }
+
+  function chapterLockReason(index) {
+    const chapter = window.CHAPTERS[index];
+    if (!chapter) return "Contenido no disponible.";
+    if (chapter.id === "extras") return "Completa los capítulos asociados para recuperar archivos.";
+    const part = chapterPart(chapter);
+    return part === 5 ? sectionLockReason(chapterSection(chapter)) : partLockReason(part);
+  }
+
+  function completionContext() {
+    const read = readChapterSet();
+    const readId = (id) => {
+      const index = window.CHAPTERS.findIndex((chapter) => chapter.id === id);
+      return index >= 0 && read.has(index);
+    };
+    const completePart = (part) => partIsComplete(part, read);
+    const completeSection = (section) => partFiveSectionIsComplete(section, read);
+    return {
+      read,
+      readId,
+      completePart,
+      completeSection,
+      completeStory: [1, 2, 3, 4, 5, 6].every(completePart)
+    };
+  }
+
+  function unlockedAchievements() {
+    const context = completionContext();
+    return ACHIEVEMENTS.filter((achievement) => achievement.test(context));
+  }
+
+  function showProgressionNotice(message) {
+    const notice = $("#progression-notice");
+    if (!notice) return;
+    notice.textContent = message;
+    notice.hidden = false;
+    notice.classList.remove("is-visible");
+    void notice.offsetWidth;
+    notice.classList.add("is-visible");
+    window.clearTimeout(showProgressionNotice.timer);
+    showProgressionNotice.timer = window.setTimeout(() => {
+      notice.classList.remove("is-visible");
+      window.setTimeout(() => { notice.hidden = true; }, 260);
+    }, 3200);
+  }
+
+  function syncAchievementSeen({ announce = false } = {}) {
+    const unlocked = unlockedAchievements();
+    const unseen = unlocked.filter((achievement) => !state.achievementSeen.includes(achievement.id));
+    unseen.forEach((achievement) => state.achievementSeen.push(achievement.id));
+    if (announce && unseen.length) {
+      const latest = unseen.at(-1);
+      showProgressionNotice(`Registro recuperado: ${latest.title}.`);
+    }
+    return unlocked;
+  }
+
   function journalEntryCount(chapter) {
     return chapter.blocks
       .filter((block) => block.type === "journal-index")
-      .reduce((total, block) => total + (block.entries || []).length, 0);
+      .reduce((total, block) => total + unlockedJournalEntries(block).length, 0);
   }
 
   function safeLocalAssetUrl(value) {
@@ -379,11 +592,13 @@
 
     definitions.forEach((definition) => {
       const button = document.createElement("button");
+      const isLocked = !partFiveSectionIsUnlocked(definition.section);
       button.type = "button";
-      button.className = "part5-section-card";
+      button.className = `part5-section-card${isLocked ? " is-locked" : ""}`;
       button.dataset.action = "switch-part5-section";
       button.dataset.section = String(definition.section);
       button.dataset.sectionVisual = definition.section === -1 ? "prologue" : `arc-${definition.section}`;
+      button.setAttribute("aria-disabled", String(isLocked));
 
       const index = document.createElement("span");
       index.className = "part5-section-index";
@@ -400,7 +615,7 @@
       summary.textContent = definition.summary;
       const arrow = document.createElement("i");
       arrow.setAttribute("aria-hidden", "true");
-      arrow.textContent = "Abrir índice →";
+      arrow.textContent = isLocked ? sectionLockReason(definition.section) : "Abrir índice →";
       copy.append(verb, title, range, summary, arrow);
       button.append(index, copy);
       map.append(button);
@@ -415,6 +630,7 @@
       state.activeArc,
       state.lastChapter,
       state.hasStarted ? 1 : 0,
+      state.progressionMode,
       state.readChapters.join(",")
     ].join("|");
 
@@ -505,13 +721,17 @@
       const item = document.createElement("li");
       const button = document.createElement("button");
       const isRead = !isExtra && readChapters.has(index);
-      item.className = `toc-entry${isExtra ? " toc-entry-extra" : ""}`;
+      const isLocked = !isChapterUnlocked(index);
+      item.className = `toc-entry${isExtra ? " toc-entry-extra" : ""}${isLocked ? " is-locked" : ""}`;
 
       button.type = "button";
-      button.className = `toc-item${isRead ? " is-read" : ""}${isExtra ? " toc-item-extra" : ""}`;
+      button.className = `toc-item${isRead ? " is-read" : ""}${isExtra ? " toc-item-extra" : ""}${isLocked ? " is-locked" : ""}`;
       button.dataset.action = "open-chapter";
       button.dataset.chapter = String(index);
-      button.setAttribute("aria-label", `${chapter.number}: ${chapter.title}`);
+      button.setAttribute("aria-disabled", String(isLocked));
+      button.setAttribute("aria-label", isLocked
+        ? `${chapter.number}: ${chapter.title}. Bloqueado. ${chapterLockReason(index)}`
+        : `${chapter.number}: ${chapter.title}`);
 
       const number = document.createElement("span");
       number.className = "toc-number";
@@ -543,11 +763,13 @@
       time.textContent = isExtra
         ? isDisclaimer
           ? `${chapterMinutes(chapter)} min`
-          : `${availableEntries} entradas disponibles`
+          : isLocked ? "Archivo clasificado" : `${availableEntries} entradas disponibles`
         : `${chapterMinutes(chapter)} min`;
       const status = document.createElement("span");
       status.className = "toc-state";
-      status.textContent = isExtra
+      status.textContent = isLocked
+        ? "Bloqueado"
+        : isExtra
         ? isDisclaimer ? "Leer" : "Explorar"
         : isRead
           ? "Leído ✓"
@@ -557,7 +779,7 @@
       const arrow = document.createElement("span");
       arrow.className = "toc-arrow";
       arrow.setAttribute("aria-hidden", "true");
-      arrow.textContent = "→";
+      arrow.textContent = isLocked ? "⊘" : "→";
       meta.append(time, status);
       button.append(number, content, meta, arrow);
       item.append(button);
@@ -605,7 +827,7 @@
     lead.className = "chapter-cinematic-quote";
     lead.textContent = hero.lead || chapter.subtitle || "";
 
-    const chronology = chapter.blocks?.find((block) => block.type === "chronology");
+    const chronology = chapter.blocks?.[0]?.type === "chronology" ? chapter.blocks[0] : null;
     const location = document.createElement("p");
     location.className = "chapter-cinematic-location";
     location.textContent = hero.location || chronology?.text || "";
@@ -624,6 +846,51 @@
     content.append(eyebrow, title, subtitle, lead, location, continueButton);
     section.append(overlay, content);
     return section;
+  }
+
+  function createCompletionCard(chapter, index) {
+    const complete = state.readChapters.includes(index);
+    const card = document.createElement("section");
+    card.className = `chapter-completion${complete ? " is-complete" : ""}`;
+    card.dataset.chapterCompletion = String(index);
+    card.setAttribute("aria-label", complete ? "Capítulo completado" : "Completar capítulo");
+
+    const marker = document.createElement("span");
+    marker.className = "chapter-completion-marker";
+    marker.textContent = complete ? "REGISTRO // COMPLETADO" : "REGISTRO // FIN DE CAPÍTULO";
+    const title = document.createElement("strong");
+    title.textContent = complete ? "La ruta quedó registrada." : "¿Terminaste esta entrada?";
+    const text = document.createElement("p");
+    text.textContent = complete
+      ? "Tu progreso está guardado en este dispositivo."
+      : "Márcala como leída para avanzar en el recorrido narrativo y recuperar nuevos archivos.";
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "chapter-completion-button";
+    button.dataset.action = "complete-chapter";
+    button.dataset.chapter = String(index);
+    button.disabled = complete;
+    button.textContent = complete ? "Completado ✓" : `Completar ${chapter.number.toLowerCase()}`;
+    card.append(marker, title, text, button);
+    return card;
+  }
+
+  function createExtrasProgressCard() {
+    const card = document.createElement("section");
+    card.className = "extras-progress-card";
+    const label = document.createElement("span");
+    label.textContent = "ARCHIVO // RECUPERACIÓN PROGRESIVA";
+    const title = document.createElement("strong");
+    title.textContent = state.progressionMode === "free"
+      ? "Todos los documentos están disponibles."
+      : "El archivo crecerá con tu lectura.";
+    const text = document.createElement("p");
+    const next = ARCHIVE_TIERS.find((tier) => tier.part && !partIsComplete(tier.part));
+    text.textContent = next
+      ? `Próxima recuperación: ${next.title}. ${next.requirement}`
+      : "Has recuperado todos los documentos disponibles.";
+    card.append(label, title, text);
+    return card;
   }
 
   function renderChapter(index) {
@@ -693,9 +960,16 @@
 
     chapter.blocks.forEach((block, blockIndex) => {
       if (hero && blockIndex === 0 && block.type === "chronology") return;
+      if (!isExtraBlockUnlocked(chapter, block, blockIndex)) return;
       const node = renderBlock(block, { chapterIndex: index, blockIndex });
       if (node) reader.append(node);
     });
+
+    if (isNarrativeChapter(chapter)) {
+      reader.append(createCompletionCard(chapter, index));
+    } else if (chapter.id === "extras") {
+      reader.append(createExtrasProgressCard());
+    }
 
     const narrativeIndexes = narrativeChapterIndexes();
     const narrativePosition = narrativeIndexes.indexOf(index);
@@ -717,7 +991,7 @@
     previous.hidden = isExtra;
     next.hidden = isExtra;
     previous.disabled = previousIndex === -1;
-    next.disabled = nextIndex === -1;
+    next.disabled = nextIndex === -1 || !isChapterUnlocked(nextIndex);
     previous.dataset.chapterTarget = String(previousIndex);
     next.dataset.chapterTarget = String(nextIndex);
     $("#prev-title").textContent = previousIndex >= 0 ? window.CHAPTERS[previousIndex].title : "";
@@ -729,6 +1003,22 @@
       const paragraph = document.createElement("p");
       paragraph.textContent = block.text;
       return paragraph;
+    }
+
+    if (block.type === "author-note") {
+      const note = document.createElement("aside");
+      note.className = "author-note";
+      note.setAttribute("aria-label", "Nota del autor");
+
+      const label = document.createElement("span");
+      label.className = "author-note-label";
+      label.textContent = "Nota del autor";
+
+      const text = document.createElement("p");
+      text.textContent = block.text;
+
+      note.append(label, text);
+      return note;
     }
 
     if (block.type === "h2" || block.type === "h3") {
@@ -803,7 +1093,33 @@
       const label = document.createElement("span");
       label.textContent = block.label || "REGISTRO TEMPORAL";
       const text = document.createElement("p");
-      text.textContent = block.text;
+      const chronologyText = String(block.text || "").trim();
+      const dividerIndex = chronologyText.indexOf(",");
+
+      if (dividerIndex > 0 && dividerIndex < chronologyText.length - 1) {
+        marker.dataset.chronologyKind = "place-time";
+
+        const place = document.createElement("strong");
+        place.className = "reader-chronology-place";
+        place.textContent = chronologyText.slice(0, dividerIndex).trim();
+
+        const separator = document.createElement("span");
+        separator.className = "reader-chronology-separator";
+        separator.setAttribute("aria-hidden", "true");
+        separator.textContent = "·";
+
+        const moment = document.createElement("em");
+        moment.className = "reader-chronology-moment";
+        moment.textContent = chronologyText.slice(dividerIndex + 1).trim();
+
+        text.append(place, separator, moment);
+        marker.setAttribute("aria-label", `${label.textContent}: ${chronologyText}`);
+        label.setAttribute("aria-hidden", "true");
+        text.setAttribute("aria-hidden", "true");
+      } else {
+        text.textContent = chronologyText;
+      }
+
       marker.append(label, text);
       return marker;
     }
@@ -1008,7 +1324,9 @@
 
       const list = document.createElement("div");
       list.className = "journal-entry-list";
-      (block.entries || []).forEach((entry, entryIndex) => {
+      const visibleEntries = unlockedJournalEntries(block);
+      visibleEntries.forEach((entry) => {
+        const entryIndex = (block.entries || []).indexOf(entry);
         const button = document.createElement("button");
         button.type = "button";
         button.className = "journal-entry-link";
@@ -1225,6 +1543,10 @@
 
   function goToReader(index, options = {}) {
     if (index < 0 || index >= window.CHAPTERS.length) return;
+    if (!isChapterUnlocked(index)) {
+      showProgressionNotice(chapterLockReason(index));
+      return;
+    }
     const previousChapter = window.CHAPTERS[state.lastChapter];
     const chapter = window.CHAPTERS[index];
     const reduceMotion = motionIsReduced();
@@ -1334,8 +1656,12 @@
       const matchedArc = /^arco-(\d+)$/.exec(segments[2] || "");
       const part = matchedPart ? Number(matchedPart[1]) : state.activePart;
       const section = segments[2] === "prologo" ? -1 : matchedArc ? Number(matchedArc[1]) : 0;
-      if (PARTS[part]) state.activePart = part;
-      if (state.activePart === 5 && PART5_SECTIONS[String(section)]) state.activeArc = section;
+      if (PARTS[part] && partIsUnlocked(part)) state.activePart = part;
+      if (
+        state.activePart === 5
+        && PART5_SECTIONS[String(section)]
+        && partFiveSectionIsUnlocked(section)
+      ) state.activeArc = section;
       goToTOC({ updateRoute: false, instant: initial });
       if (window.location.hash) writeRoute(routeToPart(state.activePart, state.activeArc), { replace: true });
       return;
@@ -1343,7 +1669,7 @@
 
     if (segments[0] === "leer" && segments[1]) {
       const chapterIndex = window.CHAPTERS.findIndex((chapter) => chapter.id === segments[1]);
-      if (chapterIndex >= 0) {
+      if (chapterIndex >= 0 && isChapterUnlocked(chapterIndex)) {
         const targetId = /^[a-z0-9-]+$/.test(segments[2] || "") ? segments[2] : "";
         goToReader(chapterIndex, {
           targetId,
@@ -1654,9 +1980,14 @@
       backdrop.classList.toggle("is-active", Number(backdrop.dataset.part) === state.activePart);
     });
     $$("[data-action='switch-part']").forEach((button) => {
-      const isActive = Number(button.dataset.part) === state.activePart;
+      const targetPart = Number(button.dataset.part);
+      const isActive = targetPart === state.activePart;
+      const isLocked = !partIsUnlocked(targetPart);
       button.classList.toggle("is-active", isActive);
+      button.classList.toggle("is-locked", isLocked);
       button.setAttribute("aria-pressed", String(isActive));
+      button.setAttribute("aria-disabled", String(isLocked));
+      button.title = isLocked ? partLockReason(targetPart) : "";
     });
 
     const arcNavigation = $("#part5-arc-switcher");
@@ -1669,10 +2000,13 @@
     $$("[data-action='switch-part5-section']").forEach((button) => {
       const sectionId = Number(button.dataset.section);
       const isActive = isPartFive && sectionId === state.activeArc;
+      const isLocked = !partFiveSectionIsUnlocked(sectionId);
       const count = part5SectionCounts.get(sectionId) || 0;
       button.classList.toggle("is-active", isActive);
       button.classList.toggle("is-empty", sectionId !== 0 && count === 0);
+      button.classList.toggle("is-locked", isLocked);
       button.setAttribute("aria-pressed", String(isActive));
+      button.setAttribute("aria-disabled", String(isLocked));
       const status = $(".arc-status", button);
       if (status) {
         const sectionIndexes = partChapterIndexes(5).filter((index) => (
@@ -1682,7 +2016,9 @@
           state.readChapters.filter((index) => sectionIndexes.includes(index))
         ).size;
         const range = PART5_SECTIONS[String(sectionId)]?.range || `${count} capítulos disponibles`;
-        if (sectionId === -1) {
+        if (isLocked) {
+          status.textContent = sectionLockReason(sectionId);
+        } else if (sectionId === -1) {
           status.textContent = readCount ? "Prólogo leído" : "Prólogo disponible";
         } else if (readCount > 0) {
           status.textContent = `${readCount} de ${count} leídos`;
@@ -1722,6 +2058,194 @@
     $("#toc-progress-bar").style.width = `${narrativeIndexes.length ? Math.round((count / narrativeIndexes.length) * 100) : 0}%`;
   }
 
+  function currentScopeIndexes() {
+    if (state.activePart === 5 && state.activeArc !== 0) {
+      return partFiveSectionIndexes(state.activeArc);
+    }
+    return partChapterIndexes(state.activePart);
+  }
+
+  function renderProgressionPanel() {
+    const panel = $("#progression-panel");
+    if (!panel) return;
+    const narrative = narrativeChapterIndexes();
+    const read = readChapterSet();
+    const completedCount = narrative.filter((index) => read.has(index)).length;
+    const achievements = unlockedAchievements();
+
+    $("#progression-completed").textContent = `${completedCount} / ${narrative.length}`;
+    $("#progression-achievement-count").textContent = `${achievements.length} / ${ACHIEVEMENTS.length}`;
+    $("#progression-mode-copy").textContent = state.progressionMode === "guided"
+      ? "Recorrido narrativo"
+      : "Lectura libre";
+
+    $$('[data-progression-mode]').forEach((button) => {
+      const active = button.dataset.progressionMode === state.progressionMode;
+      button.classList.toggle("is-active", active);
+      button.setAttribute("aria-pressed", String(active));
+    });
+
+    const achievementList = $("#achievement-list");
+    const unlockedIds = new Set(achievements.map((achievement) => achievement.id));
+    const achievementFragment = document.createDocumentFragment();
+    ACHIEVEMENTS.forEach((achievement) => {
+      const unlocked = unlockedIds.has(achievement.id);
+      const item = document.createElement("li");
+      item.className = `achievement-card${unlocked ? " is-unlocked" : " is-locked"}`;
+      const code = document.createElement("span");
+      code.textContent = achievement.code;
+      const copy = document.createElement("div");
+      const title = document.createElement("strong");
+      title.textContent = unlocked ? achievement.title : "Registro clasificado";
+      const description = document.createElement("p");
+      description.textContent = unlocked ? achievement.description : "Continúa leyendo para revelar este sello.";
+      copy.append(title, description);
+      item.append(code, copy);
+      achievementFragment.append(item);
+    });
+    achievementList.replaceChildren(achievementFragment);
+
+    const archiveList = $("#archive-unlock-list");
+    const extrasChapter = window.CHAPTERS.find((chapter) => chapter.id === "extras");
+    const journalBlock = extrasChapter?.blocks?.find((block) => block.type === "journal-index");
+    const journalCount = journalBlock ? unlockedJournalEntries(journalBlock).length : 0;
+    const archiveFragment = document.createDocumentFragment();
+    ARCHIVE_TIERS.forEach((tier) => {
+      const unlocked = tier.id === "journal"
+        ? state.progressionMode === "free" || journalCount > 0
+        : state.progressionMode === "free" || partIsComplete(tier.part);
+      const item = document.createElement("li");
+      item.className = `archive-unlock${unlocked ? " is-unlocked" : " is-locked"}`;
+      const marker = document.createElement("span");
+      marker.textContent = unlocked ? "RECUPERADO" : "CLASIFICADO";
+      const copy = document.createElement("div");
+      const title = document.createElement("strong");
+      title.textContent = tier.title;
+      const description = document.createElement("p");
+      description.textContent = tier.id === "journal" && unlocked
+        ? `${state.progressionMode === "free" ? journalBlock?.entries?.length || 0 : journalCount} entradas disponibles.`
+        : unlocked ? "Disponible en Extras." : tier.requirement;
+      copy.append(title, description);
+      item.append(marker, copy);
+      archiveFragment.append(item);
+    });
+    archiveList.replaceChildren(archiveFragment);
+
+    const markButton = $("#mark-current-scope");
+    if (markButton) {
+      const scope = state.activePart === 5 && state.activeArc !== 0
+        ? state.activeArc === -1 ? "este prólogo" : `el Arco ${["", "I", "II", "III"][state.activeArc]}`
+        : `la Parte ${state.activePart}`;
+      markButton.textContent = `Ya leí ${scope}`;
+      markButton.disabled = indexesAreComplete(currentScopeIndexes());
+    }
+  }
+
+  function refreshProgressionUI() {
+    lastTocRenderKey = "";
+    updatePartPresentation();
+    renderTOC();
+    updateCover();
+    renderProgressionPanel();
+  }
+
+  function completeChapter(index, { announce = true } = {}) {
+    if (!isNarrativeChapter(window.CHAPTERS[index]) || state.readChapters.includes(index)) return;
+    state.readChapters.push(index);
+    state.chapterProgress[index] = 1;
+    const unlockedBefore = new Set(state.achievementSeen);
+    const achievements = syncAchievementSeen({ announce });
+    saveState();
+    refreshProgressionUI();
+
+    const card = $(`[data-chapter-completion="${index}"]`);
+    if (card) {
+      card.classList.add("is-complete");
+      $(".chapter-completion-marker", card).textContent = "REGISTRO // COMPLETADO";
+      $("strong", card).textContent = "La ruta quedó registrada.";
+      $("p", card).textContent = "Tu progreso está guardado en este dispositivo.";
+      const button = $("button", card);
+      button.disabled = true;
+      button.textContent = "Completado ✓";
+    }
+
+    const narrative = narrativeChapterIndexes();
+    const position = narrative.indexOf(index);
+    const nextIndex = position >= 0 ? narrative[position + 1] : -1;
+    const nextButton = $("#next-chapter");
+    if (nextButton && nextIndex >= 0) nextButton.disabled = !isChapterUnlocked(nextIndex);
+    if (announce && achievements.every((achievement) => unlockedBefore.has(achievement.id))) {
+      showProgressionNotice("Capítulo registrado. El recorrido fue actualizado.");
+    }
+  }
+
+  function setProgressionMode(mode) {
+    if (!["guided", "free"].includes(mode) || state.progressionMode === mode) return;
+    state.progressionMode = mode;
+    if (mode === "guided" && !partIsUnlocked(state.activePart)) {
+      state.activePart = [6, 5, 4, 3, 2, 1].find((part) => partIsUnlocked(part)) || 1;
+      state.activeArc = 0;
+    }
+    saveState();
+    refreshProgressionUI();
+    showProgressionNotice(mode === "guided"
+      ? "Recorrido narrativo activado."
+      : "Advertencia: lectura libre activada. Puede contener spoilers.");
+  }
+
+  function openFreeReadingWarning(trigger) {
+    const warning = $("#free-reading-warning");
+    if (!warning) return;
+    lastFocusedElement = trigger || document.activeElement;
+    const checkbox = $("#free-reading-warning-dismiss", warning);
+    if (checkbox) checkbox.checked = false;
+    warning.hidden = false;
+    requestAnimationFrame(() => warning.classList.add("is-open"));
+    $("[data-action='confirm-free-reading']", warning)?.focus();
+  }
+
+  function closeFreeReadingWarning(restoreFocus = true) {
+    const warning = $("#free-reading-warning");
+    if (!warning || warning.hidden) return;
+    warning.classList.remove("is-open");
+    window.setTimeout(() => {
+      warning.hidden = true;
+      if (restoreFocus && lastFocusedElement) lastFocusedElement.focus?.();
+      lastFocusedElement = null;
+    }, 180);
+  }
+
+  function confirmFreeReadingMode() {
+    const checkbox = $("#free-reading-warning-dismiss");
+    if (checkbox?.checked) state.freeReadingWarningDismissed = true;
+    closeFreeReadingWarning(false);
+    setProgressionMode("free");
+  }
+
+  function requestProgressionMode(mode, trigger) {
+    if (mode !== "free" || state.progressionMode === "free" || state.freeReadingWarningDismissed) {
+      setProgressionMode(mode);
+      return;
+    }
+    openFreeReadingWarning(trigger);
+  }
+
+  function markCurrentScopeRead() {
+    const indexes = currentScopeIndexes().filter((index) => !state.readChapters.includes(index));
+    if (!indexes.length) return;
+    const label = state.activePart === 5 && state.activeArc !== 0
+      ? state.activeArc === -1 ? "este prólogo" : "este arco"
+      : "esta parte";
+    if (!window.confirm(`¿Quieres marcar ${label} como leído?`)) return;
+    indexes.forEach((index) => {
+      state.readChapters.push(index);
+      state.chapterProgress[index] = 1;
+    });
+    syncAchievementSeen({ announce: true });
+    saveState();
+    refreshProgressionUI();
+  }
+
   function scheduleReadingProgress() {
     if (progressFrame !== null) return;
     progressFrame = window.requestAnimationFrame(() => {
@@ -1743,8 +2267,9 @@
 
     state.chapterProgress[state.lastChapter] = progress;
 
-    if (progress > 0.92 && !state.readChapters.includes(state.lastChapter)) {
-      state.readChapters.push(state.lastChapter);
+    const completionCard = $(`[data-chapter-completion="${state.lastChapter}"]`);
+    if (completionCard && !state.readChapters.includes(state.lastChapter)) {
+      completionCard.classList.toggle("is-ready", progress > 0.85);
     }
     queueSave();
   }
@@ -1885,11 +2410,13 @@
         closeDisclaimer({ openFullText: true });
         break;
       case "start":
-        goToReader(
-          state.hasStarted
+        {
+          const preferred = state.hasStarted
             ? state.lastNarrativeChapter
-            : partChapterIndexes(state.activePart)[0] ?? 0
-        );
+            : partChapterIndexes(state.activePart)[0] ?? 0;
+          const fallback = narrativeChapterIndexes().find((index) => isChapterUnlocked(index)) ?? 0;
+          goToReader(isChapterUnlocked(preferred) ? preferred : fallback);
+        }
         break;
       case "goto-toc":
       case "back-toc":
@@ -1912,9 +2439,11 @@
         break;
       case "next-chapter":
         if (Number(trigger.dataset.chapterTarget) >= 0) {
-          if (!state.readChapters.includes(state.lastChapter)) state.readChapters.push(state.lastChapter);
           goToReader(Number(trigger.dataset.chapterTarget), { resetScroll: true });
         }
+        break;
+      case "complete-chapter":
+        completeChapter(Number(trigger.dataset.chapter));
         break;
       case "scroll-reader-content": {
         const target = $("#reader-content-start");
@@ -1927,8 +2456,12 @@
       case "switch-part": {
         const part = Number(trigger.dataset.part);
         if (!PARTS[part]) break;
+        if (!partIsUnlocked(part)) {
+          showProgressionNotice(partLockReason(part));
+          break;
+        }
         state.activePart = part;
-        if (part === 5) state.activeArc = 0;
+        state.activeArc = 0;
         preparePartBackdrop(part);
         updatePartPresentation();
         renderTOC();
@@ -1940,6 +2473,10 @@
       case "switch-part5-section": {
         const section = Number(trigger.dataset.section);
         if (state.activePart !== 5 || !PART5_SECTIONS[String(section)]) break;
+        if (!partFiveSectionIsUnlocked(section)) {
+          showProgressionNotice(sectionLockReason(section));
+          break;
+        }
         state.activeArc = section;
         updatePartPresentation();
         renderTOC();
@@ -1950,6 +2487,20 @@
       }
       case "open-chapter":
         goToReader(Number(trigger.dataset.chapter));
+        break;
+      case "toggle-progression-panel": {
+        const panel = $("#progression-panel");
+        if (!panel) break;
+        panel.hidden = !panel.hidden;
+        trigger.setAttribute("aria-expanded", String(!panel.hidden));
+        if (!panel.hidden) {
+          renderProgressionPanel();
+          panel.scrollIntoView({ behavior: motionIsReduced() ? "auto" : "smooth", block: "start" });
+        }
+        break;
+      }
+      case "mark-current-scope-read":
+        markCurrentScopeRead();
         break;
       case "journal-entry":
         openJournalViewer(Number(trigger.dataset.journalIndex), trigger);
@@ -1968,6 +2519,12 @@
       case "journal-close":
         closeJournalViewer();
         break;
+      case "confirm-free-reading":
+        confirmFreeReadingMode();
+        break;
+      case "cancel-free-reading":
+        closeFreeReadingWarning();
+        break;
       case "toggle-settings":
         $("#settings-drawer").hidden ? openDrawer(trigger) : closeDrawer();
         break;
@@ -1980,9 +2537,9 @@
           state.hasStarted = false;
           state.readChapters = [];
           state.chapterProgress = {};
+          state.achievementSeen = [];
           saveState();
-          renderTOC();
-          updateCover();
+          refreshProgressionUI();
           closeDrawer();
         }
         break;
@@ -2008,8 +2565,22 @@
       requestAnimationFrame(updateReadingProgress);
     });
 
+    document.addEventListener("click", (event) => {
+      const button = event.target.closest("[data-progression-mode]");
+      if (!button) return;
+      requestProgressionMode(button.dataset.progressionMode, button);
+    });
+
     $("#overlay").addEventListener("click", () => closeDrawer());
     document.addEventListener("keydown", (event) => {
+      const freeWarning = $("#free-reading-warning");
+      if (freeWarning && !freeWarning.hidden) {
+        if (event.key === "Escape") {
+          event.preventDefault();
+          closeFreeReadingWarning();
+          return;
+        }
+      }
       const disclaimer = $("#copyright-disclaimer");
       if (disclaimer && !disclaimer.hidden) {
         if (event.key === "Escape") {
@@ -2074,11 +2645,12 @@
   }
 
   function registerServiceWorker() {
+    if (window.Capacitor?.isNativePlatform?.()) return;
     if (!("serviceWorker" in navigator)) return;
     const secureContext = location.protocol === "https:" || ["localhost", "127.0.0.1"].includes(location.hostname);
     if (!secureContext) return;
     const register = () => navigator.serviceWorker
-      .register("./sw.js?v=20260730-gradient-r14")
+      .register("./sw.js?v=20260801-consolidado-part6-r20")
       .catch((error) => console.warn("No se pudo registrar la caché offline.", error));
     if ("requestIdleCallback" in window) {
       window.requestIdleCallback(register, { timeout: 3000 });
@@ -2087,17 +2659,48 @@
     }
   }
 
-  function init() {
+  function setupNativeIntegration() {
+    const plugins = window.Capacitor?.Plugins;
+    if (!plugins) return;
+    document.body.classList.add("capacitor-native");
+    plugins.StatusBar?.setBackgroundColor?.({ color: "#02040a" }).catch(() => {});
+    plugins.StatusBar?.setStyle?.({ style: "LIGHT" }).catch(() => {});
+    plugins.App?.addListener?.("backButton", () => {
+      const journal = $("#journal-viewer");
+      if (journal && !journal.hidden) {
+        closeJournalViewer();
+        return;
+      }
+      if (!$("#settings-drawer").hidden) {
+        closeDrawer();
+        return;
+      }
+      const view = document.body.dataset.view;
+      if (view === "reader") {
+        goToTOC();
+      } else if (view && view !== "cover") {
+        goToCover();
+      } else {
+        plugins.App.exitApp?.();
+      }
+    });
+  }
+
+  async function init() {
     if (!Array.isArray(window.CHAPTERS) || !window.CHAPTERS.length) {
       console.error("No se encontraron capítulos.");
       return;
     }
+    await hydrateNativeState();
     loadState();
+    syncAchievementSeen();
     applySettings();
     updatePartPresentation();
     renderTOC();
     updateCover();
+    renderProgressionPanel();
     bindEvents();
+    setupNativeIntegration();
     applyRouteFromLocation({ initial: true });
     warmIndexBackdrops();
     requestAnimationFrame(maybeShowDisclaimer);

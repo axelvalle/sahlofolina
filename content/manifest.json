@@ -133,6 +133,40 @@
           ]
         }
       }
+    },
+    {
+      "id": 6,
+      "slug": "parte-6",
+      "runtime": "./parte-6/parte6.runtime.js",
+      "title": "Siempre",
+      "chapters": [
+        "prologo-parte-6",
+        "cap42",
+        "cap43",
+        "cap44",
+        "cap45",
+        "cap46",
+        "cap47",
+        "cap48"
+      ],
+      "status": "published",
+      "revision": "canonical",
+      "sourceEdition": "Sahlo_Folina_Libro_V_Parte_VI_EDICION_LITERARIA_MAESTRA_v1.1.pdf",
+      "sections": {
+        "the-contract": {
+          "title": "The Contract",
+          "chapters": [
+            "prologo-parte-6",
+            "cap42",
+            "cap43",
+            "cap44",
+            "cap45",
+            "cap46",
+            "cap47",
+            "cap48"
+          ]
+        }
+      }
     }
   ],
   "extras": {
@@ -142,5 +176,5 @@
       "extras"
     ]
   },
-  "totalEntries": 46
+  "totalEntries": 54
 }

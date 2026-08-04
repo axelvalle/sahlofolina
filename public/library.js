@@ -10,8 +10,8 @@
       description: "La ciudad sin horizonte · El color que no pueden ver",
       cover: "./assets/library/partes-1-2-cover.webp",
       files: Object.freeze([
-        { format: "DOCX", size: "8.7 MB", file: "./downloads/Sahlo-Folina-Partes-I-y-II.docx?v=20260731-master" },
-        { format: "PDF", size: "2.1 MB", file: "./downloads/Sahlo-Folina-Partes-I-y-II.pdf?v=20260731-master" },
+        { format: "DOCX", size: "8.4 MB", file: "./downloads/Sahlo-Folina-Partes-I-y-II.docx?v=20260801-v1.1-final" },
+        { format: "PDF", size: "3.7 MB", file: "./downloads/Sahlo-Folina-Partes-I-y-II.pdf?v=20260801-v1.1-final" },
       ]),
     },
     {
@@ -21,8 +21,8 @@
       description: "Scaled and Icy · Livestream Experience · Saturday",
       cover: "./assets/library/parte-3-cover.webp",
       files: Object.freeze([
-        { format: "DOCX", size: "5.4 MB", file: "./downloads/Sahlo-Folina-Parte-III.docx?v=20260731-master" },
-        { format: "PDF", size: "3.4 MB", file: "./downloads/Sahlo-Folina-Parte-III.pdf?v=20260731-master" },
+        { format: "DOCX", size: "5.4 MB", file: "./downloads/Sahlo-Folina-Parte-III.docx?v=20260801-v1.1-final" },
+        { format: "PDF", size: "3.3 MB", file: "./downloads/Sahlo-Folina-Parte-III.pdf?v=20260801-v1.1-final" },
       ]),
     },
     {
@@ -32,8 +32,8 @@
       description: "No Chances · La torre 9-E · East Is Up Again",
       cover: "./assets/library/parte-4-cover.webp",
       files: Object.freeze([
-        { format: "DOCX", size: "2.6 MB", file: "./downloads/Sahlo-Folina-Parte-IV.docx?v=20260731-master" },
-        { format: "PDF", size: "1.1 MB", file: "./downloads/Sahlo-Folina-Parte-IV.pdf?v=20260731-master" },
+        { format: "DOCX", size: "2.5 MB", file: "./downloads/Sahlo-Folina-Parte-IV.docx?v=20260801-v1.1-final" },
+        { format: "PDF", size: "1.1 MB", file: "./downloads/Sahlo-Folina-Parte-IV.pdf?v=20260801-v1.1-final" },
       ]),
     },
     {
@@ -43,8 +43,19 @@
       description: "The Outside · Overcompensate · Navigating · Paladin Strait",
       cover: "./assets/library/parte-5-cover.webp",
       files: Object.freeze([
-        { format: "DOCX", size: "12.6 MB", file: "./downloads/Sahlo-Folina-Parte-V.docx?v=20260731-master" },
-        { format: "PDF", size: "2.3 MB", file: "./downloads/Sahlo-Folina-Parte-V.pdf?v=20260731-master" },
+        { format: "DOCX", size: "12.3 MB", file: "./downloads/Sahlo-Folina-Parte-V.docx?v=20260801-v1.1-final" },
+        { format: "PDF", size: "5.7 MB", file: "./downloads/Sahlo-Folina-Parte-V.pdf?v=20260801-v1.1-final" },
+      ]),
+    },
+    {
+      id: "parte-6",
+      collection: "Edición VI",
+      title: "Siempre",
+      description: "The Contract · I Am Torchbearer · City Walls · Blurryface",
+      cover: "./assets/library/parte-6-cover.webp",
+      files: Object.freeze([
+        { format: "DOCX", size: "2.8 MB", file: "./downloads/Sahlo-Folina-Parte-VI.docx?v=20260801-v1.1-final" },
+        { format: "PDF", size: "1.4 MB", file: "./downloads/Sahlo-Folina-Parte-VI.pdf?v=20260801-v1.1-final" },
       ]),
     },
   ]);

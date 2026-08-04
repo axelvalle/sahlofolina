@@ -1,16 +1,20 @@
-const CACHE_VERSION = "sahlo-folina-master-r18";
+const CACHE_VERSION = "sahlo-folina-hotfix-label-footnote-r23";
 const SHELL_CACHE = `${CACHE_VERSION}-shell`;
 const RUNTIME_CACHE = `${CACHE_VERSION}-runtime`;
 const CORE = [
   "/index.html",
-  "/styles.css?v=20260731-part5-master-r17",
-  "/app.js?v=20260731-part5-master-r17",
-  "/library.js?v=20260731-part5-master-r17",
-  "/content/framework/runtime.js?v=20260731-part5-master-r17",
-  "/content/framework/routes.js?v=20260731-part5-master-r17",
-  "/content/parte-3/parte3.runtime.js?v=20260731-part5-master-r17",
-  "/content/parte-4/parte4.runtime.js?v=20260731-part5-master-r17",
-  "/content/parte-5/parte5.runtime.js?v=20260731-part5-master-r17",
+  "/styles.css?v=20260801-hotfix-label-footnote-r23",
+  "/app.js?v=20260801-hotfix-label-footnote-r23",
+  "/library.js?v=20260801-hotfix-label-footnote-r23",
+  "/content/framework/runtime.js?v=20260801-hotfix-label-footnote-r23",
+  "/content/framework/routes.js?v=20260801-hotfix-label-footnote-r23",
+  "/content/parte-1/parte1.runtime.js?v=20260801-hotfix-label-footnote-r23",
+  "/content/parte-2/parte2.runtime.js?v=20260801-hotfix-label-footnote-r23",
+  "/content/parte-3/parte3.runtime.js?v=20260801-hotfix-label-footnote-r23",
+  "/content/parte-4/parte4.runtime.js?v=20260801-hotfix-label-footnote-r23",
+  "/content/parte-5/parte5.runtime.js?v=20260801-hotfix-label-footnote-r23",
+  "/content/parte-6/parte6.runtime.js?v=20260801-hotfix-label-footnote-r23",
+  "/content/extras/extras.runtime.js?v=20260801-hotfix-label-footnote-r23",
   "/assets/twenty-one-pilots-icon.webp",
   "/assets/cover-dema.webp",
   "/assets/social/sahlo-folina-og.webp",
@@ -25,6 +29,8 @@ const CORE = [
   "/assets/parte-5/arco-2-portada.webp",
   "/assets/parte-5/arco-3-portada.webp",
   "/assets/parte-5/dema-distancia.webp",
+  "/assets/parte-6/the-contract-cover.webp",
+  "/assets/parte-6/the-contract-index.webp",
 ];
 
 self.addEventListener("install", (event) => {

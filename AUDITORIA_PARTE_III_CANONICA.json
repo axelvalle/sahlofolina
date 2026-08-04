@@ -1,0 +1,131 @@
+{
+  "part": 3,
+  "title": "La ciudad aprende a sonreír",
+  "source": {
+    "docx": {
+      "originalName": "Sahlo_Folina_Libro_II_Parte_III_EDICION_LITERARIA_MAESTRA_v1(1).docx",
+      "publishedName": "Sahlo-Folina-Parte-III.docx",
+      "bytes": 5390497,
+      "sha256": "28673f53a9356cb434831e37ec1ca7dd484e29616d9d64f0f933e5d79f99d72f"
+    },
+    "pdf": {
+      "publishedName": "Sahlo-Folina-Parte-III.pdf",
+      "bytes": 3378488,
+      "sha256": "72452c9456359f5cf1a5d4c8a0d7afaffc47a0d87ffe3e985d19951e010feef9",
+      "pages": 90,
+      "generatedFromMasterDocx": true
+    }
+  },
+  "migration": {
+    "chapters": [
+      "cap18",
+      "cap19",
+      "cap20",
+      "cap21",
+      "cap22",
+      "cap23",
+      "cap24",
+      "interludio-cuenta-cancelada"
+    ],
+    "chapterDetails": [
+      {
+        "id": "cap18",
+        "title": "Good Day",
+        "blocks": 243,
+        "types": {
+          "p": 157,
+          "speech": 81,
+          "transmission": 4,
+          "case-file": 1
+        }
+      },
+      {
+        "id": "cap19",
+        "title": "Una vida corregida",
+        "blocks": 234,
+        "types": {
+          "p": 166,
+          "speech": 62,
+          "case-file": 2,
+          "transmission": 4
+        }
+      },
+      {
+        "id": "cap20",
+        "title": "Sonríe para Dema",
+        "blocks": 191,
+        "types": {
+          "p": 131,
+          "speech": 57,
+          "case-file": 1,
+          "transmission": 2
+        }
+      },
+      {
+        "id": "cap21",
+        "title": "Las tomas descartadas",
+        "blocks": 237,
+        "types": {
+          "p": 157,
+          "case-file": 1,
+          "speech": 78,
+          "transmission": 1
+        }
+      },
+      {
+        "id": "cap22",
+        "title": "Good Day Dema",
+        "blocks": 373,
+        "types": {
+          "p": 294,
+          "speech": 67,
+          "scene": 8,
+          "transmission": 3,
+          "case-file": 1
+        }
+      },
+      {
+        "id": "cap23",
+        "title": "La Asamblea de los Glorificados",
+        "blocks": 207,
+        "types": {
+          "p": 127,
+          "transmission": 3,
+          "speech": 72,
+          "case-file": 1,
+          "scene": 4
+        }
+      },
+      {
+        "id": "cap24",
+        "title": "Saturday",
+        "blocks": 300,
+        "types": {
+          "p": 229,
+          "speech": 64,
+          "scene": 3,
+          "case-file": 1,
+          "transmission": 3
+        }
+      },
+      {
+        "id": "interludio-cuenta-cancelada",
+        "title": "Cuenta cancelada",
+        "blocks": 2,
+        "types": {
+          "dema-document": 1,
+          "scene": 1
+        }
+      }
+    ],
+    "previousPublishedDocxSha256": "cba1f458fa9c50eb9f70172d292bc4171df29d0f23414187f7f347ef042d508a",
+    "sourceParagraphsChangedAgainstPreviousRuntime": 75,
+    "previousRuntimeLeaves": 1747,
+    "masterRuntimeLeaves": 1807,
+    "allRuntimeLeavesAlignedToMasterSource": true,
+    "allDialogueBlocksHaveSpeakerAttribution": true,
+    "visibleRevisionNoticeAdded": false,
+    "libraryFilesReplaced": true,
+    "libraryCoverRegeneratedFromMasterDocx": true
+  }
+}

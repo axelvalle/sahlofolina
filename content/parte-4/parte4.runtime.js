@@ -5732,7 +5732,8 @@ const PART4_CHAPTERS = [
     "subtitle": "La resistencia aprende a moverse sin una única orden ni un único líder",
     "blocks": [
       {
-        "type": "p",
+        "type": "chronology",
+        "label": "REGISTRO TEMPORAL",
         "text": "Durante la semana siguiente."
       },
       {

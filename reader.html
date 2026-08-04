@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <base href="/" />
+    <meta name="theme-color" content="#0b0c0a" />
+    <link rel="icon" type="image/webp" href="./assets/twenty-one-pilots-icon.webp" />
+    <title>Sahlo Folina — Una historia de Trench</title>
+    <meta
+      name="description"
+      content="Sahlo Folina es una novelización fan gratuita del universo narrativo de Dema, Clancy, Trench y los Banditos."
+    />
+    <meta name="application-name" content="Sahlo Folina" />
+    <meta name="author" content="a.bandito" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://sahlofolina.vercel.app/inicio" />
+    <meta property="og:locale" content="es_NI" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Sahlo Folina" />
+    <meta property="og:title" content="Sahlo Folina — Una historia de Trench" />
+    <meta property="og:description" content="Una novelización fan gratuita del universo narrativo de Dema, Clancy, Trench y los Banditos." />
+    <meta property="og:url" content="https://sahlofolina.vercel.app/inicio" />
+    <meta property="og:image" content="https://sahlofolina.vercel.app/assets/social/sahlo-folina-og.webp" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Sahlo Folina, novelización fan del universo narrativo de Trench" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Sahlo Folina — Una historia de Trench" />
+    <meta name="twitter:description" content="Una novelización fan gratuita del universo narrativo de Dema, Clancy, Trench y los Banditos." />
+    <meta name="twitter:image" content="https://sahlofolina.vercel.app/assets/social/sahlo-folina-og.webp" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; base-uri 'self'; connect-src 'self'; font-src 'self' https://fonts.gstatic.com; form-action 'self'; img-src 'self' data:; object-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; upgrade-insecure-requests"
+    />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Roboto:wght@100;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preload" as="image" href="./assets/cover-dema.webp" fetchpriority="high" />
+    <link rel="preload" as="image" href="./assets/parte-4/habitacion-azul.webp" />
+    <link rel="preload" as="image" href="./assets/parte-5/parte-v-mapa.webp" />
+    <link rel="preload" as="image" href="./assets/parte-5/indice-voldsoy.webp" />
+    <link rel="preload" as="image" href="./assets/parte-5/arco-1-indice.webp" />
+    <link rel="stylesheet" href="./styles.css?v=20260801-consolidado-part6-r20" />
+  </head>
+  <body>
+    <main id="view-cover" class="view view-cover is-active">
+      <div class="cover-shell">
+        <header class="brand-row">
+          <a class="brand" href="/inicio" data-action="back-cover" aria-label="Ir al inicio">
+            <img
+              class="brand-icon"
+              src="./assets/twenty-one-pilots-icon.webp"
+              alt=""
+              width="40"
+              height="40"
+              aria-hidden="true"
+            />
+            <span>Sahlo Folina</span>
+          </a>
+          <nav class="site-links" aria-label="Navegación principal">
+            <button class="site-link" type="button" data-action="goto-library">Biblioteca</button>
+            <button class="site-link" type="button" data-action="goto-about">Sobre</button>
+            <button class="site-link site-preferences" type="button" data-action="toggle-settings" aria-label="Abrir preferencias">
+              <span aria-hidden="true">Aa</span>
+            </button>
+          </nav>
+        </header>
+
+        <div class="cover-grid">
+          <section class="cover-copy" aria-labelledby="cover-title">
+            <p class="eyebrow"><span aria-hidden="true"></span> <span id="cover-part-label">Parte I</span></p>
+            <h1 id="cover-title" class="cover-title">
+              <span>Sahlo</span>
+              <em>Folina</em>
+            </h1>
+            <p class="cover-lead" id="cover-lead">
+              Una historia sobre recordar quién eres cuando una ciudad entera
+              intenta decidirlo por ti.
+            </p>
+          </section>
+
+          <section class="resume-card" aria-label="Tu lectura">
+            <div class="resume-top">
+              <span class="resume-label">Tu lectura</span>
+              <span class="resume-percentage" id="stat-progress">0%</span>
+            </div>
+            <div class="resume-progress" aria-hidden="true">
+              <span id="cover-progress-bar"></span>
+            </div>
+            <div class="resume-info">
+              <span id="resume-context-label">Tu primera lectura</span>
+              <strong id="stat-last">Aún no comenzaste</strong>
+            </div>
+            <div class="cover-actions">
+              <button class="btn btn-primary" data-action="start">
+                <span id="start-label">Comenzar a leer</span>
+                <span aria-hidden="true">→</span>
+              </button>
+              <button class="btn btn-secondary" data-action="goto-toc">Ver índice</button>
+            </div>
+          </section>
+        </div>
+
+        <footer class="cover-footer">
+          <p>Novelización fan por <strong>a.bandito</strong></p>
+          <p id="cover-context">Una historia de Dema, Clancy y los Banditos</p>
+        </footer>
+      </div>
+    </main>
+
+    <section id="view-toc" class="view view-toc" hidden>
+      <div class="toc-backdrops" aria-hidden="true">
+        <div class="toc-backdrop is-active" data-part="1"></div>
+        <div class="toc-backdrop" data-part="2"></div>
+        <div class="toc-backdrop" data-part="3"></div>
+        <div class="toc-backdrop" data-part="4"></div>
+        <div class="toc-backdrop" data-part="5"></div>
+        <div class="toc-backdrop" data-part="6"></div>
+      </div>
+      <div class="page-shell">
+        <header class="page-header">
+          <div class="page-tools">
+            <button class="text-btn" data-action="back-cover">← Portada</button>
+            <div class="page-tools-actions">
+              <button class="text-btn text-link" type="button" data-action="goto-library">Biblioteca</button>
+              <button class="text-btn text-link" type="button" data-action="goto-about">Sobre</button>
+              <button class="index-preferences" type="button" data-action="toggle-settings" aria-label="Abrir preferencias">
+                <span aria-hidden="true">Aa</span>
+              </button>
+            </div>
+          </div>
+          <div class="page-heading">
+            <p class="eyebrow"><span aria-hidden="true"></span> <span id="toc-part-label">Parte I</span></p>
+            <h2 id="toc-part-title">La ciudad sin horizonte</h2>
+            <p>Elige un capítulo, continúa donde lo dejaste o explora los extras disponibles.</p>
+          </div>
+          <nav class="part-switcher" aria-label="Seleccionar parte">
+            <button type="button" data-action="switch-part" data-part="1" aria-pressed="true">
+              <span>Parte I</span>
+              <strong>Dema</strong>
+            </button>
+            <button type="button" data-action="switch-part" data-part="2" aria-pressed="false">
+              <span>Parte II</span>
+              <strong>Trench</strong>
+            </button>
+            <button type="button" data-action="switch-part" data-part="3" aria-pressed="false">
+              <span>Parte III</span>
+              <strong>Scaled and Icy</strong>
+            </button>
+            <button type="button" data-action="switch-part" data-part="4" aria-pressed="false">
+              <span>Parte IV</span>
+              <strong>Los que se quedaron</strong>
+            </button>
+            <button type="button" data-action="switch-part" data-part="5" aria-pressed="false">
+              <span>Parte V</span>
+              <strong>La brecha</strong>
+            </button>
+            <button type="button" data-action="switch-part" data-part="6" aria-pressed="false">
+              <span>Parte VI</span>
+              <strong>Siempre</strong>
+            </button>
+          </nav>
+
+          <nav id="part5-arc-switcher" class="arc-switcher part5-section-switcher" aria-label="Navegar por la Parte V" hidden>
+            <button type="button" data-action="switch-part5-section" data-section="-1" aria-pressed="false">
+              <span class="arc-index">P</span>
+              <span class="arc-copy">
+                <small>Sobrevivir</small>
+                <strong>The Outside</strong>
+                <em>Prólogo independiente</em>
+              </span>
+              <span class="arc-status">Prólogo disponible</span>
+            </button>
+            <button type="button" data-action="switch-part5-section" data-section="1" aria-pressed="false">
+              <span class="arc-index">I</span>
+              <span class="arc-copy">
+                <small>Volver</small>
+                <strong>El regreso imposible</strong>
+                <em>Capítulos 32–34</em>
+              </span>
+              <span class="arc-status">Capítulos 32–34</span>
+            </button>
+            <button type="button" data-action="switch-part5-section" data-section="2" aria-pressed="false">
+              <span class="arc-index">II</span>
+              <span class="arc-copy">
+                <small>Decidir</small>
+                <strong>El peso de Clancy</strong>
+                <em>Capítulos 35–38</em>
+              </span>
+              <span class="arc-status">Capítulos 35–38</span>
+            </button>
+            <button type="button" data-action="switch-part5-section" data-section="3" aria-pressed="false">
+              <span class="arc-index">III</span>
+              <span class="arc-copy">
+                <small>Atravesar</small>
+                <strong>La brecha</strong>
+                <em>Capítulos 39–41</em>
+              </span>
+              <span class="arc-status">Capítulos 39–41</span>
+            </button>
+          </nav>
+
+          <div class="toc-summary" aria-label="Resumen de progreso">
+            <span id="toc-progress">0 de 0 leídos</span>
+            <div class="summary-track" aria-hidden="true"><i id="toc-progress-bar"></i></div>
+          </div>
+        </header>
+
+        <ol class="toc-list" id="toc-list" aria-label="Capítulos y extras"></ol>
+
+        <footer class="toc-footer">
+          <blockquote id="toc-quote">“Recordar que alguna vez elegiste algo.”</blockquote>
+          <cite id="toc-quote-by">— El hombre de las tuberías</cite>
+        </footer>
+
+        <footer class="site-footer" aria-label="Información del sitio">
+          <div class="site-footer-brand">
+            <strong>Sahlo Folina</strong>
+            <span>Novelización fan gratuita · 2026</span>
+          </div>
+          <nav class="site-footer-nav" aria-label="Enlaces editoriales">
+            <button type="button" data-action="goto-library">Biblioteca</button>
+            <button type="button" data-action="goto-about">Sobre la obra</button>
+            <button type="button" data-action="goto-disclaimer">Aviso legal</button>
+          </nav>
+        </footer>
+      </div>
+    </section>
+
+    <section id="view-library" class="view view-library" hidden aria-labelledby="library-title">
+      <div class="library-shell">
+        <header class="library-header">
+          <button class="library-brand" type="button" data-action="back-cover" aria-label="Volver al inicio">
+            <img src="./assets/twenty-one-pilots-icon.webp" alt="" width="40" height="40" aria-hidden="true" />
+            <span>Sahlo Folina</span>
+          </button>
+          <nav class="library-navigation" aria-label="Navegación de la biblioteca">
+            <button type="button" data-action="back-cover">Inicio</button>
+            <button type="button" data-action="goto-toc">Índice</button>
+            <button type="button" data-action="goto-about">Sobre</button>
+          </nav>
+        </header>
+
+        <section class="library-intro" aria-labelledby="library-title">
+          <p class="eyebrow"><span aria-hidden="true"></span> Ediciones digitales</p>
+          <h1 id="library-title">Biblioteca</h1>
+          <p>
+            Descarga gratuitamente las ediciones disponibles de <strong>Sahlo Folina</strong> en Word o PDF.
+            Elige el formato que prefieras para lectura personal; ninguna edición está autorizada para la venta.
+          </p>
+        </section>
+
+        <section class="library-catalog" aria-labelledby="available-title">
+          <div class="library-catalog-heading">
+            <div>
+              <p class="library-kicker">Colección publicada</p>
+              <h2 id="available-title">Ediciones disponibles</h2>
+            </div>
+            <p id="library-count" aria-live="polite">Cargando ediciones…</p>
+          </div>
+
+          <div class="bookshelf" id="bookshelf" aria-live="polite"></div>
+          <div class="shelf-board" aria-hidden="true"><span></span></div>
+        </section>
+
+        <aside class="library-note">
+          <strong>Distribución gratuita</strong>
+          <p>
+            Cada edición se incorpora a esta colección cuando está lista para publicación. Las
+            partes futuras permanecerán fuera del catálogo hasta contar con una versión disponible.
+          </p>
+        </aside>
+
+        <footer class="site-footer library-site-footer" aria-label="Información del sitio">
+          <div class="site-footer-brand">
+            <strong>Sahlo Folina</strong>
+            <span>Obra fan no oficial · Descarga gratuita · Prohibida su venta.</span>
+          </div>
+          <nav class="site-footer-nav" aria-label="Enlaces editoriales">
+            <button type="button" data-action="start">Continuar lectura</button>
+            <button type="button" data-action="goto-about">Sobre la obra</button>
+            <button type="button" data-action="goto-disclaimer">Aviso legal</button>
+          </nav>
+        </footer>
+      </div>
+    </section>
+
+    <section id="view-about" class="view view-about" hidden aria-labelledby="about-title">
+      <div class="about-shell">
+        <header class="about-header">
+          <button class="library-brand" type="button" data-action="back-cover" aria-label="Volver al inicio">
+            <img src="./assets/twenty-one-pilots-icon.webp" alt="" width="40" height="40" aria-hidden="true" />
+            <span>Sahlo Folina</span>
+          </button>
+          <nav class="about-navigation" aria-label="Navegación de Sobre la obra">
+            <button type="button" data-action="back-cover">Inicio</button>
+            <button type="button" data-action="goto-toc">Índice</button>
+            <button type="button" data-action="goto-library">Biblioteca</button>
+          </nav>
+        </header>
+
+        <div class="about-main">
+          <header class="about-hero">
+            <p class="eyebrow"><span aria-hidden="true"></span> Acerca del proyecto</p>
+            <h1 id="about-title">Sobre la obra</h1>
+            <p>
+              <strong>Sahlo Folina</strong> es una novelización fan gratuita que transforma la documentación narrativa de Dema, Trench y Clancy en una historia continua, organizada para leerse como una saga editorial.
+            </p>
+          </header>
+
+          <div class="about-grid">
+            <article class="about-card">
+              <span>01</span>
+              <h2>Qué es Sahlo Folina</h2>
+              <p>
+                La obra reconstruye los acontecimientos del universo narrativo de Twenty One Pilots mediante capítulos, interludios, documentos internos y recursos visuales. Su propósito no es sustituir el material oficial, sino ofrecer una lectura literaria coherente para quienes desean recorrer el lore como una sola historia.
+              </p>
+            </article>
+            <article class="about-card">
+              <span>02</span>
+              <h2>Canon, interpretación y fanon</h2>
+              <p>
+                La base procede de cartas, videos, letras, material de DMA ORG y otras fuentes oficiales. Cuando el canon deja espacios abiertos, la narración utiliza interpretación editorial y elementos fanon para enlazar escenas, desarrollar personajes y conservar la continuidad. Esos añadidos forman parte de esta versión novelada, no del canon oficial.
+              </p>
+            </article>
+            <article class="about-card">
+              <span>03</span>
+              <h2>Cómo está organizada</h2>
+              <p>
+                La saga se divide en partes que corresponden a etapas narrativas distintas. Cada parte posee su propia identidad visual, índice y paleta de lectura. La Parte V se organiza además en un prólogo independiente y tres arcos, permitiendo recorrer una sección extensa sin perder la posición ni el sentido de progresión.
+              </p>
+            </article>
+            <article class="about-card">
+              <span>04</span>
+              <h2>Una experiencia de lectura</h2>
+              <p>
+                El website conserva el progreso local, permite continuar desde el último capítulo y ofrece preferencias de tamaño, ancho, tipografía, tema y animaciones. Los manuscritos publicados también pueden descargarse gratuitamente desde la Biblioteca para lectura personal en PDF o Word.
+              </p>
+            </article>
+          </div>
+
+          <aside class="about-note">
+            <p class="about-note-kicker">Autoría y carácter gratuito</p>
+            <p>
+              Novelización, edición y continuidad por <strong>a.bandito</strong>. Sahlo Folina es una obra fan no oficial, sin afiliación ni aprobación de Twenty One Pilots o de sus representantes. No se vende y se prohíbe su comercialización. Todos los elementos oficiales pertenecen a sus respectivos titulares.
+            </p>
+            <div class="about-actions">
+              <button class="btn btn-primary" type="button" data-action="start">Comenzar o continuar lectura</button>
+              <button class="btn btn-secondary" type="button" data-action="goto-disclaimer">Leer aviso legal completo</button>
+            </div>
+          </aside>
+        </div>
+
+        <footer class="site-footer" aria-label="Información del sitio">
+          <div class="site-footer-brand">
+            <strong>Sahlo Folina</strong>
+            <span>Novelización fan gratuita · 2026</span>
+          </div>
+          <nav class="site-footer-nav" aria-label="Enlaces editoriales">
+            <button type="button" data-action="goto-toc">Índice</button>
+            <button type="button" data-action="goto-library">Biblioteca</button>
+            <button type="button" data-action="goto-disclaimer">Aviso legal</button>
+          </nav>
+        </footer>
+      </div>
+    </section>
+
+    <section id="view-reader" class="view view-reader" hidden>
+      <header class="reader-toolbar">
+        <button class="toolbar-btn toolbar-back" data-action="back-toc" aria-label="Volver al índice">
+          <span aria-hidden="true">←</span><span>Índice</span>
+        </button>
+        <div class="reader-status">
+          <span id="reader-kicker">Capítulo</span>
+          <strong id="reader-current-title">—</strong>
+        </div>
+        <div class="toolbar-actions">
+          <span class="reader-percent" id="reader-percent">0%</span>
+          <button class="toolbar-btn icon-btn" data-action="toggle-settings" aria-label="Abrir ajustes de lectura">
+            <span aria-hidden="true">Aa</span>
+          </button>
+        </div>
+        <div class="reader-progress" aria-hidden="true">
+          <span id="reader-progress-bar"></span>
+        </div>
+      </header>
+
+      <article class="reader" id="reader" tabindex="-1"></article>
+
+      <nav class="reader-nav" aria-label="Navegación entre capítulos">
+        <button class="chapter-nav" id="prev-chapter" data-action="prev-chapter">
+          <span>← Anterior</span>
+          <strong id="prev-title">Capítulo anterior</strong>
+        </button>
+        <span class="reader-position" id="reader-position">— / —</span>
+        <button class="chapter-nav chapter-nav-next" id="next-chapter" data-action="next-chapter">
+          <span>Siguiente →</span>
+          <strong id="next-title">Capítulo siguiente</strong>
+        </button>
+      </nav>
+    </section>
+
+
+    <div id="disclaimer-backdrop" class="disclaimer-backdrop" hidden aria-hidden="true"></div>
+    <section
+      id="copyright-disclaimer"
+      class="disclaimer-dialog"
+      hidden
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="disclaimer-title"
+      aria-describedby="disclaimer-summary"
+    >
+      <div class="disclaimer-dialog-inner">
+        <div class="disclaimer-copy">
+          <span class="disclaimer-kicker">Obra fan gratuita</span>
+          <h2 id="disclaimer-title">Aclaración legal y editorial</h2>
+          <p id="disclaimer-summary">
+            <strong>Sahlo Folina</strong> combina canon, fanon e interpretación editorial basada en el lore oficial.
+            Los elementos oficiales pertenecen a sus respectivos titulares. Esta obra no se vende.
+          </p>
+        </div>
+        <div class="disclaimer-actions">
+          <button type="button" class="btn btn-primary" data-action="accept-disclaimer">Continuar</button>
+          <button type="button" class="btn btn-secondary" data-action="read-disclaimer">Detalles</button>
+        </div>
+      </div>
+    </section>
+
+    <aside id="settings-drawer" class="drawer" hidden aria-labelledby="settings-title">
+      <div class="drawer-inner">
+        <header class="drawer-header">
+          <div>
+            <span class="resume-label">Lectura e interfaz</span>
+            <h2 id="settings-title">Preferencias</h2>
+          </div>
+          <button class="close-btn" data-action="toggle-settings" aria-label="Cerrar ajustes">×</button>
+        </header>
+
+        <div class="setting-group">
+          <span class="setting-label">Tamaño de texto</span>
+          <div class="setting-buttons" data-setting="fontSize">
+            <button data-value="sm" aria-label="Texto pequeño">A−</button>
+            <button data-value="md">A</button>
+            <button data-value="lg">A+</button>
+            <button data-value="xl">A++</button>
+          </div>
+        </div>
+
+        <div class="setting-group">
+          <span class="setting-label">Ancho de lectura</span>
+          <div class="setting-buttons" data-setting="lineWidth">
+            <button data-value="narrow">Estrecho</button>
+            <button data-value="md">Normal</button>
+            <button data-value="wide">Amplio</button>
+          </div>
+        </div>
+
+        <div class="setting-group">
+          <span class="setting-label">Tipografía</span>
+          <div class="setting-buttons" data-setting="fontFamily">
+            <button data-value="serif">Editorial</button>
+            <button data-value="sans">Sans</button>
+            <button data-value="mono">Mono</button>
+          </div>
+        </div>
+
+        <div class="setting-group">
+          <span class="setting-label">Tema</span>
+          <div class="setting-buttons" data-setting="theme">
+            <button data-value="dark">Noche</button>
+            <button data-value="paper">Papel</button>
+          </div>
+          <p class="setting-help">El tema Papel se aplica únicamente al lector; la portada, el índice y la Biblioteca permanecen en modo noche.</p>
+        </div>
+
+        <div class="setting-group">
+          <span class="setting-label">Animaciones y transiciones</span>
+          <div class="setting-buttons" data-setting="animations">
+            <button data-value="on">Activadas</button>
+            <button data-value="off">Desactivadas</button>
+          </div>
+          <p class="setting-help">Al desactivarlas se omiten los glitches, movimientos ambientales y transiciones suaves.</p>
+        </div>
+
+        <button class="reset-btn" data-action="reset-progress">Reiniciar progreso de lectura</button>
+      </div>
+    </aside>
+    <div class="overlay" id="overlay" hidden></div>
+
+    <script defer src="./content/framework/runtime.js?v=20260801-consolidado-part6-r20"></script>
+    <script defer src="./content/framework/routes.js?v=20260801-consolidado-part6-r20"></script>
+    <script defer src="./content/parte-1/parte1.runtime.js?v=20260801-consolidado-part6-r20"></script>
+    <script defer src="./content/parte-2/parte2.runtime.js?v=20260801-consolidado-part6-r20"></script>
+    <script defer src="./content/parte-3/parte3.runtime.js?v=20260801-consolidado-part6-r20"></script>
+    <script defer src="./content/parte-4/parte4.runtime.js?v=20260801-consolidado-part6-r20"></script>
+    <script defer src="./content/parte-5/parte5.runtime.js?v=20260801-consolidado-part6-r20"></script>
+    <script defer src="./content/parte-6/parte6.runtime.js?v=20260801-consolidado-part6-r20"></script>
+    <script defer src="./content/extras/extras.runtime.js?v=20260801-consolidado-part6-r20"></script>
+    <script defer src="./library.js?v=20260801-consolidado-part6-r20"></script>
+    <script defer src="./app.js?v=20260801-consolidado-part6-r20"></script>
+  </body>
+</html>

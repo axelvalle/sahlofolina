@@ -9282,13 +9282,14 @@ const PART5_CHAPTERS = [
         "text": "Tomé una hoja y escribí mientras hablábamos."
       },
       {
-        "type": "archive-letter",
-        "id": "declaracion-de-infiltracion",
-        "title": "",
-        "intro": "ARCHIVO DE LA BRECHA",
+        "type": "diary",
+        "id": "diario-024-02moon-28",
+        "title": "Encontré una forma de entrar",
+        "intro": "024 02MOON 28",
         "paragraphs": [
           "Encontré una forma de entrar. Una forma que jamás sospecharán y que nunca lograrán comprender. Todo lo relacionado con nuestra causa les resulta muy difícil de entender, pero está muy cerca del corazón de la resistencia resplandeciente. Puedo llegar hasta todos ellos. Puedo reclutar a cualquiera cuyos ojos sean capaces de ver más allá del horizonte. Puedo enseñarles. Pueden aprender lo que yo he aprendido y sobrevolar todas las construcciones que Dema ha colocado frente a ellos. Recuperaremos lo que nos pertenece."
-        ]
+        ],
+        "sign": "—Clancy"
       },
       {
         "type": "p",

@@ -40,3 +40,13 @@ next-env.d.ts
 /.wrangler/
 /outputs/
 /work/
+
+# Android local build state and private signing material
+/.android-sdk/
+/android/.gradle/
+/android/local.properties
+/android/keystore.properties
+/android/*.jks
+/android/app/build/
+/deliverables/*.apk
+/deliverables/*.aab

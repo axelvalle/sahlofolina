@@ -1,0 +1,160 @@
+{
+  "project": "Sahlo Folina Website",
+  "integration": "Parte V — La brecha",
+  "edition": "edición literaria maestra definitiva",
+  "generatedAt": "2026-07-31",
+  "source": {
+    "docx": {
+      "name": "Sahlo_Folina_Libro_IV_Parte_V_EDICION_LITERARIA_MAESTRA_v1(1).docx",
+      "bytes": 12643473,
+      "sha256": "ba2f76611e033e7d1babc865c67c0cfdd9c530ee8e573a40cdab9da482880d7c"
+    },
+    "pdf": {
+      "name": "Sahlo_Folina_Libro_IV_Parte_V_EDICION_LITERARIA_MAESTRA_v1(1).pdf",
+      "bytes": 2261699,
+      "sha256": "12cd34713602ed5380e59c5a497f7d77be4847f4c80f4f5aada229d0efc67980"
+    },
+    "pages": 212
+  },
+  "structure": {
+    "entries": 11,
+    "arcCounts": {
+      "0": 1,
+      "1": 3,
+      "2": 4,
+      "3": 3
+    },
+    "chapterIds": [
+      "prologo-parte-5",
+      "cap32",
+      "cap33",
+      "cap34",
+      "cap35",
+      "cap36",
+      "cap37",
+      "cap38",
+      "cap39",
+      "cap40",
+      "cap41"
+    ],
+    "blocksPerEntry": {
+      "prologo-parte-5": 456,
+      "cap32": 312,
+      "cap33": 196,
+      "cap34": 401,
+      "cap35": 315,
+      "cap36": 436,
+      "cap37": 363,
+      "cap38": 342,
+      "cap39": 329,
+      "cap40": 297,
+      "cap41": 335
+    },
+    "totalBlocks": 3782,
+    "diaryEntriesInPartV": [
+      {
+        "chapter": "prologo-parte-5",
+        "id": "diario-022-03moon-17",
+        "code": "022 03MOON 17",
+        "title": "Página del diario"
+      },
+      {
+        "chapter": "prologo-parte-5",
+        "id": "diario-022-03moon-18",
+        "code": "022 03MOON 18",
+        "title": "Página del diario"
+      },
+      {
+        "chapter": "prologo-parte-5",
+        "id": "diario-024-02moon-09",
+        "code": "024 02MOON 09",
+        "title": "Página del diario"
+      },
+      {
+        "chapter": "cap36",
+        "id": "diario-024-02moon-25",
+        "code": "024 02MOON 25",
+        "title": "Las fogatas se sienten como hogar"
+      }
+    ]
+  },
+  "routes": [
+    "/indice/parte-5",
+    "/indice/parte-5/prologo",
+    "/indice/parte-5/arco-1",
+    "/indice/parte-5/arco-2",
+    "/indice/parte-5/arco-3",
+    "/leer/prologo-parte-5",
+    "/leer/cap32",
+    "/leer/cap35",
+    "/leer/cap39",
+    "/leer/cap41"
+  ],
+  "visualSystem": {
+    "prologue": "azul oceánico oscuro y blanco",
+    "arc1": "rojo teatral profundo, blanco y coral apagado",
+    "arc2": "azul humo, gris pizarra y ámbar tenue",
+    "arc3": "verde petróleo oscuro, hueso y gris frío",
+    "assets": [
+      {
+        "path": "assets/parte-5/parte-v-mapa.webp",
+        "bytes": 81444,
+        "sha256": "c14c135cf9e885c370c6fc8d989fdf6ccf23f1fc1ba3cfea7c856c980eab5c6e"
+      },
+      {
+        "path": "assets/parte-5/prologo-voldsoy.webp",
+        "bytes": 236972,
+        "sha256": "eda70fd46fb07b1cdec39e90a96ccf645c53c4d0f42c6ca20928048596ce2cee"
+      },
+      {
+        "path": "assets/parte-5/indice-voldsoy.webp",
+        "bytes": 30510,
+        "sha256": "0631ff7aa803d4dc5b3be9965d40202f9e1a247ad61a197eef7a8606b715b746"
+      },
+      {
+        "path": "assets/parte-5/arco-1-portada.webp",
+        "bytes": 105790,
+        "sha256": "965c5f534f0a0f5a43c1532ba826e633946f5e4a3c713094fb8446205a4e1f6a"
+      },
+      {
+        "path": "assets/parte-5/arco-1-indice.webp",
+        "bytes": 286556,
+        "sha256": "345fbced76c899b3a0166564cff8af4afaf999c214c4e8053308922674483b26"
+      },
+      {
+        "path": "assets/parte-5/arco-2-portada.webp",
+        "bytes": 229044,
+        "sha256": "e0548715ad778d7ed5f87c5cd517cee55a3b477005477f34d331031b0a9e7110"
+      },
+      {
+        "path": "assets/parte-5/dema-distancia.webp",
+        "bytes": 67376,
+        "sha256": "bea61a13e1681e3a962fce06870e209ff31cf45eaccc552f636edef54047a678"
+      },
+      {
+        "path": "assets/parte-5/arco-3-portada.webp",
+        "bytes": 190604,
+        "sha256": "6b63549f672ccf732604cc0a0d8193894edf1b1e64245f69e38fc10911381b3e"
+      },
+      {
+        "path": "assets/library/parte-5-cover.webp",
+        "bytes": 210472,
+        "sha256": "59cd7f18a23431607b3ff9c5ef4037e245b65019dd1d65b86bf35420adeaf625"
+      }
+    ],
+    "generalMap": "paisaje costero cálido usado como ambiente del mapa de lectura y portada general; la cubierta editorial queda reservada para Biblioteca"
+  },
+  "library": {
+    "docx": "downloads/Sahlo-Folina-Parte-V.docx",
+    "pdf": "downloads/Sahlo-Folina-Parte-V.pdf",
+    "exactSourceCopies": true
+  },
+  "validation": {
+    "semanticTextComparison": "11/11 entradas coinciden con la edición maestra",
+    "entries": 46,
+    "downloads": 8,
+    "tests": "19/19",
+    "webpAssets": 100,
+    "build": "verificación de contenido y pruebas aprobadas; compilación Next no ejecutada por dependencias no instaladas en el paquete de trabajo"
+  }
+}

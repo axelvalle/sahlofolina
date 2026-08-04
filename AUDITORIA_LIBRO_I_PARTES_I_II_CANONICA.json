@@ -1,0 +1,164 @@
+{
+  "sourceDocx": "Sahlo_Folina_Libro_I_Partes_I_y_II_EDICION_LITERARIA_MAESTRA_v1(4).docx",
+  "sourcePdf": "Sahlo_Folina_Libro_I_Partes_I_y_II_EDICION_LITERARIA_MAESTRA_v1(1).pdf",
+  "chapters": [
+    {
+      "id": "cap1",
+      "title": "Las nueve campanas",
+      "sourceLocation": "Dema, antes de la primera fuga.",
+      "blocks": 263,
+      "diaries": 1,
+      "speech": 76,
+      "plainDialogue": 0
+    },
+    {
+      "id": "cap2",
+      "title": "La brújula miente",
+      "sourceLocation": "Dema, durante la preparación de la fuga.",
+      "blocks": 347,
+      "diaries": 2,
+      "speech": 185,
+      "plainDialogue": 0
+    },
+    {
+      "id": "cap3",
+      "title": "Los vigilantes duermen",
+      "sourceLocation": "Dema, durante la Asamblea Anual de los Glorificados.",
+      "blocks": 226,
+      "diaries": 1,
+      "speech": 110,
+      "plainDialogue": 0
+    },
+    {
+      "id": "cap4",
+      "title": "El fuego en la carretera",
+      "sourceLocation": "Dema y la carretera exterior, durante la primera salida.",
+      "blocks": 334,
+      "diaries": 0,
+      "speech": 155,
+      "plainDialogue": 0
+    },
+    {
+      "id": "cap5",
+      "title": "He logrado salir",
+      "sourceLocation": "Trench, las tres primeras noches fuera de Dema.",
+      "blocks": 54,
+      "diaries": 1,
+      "speech": 1,
+      "plainDialogue": 0
+    },
+    {
+      "id": "cap6",
+      "title": "El valle de los pétalos",
+      "sourceLocation": "Trench, durante el descenso hacia el valle.",
+      "blocks": 116,
+      "diaries": 0,
+      "speech": 23,
+      "plainDialogue": 0
+    },
+    {
+      "id": "cap7",
+      "title": "La marca de Nico",
+      "sourceLocation": "El valle de Trench, durante la primera recaptura.",
+      "blocks": 135,
+      "diaries": 0,
+      "speech": 22,
+      "plainDialogue": 0
+    },
+    {
+      "id": "cap8",
+      "title": "Unalone",
+      "sourceLocation": "Trench, durante los días posteriores a la marca.",
+      "blocks": 75,
+      "diaries": 1,
+      "speech": 7,
+      "plainDialogue": 0
+    },
+    {
+      "id": "cap9",
+      "title": "El ciudadano recuperado",
+      "sourceLocation": "Dema, después del regreso con Keons.",
+      "blocks": 205,
+      "diaries": 1,
+      "speech": 96,
+      "plainDialogue": 0
+    },
+    {
+      "id": "cap10",
+      "title": "Rostros prestados",
+      "sourceLocation": "Dema, durante la construcción de las identidades de fuga.",
+      "blocks": 128,
+      "diaries": 0,
+      "speech": 52,
+      "plainDialogue": 0
+    },
+    {
+      "id": "cap11",
+      "title": "Las rutas inferiores",
+      "sourceLocation": "Dema, durante la procesión de los nueve obispos.",
+      "blocks": 142,
+      "diaries": 0,
+      "speech": 60,
+      "plainDialogue": 0
+    },
+    {
+      "id": "cap12",
+      "title": "East Is Up",
+      "sourceLocation": "Dema, bajo la estatua de los brazos levantados.",
+      "blocks": 110,
+      "diaries": 0,
+      "speech": 55,
+      "plainDialogue": 0
+    },
+    {
+      "id": "cap13",
+      "title": "Nico and the Niners",
+      "sourceLocation": "Dema, durante la segunda fuga.",
+      "blocks": 198,
+      "diaries": 0,
+      "speech": 76,
+      "plainDialogue": 0
+    },
+    {
+      "id": "cap14",
+      "title": "Entre dos lugares",
+      "sourceLocation": "Trench, durante el traslado hacia el campamento.",
+      "blocks": 122,
+      "diaries": 0,
+      "speech": 63,
+      "plainDialogue": 0
+    },
+    {
+      "id": "cap15",
+      "title": "La habitación bajo la piedra",
+      "sourceLocation": "Campamento Bandito, después de la segunda fuga.",
+      "blocks": 115,
+      "diaries": 0,
+      "speech": 53,
+      "plainDialogue": 0
+    },
+    {
+      "id": "cap16",
+      "title": "Levitate",
+      "sourceLocation": "Campamento Bandito, durante Levitate.",
+      "blocks": 95,
+      "diaries": 0,
+      "speech": 26,
+      "plainDialogue": 0
+    },
+    {
+      "id": "cap17",
+      "title": "Por ahora, seguir vivos",
+      "sourceLocation": "Dema, después de la nueva recaptura de Clancy.",
+      "blocks": 143,
+      "diaries": 0,
+      "speech": 45,
+      "plainDialogue": 0
+    }
+  ],
+  "unattributedDialogueParagraphs": [],
+  "part1Blocks": 1170,
+  "part2Blocks": 1638,
+  "docxSha256": "2f6c486156d9b4f2ebdcd3385e6a62f6681dfeb7ec311bdfc7a38099a9bee3a9",
+  "pdfSha256": "dedbcf91756856717c45b7de3377f05dbedd4bd09d4bde3fb5e4305b5524baa7"
+}

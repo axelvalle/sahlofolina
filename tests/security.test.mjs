@@ -133,9 +133,11 @@ test("published downloads match the production manifest", async () => {
 });
 
 test("all external visual assets are WebP", async () => {
+  const rasterExtensions = new Set([".avif", ".gif", ".jpeg", ".jpg", ".png", ".webp"]);
   for (const directory of ["assets", "public/assets"]) {
     for (const path of await walk(directory)) {
-      assert.equal(extname(path).toLowerCase(), ".webp", path);
+      const extension = extname(path).toLowerCase();
+      if (rasterExtensions.has(extension)) assert.equal(extension, ".webp", path);
     }
   }
 });
@@ -200,11 +202,13 @@ test("paper appearance is limited to the reader and preserves Parts III and IV",
 
 test("the shell defers heavy work and chapter subtitles are concise synopses", async () => {
   const html = await read("index.html");
+  const fonts = await read("assets/fonts/google-fonts.css");
   const app = await read("app.js");
   const library = await read("library.js");
   const styles = await read("styles.css");
   assert.match(html, /<script defer src="\.\/content\/framework\/runtime\.js/);
-  assert.match(html, /display=swap/);
+  assert.match(html, /assets\/fonts\/google-fonts\.css/);
+  assert.match(fonts, /font-display:\s*swap/);
   assert.match(app, /scheduleReadingProgress/);
   assert.match(app, /registerServiceWorker/);
   assert.match(library, /image\.loading = "lazy"/);
@@ -361,18 +365,19 @@ test("clean route helpers parse paths and migrate legacy hashes", async () => {
   assert.deepEqual(calls.at(-1), ["replace", "/inicio"]);
 });
 
-test("Clancy journal opens as an independent eleven-slide viewer", async () => {
+test("Clancy journal opens as an independent twelve-slide viewer", async () => {
   const app = await read("app.js");
   const extras = await read("content/extras/extras.runtime.js");
   const styles = await read("styles.css");
 
   assert.match(extras, /"title": "Diario de Clancy"/);
   assert.match(extras, /visor independiente/);
-  assert.equal((extras.match(/"targetId":/g) || []).length, 11);
+  assert.equal((extras.match(/"targetId":/g) || []).length, 12);
   assert.match(extras, /"targetId": "diario-022-03moon-17"/);
   assert.match(extras, /"targetId": "diario-022-03moon-18"/);
   assert.match(extras, /"targetId": "diario-024-02moon-09"/);
   assert.match(extras, /"targetId": "diario-024-02moon-25"/);
+  assert.match(extras, /"targetId": "diario-024-02moon-28"/);
   assert.match(app, /function openJournalViewer/);
   assert.match(app, /function showJournalSlide/);
   assert.match(app, /case "journal-next"/);
@@ -413,4 +418,34 @@ test("the public shell exposes editorial identity, About page and share metadata
   assert.match(app, /function goToAbout/);
   assert.match(app, /Continúa desde/);
   assert.match(app, /Prólogo disponible/);
+});
+
+test("Part VI selector, clean route and cache migration are published together", async () => {
+  const html = await read("index.html");
+  const publicHtml = await read("public/index.html");
+  const app = await read("app.js");
+  const routes = await read("content/framework/routes.js");
+  const sw = await read("sw.js");
+  const manifest = JSON.parse(await read("content/manifest.json"));
+  const runtime = await read("content/parte-6/parte6.runtime.js");
+  const styles = await read("styles.css");
+
+  assert.match(html, /data-action="switch-part" data-part="6"/);
+  assert.match(html, /content\/parte-6\/parte6\.runtime\.js\?v=20260801-hotfix-label-footnote-r23/);
+  assert.equal(html, publicHtml);
+  assert.match(app, /6:\s*\{[\s\S]*?indexTitle: "Siempre"/);
+  assert.match(app, /6: "\.\/assets\/parte-6\/the-contract-index\.webp"/);
+  assert.match(routes, /id: "parte-6"[\s\S]*?part: 6/);
+  assert.match(sw, /sahlo-folina-hotfix-label-footnote-r23/);
+  assert.match(sw, /content\/parte-6\/parte6\.runtime\.js\?v=20260801-hotfix-label-footnote-r23/);
+  assert.doesNotMatch(runtime, /—Siempre\.6/);
+  assert.match(runtime, /"type": "author-note"[\s\S]*?“Siempre” conserva la última palabra/);
+  assert.match(styles, /\.archive-letter::before \{[\s\S]*?position: static/);
+  assert.match(sw, /assets\/parte-6\/the-contract-cover\.webp/);
+  assert.match(sw, /assets\/parte-6\/the-contract-index\.webp/);
+  const part6 = manifest.routes.find((entry) => entry.id === 6);
+  assert.ok(part6);
+  assert.equal(part6.chapters.length, 8);
+  assert.match(runtime, /id: 6|"id": 6/);
+  assert.doesNotMatch(html, /20260731-part5-master-r17|20260801-part6-r1/);
 });

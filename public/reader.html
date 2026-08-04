@@ -34,18 +34,13 @@
       content="default-src 'self'; base-uri 'self'; connect-src 'self'; font-src 'self' https://fonts.gstatic.com; form-action 'self'; img-src 'self' data:; object-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; upgrade-insecure-requests"
     />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Roboto:wght@100;900&amp;display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="./assets/fonts/google-fonts.css" />
     <link rel="preload" as="image" href="./assets/cover-dema.webp" fetchpriority="high" />
     <link rel="preload" as="image" href="./assets/parte-4/habitacion-azul.webp" />
     <link rel="preload" as="image" href="./assets/parte-5/parte-v-mapa.webp" />
     <link rel="preload" as="image" href="./assets/parte-5/indice-voldsoy.webp" />
     <link rel="preload" as="image" href="./assets/parte-5/arco-1-indice.webp" />
-    <link rel="stylesheet" href="./styles.css?v=20260731-part5-master-r17" />
+    <link rel="stylesheet" href="./styles.css?v=20260801-hotfix-label-footnote-r23" />
   </head>
   <body>
     <main id="view-cover" class="view view-cover is-active">
@@ -120,12 +115,14 @@
         <div class="toc-backdrop" data-part="3"></div>
         <div class="toc-backdrop" data-part="4"></div>
         <div class="toc-backdrop" data-part="5"></div>
+        <div class="toc-backdrop" data-part="6"></div>
       </div>
       <div class="page-shell">
         <header class="page-header">
           <div class="page-tools">
             <button class="text-btn" data-action="back-cover">← Portada</button>
             <div class="page-tools-actions">
+              <button class="text-btn text-link progression-open" type="button" data-action="toggle-progression-panel" aria-expanded="false">Registro</button>
               <button class="text-btn text-link" type="button" data-action="goto-library">Biblioteca</button>
               <button class="text-btn text-link" type="button" data-action="goto-about">Sobre</button>
               <button class="index-preferences" type="button" data-action="toggle-settings" aria-label="Abrir preferencias">
@@ -158,6 +155,10 @@
             <button type="button" data-action="switch-part" data-part="5" aria-pressed="false">
               <span>Parte V</span>
               <strong>La brecha</strong>
+            </button>
+            <button type="button" data-action="switch-part" data-part="6" aria-pressed="false">
+              <span>Parte VI</span>
+              <strong>Siempre</strong>
             </button>
           </nav>
 
@@ -205,6 +206,43 @@
             <div class="summary-track" aria-hidden="true"><i id="toc-progress-bar"></i></div>
           </div>
         </header>
+
+        <section id="progression-panel" class="progression-panel" hidden aria-labelledby="progression-title">
+          <header class="progression-panel-header">
+            <div>
+              <span>REGISTRO DEL LECTOR // DISPOSITIVO LOCAL</span>
+              <h2 id="progression-title">Tu recorrido</h2>
+              <p>El progreso abre nuevas partes, arcos y documentos sin interrumpir la lectura.</p>
+            </div>
+            <button type="button" data-action="toggle-progression-panel" aria-label="Cerrar registro">×</button>
+          </header>
+          <div class="progression-overview">
+            <div><span>Capítulos</span><strong id="progression-completed">0 / 0</strong></div>
+            <div><span>Sellos</span><strong id="progression-achievement-count">0 / 12</strong></div>
+            <div><span>Modo</span><strong id="progression-mode-copy">Recorrido narrativo</strong></div>
+          </div>
+          <div class="progression-mode-switch" aria-label="Modo de progresión">
+            <button type="button" data-progression-mode="guided" aria-pressed="true">
+              <strong>Recorrido narrativo</strong>
+              <span>Desbloqueos por partes y arcos.</span>
+            </button>
+            <button type="button" data-progression-mode="free" aria-pressed="false">
+              <strong>Lectura libre</strong>
+              <span>Todo disponible, sin perder tus registros.</span>
+            </button>
+          </div>
+          <div class="progression-columns">
+            <section>
+              <span class="progression-section-label">LOGROS // SELLOS RECUPERADOS</span>
+              <ol id="achievement-list" class="achievement-list"></ol>
+            </section>
+            <section>
+              <span class="progression-section-label">EXTRAS // ARCHIVOS</span>
+              <ol id="archive-unlock-list" class="archive-unlock-list"></ol>
+              <button id="mark-current-scope" class="progression-mark-read" type="button" data-action="mark-current-scope-read">Ya leí esta parte</button>
+            </section>
+          </div>
+        </section>
 
         <ol class="toc-list" id="toc-list" aria-label="Capítulos y extras"></ol>
 
@@ -483,20 +521,47 @@
           <p class="setting-help">Al desactivarlas se omiten los glitches, movimientos ambientales y transiciones suaves.</p>
         </div>
 
+        <div class="setting-group">
+          <span class="setting-label">Recorrido de lectura</span>
+          <div class="setting-buttons progression-setting-buttons">
+            <button type="button" data-progression-mode="guided" aria-pressed="true">Guiado</button>
+            <button type="button" data-progression-mode="free" aria-pressed="false">Libre</button>
+          </div>
+          <p class="setting-help">El modo guiado abre las partes y los arcos conforme completas la historia. El modo libre no elimina tus logros.</p>
+        </div>
+
         <button class="reset-btn" data-action="reset-progress">Reiniciar progreso de lectura</button>
       </div>
     </aside>
+    <div id="free-reading-warning" class="free-reading-warning" hidden role="dialog" aria-modal="true" aria-labelledby="free-reading-warning-title" aria-describedby="free-reading-warning-copy">
+      <div class="free-reading-warning-backdrop" data-action="cancel-free-reading"></div>
+      <section class="free-reading-warning-dialog">
+        <span class="progression-section-label">MODO LIBRE // SPOILERS</span>
+        <h2 id="free-reading-warning-title">Advertencia</h2>
+        <p id="free-reading-warning-copy">El modo lectura libre desbloquea capítulos, arcos y extras antes de tiempo. Puede revelar información importante de partes que todavía no has completado.</p>
+        <label class="free-reading-warning-check">
+          <input type="checkbox" id="free-reading-warning-dismiss" />
+          <span>No volver a mostrar esta advertencia</span>
+        </label>
+        <div class="free-reading-warning-actions">
+          <button type="button" class="text-btn" data-action="cancel-free-reading">Regresar</button>
+          <button type="button" class="primary-btn" data-action="confirm-free-reading">Aceptar</button>
+        </div>
+      </section>
+    </div>
     <div class="overlay" id="overlay" hidden></div>
+    <div id="progression-notice" class="progression-notice" role="status" aria-live="polite" hidden></div>
 
-    <script defer src="./content/framework/runtime.js?v=20260731-part5-master-r17"></script>
-    <script defer src="./content/framework/routes.js?v=20260731-part5-master-r17"></script>
-    <script defer src="./content/parte-1/parte1.runtime.js?v=20260731-part5-master-r17"></script>
-    <script defer src="./content/parte-2/parte2.runtime.js?v=20260731-part5-master-r17"></script>
-    <script defer src="./content/parte-3/parte3.runtime.js?v=20260731-part5-master-r17"></script>
-    <script defer src="./content/parte-4/parte4.runtime.js?v=20260731-part5-master-r17"></script>
-    <script defer src="./content/parte-5/parte5.runtime.js?v=20260731-part5-master-r17"></script>
-    <script defer src="./content/extras/extras.runtime.js?v=20260731-part5-master-r17"></script>
-    <script defer src="./library.js?v=20260731-part5-master-r17"></script>
-    <script defer src="./app.js?v=20260731-part5-master-r17"></script>
+    <script defer src="./content/framework/runtime.js?v=20260801-hotfix-label-footnote-r23"></script>
+    <script defer src="./content/framework/routes.js?v=20260801-hotfix-label-footnote-r23"></script>
+    <script defer src="./content/parte-1/parte1.runtime.js?v=20260801-hotfix-label-footnote-r23"></script>
+    <script defer src="./content/parte-2/parte2.runtime.js?v=20260801-hotfix-label-footnote-r23"></script>
+    <script defer src="./content/parte-3/parte3.runtime.js?v=20260801-hotfix-label-footnote-r23"></script>
+    <script defer src="./content/parte-4/parte4.runtime.js?v=20260801-hotfix-label-footnote-r23"></script>
+    <script defer src="./content/parte-5/parte5.runtime.js?v=20260801-hotfix-label-footnote-r23"></script>
+    <script defer src="./content/parte-6/parte6.runtime.js?v=20260801-hotfix-label-footnote-r23"></script>
+    <script defer src="./content/extras/extras.runtime.js?v=20260801-hotfix-label-footnote-r23"></script>
+    <script defer src="./library.js?v=20260801-hotfix-label-footnote-r23"></script>
+    <script defer src="./app.js?v=20260801-hotfix-label-footnote-r23"></script>
   </body>
 </html>
