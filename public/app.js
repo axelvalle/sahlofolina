@@ -500,9 +500,31 @@
     guest.hidden = Boolean(auth.user);
     userPanel.hidden = !auth.user;
     const submitButton = $("[data-auth-submit]");
-    if (submitButton) submitButton.textContent = auth.mode === "signup" ? "Crear cuenta" : "Entrar";
+    const signupMode = auth.mode === "signup";
+    const authForm = $("#account-auth-form");
+    const confirmField = $("#account-confirm-password-field");
+    const confirmInput = $("#account-confirm-password");
+    if (submitButton) submitButton.textContent = signupMode ? "Crear cuenta" : "Entrar";
+    authForm?.classList.toggle("is-signup", signupMode);
+    if (confirmField) {
+      confirmField.classList.toggle("is-visible", signupMode);
+      confirmField.setAttribute("aria-hidden", String(!signupMode));
+    }
+    if (confirmInput) {
+      confirmInput.disabled = !signupMode;
+      confirmInput.required = signupMode;
+      if (!signupMode) confirmInput.value = "";
+    }
     const modeButton = $("[data-action='toggle-auth-mode']");
-    if (modeButton) modeButton.textContent = auth.mode === "signup" ? "Modo entrar" : "Crear cuenta";
+    if (modeButton) modeButton.textContent = signupMode ? "Ya tengo una cuenta · Entrar" : "Primera vez · Crear cuenta";
+    const modeKicker = $("#account-auth-mode-kicker");
+    const modeTitle = $("#account-auth-mode-title");
+    const modeCopy = $("#account-auth-mode-copy");
+    if (modeKicker) modeKicker.textContent = signupMode ? "Nuevo registro" : "Acceso del lector";
+    if (modeTitle) modeTitle.textContent = signupMode ? "Crear cuenta de lector" : "Entrar a mi cuenta";
+    if (modeCopy) modeCopy.textContent = signupMode
+      ? "Guarda tu recorrido y llévalo contigo entre el sitio y la app."
+      : "Continúa tu recorrido y sincroniza lo que ya has leído.";
     if (auth.user) $("#account-user-email").textContent = auth.user.email || "Lector";
     const progressState = $("#account-progress-state");
     if (progressState) progressState.textContent = auth.user
@@ -603,7 +625,9 @@
     if (!auth.configured) { setAccountStatus("Falta configurar Supabase: añade URL y clave pública en supabase-config.js.", true); return; }
     const email = $("#account-email").value.trim();
     const password = $("#account-password").value;
+    const confirmation = $("#account-confirm-password")?.value || "";
     if (!email || password.length < 6) { setAccountStatus("Escribe un correo válido y una contraseña de al menos 6 caracteres.", true); return; }
+    if (auth.mode === "signup" && password !== confirmation) { setAccountStatus("Las contraseñas no coinciden.", true); return; }
     const button = $("[data-auth-submit]");
     button.disabled = true;
     setAccountStatus(auth.mode === "signup" ? "Creando tu cuenta…" : "Entrando…");
@@ -3069,7 +3093,7 @@
     const secureContext = location.protocol === "https:" || ["localhost", "127.0.0.1"].includes(location.hostname);
     if (!secureContext) return;
     const register = () => navigator.serviceWorker
-      .register("./sw.js?v=20260808-account-hub-v1")
+      .register("./sw.js?v=20260809-account-auth-v1")
       .catch((error) => console.warn("No se pudo registrar la caché offline.", error));
     if ("requestIdleCallback" in window) {
       window.requestIdleCallback(register, { timeout: 3000 });
