@@ -3153,7 +3153,8 @@
     const secureContext = location.protocol === "https:" || ["localhost", "127.0.0.1"].includes(location.hostname);
     if (!secureContext) return;
     const register = () => navigator.serviceWorker
-      .register("./sw.js?v=20260809-account-auth-tabs-v2")
+      .register("./sw.js?v=20260809-account-cache-v1", { updateViaCache: "none" })
+      .then((registration) => registration.update().catch(() => registration))
       .catch((error) => console.warn("No se pudo registrar la caché offline.", error));
     if ("requestIdleCallback" in window) {
       window.requestIdleCallback(register, { timeout: 3000 });
