@@ -446,7 +446,7 @@ test("Part VI selector, clean route and cache migration are published together",
   assert.match(html, /data-action="set-auth-mode" data-auth-mode="signup"/);
   assert.match(html, /data-setting="voices"/);
   assert.match(html, /data-action="goto-library">Biblioteca<\/button>[\s\S]*?data-action="goto-about">Sobre<\/button>[\s\S]*?class="site-link site-preferences"[\s\S]*?class="site-link account-trigger"/);
-  assert.match(html, /content\/parte-6\/parte6\.runtime\.js\?v=20260809-account-cache-v7/);
+  assert.match(html, /content\/parte-6\/parte6\.runtime\.js\?v=20260809-account-cache-v8/);
   assert.equal(html, publicHtml);
   assert.match(app, /6:\s*\{[\s\S]*?indexTitle: "Siempre"/);
   assert.match(app, /case "open-account"\s*:\s*\n\s*openAccountDialog/);
@@ -463,11 +463,11 @@ test("Part VI selector, clean route and cache migration are published together",
   assert.match(app, /label\.textContent = auth\.user \? alias : "Cuenta"/);
   assert.match(app, /block\.who && state\.settings\.voices === "hide"/);
   assert.match(app, /key === "voices" && document\.body\.dataset\.view === "reader"/);
-  assert.match(app, /register\("\.\/sw\.js\?v=20260809-account-cache-v7"/);
+  assert.match(app, /register\("\.\/sw\.js\?v=20260809-account-cache-v8"/);
   assert.match(app, /6: "\.\/assets\/parte-6\/the-contract-index\.webp"/);
   assert.match(routes, /id: "parte-6"[\s\S]*?part: 6/);
-  assert.match(sw, /sahlo-folina-account-cache-v7/);
-  assert.match(sw, /content\/parte-6\/parte6\.runtime\.js\?v=20260809-account-cache-v7/);
+  assert.match(sw, /sahlo-folina-account-cache-v8/);
+  assert.match(sw, /content\/parte-6\/parte6\.runtime\.js\?v=20260809-account-cache-v8/);
   assert.doesNotMatch(runtime, /—Siempre\.6/);
   assert.match(runtime, /"type": "author-note"[\s\S]*?“Siempre” conserva la última palabra/);
   assert.match(styles, /\.archive-letter::before \{[\s\S]*?position: static/);
@@ -485,6 +485,7 @@ test("Part VI selector, clean route and cache migration are published together",
   assert.match(styles, /\.account-auth-mode-tabs \{[\s\S]*?grid-template-columns: repeat\(2/);
   assert.match(sw, /assets\/parte-6\/the-contract-cover\.webp/);
   assert.match(sw, /assets\/parte-6\/the-contract-index\.webp/);
+  assert.match(styles, /\.progression-setting-buttons button\.is-active \{[\s\S]*?background: var\(--accent\);[\s\S]*?color: var\(--accent-ink\);/);
   const part6 = manifest.routes.find((entry) => entry.id === 6);
   assert.ok(part6);
   assert.equal(part6.chapters.length, 8);
