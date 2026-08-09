@@ -174,6 +174,8 @@
   const $ = (selector, root = document) => root.querySelector(selector);
   const $$ = (selector, root = document) => Array.from(root.querySelectorAll(selector));
   let lastFocusedElement = null;
+  let accountProgressionMounted = false;
+  let accountGuestTab = "auth";
   let disclaimerLastFocusedElement = null;
   let journalViewerLastFocusedElement = null;
   let journalViewerIndex = 0;
@@ -499,11 +501,160 @@
     guest.hidden = Boolean(auth.user);
     userPanel.hidden = !auth.user;
     const submitButton = $("[data-auth-submit]");
-    if (submitButton) submitButton.textContent = auth.mode === "signup" ? "Crear cuenta" : "Entrar";
+    const signupMode = auth.mode === "signup";
+    const authForm = $("#account-auth-form");
+    const confirmField = $("#account-confirm-password-field");
+    const confirmInput = $("#account-confirm-password");
+    if (submitButton) submitButton.textContent = signupMode ? "Crear cuenta" : "Entrar";
+    authForm?.classList.toggle("is-signup", signupMode);
+    if (confirmField) {
+      confirmField.classList.toggle("is-visible", signupMode);
+      confirmField.setAttribute("aria-hidden", String(!signupMode));
+    }
+    if (confirmInput) {
+      confirmInput.disabled = !signupMode;
+      confirmInput.required = signupMode;
+      if (!signupMode) confirmInput.value = "";
+    }
     const modeButton = $("[data-action='toggle-auth-mode']");
-    if (modeButton) modeButton.textContent = auth.mode === "signup" ? "Modo entrar" : "Crear cuenta";
+    if (modeButton) modeButton.textContent = signupMode ? "Ya tengo una cuenta · Entrar" : "Primera vez · Crear cuenta";
+    $$("[data-auth-mode]").forEach((tab) => {
+      const selected = tab.dataset.authMode === auth.mode;
+      tab.setAttribute("aria-selected", String(selected));
+      tab.tabIndex = selected ? 0 : -1;
+    });
+    const modeKicker = $("#account-auth-mode-kicker");
+    const modeTitle = $("#account-auth-mode-title");
+    const modeCopy = $("#account-auth-mode-copy");
+    if (modeKicker) modeKicker.textContent = signupMode ? "Nuevo registro" : "Acceso del lector";
+    if (modeTitle) modeTitle.textContent = signupMode ? "Crear cuenta de lector" : "Entrar a mi cuenta";
+    if (modeCopy) modeCopy.textContent = signupMode
+      ? "Guarda tu recorrido y llévalo contigo entre el sitio y la app."
+      : "Continúa tu recorrido y sincroniza lo que ya has leído.";
     if (auth.user) $("#account-user-email").textContent = auth.user.email || "Lector";
+    const progressState = $("#account-progress-state");
+    if (progressState) progressState.textContent = auth.user
+      ? "Cuenta conectada · recorrido sincronizado"
+      : "Invitado · guardado en este dispositivo";
+    const guestCopy = $("#account-guest-copy");
+    if (guestCopy) guestCopy.textContent = auth.user
+      ? ""
+      : "Tu recorrido ya está guardado en este dispositivo. Entra o crea una cuenta para sincronizarlo entre el sitio y la app.";
+    renderAccountGuestTab();
+    renderAccountTriggers();
+    updateAccountProgressSummary();
     renderAvatarOptions();
+  }
+
+  function renderAccountGuestTab() {
+    const inner = $(".account-dialog-inner");
+    const dialog = $("#account-dialog");
+    const guestTabs = $("#account-guest-tabs");
+    const authForm = $("#account-auth-form");
+    const mount = $("#account-progress-mount");
+    const stack = $("#account-guest-view-stack");
+    if (!inner || !dialog || !guestTabs || !authForm || !mount || !stack) return;
+    const isGuest = !auth.user;
+    const showProgress = !isGuest || accountGuestTab === "progress";
+    const showAuth = isGuest && !showProgress;
+    inner.classList.toggle("is-guest-auth", isGuest && !showProgress);
+    inner.classList.toggle("is-guest-progress", isGuest && showProgress);
+    stack.classList.toggle("is-auth-active", showAuth);
+    stack.classList.toggle("is-progress-active", showProgress);
+    authForm.classList.toggle("is-view-active", showAuth);
+    authForm.classList.toggle("is-view-inactive", !showAuth);
+    mount.classList.toggle("is-view-active", showProgress);
+    mount.classList.toggle("is-view-inactive", !showProgress);
+    authForm.setAttribute("aria-hidden", String(!showAuth));
+    mount.setAttribute("aria-hidden", String(!showProgress));
+    authForm.inert = !showAuth;
+    mount.inert = !showProgress;
+    dialog.classList.toggle("is-guest-auth-view", isGuest && !showProgress);
+    dialog.classList.toggle("is-guest-progress-view", isGuest && showProgress);
+    guestTabs.hidden = !isGuest;
+    $$("[data-account-tab]", guestTabs).forEach((tab) => {
+      const selected = isGuest && tab.dataset.accountTab === accountGuestTab;
+      tab.setAttribute("aria-selected", String(selected));
+      tab.tabIndex = selected ? 0 : -1;
+    });
+  }
+
+  function switchAccountTab(tab) {
+    if (!["auth", "progress"].includes(tab) || auth.user) return;
+    accountGuestTab = tab;
+    renderAccountGuestTab();
+    if (tab === "progress") {
+      renderProgressionPanel();
+      $("#progression-panel")?.scrollIntoView({ behavior: motionIsReduced() ? "auto" : "smooth", block: "nearest" });
+    } else {
+      $("#account-email")?.focus();
+    }
+  }
+
+  function setAuthMode(mode) {
+    if (!["signin", "signup"].includes(mode) || auth.user) return;
+    auth.mode = mode;
+    renderAccountState();
+    setAccountStatus("");
+    if (mode === "signup") $("#account-confirm-password")?.focus();
+    else $("#account-email")?.focus();
+  }
+
+  function renderAccountTriggers() {
+    const selected = AVATARS.find((avatar) => avatar.key === auth.selectedAvatar) || AVATARS[1];
+    $$('[data-action="open-account"]').forEach((button) => {
+      const label = $("[data-account-label]", button);
+      if (label) label.textContent = "Cuenta";
+      let avatar = $("[data-account-avatar]", button);
+      if (!auth.user) {
+        avatar?.remove();
+        button.classList.remove("is-authenticated");
+        button.setAttribute("aria-label", "Abrir cuenta");
+        return;
+      }
+      if (!avatar) {
+        avatar = document.createElement("img");
+        avatar.dataset.accountAvatar = "";
+        avatar.className = "account-trigger-avatar";
+        button.prepend(avatar);
+      }
+      avatar.src = selected.src;
+      avatar.alt = selected.label;
+      button.classList.add("is-authenticated");
+      button.setAttribute("aria-label", "Abrir mi cuenta");
+    });
+  }
+
+  function updateAccountProgressSummary() {
+    const completed = narrativeChapterIndexes().filter((index) => state.readChapters.includes(index)).length;
+    const progress = $("#account-progress-percent");
+    const readCount = $("#account-read-count");
+    const achievementCount = $("#account-achievement-count");
+    if (progress) progress.textContent = `${overallProgress()}%`;
+    if (readCount) readCount.textContent = `${completed} / ${narrativeChapterIndexes().length}`;
+    if (achievementCount) achievementCount.textContent = `${unlockedAchievements().length} / ${ACHIEVEMENTS.length}`;
+  }
+
+  function mountProgressionPanelIntoAccount() {
+    const panel = $("#progression-panel");
+    const mount = $("#account-progress-mount");
+    if (!panel || !mount) return;
+    if (panel.parentElement !== mount) mount.append(panel);
+    panel.hidden = false;
+    accountProgressionMounted = true;
+    renderProgressionPanel();
+    renderAccountGuestTab();
+  }
+
+  function restoreProgressionPanel() {
+    const panel = $("#progression-panel");
+    const anchor = $("#progression-panel-anchor");
+    if (!panel || !anchor || !accountProgressionMounted) return;
+    anchor.after(panel);
+    panel.hidden = true;
+    accountProgressionMounted = false;
+    accountGuestTab = "auth";
+    renderAccountGuestTab();
   }
 
   function openAccountDialog(trigger) {
@@ -512,6 +663,7 @@
     if (!dialog || !backdrop) return;
     lastFocusedElement = trigger || document.activeElement;
     renderAccountState();
+    mountProgressionPanelIntoAccount();
     dialog.hidden = false;
     backdrop.hidden = false;
     dialog.classList.add("is-open");
@@ -524,6 +676,7 @@
     const dialog = $("#account-dialog");
     const backdrop = $("#account-backdrop");
     if (!dialog || !backdrop) return;
+    restoreProgressionPanel();
     dialog.classList.remove("is-open");
     backdrop.classList.remove("is-open");
     document.body.classList.remove("account-open");
@@ -536,7 +689,9 @@
     if (!auth.configured) { setAccountStatus("Falta configurar Supabase: añade URL y clave pública en supabase-config.js.", true); return; }
     const email = $("#account-email").value.trim();
     const password = $("#account-password").value;
+    const confirmation = $("#account-confirm-password")?.value || "";
     if (!email || password.length < 6) { setAccountStatus("Escribe un correo válido y una contraseña de al menos 6 caracteres.", true); return; }
+    if (auth.mode === "signup" && password !== confirmation) { setAccountStatus("Las contraseñas no coinciden.", true); return; }
     const button = $("[data-auth-submit]");
     button.disabled = true;
     setAccountStatus(auth.mode === "signup" ? "Creando tu cuenta…" : "Entrando…");
@@ -552,6 +707,7 @@
         persistSession();
         renderAccountState();
         await loadCloudProfile();
+        renderAccountState();
         setAccountStatus("Cuenta conectada y recorrido sincronizado.");
         updateCover();
         renderTOC();
@@ -2453,6 +2609,7 @@
     renderTOC();
     updateCover();
     renderProgressionPanel();
+    updateAccountProgressSummary();
   }
 
   function completeChapter(index, { announce = true } = {}) {
@@ -2748,6 +2905,12 @@
         renderAccountState();
         setAccountStatus("");
         break;
+      case "switch-account-tab":
+        switchAccountTab(trigger.dataset.accountTab);
+        break;
+      case "set-auth-mode":
+        setAuthMode(trigger.dataset.authMode);
+        break;
       case "save-account-profile":
         auth.selectedAvatar = AVATARS.some((avatar) => avatar.key === auth.selectedAvatar) ? auth.selectedAvatar : "clancy";
         await syncStateToCloud();
@@ -2915,6 +3078,7 @@
       if (!button || !AVATARS.some((avatar) => avatar.key === button.dataset.avatarKey)) return;
       auth.selectedAvatar = button.dataset.avatarKey;
       renderAvatarOptions();
+      renderAccountTriggers();
       if (auth.user) queueCloudSync();
     });
     $("#account-backdrop")?.addEventListener("click", closeAccountDialog);
@@ -2999,7 +3163,8 @@
     const secureContext = location.protocol === "https:" || ["localhost", "127.0.0.1"].includes(location.hostname);
     if (!secureContext) return;
     const register = () => navigator.serviceWorker
-      .register("./sw.js?v=20260808-account-sync-v1")
+      .register("./sw.js?v=20260809-account-cache-v2", { updateViaCache: "none" })
+      .then((registration) => registration.update().catch(() => registration))
       .catch((error) => console.warn("No se pudo registrar la caché offline.", error));
     if ("requestIdleCallback" in window) {
       window.requestIdleCallback(register, { timeout: 3000 });
