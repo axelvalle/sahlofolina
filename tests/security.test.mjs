@@ -400,6 +400,7 @@ test("security headers remain enabled for Next and Cloudflare", async () => {
     "Content-Security-Policy", "Permissions-Policy", "Referrer-Policy",
     "Strict-Transport-Security", "X-Content-Type-Options", "X-Frame-Options",
   ]) assert.match(headers, new RegExp(name));
+  assert.match(headers, /connect-src 'self' https:\/\/\*\.supabase\.co/);
   assert.match(nextConfig, /SECURITY_HEADERS/);
   assert.match(worker, /SECURITY_HEADERS/);
 });
