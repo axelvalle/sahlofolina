@@ -497,6 +497,9 @@
             <button type="button" role="tab" data-action="switch-account-tab" data-account-tab="auth" aria-selected="true">Entrar / crear cuenta</button>
             <button type="button" role="tab" data-action="switch-account-tab" data-account-tab="progress" aria-selected="false">Mi recorrido</button>
           </div>
+        </div>
+
+        <div id="account-guest-view-stack" class="account-guest-view-stack">
           <form id="account-auth-form" class="account-form" novalidate>
             <div class="account-auth-heading" aria-live="polite">
               <span class="account-auth-kicker" id="account-auth-mode-kicker">Acceso del lector</span>
@@ -513,6 +516,7 @@
             <button class="btn btn-primary" type="submit" data-auth-submit>Entrar</button>
             <p id="account-auth-status" class="account-status" role="status" aria-live="polite"></p>
           </form>
+          <div id="account-progress-mount"></div>
         </div>
 
         <div id="account-user-panel" hidden>
@@ -526,7 +530,6 @@
           <p id="account-user-status" class="account-status" role="status" aria-live="polite"></p>
         </div>
 
-        <div id="account-progress-mount"></div>
       </div>
     </section>
 

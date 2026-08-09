@@ -6014,6 +6014,15 @@ body[data-reader-chapter="cap32"] .reader > .reader-content-start + .archive-let
 .account-dialog > .account-dialog-inner > #account-guest-panel,
 .account-dialog > .account-dialog-inner > #account-user-panel { grid-column: 1; min-width: 0; }
 .account-dialog > .account-dialog-inner > #account-progress-mount { grid-column: 2; min-width: 0; align-self: start; }
+.account-dialog > .account-dialog-inner > #account-guest-view-stack { grid-column: 2; min-width: 0; align-self: start; }
+.account-guest-view-stack { display: grid; min-width: 0; }
+.account-guest-view-stack > #account-auth-form,
+.account-guest-view-stack > #account-progress-mount { grid-area: 1 / 1; min-width: 0; width: 100%; transition: opacity .28s var(--ease), transform .32s var(--ease), visibility .28s var(--ease), max-height .34s var(--ease); }
+.account-guest-view-stack > .is-view-active { visibility: visible; max-height: 2200px; opacity: 1; transform: translateY(0); pointer-events: auto; }
+.account-guest-view-stack > .is-view-inactive { visibility: hidden; max-height: 0; overflow: hidden; opacity: 0; transform: translateY(14px); pointer-events: none; }
+.account-dialog-inner.is-guest-auth > #account-guest-view-stack,
+.account-dialog-inner.is-guest-progress > #account-guest-view-stack { grid-column: 1; width: 100%; max-width: none; }
+.account-dialog-inner.is-guest-progress > #account-guest-panel { grid-column: 1; width: 100%; max-width: none; }
 .account-progress-mount .progression-panel { margin: 0; padding: 20px; box-shadow: none; }
 .account-progress-mount .progression-panel::before { left: 20px; }
 .account-progress-mount .progression-panel-header h2 { font-size: clamp(2rem, 7vw, 3rem); }
@@ -6023,10 +6032,12 @@ body[data-reader-chapter="cap32"] .reader > .reader-content-start + .archive-let
 .account-backdrop { position: fixed; inset: 0; z-index: 80; background: rgba(0, 0, 0, .72); backdrop-filter: blur(8px); opacity: 0; transition: opacity .22s var(--ease); }
 .account-backdrop.is-open { opacity: 1; }
 .account-dialog { position: fixed; z-index: 81; top: 50%; left: 50%; width: min(96vw, 1440px); max-height: min(90svh, 900px); box-sizing: border-box; overflow: auto; overscroll-behavior: contain; scrollbar-gutter: stable; border: 1px solid color-mix(in srgb, var(--accent) 52%, var(--line)); background: color-mix(in srgb, var(--surface) 96%, #050509); box-shadow: 0 28px 90px rgba(0,0,0,.56); transform: translate(-50%, -46%) scale(.97); opacity: 0; transition: width .28s var(--ease), opacity .22s var(--ease), transform .22s var(--ease); }
-.account-dialog.is-guest-auth-view { width: min(94vw, 760px); }
+.account-dialog.is-guest-auth-view,
+.account-dialog.is-guest-progress-view { width: min(94vw, 760px); }
 .account-dialog.is-guest-auth-view .account-dialog-inner { grid-template-columns: 1fr; }
 .account-dialog.is-guest-auth-view > .account-dialog-inner > #account-guest-panel { grid-column: 1; width: 100%; max-width: none; }
 .account-dialog.is-guest-auth-view > .account-dialog-inner > #account-progress-mount { display: none; }
+.account-dialog.is-guest-progress-view .account-dialog-inner { grid-template-columns: 1fr; }
 .account-dialog[hidden], .account-backdrop[hidden] { display: none; }
 .account-dialog.is-open { transform: translate(-50%, -50%) scale(1); opacity: 1; }
 .account-dialog-inner { display: grid; grid-template-columns: minmax(280px, .82fr) minmax(420px, 1.18fr); gap: 28px 34px; padding: clamp(25px, 4vw, 44px); }
@@ -6077,12 +6088,14 @@ body.account-open { overflow: hidden; }
 @media (max-width: 900px) {
   .account-dialog-inner { grid-template-columns: 1fr; gap: 24px; }
   .account-header, .account-progress-summary, .account-dialog > .account-dialog-inner > #account-guest-panel,
-  .account-dialog > .account-dialog-inner > #account-user-panel, .account-dialog > .account-dialog-inner > #account-progress-mount { grid-column: 1; }
+  .account-dialog > .account-dialog-inner > #account-user-panel, .account-dialog > .account-dialog-inner > #account-progress-mount,
+  .account-dialog > .account-dialog-inner > #account-guest-view-stack { grid-column: 1; }
 }
 @media (max-width: 520px) {
   .account-dialog-inner { grid-template-columns: 1fr; gap: 22px; }
   .account-header, .account-progress-summary, .account-dialog > .account-dialog-inner > #account-guest-panel,
-  .account-dialog > .account-dialog-inner > #account-user-panel, .account-dialog > .account-dialog-inner > #account-progress-mount { grid-column: 1; }
+  .account-dialog > .account-dialog-inner > #account-user-panel, .account-dialog > .account-dialog-inner > #account-progress-mount,
+  .account-dialog > .account-dialog-inner > #account-guest-view-stack { grid-column: 1; }
   .account-dialog { width: calc(100vw - 20px); max-height: calc(100svh - 20px); }
   .account-dialog-inner { padding: 22px 18px 24px; }
   .account-progress-summary > div { padding: 11px 9px; }

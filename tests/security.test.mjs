@@ -467,7 +467,9 @@ test("Part VI selector, clean route and cache migration are published together",
   assert.match(styles, /\.auth-confirm-field \{[\s\S]*?max-height: 0[\s\S]*?transition:/);
   assert.match(styles, /\.auth-confirm-field\.is-visible \{[\s\S]*?max-height: 92px/);
   assert.match(styles, /\.account-guest-tabs \{[\s\S]*?grid-template-columns: repeat\(2/);
-  assert.match(styles, /\.account-dialog\.is-guest-auth-view \{ width: min\(94vw, 760px\)/);
+  assert.match(styles, /\.account-dialog\.is-guest-auth-view,\s+\.account-dialog\.is-guest-progress-view \{ width: min\(94vw, 760px\)/);
+  assert.match(styles, /\.account-guest-view-stack > \.is-view-inactive/);
+  assert.match(app, /account-guest-view-stack/);
   assert.match(styles, /\.account-auth-mode-tabs \{[\s\S]*?grid-template-columns: repeat\(2/);
   assert.match(sw, /assets\/parte-6\/the-contract-cover\.webp/);
   assert.match(sw, /assets\/parte-6\/the-contract-index\.webp/);
