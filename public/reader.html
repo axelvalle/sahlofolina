@@ -40,7 +40,7 @@
     <link rel="preload" as="image" href="./assets/parte-5/parte-v-mapa.webp" />
     <link rel="preload" as="image" href="./assets/parte-5/indice-voldsoy.webp" />
     <link rel="preload" as="image" href="./assets/parte-5/arco-1-indice.webp" />
-    <link rel="stylesheet" href="./styles.css?v=20260809-account-cache-v3" />
+    <link rel="stylesheet" href="./styles.css?v=20260809-account-cache-v4" />
   </head>
   <body>
     <main id="view-cover" class="view view-cover is-active">
@@ -522,12 +522,18 @@
         <div id="account-user-panel" hidden>
           <div class="account-identity">
             <img id="account-avatar-preview" class="account-avatar-preview" src="./assets/avatars/clancy.webp" alt="Avatar seleccionado" />
-            <div><strong id="account-user-email">—</strong><span id="account-sync-status">Sincronización lista</span></div>
+            <div><strong id="account-user-alias">Lector</strong><span id="account-sync-status">Sincronización lista</span><span id="account-user-email" class="account-user-email" aria-hidden="true">—</span></div>
           </div>
-          <label class="account-name-field"><span>Nombre de lector (opcional)</span><input id="account-display-name" type="text" maxlength="48" placeholder="Cómo quieres aparecer" /></label>
-          <div class="avatar-picker"><span class="account-section-label">Avatar autorizado</span><div id="avatar-options" class="avatar-options" role="radiogroup" aria-label="Seleccionar avatar"></div></div>
-          <div class="account-user-actions"><button class="btn btn-primary" type="button" data-action="save-account-profile">Guardar perfil</button><button class="btn btn-secondary" type="button" data-action="sign-out">Cerrar sesión</button></div>
-          <p id="account-user-status" class="account-status" role="status" aria-live="polite"></p>
+          <div id="account-user-tabs" class="account-user-tabs" role="tablist" aria-label="Secciones de cuenta">
+            <button type="button" role="tab" data-action="switch-account-user-tab" data-account-user-tab="overview" aria-selected="true">Mi recorrido</button>
+            <button type="button" role="tab" data-action="switch-account-user-tab" data-account-user-tab="settings" aria-selected="false">Configuración</button>
+          </div>
+          <div id="account-user-settings" class="account-user-settings" hidden>
+            <label class="account-name-field"><span>Nombre de lector (opcional)</span><input id="account-display-name" type="text" maxlength="48" placeholder="Cómo quieres aparecer" /></label>
+            <div class="avatar-picker"><span class="account-section-label">Avatar autorizado</span><div id="avatar-options" class="avatar-options" role="radiogroup" aria-label="Seleccionar avatar"></div></div>
+            <div class="account-user-actions"><button class="btn btn-primary" type="button" data-action="save-account-profile">Guardar perfil</button><button class="btn btn-secondary" type="button" data-action="sign-out">Cerrar sesión</button></div>
+            <p id="account-user-status" class="account-status" role="status" aria-live="polite"></p>
+          </div>
         </div>
 
       </div>
@@ -621,16 +627,16 @@
     <div id="progression-notice" class="progression-notice" role="status" aria-live="polite" hidden></div>
 
     <script defer src="./supabase-config.js?v=20260808-account-v1"></script>
-    <script defer src="./content/framework/runtime.js?v=20260809-account-cache-v3"></script>
-    <script defer src="./content/framework/routes.js?v=20260809-account-cache-v3"></script>
-    <script defer src="./content/parte-1/parte1.runtime.js?v=20260809-account-cache-v3"></script>
-    <script defer src="./content/parte-2/parte2.runtime.js?v=20260809-account-cache-v3"></script>
-    <script defer src="./content/parte-3/parte3.runtime.js?v=20260809-account-cache-v3"></script>
-    <script defer src="./content/parte-4/parte4.runtime.js?v=20260809-account-cache-v3"></script>
-    <script defer src="./content/parte-5/parte5.runtime.js?v=20260809-account-cache-v3"></script>
-    <script defer src="./content/parte-6/parte6.runtime.js?v=20260809-account-cache-v3"></script>
-    <script defer src="./content/extras/extras.runtime.js?v=20260809-account-cache-v3"></script>
-    <script defer src="./library.js?v=20260809-account-cache-v3"></script>
-    <script defer src="./app.js?v=20260809-account-cache-v3"></script>
+    <script defer src="./content/framework/runtime.js?v=20260809-account-cache-v4"></script>
+    <script defer src="./content/framework/routes.js?v=20260809-account-cache-v4"></script>
+    <script defer src="./content/parte-1/parte1.runtime.js?v=20260809-account-cache-v4"></script>
+    <script defer src="./content/parte-2/parte2.runtime.js?v=20260809-account-cache-v4"></script>
+    <script defer src="./content/parte-3/parte3.runtime.js?v=20260809-account-cache-v4"></script>
+    <script defer src="./content/parte-4/parte4.runtime.js?v=20260809-account-cache-v4"></script>
+    <script defer src="./content/parte-5/parte5.runtime.js?v=20260809-account-cache-v4"></script>
+    <script defer src="./content/parte-6/parte6.runtime.js?v=20260809-account-cache-v4"></script>
+    <script defer src="./content/extras/extras.runtime.js?v=20260809-account-cache-v4"></script>
+    <script defer src="./library.js?v=20260809-account-cache-v4"></script>
+    <script defer src="./app.js?v=20260809-account-cache-v4"></script>
   </body>
 </html>
