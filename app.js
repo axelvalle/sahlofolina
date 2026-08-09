@@ -1492,7 +1492,7 @@
   }
 
   function renderBlock(block) {
-    if (block.who && state.settings.voices === "hide") return null;
+    const showVoiceLabels = state.settings.voices !== "hide";
 
     if (block.type === "p") {
       const paragraph = document.createElement("p");
@@ -1526,7 +1526,7 @@
     if (block.type === "dialogue") {
       const paragraph = document.createElement("p");
       paragraph.className = "dialogue";
-      if (block.who) {
+      if (block.who && showVoiceLabels) {
         const speaker = document.createElement("strong");
         speaker.className = "dialogue-speaker";
         speaker.textContent = `${block.who}: `;
@@ -1539,7 +1539,7 @@
     if (block.type === "speech") {
       const paragraph = document.createElement("p");
       paragraph.className = "dialogue speech-dialogue";
-      if (block.who) {
+      if (block.who && showVoiceLabels) {
         const speaker = document.createElement("strong");
         speaker.className = "dialogue-speaker";
         speaker.textContent = `${block.who}: `;
@@ -3205,7 +3205,7 @@
     const secureContext = location.protocol === "https:" || ["localhost", "127.0.0.1"].includes(location.hostname);
     if (!secureContext) return;
     const register = () => navigator.serviceWorker
-      .register("./sw.js?v=20260809-account-cache-v8", { updateViaCache: "none" })
+      .register("./sw.js?v=20260809-account-cache-v9", { updateViaCache: "none" })
       .then((registration) => registration.update().catch(() => registration))
       .catch((error) => console.warn("No se pudo registrar la caché offline.", error));
     if ("requestIdleCallback" in window) {
