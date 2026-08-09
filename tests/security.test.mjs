@@ -439,7 +439,7 @@ test("Part VI selector, clean route and cache migration are published together",
   assert.match(html, /id="account-confirm-password-field"/);
   assert.match(html, /id="account-auth-mode-title"/);
   assert.match(html, /id="account-guest-tabs"/);
-  assert.match(html, /content\/parte-6\/parte6\.runtime\.js\?v=20260809-account-tabs-v1/);
+  assert.match(html, /content\/parte-6\/parte6\.runtime\.js\?v=20260809-account-layout-v1/);
   assert.equal(html, publicHtml);
   assert.match(app, /6:\s*\{[\s\S]*?indexTitle: "Siempre"/);
   assert.match(app, /case "open-account"\s*:\s*\n\s*openAccountDialog/);
@@ -449,11 +449,12 @@ test("Part VI selector, clean route and cache migration are published together",
   assert.match(app, /confirmInput.required = signupMode/);
   assert.match(app, /function switchAccountTab/);
   assert.match(app, /data-account-tab/);
-  assert.match(app, /register\("\.\/sw\.js\?v=20260809-account-tabs-v1"\)/);
+  assert.match(app, /is-guest-auth-view/);
+  assert.match(app, /register\("\.\/sw\.js\?v=20260809-account-layout-v1"\)/);
   assert.match(app, /6: "\.\/assets\/parte-6\/the-contract-index\.webp"/);
   assert.match(routes, /id: "parte-6"[\s\S]*?part: 6/);
-  assert.match(sw, /sahlo-folina-account-tabs-v1/);
-  assert.match(sw, /content\/parte-6\/parte6\.runtime\.js\?v=20260809-account-tabs-v1/);
+  assert.match(sw, /sahlo-folina-account-layout-v1/);
+  assert.match(sw, /content\/parte-6\/parte6\.runtime\.js\?v=20260809-account-layout-v1/);
   assert.doesNotMatch(runtime, /—Siempre\.6/);
   assert.match(runtime, /"type": "author-note"[\s\S]*?“Siempre” conserva la última palabra/);
   assert.match(styles, /\.archive-letter::before \{[\s\S]*?position: static/);
@@ -463,6 +464,7 @@ test("Part VI selector, clean route and cache migration are published together",
   assert.match(styles, /\.auth-confirm-field \{[\s\S]*?max-height: 0[\s\S]*?transition:/);
   assert.match(styles, /\.auth-confirm-field\.is-visible \{[\s\S]*?max-height: 92px/);
   assert.match(styles, /\.account-guest-tabs \{[\s\S]*?grid-template-columns: repeat\(2/);
+  assert.match(styles, /\.account-dialog\.is-guest-auth-view \{ width: min\(94vw, 760px\)/);
   assert.match(sw, /assets\/parte-6\/the-contract-cover\.webp/);
   assert.match(sw, /assets\/parte-6\/the-contract-index\.webp/);
   const part6 = manifest.routes.find((entry) => entry.id === 6);

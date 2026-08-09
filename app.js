@@ -543,14 +543,17 @@
 
   function renderAccountGuestTab() {
     const inner = $(".account-dialog-inner");
+    const dialog = $("#account-dialog");
     const guestTabs = $("#account-guest-tabs");
     const authForm = $("#account-auth-form");
     const mount = $("#account-progress-mount");
-    if (!inner || !guestTabs || !authForm || !mount) return;
+    if (!inner || !dialog || !guestTabs || !authForm || !mount) return;
     const isGuest = !auth.user;
     const showProgress = isGuest && accountGuestTab === "progress";
     inner.classList.toggle("is-guest-auth", isGuest && !showProgress);
     inner.classList.toggle("is-guest-progress", showProgress);
+    dialog.classList.toggle("is-guest-auth-view", isGuest && !showProgress);
+    dialog.classList.toggle("is-guest-progress-view", showProgress);
     guestTabs.hidden = !isGuest;
     authForm.hidden = showProgress;
     mount.hidden = isGuest ? !showProgress : false;
@@ -627,6 +630,7 @@
     panel.hidden = true;
     accountProgressionMounted = false;
     accountGuestTab = "auth";
+    renderAccountGuestTab();
   }
 
   function openAccountDialog(trigger) {
@@ -3132,7 +3136,7 @@
     const secureContext = location.protocol === "https:" || ["localhost", "127.0.0.1"].includes(location.hostname);
     if (!secureContext) return;
     const register = () => navigator.serviceWorker
-      .register("./sw.js?v=20260809-account-tabs-v1")
+      .register("./sw.js?v=20260809-account-layout-v1")
       .catch((error) => console.warn("No se pudo registrar la caché offline.", error));
     if ("requestIdleCallback" in window) {
       window.requestIdleCallback(register, { timeout: 3000 });
