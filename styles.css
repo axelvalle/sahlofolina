@@ -6038,6 +6038,10 @@ body[data-reader-chapter="cap32"] .reader > .reader-content-start + .archive-let
 .account-dialog.is-guest-auth-view > .account-dialog-inner > #account-guest-panel { grid-column: 1; width: 100%; max-width: none; }
 .account-dialog.is-guest-auth-view > .account-dialog-inner > #account-progress-mount { display: none; }
 .account-dialog.is-guest-progress-view .account-dialog-inner { grid-template-columns: 1fr; }
+.account-dialog.is-authenticated-view { width: min(94vw, 1080px); }
+.account-dialog.is-authenticated-view .account-dialog-inner { grid-template-columns: 1fr; }
+.account-dialog.is-authenticated-view > .account-dialog-inner > #account-user-panel,
+.account-dialog.is-authenticated-view > .account-dialog-inner > #account-guest-view-stack { grid-column: 1; width: 100%; max-width: none; }
 .account-dialog[hidden], .account-backdrop[hidden] { display: none; }
 .account-dialog.is-open { transform: translate(-50%, -50%) scale(1); opacity: 1; }
 .account-dialog-inner { display: grid; grid-template-columns: minmax(280px, .82fr) minmax(420px, 1.18fr); gap: 28px 34px; padding: clamp(25px, 4vw, 44px); }
