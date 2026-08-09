@@ -450,7 +450,7 @@ test("Part VI selector, clean route and cache migration are published together",
   assert.doesNotMatch(runtime, /—Siempre\.6/);
   assert.match(runtime, /"type": "author-note"[\s\S]*?“Siempre” conserva la última palabra/);
   assert.match(styles, /\.archive-letter::before \{[\s\S]*?position: static/);
-  assert.match(styles, /\.account-dialog \{[\s\S]*?width: min\(94vw, 760px\)[\s\S]*?max-height: min\(90svh, 860px\)/);
+  assert.match(styles, /\.account-dialog \{[\s\S]*?width: min\(96vw, 1440px\)[\s\S]*?max-height: min\(90svh, 900px\)/);
   assert.match(styles, /@media \(max-width: 520px\) \{[\s\S]*?\.account-dialog \{ width: calc\(100vw - 20px\)/);
   assert.match(sw, /assets\/parte-6\/the-contract-cover\.webp/);
   assert.match(sw, /assets\/parte-6\/the-contract-index\.webp/);

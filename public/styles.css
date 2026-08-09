@@ -6012,7 +6012,7 @@ body[data-reader-chapter="cap32"] .reader > .reader-content-start + .archive-let
 .account-progress-mount .progression-mode-switch { grid-template-columns: 1fr; }
 .account-backdrop { position: fixed; inset: 0; z-index: 80; background: rgba(0, 0, 0, .72); backdrop-filter: blur(8px); opacity: 0; transition: opacity .22s var(--ease); }
 .account-backdrop.is-open { opacity: 1; }
-.account-dialog { position: fixed; z-index: 81; top: 50%; left: 50%; width: min(94vw, 760px); max-height: min(90svh, 860px); box-sizing: border-box; overflow: auto; overscroll-behavior: contain; scrollbar-gutter: stable; border: 1px solid color-mix(in srgb, var(--accent) 52%, var(--line)); background: color-mix(in srgb, var(--surface) 96%, #050509); box-shadow: 0 28px 90px rgba(0,0,0,.56); transform: translate(-50%, -46%) scale(.97); opacity: 0; transition: opacity .22s var(--ease), transform .22s var(--ease); }
+.account-dialog { position: fixed; z-index: 81; top: 50%; left: 50%; width: min(96vw, 1440px); max-height: min(90svh, 900px); box-sizing: border-box; overflow: auto; overscroll-behavior: contain; scrollbar-gutter: stable; border: 1px solid color-mix(in srgb, var(--accent) 52%, var(--line)); background: color-mix(in srgb, var(--surface) 96%, #050509); box-shadow: 0 28px 90px rgba(0,0,0,.56); transform: translate(-50%, -46%) scale(.97); opacity: 0; transition: opacity .22s var(--ease), transform .22s var(--ease); }
 .account-dialog[hidden], .account-backdrop[hidden] { display: none; }
 .account-dialog.is-open { transform: translate(-50%, -50%) scale(1); opacity: 1; }
 .account-dialog-inner { padding: clamp(25px, 4vw, 44px); }
