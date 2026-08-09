@@ -5484,7 +5484,9 @@ body[data-theme="paper"] .author-note p { color: rgba(38, 31, 27, .76); }
 .progression-mark-read:disabled { opacity: .42; cursor: default; }
 .progression-setting-buttons button.is-active {
   border-color: var(--accent);
-  color: var(--accent);
+  background: var(--accent);
+  color: var(--accent-ink);
+  font-weight: 700;
 }
 
 .chapter-completion,
