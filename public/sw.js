@@ -1,20 +1,20 @@
-const CACHE_VERSION = "sahlo-folina-account-cache-v4";
+const CACHE_VERSION = "sahlo-folina-account-cache-v5";
 const SHELL_CACHE = `${CACHE_VERSION}-shell`;
 const RUNTIME_CACHE = `${CACHE_VERSION}-runtime`;
 const CORE = [
   "/index.html",
-  "/styles.css?v=20260809-account-cache-v4",
-  "/app.js?v=20260809-account-cache-v4",
-  "/library.js?v=20260809-account-cache-v4",
-  "/content/framework/runtime.js?v=20260809-account-cache-v4",
-  "/content/framework/routes.js?v=20260809-account-cache-v4",
-  "/content/parte-1/parte1.runtime.js?v=20260809-account-cache-v4",
-  "/content/parte-2/parte2.runtime.js?v=20260809-account-cache-v4",
-  "/content/parte-3/parte3.runtime.js?v=20260809-account-cache-v4",
-  "/content/parte-4/parte4.runtime.js?v=20260809-account-cache-v4",
-  "/content/parte-5/parte5.runtime.js?v=20260809-account-cache-v4",
-  "/content/parte-6/parte6.runtime.js?v=20260809-account-cache-v4",
-  "/content/extras/extras.runtime.js?v=20260809-account-cache-v4",
+  "/styles.css?v=20260809-account-cache-v5",
+  "/app.js?v=20260809-account-cache-v5",
+  "/library.js?v=20260809-account-cache-v5",
+  "/content/framework/runtime.js?v=20260809-account-cache-v5",
+  "/content/framework/routes.js?v=20260809-account-cache-v5",
+  "/content/parte-1/parte1.runtime.js?v=20260809-account-cache-v5",
+  "/content/parte-2/parte2.runtime.js?v=20260809-account-cache-v5",
+  "/content/parte-3/parte3.runtime.js?v=20260809-account-cache-v5",
+  "/content/parte-4/parte4.runtime.js?v=20260809-account-cache-v5",
+  "/content/parte-5/parte5.runtime.js?v=20260809-account-cache-v5",
+  "/content/parte-6/parte6.runtime.js?v=20260809-account-cache-v5",
+  "/content/extras/extras.runtime.js?v=20260809-account-cache-v5",
   "/assets/twenty-one-pilots-icon.webp",
   "/assets/cover-dema.webp",
   "/assets/social/sahlo-folina-og.webp",
