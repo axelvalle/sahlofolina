@@ -176,6 +176,7 @@
   let lastFocusedElement = null;
   let accountProgressionMounted = false;
   let accountGuestTab = "auth";
+  let accountUserTab = "overview";
   let disclaimerLastFocusedElement = null;
   let journalViewerLastFocusedElement = null;
   let journalViewerIndex = 0;
@@ -531,7 +532,10 @@
     if (modeCopy) modeCopy.textContent = signupMode
       ? "Guarda tu recorrido y llévalo contigo entre el sitio y la app."
       : "Continúa tu recorrido y sincroniza lo que ya has leído.";
-    if (auth.user) $("#account-user-email").textContent = auth.user.email || "Lector";
+    if (auth.user) {
+      $("#account-user-email").textContent = auth.user.email || "Lector";
+      $("#account-user-alias").textContent = $("#account-display-name")?.value?.trim() || "Lector";
+    }
     const progressState = $("#account-progress-state");
     if (progressState) progressState.textContent = auth.user
       ? "Cuenta conectada · recorrido sincronizado"
@@ -540,6 +544,7 @@
     if (guestCopy) guestCopy.textContent = auth.user
       ? ""
       : "Tu recorrido ya está guardado en este dispositivo. Entra o crea una cuenta para sincronizarlo entre el sitio y la app.";
+    renderAccountUserTab();
     renderAccountGuestTab();
     renderAccountTriggers();
     updateAccountProgressSummary();
@@ -579,6 +584,26 @@
       tab.setAttribute("aria-selected", String(selected));
       tab.tabIndex = selected ? 0 : -1;
     });
+  }
+
+  function renderAccountUserTab() {
+    const tabs = $("#account-user-tabs");
+    const settings = $("#account-user-settings");
+    if (!tabs || !settings) return;
+    const showSettings = Boolean(auth.user) && accountUserTab === "settings";
+    settings.hidden = !showSettings;
+    $$(`[data-account-user-tab]`, tabs).forEach((tab) => {
+      const selected = Boolean(auth.user) && tab.dataset.accountUserTab === accountUserTab;
+      tab.setAttribute("aria-selected", String(selected));
+      tab.tabIndex = selected ? 0 : -1;
+    });
+  }
+
+  function switchAccountUserTab(tab) {
+    if (!auth.user || !["overview", "settings"].includes(tab)) return;
+    accountUserTab = tab;
+    renderAccountUserTab();
+    if (tab === "settings") $("#account-display-name")?.focus();
   }
 
   function switchAccountTab(tab) {
@@ -671,7 +696,7 @@
     dialog.classList.add("is-open");
     backdrop.classList.add("is-open");
     document.body.classList.add("account-open");
-    $(auth.user ? "#account-display-name" : "#account-email")?.focus();
+    $(auth.user ? "#account-user-tabs [aria-selected='true']" : "#account-email")?.focus();
   }
 
   function closeAccountDialog() {
@@ -742,6 +767,7 @@
     try { if (auth.session?.access_token) await supabaseFetch("/auth/v1/logout", { method: "POST" }, auth.session.access_token); } catch { /* sesión ya caducada */ }
     auth.session = null;
     auth.user = null;
+    accountUserTab = "overview";
     persistSession();
     renderAccountState();
     setAccountStatus("Sesión cerrada. Tu progreso local permanece en este dispositivo.");
@@ -2910,12 +2936,16 @@
       case "switch-account-tab":
         switchAccountTab(trigger.dataset.accountTab);
         break;
+      case "switch-account-user-tab":
+        switchAccountUserTab(trigger.dataset.accountUserTab);
+        break;
       case "set-auth-mode":
         setAuthMode(trigger.dataset.authMode);
         break;
       case "save-account-profile":
         auth.selectedAvatar = AVATARS.some((avatar) => avatar.key === auth.selectedAvatar) ? auth.selectedAvatar : "clancy";
         await syncStateToCloud();
+        renderAccountState();
         break;
       case "sign-out":
         await signOut();
@@ -3165,7 +3195,7 @@
     const secureContext = location.protocol === "https:" || ["localhost", "127.0.0.1"].includes(location.hostname);
     if (!secureContext) return;
     const register = () => navigator.serviceWorker
-      .register("./sw.js?v=20260809-account-cache-v3", { updateViaCache: "none" })
+      .register("./sw.js?v=20260809-account-cache-v4", { updateViaCache: "none" })
       .then((registration) => registration.update().catch(() => registration))
       .catch((error) => console.warn("No se pudo registrar la caché offline.", error));
     if ("requestIdleCallback" in window) {
