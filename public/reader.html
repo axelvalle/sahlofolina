@@ -31,7 +31,7 @@
     <meta name="twitter:image" content="https://sahlofolina.vercel.app/assets/social/sahlo-folina-og.webp" />
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self'; base-uri 'self'; connect-src 'self'; font-src 'self' https://fonts.gstatic.com; form-action 'self'; img-src 'self' data:; object-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; upgrade-insecure-requests"
+      content="default-src 'self'; base-uri 'self'; connect-src 'self' https://*.supabase.co; font-src 'self' https://fonts.gstatic.com; form-action 'self'; img-src 'self' data:; object-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; upgrade-insecure-requests"
     />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
     <link rel="stylesheet" href="./assets/fonts/google-fonts.css" />
@@ -60,6 +60,7 @@
           <nav class="site-links" aria-label="Navegación principal">
             <button class="site-link" type="button" data-action="goto-library">Biblioteca</button>
             <button class="site-link" type="button" data-action="goto-about">Sobre</button>
+            <button class="site-link account-trigger" type="button" data-action="open-account">Cuenta</button>
             <button class="site-link site-preferences" type="button" data-action="toggle-settings" aria-label="Abrir preferencias">
               <span aria-hidden="true">Aa</span>
             </button>
@@ -125,6 +126,7 @@
               <button class="text-btn text-link progression-open" type="button" data-action="toggle-progression-panel" aria-expanded="false">Registro</button>
               <button class="text-btn text-link" type="button" data-action="goto-library">Biblioteca</button>
               <button class="text-btn text-link" type="button" data-action="goto-about">Sobre</button>
+              <button class="text-btn text-link" type="button" data-action="open-account">Cuenta</button>
               <button class="index-preferences" type="button" data-action="toggle-settings" aria-label="Abrir preferencias">
                 <span aria-hidden="true">Aa</span>
               </button>
@@ -276,6 +278,7 @@
             <button type="button" data-action="back-cover">Inicio</button>
             <button type="button" data-action="goto-toc">Índice</button>
             <button type="button" data-action="goto-about">Sobre</button>
+            <button type="button" data-action="open-account">Cuenta</button>
           </nav>
         </header>
 
@@ -334,6 +337,7 @@
             <button type="button" data-action="back-cover">Inicio</button>
             <button type="button" data-action="goto-toc">Índice</button>
             <button type="button" data-action="goto-library">Biblioteca</button>
+            <button type="button" data-action="open-account">Cuenta</button>
           </nav>
         </header>
 
@@ -465,6 +469,42 @@
       </div>
     </section>
 
+    <div id="account-backdrop" class="account-backdrop" hidden aria-hidden="true"></div>
+    <section id="account-dialog" class="account-dialog" hidden role="dialog" aria-modal="true" aria-labelledby="account-title" aria-describedby="account-summary">
+      <div class="account-dialog-inner">
+        <header class="account-header">
+          <div>
+            <span class="account-kicker">Registro del lector</span>
+            <h2 id="account-title">Tu cuenta</h2>
+            <p id="account-summary">Sincroniza progreso, marcadores, logros, citas y avatar entre el sitio y la app.</p>
+          </div>
+          <button class="close-btn" type="button" data-action="close-account" aria-label="Cerrar cuenta">×</button>
+        </header>
+
+        <div id="account-guest-panel">
+          <form id="account-auth-form" class="account-form" novalidate>
+            <label><span>Correo electrónico</span><input id="account-email" name="email" type="email" autocomplete="email" required placeholder="tu@correo.com" /></label>
+            <label><span>Contraseña</span><input id="account-password" name="password" type="password" autocomplete="current-password" minlength="6" required placeholder="Mínimo 6 caracteres" /></label>
+            <button class="btn btn-primary" type="submit" data-auth-submit>Entrar</button>
+            <button class="account-secondary-action" type="button" data-action="toggle-auth-mode">¿Primera vez? Crear cuenta</button>
+            <p id="account-auth-status" class="account-status" role="status" aria-live="polite"></p>
+          </form>
+          <p class="account-footnote">Tu contraseña la gestiona Supabase y nunca se guarda en este sitio.</p>
+        </div>
+
+        <div id="account-user-panel" hidden>
+          <div class="account-identity">
+            <img id="account-avatar-preview" class="account-avatar-preview" src="./assets/avatars/clancy.webp" alt="Avatar seleccionado" />
+            <div><strong id="account-user-email">—</strong><span id="account-sync-status">Sincronización lista</span></div>
+          </div>
+          <label class="account-name-field"><span>Nombre de lector (opcional)</span><input id="account-display-name" type="text" maxlength="48" placeholder="Cómo quieres aparecer" /></label>
+          <div class="avatar-picker"><span class="account-section-label">Avatar autorizado</span><div id="avatar-options" class="avatar-options" role="radiogroup" aria-label="Seleccionar avatar"></div></div>
+          <div class="account-user-actions"><button class="btn btn-primary" type="button" data-action="save-account-profile">Guardar perfil</button><button class="btn btn-secondary" type="button" data-action="sign-out">Cerrar sesión</button></div>
+          <p id="account-user-status" class="account-status" role="status" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+
     <aside id="settings-drawer" class="drawer" hidden aria-labelledby="settings-title">
       <div class="drawer-inner">
         <header class="drawer-header">
@@ -552,6 +592,7 @@
     <div class="overlay" id="overlay" hidden></div>
     <div id="progression-notice" class="progression-notice" role="status" aria-live="polite" hidden></div>
 
+    <script defer src="./supabase-config.js?v=20260808-account-v1"></script>
     <script defer src="./content/framework/runtime.js?v=20260801-hotfix-label-footnote-r23"></script>
     <script defer src="./content/framework/routes.js?v=20260801-hotfix-label-footnote-r23"></script>
     <script defer src="./content/parte-1/parte1.runtime.js?v=20260801-hotfix-label-footnote-r23"></script>
