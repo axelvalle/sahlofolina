@@ -431,13 +431,17 @@ test("Part VI selector, clean route and cache migration are published together",
   const styles = await read("styles.css");
 
   assert.match(html, /data-action="switch-part" data-part="6"/);
-  assert.match(html, /content\/parte-6\/parte6\.runtime\.js\?v=20260801-hotfix-label-footnote-r23/);
+  assert.match(html, /id="account-dialog"/);
+  assert.match(html, /data-action="open-account"/);
+  assert.match(html, /content\/parte-6\/parte6\.runtime\.js\?v=20260808-account-sync-v1/);
   assert.equal(html, publicHtml);
   assert.match(app, /6:\s*\{[\s\S]*?indexTitle: "Siempre"/);
+  assert.match(app, /case "open-account"\s*:\s*\n\s*openAccountDialog/);
+  assert.match(app, /register\("\.\/sw\.js\?v=20260808-account-sync-v1"\)/);
   assert.match(app, /6: "\.\/assets\/parte-6\/the-contract-index\.webp"/);
   assert.match(routes, /id: "parte-6"[\s\S]*?part: 6/);
-  assert.match(sw, /sahlo-folina-hotfix-label-footnote-r23/);
-  assert.match(sw, /content\/parte-6\/parte6\.runtime\.js\?v=20260801-hotfix-label-footnote-r23/);
+  assert.match(sw, /sahlo-folina-account-sync-v1/);
+  assert.match(sw, /content\/parte-6\/parte6\.runtime\.js\?v=20260808-account-sync-v1/);
   assert.doesNotMatch(runtime, /—Siempre\.6/);
   assert.match(runtime, /"type": "author-note"[\s\S]*?“Siempre” conserva la última palabra/);
   assert.match(styles, /\.archive-letter::before \{[\s\S]*?position: static/);
