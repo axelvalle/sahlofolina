@@ -10,7 +10,8 @@
     lineWidth: new Set(["narrow", "md", "wide"]),
     fontFamily: new Set(["serif", "sans", "mono"]),
     theme: new Set(["dark", "paper"]),
-    animations: new Set(["on", "off"])
+    animations: new Set(["on", "off"]),
+    voices: new Set(["show", "hide"])
   });
   const PARTS = Object.freeze({
     1: {
@@ -166,7 +167,8 @@
       lineWidth: "md",
       fontFamily: "serif",
       theme: "dark",
-      animations: "on"
+      animations: "on",
+      voices: "show"
     }
   };
 
@@ -1490,6 +1492,8 @@
   }
 
   function renderBlock(block) {
+    if (block.who && state.settings.voices === "hide") return null;
+
     if (block.type === "p") {
       const paragraph = document.createElement("p");
       paragraph.textContent = block.text;
@@ -3096,6 +3100,11 @@
       state.settings[key] = button.dataset.value;
       applySettings();
       saveState();
+      if (key === "voices" && document.body.dataset.view === "reader") {
+        const scrollY = window.scrollY;
+        renderChapter(state.lastChapter);
+        window.scrollTo(0, scrollY);
+      }
       requestAnimationFrame(updateReadingProgress);
     });
 
@@ -3196,7 +3205,7 @@
     const secureContext = location.protocol === "https:" || ["localhost", "127.0.0.1"].includes(location.hostname);
     if (!secureContext) return;
     const register = () => navigator.serviceWorker
-      .register("./sw.js?v=20260809-account-cache-v6", { updateViaCache: "none" })
+      .register("./sw.js?v=20260809-account-cache-v7", { updateViaCache: "none" })
       .then((registration) => registration.update().catch(() => registration))
       .catch((error) => console.warn("No se pudo registrar la caché offline.", error));
     if ("requestIdleCallback" in window) {
