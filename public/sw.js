@@ -1,20 +1,20 @@
-const CACHE_VERSION = "sahlo-folina-account-auth-v1";
+const CACHE_VERSION = "sahlo-folina-account-tabs-v1";
 const SHELL_CACHE = `${CACHE_VERSION}-shell`;
 const RUNTIME_CACHE = `${CACHE_VERSION}-runtime`;
 const CORE = [
   "/index.html",
-  "/styles.css?v=20260809-account-auth-v1",
-  "/app.js?v=20260809-account-auth-v1",
-  "/library.js?v=20260809-account-auth-v1",
-  "/content/framework/runtime.js?v=20260809-account-auth-v1",
-  "/content/framework/routes.js?v=20260809-account-auth-v1",
-  "/content/parte-1/parte1.runtime.js?v=20260809-account-auth-v1",
-  "/content/parte-2/parte2.runtime.js?v=20260809-account-auth-v1",
-  "/content/parte-3/parte3.runtime.js?v=20260809-account-auth-v1",
-  "/content/parte-4/parte4.runtime.js?v=20260809-account-auth-v1",
-  "/content/parte-5/parte5.runtime.js?v=20260809-account-auth-v1",
-  "/content/parte-6/parte6.runtime.js?v=20260809-account-auth-v1",
-  "/content/extras/extras.runtime.js?v=20260809-account-auth-v1",
+  "/styles.css?v=20260809-account-tabs-v1",
+  "/app.js?v=20260809-account-tabs-v1",
+  "/library.js?v=20260809-account-tabs-v1",
+  "/content/framework/runtime.js?v=20260809-account-tabs-v1",
+  "/content/framework/routes.js?v=20260809-account-tabs-v1",
+  "/content/parte-1/parte1.runtime.js?v=20260809-account-tabs-v1",
+  "/content/parte-2/parte2.runtime.js?v=20260809-account-tabs-v1",
+  "/content/parte-3/parte3.runtime.js?v=20260809-account-tabs-v1",
+  "/content/parte-4/parte4.runtime.js?v=20260809-account-tabs-v1",
+  "/content/parte-5/parte5.runtime.js?v=20260809-account-tabs-v1",
+  "/content/parte-6/parte6.runtime.js?v=20260809-account-tabs-v1",
+  "/content/extras/extras.runtime.js?v=20260809-account-tabs-v1",
   "/assets/twenty-one-pilots-icon.webp",
   "/assets/cover-dema.webp",
   "/assets/social/sahlo-folina-og.webp",

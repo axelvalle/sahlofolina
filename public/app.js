@@ -175,6 +175,7 @@
   const $$ = (selector, root = document) => Array.from(root.querySelectorAll(selector));
   let lastFocusedElement = null;
   let accountProgressionMounted = false;
+  let accountGuestTab = "auth";
   let disclaimerLastFocusedElement = null;
   let journalViewerLastFocusedElement = null;
   let journalViewerIndex = 0;
@@ -534,9 +535,42 @@
     if (guestCopy) guestCopy.textContent = auth.user
       ? ""
       : "Tu recorrido ya está guardado en este dispositivo. Entra o crea una cuenta para sincronizarlo entre el sitio y la app.";
+    renderAccountGuestTab();
     renderAccountTriggers();
     updateAccountProgressSummary();
     renderAvatarOptions();
+  }
+
+  function renderAccountGuestTab() {
+    const inner = $(".account-dialog-inner");
+    const guestTabs = $("#account-guest-tabs");
+    const authForm = $("#account-auth-form");
+    const mount = $("#account-progress-mount");
+    if (!inner || !guestTabs || !authForm || !mount) return;
+    const isGuest = !auth.user;
+    const showProgress = isGuest && accountGuestTab === "progress";
+    inner.classList.toggle("is-guest-auth", isGuest && !showProgress);
+    inner.classList.toggle("is-guest-progress", showProgress);
+    guestTabs.hidden = !isGuest;
+    authForm.hidden = showProgress;
+    mount.hidden = isGuest ? !showProgress : false;
+    $$("[data-account-tab]", guestTabs).forEach((tab) => {
+      const selected = isGuest && tab.dataset.accountTab === accountGuestTab;
+      tab.setAttribute("aria-selected", String(selected));
+      tab.tabIndex = selected ? 0 : -1;
+    });
+  }
+
+  function switchAccountTab(tab) {
+    if (!["auth", "progress"].includes(tab) || auth.user) return;
+    accountGuestTab = tab;
+    renderAccountGuestTab();
+    if (tab === "progress") {
+      renderProgressionPanel();
+      $("#progression-panel")?.scrollIntoView({ behavior: motionIsReduced() ? "auto" : "smooth", block: "nearest" });
+    } else {
+      $("#account-email")?.focus();
+    }
   }
 
   function renderAccountTriggers() {
@@ -582,6 +616,7 @@
     panel.hidden = false;
     accountProgressionMounted = true;
     renderProgressionPanel();
+    renderAccountGuestTab();
   }
 
   function restoreProgressionPanel() {
@@ -591,6 +626,7 @@
     anchor.after(panel);
     panel.hidden = true;
     accountProgressionMounted = false;
+    accountGuestTab = "auth";
   }
 
   function openAccountDialog(trigger) {
@@ -2841,6 +2877,9 @@
         renderAccountState();
         setAccountStatus("");
         break;
+      case "switch-account-tab":
+        switchAccountTab(trigger.dataset.accountTab);
+        break;
       case "save-account-profile":
         auth.selectedAvatar = AVATARS.some((avatar) => avatar.key === auth.selectedAvatar) ? auth.selectedAvatar : "clancy";
         await syncStateToCloud();
@@ -3093,7 +3132,7 @@
     const secureContext = location.protocol === "https:" || ["localhost", "127.0.0.1"].includes(location.hostname);
     if (!secureContext) return;
     const register = () => navigator.serviceWorker
-      .register("./sw.js?v=20260809-account-auth-v1")
+      .register("./sw.js?v=20260809-account-tabs-v1")
       .catch((error) => console.warn("No se pudo registrar la caché offline.", error));
     if ("requestIdleCallback" in window) {
       window.requestIdleCallback(register, { timeout: 3000 });

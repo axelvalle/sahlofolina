@@ -40,7 +40,7 @@
     <link rel="preload" as="image" href="./assets/parte-5/parte-v-mapa.webp" />
     <link rel="preload" as="image" href="./assets/parte-5/indice-voldsoy.webp" />
     <link rel="preload" as="image" href="./assets/parte-5/arco-1-indice.webp" />
-    <link rel="stylesheet" href="./styles.css?v=20260809-account-auth-v1" />
+    <link rel="stylesheet" href="./styles.css?v=20260809-account-tabs-v1" />
   </head>
   <body>
     <main id="view-cover" class="view view-cover is-active">
@@ -493,6 +493,10 @@
             <span>LECTOR INVITADO // DISPOSITIVO LOCAL</span>
             <p id="account-guest-copy">Tu recorrido ya está guardado en este dispositivo. Entra o crea una cuenta para sincronizarlo entre el sitio y la app.</p>
           </div>
+          <div id="account-guest-tabs" class="account-guest-tabs" role="tablist" aria-label="Secciones de cuenta">
+            <button type="button" role="tab" data-action="switch-account-tab" data-account-tab="auth" aria-selected="true">Entrar / crear cuenta</button>
+            <button type="button" role="tab" data-action="switch-account-tab" data-account-tab="progress" aria-selected="false">Mi recorrido</button>
+          </div>
           <form id="account-auth-form" class="account-form" novalidate>
             <div class="account-auth-heading" aria-live="polite">
               <span class="account-auth-kicker" id="account-auth-mode-kicker">Acceso del lector</span>
@@ -611,16 +615,16 @@
     <div id="progression-notice" class="progression-notice" role="status" aria-live="polite" hidden></div>
 
     <script defer src="./supabase-config.js?v=20260808-account-v1"></script>
-    <script defer src="./content/framework/runtime.js?v=20260809-account-auth-v1"></script>
-    <script defer src="./content/framework/routes.js?v=20260809-account-auth-v1"></script>
-    <script defer src="./content/parte-1/parte1.runtime.js?v=20260809-account-auth-v1"></script>
-    <script defer src="./content/parte-2/parte2.runtime.js?v=20260809-account-auth-v1"></script>
-    <script defer src="./content/parte-3/parte3.runtime.js?v=20260809-account-auth-v1"></script>
-    <script defer src="./content/parte-4/parte4.runtime.js?v=20260809-account-auth-v1"></script>
-    <script defer src="./content/parte-5/parte5.runtime.js?v=20260809-account-auth-v1"></script>
-    <script defer src="./content/parte-6/parte6.runtime.js?v=20260809-account-auth-v1"></script>
-    <script defer src="./content/extras/extras.runtime.js?v=20260809-account-auth-v1"></script>
-    <script defer src="./library.js?v=20260809-account-auth-v1"></script>
-    <script defer src="./app.js?v=20260809-account-auth-v1"></script>
+    <script defer src="./content/framework/runtime.js?v=20260809-account-tabs-v1"></script>
+    <script defer src="./content/framework/routes.js?v=20260809-account-tabs-v1"></script>
+    <script defer src="./content/parte-1/parte1.runtime.js?v=20260809-account-tabs-v1"></script>
+    <script defer src="./content/parte-2/parte2.runtime.js?v=20260809-account-tabs-v1"></script>
+    <script defer src="./content/parte-3/parte3.runtime.js?v=20260809-account-tabs-v1"></script>
+    <script defer src="./content/parte-4/parte4.runtime.js?v=20260809-account-tabs-v1"></script>
+    <script defer src="./content/parte-5/parte5.runtime.js?v=20260809-account-tabs-v1"></script>
+    <script defer src="./content/parte-6/parte6.runtime.js?v=20260809-account-tabs-v1"></script>
+    <script defer src="./content/extras/extras.runtime.js?v=20260809-account-tabs-v1"></script>
+    <script defer src="./library.js?v=20260809-account-tabs-v1"></script>
+    <script defer src="./app.js?v=20260809-account-tabs-v1"></script>
   </body>
 </html>
