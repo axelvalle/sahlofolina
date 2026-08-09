@@ -40,7 +40,7 @@
     <link rel="preload" as="image" href="./assets/parte-5/parte-v-mapa.webp" />
     <link rel="preload" as="image" href="./assets/parte-5/indice-voldsoy.webp" />
     <link rel="preload" as="image" href="./assets/parte-5/arco-1-indice.webp" />
-    <link rel="stylesheet" href="./styles.css?v=20260808-account-sync-v1" />
+    <link rel="stylesheet" href="./styles.css?v=20260808-account-hub-v1" />
   </head>
   <body>
     <main id="view-cover" class="view view-cover is-active">
@@ -60,7 +60,7 @@
           <nav class="site-links" aria-label="Navegación principal">
             <button class="site-link" type="button" data-action="goto-library">Biblioteca</button>
             <button class="site-link" type="button" data-action="goto-about">Sobre</button>
-            <button class="site-link account-trigger" type="button" data-action="open-account">Cuenta</button>
+            <button class="site-link account-trigger" type="button" data-action="open-account" aria-label="Abrir cuenta"><span data-account-label>Cuenta</span></button>
             <button class="site-link site-preferences" type="button" data-action="toggle-settings" aria-label="Abrir preferencias">
               <span aria-hidden="true">Aa</span>
             </button>
@@ -123,10 +123,9 @@
           <div class="page-tools">
             <button class="text-btn" data-action="back-cover">← Portada</button>
             <div class="page-tools-actions">
-              <button class="text-btn text-link progression-open" type="button" data-action="toggle-progression-panel" aria-expanded="false">Registro</button>
               <button class="text-btn text-link" type="button" data-action="goto-library">Biblioteca</button>
               <button class="text-btn text-link" type="button" data-action="goto-about">Sobre</button>
-              <button class="text-btn text-link" type="button" data-action="open-account">Cuenta</button>
+              <button class="text-btn text-link account-trigger" type="button" data-action="open-account" aria-label="Abrir cuenta"><span data-account-label>Cuenta</span></button>
               <button class="index-preferences" type="button" data-action="toggle-settings" aria-label="Abrir preferencias">
                 <span aria-hidden="true">Aa</span>
               </button>
@@ -209,6 +208,7 @@
           </div>
         </header>
 
+        <div id="progression-panel-anchor" hidden></div>
         <section id="progression-panel" class="progression-panel" hidden aria-labelledby="progression-title">
           <header class="progression-panel-header">
             <div>
@@ -278,7 +278,7 @@
             <button type="button" data-action="back-cover">Inicio</button>
             <button type="button" data-action="goto-toc">Índice</button>
             <button type="button" data-action="goto-about">Sobre</button>
-            <button type="button" data-action="open-account">Cuenta</button>
+              <button class="account-trigger" type="button" data-action="open-account" aria-label="Abrir cuenta"><span data-account-label>Cuenta</span></button>
           </nav>
         </header>
 
@@ -337,7 +337,7 @@
             <button type="button" data-action="back-cover">Inicio</button>
             <button type="button" data-action="goto-toc">Índice</button>
             <button type="button" data-action="goto-library">Biblioteca</button>
-            <button type="button" data-action="open-account">Cuenta</button>
+              <button class="account-trigger" type="button" data-action="open-account" aria-label="Abrir cuenta"><span data-account-label>Cuenta</span></button>
           </nav>
         </header>
 
@@ -481,7 +481,18 @@
           <button class="close-btn" type="button" data-action="close-account" aria-label="Cerrar cuenta">×</button>
         </header>
 
+        <section class="account-progress-summary" aria-label="Resumen del recorrido">
+          <div><span>Lectura</span><strong id="account-progress-percent">0%</strong></div>
+          <div><span>Capítulos</span><strong id="account-read-count">0 / 0</strong></div>
+          <div><span>Sellos</span><strong id="account-achievement-count">0 / 12</strong></div>
+          <p id="account-progress-state">Invitado · guardado en este dispositivo</p>
+        </section>
+
         <div id="account-guest-panel">
+          <div class="account-guest-state">
+            <span>LECTOR INVITADO // DISPOSITIVO LOCAL</span>
+            <p id="account-guest-copy">Tu recorrido ya está guardado en este dispositivo. Entra o crea una cuenta para sincronizarlo entre el sitio y la app.</p>
+          </div>
           <form id="account-auth-form" class="account-form" novalidate>
             <label><span>Correo electrónico</span><input id="account-email" name="email" type="email" autocomplete="email" required placeholder="tu@correo.com" /></label>
             <label><span>Contraseña</span><input id="account-password" name="password" type="password" autocomplete="current-password" minlength="6" required placeholder="Mínimo 6 caracteres" /></label>
@@ -501,6 +512,8 @@
           <div class="account-user-actions"><button class="btn btn-primary" type="button" data-action="save-account-profile">Guardar perfil</button><button class="btn btn-secondary" type="button" data-action="sign-out">Cerrar sesión</button></div>
           <p id="account-user-status" class="account-status" role="status" aria-live="polite"></p>
         </div>
+
+        <div id="account-progress-mount"></div>
       </div>
     </section>
 
@@ -592,16 +605,16 @@
     <div id="progression-notice" class="progression-notice" role="status" aria-live="polite" hidden></div>
 
     <script defer src="./supabase-config.js?v=20260808-account-v1"></script>
-    <script defer src="./content/framework/runtime.js?v=20260808-account-sync-v1"></script>
-    <script defer src="./content/framework/routes.js?v=20260808-account-sync-v1"></script>
-    <script defer src="./content/parte-1/parte1.runtime.js?v=20260808-account-sync-v1"></script>
-    <script defer src="./content/parte-2/parte2.runtime.js?v=20260808-account-sync-v1"></script>
-    <script defer src="./content/parte-3/parte3.runtime.js?v=20260808-account-sync-v1"></script>
-    <script defer src="./content/parte-4/parte4.runtime.js?v=20260808-account-sync-v1"></script>
-    <script defer src="./content/parte-5/parte5.runtime.js?v=20260808-account-sync-v1"></script>
-    <script defer src="./content/parte-6/parte6.runtime.js?v=20260808-account-sync-v1"></script>
-    <script defer src="./content/extras/extras.runtime.js?v=20260808-account-sync-v1"></script>
-    <script defer src="./library.js?v=20260808-account-sync-v1"></script>
-    <script defer src="./app.js?v=20260808-account-sync-v1"></script>
+    <script defer src="./content/framework/runtime.js?v=20260808-account-hub-v1"></script>
+    <script defer src="./content/framework/routes.js?v=20260808-account-hub-v1"></script>
+    <script defer src="./content/parte-1/parte1.runtime.js?v=20260808-account-hub-v1"></script>
+    <script defer src="./content/parte-2/parte2.runtime.js?v=20260808-account-hub-v1"></script>
+    <script defer src="./content/parte-3/parte3.runtime.js?v=20260808-account-hub-v1"></script>
+    <script defer src="./content/parte-4/parte4.runtime.js?v=20260808-account-hub-v1"></script>
+    <script defer src="./content/parte-5/parte5.runtime.js?v=20260808-account-hub-v1"></script>
+    <script defer src="./content/parte-6/parte6.runtime.js?v=20260808-account-hub-v1"></script>
+    <script defer src="./content/extras/extras.runtime.js?v=20260808-account-hub-v1"></script>
+    <script defer src="./library.js?v=20260808-account-hub-v1"></script>
+    <script defer src="./app.js?v=20260808-account-hub-v1"></script>
   </body>
 </html>

@@ -174,6 +174,7 @@
   const $ = (selector, root = document) => root.querySelector(selector);
   const $$ = (selector, root = document) => Array.from(root.querySelectorAll(selector));
   let lastFocusedElement = null;
+  let accountProgressionMounted = false;
   let disclaimerLastFocusedElement = null;
   let journalViewerLastFocusedElement = null;
   let journalViewerIndex = 0;
@@ -503,7 +504,71 @@
     const modeButton = $("[data-action='toggle-auth-mode']");
     if (modeButton) modeButton.textContent = auth.mode === "signup" ? "Modo entrar" : "Crear cuenta";
     if (auth.user) $("#account-user-email").textContent = auth.user.email || "Lector";
+    const progressState = $("#account-progress-state");
+    if (progressState) progressState.textContent = auth.user
+      ? "Cuenta conectada · recorrido sincronizado"
+      : "Invitado · guardado en este dispositivo";
+    const guestCopy = $("#account-guest-copy");
+    if (guestCopy) guestCopy.textContent = auth.user
+      ? ""
+      : "Tu recorrido ya está guardado en este dispositivo. Entra o crea una cuenta para sincronizarlo entre el sitio y la app.";
+    renderAccountTriggers();
+    updateAccountProgressSummary();
     renderAvatarOptions();
+  }
+
+  function renderAccountTriggers() {
+    const selected = AVATARS.find((avatar) => avatar.key === auth.selectedAvatar) || AVATARS[1];
+    $$('[data-action="open-account"]').forEach((button) => {
+      const label = $("[data-account-label]", button);
+      if (label) label.textContent = "Cuenta";
+      let avatar = $("[data-account-avatar]", button);
+      if (!auth.user) {
+        avatar?.remove();
+        button.classList.remove("is-authenticated");
+        button.setAttribute("aria-label", "Abrir cuenta");
+        return;
+      }
+      if (!avatar) {
+        avatar = document.createElement("img");
+        avatar.dataset.accountAvatar = "";
+        avatar.className = "account-trigger-avatar";
+        button.prepend(avatar);
+      }
+      avatar.src = selected.src;
+      avatar.alt = selected.label;
+      button.classList.add("is-authenticated");
+      button.setAttribute("aria-label", "Abrir mi cuenta");
+    });
+  }
+
+  function updateAccountProgressSummary() {
+    const completed = narrativeChapterIndexes().filter((index) => state.readChapters.includes(index)).length;
+    const progress = $("#account-progress-percent");
+    const readCount = $("#account-read-count");
+    const achievementCount = $("#account-achievement-count");
+    if (progress) progress.textContent = `${overallProgress()}%`;
+    if (readCount) readCount.textContent = `${completed} / ${narrativeChapterIndexes().length}`;
+    if (achievementCount) achievementCount.textContent = `${unlockedAchievements().length} / ${ACHIEVEMENTS.length}`;
+  }
+
+  function mountProgressionPanelIntoAccount() {
+    const panel = $("#progression-panel");
+    const mount = $("#account-progress-mount");
+    if (!panel || !mount) return;
+    if (panel.parentElement !== mount) mount.append(panel);
+    panel.hidden = false;
+    accountProgressionMounted = true;
+    renderProgressionPanel();
+  }
+
+  function restoreProgressionPanel() {
+    const panel = $("#progression-panel");
+    const anchor = $("#progression-panel-anchor");
+    if (!panel || !anchor || !accountProgressionMounted) return;
+    anchor.after(panel);
+    panel.hidden = true;
+    accountProgressionMounted = false;
   }
 
   function openAccountDialog(trigger) {
@@ -512,6 +577,7 @@
     if (!dialog || !backdrop) return;
     lastFocusedElement = trigger || document.activeElement;
     renderAccountState();
+    mountProgressionPanelIntoAccount();
     dialog.hidden = false;
     backdrop.hidden = false;
     dialog.classList.add("is-open");
@@ -524,6 +590,7 @@
     const dialog = $("#account-dialog");
     const backdrop = $("#account-backdrop");
     if (!dialog || !backdrop) return;
+    restoreProgressionPanel();
     dialog.classList.remove("is-open");
     backdrop.classList.remove("is-open");
     document.body.classList.remove("account-open");
@@ -552,6 +619,7 @@
         persistSession();
         renderAccountState();
         await loadCloudProfile();
+        renderAccountState();
         setAccountStatus("Cuenta conectada y recorrido sincronizado.");
         updateCover();
         renderTOC();
@@ -2453,6 +2521,7 @@
     renderTOC();
     updateCover();
     renderProgressionPanel();
+    updateAccountProgressSummary();
   }
 
   function completeChapter(index, { announce = true } = {}) {
@@ -2915,6 +2984,7 @@
       if (!button || !AVATARS.some((avatar) => avatar.key === button.dataset.avatarKey)) return;
       auth.selectedAvatar = button.dataset.avatarKey;
       renderAvatarOptions();
+      renderAccountTriggers();
       if (auth.user) queueCloudSync();
     });
     $("#account-backdrop")?.addEventListener("click", closeAccountDialog);
@@ -2999,7 +3069,7 @@
     const secureContext = location.protocol === "https:" || ["localhost", "127.0.0.1"].includes(location.hostname);
     if (!secureContext) return;
     const register = () => navigator.serviceWorker
-      .register("./sw.js?v=20260808-account-sync-v1")
+      .register("./sw.js?v=20260808-account-hub-v1")
       .catch((error) => console.warn("No se pudo registrar la caché offline.", error));
     if ("requestIdleCallback" in window) {
       window.requestIdleCallback(register, { timeout: 3000 });
