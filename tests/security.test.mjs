@@ -441,7 +441,7 @@ test("Part VI selector, clean route and cache migration are published together",
   assert.match(html, /id="account-guest-tabs"/);
   assert.match(html, /data-action="set-auth-mode" data-auth-mode="signin"/);
   assert.match(html, /data-action="set-auth-mode" data-auth-mode="signup"/);
-  assert.match(html, /content\/parte-6\/parte6\.runtime\.js\?v=20260809-account-cache-v2/);
+  assert.match(html, /content\/parte-6\/parte6\.runtime\.js\?v=20260809-account-cache-v3/);
   assert.equal(html, publicHtml);
   assert.match(app, /6:\s*\{[\s\S]*?indexTitle: "Siempre"/);
   assert.match(app, /case "open-account"\s*:\s*\n\s*openAccountDialog/);
@@ -453,11 +453,12 @@ test("Part VI selector, clean route and cache migration are published together",
   assert.match(app, /data-account-tab/);
   assert.match(app, /is-guest-auth-view/);
   assert.match(app, /function setAuthMode/);
-  assert.match(app, /register\("\.\/sw\.js\?v=20260809-account-cache-v2"/);
+  assert.match(app, /is-authenticated-view/);
+  assert.match(app, /register\("\.\/sw\.js\?v=20260809-account-cache-v3"/);
   assert.match(app, /6: "\.\/assets\/parte-6\/the-contract-index\.webp"/);
   assert.match(routes, /id: "parte-6"[\s\S]*?part: 6/);
-  assert.match(sw, /sahlo-folina-account-cache-v2/);
-  assert.match(sw, /content\/parte-6\/parte6\.runtime\.js\?v=20260809-account-cache-v2/);
+  assert.match(sw, /sahlo-folina-account-cache-v3/);
+  assert.match(sw, /content\/parte-6\/parte6\.runtime\.js\?v=20260809-account-cache-v3/);
   assert.doesNotMatch(runtime, /—Siempre\.6/);
   assert.match(runtime, /"type": "author-note"[\s\S]*?“Siempre” conserva la última palabra/);
   assert.match(styles, /\.archive-letter::before \{[\s\S]*?position: static/);
@@ -470,6 +471,7 @@ test("Part VI selector, clean route and cache migration are published together",
   assert.match(styles, /\.account-dialog\.is-guest-auth-view,\s+\.account-dialog\.is-guest-progress-view \{ width: min\(94vw, 760px\)/);
   assert.match(styles, /\.account-guest-view-stack > \.is-view-inactive/);
   assert.match(app, /account-guest-view-stack/);
+  assert.match(styles, /\.account-dialog\.is-authenticated-view \.account-dialog-inner \{ grid-template-columns: 1fr; \}/);
   assert.match(styles, /\.account-auth-mode-tabs \{[\s\S]*?grid-template-columns: repeat\(2/);
   assert.match(sw, /assets\/parte-6\/the-contract-cover\.webp/);
   assert.match(sw, /assets\/parte-6\/the-contract-index\.webp/);

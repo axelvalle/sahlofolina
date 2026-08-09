@@ -557,6 +557,7 @@
     const isGuest = !auth.user;
     const showProgress = !isGuest || accountGuestTab === "progress";
     const showAuth = isGuest && !showProgress;
+    inner.classList.toggle("is-authenticated", Boolean(auth.user));
     inner.classList.toggle("is-guest-auth", isGuest && !showProgress);
     inner.classList.toggle("is-guest-progress", isGuest && showProgress);
     stack.classList.toggle("is-auth-active", showAuth);
@@ -571,6 +572,7 @@
     mount.inert = !showProgress;
     dialog.classList.toggle("is-guest-auth-view", isGuest && !showProgress);
     dialog.classList.toggle("is-guest-progress-view", isGuest && showProgress);
+    dialog.classList.toggle("is-authenticated-view", Boolean(auth.user));
     guestTabs.hidden = !isGuest;
     $$("[data-account-tab]", guestTabs).forEach((tab) => {
       const selected = isGuest && tab.dataset.accountTab === accountGuestTab;
@@ -3163,7 +3165,7 @@
     const secureContext = location.protocol === "https:" || ["localhost", "127.0.0.1"].includes(location.hostname);
     if (!secureContext) return;
     const register = () => navigator.serviceWorker
-      .register("./sw.js?v=20260809-account-cache-v2", { updateViaCache: "none" })
+      .register("./sw.js?v=20260809-account-cache-v3", { updateViaCache: "none" })
       .then((registration) => registration.update().catch(() => registration))
       .catch((error) => console.warn("No se pudo registrar la caché offline.", error));
     if ("requestIdleCallback" in window) {
