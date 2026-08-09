@@ -629,9 +629,10 @@
 
   function renderAccountTriggers() {
     const selected = AVATARS.find((avatar) => avatar.key === auth.selectedAvatar) || AVATARS[1];
+    const alias = $("#account-display-name")?.value?.trim() || "Lector";
     $$('[data-action="open-account"]').forEach((button) => {
       const label = $("[data-account-label]", button);
-      if (label) label.textContent = "Cuenta";
+      if (label) label.textContent = auth.user ? alias : "Cuenta";
       let avatar = $("[data-account-avatar]", button);
       if (!auth.user) {
         avatar?.remove();
@@ -648,7 +649,7 @@
       avatar.src = selected.src;
       avatar.alt = selected.label;
       button.classList.add("is-authenticated");
-      button.setAttribute("aria-label", "Abrir mi cuenta");
+      button.setAttribute("aria-label", `Abrir mi cuenta de ${alias}`);
     });
   }
 
@@ -3195,7 +3196,7 @@
     const secureContext = location.protocol === "https:" || ["localhost", "127.0.0.1"].includes(location.hostname);
     if (!secureContext) return;
     const register = () => navigator.serviceWorker
-      .register("./sw.js?v=20260809-account-cache-v5", { updateViaCache: "none" })
+      .register("./sw.js?v=20260809-account-cache-v6", { updateViaCache: "none" })
       .then((registration) => registration.update().catch(() => registration))
       .catch((error) => console.warn("No se pudo registrar la caché offline.", error));
     if ("requestIdleCallback" in window) {
