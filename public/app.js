@@ -156,6 +156,8 @@
     hasStarted: false,
     readChapters: [],
     chapterProgress: {},
+    bookmarks: [],
+    savedQuotes: [],
     progressionMode: "guided",
     freeReadingWarningDismissed: false,
     achievementSeen: [],
@@ -192,6 +194,26 @@
   let chapterIndexCache = null;
   let lastTocRenderKey = "";
 
+  const AVATARS = Object.freeze([
+    { key: "clancy-masked", label: "Clancy enmascarado", src: "./assets/avatars/clancy-masked.webp" },
+    { key: "clancy", label: "Clancy", src: "./assets/avatars/clancy.webp" },
+    { key: "mara-bandito", label: "Mara Bandito", src: "./assets/avatars/mara-bandito.webp" },
+    { key: "ned", label: "Ned", src: "./assets/avatars/ned.webp" },
+    { key: "nico", label: "Nico", src: "./assets/avatars/nico.webp" },
+    { key: "torchbearer", label: "Torchbearer", src: "./assets/avatars/torchbearer.webp" },
+    { key: "mara", label: "Mara", src: "./assets/avatars/mara.webp" }
+  ]);
+  const AUTH_STORAGE_KEY = "sahlo_folina_auth_session_v1";
+  const auth = {
+    session: null,
+    user: null,
+    mode: "signin",
+    selectedAvatar: "clancy",
+    hydrating: false,
+    syncing: false,
+    configured: Boolean(window.SAHLO_SUPABASE_CONFIG?.url && window.SAHLO_SUPABASE_CONFIG?.anonKey)
+  };
+
   function loadState() {
     try {
       const current = localStorage.getItem(STORAGE_KEY);
@@ -216,6 +238,19 @@
         state.readChapters = [...new Set(parsed.readChapters.filter(
           (index) => Number.isInteger(index) && index >= 0 && index < window.CHAPTERS.length
         ))];
+      }
+      if (Array.isArray(parsed.bookmarks)) {
+        state.bookmarks = [...new Set(parsed.bookmarks.filter((value) => typeof value === "string" && value.length < 180))];
+      }
+      if (Array.isArray(parsed.savedQuotes)) {
+        state.savedQuotes = parsed.savedQuotes
+          .filter((quote) => quote && typeof quote === "object" && typeof quote.text === "string")
+          .slice(0, 200)
+          .map((quote) => ({
+            text: quote.text.slice(0, 500),
+            chapterId: typeof quote.chapterId === "string" ? quote.chapterId.slice(0, 120) : "",
+            savedAt: typeof quote.savedAt === "string" ? quote.savedAt : ""
+          }));
       }
       if (
         parsed.chapterProgress &&
@@ -312,9 +347,247 @@
           console.warn("No se pudo respaldar el progreso en Android.", error);
         });
       }
+      if (auth.user && !auth.hydrating) queueCloudSync();
     } catch (error) {
       console.warn("No se pudo guardar el progreso de lectura.", error);
     }
+  }
+
+  function authMessage(error, fallback = "No se pudo completar la operación.") {
+    const message = error?.message || error?.error_description || fallback;
+    const normalized = String(message).toLowerCase();
+    if (normalized.includes("invalid login credentials")) return "El correo o la contraseña no son correctos.";
+    if (normalized.includes("user already registered")) return "Ese correo ya tiene una cuenta. Prueba entrar.";
+    if (normalized.includes("password should be at least")) return "La contraseña debe tener al menos 6 caracteres.";
+    if (normalized.includes("email not confirmed")) return "Revisa tu correo y confirma la cuenta antes de entrar.";
+    return String(message || fallback);
+  }
+
+  function supabaseHeaders(accessToken, extra = {}) {
+    const headers = { apikey: window.SAHLO_SUPABASE_CONFIG.anonKey, ...extra };
+    if (accessToken) headers.Authorization = `Bearer ${accessToken}`;
+    return headers;
+  }
+
+  async function supabaseFetch(path, options = {}, accessToken = "") {
+    const response = await fetch(`${window.SAHLO_SUPABASE_CONFIG.url.replace(/\/$/, "")}${path}`, {
+      ...options,
+      headers: supabaseHeaders(accessToken, { "Content-Type": "application/json", ...(options.headers || {}) })
+    });
+    const text = await response.text();
+    let data = null;
+    try { data = text ? JSON.parse(text) : null; } catch { data = text; }
+    if (!response.ok) throw new Error(authMessage(data, `Supabase respondió con ${response.status}.`));
+    return data;
+  }
+
+  function persistSession() {
+    try {
+      if (auth.session) localStorage.setItem(AUTH_STORAGE_KEY, JSON.stringify(auth.session));
+      else localStorage.removeItem(AUTH_STORAGE_KEY);
+    } catch (error) {
+      console.warn("No se pudo guardar la sesión.", error);
+    }
+  }
+
+  function readPersistedSession() {
+    try { return JSON.parse(localStorage.getItem(AUTH_STORAGE_KEY) || "null"); } catch { return null; }
+  }
+
+  function mergeReaderState(remote) {
+    if (!remote || typeof remote !== "object") return;
+    const remoteRead = Array.isArray(remote.readChapters) ? remote.readChapters : [];
+    state.readChapters = [...new Set([...state.readChapters, ...remoteRead])]
+      .filter((index) => Number.isInteger(index) && index >= 0 && index < window.CHAPTERS.length);
+    const remoteProgress = remote.chapterProgress && typeof remote.chapterProgress === "object" ? remote.chapterProgress : {};
+    Object.entries(remoteProgress).forEach(([index, value]) => {
+      const number = Number(value);
+      if (Number.isFinite(number)) state.chapterProgress[index] = Math.max(Number(state.chapterProgress[index] || 0), number);
+    });
+    ["bookmarks", "savedQuotes", "achievementSeen"].forEach((key) => {
+      if (!Array.isArray(remote[key])) return;
+      const merged = [...(state[key] || []), ...remote[key]];
+      state[key] = key === "savedQuotes" ? merged.slice(-200) : [...new Set(merged)];
+    });
+    ["lastChapter", "lastNarrativeChapter"].forEach((key) => {
+      if (Number.isInteger(remote[key])) state[key] = Math.max(state[key], remote[key]);
+    });
+    if (remote.settings && typeof remote.settings === "object") {
+      Object.entries(ALLOWED_SETTINGS).forEach(([key, allowed]) => {
+        if (allowed.has(remote.settings[key])) state.settings[key] = remote.settings[key];
+      });
+    }
+    if (["guided", "free"].includes(remote.progressionMode)) state.progressionMode = remote.progressionMode;
+    state.hasStarted = state.hasStarted || Boolean(remote.hasStarted);
+  }
+
+  async function loadCloudProfile() {
+    if (!auth.session?.access_token || !auth.user) return;
+    const rows = await supabaseFetch(`/rest/v1/reader_profiles?select=display_name,avatar_key,reader_state&user_id=eq.${encodeURIComponent(auth.user.id)}&limit=1`, {}, auth.session.access_token);
+    const profile = Array.isArray(rows) ? rows[0] : null;
+    if (profile?.reader_state) mergeReaderState(profile.reader_state);
+    auth.selectedAvatar = AVATARS.some((avatar) => avatar.key === profile?.avatar_key) ? profile.avatar_key : "clancy";
+    $("#account-display-name").value = profile?.display_name || "";
+    saveState();
+  }
+
+  async function queueCloudSync() {
+    if (!auth.user || !auth.session?.access_token || auth.syncing) return;
+    clearTimeout(auth.syncTimer);
+    auth.syncTimer = setTimeout(syncStateToCloud, 700);
+  }
+
+  async function syncStateToCloud() {
+    if (!auth.user || !auth.session?.access_token || auth.syncing) return;
+    auth.syncing = true;
+    setAccountStatus("Sincronizando tu recorrido…");
+    try {
+      await supabaseFetch("/rest/v1/reader_profiles?on_conflict=user_id", {
+        method: "POST",
+        headers: { Prefer: "resolution=merge-duplicates,return=minimal" },
+        body: JSON.stringify({
+          user_id: auth.user.id,
+          display_name: $("#account-display-name")?.value?.trim() || "",
+          avatar_key: auth.selectedAvatar,
+          reader_state: state
+        })
+      }, auth.session.access_token);
+      setAccountStatus("Sincronizado ahora");
+    } catch (error) {
+      setAccountStatus(authMessage(error, "No se pudo sincronizar. Tu copia local sigue guardada."), true);
+    } finally {
+      auth.syncing = false;
+    }
+  }
+
+  function setAccountStatus(message, isError = false) {
+    const targets = [$("#account-auth-status"), $("#account-user-status"), $("#account-sync-status")].filter(Boolean);
+    targets.forEach((target) => {
+      target.textContent = message;
+      target.classList.toggle("is-error", isError);
+    });
+  }
+
+  function renderAvatarOptions() {
+    const container = $("#avatar-options");
+    if (!container) return;
+    container.replaceChildren(...AVATARS.map((avatar) => {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = `avatar-option${auth.selectedAvatar === avatar.key ? " is-selected" : ""}`;
+      button.dataset.avatarKey = avatar.key;
+      button.setAttribute("role", "radio");
+      button.setAttribute("aria-checked", String(auth.selectedAvatar === avatar.key));
+      button.title = avatar.label;
+      const image = document.createElement("img");
+      image.src = avatar.src;
+      image.alt = avatar.label;
+      const label = document.createElement("span");
+      label.textContent = avatar.label;
+      button.append(image, label);
+      return button;
+    }));
+    const selected = AVATARS.find((avatar) => avatar.key === auth.selectedAvatar) || AVATARS[1];
+    const preview = $("#account-avatar-preview");
+    if (preview) { preview.src = selected.src; preview.alt = selected.label; }
+  }
+
+  function renderAccountState() {
+    const guest = $("#account-guest-panel");
+    const userPanel = $("#account-user-panel");
+    if (!guest || !userPanel) return;
+    guest.hidden = Boolean(auth.user);
+    userPanel.hidden = !auth.user;
+    const submitButton = $("[data-auth-submit]");
+    if (submitButton) submitButton.textContent = auth.mode === "signup" ? "Crear cuenta" : "Entrar";
+    const modeButton = $("[data-action='toggle-auth-mode']");
+    if (modeButton) modeButton.textContent = auth.mode === "signup" ? "Modo entrar" : "Crear cuenta";
+    if (auth.user) $("#account-user-email").textContent = auth.user.email || "Lector";
+    renderAvatarOptions();
+  }
+
+  function openAccountDialog(trigger) {
+    const dialog = $("#account-dialog");
+    const backdrop = $("#account-backdrop");
+    if (!dialog || !backdrop) return;
+    lastFocusedElement = trigger || document.activeElement;
+    renderAccountState();
+    dialog.hidden = false;
+    backdrop.hidden = false;
+    dialog.classList.add("is-open");
+    backdrop.classList.add("is-open");
+    document.body.classList.add("account-open");
+    $(auth.user ? "#account-display-name" : "#account-email")?.focus();
+  }
+
+  function closeAccountDialog() {
+    const dialog = $("#account-dialog");
+    const backdrop = $("#account-backdrop");
+    if (!dialog || !backdrop) return;
+    dialog.classList.remove("is-open");
+    backdrop.classList.remove("is-open");
+    document.body.classList.remove("account-open");
+    window.setTimeout(() => { dialog.hidden = true; backdrop.hidden = true; }, 220);
+    lastFocusedElement?.focus?.();
+  }
+
+  async function submitAuthForm(event) {
+    event.preventDefault();
+    if (!auth.configured) { setAccountStatus("Falta configurar Supabase: añade URL y clave pública en supabase-config.js.", true); return; }
+    const email = $("#account-email").value.trim();
+    const password = $("#account-password").value;
+    if (!email || password.length < 6) { setAccountStatus("Escribe un correo válido y una contraseña de al menos 6 caracteres.", true); return; }
+    const button = $("[data-auth-submit]");
+    button.disabled = true;
+    setAccountStatus(auth.mode === "signup" ? "Creando tu cuenta…" : "Entrando…");
+    try {
+      const data = await supabaseFetch(auth.mode === "signup" ? "/auth/v1/signup" : "/auth/v1/token?grant_type=password", {
+        method: "POST", body: JSON.stringify({ email, password })
+      });
+      if (auth.mode === "signup" && !data.access_token) {
+        setAccountStatus("Cuenta creada. Revisa tu correo para confirmarla y después entra.");
+      } else {
+        auth.session = data;
+        auth.user = data.user || null;
+        persistSession();
+        renderAccountState();
+        await loadCloudProfile();
+        setAccountStatus("Cuenta conectada y recorrido sincronizado.");
+        updateCover();
+        renderTOC();
+      }
+    } catch (error) {
+      setAccountStatus(authMessage(error), true);
+    } finally { button.disabled = false; }
+  }
+
+  async function initializeAuth() {
+    renderAccountState();
+    if (!auth.configured) return;
+    const persisted = readPersistedSession();
+    if (!persisted?.access_token) return;
+    try {
+      auth.session = persisted;
+      auth.user = await supabaseFetch("/auth/v1/user", {}, persisted.access_token);
+      renderAccountState();
+      await loadCloudProfile();
+      renderAccountState();
+    } catch {
+      auth.session = null;
+      auth.user = null;
+      persistSession();
+      renderAccountState();
+    }
+  }
+
+  async function signOut() {
+    try { if (auth.session?.access_token) await supabaseFetch("/auth/v1/logout", { method: "POST" }, auth.session.access_token); } catch { /* sesión ya caducada */ }
+    auth.session = null;
+    auth.user = null;
+    persistSession();
+    renderAccountState();
+    setAccountStatus("Sesión cerrada. Tu progreso local permanece en este dispositivo.");
+    updateCover();
   }
 
   async function hydrateNativeState() {
@@ -966,6 +1239,7 @@
     });
 
     if (isNarrativeChapter(chapter)) {
+      reader.append(createReaderMemoryTools(chapter, index));
       reader.append(createCompletionCard(chapter, index));
     } else if (chapter.id === "extras") {
       reader.append(createExtrasProgressCard());
@@ -996,6 +1270,38 @@
     next.dataset.chapterTarget = String(nextIndex);
     $("#prev-title").textContent = previousIndex >= 0 ? window.CHAPTERS[previousIndex].title : "";
     $("#next-title").textContent = nextIndex >= 0 ? window.CHAPTERS[nextIndex].title : "";
+  }
+
+  function createReaderMemoryTools(chapter, index) {
+    const tools = document.createElement("div");
+    tools.className = "reader-memory-tools";
+    const bookmark = document.createElement("button");
+    bookmark.type = "button";
+    bookmark.className = "memory-tool";
+    bookmark.dataset.action = "toggle-bookmark";
+    bookmark.dataset.chapter = String(index);
+    const bookmarked = state.bookmarks.includes(chapter.id);
+    bookmark.textContent = bookmarked ? "Marcador guardado" : "Guardar marcador";
+    bookmark.setAttribute("aria-pressed", String(bookmarked));
+    const quote = document.createElement("button");
+    quote.type = "button";
+    quote.className = "memory-tool";
+    quote.dataset.action = "save-chapter-quote";
+    quote.dataset.chapter = String(index);
+    quote.textContent = "Guardar cita";
+    tools.append(bookmark, quote);
+    return tools;
+  }
+
+  function saveChapterQuote(index) {
+    const chapter = window.CHAPTERS[index];
+    if (!chapter) return;
+    const block = chapter.blocks.find((entry) => ["quote", "pull-quote", "epigraph"].includes(entry.type) && entry.text);
+    const text = block?.text || chapter.subtitle || chapter.title;
+    const quote = { text: String(text).slice(0, 500), chapterId: chapter.id || "", savedAt: new Date().toISOString() };
+    state.savedQuotes = [...state.savedQuotes.filter((entry) => entry.text !== quote.text), quote].slice(-200);
+    saveState();
+    showProgressionNotice("Cita guardada en tu registro.");
   }
 
   function renderBlock(block) {
@@ -2401,7 +2707,7 @@
     if (restoreFocus && lastFocusedElement) lastFocusedElement.focus();
   }
 
-  function handleAction(action, trigger) {
+  async function handleAction(action, trigger) {
     switch (action) {
       case "accept-disclaimer":
         closeDisclaimer();
@@ -2431,6 +2737,24 @@
       case "goto-disclaimer":
         goToDisclaimer();
         break;
+      case "open-account":
+        openAccountDialog(trigger);
+        break;
+      case "close-account":
+        closeAccountDialog();
+        break;
+      case "toggle-auth-mode":
+        auth.mode = auth.mode === "signup" ? "signin" : "signup";
+        renderAccountState();
+        setAccountStatus("");
+        break;
+      case "save-account-profile":
+        auth.selectedAvatar = AVATARS.some((avatar) => avatar.key === auth.selectedAvatar) ? auth.selectedAvatar : "clancy";
+        await syncStateToCloud();
+        break;
+      case "sign-out":
+        await signOut();
+        break;
       case "back-cover":
         goToCover();
         break;
@@ -2444,6 +2768,20 @@
         break;
       case "complete-chapter":
         completeChapter(Number(trigger.dataset.chapter));
+        break;
+      case "toggle-bookmark": {
+        const index = Number(trigger.dataset.chapter);
+        const chapter = window.CHAPTERS[index];
+        if (!chapter) break;
+        const position = state.bookmarks.indexOf(chapter.id);
+        if (position >= 0) state.bookmarks.splice(position, 1);
+        else state.bookmarks.push(chapter.id);
+        saveState();
+        renderChapter(index);
+        break;
+      }
+      case "save-chapter-quote":
+        saveChapterQuote(Number(trigger.dataset.chapter));
         break;
       case "scroll-reader-content": {
         const target = $("#reader-content-start");
@@ -2571,6 +2909,16 @@
       requestProgressionMode(button.dataset.progressionMode, button);
     });
 
+    $("#account-auth-form")?.addEventListener("submit", submitAuthForm);
+    $("#avatar-options")?.addEventListener("click", (event) => {
+      const button = event.target.closest("[data-avatar-key]");
+      if (!button || !AVATARS.some((avatar) => avatar.key === button.dataset.avatarKey)) return;
+      auth.selectedAvatar = button.dataset.avatarKey;
+      renderAvatarOptions();
+      if (auth.user) queueCloudSync();
+    });
+    $("#account-backdrop")?.addEventListener("click", closeAccountDialog);
+
     $("#overlay").addEventListener("click", () => closeDrawer());
     document.addEventListener("keydown", (event) => {
       const freeWarning = $("#free-reading-warning");
@@ -2638,6 +2986,7 @@
         return;
       }
       if (event.key === "Escape" && !$("#settings-drawer").hidden) closeDrawer();
+      if (event.key === "Escape" && $("#account-dialog") && !$("#account-dialog").hidden) closeAccountDialog();
     });
     window.addEventListener("scroll", scheduleReadingProgress, { passive: true });
     window.addEventListener("resize", scheduleReadingProgress, { passive: true });
@@ -2675,6 +3024,10 @@
         closeDrawer();
         return;
       }
+      if ($("#account-dialog") && !$("#account-dialog").hidden) {
+        closeAccountDialog();
+        return;
+      }
       const view = document.body.dataset.view;
       if (view === "reader") {
         goToTOC();
@@ -2700,6 +3053,7 @@
     updateCover();
     renderProgressionPanel();
     bindEvents();
+    await initializeAuth();
     setupNativeIntegration();
     applyRouteFromLocation({ initial: true });
     warmIndexBackdrops();
