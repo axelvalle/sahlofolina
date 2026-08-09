@@ -40,7 +40,7 @@
     <link rel="preload" as="image" href="./assets/parte-5/parte-v-mapa.webp" />
     <link rel="preload" as="image" href="./assets/parte-5/indice-voldsoy.webp" />
     <link rel="preload" as="image" href="./assets/parte-5/arco-1-indice.webp" />
-    <link rel="stylesheet" href="./styles.css?v=20260809-account-layout-v1" />
+    <link rel="stylesheet" href="./styles.css?v=20260809-account-auth-tabs-v2" />
   </head>
   <body>
     <main id="view-cover" class="view view-cover is-active">
@@ -503,11 +503,14 @@
               <strong id="account-auth-mode-title">Entrar a mi cuenta</strong>
               <p id="account-auth-mode-copy">Continúa tu recorrido y sincroniza lo que ya has leído.</p>
             </div>
+            <div class="account-auth-mode-tabs" role="tablist" aria-label="Acceso o registro">
+              <button type="button" role="tab" data-action="set-auth-mode" data-auth-mode="signin" aria-selected="true">Entrar</button>
+              <button type="button" role="tab" data-action="set-auth-mode" data-auth-mode="signup" aria-selected="false">Crear cuenta</button>
+            </div>
             <label><span>Correo electrónico</span><input id="account-email" name="email" type="email" autocomplete="email" required placeholder="tu@correo.com" /></label>
             <label><span>Contraseña</span><input id="account-password" name="password" type="password" autocomplete="current-password" minlength="6" required placeholder="Mínimo 6 caracteres" /></label>
             <label id="account-confirm-password-field" class="auth-confirm-field" aria-hidden="true"><span>Repetir contraseña</span><input id="account-confirm-password" name="password-confirmation" type="password" autocomplete="new-password" minlength="6" placeholder="Repite tu contraseña" disabled /></label>
             <button class="btn btn-primary" type="submit" data-auth-submit>Entrar</button>
-            <button class="account-secondary-action" type="button" data-action="toggle-auth-mode">Primera vez · Crear cuenta</button>
             <p id="account-auth-status" class="account-status" role="status" aria-live="polite"></p>
           </form>
         </div>
@@ -615,16 +618,16 @@
     <div id="progression-notice" class="progression-notice" role="status" aria-live="polite" hidden></div>
 
     <script defer src="./supabase-config.js?v=20260808-account-v1"></script>
-    <script defer src="./content/framework/runtime.js?v=20260809-account-layout-v1"></script>
-    <script defer src="./content/framework/routes.js?v=20260809-account-layout-v1"></script>
-    <script defer src="./content/parte-1/parte1.runtime.js?v=20260809-account-layout-v1"></script>
-    <script defer src="./content/parte-2/parte2.runtime.js?v=20260809-account-layout-v1"></script>
-    <script defer src="./content/parte-3/parte3.runtime.js?v=20260809-account-layout-v1"></script>
-    <script defer src="./content/parte-4/parte4.runtime.js?v=20260809-account-layout-v1"></script>
-    <script defer src="./content/parte-5/parte5.runtime.js?v=20260809-account-layout-v1"></script>
-    <script defer src="./content/parte-6/parte6.runtime.js?v=20260809-account-layout-v1"></script>
-    <script defer src="./content/extras/extras.runtime.js?v=20260809-account-layout-v1"></script>
-    <script defer src="./library.js?v=20260809-account-layout-v1"></script>
-    <script defer src="./app.js?v=20260809-account-layout-v1"></script>
+    <script defer src="./content/framework/runtime.js?v=20260809-account-auth-tabs-v2"></script>
+    <script defer src="./content/framework/routes.js?v=20260809-account-auth-tabs-v2"></script>
+    <script defer src="./content/parte-1/parte1.runtime.js?v=20260809-account-auth-tabs-v2"></script>
+    <script defer src="./content/parte-2/parte2.runtime.js?v=20260809-account-auth-tabs-v2"></script>
+    <script defer src="./content/parte-3/parte3.runtime.js?v=20260809-account-auth-tabs-v2"></script>
+    <script defer src="./content/parte-4/parte4.runtime.js?v=20260809-account-auth-tabs-v2"></script>
+    <script defer src="./content/parte-5/parte5.runtime.js?v=20260809-account-auth-tabs-v2"></script>
+    <script defer src="./content/parte-6/parte6.runtime.js?v=20260809-account-auth-tabs-v2"></script>
+    <script defer src="./content/extras/extras.runtime.js?v=20260809-account-auth-tabs-v2"></script>
+    <script defer src="./library.js?v=20260809-account-auth-tabs-v2"></script>
+    <script defer src="./app.js?v=20260809-account-auth-tabs-v2"></script>
   </body>
 </html>

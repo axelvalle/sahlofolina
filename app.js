@@ -518,6 +518,11 @@
     }
     const modeButton = $("[data-action='toggle-auth-mode']");
     if (modeButton) modeButton.textContent = signupMode ? "Ya tengo una cuenta · Entrar" : "Primera vez · Crear cuenta";
+    $$("[data-auth-mode]").forEach((tab) => {
+      const selected = tab.dataset.authMode === auth.mode;
+      tab.setAttribute("aria-selected", String(selected));
+      tab.tabIndex = selected ? 0 : -1;
+    });
     const modeKicker = $("#account-auth-mode-kicker");
     const modeTitle = $("#account-auth-mode-title");
     const modeCopy = $("#account-auth-mode-copy");
@@ -574,6 +579,15 @@
     } else {
       $("#account-email")?.focus();
     }
+  }
+
+  function setAuthMode(mode) {
+    if (!["signin", "signup"].includes(mode) || auth.user) return;
+    auth.mode = mode;
+    renderAccountState();
+    setAccountStatus("");
+    if (mode === "signup") $("#account-confirm-password")?.focus();
+    else $("#account-email")?.focus();
   }
 
   function renderAccountTriggers() {
@@ -2884,6 +2898,9 @@
       case "switch-account-tab":
         switchAccountTab(trigger.dataset.accountTab);
         break;
+      case "set-auth-mode":
+        setAuthMode(trigger.dataset.authMode);
+        break;
       case "save-account-profile":
         auth.selectedAvatar = AVATARS.some((avatar) => avatar.key === auth.selectedAvatar) ? auth.selectedAvatar : "clancy";
         await syncStateToCloud();
@@ -3136,7 +3153,7 @@
     const secureContext = location.protocol === "https:" || ["localhost", "127.0.0.1"].includes(location.hostname);
     if (!secureContext) return;
     const register = () => navigator.serviceWorker
-      .register("./sw.js?v=20260809-account-layout-v1")
+      .register("./sw.js?v=20260809-account-auth-tabs-v2")
       .catch((error) => console.warn("No se pudo registrar la caché offline.", error));
     if ("requestIdleCallback" in window) {
       window.requestIdleCallback(register, { timeout: 3000 });
