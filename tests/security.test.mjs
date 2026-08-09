@@ -452,6 +452,7 @@ test("Part VI selector, clean route and cache migration are published together",
   assert.match(styles, /\.archive-letter::before \{[\s\S]*?position: static/);
   assert.match(styles, /\.account-dialog \{[\s\S]*?width: min\(96vw, 1440px\)[\s\S]*?max-height: min\(90svh, 900px\)/);
   assert.match(styles, /@media \(max-width: 520px\) \{[\s\S]*?\.account-dialog \{ width: calc\(100vw - 20px\)/);
+  assert.match(styles, /\.account-dialog-inner \{ display: grid; grid-template-columns: minmax\(280px, \.82fr\) minmax\(420px, 1\.18fr\)/);
   assert.match(sw, /assets\/parte-6\/the-contract-cover\.webp/);
   assert.match(sw, /assets\/parte-6\/the-contract-index\.webp/);
   const part6 = manifest.routes.find((entry) => entry.id === 6);
